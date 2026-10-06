@@ -33,8 +33,11 @@ def fetch(src, clips_dir):
         import urllib.request, urllib.parse
         q, _, rank = src[8:].partition("#"); key = os.environ.get("PIXABAY_API_KEY", "")
         if not key: raise SystemExit("PIXABAY_API_KEY manquant (secret GitHub)")
-        url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": 20, "safesearch": "true"})
-        hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
+        words, hits = q.split(), []
+        while words and not hits:  # Pixabay exige tous les mots : on raccourcit la requête jusqu'à trouver
+            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 20, "safesearch": "true"})
+            hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
+            if not hits: print(f"Pixabay : aucun résultat pour {' '.join(words)!r}, requête raccourcie"); words = words[:-1]
         hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
         if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
         v = hits[min(int(rank or 0), len(hits) - 1)]["videos"]
