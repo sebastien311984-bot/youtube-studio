@@ -75,7 +75,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 - `title` [grand, petit] : titre plein écran.
 
 ## Recette d'une vidéo addictive (checklist)
-1. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
+1. **Cold open 0-5 s AVANT l'intro** (image la plus forte + question choc), puis intro. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
 2. **Titre plein écran** juste après l'accroche.
 3. **Des chapitres** toutes les 60 à 90 s (« CHAPTER 1 · ... ») avec une révélation chacun.
 4. **Varier les formats** : plan réel → chiffre choc → schéma → plan réel. Jamais deux scènes du même type d'affilée, sauf les plans réels. **Chaque vidéo d'environ 10 min** utilise au moins 6 types différents : 1 quiz, 1 scale ou versus, 1 timeline si le sujet a une histoire, 2 à 3 diagrams, 2 à 3 stats, 1 kinetic. Environ 60 % du temps en plans réels.
@@ -85,7 +85,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 7. **Une fin** : une question au spectateur (pour les commentaires), puis abonnement et le titre « ODDLY LOGICAL SCIENCE ».
 8. **Faits exacts et sourcés** ; les crédits vont dans la description YouTube.
 9. **Durée cible pour monétiser** : 8 à 12 minutes, soit 25 à 40 scènes (environ 2,6 mots prononcés par seconde, soit 1 300 à 1 800 mots). Au moins 8 minutes pour pouvoir placer des pubs au milieu de la vidéo.
-10. **SEO** : titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
+10. **SEO (YouTube + Google « moments clés »)** : chapitres formulés comme des questions recherchées, phrase-réponse en début de chapitre, description = résumé + mini-FAQ, SRT envoyé ; titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
 11. **Miniature** : 2 à 4 mots maximum, ne pas répéter le titre, une image choc à droite, un fort contraste.
 
 ## Viser le spectaculaire

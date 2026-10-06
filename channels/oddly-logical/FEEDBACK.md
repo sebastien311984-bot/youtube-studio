@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — Carrington « parfaite, bluffante » : images, titres, motion design → systématique. À renforcer : (1) 5 premières secondes percutantes = image la plus forte + question choc AVANT l'intro logo (cold open) ; (2) référencement Google (moments clés) : chapitres = questions/mots-clés recherchés (« How deep do anglerfish live? »), 6 à 8 chapitres, chaque chapitre ouvert par une phrase-réponse claire, description = résumé de 2-3 phrases + mini-FAQ, sous-titres SRT envoyés.
+
 - 2026-10-06 — VARIER LES THÈMES : pas deux vidéos de suite sur le même thème (trop de Soleil). Alterner Terre / animaux / océans / espace ; NASA plus tard.
 - 2026-10-06 — Pixabay n'a pas les espèces rares (anglerfish, viperfish, giant squid : 0 résultat) → requêtes génériques ; le moteur raccourcit désormais la requête automatiquement.
 - 2026-10-06 — Pixabay opérationnel (testé) : utiliser `"clip": "pixabay:..."` pour la nature, les océans et les animaux. Pexels indisponible (clés suspendues). Secours : NOAA, USGS, US Fish & Wildlife, Wikimedia Commons.
