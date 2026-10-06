@@ -1,0 +1,814 @@
+{
+ "title": "The Biggest Solar Storm in History: What If It Hit Today?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA Scientific Visualization Studio, NASA/GSFC/SDO, NASA/NOAA ENLIL simulation, ISS imagery via NASA SVS",
+ "scenes": [
+  {
+   "kind": "intro",
+   "min": 4.0,
+   "yt_chapter": "Intro"
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Magnificent_Eruption_Mk_II-overlay.mp4",
+   "start": 1,
+   "move": "in",
+   "text": "On September first, eighteen fifty-nine, an English astronomer saw something no human had ever recorded: a flash of white light on the surface of the Sun. Less than a day later, the sky over our planet caught fire. And if it happened again tomorrow, we would not just lose a few telegraph lines. We would lose a lot more. Stay until the end, because there is a near miss from twenty twelve that still makes scientists nervous.",
+   "lead": 0.5
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_SDOBursts_large.mp4",
+   "start": 12,
+   "move": "out",
+   "text": "This is the story of the biggest solar storm in recorded history. The Carrington Event.",
+   "min": 4.2,
+   "title": [
+    "THE BIGGEST SOLAR STORM",
+    "ODDLY LOGICAL SCIENCE"
+   ],
+   "teaser": "THE FLASH OF 1859"
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Oct2_Eruption_2.mp4",
+   "start": 6,
+   "move": "in",
+   "text": "Richard Carrington was a British amateur astronomer who spent his mornings sketching sunspots. On that day in September 1859, he was drawing a huge group of spots when two patches of dazzling white light appeared inside it. Another observer, Richard Hodgson, saw it too. They had just witnessed what we now call a white-light solar flare. Carrington could not know it yet, but he was watching the opening shot of the most powerful geomagnetic storm in recorded history. He rushed to find a witness, but by the time he returned, about a minute later, the flash had had faded.",
+   "chapter": [
+    "CHAPTER 1",
+    "THE FLASH"
+   ],
+   "lead": 1.2,
+   "label": [
+    "SOLAR FLARE",
+    "RICHARD CARRINGTON · 1 SEPT 1859"
+   ],
+   "fact": "A white-light flare is so intense it shows up\\Nagainst the Sun's own bright surface."
+  },
+  {
+   "kind": "stat",
+   "value": 8.3,
+   "suffix": " MINUTES",
+   "caption": "FOR THE LIGHT OF A FLARE TO REACH EARTH",
+   "min": 4.5,
+   "text": "The light of a flare reaches us in about eight minutes, traveling at the speed of light. But the real danger travels slower, and it is made of matter."
+  },
+  {
+   "kind": "diagram",
+   "heading": "FLARE vs. SOLAR STORM",
+   "min": 9,
+   "text": "A flare is a flash of radiation. But sometimes the Sun also throws out a coronal mass ejection, a gigantic cloud of hot, magnetized plasma. When that cloud reaches Earth, and its magnetic field is lined up the right way, it connects with ours and shakes our whole magnetic shield. That is a geomagnetic storm. The flare was the flash. The storm was the punch that followed.",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      330,
+      540
+     ],
+     "r": 210,
+     "color": "orange",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "SUN",
+     "at": [
+      330,
+      540
+     ],
+     "anchor": "mm",
+     "size": 56,
+     "color": "orange"
+    },
+    {
+     "type": "arc",
+     "c": [
+      560,
+      540
+     ],
+     "r": 260,
+     "a0": -50,
+     "a1": 50,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      640,
+      540
+     ],
+     "to": [
+      1250,
+      540
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "CLOUD OF MAGNETIZED PLASMA",
+     "at": [
+      950,
+      450
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "(CME)",
+     "at": [
+      950,
+      610
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1600,
+      540
+     ],
+     "r": 80,
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "EARTH",
+     "at": [
+      1600,
+      540
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "blue"
+    },
+    {
+     "type": "arc",
+     "c": [
+      1600,
+      540
+     ],
+     "r": 190,
+     "a0": 110,
+     "a1": 250,
+     "color": "green",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "OUR MAGNETIC SHIELD",
+     "at": [
+      1600,
+      800
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005300/a005375/enlil_BMag_topcamA_1080p30.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "Here is a NASA simulation of a real Carrington-class eruption, from twenty twelve. The cloud swells as it leaves the Sun and sweeps through the space around the planets. In 1859 it took less than a day to reach us, which is very fast. Within hours, instruments around the world were registering one of the strongest disturbances of our planet's magnetic field ever recorded.",
+   "label": [
+    "NASA SIMULATION",
+    "A REAL CARRINGTON-CLASS CME, 2012"
+   ],
+   "teaser": "THE NIGHT THE SKY BURNED",
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005300/a005375/enlil_BMag_topcamA_1080p30.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005300/a005375/enlil_BMag_anicamA_1080p30.mp4",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "fact": "A typical storm cloud needs days to arrive.\\NThe 1859 cloud was far faster."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+   "start": 30,
+   "move": "in",
+   "text": "Then the sky went wild. Auroras, which normally stay near the poles, were reported across the world, as far toward the equator as the Caribbean, Colombia and Hawaii. In some places the glow was reportedly so bright that people could read by it, and some woke up thinking it was already morning.",
+   "chapter": [
+    "CHAPTER 2",
+    "THE NIGHT THE SKY BURNED"
+   ],
+   "lead": 1.2,
+   "label": [
+    "AURORA SEEN FROM THE ISS",
+    "NOVEMBER 2025 STORM"
+   ],
+   "fact": "Auroras happen when charged particles hit\\Noxygen and nitrogen high in the atmosphere."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "AURORAS",
+    "NEAR",
+    "THE",
+    "TROPICS"
+   ],
+   "text": "Auroras. Near the tropics."
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE TELEGRAPH, 1859",
+   "min": 9,
+   "text": "But the real chaos was on the wires. The telegraph was the high technology of its day. During the storm, strong currents surged through the long lines. Operators reportedly got shocks, equipment threw sparks, and some paper was set on fire. In some places, operators even unplugged their batteries and found the lines still worked, powered only by the aurora.",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      200,
+      520
+     ],
+     "to": [
+      1720,
+      520
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "TELEGRAPH LINE",
+     "at": [
+      960,
+      440
+     ],
+     "anchor": "mm",
+     "size": 42
+    },
+    {
+     "type": "circle",
+     "c": [
+      300,
+      700
+     ],
+     "r": 70,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "BATTERY OFF",
+     "at": [
+      300,
+      830
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      200
+     ],
+     "to": [
+      960,
+      500
+     ],
+     "color": "green",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "CURRENT FROM THE STORM",
+     "at": [
+      960,
+      160
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "green"
+    },
+    {
+     "type": "text",
+     "text": "SPARKS",
+     "at": [
+      1560,
+      700
+     ],
+     "anchor": "mm",
+     "size": 52,
+     "color": "orange"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1560,
+      640
+     ],
+     "to": [
+      1560,
+      540
+     ],
+     "color": "orange",
+     "width": 8
+    }
+   ],
+   "fact": "Some operators reportedly sent messages with\\Nno battery at all, using only the aurora."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014972/14972_Active_Region_Long_Better.mp4",
+   "start": 10,
+   "move": "left",
+   "text": "This was no one-off accident. The Sun runs on an eleven year cycle of activity. Sunspots like these are places where tangled magnetic fields snap and release enormous energy. Carrington's flare came from exactly this kind of region. Storms like this are rare, but not impossible, and the Sun has not changed. What has changed is us. And that brings us to the scary question.",
+   "label": [
+    "SOLAR ACTIVE REGION",
+    "WHERE STORMS ARE BORN"
+   ],
+   "teaser": "WHAT IF IT HIT TODAY?",
+   "fact": "The Sun's activity swings from calm to stormy\\Nand back again about every 11 years."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005600/a005609/helio_fleet_2026_earth_1080p60.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "Now fast forward to today. In 1859, the most advanced technology was a wire. Today, we depend on electricity, satellites, and radio signals every second of the day.",
+   "chapter": [
+    "CHAPTER 3",
+    "IF IT HIT TODAY"
+   ],
+   "lead": 1.2,
+   "label": [
+    "NASA HELIOPHYSICS FLEET",
+    "SPACECRAFT WATCHING THE SUN"
+   ]
+  },
+  {
+   "kind": "versus",
+   "heading": "1859 vs. TODAY",
+   "min": 8,
+   "text": "In 1859, a storm like this left behind sparks and scorched paper. Today, it would meet a civilization wired into everything. Satellites, navigation, power grids, and the global network, all exposed to the same Sun, and almost all of it built after the last time the Sun showed us what it can do.",
+   "left": {
+    "name": "1859",
+    "color": "blue",
+    "stats": [
+     "Telegraph wires",
+     "No satellites",
+     "No GPS",
+     "Damage: sparks and fires"
+    ]
+   },
+   "right": {
+    "name": "TODAY",
+    "color": "red",
+    "stats": [
+     "Thousands of satellites",
+     "GPS everywhere",
+     "Continental power grids",
+     "Global internet"
+    ]
+   }
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014956/14956_RadioWaveReflection_1080_Youtube.mp4",
+   "start": 5,
+   "move": "in",
+   "text": "First, the satellites. A storm heats and swells the upper atmosphere, which increases drag on satellites in low orbit. Charged particles can also damage electronics. In February 2022, even a modest storm doomed dozens of freshly launched Starlink satellites. And GPS signals get scrambled too. GPS is not only for maps. Networks, banks and power grids use its precise timing. If the clocks lose their reference, a lot of systems start to drift. And the ground is not the only thing at risk. High-altitude flights could face extra radiation and lose radio contact near the poles.",
+   "label": [
+    "SPACE WEATHER EFFECTS",
+    "SATELLITES · RADIO · GPS"
+   ],
+   "fact": "GPS satellites carry atomic clocks. Many\\Nsystems use that timing, not only the maps."
+  },
+  {
+   "kind": "diagram",
+   "heading": "HOW A STORM HITS THE POWER GRID",
+   "min": 9,
+   "teaser": "THE WARNING SHOT: QUEBEC",
+   "text": "Then, the grid. A storm changes the magnetic field around Earth, which pushes electric currents into the ground and into long power lines. These slow, almost steady currents can drive big transformers into saturation, and overheat them. These giant machines are custom built, and replacing damaged ones could take months, in the worst case. Meanwhile, hospitals, water pumps, fuel stations and cell towers all depend on that electricity, or on the batteries that sit behind it.",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      400
+     ],
+     "to": [
+      1770,
+      400
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "LONG POWER LINE",
+     "at": [
+      960,
+      330
+     ],
+     "anchor": "mm",
+     "size": 40
+    },
+    {
+     "type": "arrow",
+     "from": [
+      400,
+      150
+     ],
+     "to": [
+      400,
+      380
+     ],
+     "color": "green",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "STORM CURRENT",
+     "at": [
+      400,
+      110
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "green"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1300,
+      650
+     ],
+     "r": 130,
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "TRANSFORMER",
+     "at": [
+      1300,
+      650
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "line",
+     "from": [
+      1300,
+      400
+     ],
+     "to": [
+      1300,
+      520
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "OVERHEATS",
+     "at": [
+      1300,
+      880
+     ],
+     "anchor": "mm",
+     "size": 50,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "MONTHS TO REPLACE",
+     "at": [
+      1300,
+      960
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+   "start": 60,
+   "move": "right",
+   "text": "We know this is not just theory. On March thirteenth, nineteen eighty-nine, a strong geomagnetic storm hit Earth, and the power grid of Quebec, in Canada, went down. The question is: how fast? Engineers later found that the storm pushed currents into the long lines and the system tripped one safety device after another.",
+   "chapter": [
+    "CHAPTER 4",
+    "THE WARNING SHOT"
+   ],
+   "lead": 1.2,
+   "label": [
+    "AURORA FROM ORBIT",
+    "WHAT A STORM LOOKS LIKE"
+   ],
+   "fact": "That storm also pushed auroras far south of\\Ntheir usual range in North America."
+  },
+  {
+   "kind": "quiz",
+   "question": "HOW FAST DID QUEBEC'S GRID COLLAPSE?",
+   "options": [
+    "90 SECONDS",
+    "9 MINUTES",
+    "9 HOURS"
+   ],
+   "answer": 0,
+   "min": 6,
+   "text": "How fast did Quebec's power grid collapse? Ninety seconds, nine minutes, or nine hours?"
+  },
+  {
+   "kind": "stat",
+   "value": 9,
+   "suffix": " HOURS",
+   "caption": "QUEBEC IN THE DARK · MARCH 1989",
+   "min": 4.5,
+   "text": "Ninety seconds. Around six million people lost power, and Quebec stayed dark for about nine hours. And that storm was weaker than the one in 1859 is believed to have been. Quebec learned a lesson that day, and utilities around the world have made upgrades since. Better, but nobody has tested them against a full Carrington storm."
+  },
+  {
+   "kind": "timeline",
+   "heading": "FOUR STORMS THAT SHOOK EARTH",
+   "min": 9,
+   "teaser": "THE STORM THAT MISSED US",
+   "text": "Four moments in our short history with space weather. Eighteen fifty-nine, the Carrington Event. Nineteen eighty-nine, the Quebec blackout. Twenty twelve, a near miss. And twenty twenty-four, a rehearsal.",
+   "events": [
+    {
+     "year": "1859",
+     "text": "Carrington Event\nTelegraphs spark"
+    },
+    {
+     "year": "1989",
+     "text": "Quebec blackout"
+    },
+    {
+     "year": "2012",
+     "text": "The near miss"
+    },
+    {
+     "year": "2024",
+     "text": "Auroras at\nlow latitudes"
+    }
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005300/a005375/enlil_BMag_anicamA_1080p30.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "On July twenty-third, twenty twelve, the Sun hurled out one of the most powerful clouds ever measured by spacecraft. NASA's STEREO-A probe was in its path and recorded it. The cloud crossed Earth's orbit, but Earth was not there. We had passed that spot about a week earlier. If the Sun had thrown it out a week sooner, it would have hit us head on. Researchers who analyzed the data later said that a direct hit could have caused widespread power problems and long repair times. Another way to say it: we got lucky.",
+   "chapter": [
+    "CHAPTER 5",
+    "THE NEAR MISS"
+   ],
+   "lead": 1.2,
+   "label": [
+    "23 JULY 2012",
+    "THE STORM THAT MISSED US"
+   ],
+   "fact": "Analyses suggest that cloud rivaled the 1859\\Nstorm. About a week made the difference."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "ONE",
+    "WEEK",
+    "EARLIER...",
+    "IT HITS"
+   ],
+   "text": "One week earlier... and it would have hit."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014500/a014592/20240514_AR13664X87_171A_4k.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "And in May twenty twenty-four, we got a real rehearsal. A severe storm, rated G5, the top level of the scale, lit up the sky with auroras seen far south, even in places like Florida and Mexico. Some farmers reported that their GPS-guided tractors lost accuracy right in the planting season. The grids and satellites largely held. This time. Part of the reason is that forecasters saw it coming, and operators had time to prepare. That is the real secret of protecting ourselves: seeing the Sun clearly.",
+   "label": [
+    "MAY 2024",
+    "ACTIVE REGION AR 13664"
+   ],
+   "teaser": "HOW MUCH WARNING DO WE GET?",
+   "fact": "It was the first G5 storm since 2003,\\Nthe top of NOAA's five-level scale."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005600/a005609/helio_fleet_2026_1080p60.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "So how do we watch the Sun? NASA's Solar Dynamics Observatory has stared at it continuously since twenty ten. The SOHO spacecraft, from ESA and NASA, has watched since nineteen ninety-five. When they spot a big eruption, forecasters at NOAA's Space Weather Prediction Center model where the cloud is heading, and how fast. The first estimate is usually a window of a day or two before the cloud arrives, which is a lot more comfortable than the next step.",
+   "chapter": [
+    "CHAPTER 6",
+    "THE SUN WATCHERS"
+   ],
+   "lead": 1.2,
+   "label": [
+    "SDO · SOHO · DSCOVR",
+    "OUR SPACE WEATHER SENTINELS"
+   ],
+   "fact": "Sunlight takes 8 minutes to reach us.\\NThe heavy cloud takes a day or more."
+  },
+  {
+   "kind": "diagram",
+   "heading": "OUR LAST LINE OF DEFENSE",
+   "min": 9,
+   "text": "The last line of defense is DSCOVR, a spacecraft parked at a point called L1, between us and the Sun. It measures the solar wind just before it reaches us. It sits about a hundred times closer than the Sun, and sees the storm just before it arrives. But that gives only a short warning. Roughly fifteen to sixty minutes, depending on how fast the cloud is moving.",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      250,
+      540
+     ],
+     "r": 170,
+     "color": "orange",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "SUN",
+     "at": [
+      250,
+      540
+     ],
+     "anchor": "mm",
+     "size": 50,
+     "color": "orange"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1450,
+      540
+     ],
+     "r": 22,
+     "color": "green",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "L1 · DSCOVR",
+     "at": [
+      1450,
+      450
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "green"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1700,
+      540
+     ],
+     "r": 70,
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "EARTH",
+     "at": [
+      1700,
+      650
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      480,
+      540
+     ],
+     "to": [
+      1400,
+      540
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "SOLAR WIND & STORM CLOUD",
+     "at": [
+      900,
+      470
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "WARNING: MINUTES TO AN HOUR",
+     "at": [
+      1500,
+      820
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 1.5,
+   "suffix": " MILLION KM",
+   "caption": "DSCOVR'S POST, UPSTREAM OF EARTH",
+   "min": 4.5,
+   "text": "One and a half million kilometers from Earth. It sounds far, but it is only about one percent of the way to the Sun."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005600/a005643/ringCurrent_5-9-2026a_ringCurrent_orbit_1080p30.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "Nobody can stop a storm. But a warning lets people act. Grid operators can adjust the network. Satellite controllers can put spacecraft in a safe mode. Airlines can reroute flights away from the poles. A Carrington-class storm is rare, with estimates ranging from once a century to once every few centuries. Nature decides.",
+   "label": [
+    "EARTH'S MAGNETOSPHERE",
+    "OUR INVISIBLE SHIELD"
+   ],
+   "fact": "Our magnetic field is a shield that turns\\Nmost of a solar storm aside."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+   "start": 100,
+   "move": "out",
+   "text": "So here is my question. If the Sun gave us one hour of warning tonight, and the power, the GPS, and the internet were about to go down for days, what is the first thing you would do? Tell me in the comments. I read every one.",
+   "min": 6,
+   "title": [
+    "WHAT WOULD YOU DO?",
+    "TELL US IN THE COMMENTS"
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_SDOBursts_large.mp4",
+   "start": 20,
+   "move": "out",
+   "text": "Subscribe. The universe is stranger than you think.",
+   "min": 5,
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE FOR MORE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 6,
+  "text": "THE BIG ONE",
+  "sub": "CARRINGTON 1859"
+ },
+ "shorts": [
+  {
+   "from": 2,
+   "to": 3,
+   "title": "The Flash That Burned the Sky in 1859"
+  },
+  {
+   "from": 15,
+   "to": 17,
+   "title": "The Night Quebec Went Dark"
+  }
+ ],
+ "youtube": {
+  "title": "Carrington Event: What If It Hit Today?",
+  "description": "The Carrington Event of 1859 is the biggest solar storm ever recorded: auroras near the tropics, telegraphs sparking, and a sky on fire. What would a Carrington-class solar storm do to satellites, GPS and power grids today? We look at Richard Carrington's flare, the 1989 Quebec blackout, the 2012 near miss, the May 2024 storm, and how NASA and NOAA watch the Sun.\n\nIn this video:\n• Carrington's white-light flare of 1 September 1859\n• Auroras near the tropics and telegraphs working without batteries\n• Satellites, GPS and transformers: what a modern storm could break\n• Quebec's blackout in March 1989\n• The July 2012 storm that missed Earth by about a week\n• SDO, SOHO and DSCOVR: how we watch the Sun, and how little warning we get\n\nIf the Sun gave you one hour of warning, what would you do first? Tell us in the comments.\nSubscribe for more strange-but-true science: the universe is stranger than you think.",
+  "tags": [
+   "Carrington Event",
+   "solar storm",
+   "biggest solar storm in history",
+   "solar storm 1859",
+   "what if a solar storm hit earth",
+   "geomagnetic storm",
+   "coronal mass ejection",
+   "solar flare",
+   "space weather",
+   "Quebec blackout 1989",
+   "aurora",
+   "solar storm 2012 near miss",
+   "May 2024 solar storm",
+   "DSCOVR",
+   "NASA SDO"
+  ],
+  "hashtags": [
+   "solarstorm",
+   "space",
+   "NASA"
+  ],
+  "translations": {
+   "French": "Tempête de Carrington : et si elle frappait aujourd'hui ?",
+   "Spanish": "Evento Carrington: ¿y si ocurriera hoy?",
+   "Portuguese": "Evento Carrington: e se acontecesse hoje?",
+   "German": "Carrington-Ereignis: Was, wenn es heute passiert?",
+   "Hindi": "कैरिंगटन इवेंट: अगर यह आज हो जाए तो?"
+  }
+ }
+}

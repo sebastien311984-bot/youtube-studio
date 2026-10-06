@@ -33,7 +33,7 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 
 ## Récupérer la vidéo pour l'utilisateur
 Après le push, attendre la notification de fin de rendu, puis récupérer l'exécution et son artefact avec `mcp__github__actions_list` (list_workflow_runs, puis list_workflow_run_artifacts).
-Lien à donner : `https://github.com/sebastien311984-bot/youtube-studio/actions/runs/<RUN_ID>/artifacts/<ARTIFACT_ID>`.
+Dépôt : sebastien311984-bot/youtube-studio. Lien à donner : `https://github.com/sebastien311984-bot/youtube-studio/actions/runs/<RUN_ID>/artifacts/<ARTIFACT_ID>`.
 En cas d'échec : `mcp__github__get_job_logs` (tail 25 lignes), corriger, re-pousser.
 
 ## Format d'un épisode (JSON)
@@ -49,7 +49,7 @@ Types de scènes (`kind`) :
 | `diagram` | `heading`, `elements` | schéma dessiné au crayon sur papier (line, arrow, circle, arc, curve, text, drops) ; coordonnées sur 1920x1080 ; couleurs : ink, red, orange, blue, gold, green |
 | `stat` | `value`, `prefix`, `suffix`, `caption` | chiffre choc plein écran (compteur animé, décimales possibles) |
 | `scale` | `heading`, `items` [{label, size (relative), color, note}] | comparaison d'échelle, cercles côte à côte |
-| `timeline` | `heading`, `events` [{year, text}] (text peut contenir \n) | frise chronologique animée |
+| `timeline` | `heading`, `events` [{year, text}] (retour à la ligne = vrai saut de ligne `\n` en JSON, PAS `\\N`) | frise chronologique animée |
 | `versus` | `heading`, `left`/`right` {name, color, stats[]} | écran partagé VS |
 | `quiz` | `question`, `options` (2 à 4), `answer` (index), `min` ≥ 6 | quiz avec compte à rebours de 3 s, réponse révélée (engagement) |
 | `kinetic` | `words` [3 à 6 mots] | typographie choc, mot par mot |

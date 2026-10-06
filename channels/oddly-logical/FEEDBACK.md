@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — Leçons de la relecture de « carrington_event » : titre YouTube < 60 caractères ; Shorts ≤ 58 s (compter environ 2,6 mots/s plus les `min`) ; ne jamais poser un bandeau de date sur une image d'un autre événement ; fréquences d'événements rares = fourchettes publiées, pas d'affirmation ; accroche = question directe dans les 10 premières secondes.
+
 - 2026-10-06 — Démo « It Rains on the Sun » v2 : l'intro cinématique, la musique, l'outro et les changements de format plaisent → à garder systématiquement.
 - 2026-10-06 — Risque de monotonie : varier les formats d'une vidéo à l'autre (ne pas toujours schéma + chiffre). Utiliser le pack (scale, timeline, versus, quiz, kinetic, rank, photos).
 - 2026-10-06 — Les vidéos de 1,5 à 3 min ne suffisent pas pour monétiser : viser 8 à 12 min.
