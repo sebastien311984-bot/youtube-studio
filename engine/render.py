@@ -75,7 +75,9 @@ def captions(words, t0):
     groups = []
     for w in words:
         g.append(w)
-        if len(g) >= 6 or (len(g) >= 2 and w[2][-1:] in ".,?!;:"): groups.append(g); g = []
+        nxt = words[words.index(w) + 1] if words.index(w) + 1 < len(words) else None
+        pause = nxt is not None and nxt[0] - (w[0] + w[1]) > 0.28  # fin de phrase (TTS ne renvoie pas la ponctuation)
+        if len(g) >= 6 or pause or (len(g) >= 2 and w[2][-1:] in ".,?!;:"): groups.append(g); g = []
     if g: groups.append(g)
     for gr in groups:
         end_g = gr[-1][0] + gr[-1][1] + 0.15
@@ -137,6 +139,7 @@ def make_shorts(ep, out, bounds):
     specs = ep.get("shorts") or [{"from": 1, "to": min(len(bounds) - 1, 5), "title": ep.get("short_title", ep["title"])}]
     for k, sp in enumerate(specs, 1):
         a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
+        if b - a < 30: b = min(bounds[-1] - 2, a + 45)  # un Short doit durer au moins 30 s
         tf = out[:-4] + f"_short{k}.txt"; open(tf, "w").write(sp["title"].upper())
         vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:6,eq=brightness=-0.15[bg];"
               f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2,"
