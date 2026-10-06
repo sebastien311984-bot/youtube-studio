@@ -11,7 +11,7 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 3. Déléguer la relecture à l'agent **oddly-factchecker**, puis corriger les points [BLOCKING] (petites modifications).
 4. Pousser l'épisode : GitHub Actions fait le rendu (vidéo, miniature, sous-titres, kit SEO, Shorts).
 5. À la notification, donner le lien de l'artefact et le texte à copier-coller pour YouTube Studio.
-6. Noter le retour de l'utilisateur dans `FEEDBACK.md` et cocher le sujet dans `TOPICS.md`. **C'est la mémoire de la chaîne.**
+6. Mettre à jour `channels/oddly-logical/VIDEOS.md` à chaque étape (écrite, rendue avec le lien, programmée, publiée, stats). Noter le retour de l'utilisateur dans `FEEDBACK.md` et cocher le sujet dans `TOPICS.md`. **C'est la mémoire de la chaîne.**
 
 Chaîne YouTube en anglais : science spectaculaire (espace, Terre, océans, animaux).
 Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « contenu réutilisé »).
