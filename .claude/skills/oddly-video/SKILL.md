@@ -85,6 +85,18 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 10. **SEO** : titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
 11. **Miniature** : 2 à 4 mots maximum, ne pas répéter le titre, une image choc à droite, un fort contraste.
 
+## Effet de surprise (ce qui donne envie de regarder la suite)
+- À chaque vidéo, au moins **2 éléments inattendus** : un titre plein écran au milieu d'un chapitre (« BUT THERE'S A PROBLEM… »), un quiz surprise, un `kinetic` qui casse le rythme, une fausse fin (« But that's not the scariest part »).
+- **Varier d'une vidéo à l'autre** : ne jamais reprendre la même suite de formats ni les mêmes phrases d'accroche ; tourner sur tout le pack.
+- Un **cliffhanger** avant chaque chapitre (teaser) et une **question ouverte** dans l'accroche, résolue seulement à la fin.
+
+## Pistes d'amélioration du moteur (à faire plus tard, par ordre de priorité)
+1. Variantes de style des infographies : palettes par thème (Soleil = orange, espace profond = violet, Terre = bleu).
+2. Sound design plus riche : plusieurs « hits » et whooshes différents, un riser avant chaque révélation, un silence dramatique d'1 s avant un chiffre choc.
+3. Nouveaux formats : carte du monde animée, globe qui tourne, « split timeline » passé/futur, compte à rebours plein écran.
+4. Vraie main qui dessine pour les schémas.
+5. Miniature : 3 variantes générées par vidéo, pour les tests A/B de YouTube.
+
 ## Kit YouTube généré automatiquement (engine/publish_kit.py)
 Chaque rendu produit, dans l'artefact :
 - `<nom>.mp4` : la vidéo ;
