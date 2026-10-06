@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — Pixabay opérationnel (testé) : utiliser `"clip": "pixabay:..."` pour la nature, les océans et les animaux. Pexels indisponible (clés suspendues). Secours : NOAA, USGS, US Fish & Wildlife, Wikimedia Commons.
+
 - 2026-10-06 — « Carrington Event » VALIDÉE, jugée « magnifique, excellente » : effets 3D NASA, narration, sons, chapitres, visuels variés de qualité, infographies dynamiques, titres, motion design. C'est LA référence : garder ce niveau et cette recette.
 - 2026-10-06 — Failles corrigées dans le moteur : sous-titres qui mélangeaient deux phrases (coupure désormais aux pauses de la voix) ; Short de 7 s trop court (minimum 30 s imposé). Règle : chaque Short = un mini-récit complet de 30 à 58 s (accroche, révélation, chute), choisi sur un passage fort.
 
