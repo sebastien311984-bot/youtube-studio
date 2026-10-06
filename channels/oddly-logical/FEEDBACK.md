@@ -1,6 +1,7 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — VARIER LES THÈMES : pas deux vidéos de suite sur le même thème (trop de Soleil). Alterner Terre / animaux / océans / espace ; NASA plus tard.
 - 2026-10-06 — Pixabay opérationnel (testé) : utiliser `"clip": "pixabay:..."` pour la nature, les océans et les animaux. Pexels indisponible (clés suspendues). Secours : NOAA, USGS, US Fish & Wildlife, Wikimedia Commons.
 
 - 2026-10-06 — « Carrington Event » VALIDÉE, jugée « magnifique, excellente » : effets 3D NASA, narration, sons, chapitres, visuels variés de qualité, infographies dynamiques, titres, motion design. C'est LA référence : garder ce niveau et cette recette.
