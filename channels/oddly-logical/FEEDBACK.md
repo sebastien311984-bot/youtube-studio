@@ -1,6 +1,9 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — Objectif : 1 vidéo longue par jour (si le quota le permet). Une nouvelle conversation par vidéo pour économiser les tokens.
+- 2026-10-06 — À FAIRE PLUS TARD : l'utilisateur a déjà un compte d'affiliation Amazon (liens à mettre dans les descriptions le moment venu). Mettre en place une veille des commentaires YouTube et des alertes (marques, sponsors, questions) pour ne rien laisser passer. En reparler vers 1 000 abonnés (sponsors, BrandConnect).
+
 - 2026-10-06 — Leçons de la relecture de « carrington_event » : titre YouTube < 60 caractères ; Shorts ≤ 58 s (compter environ 2,6 mots/s plus les `min`) ; ne jamais poser un bandeau de date sur une image d'un autre événement ; fréquences d'événements rares = fourchettes publiées, pas d'affirmation ; accroche = question directe dans les 10 premières secondes.
 
 - 2026-10-06 — Démo « It Rains on the Sun » v2 : l'intro cinématique, la musique, l'outro et les changements de format plaisent → à garder systématiquement.
