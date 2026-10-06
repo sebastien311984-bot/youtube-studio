@@ -95,6 +95,7 @@ Chaque rendu produit, dans l'artefact :
 Champs à remplir dans l'épisode : `youtube` {title, description, tags, hashtags, translations}, `thumbnail` {scene, text (4 mots max), sub, shift, circle}, et `yt_chapter` sur les scènes qui ouvrent une partie. Un `chapter` compte aussi. YouTube exige au moins 3 chapitres d'au moins 10 s, le premier à 0:00.
 
 ## Publication YouTube
+Suivre `channels/oddly-logical/PUBLISHING.md` (réglages de la chaîne, mise en ligne, horaires, actions sur 48 h, suivi des statistiques).
 Publier n'est possible qu'après une connexion OAuth du compte YouTube par l'utilisateur, via une connexion « YouTube » dans Make, ou une clé OAuth en secret GitHub.
 Ne jamais publier en Public sans accord explicite : envoyer d'abord en « Non répertoriée » ou « Privée », puis l'utilisateur valide.
 
