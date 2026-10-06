@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-06 — Short : impossible de lier la vidéo longue tant qu'elle n'est pas en ligne → publier la longue d'abord, puis le Short avec « Vidéo associée ».
+
 - 2026-10-06 — Le style NE doit PAS être toujours pareil : palette, rythme, musique, polices de titres et transitions adaptés au sujet (abysses = bleu nuit/cyan bioluminescent, lent et oppressant ; volcan = orange/rouge, nerveux ; espace = violet/or, majestueux).
 
 - 2026-10-06 — Carrington « parfaite, bluffante » : images, titres (apparition, police, couleurs accordées à l'image = TOP), motion design → systématique. À renforcer : (1) 5 premières secondes percutantes = image la plus forte + question choc AVANT l'intro logo (cold open) ; (2) référencement Google (moments clés) : chapitres = questions/mots-clés recherchés (« How deep do anglerfish live? »), 6 à 8 chapitres, chaque chapitre ouvert par une phrase-réponse claire, description = résumé de 2-3 phrases + mini-FAQ, sous-titres SRT envoyés.

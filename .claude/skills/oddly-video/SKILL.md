@@ -129,7 +129,7 @@ Titre (moins de 60 caractères, curiosité), description avec chapitres horodat�
 
 ## Feuille de route « être vu et cité » (à mettre en place progressivement)
 - Style adapté au sujet : champ `theme` (palette, musique, rythme, transitions) par épisode — priorité moteur n°1.
-- Découverte : titre = mot-clé recherché + curiosité ; 3 miniatures A/B ; Short publié 24 h avant la longue avec lien vers celle-ci ; playlists thématiques ; écran de fin vers la vidéo la plus proche.
+- Découverte : titre = mot-clé recherché + curiosité ; 3 miniatures A/B ; Short publié APRÈS la longue (quelques heures à 1 jour) : le lien « Vidéo associée » n'accepte qu'une vidéo déjà en ligne ; playlists thématiques ; écran de fin vers la vidéo la plus proche.
 - Google / IA (être cité) : chapitres-questions, phrase-réponse nette, chiffres sourcés dits à voix haute, description avec résumé + FAQ + sources (NASA, NOAA, études), SRT exact, page/article compagnon possible plus tard.
 - Rétention : cold open, fausse fin, « pattern interrupt » toutes les 20-30 s (zoom, son, changement de format), boucle ouverte résolue à la fin.
 - Engagement : question précise épinglée en commentaire, sondage communauté, réponse aux premiers commentaires dans l'heure.
