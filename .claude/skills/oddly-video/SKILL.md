@@ -126,3 +126,11 @@ Titre (moins de 60 caractères, curiosité), description avec chapitres horodat�
 - v0 : voix Edge TTS, sous-titres mot à mot, travellings, fondus, musique synthétisée avec ducking.
 - v1 : intro cinématique, schémas dessinés au crayon, chiffres chocs, plusieurs plans par scène, encarts « Did you know? », cartons de chapitre, plans courts bouclés.
 - Idées suivantes : vraie main qui dessine, barre de progression et teaser « coming up », cartes animées, versions Shorts verticales automatiques, voix ElevenLabs, miniature générée automatiquement.
+
+## Feuille de route « être vu et cité » (à mettre en place progressivement)
+- Style adapté au sujet : champ `theme` (palette, musique, rythme, transitions) par épisode — priorité moteur n°1.
+- Découverte : titre = mot-clé recherché + curiosité ; 3 miniatures A/B ; Short publié 24 h avant la longue avec lien vers celle-ci ; playlists thématiques ; écran de fin vers la vidéo la plus proche.
+- Google / IA (être cité) : chapitres-questions, phrase-réponse nette, chiffres sourcés dits à voix haute, description avec résumé + FAQ + sources (NASA, NOAA, études), SRT exact, page/article compagnon possible plus tard.
+- Rétention : cold open, fausse fin, « pattern interrupt » toutes les 20-30 s (zoom, son, changement de format), boucle ouverte résolue à la fin.
+- Engagement : question précise épinglée en commentaire, sondage communauté, réponse aux premiers commentaires dans l'heure.
+- Qualité cinéma : sound design par thème (grondement grave pour les abysses), étalonnage par thème, cartes et globes animés, compte à rebours, vraie main qui dessine.
