@@ -26,7 +26,9 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 ## Fichiers
 - `engine/render.py` : moteur (voix, plans, sous-titres, titres, musique, mixage).
 - `engine/visuals.py` : plans générés (intro, schéma dessiné au crayon, chiffre choc).
-- `engine/find_footage.py "sujet"` : liste les MP4 HD domaine public de la NASA (SVS) avec leurs URL.
+- `engine/find_footage.py "sujet"` : liste les MP4 HD domaine public de la NASA (SVS) avec leurs URL. `engine/find_footage.py --commons "sujet"` : vidéos Wikimedia Commons (licence et auteur à créditer dans la description).
+- `channels/oddly-logical/SOURCES.md` : catalogue des sources légales (NASA, Pixabay, Wikimedia, NOAA, USGS, ESA, ESO…) avec licences et crédits.
+- `channels/oddly-logical/brand/` : intro (4 s) et écran de fin (15 s) réutilisables.
 - `channels/oddly-logical/episodes/*.json` : un fichier par vidéo. Pousser un fichier nouveau ou modifié déclenche le rendu.
 - `.github/workflows/render-videos.yml` : rendu automatique ; le MP4 est dans l'artefact `videos` de l'exécution.
 - `channels/oddly-logical/AUDIT.md` : audit des sources d'images et stratégie de la chaîne.
@@ -86,6 +88,11 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 10. **SEO** : titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
 11. **Miniature** : 2 à 4 mots maximum, ne pas répéter le titre, une image choc à droite, un fort contraste.
 
+## Viser le spectaculaire
+- Chaque vidéo s'ouvre sur **l'image la plus rare ou la plus impressionnante** dont on dispose : archives de grands fonds, simulation NASA, éruption en gros plan. Jamais un plan banal en ouverture.
+- Mélanger les sources dans une même vidéo (NASA + Pixabay + Wikimedia) pour la variété, tout en gardant un étalonnage cohérent (le moteur le fait).
+- Les crédits de toutes les sources CC vont dans `credits` (repris automatiquement dans la description).
+
 ## Effet de surprise (ce qui donne envie de regarder la suite)
 - À chaque vidéo, au moins **2 éléments inattendus** : un titre plein écran au milieu d'un chapitre (« BUT THERE'S A PROBLEM… »), un quiz surprise, un `kinetic` qui casse le rythme, une fausse fin (« But that's not the scariest part »).
 - **Varier d'une vidéo à l'autre** : ne jamais reprendre la même suite de formats ni les mêmes phrases d'accroche ; tourner sur tout le pack.
@@ -93,7 +100,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 
 ## Pistes d'amélioration du moteur (à faire plus tard, par ordre de priorité)
 1. Variantes de style des infographies : palettes par thème (Soleil = orange, espace profond = violet, Terre = bleu).
-2. Sound design plus riche : plusieurs « hits » et whooshes différents, un riser avant chaque révélation, un silence dramatique d'1 s avant un chiffre choc.
+2. ~~Riser et silence avant les révélations~~ (fait : automatique avant stat, rank, kinetic, quiz et title). Reste à faire : varier les « hits » et les whooshes.
 3. Nouveaux formats : carte du monde animée, globe qui tourne, « split timeline » passé/futur, compte à rebours plein écran.
 4. Vraie main qui dessine pour les schémas.
 5. Miniature : 3 variantes générées par vidéo, pour les tests A/B de YouTube.

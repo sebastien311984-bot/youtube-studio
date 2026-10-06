@@ -161,7 +161,7 @@ def make_shorts(ep, out, bounds):
            "-crf", "19", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out[:-4] + f"_short{k}.mp4")
         os.remove(tf)
 
-def music(total, voice_env, cuts):
+def music(total, voice_env, cuts, risers=()):
     n = int(total * SR); t = np.arange(n) / SR; rng = np.random.default_rng(3)
     out = np.zeros(n)
     # nappe : accords lents (Am - F - C - G), harmoniques douces, battements
@@ -185,6 +185,14 @@ def music(total, voice_env, cuts):
         whoosh = np.convolve(rng.standard_normal(sw), np.ones(30) / 30, "same") * np.sin(np.pi * xs / 0.8) ** 3 * 2.2
         if i - sw > 0: out[i - sw:i] += whoosh * 0.5
         out[i:i + m] += hit[:max(0, min(m, n - i))] * 0.5
+    # montées de tension (riser) qui finissent pile sur les révélations, puis 0,4 s de quasi-silence avant l'impact
+    for c in risers:
+        L = 2.0; i1 = int(c * SR); i0 = max(0, i1 - int(L * SR)); m = i1 - i0
+        if m <= 0 or i1 > n: continue
+        x = np.arange(m) / SR; f = 200 + 1400 * (x / L) ** 2
+        sweep = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.10 + np.convolve(rng.standard_normal(m), np.ones(20) / 20, "same") * 0.8
+        out[i0:i1] += sweep * (x / L) ** 2 * 0.5
+        g0 = max(0, i1 - int(0.4 * SR)); out[g0:i1] *= np.linspace(1, 0.15, i1 - g0)
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
@@ -252,7 +260,8 @@ def main(ep_path, clips_dir, out):
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
         v = np.frombuffer(raw, np.int16).astype(float) / 32768; i = int(st * SR); m = min(len(v), n - i); vtrack[i:i + m] += v[:m]
     k = int(0.15 * SR); env = np.convolve(np.abs(vtrack), np.ones(k) / k, "same"); env = np.minimum(1, env / 0.04)
-    mix = vtrack * 1.15 + music(total, env, cuts[1:]) * 0.33
+    risers = [st for st, sc in zip(starts, ep["scenes"]) if sc.get("kind") in ("stat", "rank", "kinetic", "quiz") or "title" in sc]
+    mix = vtrack * 1.15 + music(total, env, cuts[1:], [r for r in risers if r > 2.5]) * 0.33
     mix = np.tanh(mix * 1.1) * 0.93
     wav = os.path.join(work, "mix.wav")
     with wave.open(wav, "wb") as w:
