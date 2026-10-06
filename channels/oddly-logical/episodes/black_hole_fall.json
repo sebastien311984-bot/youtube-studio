@@ -1,0 +1,311 @@
+{
+ "title": "What Happens If You Fall Into a Black Hole?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA's Goddard Space Flight Center / Jeremy Schnittman, NASA Scientific Visualization Studio",
+ "scenes": [
+  {
+   "kind": "intro",
+   "min": 4.0,
+   "yt_chapter": "Intro"
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014500/a014576/14576_BH_FlyBy_Zoom2_1920x1080_30.mp4",
+   "start": 0,
+   "move": "in",
+   "lead": 0.5,
+   "text": "What would happen if you fell into a black hole? NASA ran a supercomputer simulation to find out. And the answer... is terrifying."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a013300/a013326/BH_AccretionDisk_Sim_Stationary_1080.mp4",
+   "start": 2,
+   "move": "out",
+   "min": 4.2,
+   "title": [
+    "FALLING INTO A BLACK HOLE",
+    "ODDLY LOGICAL SCIENCE"
+   ]
+  },
+  {
+   "chapter": [
+    "CHAPTER 1",
+    "THE MONSTER"
+   ],
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a013300/a013326/BH_AccretionDisk_Sim_360_Center_16x9_1080.mp4",
+   "start": 0,
+   "move": "in",
+   "lead": 1.2,
+   "text": "A black hole forms when a giant star collapses on itself. Its gravity becomes so strong that nothing can escape. Not even light.",
+   "fact": "If Earth were crushed into a black hole,\\Nit would be about the size of a marble."
+  },
+  {
+   "kind": "stat",
+   "value": 4000000,
+   "suffix": " SUNS",
+   "caption": "THE BLACK HOLE AT THE CENTER OF OUR GALAXY",
+   "min": 4.5,
+   "text": "And at the center of our own galaxy sits one as heavy as four million suns."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a013300/a013326/BH_AccretionDisk_Sim_Stationary_1080.mp4",
+     "start": 8,
+     "move": "in"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a013300/a013326/BH_AccretionDisk_Sim_360_wide_16x9_1080.mp4",
+     "start": 3,
+     "move": "left"
+    }
+   ],
+   "text": "That glowing ring is gas, spinning at a huge fraction of the speed of light. Gravity bends its light so much, we can even see the back of the disk, above and below.",
+   "label": [
+    "ACCRETION DISK",
+    "LIGHT BENT BY GRAVITY"
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "SPAGHETTIFICATION",
+   "min": 8,
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      1380,
+      600
+     ],
+     "r": 150,
+     "color": "ink",
+     "width": 16
+    },
+    {
+     "type": "text",
+     "text": "BLACK HOLE",
+     "at": [
+      1380,
+      600
+     ],
+     "anchor": "mm",
+     "size": 34
+    },
+    {
+     "type": "circle",
+     "c": [
+      1380,
+      600
+     ],
+     "r": 250,
+     "color": "red",
+     "width": 6
+    },
+    {
+     "type": "text",
+     "text": "EVENT HORIZON",
+     "at": [
+      1380,
+      900
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "red"
+    },
+    {
+     "type": "circle",
+     "c": [
+      330,
+      470
+     ],
+     "r": 28,
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      330,
+      500
+     ],
+     "to": [
+      330,
+      610
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      330,
+      610
+     ],
+     "to": [
+      300,
+      690
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      330,
+      610
+     ],
+     "to": [
+      360,
+      690
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "YOU",
+     "at": [
+      330,
+      400
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      430,
+      580
+     ],
+     "to": [
+      860,
+      590
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      940,
+      470
+     ],
+     "to": [
+      1110,
+      680
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "STRETCHED LIKE SPAGHETTI",
+     "at": [
+      960,
+      790
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "Feet pulled harder than head",
+     "at": [
+      645,
+      520
+     ],
+     "anchor": "mm",
+     "size": 32,
+     "weight": "SemiBold"
+    }
+   ],
+   "text": "As you fall, gravity pulls on your feet much harder than on your head. Your body gets stretched... like spaghetti. Scientists actually call it spaghettification.",
+   "yt_chapter": "Spaghettification"
+  },
+  {
+   "chapter": [
+    "CHAPTER 2",
+    "POINT OF NO RETURN"
+   ],
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014500/a014576/14576_BH_FlyBy_Zoom2_1920x1080_30.mp4",
+   "start": 12,
+   "move": "in",
+   "lead": 1.2,
+   "text": "In NASA's simulation, once you cross the event horizon, you have just twelve point eight seconds before being torn apart.",
+   "label": [
+    "EVENT HORIZON",
+    "THE POINT OF NO RETURN"
+   ],
+   "fact": "Near a black hole, time slows down. From far away,\\Nyou would seem to freeze at the edge forever."
+  },
+  {
+   "kind": "stat",
+   "value": 12.8,
+   "suffix": " SECONDS",
+   "caption": "FROM THE EVENT HORIZON TO SPAGHETTI",
+   "min": 3.5
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014916/NASA_GRB_Sequence_Final_v01.mp4",
+   "start": 2,
+   "move": "in",
+   "text": "And black holes don't stay quiet. In twenty twenty-five, astronomers caught what may be a black hole devouring a star, producing the longest gamma-ray burst ever seen.",
+   "label": [
+    "GRB 250702B",
+    "LONGEST GAMMA-RAY BURST EVER SEEN"
+   ],
+   "yt_chapter": "A Black Hole Eats a Star"
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005586/late_stage_bigscreen_HD.mp4",
+   "start": 0,
+   "move": "out",
+   "min": 6,
+   "text": "So... would you take the trip? Tell us in the comments, and subscribe. The universe is stranger than you think.",
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE FOR MORE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 2,
+  "text": "Inside a Black Hole",
+  "sub": "NASA simulation"
+ },
+ "youtube": {
+  "title": "What Happens If You Fall Into a Black Hole? (NASA Simulation)",
+  "description": "What would really happen if you fell into a black hole? Using a NASA supercomputer simulation, we follow the fall step by step: the glowing accretion disk, spaghettification, the event horizon, and the 12.8 seconds that follow.\n\nIn this video:\n• What a black hole really is\n• Why we can see the back of the accretion disk\n• Spaghettification explained\n• Why time slows down near the event horizon\n• The black hole that devoured a star in 2025\n\nWould you take the trip? Tell us in the comments 👇\nSubscribe for more strange-but-true science: the universe is stranger than you think.",
+  "tags": [
+   "black hole",
+   "falling into a black hole",
+   "NASA black hole simulation",
+   "event horizon",
+   "spaghettification",
+   "black hole explained",
+   "what happens inside a black hole",
+   "Sagittarius A*",
+   "accretion disk",
+   "space documentary",
+   "astronomy",
+   "astrophysics",
+   "science explained",
+   "space facts",
+   "oddly logical science"
+  ],
+  "hashtags": [
+   "blackhole",
+   "space",
+   "NASA",
+   "science",
+   "astronomy"
+  ],
+  "translations": {
+   "French": "Que se passe-t-il si on tombe dans un trou noir ? (Simulation NASA)",
+   "Spanish": "¿Qué pasa si caes en un agujero negro? (Simulación de la NASA)",
+   "Portuguese": "O que acontece se você cair em um buraco negro? (Simulação da NASA)",
+   "German": "Was passiert, wenn man in ein Schwarzes Loch fällt? (NASA-Simulation)",
+   "Hindi": "अगर आप ब्लैक होल में गिर जाएं तो क्या होगा? (NASA सिमुलेशन)"
+  }
+ }
+}

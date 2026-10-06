@@ -1,0 +1,232 @@
+{
+ "title": "It Rains on the Sun (v2.1)",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA/GSFC/SDO, NASA Scientific Visualization Studio",
+ "scenes": [
+  {
+   "kind": "intro",
+   "min": 4.0
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Magnificent_Eruption_Mk_II-overlay.mp4",
+   "start": 1,
+   "move": "in",
+   "lead": 0.6,
+   "text": "This is the Sun. And right now... it is raining fire."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_SDOBursts_large.mp4",
+   "start": 12,
+   "move": "out",
+   "min": 4.2,
+   "title": [
+    "IT RAINS ON THE SUN",
+    "ODDLY LOGICAL SCIENCE"
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Oct2_Eruption_2.mp4",
+   "start": 6,
+   "move": "left",
+   "text": "Giant loops of plasma, millions of degrees hot, rise high above the surface, guided by invisible magnetic fields.",
+   "label": [
+    "CORONAL LOOPS",
+    "PLASMA · OVER 1,000,000 °C"
+   ],
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Oct2_Eruption_2.mp4",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_SDOBursts_large.mp4",
+     "start": 15,
+     "move": "in"
+    }
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "HOW CORONAL RAIN FORMS",
+   "elements": [
+    {
+     "type": "arc",
+     "c": [
+      960,
+      1700
+     ],
+     "r": 900,
+     "a0": 62,
+     "a1": 118,
+     "color": "orange",
+     "width": 12
+    },
+    {
+     "type": "text",
+     "text": "THE SUN'S SURFACE",
+     "at": [
+      960,
+      890
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "arc",
+     "c": [
+      960,
+      800
+     ],
+     "r": 270,
+     "a0": 180,
+     "a1": 0,
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "MAGNETIC FIELD LOOP",
+     "at": [
+      960,
+      480
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      640,
+      790
+     ],
+     "to": [
+      655,
+      600
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "HOT PLASMA RISES",
+     "at": [
+      600,
+      690
+     ],
+     "anchor": "rm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "drops",
+     "at": [
+      [
+       1250,
+       560
+      ],
+      [
+       1250,
+       620
+      ],
+      [
+       1250,
+       680
+      ]
+     ],
+     "len": 200,
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1300,
+      560
+     ],
+     "to": [
+      1300,
+      780
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "COOLS & FALLS AS RAIN",
+     "at": [
+      1340,
+      670
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "blue"
+    }
+   ],
+   "min": 7.5,
+   "text": "Here's how it works. Magnetic fields trap the hot plasma in giant loops. When it cools down, it gets heavier... and rains back onto the surface."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+   "start": 5,
+   "move": "in",
+   "text": "Then the plasma cools, condenses, and falls back down. Scientists call it coronal rain.",
+   "label": [
+    "CORONAL RAIN",
+    "FALLING AT UP TO 100 KM/S"
+   ],
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+     "start": 5,
+     "move": "in"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/Magnificent_Eruption_Mk_II-overlay.mp4",
+     "start": 9,
+     "move": "right"
+    }
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_July2017Sunspot_1080_large.mp4",
+   "start": 14,
+   "move": "right",
+   "text": "And the scale is hard to imagine. See that tiny dot? That's the Earth.",
+   "label": [
+    "SUNSPOT AR2665 · JULY 2017",
+    "EARTH SHOWN TO SCALE"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 1000000,
+   "suffix": " °C",
+   "caption": "THE SUN'S ATMOSPHERE  ·  SURFACE: ABOUT 5,500 °C",
+   "min": 4.5,
+   "text": "Its surface is about five thousand five hundred degrees. Its atmosphere? Over a million."
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014500/a014592/20240514_AR13664X87_171A_4k.mp4",
+   "start": 0,
+   "move": "in",
+   "text": "But here's the strangest part. The Sun's atmosphere is hundreds of times hotter than its surface. And nobody knows exactly why.",
+   "label": [
+    "THE CORONAL HEATING PROBLEM",
+    "STILL UNSOLVED"
+   ]
+  },
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a012200/a012292/LARGE_MP4-12292_SDOBursts_large.mp4",
+   "start": 20,
+   "move": "out",
+   "min": 5,
+   "text": "Subscribe. The universe is stranger than you think.",
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE FOR MORE"
+   ]
+  }
+ ]
+}

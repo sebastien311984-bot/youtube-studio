@@ -1,0 +1,42 @@
+name: Render videos
+# Monte automatiquement chaque épisode ajouté ou modifié dans channels/oddly-logical/episodes/
+# Les MP4 sont téléchargeables dans l'onglet Actions > run > Artifacts.
+on:
+  push:
+    paths: ["channels/*/episodes/**.json"]
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Chemin d'un épisode (vide = tous)"
+        required: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: Dépendances
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          curl -sSL -o inter.zip https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+          sudo mkdir -p /usr/share/fonts/opentype/inter && sudo unzip -q -j -o inter.zip 'extras/otf/*' -d /usr/share/fonts/opentype/inter && fc-cache -f
+          pip install -q edge-tts numpy pillow
+      - name: Épisodes à monter
+        id: list
+        run: |
+          if [ -n "${{ github.event.inputs.episode }}" ]; then echo "files=${{ github.event.inputs.episode }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "push" ]; then echo "files=$((git diff --name-only HEAD~1 HEAD -- 'channels/*/episodes/*.json' 2>/dev/null || true) | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          else echo "files=$(ls channels/*/episodes/*.json | tr '\n' ' ')" >> $GITHUB_OUTPUT; fi
+      - name: Rendu
+        run: |
+          mkdir -p out
+          for f in ${{ steps.list.outputs.files }}; do
+            [ -f "$f" ] || continue
+            python3 engine/render.py "$f" clips "out/$(basename "$f" .json).mp4"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: out/*
+          retention-days: 30
