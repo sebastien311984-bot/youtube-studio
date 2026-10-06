@@ -54,6 +54,7 @@ Types de scènes (`kind`) :
 | `quiz` | `question`, `options` (2 à 4), `answer` (index), `min` ≥ 6 | quiz avec compte à rebours de 3 s, réponse révélée (engagement) |
 | `kinetic` | `words` [3 à 6 mots] | typographie choc, mot par mot |
 | `rank` | `number`, `title_rank`, `sub` | carton « #3 » pour les vidéos Top N |
+| plan réel Pixabay | `clip` = `"pixabay:requête en anglais"` (ajouter `#2` pour le 3e résultat) | nature, océans, animaux, météo : la vidéo HD est cherchée et téléchargée au rendu (secret GitHub PIXABAY_API_KEY), sans attribution obligatoire. Requêtes précises (« octopus underwater close up »). |
 | plan réel avec photo | `clip` = URL .jpg/.png | photo NASA animée par un travelling ; la NASA a des dizaines de milliers d'images |
 
 Couleurs disponibles : gold, red, blue, green, purple, white, orange.

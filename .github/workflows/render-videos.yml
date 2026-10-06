@@ -29,6 +29,8 @@ jobs:
           elif [ "${{ github.event_name }}" = "push" ]; then echo "files=$((git diff --name-only HEAD~1 HEAD -- 'channels/*/episodes/*.json' 2>/dev/null || true) | tr '\n' ' ')" >> $GITHUB_OUTPUT
           else echo "files=$(ls channels/*/episodes/*.json | tr '\n' ' ')" >> $GITHUB_OUTPUT; fi
       - name: Rendu
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           mkdir -p out
           for f in ${{ steps.list.outputs.files }}; do

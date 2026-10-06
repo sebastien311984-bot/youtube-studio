@@ -29,6 +29,16 @@ def tts(text, voice, path):
 
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
+    if src.startswith("pixabay:"):  # « pixabay:requête[#rang] » : recherche au moment du rendu (clé dans le secret GitHub)
+        import urllib.request, urllib.parse
+        q, _, rank = src[8:].partition("#"); key = os.environ.get("PIXABAY_API_KEY", "")
+        if not key: raise SystemExit("PIXABAY_API_KEY manquant (secret GitHub)")
+        url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": 20, "safesearch": "true"})
+        hits = json.load(urllib.request.urlopen(url, timeout=40))["hits"]
+        hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
+        if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
+        v = hits[min(int(rank or 0), len(hits) - 1)]["videos"]
+        src = v["large"]["url"] if v["large"]["url"] else v["medium"]["url"]
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
     if not os.path.exists(local): sh("curl", "-sSL", "--retry", "3", "-o", local, src)
