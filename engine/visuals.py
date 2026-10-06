@@ -15,7 +15,7 @@ def smooth(x): x = max(0.0, min(1.0, x)); return x * x * (3 - 2 * x)
 
 def _writer(out, d):
     return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
-                             "-i", "-", "-t", str(d), "-c:v", "libx264", "-preset", "fast", "-crf", "16", "-pix_fmt", "yuv420p", out],
+                             "-i", "-", "-t", str(d), "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-pix_fmt", "yuv420p", out],
                             stdin=subprocess.PIPE)
 
 def _render(out, d, frame_fn):

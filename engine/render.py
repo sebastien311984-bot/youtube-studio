@@ -47,7 +47,7 @@ def clip(src, start, d, out, move):
     vf += "eq=contrast=1.08:saturation=1.12:gamma=0.97,vignette=PI/5,fps=30,format=yuv420p"
     still = src.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp"))
     inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-stream_loop", "-1", "-ss", str(start), "-t", str(d), "-i", src]
-    sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "16", out)
+    sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "19", out)
 
 def ass_time(t): t = max(0, t); return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
@@ -248,7 +248,7 @@ def main(ep_path, clips_dir, out):
     with wave.open(wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
     sh("ffmpeg", "-v", "error", "-y", *inputs, "-i", wav, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", f"{len(scenes)}:a",
-       "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
+       "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)
