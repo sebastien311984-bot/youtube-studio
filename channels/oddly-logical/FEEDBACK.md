@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — SOUND DESIGN cinématique obligatoire : musique de fond adaptée au thème, petits sons pros (whoosh aux transitions, impacts sur les chiffres, riser + silence avant les révélations, ambiance du lieu). Il compense la voix de synthèse. Ne jamais régresser là-dessus.
+
 - 2026-10-07 — Doublages : voix DYNAMIQUES, convaincantes, fun (garder l'auditeur). Moteur : même voix énergique que la chaîne (Andrew Multilingual) dans toutes les langues, débit +6 % ; traducteur : ton YouTubeur natif, phrases courtes. Images toujours cohérentes avec l'histoire ; zéro régression d'une vidéo à l'autre.
 
 - 2026-10-07 — RECADRAGE de l'utilisateur : « pas professionnel, pas expert » : infos mal transmises entre discussions, images non accordées au texte, manque de vérification. Réponse : continuité via main (début/fin de chaque discussion), revue finale image/texte obligatoire (`_review.jpg`), jamais livrer sans avoir regardé, et dire honnêtement ce qui n'a pas été vérifié.
