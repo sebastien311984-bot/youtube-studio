@@ -9,6 +9,8 @@ on:
       episode:
         description: "Chemin d'un épisode (vide = tous)"
         required: false
+permissions:
+  contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -35,9 +37,28 @@ jobs:
           mkdir -p out
           for f in ${{ steps.list.outputs.files }}; do
             [ -f "$f" ] || continue
-            python3 engine/render.py "$f" clips "out/$(basename "$f" .json).mp4"
+            n=$(basename "$f" .json)
+            set -o pipefail
+            if ! python3 engine/render.py "$f" clips "out/$n.mp4" 2>&1 | tee "out/${n}_render.log"; then
+              tail -40 "out/${n}_render.log" | while IFS= read -r l; do echo "::error::$l"; done
+              exit 1
+            fi
           done
+      - name: Planche de contrôle (poussée sur la branche review/)
+        if: always()
+        run: |
+          mkdir -p review
+          cp out/*_render.log review/ 2>/dev/null || true
+          for v in out/*.mp4; do [ -f "$v" ] || continue; n=$(basename "$v" .mp4)
+            ffmpeg -loglevel error -y -i "$v" -vf "fps=1/4,scale=320:-1,tile=8x10" -q:v 4 "review/${n}_sheet_%02d.jpg" || true
+            ffprobe -v error -show_entries format=duration -of csv=p=0 "$v" > "review/${n}_duration.txt" || true
+          done
+          ls review | grep -q . || exit 0
+          git config user.name render-bot; git config user.email render-bot@users.noreply.github.com
+          git checkout --orphan "review/${{ github.run_id }}"; git rm -rq --cached . ; git add review; git commit -qm "review ${{ github.run_id }}"
+          git push -q origin "HEAD:refs/heads/review/${{ github.run_id }}"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: videos
           path: out/*
