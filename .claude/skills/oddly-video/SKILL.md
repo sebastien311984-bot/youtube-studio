@@ -5,6 +5,12 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 
 # Oddly Logical Science — processus de production (v2, à faire évoluer)
 
+## Esprit (à lire en premier)
+- Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
+- Avant d'écrire, se poser 3 questions et les écrire en 3 lignes dans le brief à l'agent : **Quelle émotion ? Quelle image inoubliable ? Qu'est-ce qui rend CETTE vidéo différente des précédentes ?** Le style (rythme, couleurs, formats, musique) découle des réponses.
+- Les règles techniques (plans, courbes, longueurs) sont dans le code : `engine/check_episode.py` avant chaque push, et le moteur se protège seul. Inutile de les répéter dans les consignes.
+- En cas de doute : moins d'effets, mieux choisis. Relire le résultat comme un spectateur, pas comme un contrôleur.
+
 ## Déroulé d'une vidéo (« machine de guerre »)
 1. Lire `channels/oddly-logical/FEEDBACK.md` (prioritaire) et prendre le premier sujet non fait dans `channels/oddly-logical/TOPICS.md`.
 2. Déléguer l'écriture à l'agent **oddly-scriptwriter** (modèle sonnet, moins coûteux) : il cherche les plans et écrit `channels/oddly-logical/episodes/<slug>.json`.
@@ -23,10 +29,8 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 4. **Mesure** : noter CTR et rétention à 30 s dans VIDEOS.md 48 h après chaque publication ; bilan après ~20 vidéos.
 5. **Plus tard** : version française (piste audio YouTube ou 2e chaîne).
 
-## Garde-fous qualité (avant push)
-- Chaque scène de plans réels utilise `shots` : 1 plan différent toutes les 4-5 s de voix (le moteur complète automatiquement sinon).
-- Requêtes Pixabay variées et courtes (2-3 mots) ; jamais deux fois la même vidéo (le moteur l'empêche).
-- Après rendu : vérifier le journal (« plans générés automatiquement », « plan réutilisé ») et ne jamais affirmer qu'il n'y a pas de doublon sans l'avoir contrôlé.
+## Garde-fous (dans le code)
+`python3 engine/check_episode.py <épisode>` avant push ; après rendu, lire le journal (« plans générés », « plan réutilisé ») avant d'affirmer quoi que ce soit.
 
 ## Règle d'or : économiser les tokens
 - **Ne jamais faire de rendu complet en local.** On pousse l'épisode JSON, et GitHub Actions fait le rendu (0 token).
