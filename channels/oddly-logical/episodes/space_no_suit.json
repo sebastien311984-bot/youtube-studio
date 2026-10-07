@@ -1,0 +1,589 @@
+{
+ "title": "What Happens to Your Body in Space Without a Suit?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA Scientific Visualization Studio, NASA/ISS imagery, NASA Goddard; Pixabay (free license).",
+ "scenes": [
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+   "start": 6,
+   "move": "in",
+   "lead": 0.3,
+   "text": "You have fifteen seconds. What happens to your body in space without a suit?",
+   "min": 5.5,
+   "yt_chapter": "You have 15 seconds"
+  },
+  {
+   "kind": "intro",
+   "min": 4.0
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:astronaut space",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:earth orbit",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:space station",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Your suit just failed. No air. No pressure. Stay until the end, because one man lived through it, and what he remembered is stranger than any movie.",
+   "lead": 0.4
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO SUIT",
+    "NO AIR",
+    "NO TIME"
+   ],
+   "text": "This is a real-time countdown.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "start": 6,
+     "move": "out"
+    }
+   ],
+   "text": "Welcome to the vacuum of space.",
+   "title": [
+    "SPACE WITHOUT A SUIT",
+    "ODDLY LOGICAL SCIENCE"
+   ],
+   "min": 4.2,
+   "teaser": "THE FIRST 15 SECONDS"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:rocket launch",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014700/a014785/KATHY_SAFE_VERSION.mp4",
+     "start": 3,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:stars night sky",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:heartbeat monitor",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:blue light dark",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Second zero. The air in your suit rushes out. Rule one: do not hold your breath. The pressure difference could tear your lungs, so you exhale. For about ten seconds you stay awake. Then oxygen-poor blood reaches your brain and you black out, usually within ten to fifteen seconds.",
+   "chapter": [
+    "CHAPTER 1",
+    "WHAT HAPPENS IN THE FIRST 15 SECONDS?"
+   ],
+   "yt_chapter": "What happens in the first 15 seconds?",
+   "label": [
+    "0 TO 10 SECONDS",
+    "Air leaves your lungs"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 15,
+   "suffix": " s",
+   "caption": "ABOUT HOW LONG YOU STAY CONSCIOUS",
+   "text": "Around fifteen seconds. Then, the world goes dark.",
+   "min": 5,
+   "fact": "Oxygen-poor blood reaches the brain in\\Nabout 10 seconds, so you black out fast."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:dark space void",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031383/pettit-electrostatic-displays-1080pa.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:abstract dark particles",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:moon surface",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "You are drifting, unconscious, and the vacuum is only getting started. Gas trapped in your stomach and intestines expands. The moisture on your eyes and tongue begins to evaporate. You feel none of it, because your brain has already switched off. Every second now is a second closer to the point of no return.",
+   "teaser": "DOES YOUR BLOOD BOIL?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031388/Artemis_II_Science-AVATAR_Horizontal.mp4",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:water bubbles boiling",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:balloon inflating",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:steam rising",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:space astronaut floating",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Here is the first myth. You do not explode. Your skin is tough and elastic enough to hold you together. But something strange begins. Water in your mouth, your eyes and your tissues starts turning to vapor, because at near zero pressure water boils at body temperature. Your body swells, possibly to nearly twice its size.",
+   "chapter": [
+    "CHAPTER 2",
+    "DOES YOUR BLOOD BOIL IN SPACE?"
+   ],
+   "yt_chapter": "Does your blood boil in space?",
+   "label": [
+    "EBULLISM",
+    "Water turns to vapor"
+   ],
+   "fact": "Your skin keeps you from bursting\\Nin a vacuum."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:spacewalk astronaut",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:space suit helmet",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:earth horizon sunrise",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:oxygen tank",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:glove hand",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "This swelling has a name: ebullism. And it is exactly why astronauts wear a suit. A spacesuit is really a tiny spaceship around your body. It holds pure oxygen at about a third of the pressure at sea level, just enough to keep your fluids liquid and your lungs working. Without it, you are protected by nothing but your own skin.",
+   "label": [
+    "THE SUIT'S JOB",
+    "A mini spaceship"
+   ]
+  },
+  {
+   "kind": "versus",
+   "heading": "WHAT BOILS, WHAT DOESN'T",
+   "text": "But your blood does not boil. It stays sealed inside your vessels, which keep it under pressure. Soft tissues swell. Your blood stays liquid.",
+   "min": 8,
+   "left": {
+    "name": "TISSUES",
+    "color": "orange",
+    "stats": [
+     "Water turns to vapor",
+     "Body swells",
+     "Painful, but survivable"
+    ]
+   },
+   "right": {
+    "name": "BLOOD",
+    "color": "blue",
+    "stats": [
+     "Kept under pressure",
+     "Stays liquid",
+     "Does NOT boil"
+    ]
+   }
+  },
+  {
+   "kind": "quiz",
+   "question": "What happens to your blood in a vacuum?",
+   "options": [
+    "It explodes",
+    "It boils instantly",
+    "It stays liquid",
+    "It freezes solid"
+   ],
+   "answer": 2,
+   "min": 7,
+   "text": "Quick test. What happens to your blood?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:frost ice crystals",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Now let's check the second myth.",
+   "min": 3.5,
+   "teaser": "WOULD YOU FREEZE?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014874/14874_060925_TVAC-Part1_1080_YouTube.mp4",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:sun rays space",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:snow cold winter",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:desert sun heat",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:thermometer cold",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "You would not freeze instantly. Space is cold, but it is also almost empty, and with no air to carry heat away, your body loses warmth slowly, only by radiation. The evaporating moisture on your skin cools you a little. And in direct sunlight, unfiltered ultraviolet light would burn you. Freezing is the least of your problems.",
+   "chapter": [
+    "CHAPTER 3",
+    "WOULD YOU FREEZE OR EXPLODE?"
+   ],
+   "yt_chapter": "Would you freeze or explode in space?",
+   "label": [
+    "NO AIR, NO HEAT TRANSFER",
+    "Cooling is slow"
+   ]
+  },
+  {
+   "kind": "timeline",
+   "heading": "YOUR BODY, SECOND BY SECOND",
+   "text": "So here is the timeline. Zero seconds, the air leaves. Ten, the last oxygen reaches your brain. Fifteen, you pass out. Thirty seconds, your tissues swell. Around ninety seconds, your circulation is failing. And after a few minutes, death is likely.",
+   "min": 12,
+   "events": [
+    {
+     "year": "0 s",
+     "text": "Air leaves\nyour lungs"
+    },
+    {
+     "year": "10 s",
+     "text": "Last oxygen\nreaches brain"
+    },
+    {
+     "year": "15 s",
+     "text": "You pass out"
+    },
+    {
+     "year": "30 s",
+     "text": "Tissues swell"
+    },
+    {
+     "year": "90 s",
+     "text": "Circulation\nfailing"
+    },
+    {
+     "year": "A few min",
+     "text": "Death likely"
+    }
+   ],
+   "fact": "Death comes from lack of oxygen, not\\Nexplosion or freezing."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:lonely planet orbit",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:silhouette dark sky",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:slow motion floating",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "And no, you would not be torn apart, flash frozen or turned inside out. You would simply run out of oxygen, quietly, in a place where nobody can hear you. That is the real horror of it: how ordinary the end is."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:clock ticking",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "But the clock is not the end of the story.",
+   "min": 3.5,
+   "teaser": "COULD YOU SURVIVE?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:laboratory test chamber",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:technician working lab",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:hospital corridor",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:sleeping person",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Here is the twist. Time is what kills you, not space itself. In 1966, NASA technician Jim LeBlanc was testing a suit in a near-vacuum chamber when his suit's air hose came loose. He said the last thing he remembered was the water on his tongue starting to boil. He passed out in about fourteen seconds. Technicians repressurized the chamber, and he woke up, with no lasting harm.",
+   "chapter": [
+    "CHAPTER 4",
+    "COULD YOU SURVIVE WITHOUT A SUIT?"
+   ],
+   "yt_chapter": "Could you survive in space without a suit?",
+   "label": [
+    "1966 NASA VACUUM TEST",
+    "Jim LeBlanc"
+   ],
+   "fact": "LeBlanc survived thanks to fast\\Nrepressurization."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:emergency medical",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:oxygen mask",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:doctor monitor",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Why ninety seconds? In nineteen sixties animal experiments, dogs exposed to near-vacuum for up to about ninety seconds usually recovered. After that, survival dropped. Chimpanzees did a little better. So ninety seconds is a rough rescue window, not a guarantee.",
+   "label": [
+    "THE RESCUE WINDOW",
+    "Brain and heart"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 90,
+   "suffix": " s",
+   "caption": "RESCUE WINDOW, ACCORDING TO ANIMAL TESTS",
+   "text": "Animal experiments suggest recovery is possible if pressure returns within about ninety seconds.",
+   "min": 6
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "start": 3,
+     "move": "right"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "start": 6,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:night sky stars",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Not everyone was so lucky. In June nineteen seventy-one, a valve opened on Soyuz 11 before re-entry, and the crew of three, without pressure suits, died.",
+   "label": [
+    "SOYUZ 11",
+    "1971"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014934/ARTEMIS_II_ROLL-INS_1.mp4",
+     "start": 3,
+     "move": "left"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:astronaut helmet",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:airlock door",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:orbit sunrise",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:rescue team",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Now the cruel part. A rescue in orbit means a partner dragging you back to an airlock, then waiting for it to refill with air. That takes far longer than ninety seconds. So the answer: you have about fifteen seconds to act, and about ninety to be saved. In orbit, no rescue is that fast. That is why astronauts trust the suit."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "15 SECONDS",
+    "90 SECONDS",
+    "ONE SUIT"
+   ],
+   "text": "Fifteen seconds. Ninety seconds. One suit.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "start": 3,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:earth from space",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Now tell us in the comments. Would you hold your breath, or exhale? If this made your heart race, subscribe to Oddly Logical Science for more science that feels real.",
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE"
+   ],
+   "min": 6
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "15 SECONDS",
+  "sub": "NO SUIT",
+  "shift": 0.2,
+  "circle": true
+ },
+ "shorts": [
+  {
+   "from": 5,
+   "to": 7,
+   "title": "You Have 15 Seconds in Space Without a Suit"
+  },
+  {
+   "from": 8,
+   "to": 9,
+   "title": "Does Your Blood Boil in Space?"
+  },
+  {
+   "from": 17,
+   "to": 19,
+   "title": "The Man Who Survived a Vacuum"
+  }
+ ],
+ "youtube": {
+  "title": "Space Without a Suit: Your Body Second by Second",
+  "description": "What happens to your body in space without a suit? You would not explode and your blood would not boil, but you would have about 15 seconds before blacking out. Follow the real-time countdown, from the first second to the 90-second rescue window.\n\nIn this video:\n- What happens in the first 15 seconds\n- Does your blood boil in space?\n- Would you freeze or explode?\n- Could you survive without a suit? (1966 NASA accident, Soyuz 11)\n\nFAQ\nHow long can you survive in space without a suit? You stay conscious about 15 seconds; recovery may be possible if pressure returns within about 90 seconds.\nDoes your blood boil in space? No, it stays under pressure in your vessels, though water in tissues vaporizes.\nWould you freeze instantly? No, heat loss is slow in a vacuum.\n\nWould you hold your breath or exhale? Tell us below.",
+  "tags": [
+   "space without a suit",
+   "what happens in space without a spacesuit",
+   "vacuum of space human body",
+   "does blood boil in space",
+   "ebullism",
+   "can you survive in space",
+   "Jim LeBlanc",
+   "Soyuz 11",
+   "how long can you survive in space",
+   "what if you were in space without a suit",
+   "NASA",
+   "astronaut",
+   "space facts"
+  ],
+  "hashtags": [
+   "#space",
+   "#science",
+   "#NASA"
+  ],
+  "translations": {
+   "fr": "Sans combinaison dans l'espace : ton corps seconde par seconde",
+   "es": "Sin traje en el espacio: tu cuerpo segundo a segundo",
+   "pt": "Sem traje no espaço: seu corpo segundo a segundo",
+   "de": "Ohne Raumanzug im All: dein Körper Sekunde für Sekunde",
+   "hi": "स्पेससूट के बिना अंतरिक्ष: आपका शरीर सेकंड दर सेकंड"
+  }
+ }
+}
