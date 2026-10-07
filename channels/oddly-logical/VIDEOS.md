@@ -9,6 +9,7 @@ Tenu à jour par Claude à chaque étape. Statuts : ✍️ écrite · 🎬 rendu
 | 3 | deep_sea_creatures | The Deadliest Creatures of the Deep Sea | ~9,5 min | ❌ abandonnée (rushs répétés, sujet faible) | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37572392657/artifacts/11462516612 (v2 sans doublons) | — | thème Terre/océans (varier) |
 | 4 | space_no_suit | What Happens to Your Body in Space Without a Suit? | ~5 min | ✅ validée (revue image/texte faite), doublée 6 langues | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37625207793/artifacts/11485131251 | — | 1re vidéo stratégie « TOI », 5:22, photos NASA |
 | 5 | outrun_tsunami | Could You Outrun a Tsunami? The Sign That Saves You | ~5:20 | ✍️ écrite + doublée (6 langues), rendu en cours | — | — | thème Terre/catastrophes, angle TOI ; 18 images NASA + Pixabay (Wikimedia/NOAA inaccessibles depuis la session) |
+| 6 | inside_hurricane | Could You Survive Inside a Hurricane? | ~3:20 | 🎬 rendue (photos ISS + schémas, sans doublage) | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37651201925/artifacts/11497687204 | — | Terre/catastrophes, 100 % photos NASA, sans doublage (quota) |
 
 ## Autres vidéos de la chaîne (faites hors de ce dépôt, planning mis à jour le 6 oct. 2026 : 1 vidéo/jour du 7 au 11 oct.)
 | Titre | Durée | Statut |

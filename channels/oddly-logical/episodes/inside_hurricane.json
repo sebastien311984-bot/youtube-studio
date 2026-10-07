@@ -1,0 +1,1359 @@
+{
+ "title": "Could You Survive Inside a Hurricane?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA (ISS crew photography; public domain). Facts: NOAA National Hurricane Center, NASA. Surge-death share: Rappaport 2014, Bulletin of the AMS.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss057e023128/iss057e023128~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14882/iss007e14882~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "This is the eye of a hurricane. A hole in the storm, tens of kilometers wide. Now imagine you are standing inside it. Could you survive?",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive inside a hurricane?"
+  },
+  {
+   "kind": "intro",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162190/iss056e162190~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162187/iss056e162187~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14756/iss007e14756~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "A Category 4 hurricane is heading for your coast. Everyone tells you to run from the wind. But stay with me, because the wind is not the biggest killer.",
+   "lead": 0.4,
+   "label": [
+    "HURRICANE",
+    "Could you survive it?"
+   ],
+   "teaser": "HOW A HURRICANE IS BORN"
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE HEAT ENGINE",
+   "elements": [
+    {
+     "type": "curve",
+     "pts": [
+      [
+       100,
+       800
+      ],
+      [
+       380,
+       760
+      ],
+      [
+       660,
+       800
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       660,
+       800
+      ],
+      [
+       940,
+       840
+      ],
+      [
+       1220,
+       800
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1220,
+       800
+      ],
+      [
+       1500,
+       760
+      ],
+      [
+       1820,
+       800
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "WARM OCEAN: 26°C+",
+     "at": [
+      960,
+      930
+     ],
+     "anchor": "mm",
+     "size": 48,
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      560,
+      740
+     ],
+     "to": [
+      560,
+      480
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      760
+     ],
+     "to": [
+      960,
+      480
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1360,
+      740
+     ],
+     "to": [
+      1360,
+      480
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "WARM, MOIST AIR RISES",
+     "at": [
+      960,
+      420
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "orange"
+    },
+    {
+     "type": "circle",
+     "c": [
+      800,
+      290
+     ],
+     "r": 70,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      260
+     ],
+     "r": 85,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      1120,
+      290
+     ],
+     "r": 70,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "VAPOR BECOMES CLOUD",
+     "at": [
+      1300,
+      190
+     ],
+     "anchor": "lm",
+     "size": 36,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "AND RELEASES HEAT",
+     "at": [
+      1300,
+      240
+     ],
+     "anchor": "lm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "MORE HEAT",
+     "at": [
+      250,
+      330
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "= MORE LIFT",
+     "at": [
+      250,
+      390
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    }
+   ],
+   "min": 10,
+   "text": "A hurricane is a heat engine. Its fuel is warm ocean water, above about twenty-six degrees Celsius. That water feeds moist air upward. As the vapor condenses into cloud, it releases heat, and that heat powers even more rising air.",
+   "chapter": [
+    "CHAPTER 1",
+    "HOW DOES A HURRICANE FORM?"
+   ],
+   "yt_chapter": "How does a hurricane form?"
+  },
+  {
+   "kind": "diagram",
+   "heading": "WHY IT SPINS",
+   "elements": [
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1300,
+       600
+      ],
+      [
+       1159,
+       363
+      ],
+      [
+       929,
+       484
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      973,
+      461
+     ],
+     "to": [
+      929,
+      484
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       960,
+       260
+      ],
+      [
+       723,
+       401
+      ],
+      [
+       844,
+       631
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      821,
+      587
+     ],
+     "to": [
+      844,
+      631
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       620,
+       600
+      ],
+      [
+       761,
+       837
+      ],
+      [
+       991,
+       716
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      947,
+      739
+     ],
+     "to": [
+      991,
+      716
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       960,
+       940
+      ],
+      [
+       1197,
+       799
+      ],
+      [
+       1076,
+       569
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1099,
+      613
+     ],
+     "to": [
+      1076,
+      569
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      600
+     ],
+     "r": 55,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "LOW",
+     "at": [
+      960,
+      600
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "AIR RUSHES IN",
+     "at": [
+      250,
+      260
+     ],
+     "anchor": "lm",
+     "size": 46,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "EARTH'S ROTATION BENDS IT",
+     "at": [
+      1250,
+      260
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "...INTO A SPIN",
+     "at": [
+      1250,
+      320
+     ],
+     "anchor": "lm",
+     "size": 46,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "COUNTERCLOCKWISE IN THE NORTH",
+     "at": [
+      960,
+      1010
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "ink"
+    }
+   ],
+   "min": 10,
+   "text": "Rising air leaves low pressure at the surface, so more air rushes in. Earth's rotation bends its path, and the whole system starts to spin, counterclockwise in the Northern Hemisphere.",
+   "fact": "Same storm: hurricane in the Atlantic,\\Ntyphoon in the northwest Pacific."
+  },
+  {
+   "kind": "timeline",
+   "heading": "THE SAFFIR-SIMPSON SCALE",
+   "text": "Once winds pass one hundred nineteen kilometers per hour, a storm earns the name hurricane. The Saffir-Simpson scale rates them from one to five. Your storm, Category Four, starts at two hundred nine.",
+   "events": [
+    {
+     "year": "CAT 1",
+     "text": "119-153 km/h"
+    },
+    {
+     "year": "CAT 2",
+     "text": "154-177 km/h"
+    },
+    {
+     "year": "CAT 3",
+     "text": "178-208 km/h"
+    },
+    {
+     "year": "CAT 4",
+     "text": "209-251 km/h"
+    },
+    {
+     "year": "CAT 5",
+     "text": "252+ km/h"
+    }
+   ],
+   "min": 12,
+   "teaser": "INSIDE THE EYEWALL"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14883/iss007e14883~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14745/iss007e14745~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14887/iss007e14887~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14893/iss007e14893~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Now you walk toward the center. First comes the eyewall, a ring of the fiercest thunderstorms, with the strongest winds of the whole storm. Trees snap, roofs peel away, and debris flies like missiles.",
+   "chapter": [
+    "CHAPTER 2",
+    "WHAT IS INSIDE THE EYE?"
+   ],
+   "yt_chapter": "What is inside the eye of a hurricane?",
+   "label": [
+    "THE EYEWALL",
+    "Strongest winds"
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "CROSSING THE STORM",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      200,
+      880
+     ],
+     "to": [
+      1750,
+      880
+     ],
+     "color": "ink",
+     "width": 6
+    },
+    {
+     "type": "line",
+     "from": [
+      200,
+      880
+     ],
+     "to": [
+      200,
+      250
+     ],
+     "color": "ink",
+     "width": 6
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       250,
+       850
+      ],
+      [
+       520,
+       840
+      ],
+      [
+       620,
+       380
+      ]
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       620,
+       380
+      ],
+      [
+       700,
+       860
+      ],
+      [
+       960,
+       850
+      ]
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       960,
+       850
+      ],
+      [
+       1220,
+       860
+      ],
+      [
+       1300,
+       380
+      ]
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1300,
+       380
+      ],
+      [
+       1400,
+       840
+      ],
+      [
+       1670,
+       850
+      ]
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "EYEWALL",
+     "at": [
+      620,
+      330
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "EYEWALL",
+     "at": [
+      1300,
+      330
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "THE EYE",
+     "at": [
+      960,
+      760
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "green"
+    },
+    {
+     "type": "text",
+     "text": "WIND SPEED",
+     "at": [
+      230,
+      230
+     ],
+     "anchor": "lm",
+     "size": 36,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "DISTANCE ACROSS THE STORM  ->",
+     "at": [
+      960,
+      960
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "ink"
+    }
+   ],
+   "min": 9,
+   "text": "Cross the eyewall, and the wind collapses. Within a few kilometers, it falls from the worst of the storm to something light."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss011e13532/iss011e13532~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14892/iss007e14892~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14750/iss007e14750~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Suddenly, it is quiet. The clouds part, and you may see blue sky, or even stars at night. It feels like the storm is over.",
+   "label": [
+    "THE EYE",
+    "Calm, for a while"
+   ],
+   "fact": "Eyes are often tens of km wide, so the\\Ncalm can pass in under an hour."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "THE CALM",
+    "IS A TRAP"
+   ],
+   "text": "Do not believe it.",
+   "min": 4
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE OTHER SIDE OF THE EYE",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      610
+     ],
+     "r": 200,
+     "color": "green",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      610
+     ],
+     "r": 290,
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      610
+     ],
+     "r": 16,
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "YOU",
+     "at": [
+      960,
+      670
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "EYE",
+     "at": [
+      960,
+      550
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "green"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      570,
+      460
+     ],
+     "to": [
+      570,
+      760
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1350,
+      760
+     ],
+     "to": [
+      1350,
+      460
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      700,
+      260
+     ],
+     "to": [
+      1250,
+      260
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "THE EYE MOVES ON",
+     "at": [
+      960,
+      205
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "WIND FROM ONE SIDE",
+     "at": [
+      480,
+      940
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "THEN THE OPPOSITE WAY",
+     "at": [
+      1440,
+      940
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "THE WIND IS BACK, FROM THE OTHER DIRECTION",
+     "at": [
+      960,
+      1030
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "ink"
+    }
+   ],
+   "min": 10,
+   "text": "Because the eye keeps moving. The far side of the eyewall arrives, and the wind returns from the opposite direction. People who step outside in the eye get caught in the open.",
+   "teaser": "THE REAL KILLER"
+  },
+  {
+   "kind": "quiz",
+   "question": "What causes the most deaths in hurricanes?",
+   "options": [
+    "Wind",
+    "Water",
+    "Lightning"
+   ],
+   "answer": 1,
+   "min": 6,
+   "text": "Quick test. What causes the most deaths in hurricanes?"
+  },
+  {
+   "kind": "diagram",
+   "heading": "STORM SURGE",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      100,
+      740
+     ],
+     "to": [
+      450,
+      740
+     ],
+     "color": "blue",
+     "width": 6
+    },
+    {
+     "type": "text",
+     "text": "NORMAL SEA LEVEL",
+     "at": [
+      270,
+      790
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "blue"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       450,
+       740
+      ],
+      [
+       800,
+       730
+      ],
+      [
+       1000,
+       430
+      ]
+     ],
+     "color": "blue",
+     "width": 11
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1000,
+       430
+      ],
+      [
+       1400,
+       400
+      ],
+      [
+       1850,
+       560
+      ]
+     ],
+     "color": "blue",
+     "width": 11
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       700,
+       900
+      ],
+      [
+       1000,
+       860
+      ],
+      [
+       1850,
+       860
+      ]
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      1560,
+      860
+     ],
+     "to": [
+      1560,
+      760
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1560,
+      760
+     ],
+     "to": [
+      1700,
+      760
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1700,
+      760
+     ],
+     "to": [
+      1700,
+      860
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1530,
+      760
+     ],
+     "to": [
+      1630,
+      690
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1630,
+      690
+     ],
+     "to": [
+      1730,
+      760
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      120,
+      300
+     ],
+     "to": [
+      650,
+      300
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      120,
+      390
+     ],
+     "to": [
+      650,
+      390
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "WINDS PUSH THE SEA ASHORE",
+     "at": [
+      400,
+      230
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "STORM SURGE",
+     "at": [
+      1250,
+      320
+     ],
+     "anchor": "mm",
+     "size": 52,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "KATRINA, 2005: OVER 8 METERS",
+     "at": [
+      1250,
+      260
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "ink"
+    }
+   ],
+   "min": 10,
+   "text": "Water. Storm surge is a dome of seawater pushed ashore by the storm's winds. In 2005, Katrina's surge topped eight meters on the Mississippi coast.",
+   "chapter": [
+    "CHAPTER 3",
+    "WHAT ACTUALLY KILLS PEOPLE?"
+   ],
+   "yt_chapter": "What kills the most people in a hurricane?"
+  },
+  {
+   "kind": "stat",
+   "value": 49,
+   "suffix": "%",
+   "caption": "OF US HURRICANE DEATHS, 1963-2012, WERE FROM STORM SURGE",
+   "text": "Looking at US hurricane deaths from 1963 to 2012, about half came from storm surge. Wind was a small share.",
+   "min": 6
+  },
+  {
+   "kind": "scale",
+   "heading": "THE SECOND FLOOD: RAIN",
+   "items": [
+    {
+     "label": "30 CM",
+     "size": 1,
+     "color": "blue",
+     "note": "moving water floats many cars"
+    },
+    {
+     "label": "100+ CM",
+     "size": 3.2,
+     "color": "red",
+     "note": "Harvey's rain, Texas 2017"
+    }
+   ],
+   "text": "Rain is the second flood. In 2017, Harvey stalled over Texas and dropped more than a meter of rain in places. And just thirty centimeters of moving water can float many cars.",
+   "min": 9,
+   "teaser": "CAN YOU SURVIVE?"
+  },
+  {
+   "kind": "versus",
+   "heading": "COULD YOU SURVIVE?",
+   "left": {
+    "name": "HURRICANE HUNTERS",
+    "color": "blue",
+    "stats": [
+     "Trained crew",
+     "Aircraft built for it",
+     "They fly out"
+    ]
+   },
+   "right": {
+    "name": "YOU",
+    "color": "red",
+    "stats": [
+     "A house, not a bunker",
+     "No outrunning the surge",
+     "Stuck until it ends"
+    ]
+   },
+   "text": "So, could you survive? Scientists do fly into and above hurricanes, and their data improves forecasts. But they are trained, they have the right aircraft, and they leave. You would be on the ground, in a house.",
+   "min": 10,
+   "chapter": [
+    "CHAPTER 4",
+    "COULD YOU SURVIVE?"
+   ],
+   "yt_chapter": "Could you survive a hurricane?"
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE REAL ANSWER",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      100,
+      850
+     ],
+     "to": [
+      700,
+      850
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "SEA",
+     "at": [
+      400,
+      780
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "blue"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       700,
+       850
+      ],
+      [
+       1200,
+       850
+      ],
+      [
+       1850,
+       380
+      ]
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "circle",
+     "c": [
+      830,
+      810
+     ],
+     "r": 22,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "YOU",
+     "at": [
+      830,
+      740
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "line",
+     "from": [
+      700,
+      930
+     ],
+     "to": [
+      1100,
+      930
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "SURGE ZONE",
+     "at": [
+      900,
+      990
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      900,
+      720
+     ],
+     "to": [
+      1700,
+      330
+     ],
+     "color": "green",
+     "width": 12
+    },
+    {
+     "type": "text",
+     "text": "INLAND + UPHILL",
+     "at": [
+      1100,
+      420
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "green"
+    }
+   ],
+   "min": 10,
+   "text": "The real answer is to leave. Evacuate when told, and go inland and uphill, well before the wind arrives. Forecasts now give days of warning, and that has saved countless lives."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "LEAVE EARLY",
+    "GO INLAND",
+    "LIVE"
+   ],
+   "text": "Leave early. Go inland. Live.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14741/iss007e14741~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162175/iss056e162175~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Would you stay, or go? Tell me in the comments, and subscribe to Oddly Logical Science for more stories where science meets survival.",
+   "lead": 0.3
+  },
+  {
+   "clip": "https://images-assets.nasa.gov/image/iss057e023128/iss057e023128~large.jpg",
+   "move": "out",
+   "min": 4,
+   "title": [
+    "ODDLY LOGICAL",
+    "SCIENCE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "THE CALM LIES",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Hurricane Eye: Could You Survive Inside One?",
+  "description": "Could you survive inside a hurricane? Follow a Category 4 storm to its eye and learn what really kills people: not the wind, but the water.\n\nIn this video:\n- How does a hurricane form?\n- What is inside the eye?\n- What actually kills people in a hurricane?\n- Could you survive?\n\nFAQ\nWhat is a hurricane? A tropical cyclone with sustained winds of at least 119 km/h (74 mph).\nIs the eye calm? Yes, for a while, but the opposite eyewall follows.\nWhat is the deadliest part? Water: storm surge and rain flooding.\n\nWould you stay or go? Tell me in the comments.\n\nSources: NOAA National Hurricane Center, NASA.",
+  "tags": [
+   "hurricane",
+   "hurricane eye",
+   "could you survive a hurricane",
+   "inside a hurricane",
+   "storm surge",
+   "category 5 hurricane",
+   "saffir-simpson scale",
+   "hurricane from space",
+   "NASA hurricane",
+   "hurricane katrina",
+   "hurricane harvey",
+   "eyewall",
+   "what is the eye of a hurricane"
+  ],
+  "hashtags": [
+   "#hurricane",
+   "#science",
+   "#NASA"
+  ]
+ },
+ "shorts": [
+  {
+   "from": 6,
+   "to": 10,
+   "title": "The Calm Inside the Eye Is a Trap"
+  },
+  {
+   "from": 12,
+   "to": 14,
+   "title": "What Really Kills in Hurricanes"
+  },
+  {
+   "from": 15,
+   "to": 17,
+   "title": "Could You Survive a Hurricane?"
+  }
+ ]
+}

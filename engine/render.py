@@ -320,7 +320,7 @@ def main(ep_path, clips_dir, out):
             JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))
-        events += captions(words, t + s.get("lead", 0.3))
+        if ep.get("burn_captions", False): events += captions(words, t + s.get("lead", 0.3))  # sous-titres incrustés désactivés : ils se superposent aux sous-titres YouTube et restent en anglais sur les pistes doublées
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
         if s.get("yt_chapter") or s.get("chapter"): yt_chapters.append((t, s.get("yt_chapter") or s["chapter"][1].title()))
         if s.get("kind") != "diagram" and s.get("kind") != "stat" and i == ep.get("thumbnail", {}).get("scene"): thumb_src = (cp, d)
@@ -384,7 +384,8 @@ Dans YouTube Studio (chaîne Oddly Logical Science), mets en ligne `{b}.mp4`.
 3. « Contenu modifié ou synthétique » : Non (sauf si `{b}_youtube.md` dit le contraire).
 4. Visibilité : Programmée (date/heure données par Claude). Ne jamais publier en Public sans accord.
 5. Onglet Langues → pour chaque fichier {', '.join(f'`{b}_{l}.m4a`' for l in langs) or '(aucun)'} : ajouter la langue → Piste audio → envoyer. Si l'option n'existe pas, s'arrêter et le signaler.
-6. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
+6. Après publication : épingler en commentaire la question finale de la vidéo, et créer un post Communauté « Quiz » (onglet Créer > Post > Quiz) reprenant le quiz de la vidéo avec un lien vers elle (si l'option Quiz n'est pas disponible, faire un Sondage).
+7. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
 """)
     make_shorts(ep, out, starts + [total])
     import publish_kit
