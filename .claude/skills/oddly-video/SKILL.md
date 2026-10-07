@@ -11,6 +11,7 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 - Toute leçon apprise va dans FEEDBACK.md (jamais seulement dans la conversation).
 
 ## Esprit (à lire en premier)
+- **Méthode validée (inside_hurricane, 07/10)** : découpage par images réelles qui montrent littéralement la phrase + schémas animés pour les idées + histoire serrée en chapitres. Garder cette façon de faire ; ne pas modifier le moteur pendant une production.
 - **Réfléchir avant d'appliquer** : les règles ci-dessous sont la mémoire des erreurs passées, pas un script. Aucune vidéo n'est « la référence » à copier ; chaque sujet mérite ses propres choix. Si une règle produit un résultat absurde pour ce sujet, le jugement l'emporte (et on le note dans FEEDBACK).
 - **Pixabay interdit** (sauf accord explicite) : uniquement sources officielles/archives. Un sujet sans vraies images disponibles = mauvais sujet → en choisir un autre (en alternant les thèmes).
 - **Penser à tout, en chef de projet** : anticiper ce qui peut bloquer (branche non fusionnée, fichiers perdus, droits, licences, quotas, YouTube), le régler ou le signaler AVANT que l'utilisateur le découvre.

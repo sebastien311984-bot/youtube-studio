@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — ✅ « inside_hurricane » VALIDÉE : « beaucoup mieux » — intro, final, titres, chapitres, plans d'ensemble, images réalistes et cohérentes, explications claires. LA FAÇON DE PROCÉDER À GARDER : vraies photos uniquement quand elles montrent littéralement la phrase ; schémas animés pour toutes les explications ; histoire serrée (~3-4 min) en chapitres ; ouverture et miniature sur l'image la plus forte ; moteur figé pendant la production ; aucune promesse non tenue ni fait inventé.
+
 - 2026-10-07 — « space_no_suit » : promesse « reste jusqu'à la fin, un homme a survécu… » mal tenue (histoire au milieu, pas de vrai témoignage) = tromperie perçue. Ne jamais promettre ce que la vidéo ne livre pas exactement, au moment annoncé.
 
 - 2026-10-07 — Encore un plan hors sujet (chambre de test NASA sur « vous ne gèleriez pas »). Racine : vouloir ~60 % de plans réels force des photos « d'ambiance ». Désormais : plan réel uniquement s'il montre littéralement la phrase, sinon infographie/schéma animé.
