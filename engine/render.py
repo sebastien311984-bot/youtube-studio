@@ -10,6 +10,8 @@ import visuals
 W, H, FPS, SR, XF = 1920, 1080, 30, 44100, 0.6
 CA = "/root/.ccr/ca-bundle.crt"
 
+from concurrent.futures import ThreadPoolExecutor
+
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
 
@@ -288,9 +290,10 @@ def main(ep_path, clips_dir, out):
             sd = (d + XF) / len(shots); parts = []
             ws = s.get("text", "").split(); k = max(1, len(ws) // len(shots))
             review += [(t + (j + 0.5) * sd, " ".join(ws[j * k:(j + 1) * k]), f"{i}.{j}") for j in range(len(shots))]
-            for j, sh_ in enumerate(shots):
-                pp = os.path.join(work, f"c{i}_{j}.mp4"); parts.append(pp)
-                clip(fetch(sh_["clip"], clips_dir), sh_.get("start", 0), sd, pp, sh_.get("move", "in"))
+            srcs = [fetch(sh_["clip"], clips_dir) for sh_ in shots]  # séquentiel : garde l'anti-doublon Pixabay
+            parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
+            with ThreadPoolExecutor(4) as ex:  # encodage des plans en parallèle (4 cœurs du runner)
+                list(ex.map(lambda a: clip(a[0], a[1].get("start", 0), sd, a[2], a[1].get("move", "in")), zip(srcs, shots, parts)))
             if len(parts) == 1: os.replace(parts[0], cp)
             else:
                 lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
@@ -339,8 +342,9 @@ def main(ep_path, clips_dir, out):
     voice_slots = [(st, d - (st - t0) - 0.2) for (_, d, vp, st), t0 in zip(scenes, starts)]
     json.dump({"total": total, "starts": starts, "slots": voice_slots, "risers": risers, "cuts": cuts},
               open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
-    for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
-        dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
+    with ThreadPoolExecutor(6) as ex:  # pistes audio doublées en parallèle (même musique, même minutage)
+        list(ex.map(lambda lt: dub_track(ep, lt[0], lt[1], voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lt[0]}.m4a")),
+                    ep.get("dub", {}).items()))
     review_sheet(out, review)
     make_shorts(ep, out, starts + [total])
     import publish_kit
