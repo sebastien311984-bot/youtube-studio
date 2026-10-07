@@ -10,7 +10,10 @@ import visuals
 W, H, FPS, SR, XF = 1920, 1080, 30, 44100, 0.6
 CA = "/root/.ccr/ca-bundle.crt"
 
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+import time
+JOBS, CONCATS = [], []
+def _run(job): job[0](*job[1])
 
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
@@ -284,15 +287,15 @@ def main(ep_path, clips_dir, out):
         vd = dur(vp) if words else 0
         d = max(s.get("min", 0), vd + s.get("pad", 0.7) + s.get("lead", 0.3))
         cp = os.path.join(work, f"c{i}.mp4"); kind = s.get("kind", "footage")
-        if kind == "intro": visuals.intro(cp, d + XF)
-        elif kind == "diagram": visuals.diagram(cp, d + XF, s["elements"], s.get("heading"))
-        elif kind == "stat": visuals.bigstat(cp, d + XF, s["value"], s.get("prefix", ""), s.get("suffix", ""), s.get("caption", ""))
-        elif kind == "scale": visuals.scale(cp, d + XF, s["items"], s.get("heading", ""))
-        elif kind == "timeline": visuals.timeline(cp, d + XF, s["events"], s.get("heading", ""))
-        elif kind == "versus": visuals.versus(cp, d + XF, s["left"], s["right"], s.get("heading", ""))
-        elif kind == "quiz": visuals.quiz(cp, d + XF, s["question"], s["options"], s["answer"])
-        elif kind == "kinetic": visuals.kinetic(cp, d + XF, s["words"])
-        elif kind == "rank": visuals.rank(cp, d + XF, s["number"], s["title_rank"], s.get("sub", ""))
+        if kind == "intro": JOBS.append((visuals.intro, (cp, d + XF)))
+        elif kind == "diagram": JOBS.append((visuals.diagram, (cp, d + XF, s["elements"], s.get("heading"))))
+        elif kind == "stat": JOBS.append((visuals.bigstat, (cp, d + XF, s["value"], s.get("prefix", ""), s.get("suffix", ""), s.get("caption", ""))))
+        elif kind == "scale": JOBS.append((visuals.scale, (cp, d + XF, s["items"], s.get("heading", ""))))
+        elif kind == "timeline": JOBS.append((visuals.timeline, (cp, d + XF, s["events"], s.get("heading", ""))))
+        elif kind == "versus": JOBS.append((visuals.versus, (cp, d + XF, s["left"], s["right"], s.get("heading", ""))))
+        elif kind == "quiz": JOBS.append((visuals.quiz, (cp, d + XF, s["question"], s["options"], s["answer"])))
+        elif kind == "kinetic": JOBS.append((visuals.kinetic, (cp, d + XF, s["words"])))
+        elif kind == "rank": JOBS.append((visuals.rank, (cp, d + XF, s["number"], s["title_rank"], s.get("sub", ""))))
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
             shots = s.get("shots") or [{"clip": s["clip"], "start": s.get("start", 0), "move": s.get("move", "in")}]
@@ -314,12 +317,8 @@ def main(ep_path, clips_dir, out):
                 srcs = [srcs[keep[j % len(keep)]] for j in range(len(srcs))]
                 shots = [dict(shots[keep[j % len(keep)]], start=shots[keep[j % len(keep)]].get("start", 0) + (j // len(keep)) * 4.5) for j in range(len(shots))]
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
-            with ThreadPoolExecutor(4) as ex:  # encodage des plans en parallèle (4 cœurs du runner)
-                list(ex.map(lambda a: clip(a[0], a[1].get("start", 0), sd, a[2], a[1].get("move", "in")), zip(srcs, shots, parts)))
-            if len(parts) == 1: os.replace(parts[0], cp)
-            else:
-                lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
-                sh("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cp)
+            JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
+            CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))
         events += captions(words, t + s.get("lead", 0.3))
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
@@ -347,6 +346,15 @@ def main(ep_path, clips_dir, out):
     ass = os.path.join(work, "subs.ass"); open(ass, "w").write(ASS_HEAD + "\n".join(events) + "\n")
     fc.append(f"[{prev}]ass={ass}:fontsdir=/usr/share/fonts/opentype/inter,fade=t=in:st=0:d=1,fade=t=out:st={total - 1.5:.2f}:d=1.5[v]")
     # audio : voix placées + musique
+    t0 = time.time()  # toutes les scènes (infographies + plans) rendues en parallèle sur les 4 cœurs
+    with ProcessPoolExecutor(4) as ex:
+        for f in [ex.submit(_run, j) for j in JOBS]: f.result()
+    for parts, cp, i in CONCATS:
+        if len(parts) == 1: os.replace(parts[0], cp)
+        else:
+            lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
+            sh("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cp)
+    print(f"Scènes rendues en {time.time() - t0:.0f} s ({len(JOBS)} tâches en parallèle)")
     n = int(total * SR); vtrack = np.zeros(n)
     for _, _, vp, st in scenes:
         if not vp: continue
