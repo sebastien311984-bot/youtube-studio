@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — RECADRAGE de l'utilisateur : « pas professionnel, pas expert » : infos mal transmises entre discussions, images non accordées au texte, manque de vérification. Réponse : continuité via main (début/fin de chaque discussion), revue finale image/texte obligatoire (`_review.jpg`), jamais livrer sans avoir regardé, et dire honnêtement ce qui n'a pas été vérifié.
+
 - 2026-10-07 — « space_no_suit » : casserole qui bout, fumée = images-métaphores jugées hors sujet. Règle : chaque plan montre CE QUE dit la voix (le vrai objet, le vrai lieu, la vraie personne) ; pas de métaphore visuelle générique. Si rien de réel n'existe → infographie/diagramme maison plutôt qu'un stock « illustratif ».
 
 - 2026-10-07 — STOP ESPACE pour un moment (Soleil, Carrington, espace : trop). Prochaines vidéos : corps humain, Terre, catastrophes, animaux, histoire.
