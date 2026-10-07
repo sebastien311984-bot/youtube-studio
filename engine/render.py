@@ -226,11 +226,26 @@ def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
     sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "aac", "-b:a", "160k", out)
 
+def review_sheet(video, review):
+    """Planche de revue : chaque plan réel avec la phrase dite au même moment, pour vérifier que l'image montre ce que dit la voix."""
+    from PIL import Image, ImageDraw
+    W, H, C = 320, 230, 6; rows = (len(review) + C - 1) // C; sheet = Image.new("RGB", (C * W, max(1, rows) * H), "white"); dr = ImageDraw.Draw(sheet)
+    for n, (tm, txt, tag) in enumerate(review):
+        x, y = (n % C) * W, (n // C) * H; fr = video + f".r{n}.jpg"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{tm:.2f}", "-i", video, "-frames:v", "1", "-vf", "scale=316:-2", fr])
+        try: sheet.paste(Image.open(fr), (x + 2, y + 2)); os.remove(fr)
+        except Exception: pass
+        lines = [txt[a:a + 52] for a in range(0, min(len(txt), 156), 52)]
+        dr.text((x + 4, y + 182), f"[{tag}] " + (lines[0] if lines else ""), fill="black")
+        for m, l in enumerate(lines[1:]): dr.text((x + 4, y + 196 + 14 * m), l, fill="black")
+    sheet.save(video.replace(".mp4", "_review.jpg"), quality=85)
+
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
     voice = ep.get("voice", "en-US-AndrewMultilingualNeural")
     scenes, t, events, cuts = [], 0.0, [], []
     srt_words, yt_chapters, thumb_src, starts, trans = [], [], None, [], []
+    review = []  # (instant, texte dit à ce moment, scène.plan) → planche de revue image/texte
     for i, s in enumerate(ep["scenes"]):
         vp = os.path.join(work, f"v{i}.mp3")
         words = tts(s["text"], voice, vp) if s.get("text") else []
@@ -257,6 +272,8 @@ def main(ep_path, clips_dir, out):
                 shots = [dict(shots[j % len(shots)], move=moves[j % 4],
                               start=shots[j % len(shots)].get("start", 0) + (j // len(shots)) * 4.5) for j in range(need)]
             sd = (d + XF) / len(shots); parts = []
+            ws = s.get("text", "").split(); k = max(1, len(ws) // len(shots))
+            review += [(t + (j + 0.5) * sd, " ".join(ws[j * k:(j + 1) * k]), f"{i}.{j}") for j in range(len(shots))]
             for j, sh_ in enumerate(shots):
                 pp = os.path.join(work, f"c{i}_{j}.mp4"); parts.append(pp)
                 clip(fetch(sh_["clip"], clips_dir), sh_.get("start", 0), sd, pp, sh_.get("move", "in"))
@@ -310,6 +327,7 @@ def main(ep_path, clips_dir, out):
               open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
     for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
         dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
+    review_sheet(out, review)
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)
