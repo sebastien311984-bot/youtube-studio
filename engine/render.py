@@ -80,7 +80,11 @@ def fetch(src, clips_dir):
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
     if not os.path.exists(local):
-        t0 = time.time(); sh("curl", "-sSL", "--retry", "3", "--max-time", "300", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src)
+        t0 = time.time()
+        r = subprocess.run(["curl", "-sSLf", "--retry", "2", "--max-time", "120", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src])
+        if r.returncode != 0:  # source trop lente ou absente : on retire le plan au lieu de bloquer tout le rendu
+            if os.path.exists(local): os.remove(local)
+            print(f"Téléchargement abandonné ({time.time() - t0:.0f} s) → plan retiré : {src.rsplit('/', 1)[-1][:60]}", flush=True); return None
         print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
     return local
 

@@ -814,11 +814,6 @@
           "move": "in"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Tsunami_Animation-_Tohoku%2C_Japan_2011_%28rotating_globe%29.webm",
-          "start": 14,
-          "move": "left"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2011Sendai-NOAA-Energylhvpd9-05.jpg",
           "start": 0,
           "move": "right"
