@@ -6,9 +6,12 @@
     {
       "shots": [
         {
-          "clip": "pixabay:tsunami warning siren",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:35633",
+          "start": 0
+        },
+        {
+          "clip": "pixabay:id:235662",
+          "start": 0
         }
       ],
       "lead": 0.3,
@@ -24,19 +27,16 @@
     {
       "shots": [
         {
-          "clip": "pixabay:people walking beach",
-          "start": 0,
-          "move": "in"
+          "clip": "pixabay:id:158100",
+          "start": 0
         },
         {
-          "clip": "pixabay:empty beach waves",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:217067",
+          "start": 0
         },
         {
-          "clip": "pixabay:ocean shoreline",
-          "start": 0,
-          "move": "right"
+          "clip": "pixabay:id:176303",
+          "start": 0
         }
       ],
       "lead": 0.4,
@@ -77,14 +77,12 @@
     {
       "shots": [
         {
-          "clip": "pixabay:earthquake damage",
-          "start": 0,
-          "move": "in"
+          "clip": "pixabay:id:186247",
+          "start": 0
         },
         {
-          "clip": "pixabay:receding wave sand",
-          "start": 0,
-          "move": "out"
+          "clip": "pixabay:id:116222",
+          "start": 0
         }
       ],
       "chapter": [
@@ -108,9 +106,8 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:school classroom children",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:215471",
+          "start": 0
         },
         {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsunami_Evacuation_Route_Sign_Thailand.jpg",
@@ -132,9 +129,8 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:exposed seabed beach tide out",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:198488",
+          "start": 0
         }
       ],
       "label": [
@@ -375,14 +371,12 @@
     {
       "shots": [
         {
-          "clip": "pixabay:waves crashing beach",
-          "start": 0,
-          "move": "in"
+          "clip": "pixabay:id:283533",
+          "start": 0
         },
         {
-          "clip": "pixabay:fishing boats harbor",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:201766",
+          "start": 0
         }
       ],
       "min": 3.5,
@@ -500,11 +494,6 @@
     {
       "shots": [
         {
-          "clip": "pixabay:traffic jam",
-          "start": 0,
-          "move": "in"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tsunami_evacuation_route_sign%2C_New_Zealand.jpg",
           "start": 0,
           "move": "left"
@@ -513,6 +502,10 @@
           "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tsunami_evacuation_sign_in_Old_San_Juan_Puerto_Rico_April_2015.png",
           "start": 0,
           "move": "right"
+        },
+        {
+          "clip": "pixabay:id:140078",
+          "start": 0
         }
       ],
       "label": [
@@ -693,14 +686,12 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:people climbing stairs hill",
-          "start": 0,
-          "move": "left"
+          "clip": "pixabay:id:6384",
+          "start": 0
         },
         {
-          "clip": "pixabay:hillside overlooking coast",
-          "start": 0,
-          "move": "right"
+          "clip": "pixabay:id:160477",
+          "start": 0
         }
       ],
       "title": [
