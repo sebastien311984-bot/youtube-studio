@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — « space_no_suit » : promesse « reste jusqu'à la fin, un homme a survécu… » mal tenue (histoire au milieu, pas de vrai témoignage) = tromperie perçue. Ne jamais promettre ce que la vidéo ne livre pas exactement, au moment annoncé.
+
 - 2026-10-07 — Encore un plan hors sujet (chambre de test NASA sur « vous ne gèleriez pas »). Racine : vouloir ~60 % de plans réels force des photos « d'ambiance ». Désormais : plan réel uniquement s'il montre littéralement la phrase, sinon infographie/schéma animé.
 
 - 2026-10-07 — Sous-titres anglais INCRUSTÉS + sous-titres YouTube = superposition, et anglais sur la version doublée. Désormais pas d'incrustation (burn_captions=false par défaut) : on fournit le .srt, YouTube traduit. Piste audio FR : vérifier dans Studio > Langues qu'elle est bien publiée ; le spectateur la choisit via ⚙ > Piste audio.
