@@ -1,6 +1,10 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — SOUND DESIGN cinématique obligatoire : musique de fond adaptée au thème, petits sons pros (whoosh aux transitions, impacts sur les chiffres, riser + silence avant les révélations, ambiance du lieu). Il compense la voix de synthèse. Ne jamais régresser là-dessus.
+
+- 2026-10-07 — Doublages : voix DYNAMIQUES, convaincantes, fun (garder l'auditeur). Moteur : voix natives/multilingues + tons dynamiques par scène (version fusionnée des deux discussions) ; traducteur : ton YouTubeur natif, phrases courtes. Images toujours cohérentes avec l'histoire ; zéro régression d'une vidéo à l'autre.
+
 - 2026-10-07 — PLUSIEURS DISCUSSIONS EN PARALLÈLE : ne JAMAIS annuler un rendu GitHub Actions d'une autre branche que la sienne (outrun_tsunami annulé 2 fois par une autre discussion). Filtrer par `head_branch` avant tout cancel.
 
 - 2026-10-07 — VOIX DOUBLÉES : doivent être dynamiques, convaincantes et fun pour retenir l'auditeur (style présentateur natif, phrases courtes, pas de calque de l'anglais) → règles dans oddly-translator.md. Moteur : tons par scène (`tone`) + voix réchauffée. Images : cohérence stricte avec l'histoire, zéro régression.

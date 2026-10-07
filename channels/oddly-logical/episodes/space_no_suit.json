@@ -76,13 +76,13 @@
      "move": "left"
     },
     {
-     "clip": "pixabay:heartbeat monitor",
+     "clip": "https://images-assets.nasa.gov/image/iss072e518461/iss072e518461~large.jpg",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/sts059-09-021/sts059-09-021~large.jpg",
-     "start": 6,
+     "clip": "https://images-assets.nasa.gov/image/iss045e082998/iss045e082998~large.jpg",
+     "start": 0,
      "move": "in"
     },
     {
@@ -124,7 +124,7 @@
      "move": "right"
     },
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031383/pettit-electrostatic-displays-1080pa.mp4",
+     "clip": "https://images-assets.nasa.gov/image/S65-29766/S65-29766~large.jpg",
      "start": 0,
      "move": "in"
     },
@@ -145,7 +145,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:water bubbles boiling",
+     "clip": "https://images-assets.nasa.gov/image/iss045e082968/iss045e082968~large.jpg",
      "start": 0,
      "move": "right"
     },
@@ -155,7 +155,7 @@
      "move": "in"
     },
     {
-     "clip": "pixabay:steam rising",
+     "clip": "https://images-assets.nasa.gov/image/s66-54454/s66-54454~large.jpg",
      "start": 0,
      "move": "out"
     },
@@ -256,7 +256,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:frost ice crystals",
+     "clip": "https://images-assets.nasa.gov/image/S65-34635/S65-34635~large.jpg",
      "start": 0,
      "move": "out"
     }
@@ -360,7 +360,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:clock ticking",
+     "clip": "https://images-assets.nasa.gov/image/iss010e21093/iss010e21093~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -382,8 +382,8 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/jsc2022e045254/jsc2022e045254~large.jpg",
-     "start": 3,
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001401/GSFC_20171208_Archive_e001401~large.jpg",
+     "start": 0,
      "move": "out"
     },
     {
@@ -417,8 +417,8 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/sl3-118-2182/sl3-118-2182~large.jpg",
-     "start": 6,
+     "clip": "https://images-assets.nasa.gov/image/MSFC-202100027/MSFC-202100027~large.jpg",
+     "start": 0,
      "move": "out"
     },
     {
