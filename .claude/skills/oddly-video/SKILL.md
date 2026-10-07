@@ -50,6 +50,9 @@ Musique de fond selon le thème + sound design : whoosh aux transitions, impact 
 ## Story-board AVANT rendu (gagne des heures)
 `python3 engine/storyboard.py <épisode> sb.jpg` (~20 s) : chaque plan + la phrase dite. Le regarder et corriger AVANT de pousser : un rendu = 30-40 min, une erreur vue après = un rendu de plus.
 
+## Fiche qualité obligatoire (sinon pas de livraison)
+Avant d'envoyer quoi que ce soit, écrire dans VIDEOS.md, ligne de la vidéo, une fiche QA : « miniature ≥ Carrington : oui/non (pourquoi) · ouverture = sujet : oui/non · plans revus : N/N justes · Pixabay : 0 ». Un seul « non » = on corrige, on ne livre pas. L'utilisateur ne doit jamais découvrir un défaut que la fiche aurait dû attraper.
+
 ## Anti-régression (comparer à la référence Carrington)
 Avant livraison : (1) ouvrir la miniature `_thumb.jpg` et la comparer à celle de Carrington (sujet net et choc, 2-3 mots énormes, contraste) — sinon refaire ; (2) les 5 premières secondes montrent le SUJET (pas d'aurore/fond générique) ; (3) aucun plan « à peu près » : juste ou remplacé.
 
