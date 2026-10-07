@@ -30,6 +30,8 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 5. **Plus tard** : version française (piste audio YouTube ou 2e chaîne).
 
 ## Garde-fous (dans le code)
+- Sources : officielles d'abord (images-api.nasa.gov fonctionne ici : URL `https://images-assets.nasa.gov/image/<id>/<id>~large.jpg`), Pixabay en dernier recours.
+- Avant push : planche contact des visuels (vignettes `~thumb`). Après rendu : planche `fps=1/4,tile=8x10` de la vidéo, regardée en entier.
 `python3 engine/check_episode.py <épisode>` avant push ; après rendu, lire le journal (« plans générés », « plan réutilisé ») avant d'affirmer quoi que ce soit.
 
 ## Règle d'or : économiser les tokens
