@@ -1,6 +1,20 @@
 # Sujets prioritaires (potentiel viral × images disponibles)
 Statut : [ ] à faire · [x] publié. Choisir en priorité « What if / Inside / Biggest / Deadliest ».
 
+## Rotation des thèmes (ne jamais enchaîner 2 fois le même)
+Corps humain → Terre/catastrophes → Animaux → Histoire/inventions → Physique du quotidien → Océans → Espace (rarement) → …
+Idées « Oddly Logical » (étrange mais logique) :
+- [ ] Why You Can't Tickle Yourself (corps)
+- [ ] What Happens to Your Body If You Don't Sleep for 11 Days (corps, cas Randy Gardner 1964)
+- [ ] The Lake That Suffocated 1,700 People in One Night (Terre, lac Nyos 1986)
+- [ ] Why Volcanic Lightning Happens (Terre)
+- [ ] The Animal That Never Dies (animaux, Turritopsis)
+- [ ] How Crows Remember Your Face for Years (animaux)
+- [ ] The Molasses Flood That Killed 21 People in Boston (histoire, 1919)
+- [ ] Why the Titanic's Steel Broke Like Glass (histoire/physique)
+- [ ] Why Ice Is Slippery (Nobody Knew Until Recently) (physique du quotidien)
+- [ ] Could You Survive Falling From a Plane Without a Parachute? (TOI, cas Vesna Vulović)
+
 ## Priorité stratégie « TOI » (2026-10-07)
 - [ ] What Happens to Your Body at the Bottom of the Mariana Trench?
 - [ ] Could You Survive One Minute on Every Planet?
