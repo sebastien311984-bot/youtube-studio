@@ -27,6 +27,8 @@ def tts(text, voice, path):
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
     asyncio.run(run()); return words
 
+PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
+
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
     if src.startswith("pixabay:"):  # « pixabay:requête[#rang] » : recherche au moment du rendu (clé dans le secret GitHub)
@@ -35,12 +37,16 @@ def fetch(src, clips_dir):
         if not key: raise SystemExit("PIXABAY_API_KEY manquant (secret GitHub)")
         words, hits = q.split(), []
         while words and not hits:  # Pixabay exige tous les mots : on raccourcit la requête jusqu'à trouver
-            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 20, "safesearch": "true"})
+            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 50, "safesearch": "true"})
             hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
             if not hits: print(f"Pixabay : aucun résultat pour {' '.join(words)!r}, requête raccourcie"); words = words[:-1]
         hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
         if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
-        v = hits[min(int(rank or 0), len(hits) - 1)]["videos"]
+        r = min(int(rank or 0), len(hits) - 1); hits = hits[r:] + hits[:r]
+        h = next((h for h in hits if h["id"] not in PIXA_USED), hits[0])
+        if h["id"] in PIXA_USED: print(f"Pixabay : plus de plan inédit pour {q!r}, plan réutilisé")
+        PIXA_USED.add(h["id"])
+        v = h["videos"]
         src = v["large"]["url"] if v["large"]["url"] else v["medium"]["url"]
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])

@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — « deep_sea » : mêmes plans répétés 3-4 fois (requêtes Pixabay proches → même 1er résultat). Corrigé : le moteur n'utilise jamais deux fois la même vidéo Pixabay. Règle : requêtes Pixabay toutes différentes et variées (animal, lumière, plongée, sous-marin, plancton…).
+
 - 2026-10-06 — Short : impossible de lier la vidéo longue tant qu'elle n'est pas en ligne → publier la longue d'abord, puis le Short avec « Vidéo associée ».
 
 - 2026-10-06 — Le style NE doit PAS être toujours pareil : palette, rythme, musique, polices de titres et transitions adaptés au sujet (abysses = bleu nuit/cyan bioluminescent, lent et oppressant ; volcan = orange/rouge, nerveux ; espace = violet/or, majestueux).
