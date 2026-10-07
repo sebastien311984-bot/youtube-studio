@@ -114,29 +114,14 @@ Options communes à toutes les scènes :
 Ajouts automatiques du moteur : barre de progression dorée avec repères de chapitres, encart « SUBSCRIBE » à 30 % de la durée (réglable avec `subscribe_at`), Shorts verticaux (`shorts` : [{from, to, title}], indices de scènes, 58 s maximum ; par défaut, l'accroche).
 - `title` [grand, petit] : titre plein écran.
 
-## Recette d'une vidéo addictive (checklist)
-1. **Cold open 0-5 s AVANT l'intro** (image la plus forte + question choc), puis intro. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
-2. **Titre plein écran** juste après l'accroche.
-3. **Des chapitres** toutes les 60 à 90 s (« CHAPTER 1 · ... ») avec une révélation chacun.
-4. **Varier les formats** : plan réel → chiffre choc → schéma → plan réel. Jamais deux scènes du même type d'affilée, sauf les plans réels. **Chaque vidéo d'environ 10 min** utilise au moins 6 types différents : 1 quiz, 1 scale ou versus, 1 timeline si le sujet a une histoire, 2 à 3 diagrams, 2 à 3 stats, 1 kinetic. Plans réels SEULEMENT quand une image montre littéralement ce qui est dit ; sinon (idée abstraite, explication, mécanisme) → schéma animé, chiffre, timeline, kinetic. Mieux vaut une infographie juste qu'un plan réel « d'ambiance ».
-4bis. **Rétention** : boucle ouverte dès l'accroche (« stay until the end for... »), teaser avant chaque chapitre, une révélation toutes les 60 à 90 s, et la promesse tenue à la fin.
-5. **Un encart « Did you know? »** toutes les 45 à 60 s, avec un fait surprenant et exact.
-6. **Un bandeau `label`** pour nommer chaque phénomène.
-7. **Une fin** : une question au spectateur (pour les commentaires), puis abonnement et le titre « ODDLY LOGICAL SCIENCE ».
-8. **Faits exacts et sourcés** ; les crédits vont dans la description YouTube.
-9. **Durée cible pour monétiser** : 8 à 12 minutes, soit 25 à 40 scènes (environ 2,6 mots prononcés par seconde, soit 1 300 à 1 800 mots). Au moins 8 minutes pour pouvoir placer des pubs au milieu de la vidéo.
-10. **SEO (YouTube + Google « moments clés »)** : chapitres formulés comme des questions recherchées, phrase-réponse en début de chapitre, description = résumé + mini-FAQ, SRT envoyé ; titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
-11. **Miniature** : 2 à 4 mots maximum, ne pas répéter le titre, une image choc à droite, un fort contraste.
-
-## Viser le spectaculaire
-- Chaque vidéo s'ouvre sur **l'image la plus rare ou la plus impressionnante** dont on dispose : archives de grands fonds, simulation NASA, éruption en gros plan. Jamais un plan banal en ouverture.
-- Mélanger les sources dans une même vidéo (NASA + Pixabay + Wikimedia) pour la variété, tout en gardant un étalonnage cohérent (le moteur le fait).
-- Les crédits de toutes les sources CC vont dans `credits` (repris automatiquement dans la description).
-
-## Effet de surprise (ce qui donne envie de regarder la suite)
-- À chaque vidéo, au moins **2 éléments inattendus** : un titre plein écran au milieu d'un chapitre (« BUT THERE'S A PROBLEM… »), un quiz surprise, un `kinetic` qui casse le rythme, une fausse fin (« But that's not the scariest part »).
-- **Varier d'une vidéo à l'autre** : ne jamais reprendre la même suite de formats ni les mêmes phrases d'accroche ; tourner sur tout le pack.
-- Un **cliffhanger** avant chaque chapitre (teaser) et une **question ouverte** dans l'accroche, résolue seulement à la fin.
+## Comment penser une vidéo (principes, pas quotas)
+Aucun chiffre de cette page n'est un objectif à remplir. On part de l'histoire, pas d'une grille.
+1. **Une question que le spectateur se pose vraiment**, posée dès les premières secondes sur l'image la plus forte du sujet, et une réponse donnée au compte-gouttes jusqu'à la fin.
+2. **Chaque scène doit mériter sa place** : elle apprend quelque chose, surprend ou fait monter la tension. Sinon on la coupe. La durée = ce que l'histoire porte, pas une cible.
+3. **Le visuel suit le sens** : on montre la chose réelle quand elle existe en image ; on dessine (schéma, chiffre, frise, mots chocs) quand c'est une idée. Jamais d'image « d'ambiance » pour boucher un trou.
+4. **Les formats du moteur sont des outils** (quiz, versus, timeline, encarts, chapitres, teasers…) : on en utilise un quand il sert l'histoire, pas pour cocher une variété.
+5. **Relire comme un spectateur exigeant** : est-ce que je m'ennuie, est-ce que je doute d'une image, est-ce que je cliquerais ? Corriger avant de livrer.
+6. **Faits exacts et prudents**, crédits dans `credits`.
 
 ## Pistes d'amélioration du moteur (à faire plus tard, par ordre de priorité)
 1. Variantes de style des infographies : palettes par thème (Soleil = orange, espace profond = violet, Terre = bleu).
@@ -160,7 +145,7 @@ Publier n'est possible qu'après une connexion OAuth du compte YouTube par l'uti
 Ne jamais publier en Public sans accord explicite : envoyer d'abord en « Non répertoriée » ou « Privée », puis l'utilisateur valide.
 
 ## Livrables YouTube à donner avec chaque vidéo
-Titre (moins de 60 caractères, curiosité), description avec chapitres horodatés et crédits, 10 à 15 tags, idée de miniature (une image choc et 2 ou 3 mots).
+Titre court qui donne envie de cliquer, description avec chapitres horodatés et crédits, tags pertinents, miniature forte (une image choc et 2 ou 3 mots).
 
 ## Historique et améliorations
 - v0 : voix Edge TTS, sous-titres mot à mot, travellings, fondus, musique synthétisée avec ducking.
