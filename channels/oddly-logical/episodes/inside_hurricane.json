@@ -1,0 +1,436 @@
+{
+ "title": "Could You Survive Inside a Hurricane?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA (ISS crew photography, Space Shuttle photography, JPL/MISR/AIRS imagery, Kennedy Space Center and Stennis damage surveys, GRIP and Global Hawk photography; public domain). Facts: NOAA National Hurricane Center, NASA.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14882/iss007e14882~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14892/iss007e14892~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "This is the eye of a hurricane. Could you survive standing inside it?",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive inside a hurricane?"
+  },
+  {
+   "kind": "intro",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162190/iss056e162190~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/0401558/0401558~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14756/iss007e14756~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "A Category 4 hurricane is coming for your coast. Stay until the end, and I will show you what really kills people. It is not the wind.",
+   "lead": 0.4,
+   "label": [
+    "HURRICANE",
+    "Could you survive it?"
+   ],
+   "teaser": "HOW A HURRICANE IS BORN"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162187/iss056e162187~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss011e13532/iss011e13532~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162202/iss056e162202~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts066-150-090/sts066-150-090~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "A hurricane is a giant heat engine. Warm ocean water, above about twenty-six degrees Celsius, feeds it moisture. Rising air spins as Earth rotates, and the storm organizes into a rotating wall of thunderstorms hundreds of kilometers wide.",
+   "chapter": [
+    "CHAPTER 1",
+    "HOW DOES A HURRICANE FORM?"
+   ],
+   "yt_chapter": "How does a hurricane form?",
+   "label": [
+    "TROPICAL CYCLONE",
+    "Fuelled by warm water"
+   ],
+   "fact": "Same storm: hurricane in the Atlantic,\\Ntyphoon in the northwest Pacific."
+  },
+  {
+   "kind": "stat",
+   "value": 74,
+   "suffix": " mph",
+   "caption": "WIND SPEED WHERE A STORM BECOMES A HURRICANE",
+   "text": "At seventy-four miles per hour, or one hundred nineteen kilometers per hour, a tropical storm earns the name hurricane.",
+   "min": 5
+  },
+  {
+   "kind": "timeline",
+   "heading": "THE SAFFIR-SIMPSON SCALE",
+   "text": "The Saffir-Simpson scale rates hurricanes from one to five. Category five means sustained winds above two hundred fifty-two kilometers per hour. Category four, your storm, starts at two hundred nine.",
+   "events": [
+    {
+     "year": "CAT 1",
+     "text": "119-153 km/h"
+    },
+    {
+     "year": "CAT 2",
+     "text": "154-177 km/h"
+    },
+    {
+     "year": "CAT 3",
+     "text": "178-208 km/h"
+    },
+    {
+     "year": "CAT 4",
+     "text": "209-251 km/h"
+    },
+    {
+     "year": "CAT 5",
+     "text": "252+ km/h"
+    }
+   ],
+   "min": 12,
+   "teaser": "INSIDE THE EYEWALL"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts043-073-099/sts043-073-099~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14883/iss007e14883~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14745/iss007e14745~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss008e19646/iss008e19646~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Now you reach the center. First comes the eyewall, a ring of the fiercest thunderstorms, with the strongest winds of the whole storm. Trees snap, roofs peel away, and debris flies like missiles.",
+   "chapter": [
+    "CHAPTER 2",
+    "WHAT IS INSIDE THE EYE?"
+   ],
+   "yt_chapter": "What is inside the eye of a hurricane?",
+   "label": [
+    "THE EYEWALL",
+    "Strongest winds"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14887/iss007e14887~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/0401559/0401559~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss005e15375/iss005e15375~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Then, suddenly, it stops. In the eye the wind drops, the clouds part, and you may see blue sky, or even stars. It feels like the storm is over.",
+   "label": [
+    "THE EYE",
+    "Calm, for a while"
+   ],
+   "fact": "Eyes are often tens of km wide, so the\\Ncalm can pass in under an hour."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "THE CALM",
+    "IS A TRAP"
+   ],
+   "text": "It is not over.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14893/iss007e14893~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14750/iss007e14750~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss065e319500/iss065e319500~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "As the eye moves on, the opposite eyewall arrives, and the wind returns from the opposite direction. People who step outside in the eye can be caught in the open.",
+   "teaser": "THE REAL KILLER"
+  },
+  {
+   "kind": "quiz",
+   "question": "What causes the most deaths in hurricanes?",
+   "options": [
+    "Wind",
+    "Water",
+    "Lightning"
+   ],
+   "answer": 1,
+   "min": 6,
+   "text": "Quick test. What causes the most deaths in hurricanes?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss014e08179/iss014e08179~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/jsc2005e37988/jsc2005e37988~orig.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA04385/PIA04385~orig.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/jsc2005e37989/jsc2005e37989~orig.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Water. Storm surge is a dome of seawater pushed ashore by the winds, and it is the deadliest part of a hurricane. In 2005, surge and flooding from Katrina swamped much of the Gulf Coast, including most of New Orleans.",
+   "chapter": [
+    "CHAPTER 3",
+    "WHAT ACTUALLY KILLS PEOPLE?"
+   ],
+   "yt_chapter": "What kills the most people in a hurricane?",
+   "label": [
+    "STORM SURGE",
+    "The deadliest part"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 30,
+   "suffix": " cm",
+   "caption": "OF MOVING WATER CAN FLOAT MANY CARS",
+   "text": "Just thirty centimeters of moving water can float many cars.",
+   "min": 5
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21885/PIA21885~orig.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21927/PIA21927~orig.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21932/PIA21932~orig.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Rain adds a second flood. In 2017, Hurricane Harvey stalled over Texas and dropped more than a meter of rain in places, flooding huge areas for days.",
+   "label": [
+    "HURRICANE HARVEY",
+    "2017"
+   ],
+   "fact": "A slow hurricane can be as deadly as a\\Nstrong one: the rain keeps falling.",
+   "teaser": "CAN YOU SURVIVE?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss063e074380/iss063e074380~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss072e057797_alt/iss072e057797_alt~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss072e029590_alt/iss072e029590_alt~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "So can you survive? Scientists do fly into and above these storms, with aircraft like NASA's DC-8 and Global Hawk, and their data improves forecasts. But they are trained, and they leave.",
+   "chapter": [
+    "CHAPTER 4",
+    "COULD YOU SURVIVE?"
+   ],
+   "yt_chapter": "Could you survive a hurricane?",
+   "label": [
+    "NASA RESEARCH",
+    "Flying into storms"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss057e023128/iss057e023128~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss057e023131/iss057e023131~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss057e023121/iss057e023121~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss011e13544/iss011e13544~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "The real answer is to leave. Surge can destroy buildings, and a roof is no shelter from the sea. Evacuate when told, and go inland and uphill. Forecasts now give days of warning, which has saved countless lives.",
+   "label": [
+    "THE REAL ANSWER",
+    "Leave early"
+   ]
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "LEAVE EARLY",
+    "GO INLAND",
+    "LIVE"
+   ],
+   "text": "Leave early. Go inland. Live.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss007e14741/iss007e14741~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss056e162175/iss056e162175~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Would you stay, or go? Tell me in the comments. Subscribe to Oddly Logical Science for more stories where science meets survival.",
+   "lead": 0.3
+  },
+  {
+   "kind": "title",
+   "min": 4,
+   "title": [
+    "ODDLY LOGICAL",
+    "SCIENCE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "INSIDE THE EYE",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Hurricane Eye: Could You Survive Inside One?",
+  "description": "Could you survive inside a hurricane? Follow a Category 4 storm to its eye and learn what really kills people: not the wind, but the water.\n\nIn this video:\n- How does a hurricane form?\n- What is inside the eye?\n- What actually kills people in a hurricane?\n- Could you survive?\n\nFAQ\nWhat is a hurricane? A tropical cyclone with sustained winds of at least 119 km/h (74 mph).\nIs the eye calm? Yes, for a while, but the opposite eyewall follows.\nWhat is the deadliest part? Water: storm surge and rain flooding.\n\nWould you stay or go? Tell me in the comments.\n\nSources: NOAA National Hurricane Center, NASA.",
+  "tags": [
+   "hurricane",
+   "hurricane eye",
+   "could you survive a hurricane",
+   "inside a hurricane",
+   "storm surge",
+   "category 5 hurricane",
+   "saffir-simpson scale",
+   "hurricane from space",
+   "NASA hurricane",
+   "hurricane katrina",
+   "hurricane harvey",
+   "eyewall",
+   "what is the eye of a hurricane"
+  ],
+  "hashtags": [
+   "#hurricane",
+   "#science",
+   "#NASA"
+  ]
+ },
+ "shorts": [
+  {
+   "from": 2,
+   "to": 4,
+   "title": "Inside a Category 4 Hurricane"
+  },
+  {
+   "from": 6,
+   "to": 9,
+   "title": "The Calm Inside the Eye Is a Trap"
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "title": "What Really Kills in Hurricanes"
+  }
+ ]
+}
