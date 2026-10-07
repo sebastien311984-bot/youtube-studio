@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — PIXABAY INTERDIT par défaut (met le bazar : hors-sujet, métaphores). Images = sources officielles/archives uniquement (NASA, NOAA, USGS via Scout/Commons, CDC/NIH, DVIDS, Internet Archive). Choisir des sujets pour lesquels ces sources ont de VRAIES images, et alterner les thèmes à chaque vidéo.
+
 - 2026-10-07 — SOUND DESIGN cinématique obligatoire : musique de fond adaptée au thème, petits sons pros (whoosh aux transitions, impacts sur les chiffres, riser + silence avant les révélations, ambiance du lieu). Il compense la voix de synthèse. Ne jamais régresser là-dessus.
 
 - 2026-10-07 — Doublages : voix DYNAMIQUES, convaincantes, fun (garder l'auditeur). Moteur : voix natives/multilingues + tons dynamiques par scène (version fusionnée des deux discussions) ; traducteur : ton YouTubeur natif, phrases courtes. Images toujours cohérentes avec l'histoire ; zéro régression d'une vidéo à l'autre.
