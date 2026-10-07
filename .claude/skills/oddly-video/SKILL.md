@@ -5,6 +5,11 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 
 # Oddly Logical Science — processus de production (v2, à faire évoluer)
 
+## Continuité entre discussions (à faire en premier et en dernier)
+- Début : `git fetch origin main` puis partir de `origin/main` (mémoire à jour : FEEDBACK, VIDEOS, TOPICS, SOURCES, moteur, agents).
+- Fin (et après chaque amélioration du process) : PR vers main + fusion, pour que les autres discussions en profitent. Plusieurs discussions en parallèle : fusionner souvent, petits changements.
+- Toute leçon apprise va dans FEEDBACK.md (jamais seulement dans la conversation).
+
 ## Esprit (à lire en premier)
 - **Penser à tout, en chef de projet** : anticiper ce qui peut bloquer (branche non fusionnée, fichiers perdus, droits, licences, quotas, YouTube), le régler ou le signaler AVANT que l'utilisateur le découvre.
 - Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
