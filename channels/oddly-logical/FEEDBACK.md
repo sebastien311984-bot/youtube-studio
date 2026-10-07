@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — DOUBLAGE : YouTube double automatiquement les vidéos → plus de champ `dub` par défaut (gain de temps de rendu). Le rendre seulement si l'utilisateur le redemande.
+
 - 2026-10-07 — outrun_tsunami refait SANS Pixabay : plans officiels/Commons/archives + motion design quand aucune vraie image n'existe ; voix off réécrite si l'image disponible raconte autre chose (ouverture : vague qui arrive, pas « bateaux sur la vase »). Vidéos Commons issues de particuliers/YouTubeurs (Sendai ambulances, Kita-Ibaraki) exclues. Nouveau : `"ambience": {"kind": "ocean"}` (houle + grondement du large sous la musique).
 
 - 2026-10-07 — « Carrington n'est PAS une référence » : trop de consignes appliquées à la lettre = Claude ne réfléchit plus → régressions. Skill allégé : contrôle qualité par jugement (« est-ce que je cliquerais / est-ce juste ? »), règles = mémoire des erreurs, pas un script.
