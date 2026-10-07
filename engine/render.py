@@ -13,14 +13,14 @@ CA = "/root/.ccr/ca-bundle.crt"
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
 
-def tts(text, voice, path):
+def tts(text, voice, path, rate="-4%", pitch="-4Hz"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
         ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=CA)
     import edge_tts
     words = []
     async def run():
-        c = edge_tts.Communicate(text, voice, rate="-4%", pitch="-4Hz", boundary="WordBoundary")
+        c = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary="WordBoundary")
         with open(path, "wb") as f:
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
@@ -207,14 +207,14 @@ def music(total, voice_env, cuts, risers=()):
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
-DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-HenriNeural",
-              "de": "de-DE-ConradNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
+# même voix que la chaîne (multilingue, énergique) dans toutes les langues ; un peu plus rapide pour le dynamisme
+DUB_VOICE, DUB_RATE = "en-US-AndrewMultilingualNeural", "+6%"
 
 def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
     n = int(total * SR); vtrack = np.zeros(n)
     for i, (txt, (st, slot)) in enumerate(zip(texts, slots)):
         if not txt: continue
-        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp); vd = dur(vp)
+        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, ep.get("dub_voice", DUB_VOICE), vp, rate=DUB_RATE, pitch="+0Hz"); vd = dur(vp)
         tempo = min(1.4, vd / slot) if slot > 0 and vd > slot else 1.0  # accélère légèrement si la traduction est plus longue
         if tempo > 1.0: print(f"Doublage {lang} scène {i} : accéléré x{tempo:.2f}")
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
