@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — Sous-titres anglais INCRUSTÉS + sous-titres YouTube = superposition, et anglais sur la version doublée. Désormais pas d'incrustation (burn_captions=false par défaut) : on fournit le .srt, YouTube traduit. Piste audio FR : vérifier dans Studio > Langues qu'elle est bien publiée ; le spectateur la choisit via ⚙ > Piste audio.
+
 - 2026-10-07 — « Carrington n'est PAS une référence » : trop de consignes appliquées à la lettre = Claude ne réfléchit plus → régressions. Skill allégé : contrôle qualité par jugement (« est-ce que je cliquerais / est-ce juste ? »), règles = mémoire des erreurs, pas un script.
 
 - 2026-10-07 — « space_no_suit » publiée telle quelle mais RÉGRESSIONS : (1) miniature nettement moins bonne que Carrington ; (2) aurore boréale au début (intro générique hors sujet) ; (3) quelques plans peu adaptés. À partir de maintenant : miniature regardée et comparée à celle de Carrington AVANT livraison (image choc du sujet, visage/objet net, 2-3 mots énormes) ; ouverture = image du SUJET, jamais un fond générique ; un plan « acceptable » ne suffit pas, il doit être juste.

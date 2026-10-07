@@ -313,7 +313,7 @@ def main(ep_path, clips_dir, out):
                 lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
                 sh("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cp)
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))
-        events += captions(words, t + s.get("lead", 0.3))
+        if ep.get("burn_captions", False): events += captions(words, t + s.get("lead", 0.3))  # sous-titres incrustés désactivés : ils se superposent aux sous-titres YouTube et restent en anglais sur les pistes doublées
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
         if s.get("yt_chapter") or s.get("chapter"): yt_chapters.append((t, s.get("yt_chapter") or s["chapter"][1].title()))
         if s.get("kind") != "diagram" and s.get("kind") != "stat" and i == ep.get("thumbnail", {}).get("scene"): thumb_src = (cp, d)
