@@ -92,7 +92,7 @@ def clip(src, start, d, out, move):
     vf += "eq=contrast=1.08:saturation=1.12:gamma=0.97,vignette=PI/5,fps=30,format=yuv420p"
     still = src.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp"))
     inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-stream_loop", "-1", "-ss", str(start), "-t", str(d), "-i", src]
-    sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "19", out)
+    sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", out)
 
 def ass_time(t): t = max(0, t); return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
@@ -352,7 +352,7 @@ def main(ep_path, clips_dir, out):
     with wave.open(wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
     sh("ffmpeg", "-v", "error", "-y", *inputs, "-i", wav, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", f"{len(scenes)}:a",
-       "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
+       "-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
     voice_slots = [(st, d - (st - t0) - 0.2) for (_, d, vp, st), t0 in zip(scenes, starts)]
     json.dump({"total": total, "starts": starts, "slots": voice_slots, "risers": risers, "cuts": cuts},
               open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
@@ -360,6 +360,16 @@ def main(ep_path, clips_dir, out):
         list(ex.map(lambda lt: dub_track(ep, lt[0], lt[1], voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lt[0]}.m4a")),
                     ep.get("dub", {}).items()))
     review_sheet(out, review)
+    b = os.path.basename(out)[:-4]; langs = list(ep.get("dub", {}))
+    open(out.replace(".mp4", "_CONSIGNES_CHROME.md"), "w").write(f"""# Consignes pour Claude dans Chrome — {ep.get('youtube', {}).get('title', ep['title'])}
+Dans YouTube Studio (chaîne Oddly Logical Science), mets en ligne `{b}.mp4`.
+1. Titre, description, tags, traductions du titre/description : copier depuis `{b}_youtube.md`. Catégorie « Science & Technology ».
+2. Miniature : `{b}_thumb.jpg`. Sous-titres anglais : `{b}.srt`.
+3. « Contenu modifié ou synthétique » : Non (sauf si `{b}_youtube.md` dit le contraire).
+4. Visibilité : Programmée (date/heure données par Claude). Ne jamais publier en Public sans accord.
+5. Onglet Langues → pour chaque fichier {', '.join(f'`{b}_{l}.m4a`' for l in langs) or '(aucun)'} : ajouter la langue → Piste audio → envoyer. Si l'option n'existe pas, s'arrêter et le signaler.
+6. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
+""")
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)

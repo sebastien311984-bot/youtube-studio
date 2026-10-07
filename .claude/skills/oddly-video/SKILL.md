@@ -11,6 +11,7 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 - Toute leçon apprise va dans FEEDBACK.md (jamais seulement dans la conversation).
 
 ## Esprit (à lire en premier)
+- **Pixabay interdit** (sauf accord explicite) : uniquement sources officielles/archives. Un sujet sans vraies images disponibles = mauvais sujet → en choisir un autre (en alternant les thèmes).
 - **Penser à tout, en chef de projet** : anticiper ce qui peut bloquer (branche non fusionnée, fichiers perdus, droits, licences, quotas, YouTube), le régler ou le signaler AVANT que l'utilisateur le découvre.
 - Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
 - Avant d'écrire, se poser 3 questions et les écrire en 3 lignes dans le brief à l'agent : **Quelle émotion ? Quelle image inoubliable ? Qu'est-ce qui rend CETTE vidéo différente des précédentes ?** Le style (rythme, couleurs, formats, musique) découle des réponses.
@@ -42,6 +43,12 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 
 ## Repérage d'images (réseau)
 Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** : `gh api -X POST repos/sebastien311984-bot/youtube-studio/actions/workflows/scout.yml/dispatches -f ref=main -f "inputs[queries]=commons:volcano eruption filetype:video|nasa:lava|archive:volcano"` (GraphQL interdit : pas de `gh workflow run`), id via `gh api repos/.../actions/workflows/scout.yml/runs?per_page=1`, puis `gh run download <id> -R sebastien311984-bot/youtube-studio -n scout` (~1 min) : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
+
+## Son (non négociable)
+Musique de fond selon le thème + sound design : whoosh aux transitions, impact sur stat/rank, riser + silence avant chaque révélation (déjà automatique), ambiance du lieu quand c'est possible. Voix doublées : voix natives/multilingues dynamiques + tons par scène (`DUB_VOICES`, `TONES` dans render.py).
+
+## Story-board AVANT rendu (gagne des heures)
+`python3 engine/storyboard.py <épisode> sb.jpg` (~20 s) : chaque plan + la phrase dite. Le regarder et corriger AVANT de pousser : un rendu = 30-40 min, une erreur vue après = un rendu de plus.
 
 ## Revue finale obligatoire (avant toute livraison)
 Le rendu produit `<nom>_review.jpg` : chaque plan réel avec la phrase dite au même moment. Le regarder EN ENTIER et répondre pour chaque case : « l'image montre-t-elle ce que dit la voix ? ». Une seule case fausse → remplacer le plan et relancer. Ne jamais livrer sans cette revue ; dire à l'utilisateur ce qui a été vérifié et ce qui ne l'a pas été.
