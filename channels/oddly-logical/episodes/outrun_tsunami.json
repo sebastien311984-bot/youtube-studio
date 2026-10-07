@@ -1,7 +1,7 @@
 {
   "title": "Could You Outrun a Tsunami?",
   "voice": "en-US-AndrewMultilingualNeural",
-  "credits": "Footage: NASA (ISS Expedition 10/26 photography, NASA/JPL Jason, Terra MISR/ASTER, SWOT and Goddard Scientific Visualization Studio imagery, public domain); Pixabay (free license). Facts: NOAA, USGS, UNESCO/IOC Tsunami Ready.",
+  "credits": "Footage: NASA (ISS Expedition 10/26 photography, NASA/JPL Jason, Terra MISR/ASTER, SWOT and Goddard Scientific Visualization Studio imagery, public domain); Wikimedia Commons: NOAA / PMEL / NCTR / Pacific Tsunami Warning Center / USCG / US Navy / FBI (public domain); David Rydevik and Sofwathulla Mohamed, 2004 tsunami photos (public domain per Commons); DimiTalen, Kamakura tsunami sign (CC0); Rick Obst, Oregon tsunami sign (CC BY 4.0); Alexander Klink, Thailand tsunami sign (CC BY 4.0); Tony Webster, California tsunami sign (CC BY-SA 3.0); Symac, New Zealand tsunami sign (CC BY-SA 3.0); Halowand, Japan evacuation building sign (CC BY-SA 4.0); Pixabay (free license). Facts: NOAA, USGS, UNESCO/IOC Tsunami Ready.",
   "scenes": [
     {
       "shots": [
@@ -61,14 +61,14 @@
     {
       "shots": [
         {
-          "clip": "pixabay:storm waves",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2004-tsunami.jpg",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "pixabay:huge waves",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2b/2004_Indian_Ocean_earthquake_Maldives_tsunami_wave.jpg",
           "start": 0,
-          "move": "out"
+          "move": "left"
         }
       ],
       "text": "Could you outrun a tsunami?",
@@ -211,7 +211,7 @@
           "move": "left"
         },
         {
-          "clip": "pixabay:ocean aerial",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/1/17/January_15%2C_2022_Tonga_volcano-generated_tsunami_propagation.webm",
           "start": 0,
           "move": "right"
         }
@@ -240,12 +240,12 @@
     {
       "shots": [
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA07219/PIA07219~medium.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Dart_tsunamicover.jpg",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "pixabay:buoy ocean",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/3/36/DART_II_System_Diagram.jpg",
           "start": 0,
           "move": "left"
         },
@@ -255,7 +255,7 @@
           "move": "right"
         },
         {
-          "clip": "pixabay:research vessel",
+          "clip": "https://images-assets.nasa.gov/image/PIA07219/PIA07219~medium.jpg",
           "start": 0,
           "move": "out"
         }
@@ -437,12 +437,12 @@
           "move": "left"
         },
         {
-          "clip": "pixabay:coastal road",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/FBI_tsunami_video_-_Pago_Pago_parking_lot_-_end.ogv",
           "start": 0,
           "move": "right"
         },
         {
-          "clip": "pixabay:flooded street",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/US_Navy_110314-N-3997W-062_Debris_float_in_the_Pacific_Ocean_off_the_coast_of_Japan_after_a_9.0_magnitude_earthquake_and_subsequent_tsunami_struck.jpg",
           "start": 0,
           "move": "out"
         }
@@ -486,7 +486,7 @@
     {
       "shots": [
         {
-          "clip": "pixabay:clock ticking",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Chile-tsunami-20100227-NCTR-wave-propagation.ogv",
           "start": 0,
           "move": "in"
         },
@@ -511,22 +511,22 @@
     {
       "shots": [
         {
-          "clip": "pixabay:hill stairs",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/1/19/Tsunami_evacuation_route_sign_on_the_road%2C_Kamakura%2C_2016.jpg",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "pixabay:evacuation crowd",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tsunami_Evacuation_Route_Sign_Southern_California_8176008396_o.jpg",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "pixabay:tsunami sign",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tsunami_Evacuation_Map_sign_in_Lincoln_City%2C_Oregon.jpg",
           "start": 0,
           "move": "right"
         },
         {
-          "clip": "pixabay:hillside town",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/a/af/Sign_of_Route_for_Tsunami_Evacuation_Building_in_Japan.jpg",
           "start": 0,
           "move": "out"
         }
@@ -545,12 +545,12 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:walking uphill",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tsunami_evacuation_route_sign%2C_New_Zealand.jpg",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "pixabay:mountain path",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsunami_Evacuation_Route_Sign_Thailand.jpg",
           "start": 0,
           "move": "right"
         }
@@ -590,7 +590,7 @@
     {
       "shots": [
         {
-          "clip": "pixabay:old harbor",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tsunami_Forecast_Model_Animation-_Lisbon_1755.webm",
           "start": 0,
           "move": "in"
         },
@@ -650,22 +650,22 @@
     {
       "shots": [
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA14271/PIA14271~medium.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/7/76/Animated_View_of_March_11%2C_2011_Tsunami_Wave_Height_Model.ogv",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA13913/PIA13913~orig.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Tsunami_Animation-_Tohoku%2C_Japan_2011_%28rotating_globe%29.webm",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "https://images-assets.nasa.gov/image/iss026e033648/iss026e033648~medium.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2011Sendai-NOAA-Energylhvpd9-05.jpg",
           "start": 0,
           "move": "right"
         },
         {
-          "clip": "https://images-assets.nasa.gov/image/iss026e034079/iss026e034079~medium.jpg",
+          "clip": "https://images-assets.nasa.gov/image/PIA14271/PIA14271~medium.jpg",
           "start": 0,
           "move": "out"
         }
@@ -684,19 +684,14 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:school children",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/b/bb/US_Navy_110315-N-5503T-307_An_aerial_view_of_damage_to_Otsuchi%2C_Japan%2C_after_a_9.0_magnitude_earthquake_and_subsequent_tsunami_devastated_the_area_in_northern_Japan.jpg",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "pixabay:running uphill",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US_Navy_110315-N-IC111-592_-_Tsunami_damage_of_Rikuzentakata.jpg",
           "start": 0,
           "move": "right"
-        },
-        {
-          "clip": "pixabay:mountain town",
-          "start": 0,
-          "move": "out"
         }
       ],
       "label": [
