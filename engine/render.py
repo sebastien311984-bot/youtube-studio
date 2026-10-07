@@ -328,6 +328,16 @@ def main(ep_path, clips_dir, out):
     for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
         dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
     review_sheet(out, review)
+    b = os.path.basename(out)[:-4]; langs = list(ep.get("dub", {}))
+    open(out.replace(".mp4", "_CONSIGNES_CHROME.md"), "w").write(f"""# Consignes pour Claude dans Chrome — {ep.get('youtube', {}).get('title', ep['title'])}
+Dans YouTube Studio (chaîne Oddly Logical Science), mets en ligne `{b}.mp4`.
+1. Titre, description, tags, traductions du titre/description : copier depuis `{b}_youtube.md`. Catégorie « Science & Technology ».
+2. Miniature : `{b}_thumb.jpg`. Sous-titres anglais : `{b}.srt`.
+3. « Contenu modifié ou synthétique » : Non (sauf si `{b}_youtube.md` dit le contraire).
+4. Visibilité : Programmée (date/heure données par Claude). Ne jamais publier en Public sans accord.
+5. Onglet Langues → pour chaque fichier {', '.join(f'`{b}_{l}.m4a`' for l in langs) or '(aucun)'} : ajouter la langue → Piste audio → envoyer. Si l'option n'existe pas, s'arrêter et le signaler.
+6. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
+""")
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)
