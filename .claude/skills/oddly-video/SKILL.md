@@ -46,6 +46,7 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** : `gh api -X POST repos/sebastien311984-bot/youtube-studio/actions/workflows/scout.yml/dispatches -f ref=main -f "inputs[queries]=commons:volcano eruption filetype:video|nasa:lava|archive:volcano"` (GraphQL interdit : pas de `gh workflow run`), id via `gh api repos/.../actions/workflows/scout.yml/runs?per_page=1`, puis `gh run download <id> -R sebastien311984-bot/youtube-studio -n scout` (~1 min) : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
 
 ## Contrôle qualité (jugement, pas case à cocher)
+**Cause n°1 des plans hors sujet** : remplir une phrase abstraite avec une photo « à peu près ». Solution : infographie maison.
 Se mettre à la place d'un spectateur exigeant qui découvre la vidéo sur YouTube :
 - **Miniature** : est-ce que je cliquerais ? Sujet net et fort, 2-3 mots, contraste. Sinon la refaire.
 - **Ouverture** : les premières secondes montrent-elles le sujet et donnent-elles envie de rester ?
@@ -117,7 +118,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 1. **Cold open 0-5 s AVANT l'intro** (image la plus forte + question choc), puis intro. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
 2. **Titre plein écran** juste après l'accroche.
 3. **Des chapitres** toutes les 60 à 90 s (« CHAPTER 1 · ... ») avec une révélation chacun.
-4. **Varier les formats** : plan réel → chiffre choc → schéma → plan réel. Jamais deux scènes du même type d'affilée, sauf les plans réels. **Chaque vidéo d'environ 10 min** utilise au moins 6 types différents : 1 quiz, 1 scale ou versus, 1 timeline si le sujet a une histoire, 2 à 3 diagrams, 2 à 3 stats, 1 kinetic. Environ 60 % du temps en plans réels.
+4. **Varier les formats** : plan réel → chiffre choc → schéma → plan réel. Jamais deux scènes du même type d'affilée, sauf les plans réels. **Chaque vidéo d'environ 10 min** utilise au moins 6 types différents : 1 quiz, 1 scale ou versus, 1 timeline si le sujet a une histoire, 2 à 3 diagrams, 2 à 3 stats, 1 kinetic. Plans réels SEULEMENT quand une image montre littéralement ce qui est dit ; sinon (idée abstraite, explication, mécanisme) → schéma animé, chiffre, timeline, kinetic. Mieux vaut une infographie juste qu'un plan réel « d'ambiance ».
 4bis. **Rétention** : boucle ouverte dès l'accroche (« stay until the end for... »), teaser avant chaque chapitre, une révélation toutes les 60 à 90 s, et la promesse tenue à la fin.
 5. **Un encart « Did you know? »** toutes les 45 à 60 s, avec un fait surprenant et exact.
 6. **Un bandeau `label`** pour nommer chaque phénomène.
