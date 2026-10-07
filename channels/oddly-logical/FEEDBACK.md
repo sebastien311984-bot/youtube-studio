@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — Revue v3 outrun_tsunami : Pixabay renvoie souvent n'importe quoi (vaches pour « boats on mud », Mont-Saint-Michel pour « exposed seabed », famille qui court VERS la mer pour une évacuation, chaussures dessinées) + un carton-texte NASA et une image noire. Règle : tout plan Pixabay est suspect jusqu'à la revue `_review.jpg` ; en cas de doute on le supprime et on laisse les plans officiels/animations couvrir la scène. Moteur : un plan répété par le garde-fou réutilise le même fichier (plus de nouvelle vidéo Pixabay au hasard).
+
 - 2026-10-07 — PLUSIEURS DISCUSSIONS EN PARALLÈLE : ne JAMAIS annuler un rendu GitHub Actions d'une autre branche que la sienne (outrun_tsunami annulé 2 fois par une autre discussion). Filtrer par `head_branch` avant tout cancel.
 
 - 2026-10-07 — VOIX DOUBLÉES : doivent être dynamiques, convaincantes et fun pour retenir l'auditeur (style présentateur natif, phrases courtes, pas de calque de l'anglais) → règles dans oddly-translator.md. Moteur : tons par scène (`tone`) + voix réchauffée. Images : cohérence stricte avec l'histoire, zéro régression.

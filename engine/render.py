@@ -290,7 +290,8 @@ def main(ep_path, clips_dir, out):
             sd = (d + XF) / len(shots); parts = []
             ws = s.get("text", "").split(); k = max(1, len(ws) // len(shots))
             review += [(t + (j + 0.5) * sd, " ".join(ws[j * k:(j + 1) * k]), f"{i}.{j}") for j in range(len(shots))]
-            srcs = [fetch(sh_["clip"], clips_dir) for sh_ in shots]  # séquentiel : garde l'anti-doublon Pixabay
+            got = {}  # séquentiel (anti-doublon Pixabay) ; un plan répété par le garde-fou réutilise le MÊME fichier,
+            srcs = [got.setdefault(sh_["clip"], fetch(sh_["clip"], clips_dir)) if sh_["clip"] not in got else got[sh_["clip"]] for sh_ in shots]  # jamais une nouvelle vidéo Pixabay au hasard
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
             with ThreadPoolExecutor(4) as ex:  # encodage des plans en parallèle (4 cœurs du runner)
                 list(ex.map(lambda a: clip(a[0], a[1].get("start", 0), sd, a[2], a[1].get("move", "in")), zip(srcs, shots, parts)))
