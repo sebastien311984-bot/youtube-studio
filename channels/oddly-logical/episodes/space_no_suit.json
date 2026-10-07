@@ -81,8 +81,8 @@
      "move": "right"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/sts059-09-021/sts059-09-021~large.jpg",
-     "start": 6,
+     "clip": "https://images-assets.nasa.gov/image/iss045e082998/iss045e082998~large.jpg",
+     "start": 0,
      "move": "in"
     },
     {
@@ -145,7 +145,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/iss059e005614/iss059e005614~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/iss045e082968/iss045e082968~large.jpg",
      "start": 0,
      "move": "right"
     },
@@ -382,8 +382,8 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/jsc2022e045254/jsc2022e045254~large.jpg",
-     "start": 3,
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001401/GSFC_20171208_Archive_e001401~large.jpg",
+     "start": 0,
      "move": "out"
     },
     {
@@ -417,8 +417,8 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/sl3-118-2182/sl3-118-2182~large.jpg",
-     "start": 6,
+     "clip": "https://images-assets.nasa.gov/image/PIA12020/PIA12020~large.jpg",
+     "start": 0,
      "move": "out"
     },
     {
