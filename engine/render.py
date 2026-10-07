@@ -13,19 +13,33 @@ CA = "/root/.ccr/ca-bundle.crt"
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
 
-def tts(text, voice, path):
+TONES = {  # débit / hauteur par ton : casse la monotonie de la voix de synthèse
+    "neutral": ("-4%", "-4Hz"), "calm": ("-9%", "-6Hz"), "tense": ("+3%", "-2Hz"),
+    "urgent": ("+8%", "+0Hz"), "reveal": ("-12%", "-8Hz"), "warm": ("-6%", "-2Hz")}
+AUTO_TONE = {"stat": "reveal", "kinetic": "reveal", "rank": "reveal", "quiz": "tense", "timeline": "calm", "diagram": "warm"}
+
+def humanize(path):
+    """Voix plus chaude, moins « robot » : grave adouci, sifflantes calmées, compression douce, légère pièce. Durée inchangée."""
+    tmp = path + ".h.mp3"
+    af = ("highpass=f=75,equalizer=f=180:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.2:g=1.5,"
+          "equalizer=f=6800:t=q:w=2:g=-3.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
+          "aecho=0.9:0.9:28|47:0.10|0.06")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", tmp])
+    if r.returncode == 0: os.replace(tmp, path)
+
+def tts(text, voice, path, tone="neutral"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
         ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=CA)
     import edge_tts
     words = []
     async def run():
-        c = edge_tts.Communicate(text, voice, rate="-4%", pitch="-4Hz", boundary="WordBoundary")
+        c = edge_tts.Communicate(text, voice, rate=TONES.get(tone, TONES["neutral"])[0], pitch=TONES.get(tone, TONES["neutral"])[1], boundary="WordBoundary")
         with open(path, "wb") as f:
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    asyncio.run(run()); return words
+    asyncio.run(run()); humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
 
@@ -207,14 +221,14 @@ def music(total, voice_env, cuts, risers=()):
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
-DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-HenriNeural",
-              "de": "de-DE-ConradNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
+DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-RemyMultilingualNeural",
+              "de": "de-DE-FlorianMultilingualNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
 
 def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
     n = int(total * SR); vtrack = np.zeros(n)
     for i, (txt, (st, slot)) in enumerate(zip(texts, slots)):
         if not txt: continue
-        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp); vd = dur(vp)
+        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp, ep["scenes"][i].get("tone") or AUTO_TONE.get(ep["scenes"][i].get("kind", ""), "neutral")); vd = dur(vp)
         tempo = min(1.4, vd / slot) if slot > 0 and vd > slot else 1.0  # accélère légèrement si la traduction est plus longue
         if tempo > 1.0: print(f"Doublage {lang} scène {i} : accéléré x{tempo:.2f}")
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
@@ -233,7 +247,7 @@ def main(ep_path, clips_dir, out):
     srt_words, yt_chapters, thumb_src, starts, trans = [], [], None, [], []
     for i, s in enumerate(ep["scenes"]):
         vp = os.path.join(work, f"v{i}.mp3")
-        words = tts(s["text"], voice, vp) if s.get("text") else []
+        words = tts(s["text"], voice, vp, s.get("tone") or AUTO_TONE.get(s.get("kind", ""), "neutral")) if s.get("text") else []
         vd = dur(vp) if words else 0
         d = max(s.get("min", 0), vd + s.get("pad", 0.7) + s.get("lead", 0.3))
         cp = os.path.join(work, f"c{i}.mp4"); kind = s.get("kind", "footage")

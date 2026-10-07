@@ -19,7 +19,8 @@
       "lead": 0.3,
       "min": 5.5,
       "text": "The sea just vanished. Boats lie on mud. You have minutes.",
-      "yt_chapter": "Could you outrun a tsunami?"
+      "yt_chapter": "Could you outrun a tsunami?",
+      "tone": "tense"
     },
     {
       "kind": "intro",
@@ -44,7 +45,8 @@
         }
       ],
       "lead": 0.4,
-      "text": "You are standing on a beach. The sea pulls back, much farther than any low tide. Most people walk toward it. Stay until the end, and I will show you the signs that could save your life."
+      "text": "You are standing on a beach. The sea pulls back, much farther than any low tide. Most people walk toward it. Stay until the end, and I will show you the signs that could save your life.",
+      "tone": "tense"
     },
     {
       "kind": "kinetic",
@@ -110,7 +112,8 @@
         "The ground shakes"
       ],
       "text": "The answer is simple. A strong or long earthquake near the coast, a sea that suddenly retreats, or a loud roar from the ocean means one thing. Go uphill now. Do not wait for a siren.",
-      "fact": "The sea can retreat before the first wave,\\Nbut not always. Never rely on it."
+      "fact": "The sea can retreat before the first wave,\\Nbut not always. Never rely on it.",
+      "tone": "urgent"
     },
     {
       "shots": [
@@ -222,7 +225,8 @@
         "DEEP OCEAN",
         "Jetliner speed"
       ],
-      "text": "In the deep ocean, a tsunami moves around eight hundred kilometers per hour. About five hundred miles an hour. That is the speed of a jetliner, and out there the wave is often less than a meter high."
+      "text": "In the deep ocean, a tsunami moves around eight hundred kilometers per hour. About five hundred miles an hour. That is the speed of a jetliner, and out there the wave is often less than a meter high.",
+      "tone": "calm"
     },
     {
       "kind": "stat",
@@ -452,7 +456,8 @@
         "MINUTE 10",
         "Run or climb?"
       ],
-      "text": "Short answer, you should not bet on it. A fit runner manages roughly fifteen to twenty five kilometers per hour, and the sprint end of that fades fast. On land, a tsunami often flows at tens of kilometers per hour, and it carries cars, boats and debris."
+      "text": "Short answer, you should not bet on it. A fit runner manages roughly fifteen to twenty five kilometers per hour, and the sprint end of that fades fast. On land, a tsunami often flows at tens of kilometers per hour, and it carries cars, boats and debris.",
+      "tone": "urgent"
     },
     {
       "kind": "versus",
@@ -500,7 +505,8 @@
         "LOCAL VS DISTANT",
         "Minutes or hours"
       ],
-      "text": "Timing depends on where you are. After a distant quake, you may have hours. After a quake right off your coast, you may have only minutes, before any official alert. That is why the shaking itself is your warning."
+      "text": "Timing depends on where you are. After a distant quake, you may have hours. After a quake right off your coast, you may have only minutes, before any official alert. That is why the shaking itself is your warning.",
+      "tone": "urgent"
     },
     {
       "shots": [
@@ -613,7 +619,8 @@
         "FOUR DISASTERS",
         "Illustrative images"
       ],
-      "text": "Lisbon, seventeen fifty five, a quake, then waves. Krakatoa, eighteen eighty three, a volcano pushed the sea. Two thousand four, the Indian Ocean. Two thousand eleven, Japan."
+      "text": "Lisbon, seventeen fifty five, a quake, then waves. Krakatoa, eighteen eighty three, a volcano pushed the sea. Two thousand four, the Indian Ocean. Two thousand eleven, Japan.",
+      "tone": "calm"
     },
     {
       "kind": "timeline",
@@ -730,7 +737,8 @@
         "MINUTE 60+",
         "Do not go back"
       ],
-      "text": "A tsunami is a series of waves, often for hours, and the first is not always the biggest. Stay high until officials say it is safe."
+      "text": "A tsunami is a series of waves, often for hours, and the first is not always the biggest. Stay high until officials say it is safe.",
+      "tone": "urgent"
     },
     {
       "shots": [
