@@ -21,7 +21,7 @@ Idées « Oddly Logical » (étrange mais logique) :
 - [ ] What Happens to Your Body If You Stop Sleeping?
 - [ ] What If You Fell Into a Volcano?
 - [ ] What Happens to Your Body in Space Without a Suit?
-- [ ] Could You Outrun a Tsunami?
+- [x] Could You Outrun a Tsunami? (outrun_tsunami)
 - [ ] What If You Were Struck by Lightning?
 ## Actualité (à remplir dès qu'un événement tombe : vidéo < 48 h)
 - (vide)

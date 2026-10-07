@@ -1,0 +1,1012 @@
+{
+  "title": "Could You Outrun a Tsunami?",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "credits": "Footage: NASA (ISS Expedition 10/26 photography, NASA/JPL Jason, Terra MISR/ASTER, SWOT and Goddard Scientific Visualization Studio imagery, public domain); Pixabay (free license). Facts: NOAA, USGS, UNESCO/IOC Tsunami Ready.",
+  "scenes": [
+    {
+      "shots": [
+        {
+          "clip": "pixabay:empty beach sea",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:low tide",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "lead": 0.3,
+      "min": 5.5,
+      "text": "The sea just vanished. Boats lie on mud. You have minutes.",
+      "yt_chapter": "Could you outrun a tsunami?"
+    },
+    {
+      "kind": "intro",
+      "min": 4.0
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:beach sunset",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:seagulls beach",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:sandy shore",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "lead": 0.4,
+      "text": "You are standing on a beach. The sea pulls back, much farther than any low tide. Most people walk toward it. Stay until the end, and I will show you the signs that could save your life."
+    },
+    {
+      "kind": "kinetic",
+      "words": [
+        "SEA GOES OUT",
+        "GET UP",
+        "GO UPHILL"
+      ],
+      "text": "This is the countdown.",
+      "min": 4
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:storm waves",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:huge waves",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "text": "Could you outrun a tsunami?",
+      "title": [
+        "COULD YOU OUTRUN A TSUNAMI?",
+        "ODDLY LOGICAL SCIENCE"
+      ],
+      "min": 4.2,
+      "teaser": "THE WARNING SIGNS"
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:earthquake damage",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:cracked road",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:seabed rocks",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "pixabay:tide pool",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "chapter": [
+        "CHAPTER 1",
+        "WHAT ARE THE WARNING SIGNS?"
+      ],
+      "yt_chapter": "What are the warning signs of a tsunami?",
+      "label": [
+        "MINUTE 0",
+        "The ground shakes"
+      ],
+      "text": "The answer is simple. A strong or long earthquake near the coast, a sea that suddenly retreats, or a loud roar from the ocean means one thing. Go uphill now. Do not wait for a siren.",
+      "fact": "The sea can retreat before the first wave,\\Nbut not always. Never rely on it."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA06671/PIA06671~medium.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss010e12736/iss010e12736~medium.jpg",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA07227/PIA07227~medium.jpg",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss010e12894/iss010e12894~medium.jpg",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "label": [
+        "INDIAN OCEAN, 2004",
+        "Tilly Smith, age 10, Phuket"
+      ],
+      "text": "In 2004, ten year old Tilly Smith stood on a beach in Thailand. She had just learned about tsunamis at school in England. When she saw the sea pull back and bubble, she told her parents. They warned others, and that beach was reportedly cleared before the wave arrived."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA04372/PIA04372~orig.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:wet sand",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:rocky shore",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "label": [
+        "THE DRAWDOWN",
+        "The trough arrives first"
+      ],
+      "text": "Why does the sea pull back? Sometimes the trough of the wave reaches the coast first, and it drags water away from the shore. The seabed is exposed. People walk out to look. A few minutes later, the crest arrives."
+    },
+    {
+      "kind": "quiz",
+      "question": "The sea suddenly pulls far back. What do you do?",
+      "options": [
+        "Walk out to look",
+        "Film it",
+        "Run uphill now",
+        "Wait for a siren"
+      ],
+      "answer": 2,
+      "min": 7,
+      "text": "Quick test. The sea pulls far back. What do you do?"
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:airplane wing",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:jet airplane",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "min": 3.5,
+      "teaser": "HOW FAST IS THE WAVE?",
+      "text": "But how fast is the wave coming?"
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA04373/PIA04373~medium.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/video/GSFC_20170426_Tsunami_m12560/GSFC_20170426_Tsunami_m12560~medium.mp4",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:ocean aerial",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "chapter": [
+        "CHAPTER 2",
+        "HOW FAST DOES A TSUNAMI TRAVEL?"
+      ],
+      "yt_chapter": "How fast does a tsunami travel?",
+      "label": [
+        "DEEP OCEAN",
+        "Jetliner speed"
+      ],
+      "text": "In the deep ocean, a tsunami moves around eight hundred kilometers per hour. About five hundred miles an hour. That is the speed of a jetliner, and out there the wave is often less than a meter high."
+    },
+    {
+      "kind": "stat",
+      "value": 800,
+      "suffix": " km/h",
+      "caption": "ABOUT HOW FAST A TSUNAMI CROSSES DEEP OCEAN",
+      "text": "Eight hundred kilometers per hour.",
+      "min": 5,
+      "fact": "That is about 500 mph, close to the\\Ncruising speed of a passenger jet."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA07219/PIA07219~medium.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:buoy ocean",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA26652/PIA26652~medium.jpg",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "pixabay:research vessel",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "label": [
+        "DEEP-OCEAN SENSORS",
+        "Pressure gauges on the seabed"
+      ],
+      "text": "Out at sea, there are sentinels. Pressure sensors on the seabed feel a passing tsunami as a tiny rise in the water above them. They send the signal to warning centers, and alerts can go out within minutes."
+    },
+    {
+      "kind": "versus",
+      "heading": "DEEP WATER VS SHALLOW WATER",
+      "min": 8,
+      "text": "Near the coast, everything changes. In deep water, the wave is fast, low and stretched over many kilometers. In shallow water, it slows down, and all that energy piles up into height.",
+      "left": {
+        "name": "DEEP OCEAN",
+        "color": "blue",
+        "stats": [
+          "About 800 km/h",
+          "Under a meter tall",
+          "Hundreds of km long"
+        ]
+      },
+      "right": {
+        "name": "NEAR SHORE",
+        "color": "orange",
+        "stats": [
+          "Tens of km/h",
+          "Slows and rises",
+          "Can reach many meters"
+        ]
+      }
+    },
+    {
+      "kind": "diagram",
+      "heading": "WAVE SHOALING",
+      "min": 9,
+      "text": "This is called shoaling. The seabed rises, the front of the wave drags, and the water behind it catches up and stacks higher.",
+      "elements": [
+        {
+          "type": "line",
+          "from": [
+            200,
+            860
+          ],
+          "to": [
+            800,
+            860
+          ],
+          "color": "ink",
+          "width": 8
+        },
+        {
+          "type": "line",
+          "from": [
+            800,
+            860
+          ],
+          "to": [
+            1700,
+            600
+          ],
+          "color": "ink",
+          "width": 8
+        },
+        {
+          "type": "curve",
+          "pts": [
+            [
+              250,
+              520
+            ],
+            [
+              340,
+              440
+            ],
+            [
+              430,
+              520
+            ]
+          ],
+          "color": "blue",
+          "width": 8
+        },
+        {
+          "type": "text",
+          "text": "DEEP: FAST AND LOW",
+          "at": [
+            420,
+            640
+          ],
+          "anchor": "mm",
+          "size": 38,
+          "color": "blue"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            560,
+            400
+          ],
+          "to": [
+            1000,
+            400
+          ],
+          "color": "ink",
+          "width": 7
+        },
+        {
+          "type": "curve",
+          "pts": [
+            [
+              1150,
+              520
+            ],
+            [
+              1330,
+              200
+            ],
+            [
+              1510,
+              520
+            ]
+          ],
+          "color": "red",
+          "width": 9
+        },
+        {
+          "type": "text",
+          "text": "SHALLOW: SLOW AND TALL",
+          "at": [
+            1330,
+            740
+          ],
+          "anchor": "mm",
+          "size": 38,
+          "color": "red"
+        },
+        {
+          "type": "text",
+          "text": "SEABED RISES",
+          "at": [
+            1250,
+            900
+          ],
+          "anchor": "mm",
+          "size": 34
+        }
+      ]
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:waves crashing",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:harbor boats",
+          "start": 0,
+          "move": "left"
+        }
+      ],
+      "min": 3.5,
+      "teaser": "COULD YOU OUTRUN IT?",
+      "text": "So, could you outrun it?"
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:runner sprinting",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:people running",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:coastal road",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "pixabay:flooded street",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "chapter": [
+        "CHAPTER 3",
+        "COULD YOU OUTRUN A TSUNAMI?"
+      ],
+      "yt_chapter": "Could you outrun a tsunami on foot?",
+      "label": [
+        "MINUTE 10",
+        "Run or climb?"
+      ],
+      "text": "Short answer, you should not bet on it. A fit runner manages roughly fifteen to twenty five kilometers per hour, and the sprint end of that fades fast. On land, a tsunami often flows at tens of kilometers per hour, and it carries cars, boats and debris."
+    },
+    {
+      "kind": "versus",
+      "heading": "YOU VS THE WAVE",
+      "min": 8,
+      "text": "The wave does not get tired. You do. And a flat road is a trap, because the water can fill it faster than you can leave.",
+      "left": {
+        "name": "YOU",
+        "color": "blue",
+        "stats": [
+          "15 to 25 km/h at best",
+          "Tires in minutes",
+          "Slowed by crowds"
+        ]
+      },
+      "right": {
+        "name": "THE WAVE",
+        "color": "red",
+        "stats": [
+          "Tens of km/h on land",
+          "Barely slows",
+          "Carries heavy debris"
+        ]
+      }
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:clock ticking",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:city skyline",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:coast town",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "label": [
+        "LOCAL VS DISTANT",
+        "Minutes or hours"
+      ],
+      "text": "Timing depends on where you are. After a distant quake, you may have hours. After a quake right off your coast, you may have only minutes, before any official alert. That is why the shaking itself is your warning."
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:hill stairs",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:evacuation crowd",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:tsunami sign",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "pixabay:hillside town",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "label": [
+        "THE REAL ANSWER",
+        "Out-climb it"
+      ],
+      "text": "So do not outrun it. Out-climb it. Typical guidance says to get about thirty meters, about one hundred feet, above the sea, or two miles, about three kilometers, inland. Strong, tall concrete buildings are a last resort, and you go to the upper floors."
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:traffic jam",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:walking uphill",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:mountain path",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "label": [
+        "TRAFFIC TRAP",
+        "A car cannot move, you can"
+      ],
+      "text": "Traffic is another trap. In a jam, a car cannot move, but you can. If the roads are blocked, leave the car and walk uphill. Take your family, not your belongings."
+    },
+    {
+      "kind": "stat",
+      "value": 30,
+      "suffix": " m",
+      "caption": "TYPICAL GUIDANCE: HEIGHT ABOVE THE SEA",
+      "text": "Thirty meters up. That is your target.",
+      "min": 5,
+      "fact": "Follow local signs, because routes and\\Nheights differ from place to place."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss010e13088/iss010e13088~medium.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss010e13079/iss010e13079~medium.jpg",
+          "start": 0,
+          "move": "left"
+        }
+      ],
+      "min": 3.5,
+      "teaser": "WHEN IT REALLY HAPPENED",
+      "text": "It has happened before. Four times, history rewrote the rules."
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:old harbor",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:volcano eruption",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss010e12876/iss010e12876~medium.jpg",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA13937/PIA13937~orig.jpg",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "chapter": [
+        "CHAPTER 4",
+        "WHAT DID PAST TSUNAMIS TEACH US?"
+      ],
+      "yt_chapter": "What did past tsunamis teach us?",
+      "label": [
+        "FOUR DISASTERS",
+        "Illustrative images"
+      ],
+      "text": "Lisbon, seventeen fifty five, a quake, then waves. Krakatoa, eighteen eighty three, a volcano pushed the sea. Two thousand four, the Indian Ocean. Two thousand eleven, Japan."
+    },
+    {
+      "kind": "timeline",
+      "heading": "FOUR WAVES THAT CHANGED THE RULES",
+      "min": 14,
+      "text": "In 1755, Lisbon learned that waves can follow a quake within minutes to an hour. In 1883, Krakatoa showed that volcanoes can make tsunamis. In 2004, the Indian Ocean had almost no warning system, and about two hundred thirty thousand people died. In 2011, Japan had warnings, walls and drills, yet still lost about eighteen thousand people, dead or missing.",
+      "events": [
+        {
+          "year": "1755",
+          "text": "Lisbon\nQuake then waves"
+        },
+        {
+          "year": "1883",
+          "text": "Krakatoa\nVolcano waves"
+        },
+        {
+          "year": "2004",
+          "text": "Indian Ocean\n~230,000 dead"
+        },
+        {
+          "year": "2011",
+          "text": "Tohoku, Japan\n~18,000 lost"
+        }
+      ],
+      "fact": "The 2004 wave reached Africa, thousands of\\Nkilometers from the quake, within hours."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA14271/PIA14271~medium.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA13913/PIA13913~orig.jpg",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss026e033648/iss026e033648~medium.jpg",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/iss026e034079/iss026e034079~medium.jpg",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "label": [
+        "TOHOKU, 2011",
+        "Waves crossed the Pacific"
+      ],
+      "text": "After the 2011 quake, warnings in Japan went out within minutes. The first waves still arrived in tens of minutes, depending on the coast. Then the tsunami crossed the whole Pacific, and NOAA tracked it, hour by hour."
+    },
+    {
+      "shots": [
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA13915/PIA13915~large.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:school children",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:running uphill",
+          "start": 0,
+          "move": "right"
+        },
+        {
+          "clip": "pixabay:mountain town",
+          "start": 0,
+          "move": "out"
+        }
+      ],
+      "label": [
+        "IWATE COAST, 2011",
+        "Tendenko: run first"
+      ],
+      "text": "In the Japanese city of Kamaishi, schoolchildren had practiced an old rule called tendenko. Run first, and do not wait for anyone. On the day, nearly all of them reached high ground and survived. Practice beat panic."
+    },
+    {
+      "kind": "kinetic",
+      "words": [
+        "FIRST WAVE",
+        "NOT THE LAST",
+        "STAY UP"
+      ],
+      "text": "And here is the twist.",
+      "min": 4
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:calm sea",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:night coast",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:lighthouse coast",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "label": [
+        "MINUTE 60+",
+        "Do not go back"
+      ],
+      "text": "A tsunami is a series of waves, often for hours, and the first is not always the biggest. Stay high until officials say it is safe."
+    },
+    {
+      "shots": [
+        {
+          "clip": "pixabay:hotel resort",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "pixabay:palm trees",
+          "start": 0,
+          "move": "left"
+        },
+        {
+          "clip": "pixabay:cliff coastline",
+          "start": 0,
+          "move": "right"
+        }
+      ],
+      "title": [
+        "ODDLY LOGICAL SCIENCE",
+        "SUBSCRIBE"
+      ],
+      "min": 6,
+      "text": "So, could you outrun a tsunami? No. But you can out-climb one, if you know the signs. Do you know your beach's escape route? Tell us in the comments, and subscribe for more."
+    }
+  ],
+  "thumbnail": {
+    "scene": 4,
+    "text": "RUN UPHILL",
+    "sub": "NOW",
+    "shift": 0.2,
+    "circle": true
+  },
+  "youtube": {
+    "title": "Could You Outrun a Tsunami? The Sign That Saves You",
+    "description": "Could you outrun a tsunami? Not on foot, but you can out-climb one. Follow the minute-by-minute countdown: the warning signs, the wave's speed, and the one move that saves lives.\n\nIn this video:\n- What are the warning signs of a tsunami?\n- How fast does a tsunami travel?\n- Could you outrun a tsunami on foot?\n- What did past tsunamis teach us? (Lisbon 1755, Krakatoa 1883, Indian Ocean 2004, Tohoku 2011)\n\nFAQ\nHow fast is a tsunami? About 800 km/h (500 mph) in deep ocean, much slower near shore.\nCan you outrun a tsunami? Do not bet on it: go uphill or inland instead.\nWhat are the warning signs? A strong or long earthquake, a sudden sea retreat, or a loud ocean roar.\nIs the first wave the biggest? Not always. Stay high until officials say it is safe.\n\nWould you know where to run on your beach? Tell us below.",
+    "tags": [
+      "could you outrun a tsunami",
+      "how fast is a tsunami",
+      "tsunami warning signs",
+      "tsunami survival",
+      "what to do in a tsunami",
+      "tsunami speed",
+      "Tilly Smith",
+      "Tohoku tsunami 2011",
+      "Indian Ocean tsunami 2004",
+      "tsunami explained",
+      "can you outrun a tsunami",
+      "what if you were on a beach during a tsunami",
+      "NOAA",
+      "earthquake"
+    ],
+    "hashtags": [
+      "#tsunami",
+      "#science",
+      "#survival"
+    ],
+    "translations": {
+      "fr": "Pourrais-tu fuir un tsunami ? Le signe qui te sauve",
+      "es": "¿Podrías huir de un tsunami? La señal que te salva",
+      "pt": "Você conseguiria fugir de um tsunami? O sinal que salva",
+      "de": "Könntest du einem Tsunami davonlaufen? Das rettende Zeichen",
+      "hi": "क्या आप सुनामी से भाग सकते हैं? वो संकेत जो बचाए",
+      "ar": "هل تستطيع الهروب من تسونامي؟ العلامة التي تنقذك"
+    }
+  },
+  "shorts": [
+    {
+      "from": 5,
+      "to": 7,
+      "title": "The Sign That Saved a Beach"
+    },
+    {
+      "from": 10,
+      "to": 14,
+      "title": "A Tsunami Moves Like a Jetliner"
+    },
+    {
+      "from": 16,
+      "to": 19,
+      "title": "Can You Outrun a Tsunami?"
+    }
+  ],
+  "dub": {
+    "es": [
+      "El mar desapareció. Los barcos yacen sobre el lodo. Tienes minutos.",
+      "",
+      "Estás en una playa. El mar se retira, mucho más que en cualquier marea baja. La mayoría camina hacia él. Quédate hasta el final y te mostraré las señales que pueden salvarte la vida.",
+      "Esta es la cuenta atrás.",
+      "¿Podrías huir de un tsunami?",
+      "La respuesta es simple. Un terremoto fuerte o largo cerca de la costa, un mar que se retira de golpe o un rugido del océano significan una sola cosa. Sube ya. No esperes la sirena.",
+      "En dos mil cuatro, Tilly Smith, de diez años, estaba en una playa de Tailandia. Acababa de aprender sobre tsunamis en su escuela de Inglaterra. Cuando vio el mar retirarse y burbujear, avisó a sus padres. Ellos alertaron a otros, y se cuenta que la playa quedó vacía antes de que llegara la ola.",
+      "¿Por qué se retira el mar? A veces el valle de la ola llega primero a la costa y se lleva el agua. El fondo queda al descubierto. La gente sale a mirar. Minutos después, llega la cresta.",
+      "Prueba rápida. El mar se retira muy lejos. ¿Qué haces?",
+      "¿Pero a qué velocidad viene la ola?",
+      "En mar abierto, un tsunami viaja a unos ochocientos kilómetros por hora. Como un avión comercial, y allá la ola suele medir menos de un metro.",
+      "Ochocientos kilómetros por hora.",
+      "En alta mar hay centinelas. Sensores de presión en el fondo detectan el paso de un tsunami como una mínima subida del agua. Envían la señal a los centros de alerta, y los avisos salen en minutos.",
+      "Cerca de la costa, todo cambia. En aguas profundas, la ola es rápida, baja y larguísima. En aguas someras se frena, y toda esa energía se convierte en altura.",
+      "Esto se llama aumento de altura. El fondo sube, el frente de la ola se frena y el agua de atrás lo alcanza y se apila.",
+      "Entonces, ¿podrías huir?",
+      "En corto, no apuestes por ello. Un corredor en forma va a unos quince o veinticinco kilómetros por hora, y el sprint se agota rápido. En tierra, un tsunami fluye a decenas de kilómetros por hora, arrastrando autos, barcos y escombros.",
+      "La ola no se cansa. Tú sí. Y una calle plana es una trampa: el agua puede llenarla más rápido de lo que tú sales.",
+      "El tiempo depende de dónde estés. Tras un sismo lejano, puedes tener horas. Tras uno frente a tu costa, quizá solo minutos, antes de cualquier alerta. Por eso el temblor mismo es tu aviso.",
+      "Así que no la superes corriendo. Supérala subiendo. La guía habitual dice: unos treinta metros, cien pies, sobre el mar, o tres kilómetros tierra adentro. Los edificios altos de concreto son el último recurso, y vas a los pisos de arriba.",
+      "El tráfico es otra trampa. Atascado, el auto no se mueve, pero tú sí. Si las calles están bloqueadas, deja el auto y sube a pie. Lleva a tu familia, no tus cosas.",
+      "Treinta metros de altura. Esa es tu meta.",
+      "Ya ha pasado. Cuatro veces, la historia reescribió las reglas.",
+      "Lisboa, mil setecientos cincuenta y cinco: un terremoto, luego olas. Krakatoa, mil ochocientos ochenta y tres: un volcán empujó el mar. Dos mil cuatro, el océano Índico. Dos mil once, Japón.",
+      "En mil setecientos cincuenta y cinco, Lisboa vio que las olas pueden llegar minutos u horas después de un sismo. En mil ochocientos ochenta y tres, Krakatoa mostró que los volcanes causan tsunamis. En dos mil cuatro, el Índico casi no tenía alertas, y murieron unas doscientas treinta mil personas. En dos mil once, Japón tenía alertas, muros y simulacros, y aun así perdió a unas dieciocho mil personas, entre muertos y desaparecidos.",
+      "Tras el sismo de dos mil once, las alertas en Japón salieron en minutos. Aun así, las primeras olas llegaron en decenas de minutos, según la costa. Luego el tsunami cruzó todo el Pacífico, y la NOAA lo siguió hora tras hora.",
+      "En la ciudad japonesa de Kamaishi, los escolares habían practicado una vieja regla llamada tendenko: corre primero y no esperes a nadie. Ese día, casi todos llegaron a terreno alto y sobrevivieron. La práctica venció al pánico.",
+      "Y aquí viene el giro.",
+      "Un tsunami es una serie de olas, a menudo durante horas, y la primera no siempre es la mayor. Quédate arriba hasta que las autoridades digan que es seguro.",
+      "Entonces, ¿podrías huir de un tsunami? No. Pero puedes subir más rápido que él, si conoces las señales. ¿Sabes cuál es la ruta de escape de tu playa? Cuéntanos en los comentarios y suscríbete para más."
+    ],
+    "pt": [
+      "O mar sumiu. Barcos jazem na lama. Você tem minutos.",
+      "",
+      "Você está numa praia. O mar recua, muito além de qualquer maré baixa. A maioria das pessoas caminha em direção a ele. Fique até o fim e eu mostro os sinais que podem salvar sua vida.",
+      "Esta é a contagem regressiva.",
+      "Você conseguiria fugir de um tsunami?",
+      "A resposta é simples. Um terremoto forte ou longo perto da costa, um mar que recua de repente ou um rugido vindo do oceano significam uma coisa só. Suba agora. Não espere a sirene.",
+      "Em dois mil e quatro, Tilly Smith, de dez anos, estava numa praia na Tailândia. Ela tinha acabado de aprender sobre tsunamis na escola, na Inglaterra. Quando viu o mar recuar e borbulhar, avisou os pais. Eles alertaram outras pessoas, e dizem que a praia foi esvaziada antes da chegada da onda.",
+      "Por que o mar recua? Às vezes o vale da onda chega primeiro à costa e puxa a água para longe. O fundo fica exposto. As pessoas vão olhar. Minutos depois, chega a crista.",
+      "Teste rápido. O mar recua muito. O que você faz?",
+      "Mas com que velocidade a onda vem?",
+      "No oceano profundo, um tsunami viaja a uns oitocentos quilômetros por hora. A velocidade de um jato, e lá no mar a onda costuma ter menos de um metro.",
+      "Oitocentos quilômetros por hora.",
+      "No alto-mar há sentinelas. Sensores de pressão no fundo sentem a passagem de um tsunami como uma pequena subida da água. Eles enviam o sinal aos centros de alerta, e os avisos saem em minutos.",
+      "Perto da costa, tudo muda. Em águas profundas, a onda é rápida, baixa e comprida. Em águas rasas, ela desacelera, e toda essa energia vira altura.",
+      "Isso se chama empolamento. O fundo sobe, a frente da onda freia e a água de trás alcança e se empilha.",
+      "Então, dá para fugir?",
+      "Resposta curta: não aposte nisso. Um corredor em forma faz uns quinze a vinte e cinco quilômetros por hora, e o sprint se esgota rápido. Em terra, o tsunami avança a dezenas de quilômetros por hora, arrastando carros, barcos e entulho.",
+      "A onda não cansa. Você cansa. E uma rua plana é uma armadilha: a água pode enchê-la mais rápido do que você sai.",
+      "O tempo depende de onde você está. Após um terremoto distante, pode haver horas. Após um bem na sua costa, talvez só minutos, antes de qualquer alerta. Por isso o tremor em si é o seu aviso.",
+      "Então não tente correr mais que ela. Suba mais que ela. A orientação comum é uns trinta metros, cem pés, acima do mar, ou três quilômetros para dentro. Prédios altos de concreto são o último recurso, e você vai para os andares de cima.",
+      "O trânsito é outra armadilha. Num congestionamento, o carro não anda, mas você anda. Se as ruas estiverem bloqueadas, largue o carro e suba a pé. Leve sua família, não seus pertences.",
+      "Trinta metros de altura. Essa é a sua meta.",
+      "Já aconteceu antes. Quatro vezes, a história reescreveu as regras.",
+      "Lisboa, mil setecentos e cinquenta e cinco: um terremoto, depois ondas. Krakatoa, mil oitocentos e oitenta e três: um vulcão empurrou o mar. Dois mil e quatro, o oceano Índico. Dois mil e onze, Japão.",
+      "Em mil setecentos e cinquenta e cinco, Lisboa viu que ondas podem vir minutos ou horas após um terremoto. Em mil oitocentos e oitenta e três, Krakatoa mostrou que vulcões causam tsunamis. Em dois mil e quatro, o Índico quase não tinha alertas, e morreram cerca de duzentas e trinta mil pessoas. Em dois mil e onze, o Japão tinha alertas, muros e simulados, e mesmo assim perdeu cerca de dezoito mil pessoas, entre mortos e desaparecidos.",
+      "Após o terremoto de dois mil e onze, os alertas no Japão saíram em minutos. Ainda assim, as primeiras ondas chegaram em dezenas de minutos, conforme a costa. Depois o tsunami cruzou o Pacífico inteiro, e a NOAA o acompanhou hora a hora.",
+      "Na cidade japonesa de Kamaishi, as crianças da escola tinham treinado uma regra antiga chamada tendenko: corra primeiro e não espere ninguém. No dia, quase todas chegaram a um local alto e sobreviveram. A prática venceu o pânico.",
+      "E aqui vem a reviravolta.",
+      "Um tsunami é uma série de ondas, muitas vezes por horas, e a primeira nem sempre é a maior. Fique no alto até as autoridades dizerem que é seguro.",
+      "Então, dá para fugir de um tsunami? Não. Mas você pode subir mais rápido que ele, se souber os sinais. Você conhece a rota de fuga da sua praia? Conte nos comentários e se inscreva para mais."
+    ],
+    "hi": [
+      "समंदर गायब है। नावें कीचड़ में पड़ी हैं। आपके पास बस कुछ मिनट हैं।",
+      "",
+      "आप समुद्र तट पर हैं। समंदर बहुत पीछे हट गया है। ज़्यादातर लोग उसी ओर चल पड़ते हैं। अंत तक रुकिए, मैं वे संकेत बताऊँगा जो जान बचा सकते हैं।",
+      "यह है काउंटडाउन।",
+      "क्या आप सुनामी से भाग सकते हैं?",
+      "जवाब सीधा है। तट के पास तेज़ या लंबा भूकंप, अचानक पीछे हटता समंदर, या सागर की गर्जना, इन सबका एक ही मतलब है। तुरंत ऊँचाई पर जाइए। सायरन का इंतज़ार मत कीजिए।",
+      "दो हज़ार चार में दस साल की टिली स्मिथ थाईलैंड के तट पर थी। उसने इंग्लैंड के स्कूल में सुनामी के बारे में पढ़ा था। समंदर को पीछे हटते और बुदबुदाते देख उसने माता-पिता को बताया। उन्होंने सबको चेताया, और कहा जाता है कि लहर आने से पहले तट खाली हो गया।",
+      "समंदर पीछे क्यों हटता है? कभी लहर का निचला हिस्सा पहले पहुँचकर पानी खींच लेता है। तली दिखने लगती है। लोग देखने निकल पड़ते हैं। कुछ मिनट बाद शिखर आ जाता है।",
+      "एक सवाल। समंदर बहुत पीछे हटे, तो क्या करेंगे?",
+      "लेकिन लहर कितनी तेज़ आती है?",
+      "गहरे समंदर में सुनामी लगभग आठ सौ किलोमीटर प्रति घंटे चलती है। जेट विमान जितनी तेज़, और वहाँ लहर अक्सर एक मीटर से भी नीची होती है।",
+      "आठ सौ किलोमीटर प्रति घंटा।",
+      "समंदर में पहरेदार हैं। तली के दबाव सेंसर सुनामी को पानी की हल्की उठान की तरह पकड़ लेते हैं। संकेत चेतावनी केंद्रों को जाता है, और अलर्ट मिनटों में निकलते हैं।",
+      "तट के पास सब बदल जाता है। गहरे पानी में लहर तेज़, नीची और बहुत लंबी होती है। उथले पानी में वह धीमी होती है, और सारी ऊर्जा ऊँचाई बन जाती है।",
+      "इसे शोलिंग कहते हैं। तली उठती है, लहर का अगला हिस्सा धीमा पड़ता है, और पीछे का पानी उस पर चढ़ जाता है।",
+      "तो क्या आप भाग सकते हैं?",
+      "छोटा जवाब, दाँव मत लगाइए। अच्छा धावक पंद्रह से पच्चीस किलोमीटर प्रति घंटे दौड़ता है, और दम जल्दी टूटता है। ज़मीन पर सुनामी दसियों किलोमीटर प्रति घंटे बहती है, कारें और नावें बहा ले जाती है।",
+      "लहर थकती नहीं। आप थकते हैं। और सपाट सड़क जाल है, क्योंकि पानी उसे आपके निकलने से पहले भर देता है।",
+      "समय इस पर निर्भर है कि आप कहाँ हैं। दूर के भूकंप के बाद घंटे मिल सकते हैं। तट के पास के भूकंप के बाद शायद सिर्फ़ मिनट, अलर्ट से भी पहले। इसीलिए झटका ही आपकी चेतावनी है।",
+      "तो भागिए मत, ऊपर चढ़िए। आम सलाह है, समुद्र से करीब तीस मीटर ऊपर, या तीन किलोमीटर अंदर। मज़बूत ऊँची कंक्रीट इमारतें आख़िरी सहारा हैं, और ऊपरी मंज़िलों पर जाइए।",
+      "ट्रैफ़िक भी जाल है। जाम में कार नहीं हिलती, पर आप चल सकते हैं। सड़क बंद हो तो कार छोड़िए और पैदल ऊपर जाइए। परिवार को लीजिए, सामान को नहीं।",
+      "तीस मीटर ऊपर। यही आपका लक्ष्य है।",
+      "यह पहले भी हुआ है। चार बार इतिहास ने नियम बदले।",
+      "लिस्बन, सत्रह सौ पचपन, भूकंप के बाद लहरें। क्राकाटोआ, अठारह सौ तिरासी, ज्वालामुखी ने समंदर धकेला। दो हज़ार चार, हिंद महासागर। दो हज़ार ग्यारह, जापान।",
+      "सत्रह सौ पचपन में लिस्बन ने जाना कि भूकंप के मिनटों या घंटे बाद लहरें आ सकती हैं। अठारह सौ तिरासी में क्राकाटोआ ने दिखाया कि ज्वालामुखी भी सुनामी लाते हैं। दो हज़ार चार में हिंद महासागर में लगभग कोई चेतावनी नहीं थी, और करीब दो लाख तीस हज़ार लोग मरे। दो हज़ार ग्यारह में जापान के पास चेतावनी, दीवारें और अभ्यास थे, फिर भी करीब अठारह हज़ार लोग मृत या लापता हुए।",
+      "दो हज़ार ग्यारह के भूकंप के बाद जापान में चेतावनी मिनटों में निकली। फिर भी पहली लहरें तट के हिसाब से दसियों मिनट में पहुँचीं। फिर सुनामी पूरा प्रशांत पार कर गई, और NOAA ने उसे घंटे-दर-घंटे देखा।",
+      "जापान के कामाइशी शहर में बच्चों ने तेंदेनको नाम का पुराना नियम सीखा था। पहले भागो, किसी का इंतज़ार मत करो। उस दिन लगभग सभी ऊँचाई पर पहुँचे और बच गए। अभ्यास ने घबराहट को हराया।",
+      "और अब मोड़ आता है।",
+      "सुनामी लहरों की श्रृंखला है, अक्सर घंटों तक, और पहली लहर हमेशा सबसे बड़ी नहीं होती। अधिकारियों के सुरक्षित कहने तक ऊपर रहिए।",
+      "तो क्या आप सुनामी से भाग सकते हैं? नहीं। पर संकेत जानते हों तो उससे ऊँचे चढ़ सकते हैं। क्या आपको अपने तट का रास्ता पता है? कमेंट में बताइए, और सब्सक्राइब कीजिए।"
+    ],
+    "fr": [
+      "La mer a disparu. Les bateaux gisent dans la vase. Tu as quelques minutes.",
+      "",
+      "Tu es sur une plage. La mer se retire, bien plus loin que n'importe quelle marée basse. La plupart des gens marchent vers elle. Reste jusqu'à la fin, et je te montre les signes qui peuvent te sauver la vie.",
+      "Voici le compte à rebours.",
+      "Pourrais-tu fuir un tsunami ?",
+      "La réponse est simple. Un séisme fort ou long près de la côte, une mer qui se retire d'un coup ou un grondement de l'océan veulent dire une seule chose. Monte tout de suite. N'attends pas la sirène.",
+      "En deux mille quatre, Tilly Smith, dix ans, était sur une plage en Thaïlande. Elle venait d'apprendre les tsunamis à l'école, en Angleterre. En voyant la mer se retirer et bouillonner, elle a prévenu ses parents. Ils ont alerté les autres, et la plage aurait été évacuée avant l'arrivée de la vague.",
+      "Pourquoi la mer se retire-t-elle ? Parfois, le creux de la vague atteint la côte en premier et aspire l'eau. Le fond apparaît. Les gens avancent pour regarder. Quelques minutes plus tard, la crête arrive.",
+      "Petit test. La mer se retire très loin. Que fais-tu ?",
+      "Mais à quelle vitesse arrive la vague ?",
+      "En plein océan, un tsunami file à environ huit cents kilomètres par heure. La vitesse d'un avion de ligne, et là-bas, la vague fait souvent moins d'un mètre.",
+      "Huit cents kilomètres par heure.",
+      "En mer, il y a des sentinelles. Des capteurs de pression au fond sentent un tsunami comme une infime hausse de l'eau. Ils envoient le signal aux centres d'alerte, et les alertes partent en quelques minutes.",
+      "Près de la côte, tout change. En eau profonde, la vague est rapide, basse et très étirée. En eau peu profonde, elle ralentit, et toute cette énergie se change en hauteur.",
+      "C'est le déferlement de hauts-fonds. Le fond remonte, l'avant de la vague freine, et l'eau derrière la rattrape et s'empile.",
+      "Alors, pourrais-tu la fuir ?",
+      "Réponse courte : ne parie pas dessus. Un coureur en forme fait environ quinze à vingt-cinq kilomètres par heure, et le sprint s'épuise vite. À terre, un tsunami avance à des dizaines de kilomètres par heure, charriant voitures, bateaux et débris.",
+      "La vague ne se fatigue pas. Toi, si. Et une route plate est un piège : l'eau peut la remplir plus vite que tu ne la quittes.",
+      "Le temps dépend de l'endroit. Après un séisme lointain, tu peux avoir des heures. Après un séisme juste au large, peut-être quelques minutes, avant toute alerte. Voilà pourquoi la secousse elle-même est ton signal.",
+      "Alors ne la fuis pas : grimpe plus haut qu'elle. La consigne habituelle : environ trente mètres, cent pieds, au-dessus de la mer, ou trois kilomètres à l'intérieur des terres. Les grands bâtiments en béton sont un dernier recours, et tu montes aux étages.",
+      "La circulation est un autre piège. Dans un embouteillage, la voiture ne bouge plus, mais toi si. Si les routes sont bloquées, abandonne la voiture et monte à pied. Prends ta famille, pas tes affaires.",
+      "Trente mètres de hauteur. Voilà ton objectif.",
+      "Ça s'est déjà produit. Quatre fois, l'histoire a réécrit les règles.",
+      "Lisbonne, dix-sept cent cinquante-cinq : un séisme, puis des vagues. Krakatoa, dix-huit cent quatre-vingt-trois : un volcan a repoussé la mer. Deux mille quatre, l'océan Indien. Deux mille onze, le Japon.",
+      "En dix-sept cent cinquante-cinq, Lisbonne a appris que les vagues peuvent suivre un séisme de quelques minutes à une heure. En dix-huit cent quatre-vingt-trois, Krakatoa a montré que les volcans provoquent des tsunamis. En deux mille quatre, l'océan Indien n'avait presque aucune alerte, et environ deux cent trente mille personnes sont mortes. En deux mille onze, le Japon avait alertes, digues et exercices, et a pourtant perdu environ dix-huit mille personnes, morts ou disparus.",
+      "Après le séisme de deux mille onze, les alertes japonaises sont parties en quelques minutes. Les premières vagues sont quand même arrivées en dizaines de minutes, selon la côte. Puis le tsunami a traversé tout le Pacifique, et la NOAA l'a suivi heure après heure.",
+      "À Kamaishi, au Japon, les écoliers avaient répété une vieille règle, le tendenko : fuis d'abord, sans attendre personne. Ce jour-là, presque tous ont atteint les hauteurs et ont survécu. L'entraînement a battu la panique.",
+      "Et voici le twist.",
+      "Un tsunami est une série de vagues, souvent pendant des heures, et la première n'est pas toujours la plus grande. Reste en hauteur jusqu'à ce que les autorités disent que c'est sûr.",
+      "Alors, pourrais-tu fuir un tsunami ? Non. Mais tu peux monter plus vite que lui, si tu connais les signes. Connais-tu la route d'évacuation de ta plage ? Dis-le-nous en commentaire et abonne-toi pour la suite."
+    ],
+    "de": [
+      "Das Meer ist verschwunden. Boote liegen im Schlamm. Du hast nur Minuten.",
+      "",
+      "Du stehst an einem Strand. Das Meer zieht sich zurück, viel weiter als bei jeder Ebbe. Die meisten gehen darauf zu. Bleib bis zum Ende, dann zeige ich dir die Zeichen, die dein Leben retten können.",
+      "Das ist der Countdown.",
+      "Könntest du einem Tsunami davonlaufen?",
+      "Die Antwort ist einfach. Ein starkes oder langes Erdbeben nahe der Küste, ein plötzlich zurückweichendes Meer oder ein lautes Brüllen des Ozeans bedeuten nur eins. Sofort bergauf. Warte nicht auf die Sirene.",
+      "Im Jahr zweitausendvier stand die zehnjährige Tilly Smith an einem Strand in Thailand. Sie hatte in ihrer Schule in England gerade über Tsunamis gelernt. Als sie das Meer zurückweichen und blubbern sah, sagte sie es ihren Eltern. Sie warnten andere, und der Strand wurde angeblich geräumt, bevor die Welle kam.",
+      "Warum zieht sich das Meer zurück? Manchmal erreicht das Wellental zuerst die Küste und saugt das Wasser weg. Der Meeresboden liegt frei. Leute gehen hinaus, um zu schauen. Wenige Minuten später kommt der Wellenberg.",
+      "Kurzer Test. Das Meer zieht sich weit zurück. Was tust du?",
+      "Aber wie schnell kommt die Welle?",
+      "Im tiefen Ozean rast ein Tsunami mit etwa achthundert Kilometern pro Stunde. So schnell wie ein Passagierjet, und dort draußen ist die Welle oft niedriger als ein Meter.",
+      "Achthundert Kilometer pro Stunde.",
+      "Draußen auf See gibt es Wächter. Drucksensoren am Meeresboden spüren einen Tsunami als winzigen Anstieg des Wassers. Sie senden das Signal an Warnzentren, und Warnungen gehen binnen Minuten raus.",
+      "Nahe der Küste ändert sich alles. In tiefem Wasser ist die Welle schnell, flach und sehr lang. In flachem Wasser wird sie langsamer, und die ganze Energie türmt sich zu Höhe auf.",
+      "Das nennt man Shoaling. Der Meeresboden steigt, die Wellenfront bremst, und das Wasser dahinter holt auf und staut sich höher.",
+      "Könntest du ihr also davonlaufen?",
+      "Kurz gesagt: Wette nicht darauf. Ein fitter Läufer schafft etwa fünfzehn bis fünfundzwanzig Kilometer pro Stunde, und der Sprint ist schnell vorbei. An Land fließt ein Tsunami oft mit zig Kilometern pro Stunde und reißt Autos, Boote und Trümmer mit.",
+      "Die Welle wird nicht müde. Du schon. Und eine flache Straße ist eine Falle, denn das Wasser füllt sie schneller, als du sie verlässt.",
+      "Die Zeit hängt vom Ort ab. Nach einem fernen Beben hast du vielleicht Stunden. Nach einem Beben direkt vor deiner Küste vielleicht nur Minuten, noch vor jeder Warnung. Darum ist das Beben selbst dein Warnsignal.",
+      "Also lauf nicht davon. Klettere höher. Üblich ist: etwa dreißig Meter, hundert Fuß, über dem Meer, oder drei Kilometer landeinwärts. Hohe Betongebäude sind der letzte Ausweg, und du gehst in die oberen Stockwerke.",
+      "Verkehr ist die nächste Falle. Im Stau steht das Auto, aber du kannst gehen. Sind die Straßen blockiert, lass das Auto stehen und geh bergauf. Nimm deine Familie mit, nicht dein Hab und Gut.",
+      "Dreißig Meter hoch. Das ist dein Ziel.",
+      "Es ist schon passiert. Viermal schrieb die Geschichte die Regeln neu.",
+      "Lissabon, siebzehnhundertfünfundfünfzig: ein Beben, dann Wellen. Krakatau, achtzehnhundertdreiundachtzig: ein Vulkan schob das Meer. Zweitausendvier, der Indische Ozean. Zweitausendelf, Japan.",
+      "Siebzehnhundertfünfundfünfzig lernte Lissabon, dass Wellen Minuten bis eine Stunde nach einem Beben folgen können. Achtzehnhundertdreiundachtzig zeigte Krakatau, dass Vulkane Tsunamis auslösen. Zweitausendvier hatte der Indische Ozean fast kein Warnsystem, und etwa zweihundertdreißigtausend Menschen starben. Zweitausendelf hatte Japan Warnungen, Mauern und Übungen und verlor trotzdem etwa achtzehntausend Menschen, tot oder vermisst.",
+      "Nach dem Beben von zweitausendelf gingen die Warnungen in Japan binnen Minuten raus. Die ersten Wellen kamen trotzdem, je nach Küste, nach Dutzenden Minuten. Dann durchquerte der Tsunami den ganzen Pazifik, und die NOAA verfolgte ihn Stunde um Stunde.",
+      "In der japanischen Stadt Kamaishi hatten Schulkinder eine alte Regel geübt, Tendenko: Lauf zuerst und warte auf niemanden. An dem Tag erreichten fast alle die Anhöhe und überlebten. Übung schlug Panik.",
+      "Und jetzt kommt der Twist.",
+      "Ein Tsunami ist eine Serie von Wellen, oft über Stunden, und die erste ist nicht immer die größte. Bleib oben, bis die Behörden Entwarnung geben.",
+      "Könntest du also einem Tsunami davonlaufen? Nein. Aber du kannst höher klettern, wenn du die Zeichen kennst. Kennst du den Fluchtweg an deinem Strand? Schreib es in die Kommentare und abonniere für mehr."
+    ],
+    "ar": [
+      "اختفى البحر. القوارب على الطين. أمامك دقائق فقط.",
+      "",
+      "أنت على الشاطئ. البحر ينحسر بعيدًا جدًا. معظم الناس يمشون نحوه. ابقَ للنهاية، وسأريك علامات قد تنقذ حياتك.",
+      "هذا هو العدّ التنازلي.",
+      "هل تستطيع الهروب من تسونامي؟",
+      "الجواب بسيط. زلزال قوي أو طويل قرب الساحل، أو بحر ينحسر فجأة، أو هدير من المحيط، كلها تعني شيئًا واحدًا. اصعد إلى مكان مرتفع فورًا. لا تنتظر الصفارة.",
+      "عام ألفين وأربعة، كانت تيلي سميث، ذات العشر سنوات، على شاطئ في تايلاند. تعلمت عن التسونامي في مدرستها بإنجلترا. حين رأت البحر ينحسر ويفور، أخبرت والديها. حذّرا الآخرين، ويُقال إن الشاطئ أُخلي قبل وصول الموجة.",
+      "لماذا ينحسر البحر؟ أحيانًا يصل قاع الموجة إلى الساحل أولًا فيسحب الماء. ينكشف قاع البحر. يتقدم الناس للمشاهدة. وبعد دقائق تصل القمة.",
+      "اختبار سريع. البحر ينحسر بعيدًا. ماذا تفعل؟",
+      "لكن ما سرعة الموجة؟",
+      "في المحيط العميق يسير التسونامي بنحو ثمانمئة كيلومتر في الساعة. سرعة طائرة نفاثة، وهناك يقل ارتفاع الموجة غالبًا عن متر.",
+      "ثمانمئة كيلومتر في الساعة.",
+      "في عرض البحر حرّاس. مستشعرات ضغط في القاع تلتقط التسونامي كارتفاع طفيف في الماء. ترسل الإشارة إلى مراكز الإنذار، وتصدر التحذيرات خلال دقائق.",
+      "قرب الساحل يتغير كل شيء. في الماء العميق الموجة سريعة ومنخفضة وطويلة. في الضحل تبطؤ، وتتحول طاقتها إلى ارتفاع.",
+      "هذا يسمى التضحّل. يرتفع القاع، فتتباطأ مقدمة الموجة، ويلحق بها الماء من خلفها ويتكدس.",
+      "فهل تستطيع الهروب؟",
+      "باختصار، لا تراهن على ذلك. العدّاء اللائق يقطع نحو خمسة عشر إلى خمسة وعشرين كيلومترًا في الساعة، ويخبو سريعًا. وعلى اليابسة يندفع التسونامي بعشرات الكيلومترات في الساعة، حاملًا السيارات والقوارب والحطام.",
+      "الموجة لا تتعب. أنت تتعب. والطريق المستوي فخ، فالماء يملؤه أسرع مما تغادره.",
+      "الوقت يعتمد على مكانك. بعد زلزال بعيد قد تملك ساعات. وبعد زلزال قرب ساحلك ربما دقائق فقط، قبل أي إنذار. لذلك الاهتزاز نفسه هو تحذيرك.",
+      "فلا تحاول التفوق عليها عدوًا. تفوّق عليها صعودًا. الإرشاد المعتاد نحو ثلاثين مترًا فوق البحر، أو ثلاثة كيلومترات إلى الداخل. المباني الخرسانية العالية ملاذ أخير، وتصعد إلى طوابقها العليا.",
+      "الازدحام فخ آخر. السيارة العالقة لا تتحرك، لكنك تستطيع. إن كانت الطرق مغلقة، اترك السيارة واصعد مشيًا. خذ أسرتك، لا أغراضك.",
+      "ثلاثون مترًا إلى الأعلى. هذا هدفك.",
+      "حدث هذا من قبل. أربع مرات أعاد التاريخ كتابة القواعد.",
+      "لشبونة، ألف وسبعمئة وخمسة وخمسون، زلزال ثم أمواج. كراكاتوا، ألف وثمانمئة وثلاثة وثمانون، بركان دفع البحر. ألفان وأربعة، المحيط الهندي. ألفان وأحد عشر، اليابان.",
+      "عام ألف وسبعمئة وخمسة وخمسين تعلمت لشبونة أن الأمواج قد تتبع الزلزال بعد دقائق أو ساعة. وعام ألف وثمانمئة وثلاثة وثمانين أثبتت كراكاتوا أن البراكين تصنع تسونامي. وعام ألفين وأربعة كاد المحيط الهندي يخلو من الإنذار، ومات نحو مئتين وثلاثين ألفًا. وعام ألفين وأحد عشر كانت لليابان إنذارات وجدران وتدريبات، ومع ذلك فقدت نحو ثمانية عشر ألفًا بين قتيل ومفقود.",
+      "بعد زلزال ألفين وأحد عشر صدرت الإنذارات في اليابان خلال دقائق. ومع ذلك وصلت الأمواج الأولى بعد عشرات الدقائق حسب الساحل. ثم عبر التسونامي المحيط الهادئ كله، وتتبعته نوا ساعة بساعة.",
+      "في مدينة كاماييشي اليابانية تدرّب التلاميذ على قاعدة قديمة اسمها تندينكو: اهرب أولًا ولا تنتظر أحدًا. في ذلك اليوم بلغ معظمهم مكانًا عاليًا ونجوا. التدريب هزم الذعر.",
+      "وهنا المفاجأة.",
+      "التسونامي سلسلة أمواج، غالبًا لساعات، والأولى ليست دائمًا الأكبر. ابقَ في الأعلى حتى تعلن السلطات الأمان.",
+      "فهل تستطيع الهروب من تسونامي؟ لا. لكن تستطيع الصعود أسرع منه، إن عرفت العلامات. هل تعرف طريق النجاة في شاطئك؟ أخبرنا في التعليقات واشترك للمزيد."
+    ]
+  }
+}
