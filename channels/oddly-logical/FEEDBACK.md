@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — « space_no_suit » publiée telle quelle mais RÉGRESSIONS : (1) miniature nettement moins bonne que Carrington ; (2) aurore boréale au début (intro générique hors sujet) ; (3) quelques plans peu adaptés. À partir de maintenant : miniature regardée et comparée à celle de Carrington AVANT livraison (image choc du sujet, visage/objet net, 2-3 mots énormes) ; ouverture = image du SUJET, jamais un fond générique ; un plan « acceptable » ne suffit pas, il doit être juste.
+
 - 2026-10-07 — Revue v3 outrun_tsunami : Pixabay renvoie souvent n'importe quoi (vaches pour « boats on mud », Mont-Saint-Michel pour « exposed seabed », famille qui court VERS la mer pour une évacuation, chaussures dessinées) + un carton-texte NASA et une image noire. Règle : tout plan Pixabay est suspect jusqu'à la revue `_review.jpg` ; en cas de doute on le supprime et on laisse les plans officiels/animations couvrir la scène. Moteur : un plan répété réutilise le même fichier ; Pixabay = requête complète seulement (plus de raccourcissement), vrais films seulement (video_type=film), au moins la moitié des mots de la requête dans les tags, sinon plan retiré ; `pixabay:id:<n>` pour figer un plan choisi à l'œil sur la planche du scout.
 - 2026-10-07 — PIXABAY INTERDIT par défaut (met le bazar : hors-sujet, métaphores). Images = sources officielles/archives uniquement (NASA, NOAA, USGS via Scout/Commons, CDC/NIH, DVIDS, Internet Archive). Choisir des sujets pour lesquels ces sources ont de VRAIES images, et alterner les thèmes à chaque vidéo.
 
