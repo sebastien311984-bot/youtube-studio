@@ -12,7 +12,14 @@ for i, s in enumerate(ep["scenes"]):
             if e.get("type") in ("curve",) and len(e.get("pts", [])) != 3: errs.append(f"scène {i} : courbe à {len(e['pts'])} points (3 requis)")
     for line in s.get("fact", "").split("\\N"):
         if len(line) > 45: errs.append(f"scène {i} : ligne d'encart > 45 car.")
+import urllib.request
+for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être téléchargeable (un 403 = rendu planté ou plan noir)
+    for x in (s.get("shots") or ([s] if s.get("clip") else [])):
+        u = x.get("clip", "")
+        if u.startswith("http"):
+            try: urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "OddlyLogicalStudio/1.0"}), timeout=20)
+            except Exception as e: errs.append(f"scène {i} : URL inaccessible ({e}) {u[-60:]}")
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
-print("\n".join(errs) or "OK"); sys.exit(1 if any("courbe" in e or "titre" in e for e in errs) else 0)
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible")) else 0)
