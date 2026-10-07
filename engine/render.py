@@ -207,6 +207,25 @@ def music(total, voice_env, cuts, risers=()):
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
+DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-HenriNeural",
+              "de": "de-DE-ConradNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
+
+def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
+    n = int(total * SR); vtrack = np.zeros(n)
+    for i, (txt, (st, slot)) in enumerate(zip(texts, slots)):
+        if not txt: continue
+        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp); vd = dur(vp)
+        tempo = min(1.4, vd / slot) if slot > 0 and vd > slot else 1.0  # accélère légèrement si la traduction est plus longue
+        if tempo > 1.0: print(f"Doublage {lang} scène {i} : accéléré x{tempo:.2f}")
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
+        v = np.frombuffer(raw, np.int16).astype(float) / 32768; a = int(st * SR); m = min(len(v), n - a); vtrack[a:a + m] += v[:m]
+    k = int(0.15 * SR); env = np.convolve(np.abs(vtrack), np.ones(k) / k, "same"); env = np.minimum(1, env / 0.04)
+    mix = np.tanh((vtrack * 1.15 + music(total, env, cuts[1:], [r for r in risers if r > 2.5]) * 0.33) * 1.1) * 0.93
+    wav = os.path.join(work, f"dub_{lang}.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
+    sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "aac", "-b:a", "160k", out)
+
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
     voice = ep.get("voice", "en-US-AndrewMultilingualNeural")
@@ -286,6 +305,11 @@ def main(ep_path, clips_dir, out):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
     sh("ffmpeg", "-v", "error", "-y", *inputs, "-i", wav, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", f"{len(scenes)}:a",
        "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
+    voice_slots = [(st, d - (st - t0) - 0.2) for (_, d, vp, st), t0 in zip(scenes, starts)]
+    json.dump({"total": total, "starts": starts, "slots": voice_slots, "risers": risers, "cuts": cuts},
+              open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
+    for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
+        dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)

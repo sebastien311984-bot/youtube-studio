@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — INTERNATIONAL : chaque vidéo sort avec des pistes audio doublées (es, pt, hi, fr, de, ar) via le champ `dub` ; l'utilisateur supprime les fichiers après publication, donc tout doit pouvoir se régénérer depuis le dépôt (épisode JSON + minutage). Carrington : doublage approximatif accepté.
+
 - 2026-10-07 — Claude = chef de projet, réalisateur, monteur, étalonneur : il SURVEILLE TOUT lui-même. Pixabay = dernier recours (fonds verts, dessins animés, hors-sujet) ; priorité aux sources officielles (NASA SVS/images.nasa.gov, NOAA, USGS, ESA). Avant rendu : planche contact de toutes les photos/plans choisis ; après rendu : planche 1 image/4 s de la vidéo, regardée en entier avant de livrer.
 
 - 2026-10-07 — AUTONOMIE : l'utilisateur ne valide pas chaque étape ; Claude décide en expert (sujet, format, style) et livre la vidéo finie. Durée libre selon le sujet : formats courts 4-6 min privilégiés pour lancer la chaîne (pas de longueur artificielle) ; 8 min+ seulement si le sujet le porte.
