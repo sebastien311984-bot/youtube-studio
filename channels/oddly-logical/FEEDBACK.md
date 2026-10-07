@@ -1,7 +1,16 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — « Carrington n'est PAS une référence » : trop de consignes appliquées à la lettre = Claude ne réfléchit plus → régressions. Skill allégé : contrôle qualité par jugement (« est-ce que je cliquerais / est-ce juste ? »), règles = mémoire des erreurs, pas un script.
+
+- 2026-10-07 — « space_no_suit » publiée telle quelle mais RÉGRESSIONS : (1) miniature nettement moins bonne que Carrington ; (2) aurore boréale au début (intro générique hors sujet) ; (3) quelques plans peu adaptés. À partir de maintenant : miniature regardée et comparée à celle de Carrington AVANT livraison (image choc du sujet, visage/objet net, 2-3 mots énormes) ; ouverture = image du SUJET, jamais un fond générique ; un plan « acceptable » ne suffit pas, il doit être juste.
+
 - 2026-10-07 — Revue v3 outrun_tsunami : Pixabay renvoie souvent n'importe quoi (vaches pour « boats on mud », Mont-Saint-Michel pour « exposed seabed », famille qui court VERS la mer pour une évacuation, chaussures dessinées) + un carton-texte NASA et une image noire. Règle : tout plan Pixabay est suspect jusqu'à la revue `_review.jpg` ; en cas de doute on le supprime et on laisse les plans officiels/animations couvrir la scène. Moteur : un plan répété réutilise le même fichier ; Pixabay = requête complète seulement (plus de raccourcissement), vrais films seulement (video_type=film), au moins la moitié des mots de la requête dans les tags, sinon plan retiré ; `pixabay:id:<n>` pour figer un plan choisi à l'œil sur la planche du scout.
+- 2026-10-07 — PIXABAY INTERDIT par défaut (met le bazar : hors-sujet, métaphores). Images = sources officielles/archives uniquement (NASA, NOAA, USGS via Scout/Commons, CDC/NIH, DVIDS, Internet Archive). Choisir des sujets pour lesquels ces sources ont de VRAIES images, et alterner les thèmes à chaque vidéo.
+
+- 2026-10-07 — SOUND DESIGN cinématique obligatoire : musique de fond adaptée au thème, petits sons pros (whoosh aux transitions, impacts sur les chiffres, riser + silence avant les révélations, ambiance du lieu). Il compense la voix de synthèse. Ne jamais régresser là-dessus.
+
+- 2026-10-07 — Doublages : voix DYNAMIQUES, convaincantes, fun (garder l'auditeur). Moteur : voix natives/multilingues + tons dynamiques par scène (version fusionnée des deux discussions) ; traducteur : ton YouTubeur natif, phrases courtes. Images toujours cohérentes avec l'histoire ; zéro régression d'une vidéo à l'autre.
 
 - 2026-10-07 — PLUSIEURS DISCUSSIONS EN PARALLÈLE : ne JAMAIS annuler un rendu GitHub Actions d'une autre branche que la sienne (outrun_tsunami annulé 2 fois par une autre discussion). Filtrer par `head_branch` avant tout cancel.
 
@@ -40,7 +49,7 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - 2026-10-06 — Pixabay n'a pas les espèces rares (anglerfish, viperfish, giant squid : 0 résultat) → requêtes génériques ; le moteur raccourcit désormais la requête automatiquement.
 - 2026-10-06 — Pixabay opérationnel (testé) : utiliser `"clip": "pixabay:..."` pour la nature, les océans et les animaux. Pexels indisponible (clés suspendues). Secours : NOAA, USGS, US Fish & Wildlife, Wikimedia Commons.
 
-- 2026-10-06 — « Carrington Event » VALIDÉE, jugée « magnifique, excellente » : effets 3D NASA, narration, sons, chapitres, visuels variés de qualité, infographies dynamiques, titres, motion design. C'est LA référence : garder ce niveau et cette recette.
+- 2026-10-06 — « Carrington Event » VALIDÉE, jugée « magnifique, excellente » : effets 3D NASA, narration, sons, chapitres, visuels variés de qualité, infographies dynamiques, titres, motion design. (Bonne vidéo, mais pas un modèle à copier.)
 - 2026-10-06 — Failles corrigées dans le moteur : sous-titres qui mélangeaient deux phrases (coupure désormais aux pauses de la voix) ; Short de 7 s trop court (minimum 30 s imposé). Règle : chaque Short = un mini-récit complet de 30 à 58 s (accroche, révélation, chute), choisi sur un passage fort.
 
 - 2026-10-06 — Objectif : 1 vidéo longue par jour (si le quota le permet). Une nouvelle conversation par vidéo pour économiser les tokens.

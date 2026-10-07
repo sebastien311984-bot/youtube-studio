@@ -11,6 +11,8 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 - Toute leçon apprise va dans FEEDBACK.md (jamais seulement dans la conversation).
 
 ## Esprit (à lire en premier)
+- **Réfléchir avant d'appliquer** : les règles ci-dessous sont la mémoire des erreurs passées, pas un script. Aucune vidéo n'est « la référence » à copier ; chaque sujet mérite ses propres choix. Si une règle produit un résultat absurde pour ce sujet, le jugement l'emporte (et on le note dans FEEDBACK).
+- **Pixabay interdit** (sauf accord explicite) : uniquement sources officielles/archives. Un sujet sans vraies images disponibles = mauvais sujet → en choisir un autre (en alternant les thèmes).
 - **Penser à tout, en chef de projet** : anticiper ce qui peut bloquer (branche non fusionnée, fichiers perdus, droits, licences, quotas, YouTube), le régler ou le signaler AVANT que l'utilisateur le découvre.
 - Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
 - Avant d'écrire, se poser 3 questions et les écrire en 3 lignes dans le brief à l'agent : **Quelle émotion ? Quelle image inoubliable ? Qu'est-ce qui rend CETTE vidéo différente des précédentes ?** Le style (rythme, couleurs, formats, musique) découle des réponses.
@@ -43,13 +45,14 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 ## Repérage d'images (réseau)
 Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** : `gh api -X POST repos/sebastien311984-bot/youtube-studio/actions/workflows/scout.yml/dispatches -f ref=main -f "inputs[queries]=commons:volcano eruption filetype:video|nasa:lava|archive:volcano"` (GraphQL interdit : pas de `gh workflow run`), id via `gh api repos/.../actions/workflows/scout.yml/runs?per_page=1`, puis `gh run download <id> -R sebastien311984-bot/youtube-studio -n scout` (~1 min) : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
 
-## Revue finale obligatoire (avant toute livraison)
-Le rendu produit `<nom>_review.jpg` : chaque plan réel avec la phrase dite au même moment. Le regarder EN ENTIER et répondre pour chaque case : « l'image montre-t-elle ce que dit la voix ? ». Une seule case fausse → remplacer le plan et relancer. Ne jamais livrer sans cette revue ; dire à l'utilisateur ce qui a été vérifié et ce qui ne l'a pas été.
-
-## Garde-fous (dans le code)
-- Sources : piocher largement dans SOURCES.md (NASA, DVIDS, CDC/NIH, Internet Archive, Smithsonian, Commons…) selon le sujet ; officielles d'abord (images-api.nasa.gov fonctionne ici : URL `https://images-assets.nasa.gov/image/<id>/<id>~large.jpg`), Pixabay en dernier recours.
-- Avant push : planche contact des visuels (vignettes `~thumb`). Après rendu : planche `fps=1/4,tile=8x10` de la vidéo, regardée en entier.
-`python3 engine/check_episode.py <épisode>` avant push ; après rendu, lire le journal (« plans générés », « plan réutilisé ») avant d'affirmer quoi que ce soit.
+## Contrôle qualité (jugement, pas case à cocher)
+Se mettre à la place d'un spectateur exigeant qui découvre la vidéo sur YouTube :
+- **Miniature** : est-ce que je cliquerais ? Sujet net et fort, 2-3 mots, contraste. Sinon la refaire.
+- **Ouverture** : les premières secondes montrent-elles le sujet et donnent-elles envie de rester ?
+- **Chaque plan** : montre-t-il vraiment ce que dit la voix ? (outils : `engine/storyboard.py` avant rendu, `_review.jpg` après). « À peu près » = remplacer.
+- **Son** : musique et effets au service de l'histoire ; voix doublées vivantes.
+- **Technique** : `engine/check_episode.py` avant push.
+Avant livraison, noter en une ligne dans VIDEOS.md ce qui a été regardé et ce qui reste faible, et le dire honnêtement à l'utilisateur.
 
 ## Règle d'or : économiser les tokens
 - **Ne jamais faire de rendu complet en local.** On pousse l'épisode JSON, et GitHub Actions fait le rendu (0 token).
