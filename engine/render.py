@@ -79,7 +79,9 @@ def fetch(src, clips_dir):
         src = v["large"]["url"] if v["large"]["url"] else v["medium"]["url"]
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
-    if not os.path.exists(local): sh("curl", "-sSL", "--retry", "3", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src)
+    if not os.path.exists(local):
+        t0 = time.time(); sh("curl", "-sSL", "--retry", "3", "--max-time", "300", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src)
+        print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
     return local
 
 def clip(src, start, d, out, move):
@@ -319,6 +321,7 @@ def main(ep_path, clips_dir, out):
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
             JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
+        print(f"Scène {i} préparée ({kind}, {d:.0f} s)", flush=True)
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))
         events += captions(words, t + s.get("lead", 0.3))
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
