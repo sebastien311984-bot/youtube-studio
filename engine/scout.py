@@ -11,7 +11,7 @@ def commons(q, n=8):
     out = []
     for p in r.get("query", {}).get("pages", {}).values():
         ii = p["imageinfo"][0]; m = ii.get("extmetadata", {})
-        out.append({"src": "commons", "url": ii["url"], "thumb": ii.get("thumburl"), "w": ii.get("width"), "type": ii.get("mediatype"),
+        out.append({"src": "commons", "url": ii["url"].split("?")[0], "thumb": ii.get("thumburl"), "w": ii.get("width"), "type": ii.get("mediatype"),
                     "licence": m.get("LicenseShortName", {}).get("value", "?"), "author": m.get("Artist", {}).get("value", "?")[:120],
                     "page": ii.get("descriptionurl"), "title": p["title"]})
     return out
