@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — AUTONOMIE : l'utilisateur ne valide pas chaque étape ; Claude décide en expert (sujet, format, style) et livre la vidéo finie. Durée libre selon le sujet : formats courts 4-6 min privilégiés pour lancer la chaîne (pas de longueur artificielle) ; 8 min+ seulement si le sujet le porte.
+
 - 2026-10-07 — « deep_sea » ABANDONNÉE : le même rush tournait 3-4 fois à la suite (1 seul plan Pixabay de ~8 s pour une scène de 25 s → bouclé) ; sujet « méduses/abysses » jugé trop faible pour lancer la chaîne. Garde-fou moteur : une scène réelle est découpée automatiquement en plans de ~4,5 s tous différents. Règle d'écriture : TOUJOURS `shots` (1 plan par 4-5 s de voix), jamais un `clip` seul sur une scène longue. L'utilisateur regarde la vidéo avant publication : ne jamais annoncer « plans sans doublon » sans l'avoir vérifié.
 
 - 2026-10-07 — IMAGES D'ACTUALITÉ : OK = agences fédérales US (NASA, NOAA, USGS, NSF, JPL : domaine public, pas de logo ni d'aval implicite) ; ESA (CC BY-SA 3.0 IGO) et ESO (CC BY 4.0) avec crédit ; Webb/Hubble (NASA, ESA, CSA, STScI) avec crédit. INTERDIT = images de médias (AFP, Reuters, AP, Getty, CNN…), vidéos d'autres YouTubeurs, vidéos de réseaux sociaux sans licence. Captures d'écran d'un article ou d'un communiqué : seulement brèves, commentées, jamais le cœur de la vidéo (risque « contenu réutilisé » qui bloque la monétisation).
