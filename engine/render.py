@@ -368,7 +368,8 @@ Dans YouTube Studio (chaîne Oddly Logical Science), mets en ligne `{b}.mp4`.
 3. « Contenu modifié ou synthétique » : Non (sauf si `{b}_youtube.md` dit le contraire).
 4. Visibilité : Programmée (date/heure données par Claude). Ne jamais publier en Public sans accord.
 5. Onglet Langues → pour chaque fichier {', '.join(f'`{b}_{l}.m4a`' for l in langs) or '(aucun)'} : ajouter la langue → Piste audio → envoyer. Si l'option n'existe pas, s'arrêter et le signaler.
-6. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
+6. Après publication : épingler en commentaire la question finale de la vidéo, et créer un post Communauté « Quiz » (onglet Créer > Post > Quiz) reprenant le quiz de la vidéo avec un lien vers elle (si l'option Quiz n'est pas disponible, faire un Sondage).
+7. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
 """)
     make_shorts(ep, out, starts + [total])
     import publish_kit
