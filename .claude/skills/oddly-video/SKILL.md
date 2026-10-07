@@ -104,6 +104,7 @@ Options communes à toutes les scènes :
 - `fact` : encart « DID YOU KNOW? » ; retour à la ligne avec `\\N`, 2 lignes de 45 caractères maximum.
 - `chapter` ["CHAPTER 1", "TITRE"] : carton de chapitre ; il compte aussi comme chapitre YouTube.
 - `teaser` : « COMING UP: ... » affiché pendant les 3 dernières secondes de la scène ; à mettre juste avant chaque chapitre pour la rétention.
+- `tone` : ton de la voix (neutral, calm, tense, urgent, reveal, warm) ; par défaut reveal sur stat/kinetic/rank, tense sur quiz, calm sur timeline, warm sur diagram. La voix est aussi « réchauffée » automatiquement (EQ, compression, légère pièce).
 - `transition` : facultatif (fade, smoothleft, circleopen, fadeblack, zoomin, slideup, fadewhite, dissolve, radial…). Par défaut, le moteur alterne automatiquement.
 
 Ajouts automatiques du moteur : barre de progression dorée avec repères de chapitres, encart « SUBSCRIBE » à 30 % de la durée (réglable avec `subscribe_at`), Shorts verticaux (`shorts` : [{from, to, title}], indices de scènes, 58 s maximum ; par défaut, l'accroche).

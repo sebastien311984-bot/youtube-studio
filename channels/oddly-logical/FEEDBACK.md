@@ -1,9 +1,14 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — PLUSIEURS DISCUSSIONS EN PARALLÈLE : ne JAMAIS annuler un rendu GitHub Actions d'une autre branche que la sienne (outrun_tsunami annulé 2 fois par une autre discussion). Filtrer par `head_branch` avant tout cancel.
+
+- 2026-10-07 — VOIX DOUBLÉES : doivent être dynamiques, convaincantes et fun pour retenir l'auditeur (style présentateur natif, phrases courtes, pas de calque de l'anglais) → règles dans oddly-translator.md. Moteur : tons par scène (`tone`) + voix réchauffée. Images : cohérence stricte avec l'histoire, zéro régression.
+
 - 2026-10-07 — RECADRAGE de l'utilisateur : « pas professionnel, pas expert » : infos mal transmises entre discussions, images non accordées au texte, manque de vérification. Réponse : continuité via main (début/fin de chaque discussion), revue finale image/texte obligatoire (`_review.jpg`), jamais livrer sans avoir regardé, et dire honnêtement ce qui n'a pas été vérifié.
 
 - 2026-10-07 — « space_no_suit » : casserole qui bout, fumée = images-métaphores jugées hors sujet. Règle : chaque plan montre CE QUE dit la voix (le vrai objet, le vrai lieu, la vraie personne) ; pas de métaphore visuelle générique. Si rien de réel n'existe → infographie/diagramme maison plutôt qu'un stock « illustratif ».
+- 2026-10-07 — Contrôle outrun_tsunami v1 : les animations NOAA/RIFT de Commons commencent par un carton-titre (nom d'un AUTRE événement, URL) → toujours `start` ≥ 14 s. Plans Pixabay hors sujet repérés (anémone, illustration, parasols sous « boats on mud ») → requêtes plus concrètes. Doublage hi/ar encore trop long (×1,3-1,4 sur ~12 scènes) → viser 30 % de syllabes en moins que l'anglais.
 
 - 2026-10-07 — STOP ESPACE pour un moment (Soleil, Carrington, espace : trop). Prochaines vidéos : corps humain, Terre, catastrophes, animaux, histoire.
 
