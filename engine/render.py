@@ -52,7 +52,7 @@ def fetch(src, clips_dir):
         src = v["large"]["url"] if v["large"]["url"] else v["medium"]["url"]
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
-    if not os.path.exists(local): sh("curl", "-sSL", "--retry", "3", "-A", "Mozilla/5.0", "-o", local, src)
+    if not os.path.exists(local): sh("curl", "-sSL", "--retry", "3", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src)
     return local
 
 def clip(src, start, d, out, move):
