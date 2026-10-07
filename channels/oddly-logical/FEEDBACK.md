@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — Doublage v1 (space_no_suit) : hindi et arabe plus longs (accélération jusqu'à ×1,4 sur 3-4 scènes) → demander au traducteur des phrases encore plus courtes pour hi et ar.
+
 - 2026-10-07 — INTERNATIONAL : chaque vidéo sort avec des pistes audio doublées (es, pt, hi, fr, de, ar) via le champ `dub` ; l'utilisateur supprime les fichiers après publication, donc tout doit pouvoir se régénérer depuis le dépôt (épisode JSON + minutage). Carrington : doublage approximatif accepté.
 
 - 2026-10-07 — Claude = chef de projet, réalisateur, monteur, étalonneur : il SURVEILLE TOUT lui-même. Pixabay = dernier recours (fonds verts, dessins animés, hors-sujet) ; priorité aux sources officielles (NASA SVS/images.nasa.gov, NOAA, USGS, ESA). Avant rendu : planche contact de toutes les photos/plans choisis ; après rendu : planche 1 image/4 s de la vidéo, regardée en entier avant de livrer.
