@@ -24,18 +24,18 @@
      "move": "out"
     },
     {
-     "clip": "pixabay:astronaut space",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss040e080833/iss040e080833~large.jpg",
+     "start": 6,
      "move": "left"
     },
     {
-     "clip": "pixabay:earth orbit",
+     "clip": "https://images-assets.nasa.gov/image/s73-31976/s73-31976~large.jpg",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "pixabay:space station",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss013e49200/iss013e49200~large.jpg",
+     "start": 3,
      "move": "in"
     }
    ],
@@ -71,28 +71,28 @@
   {
    "shots": [
     {
-     "clip": "pixabay:rocket launch",
+     "clip": "https://images-assets.nasa.gov/image/iss023e057948/iss023e057948~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014700/a014785/KATHY_SAFE_VERSION.mp4",
-     "start": 3,
+     "clip": "pixabay:heartbeat monitor",
+     "start": 0,
      "move": "right"
     },
     {
-     "clip": "pixabay:stars night sky",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/sts059-09-021/sts059-09-021~large.jpg",
+     "start": 6,
      "move": "in"
     },
     {
-     "clip": "pixabay:heartbeat monitor",
+     "clip": "https://images-assets.nasa.gov/image/S73-25900/S73-25900~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "pixabay:blue light dark",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss061e003491/iss061e003491~large.jpg",
+     "start": 3,
      "move": "left"
     }
    ],
@@ -119,8 +119,8 @@
   {
    "shots": [
     {
-     "clip": "pixabay:dark space void",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/s127e007295/s127e007295~large.jpg",
+     "start": 6,
      "move": "right"
     },
     {
@@ -129,13 +129,13 @@
      "move": "in"
     },
     {
-     "clip": "pixabay:abstract dark particles",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/61b-41-019/61b-41-019~large.jpg",
+     "start": 3,
      "move": "out"
     },
     {
-     "clip": "pixabay:moon surface",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/sts061-48-001/sts061-48-001~large.jpg",
+     "start": 6,
      "move": "left"
     }
    ],
@@ -145,28 +145,28 @@
   {
    "shots": [
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031388/Artemis_II_Science-AVATAR_Horizontal.mp4",
+     "clip": "pixabay:water bubbles boiling",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "pixabay:water bubbles boiling",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss072e518423/iss072e518423~large.jpg",
+     "start": 3,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:balloon inflating",
-     "start": 0,
-     "move": "out"
     },
     {
      "clip": "pixabay:steam rising",
      "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s66-38050/s66-38050~large.jpg",
+     "start": 0,
      "move": "left"
     },
     {
-     "clip": "pixabay:space astronaut floating",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss072e363878/iss072e363878~large.jpg",
+     "start": 3,
      "move": "right"
     }
    ],
@@ -185,27 +185,27 @@
   {
    "shots": [
     {
-     "clip": "pixabay:spacewalk astronaut",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss013e49186/iss013e49186~large.jpg",
+     "start": 6,
      "move": "in"
     },
     {
-     "clip": "pixabay:space suit helmet",
+     "clip": "https://images-assets.nasa.gov/image/iss074e0336282/iss074e0336282~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "pixabay:earth horizon sunrise",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/S66-63011/S66-63011~large.jpg",
+     "start": 3,
      "move": "left"
     },
     {
-     "clip": "pixabay:oxygen tank",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/s66-62920/s66-62920~large.jpg",
+     "start": 6,
      "move": "right"
     },
     {
-     "clip": "pixabay:glove hand",
+     "clip": "https://images-assets.nasa.gov/image/iss075e0068475/iss075e0068475~large.jpg",
      "start": 0,
      "move": "in"
     }
@@ -273,22 +273,22 @@
      "move": "left"
     },
     {
-     "clip": "pixabay:sun rays space",
+     "clip": "https://images-assets.nasa.gov/image/iss006-344-011/iss006-344-011~large.jpg",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "pixabay:snow cold winter",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/sts072-742-004/sts072-742-004~large.jpg",
+     "start": 3,
      "move": "in"
     },
     {
-     "clip": "pixabay:desert sun heat",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/s73-27081/s73-27081~large.jpg",
+     "start": 6,
      "move": "out"
     },
     {
-     "clip": "pixabay:thermometer cold",
+     "clip": "https://images-assets.nasa.gov/image/iss013e49218/iss013e49218~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -340,17 +340,17 @@
   {
    "shots": [
     {
-     "clip": "pixabay:lonely planet orbit",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss075e0085867/iss075e0085867~large.jpg",
+     "start": 3,
      "move": "right"
     },
     {
-     "clip": "pixabay:silhouette dark sky",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss053e095699/iss053e095699~large.jpg",
+     "start": 6,
      "move": "in"
     },
     {
-     "clip": "pixabay:slow motion floating",
+     "clip": "https://images-assets.nasa.gov/image/s125e009402/s125e009402~large.jpg",
      "start": 0,
      "move": "out"
     }
@@ -372,27 +372,27 @@
   {
    "shots": [
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045235/jsc2022e045235~large.jpg",
      "start": 6,
      "move": "right"
     },
     {
-     "clip": "pixabay:laboratory test chamber",
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045236/jsc2022e045236~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "pixabay:technician working lab",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045254/jsc2022e045254~large.jpg",
+     "start": 3,
      "move": "out"
     },
     {
-     "clip": "pixabay:hospital corridor",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/s84-27035/s84-27035~large.jpg",
+     "start": 6,
      "move": "left"
     },
     {
-     "clip": "pixabay:sleeping person",
+     "clip": "https://images-assets.nasa.gov/image/iss061e065826/iss061e065826~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -412,17 +412,17 @@
   {
    "shots": [
     {
-     "clip": "pixabay:emergency medical",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss058e005282/iss058e005282~large.jpg",
+     "start": 3,
      "move": "in"
     },
     {
-     "clip": "pixabay:oxygen mask",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/sl3-118-2182/sl3-118-2182~large.jpg",
+     "start": 6,
      "move": "out"
     },
     {
-     "clip": "pixabay:doctor monitor",
+     "clip": "https://images-assets.nasa.gov/image/S72-43280/S72-43280~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -444,25 +444,25 @@
   {
    "shots": [
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "clip": "https://images-assets.nasa.gov/image/NHQ202104170162/NHQ202104170162~large.jpg",
      "start": 3,
      "move": "right"
     },
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "clip": "https://images-assets.nasa.gov/image/201411100023HQ/201411100023HQ~large.jpg",
      "start": 6,
      "move": "in"
     },
     {
-     "clip": "pixabay:night sky stars",
+     "clip": "https://images-assets.nasa.gov/image/iss064e002941/iss064e002941~large.jpg",
      "start": 0,
      "move": "out"
     }
    ],
    "text": "Not everyone was so lucky. In June nineteen seventy-one, a valve opened on Soyuz 11 before re-entry, and the crew of three, without pressure suits, died.",
    "label": [
-    "SOYUZ 11",
-    "1971"
+    "SOYUZ 11 (1971)",
+    "Soyuz capsule, illustrative"
    ]
   },
   {
@@ -473,27 +473,27 @@
      "move": "left"
     },
     {
-     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "clip": "https://images-assets.nasa.gov/image/iss037e024908/iss037e024908~large.jpg",
      "start": 6,
      "move": "right"
     },
     {
-     "clip": "pixabay:astronaut helmet",
+     "clip": "https://images-assets.nasa.gov/image/iss075e0069016/iss075e0069016~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "pixabay:airlock door",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss061e065379/iss061e065379~large.jpg",
+     "start": 3,
      "move": "out"
     },
     {
-     "clip": "pixabay:orbit sunrise",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/s114e6405/s114e6405~large.jpg",
+     "start": 6,
      "move": "left"
     },
     {
-     "clip": "pixabay:rescue team",
+     "clip": "https://images-assets.nasa.gov/image/iss002-707-057/iss002-707-057~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -518,8 +518,8 @@
      "move": "in"
     },
     {
-     "clip": "pixabay:earth from space",
-     "start": 0,
+     "clip": "https://images-assets.nasa.gov/image/iss020e037372/iss020e037372~large.jpg",
+     "start": 6,
      "move": "out"
     }
    ],
