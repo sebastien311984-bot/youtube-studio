@@ -40,6 +40,8 @@ def fetch(src, clips_dir):
             url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 50, "safesearch": "true"})
             hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
             if not hits: print(f"Pixabay : aucun résultat pour {' '.join(words)!r}, requête raccourcie"); words = words[:-1]
+        BAD = ("green screen", "greenscreen", "chroma", "cartoon", "animation", "3d", "character", "covid", "mask", "text", "intro", "logo")
+        hits = [h for h in hits if not any(b in h.get("tags", "").lower() for b in BAD)] or hits  # ni fond vert, ni dessin animé, ni texte
         hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
         if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
         r = min(int(rank or 0), len(hits) - 1); hits = hits[r:] + hits[:r]
