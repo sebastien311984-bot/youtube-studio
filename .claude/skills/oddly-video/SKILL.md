@@ -5,6 +5,11 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 
 # Oddly Logical Science — processus de production (v2, à faire évoluer)
 
+## Continuité entre discussions (à faire en premier et en dernier)
+- Début : `git fetch origin main` puis partir de `origin/main` (mémoire à jour : FEEDBACK, VIDEOS, TOPICS, SOURCES, moteur, agents).
+- Fin (et après chaque amélioration du process) : PR vers main + fusion, pour que les autres discussions en profitent. Plusieurs discussions en parallèle : fusionner souvent, petits changements.
+- Toute leçon apprise va dans FEEDBACK.md (jamais seulement dans la conversation).
+
 ## Esprit (à lire en premier)
 - **Penser à tout, en chef de projet** : anticiper ce qui peut bloquer (branche non fusionnée, fichiers perdus, droits, licences, quotas, YouTube), le régler ou le signaler AVANT que l'utilisateur le découvre.
 - Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
@@ -37,6 +42,9 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 
 ## Repérage d'images (réseau)
 Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** : `gh api -X POST repos/sebastien311984-bot/youtube-studio/actions/workflows/scout.yml/dispatches -f ref=main -f "inputs[queries]=commons:volcano eruption filetype:video|nasa:lava|archive:volcano"` (GraphQL interdit : pas de `gh workflow run`), id via `gh api repos/.../actions/workflows/scout.yml/runs?per_page=1`, puis `gh run download <id> -R sebastien311984-bot/youtube-studio -n scout` (~1 min) : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
+
+## Revue finale obligatoire (avant toute livraison)
+Le rendu produit `<nom>_review.jpg` : chaque plan réel avec la phrase dite au même moment. Le regarder EN ENTIER et répondre pour chaque case : « l'image montre-t-elle ce que dit la voix ? ». Une seule case fausse → remplacer le plan et relancer. Ne jamais livrer sans cette revue ; dire à l'utilisateur ce qui a été vérifié et ce qui ne l'a pas été.
 
 ## Garde-fous (dans le code)
 - Sources : piocher largement dans SOURCES.md (NASA, DVIDS, CDC/NIH, Internet Archive, Smithsonian, Commons…) selon le sujet ; officielles d'abord (images-api.nasa.gov fonctionne ici : URL `https://images-assets.nasa.gov/image/<id>/<id>~large.jpg`), Pixabay en dernier recours.
