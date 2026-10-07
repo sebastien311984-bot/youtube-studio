@@ -6,11 +6,6 @@
     {
       "shots": [
         {
-          "clip": "pixabay:boats lying on mud tidal flat",
-          "start": 0,
-          "move": "in"
-        },
-        {
           "clip": "pixabay:tsunami warning siren",
           "start": 0,
           "move": "left"
@@ -87,16 +82,6 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:cracked road",
-          "start": 0,
-          "move": "left"
-        },
-        {
-          "clip": "pixabay:exposed seabed low tide",
-          "start": 0,
-          "move": "right"
-        },
-        {
           "clip": "pixabay:receding wave sand",
           "start": 0,
           "move": "out"
@@ -131,11 +116,6 @@
           "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsunami_Evacuation_Route_Sign_Thailand.jpg",
           "start": 0,
           "move": "right"
-        },
-        {
-          "clip": "pixabay:family on beach",
-          "start": 0,
-          "move": "out"
         }
       ],
       "label": [
@@ -155,11 +135,6 @@
           "clip": "pixabay:exposed seabed beach tide out",
           "start": 0,
           "move": "left"
-        },
-        {
-          "clip": "pixabay:tourists walking beach",
-          "start": 0,
-          "move": "right"
         }
       ],
       "label": [
@@ -199,11 +174,6 @@
           "clip": "https://images-assets.nasa.gov/image/PIA04373/PIA04373~medium.jpg",
           "start": 0,
           "move": "in"
-        },
-        {
-          "clip": "https://images-assets.nasa.gov/video/GSFC_20170426_Tsunami_m12560/GSFC_20170426_Tsunami_m12560~medium.mp4",
-          "start": 0,
-          "move": "left"
         },
         {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/8/85/Chile-tsunami-20100227-NCTR-wave-propagation-small.ogv",
@@ -422,11 +392,6 @@
     {
       "shots": [
         {
-          "clip": "pixabay:runner sprinting",
-          "start": 0,
-          "move": "in"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/FBI_tsunami_video_-_Pago_Pago_parking_lot_-_end.ogv",
           "start": 0,
           "move": "left"
@@ -590,11 +555,6 @@
           "move": "in"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/1/17/January_15%2C_2022_Tonga_volcano-generated_tsunami_propagation.webm",
-          "start": 14,
-          "move": "left"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Fishing_boats_in_Banda_Aceh_after_2004_tsunami_DD-SD-06-07375.JPEG",
           "start": 0,
           "move": "right"
@@ -658,11 +618,6 @@
           "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2011Sendai-NOAA-Energylhvpd9-05.jpg",
           "start": 0,
           "move": "right"
-        },
-        {
-          "clip": "https://images-assets.nasa.gov/image/PIA14271/PIA14271~medium.jpg",
-          "start": 0,
-          "move": "out"
         }
       ],
       "label": [

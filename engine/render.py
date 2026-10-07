@@ -51,15 +51,23 @@ def fetch(src, clips_dir):
         import urllib.request, urllib.parse
         q, _, rank = src[8:].partition("#"); key = os.environ.get("PIXABAY_API_KEY", "")
         if not key: raise SystemExit("PIXABAY_API_KEY manquant (secret GitHub)")
-        words, hits = q.split(), []
-        while words and not hits:  # Pixabay exige tous les mots : on raccourcit la requête jusqu'à trouver
-            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 50, "safesearch": "true"})
-            hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
-            if not hits: print(f"Pixabay : aucun résultat pour {' '.join(words)!r}, requête raccourcie"); words = words[:-1]
+        UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}
+        if q.startswith("id:"):  # « pixabay:id:12345 » : plan choisi à l'œil sur la planche du scout → exactement celui-là
+            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "id": q[3:]})
+            hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40))["hits"]
+        else:
+            # requête complète uniquement (plus de raccourcissement : c'est ce qui donnait des vaches pour « boats on mud »),
+            # vrais films seulement, et au moins la moitié des mots de la requête doivent figurer dans les tags du plan
+            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": 50, "safesearch": "true", "video_type": "film"})
+            hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40))["hits"]
+            words = [w for w in q.lower().split() if len(w) > 2]
+            def score(h): tg = h.get("tags", "").lower(); return sum(w.rstrip("s") in tg for w in words)
+            hits = sorted([h for h in hits if score(h) * 2 >= len(words)], key=score, reverse=True)
+            if not hits: print(f"Pixabay : rien de pertinent pour {q!r} → plan retiré (les autres plans de la scène le couvrent)"); return None
         BAD = ("green screen", "greenscreen", "chroma", "cartoon", "animation", "3d", "character", "covid", "mask", "text", "intro", "logo")
         hits = [h for h in hits if not any(b in h.get("tags", "").lower() for b in BAD)] or hits  # ni fond vert, ni dessin animé, ni texte
         hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
-        if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
+        if not hits: print(f"Pixabay : aucun résultat pour {q!r} → plan retiré"); return None
         r = min(int(rank or 0), len(hits) - 1); hits = hits[r:] + hits[:r]
         h = next((h for h in hits if h["id"] not in PIXA_USED), hits[0])
         if h["id"] in PIXA_USED: print(f"Pixabay : plus de plan inédit pour {q!r}, plan réutilisé")
@@ -290,7 +298,13 @@ def main(ep_path, clips_dir, out):
             sd = (d + XF) / len(shots); parts = []
             ws = s.get("text", "").split(); k = max(1, len(ws) // len(shots))
             review += [(t + (j + 0.5) * sd, " ".join(ws[j * k:(j + 1) * k]), f"{i}.{j}") for j in range(len(shots))]
-            srcs = [fetch(sh_["clip"], clips_dir) for sh_ in shots]  # séquentiel : garde l'anti-doublon Pixabay
+            got = {}  # séquentiel (anti-doublon Pixabay) ; un plan répété par le garde-fou réutilise le MÊME fichier,
+            srcs = [got.setdefault(sh_["clip"], fetch(sh_["clip"], clips_dir)) if sh_["clip"] not in got else got[sh_["clip"]] for sh_ in shots]  # jamais une nouvelle vidéo Pixabay au hasard
+            keep = [k for k, x in enumerate(srcs) if x]  # plans Pixabay jugés hors sujet : retirés, on recycle les plans restants
+            if not keep: raise SystemExit(f"Scène {i} : aucun plan pertinent — ajouter une image officielle ou une infographie")
+            if len(keep) < len(srcs):
+                srcs = [srcs[keep[j % len(keep)]] for j in range(len(srcs))]
+                shots = [dict(shots[keep[j % len(keep)]], start=shots[keep[j % len(keep)]].get("start", 0) + (j // len(keep)) * 4.5) for j in range(len(shots))]
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
             with ThreadPoolExecutor(4) as ex:  # encodage des plans en parallèle (4 cœurs du runner)
                 list(ex.map(lambda a: clip(a[0], a[1].get("start", 0), sd, a[2], a[1].get("move", "in")), zip(srcs, shots, parts)))
