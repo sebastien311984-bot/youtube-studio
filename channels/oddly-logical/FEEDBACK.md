@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — « space_no_suit » : casserole qui bout, fumée = images-métaphores jugées hors sujet. Règle : chaque plan montre CE QUE dit la voix (le vrai objet, le vrai lieu, la vraie personne) ; pas de métaphore visuelle générique. Si rien de réel n'existe → infographie/diagramme maison plutôt qu'un stock « illustratif ».
+
 - 2026-10-07 — STOP ESPACE pour un moment (Soleil, Carrington, espace : trop). Prochaines vidéos : corps humain, Terre, catastrophes, animaux, histoire.
 
 - 2026-10-07 — Doublage v1 (space_no_suit) : hindi et arabe plus longs (accélération jusqu'à ×1,4 sur 3-4 scènes) → demander au traducteur des phrases encore plus courtes pour hi et ar.
