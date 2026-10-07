@@ -35,6 +35,9 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 - Dans YouTube Studio : vidéo → Langues → Ajouter → Piste audio (fichier .m4a), + titre/description traduits. Les pistes s'ajoutent aussi à une vidéo déjà publiée.
 - Textes à l'écran restent en anglais pour l'instant.
 
+## Repérage d'images (réseau)
+Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** (`gh workflow run scout.yml -f queries="commons:volcano eruption|nasa:lava|archive:volcano"`), puis `gh run download <id> -n scout` : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
+
 ## Garde-fous (dans le code)
 - Sources : piocher largement dans SOURCES.md (NASA, DVIDS, CDC/NIH, Internet Archive, Smithsonian, Commons…) selon le sujet ; officielles d'abord (images-api.nasa.gov fonctionne ici : URL `https://images-assets.nasa.gov/image/<id>/<id>~large.jpg`), Pixabay en dernier recours.
 - Avant push : planche contact des visuels (vignettes `~thumb`). Après rendu : planche `fps=1/4,tile=8x10` de la vidéo, regardée en entier.
