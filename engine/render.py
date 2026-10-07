@@ -228,6 +228,13 @@ def main(ep_path, clips_dir, out):
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
             shots = s.get("shots") or [{"clip": s["clip"], "start": s.get("start", 0), "move": s.get("move", "in")}]
+            # garde-fou : jamais un plan de plus de ~5 s (sinon un rush court tourne en boucle à l'écran)
+            need = max(1, round((d + XF) / 4.5))
+            if len(shots) < need:
+                print(f"Scène {i} : {len(shots)} plan(s) pour {d:.0f} s → {need} plans générés automatiquement")
+                moves = ["in", "left", "out", "right"]
+                shots = [dict(shots[j % len(shots)], move=moves[j % 4],
+                              start=shots[j % len(shots)].get("start", 0) + (j // len(shots)) * 4.5) for j in range(need)]
             sd = (d + XF) / len(shots); parts = []
             for j, sh_ in enumerate(shots):
                 pp = os.path.join(work, f"c{i}_{j}.mp4"); parts.append(pp)

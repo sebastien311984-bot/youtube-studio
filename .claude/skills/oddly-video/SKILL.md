@@ -23,6 +23,11 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 4. **Mesure** : noter CTR et rétention à 30 s dans VIDEOS.md 48 h après chaque publication ; bilan après ~20 vidéos.
 5. **Plus tard** : version française (piste audio YouTube ou 2e chaîne).
 
+## Garde-fous qualité (avant push)
+- Chaque scène de plans réels utilise `shots` : 1 plan différent toutes les 4-5 s de voix (le moteur complète automatiquement sinon).
+- Requêtes Pixabay variées et courtes (2-3 mots) ; jamais deux fois la même vidéo (le moteur l'empêche).
+- Après rendu : vérifier le journal (« plans générés automatiquement », « plan réutilisé ») et ne jamais affirmer qu'il n'y a pas de doublon sans l'avoir contrôlé.
+
 ## Règle d'or : économiser les tokens
 - **Ne jamais faire de rendu complet en local.** On pousse l'épisode JSON, et GitHub Actions fait le rendu (0 token).
 - Tester en local seulement des **images fixes** d'un élément nouveau (1 frame par ffmpeg), jamais une vidéo entière.

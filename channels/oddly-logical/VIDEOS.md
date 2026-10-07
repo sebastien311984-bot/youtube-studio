@@ -6,7 +6,7 @@ Tenu à jour par Claude à chaque étape. Statuts : ✍️ écrite · 🎬 rendu
 | 0 | demo_sun_rain | It Rains on the Sun (démo) | 1 min | 🎬 rendue | (ancien dépôt si-drone) | — | démo de style, non destinée à la publication |
 | 1 | black_hole_fall | What Happens If You Fall Into a Black Hole? (NASA Simulation) | 1:36 | 📅 programmée | (ancien dépôt si-drone, run 37491536102) | 10 oct. 2026 | courte : à refaire en version 8-10 min plus tard |
 | 2 | carrington_event | Carrington Event: What If It Hit Today? | ~10 min | 🎬 rendue | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37499121889/artifacts/11432736329 | 📅 programmée 11 oct. 2026 | 1re vidéo longue ; rendu en 65 min ; jugée excellente (référence) ; Short n°1 trop court (7 s) |
-| 3 | deep_sea_creatures | The Deadliest Creatures of the Deep Sea | ~9,5 min | 🎬 rendue | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37572392657/artifacts/11462516612 (v2 sans doublons) | — | thème Terre/océans (varier) |
+| 3 | deep_sea_creatures | The Deadliest Creatures of the Deep Sea | ~9,5 min | ❌ abandonnée (rushs répétés, sujet faible) | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37572392657/artifacts/11462516612 (v2 sans doublons) | — | thème Terre/océans (varier) |
 
 ## Autres vidéos de la chaîne (faites hors de ce dépôt, planning mis à jour le 6 oct. 2026 : 1 vidéo/jour du 7 au 11 oct.)
 | Titre | Durée | Statut |
