@@ -44,7 +44,7 @@ Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « c
 Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS bloque). Pour Commons/USGS/NOAA (souvent sur Commons) : lancer le workflow **Scout footage** : `gh api -X POST repos/sebastien311984-bot/youtube-studio/actions/workflows/scout.yml/dispatches -f ref=main -f "inputs[queries]=commons:volcano eruption filetype:video|nasa:lava|archive:volcano"` (GraphQL interdit : pas de `gh workflow run`), id via `gh api repos/.../actions/workflows/scout.yml/runs?per_page=1`, puis `gh run download <id> -R sebastien311984-bot/youtube-studio -n scout` (~1 min) : `candidates.json` (URL, licence, auteur) + `sheet.jpg` numérotée à regarder. Le rendu GitHub télécharge ensuite ces URL sans problème.
 
 ## Son (non négociable)
-Musique de fond selon le thème + sound design : whoosh aux transitions, impact sur stat/rank, riser + silence avant chaque révélation (déjà automatique), ambiance du lieu quand c'est possible. Voix doublées : même voix énergique que la chaîne (`DUB_VOICE`), débit +6 %.
+Musique de fond selon le thème + sound design : whoosh aux transitions, impact sur stat/rank, riser + silence avant chaque révélation (déjà automatique), ambiance du lieu quand c'est possible. Voix doublées : voix natives/multilingues dynamiques + tons par scène (`DUB_VOICES`, `TONES` dans render.py).
 
 ## Story-board AVANT rendu (gagne des heures)
 `python3 engine/storyboard.py <épisode> sb.jpg` (~20 s) : chaque plan + la phrase dite. Le regarder et corriger AVANT de pousser : un rendu = 30-40 min, une erreur vue après = un rendu de plus.
@@ -110,6 +110,7 @@ Options communes à toutes les scènes :
 - `fact` : encart « DID YOU KNOW? » ; retour à la ligne avec `\\N`, 2 lignes de 45 caractères maximum.
 - `chapter` ["CHAPTER 1", "TITRE"] : carton de chapitre ; il compte aussi comme chapitre YouTube.
 - `teaser` : « COMING UP: ... » affiché pendant les 3 dernières secondes de la scène ; à mettre juste avant chaque chapitre pour la rétention.
+- `tone` : ton de la voix (neutral, calm, tense, urgent, reveal, warm) ; par défaut reveal sur stat/kinetic/rank, tense sur quiz, calm sur timeline, warm sur diagram. La voix est aussi « réchauffée » automatiquement (EQ, compression, légère pièce).
 - `transition` : facultatif (fade, smoothleft, circleopen, fadeblack, zoomin, slideup, fadewhite, dissolve, radial…). Par défaut, le moteur alterne automatiquement.
 
 Ajouts automatiques du moteur : barre de progression dorée avec repères de chapitres, encart « SUBSCRIBE » à 30 % de la durée (réglable avec `subscribe_at`), Shorts verticaux (`shorts` : [{from, to, title}], indices de scènes, 58 s maximum ; par défaut, l'accroche).

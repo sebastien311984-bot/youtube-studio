@@ -5,6 +5,8 @@ on:
       queries:
         description: "Requêtes séparées par | (préfixe facultatif commons:, nasa:, archive:, pixabay:)"
         required: true
+permissions:
+  contents: write
 jobs:
   scout:
     runs-on: ubuntu-latest
@@ -21,3 +23,8 @@ jobs:
         with:
           name: scout
           path: scout/
+      - name: Résultats aussi sur une branche (lisibles sans accès aux artefacts)
+        run: |
+          git config user.name scout-bot; git config user.email scout-bot@users.noreply.github.com
+          git checkout -q --orphan "scout/${{ github.run_id }}"; git rm -rq --cached . ; git add -f scout; git commit -qm "scout ${{ github.run_id }}"
+          git push -q origin "HEAD:refs/heads/scout/${{ github.run_id }}"

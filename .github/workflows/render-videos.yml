@@ -9,6 +9,12 @@ on:
       episode:
         description: "Chemin d'un épisode (vide = tous)"
         required: false
+      from_run:
+        description: "Sans rendu : reprendre l'artefact d'une exécution (ID) pour refaire planches + livrables"
+        required: false
+permissions:
+  contents: write
+  actions: read
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -16,6 +22,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 2 }
+      - name: Reprendre un rendu existant
+        if: github.event.inputs.from_run != ''
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh run download "${{ github.event.inputs.from_run }}" -n videos -D out
       - name: Dépendances
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
@@ -29,15 +39,41 @@ jobs:
           elif [ "${{ github.event_name }}" = "push" ]; then echo "files=$((git diff --name-only HEAD~1 HEAD -- 'channels/*/episodes/*.json' 2>/dev/null || true) | tr '\n' ' ')" >> $GITHUB_OUTPUT
           else echo "files=$(ls channels/*/episodes/*.json | tr '\n' ' ')" >> $GITHUB_OUTPUT; fi
       - name: Rendu
+        if: github.event.inputs.from_run == ''
         env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           mkdir -p out
           for f in ${{ steps.list.outputs.files }}; do
             [ -f "$f" ] || continue
-            python3 engine/render.py "$f" clips "out/$(basename "$f" .json).mp4"
+            n=$(basename "$f" .json)
+            set -o pipefail
+            if ! python3 engine/render.py "$f" clips "out/$n.mp4" 2>&1 | tee "out/${n}_render.log"; then
+              tail -40 "out/${n}_render.log" | while IFS= read -r l; do echo "::error::$l"; done
+              exit 1
+            fi
           done
+      - name: Planche de contrôle (poussée sur la branche review/)
+        if: always()
+        run: |
+          mkdir -p review
+          cp out/*_render.log review/ 2>/dev/null || true
+          for v in out/*.mp4; do [ -f "$v" ] || continue; n=$(basename "$v" .mp4)
+            ffmpeg -loglevel error -y -i "$v" -vf "fps=1/4,scale=320:-1,tile=8x10" -q:v 4 "review/${n}_sheet_%02d.jpg" || true
+            ffprobe -v error -show_entries format=duration -of csv=p=0 "$v" > "review/${n}_duration.txt" || true
+            # Livrables légers lisibles sur téléphone (la version HD reste dans l'artefact « videos »)
+            case "$n" in
+              *short*) ffmpeg -v error -y -i "$v" -vf "scale=-2:854" -c:v libx264 -crf 30 -preset veryfast -c:a aac -b:a 96k -movflags +faststart "review/${n}_preview.mp4" || true ;;
+              *) ffmpeg -v error -y -i "$v" -vf "scale=-2:480" -c:v libx264 -crf 31 -preset veryfast -c:a aac -b:a 96k -movflags +faststart "review/${n}_preview.mp4" || true ;;
+            esac
+          done
+          for x in jpg srt md json m4a; do cp out/*.$x review/ 2>/dev/null || true; done
+          ls review | grep -q . || exit 0
+          git config user.name render-bot; git config user.email render-bot@users.noreply.github.com
+          git checkout -q --orphan "review/${{ github.run_id }}"; git rm -rq --cached . ; git add -f review; git commit -qm "review ${{ github.run_id }}"
+          git push -q origin "HEAD:refs/heads/review/${{ github.run_id }}"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: videos
           path: out/*

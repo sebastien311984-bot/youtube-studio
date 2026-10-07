@@ -10,22 +10,38 @@ import visuals
 W, H, FPS, SR, XF = 1920, 1080, 30, 44100, 0.6
 CA = "/root/.ccr/ca-bundle.crt"
 
+from concurrent.futures import ThreadPoolExecutor
+
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
 
-def tts(text, voice, path, rate="-4%", pitch="-4Hz"):
+TONES = {  # débit / hauteur par ton : casse la monotonie de la voix de synthèse
+    "neutral": ("-4%", "-4Hz"), "calm": ("-9%", "-6Hz"), "tense": ("+3%", "-2Hz"),
+    "urgent": ("+8%", "+0Hz"), "reveal": ("-12%", "-8Hz"), "warm": ("-6%", "-2Hz")}
+AUTO_TONE = {"stat": "reveal", "kinetic": "reveal", "rank": "reveal", "quiz": "tense", "timeline": "calm", "diagram": "warm"}
+
+def humanize(path):
+    """Voix plus chaude, moins « robot » : grave adouci, sifflantes calmées, compression douce, légère pièce. Durée inchangée."""
+    tmp = path + ".h.mp3"
+    af = ("highpass=f=75,equalizer=f=180:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.2:g=1.5,"
+          "equalizer=f=6800:t=q:w=2:g=-3.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
+          "aecho=0.9:0.9:28|47:0.10|0.06")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", tmp])
+    if r.returncode == 0: os.replace(tmp, path)
+
+def tts(text, voice, path, tone="neutral"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
         ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=CA)
     import edge_tts
     words = []
     async def run():
-        c = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary="WordBoundary")
+        c = edge_tts.Communicate(text, voice, rate=TONES.get(tone, TONES["neutral"])[0], pitch=TONES.get(tone, TONES["neutral"])[1], boundary="WordBoundary")
         with open(path, "wb") as f:
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    asyncio.run(run()); return words
+    asyncio.run(run()); humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
 
@@ -207,14 +223,14 @@ def music(total, voice_env, cuts, risers=()):
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
-# même voix que la chaîne (multilingue, énergique) dans toutes les langues ; un peu plus rapide pour le dynamisme
-DUB_VOICE, DUB_RATE = "en-US-AndrewMultilingualNeural", "+6%"
+DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-RemyMultilingualNeural",
+              "de": "de-DE-FlorianMultilingualNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
 
 def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
     n = int(total * SR); vtrack = np.zeros(n)
     for i, (txt, (st, slot)) in enumerate(zip(texts, slots)):
         if not txt: continue
-        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, ep.get("dub_voice", DUB_VOICE), vp, rate=DUB_RATE, pitch="+0Hz"); vd = dur(vp)
+        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp, ep["scenes"][i].get("tone") or AUTO_TONE.get(ep["scenes"][i].get("kind", ""), "neutral")); vd = dur(vp)
         tempo = min(1.4, vd / slot) if slot > 0 and vd > slot else 1.0  # accélère légèrement si la traduction est plus longue
         if tempo > 1.0: print(f"Doublage {lang} scène {i} : accéléré x{tempo:.2f}")
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
@@ -248,7 +264,7 @@ def main(ep_path, clips_dir, out):
     review = []  # (instant, texte dit à ce moment, scène.plan) → planche de revue image/texte
     for i, s in enumerate(ep["scenes"]):
         vp = os.path.join(work, f"v{i}.mp3")
-        words = tts(s["text"], voice, vp) if s.get("text") else []
+        words = tts(s["text"], voice, vp, s.get("tone") or AUTO_TONE.get(s.get("kind", ""), "neutral")) if s.get("text") else []
         vd = dur(vp) if words else 0
         d = max(s.get("min", 0), vd + s.get("pad", 0.7) + s.get("lead", 0.3))
         cp = os.path.join(work, f"c{i}.mp4"); kind = s.get("kind", "footage")
@@ -274,9 +290,10 @@ def main(ep_path, clips_dir, out):
             sd = (d + XF) / len(shots); parts = []
             ws = s.get("text", "").split(); k = max(1, len(ws) // len(shots))
             review += [(t + (j + 0.5) * sd, " ".join(ws[j * k:(j + 1) * k]), f"{i}.{j}") for j in range(len(shots))]
-            for j, sh_ in enumerate(shots):
-                pp = os.path.join(work, f"c{i}_{j}.mp4"); parts.append(pp)
-                clip(fetch(sh_["clip"], clips_dir), sh_.get("start", 0), sd, pp, sh_.get("move", "in"))
+            srcs = [fetch(sh_["clip"], clips_dir) for sh_ in shots]  # séquentiel : garde l'anti-doublon Pixabay
+            parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
+            with ThreadPoolExecutor(4) as ex:  # encodage des plans en parallèle (4 cœurs du runner)
+                list(ex.map(lambda a: clip(a[0], a[1].get("start", 0), sd, a[2], a[1].get("move", "in")), zip(srcs, shots, parts)))
             if len(parts) == 1: os.replace(parts[0], cp)
             else:
                 lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
@@ -325,8 +342,9 @@ def main(ep_path, clips_dir, out):
     voice_slots = [(st, d - (st - t0) - 0.2) for (_, d, vp, st), t0 in zip(scenes, starts)]
     json.dump({"total": total, "starts": starts, "slots": voice_slots, "risers": risers, "cuts": cuts},
               open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
-    for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
-        dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
+    with ThreadPoolExecutor(6) as ex:  # pistes audio doublées en parallèle (même musique, même minutage)
+        list(ex.map(lambda lt: dub_track(ep, lt[0], lt[1], voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lt[0]}.m4a")),
+                    ep.get("dub", {}).items()))
     review_sheet(out, review)
     b = os.path.basename(out)[:-4]; langs = list(ep.get("dub", {}))
     open(out.replace(".mp4", "_CONSIGNES_CHROME.md"), "w").write(f"""# Consignes pour Claude dans Chrome — {ep.get('youtube', {}).get('title', ep['title'])}
