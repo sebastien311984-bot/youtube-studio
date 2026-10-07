@@ -1,0 +1,661 @@
+{
+ "title": "Deadliest Creatures of the Deep Sea: Midnight Zone",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: Pixabay (Pixabay Content License). Facts: NOAA Ocean Exploration, MBARI, Smithsonian Ocean.",
+ "scenes": [
+  {
+   "kind": "intro",
+   "min": 4.0,
+   "yt_chapter": "Intro"
+  },
+  {
+   "clip": "pixabay:bioluminescent jellyfish deep ocean dark",
+   "start": 0,
+   "move": "in",
+   "text": "What is the deadliest creature in the darkest place on Earth? Stay until the end, because the most frightening one is not the one you expect. Two thousand meters down, there is no sunlight. None. It is about as cold as a refrigerator, the pressure could crush a car, and something out there is hunting by the light of its own body.",
+   "lead": 0.5
+  },
+  {
+   "clip": "pixabay:deep sea dark water",
+   "start": 0,
+   "move": "out",
+   "text": "Welcome to the deadliest neighborhood on Earth.",
+   "min": 4.2,
+   "title": [
+    "CREATURES OF THE MIDNIGHT ZONE",
+    "ODDLY LOGICAL SCIENCE"
+   ],
+   "teaser": "WELCOME TO THE DARK"
+  },
+  {
+   "clip": "pixabay:submarine descending ocean depths",
+   "start": 0,
+   "move": "in",
+   "text": "The Midnight Zone, scientists call it the bathypelagic, starts about one thousand meters below the surface and reaches down to roughly four thousand. Sunlight fades out long before that. Down here, the only light is the light that living things make themselves. It is the largest habitat on our planet by volume, and we have barely looked at it. NOAA estimates that more than eighty percent of the ocean is still unmapped and unexplored.",
+   "chapter": [
+    "CHAPTER 1",
+    "THE MIDNIGHT ZONE"
+   ],
+   "lead": 1.2,
+   "label": [
+    "BATHYPELAGIC ZONE",
+    "1,000 TO 4,000 METERS DOWN"
+   ],
+   "fact": "More than 80% of the ocean is still unmapped,\\Nunobserved and unexplored (NOAA).",
+   "yt_chapter": "The Midnight Zone"
+  },
+  {
+   "kind": "diagram",
+   "heading": "HOW DEEP IS THE DARK?",
+   "min": 9,
+   "text": "Think of the ocean as a building. Up to two hundred meters is the sunlit zone, where plants and most sea life live. From two hundred to one thousand meters is the twilight zone, where light fades to a faint blue glow. Below one thousand meters, the lights go out completely. That is the Midnight Zone. And below four thousand meters come the abyss and the trenches.",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      300,
+      260
+     ],
+     "to": [
+      1100,
+      260
+     ],
+     "color": "blue",
+     "width": 6
+    },
+    {
+     "type": "text",
+     "text": "0 m  SUNLIGHT ZONE",
+     "at": [
+      1500,
+      260
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "blue"
+    },
+    {
+     "type": "line",
+     "from": [
+      300,
+      420
+     ],
+     "to": [
+      1100,
+      420
+     ],
+     "color": "blue",
+     "width": 6
+    },
+    {
+     "type": "text",
+     "text": "200 m  TWILIGHT ZONE",
+     "at": [
+      1500,
+      420
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "orange"
+    },
+    {
+     "type": "line",
+     "from": [
+      300,
+      620
+     ],
+     "to": [
+      1100,
+      620
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "1,000 m  MIDNIGHT ZONE",
+     "at": [
+      1500,
+      620
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "red"
+    },
+    {
+     "type": "line",
+     "from": [
+      300,
+      860
+     ],
+     "to": [
+      1100,
+      860
+     ],
+     "color": "ink",
+     "width": 6
+    },
+    {
+     "type": "text",
+     "text": "4,000 m  THE ABYSS",
+     "at": [
+      1500,
+      860
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "ink"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      700,
+      200
+     ],
+     "to": [
+      700,
+      900
+     ],
+     "color": "ink",
+     "width": 7
+    }
+   ]
+  },
+  {
+   "clip": "pixabay:deep sea exploration submersible lights",
+   "start": 0,
+   "move": "left",
+   "text": "Down here, the pressure at one thousand meters is about one hundred times the pressure at the surface. Every square centimeter of an animal's body feels the weight of a heavy block of water. And yet life thrives, because these creatures have no air-filled lungs to crush. Their bodies are mostly water, so the pressure pushes in and out equally.",
+   "label": [
+    "EXTREME PRESSURE",
+    "SURVIVING THE CRUSH"
+   ],
+   "fact": "Deep-sea fish often have no swim bladder,\\Nso there is no gas pocket to crush."
+  },
+  {
+   "kind": "stat",
+   "value": 100,
+   "prefix": "~",
+   "suffix": "x",
+   "caption": "SURFACE PRESSURE AT 1,000 METERS DOWN",
+   "min": 4.5,
+   "text": "About one hundred times surface pressure. And it only gets worse from here. Now meet the animal that made this place famous.",
+   "teaser": "THE FISH WITH A FISHING ROD"
+  },
+  {
+   "clip": "pixabay:deep sea fish dark",
+   "start": 0,
+   "move": "in",
+   "text": "Chapter two. In total darkness, hunting is a problem. The anglerfish solved it with a fishing rod. A modified spine on its head ends in a glowing lure, and the glow comes from bacteria living inside it. Smaller fish, drawn to light the way we are drawn to a window at night, swim closer. Then the jaws open so fast that the prey never sees it coming.",
+   "chapter": [
+    "CHAPTER 2",
+    "THE FISHING ROD"
+   ],
+   "lead": 1.2,
+   "label": [
+    "ANGLERFISH",
+    "LIGHT AS A TRAP"
+   ],
+   "fact": "The lure's glow is made by symbiotic bacteria\\Nliving inside the fish.",
+   "yt_chapter": "The Anglerfish"
+  },
+  {
+   "clip": "pixabay:deep sea fish teeth underwater dark",
+   "start": 0,
+   "move": "right",
+   "text": "Her mouth is lined with long, sharp, inward-curving teeth, and her stomach can stretch to swallow prey up to about twice her own length. Nothing escapes once it has been grabbed. In the Midnight Zone, a meal may come along only once in a long while, so you cannot afford to let one go.",
+   "label": [
+    "FEMALE ANGLERFISH",
+    "PREY UP TO TWICE HER LENGTH"
+   ]
+  },
+  {
+   "kind": "versus",
+   "heading": "THE ANGLERFISH COUPLE",
+   "min": 8,
+   "text": "And the story gets stranger. In many species, the male is tiny compared to the female, and he has no lure at all. He finds her by smell. When he does, he bites on, and in some species his body actually fuses with hers, sharing her blood supply. He becomes little more than a permanent partner that provides sperm. Nature in the dark is not romantic. It is efficient.",
+   "left": {
+    "name": "FEMALE",
+    "color": "red",
+    "stats": [
+     "Glowing lure",
+     "Large, hunts prey",
+     "Long needle teeth",
+     "Lives alone"
+    ]
+   },
+   "right": {
+    "name": "MALE",
+    "color": "blue",
+    "stats": [
+     "No lure",
+     "Tiny in many species",
+     "Finds her by smell",
+     "May fuse to her body"
+    ]
+   }
+  },
+  {
+   "clip": "pixabay:bioluminescence ocean glowing plankton",
+   "start": 0,
+   "move": "in",
+   "text": "Light is the language of the deep. A Monterey Bay study that surveyed the water column from the surface down to four thousand meters found that about seventy-six percent of the animals it saw can make their own light. They use it to lure prey, to blind enemies, and to find mates. Down here, a glow is both a dinner bell and a warning.",
+   "label": [
+    "BIOLUMINESCENCE",
+    "LIGHT MADE BY LIFE"
+   ],
+   "fact": "76% of animals surveyed in the water column\\Noff Monterey Bay can make their own light."
+  },
+  {
+   "kind": "stat",
+   "value": 76,
+   "suffix": "%",
+   "caption": "OF ANIMALS SURVEYED OFF CALIFORNIA MAKE LIGHT",
+   "min": 4.5,
+   "text": "About seventy-six percent. The deep sea is not dark at all. It is a sparkling battlefield. And some of the fighters are armed with weapons that look like they belong in a nightmare.",
+   "teaser": "TEETH TOO BIG FOR THEIR MOUTHS"
+  },
+  {
+   "clip": "pixabay:fish teeth underwater",
+   "start": 0,
+   "move": "in",
+   "text": "Chapter three. Meet the viperfish. Its fangs are so long that they do not fit inside its mouth, and when it closes its jaws, they curl up in front of its eyes like a cage. It cruises, then lunges at prey with its mouth wide open. It also carries rows of light organs along its belly, and a lure on a long spine above its head.",
+   "chapter": [
+    "CHAPTER 3",
+    "FANGS IN THE DARK"
+   ],
+   "lead": 1.2,
+   "label": [
+    "VIPERFISH",
+    "FANGS LONGER THAN ITS MOUTH"
+   ],
+   "fact": "A viperfish is only about 30 cm long,\\Nbut its fangs look like a horror film.",
+   "yt_chapter": "Fangs in the Dark"
+  },
+  {
+   "clip": "pixabay:fish with big teeth underwater close up",
+   "start": 0,
+   "move": "out",
+   "text": "Then there is the fangtooth. It is only around sixteen centimeters long, yet it has the largest teeth in proportion to body size of any fish in the ocean. They are so big that it has special sockets in the roof of its mouth, so the lower fangs can slide in when it shuts its jaws. Otherwise it would pierce its own brain.",
+   "label": [
+    "FANGTOOTH",
+    "BIGGEST TEETH FOR ITS SIZE"
+   ]
+  },
+  {
+   "kind": "scale",
+   "heading": "HOW BIG ARE THEY?",
+   "min": 8,
+   "text": "Here is the surprise. Most of the monsters of the Midnight Zone are small. A fangtooth would fit in your hand. A viperfish is about as long as a school ruler. A gulper eel can be up to a meter or so. But the giants do exist, and one of them has eyes the size of dinner plates.",
+   "items": [
+    {
+     "label": "FANGTOOTH",
+     "size": 1,
+     "color": "red",
+     "note": "~16 cm"
+    },
+    {
+     "label": "VIPERFISH",
+     "size": 2,
+     "color": "orange",
+     "note": "~30 cm"
+    },
+    {
+     "label": "HUMAN",
+     "size": 9,
+     "color": "blue",
+     "note": "~1.7 m"
+    },
+    {
+     "label": "GIANT SQUID",
+     "size": 30,
+     "color": "purple",
+     "note": "up to ~13 m"
+    }
+   ],
+   "teaser": "A MOUTH LIKE A BALLOON"
+  },
+  {
+   "clip": "pixabay:eel underwater dark swimming",
+   "start": 0,
+   "move": "left",
+   "text": "One of the strangest hunters is the gulper eel, also called the pelican eel. Its mouth is enormous compared with its thin body, and it can open it like a net to engulf a mass of water and anything inside. At the very tip of its whip-like tail, there is a small glowing organ, which scientists think may be used as a lure.",
+   "label": [
+    "GULPER EEL",
+    "A MOUTH LIKE A NET"
+   ],
+   "fact": "The gulper eel's body is thin, but its jaws\\Ncan open wide like a bag."
+  },
+  {
+   "kind": "quiz",
+   "question": "WHICH FISH HAS THE LARGEST TEETH FOR ITS BODY SIZE?",
+   "options": [
+    "GREAT WHITE SHARK",
+    "FANGTOOTH",
+    "PIRANHA",
+    "BARRACUDA"
+   ],
+   "answer": 1,
+   "min": 6,
+   "teaser": "THE VAMPIRE THAT ISN'T"
+  },
+  {
+   "clip": "pixabay:squid underwater dark ocean",
+   "start": 0,
+   "move": "in",
+   "text": "Chapter four. The vampire squid. The name sounds scary, but it is not a vampire, and it does not drink blood. Its name comes from its dark red body and cloak-like webbing between its arms. It lives in the oxygen-poor layer of the deep and survives by drifting and collecting bits of falling debris, called marine snow, with sticky threads. But when threatened, it does something quite spectacular.",
+   "chapter": [
+    "CHAPTER 4",
+    "THE VAMPIRE THAT ISN'T"
+   ],
+   "lead": 1.2,
+   "label": [
+    "VAMPIRE SQUID",
+    "VAMPYROTEUTHIS INFERNALIS"
+   ],
+   "yt_chapter": "The Vampire Squid",
+   "teaser": "DEFENSE BY GLOWING SLIME"
+  },
+  {
+   "clip": "pixabay:jellyfish glowing dark water",
+   "start": 0,
+   "move": "right",
+   "text": "It turns itself inside out like an umbrella, hiding behind its spiked arms, and it releases a cloud of glowing mucus. The predator sees a swarm of sparks, and by the time the cloud fades, the squid has vanished into the dark. A defense made of light. In the Midnight Zone, even fear glows.",
+   "label": [
+    "GLOWING MUCUS",
+    "A CLOUD OF SPARKS"
+   ],
+   "fact": "The vampire squid lives in the oxygen-minimum zone\\Nwhere few predators can follow."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NOW",
+    "GO",
+    "DEEPER"
+   ],
+   "fact": "The vampire squid lives in the oxygen-minimum\\Nzone, where few predators can follow."
+  },
+  {
+   "kind": "diagram",
+   "heading": "HOW AN ANGLERFISH HUNTS",
+   "min": 10,
+   "teaser": "GIANTS IN THE DARK",
+   "text": "Let me show you the trap in slow motion. One, the lure glows. Two, a curious fish, drawn by the light, swims close. Three, the lure waves just in front of the mouth. Four, the jaws snap shut in a fraction of a second. The whole attack is over before the prey understands that it was never looking at food. It was looking at bait.",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      500,
+      560
+     ],
+     "r": 190,
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "ANGLERFISH",
+     "at": [
+      500,
+      560
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "red"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       560,
+       380
+      ],
+      [
+       860,
+       230
+      ],
+      [
+       980,
+       330
+      ]
+     ],
+     "color": "orange",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      1000,
+      340
+     ],
+     "r": 45,
+     "color": "gold",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "1  GLOWING LURE",
+     "at": [
+      1000,
+      230
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "gold"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1600,
+      420
+     ],
+     "to": [
+      1120,
+      380
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "2  PREY SWIMS CLOSER",
+     "at": [
+      1600,
+      350
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      820,
+      640
+     ],
+     "to": [
+      1100,
+      640
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "4  JAWS SNAP SHUT",
+     "at": [
+      1250,
+      720
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "3  LURE WAVES AT MOUTH",
+     "at": [
+      1250,
+      800
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "clip": "pixabay:sperm whale diving deep underwater",
+   "start": 0,
+   "move": "in",
+   "text": "Chapter five. Now for the real hunters of the abyss. Sperm whales dive well over a kilometer, sometimes reaching depths beyond two thousand meters, and can stay down for an hour or more. They hunt in total darkness using sound, and one of their favorite meals is squid. The scars from sucker rings found on their skin tell us who they fight down there.",
+   "chapter": [
+    "CHAPTER 5",
+    "GIANTS IN THE DARK"
+   ],
+   "lead": 1.2,
+   "label": [
+    "SPERM WHALE",
+    "HUNTER OF THE DEEP"
+   ],
+   "yt_chapter": "Giants in the Dark",
+   "fact": "Sperm whales have the largest brain of any\\Nanimal that has ever lived."
+  },
+  {
+   "kind": "stat",
+   "value": 27,
+   "suffix": " CM",
+   "caption": "WIDTH OF A GIANT SQUID EYE",
+   "min": 5,
+   "text": "The giant squid has eyes that can reach about twenty-seven centimeters across, among the largest in the animal kingdom. Why so large? A 2012 study suggested they let it spot the faint glow stirred up by a sperm whale, from far away, giving it time to flee."
+  },
+  {
+   "clip": "pixabay:squid underwater",
+   "start": 0,
+   "move": "out",
+   "text": "For centuries, the giant squid was a legend, a sailors' tale of the kraken. Its body, with the tentacles, can reach around thirteen meters. Yet no one had filmed one alive in its natural home until the twenty-first century. For all that time, a monster the length of a bus had been hiding in plain sight, in the dark.",
+   "label": [
+    "GIANT SQUID",
+    "ARCHITEUTHIS"
+   ],
+   "fact": "Giant squid were a sea legend until the\\N21st century. Nobody had filmed one alive."
+  },
+  {
+   "kind": "timeline",
+   "heading": "CATCHING A GHOST ON CAMERA",
+   "min": 9,
+   "text": "The hunt for a live giant squid took decades. In two thousand four, Japanese researchers got the first photographs of one in the wild. In two thousand twelve, a team filmed one in the deep, in video, for the first time. And in twenty nineteen, a NOAA expedition used a glowing electronic lure to film one in the Gulf of Mexico, the first time a giant squid was recorded in U.S. waters.",
+   "teaser": "THE REAL DEADLIEST",
+   "events": [
+    {
+     "year": "2004",
+     "text": "First photos\nin the wild"
+    },
+    {
+     "year": "2012",
+     "text": "First deep-sea\nvideo"
+    },
+    {
+     "year": "2019",
+     "text": "NOAA films one\nin the Gulf of Mexico"
+    }
+   ]
+  },
+  {
+   "clip": "pixabay:ocean dark deep water",
+   "start": 0,
+   "move": "left",
+   "text": "So which one is the deadliest? The anglerfish with its trap? The viperfish with its fangs? The giant squid? Honestly, none of them are a threat to us. They live in a place we cannot visit without a submarine. The truth is the real danger of the Midnight Zone is not what lives there. It is what we are doing to it.",
+   "title": [
+    "BUT THE REAL DANGER IS...",
+    "US"
+   ],
+   "min": 5
+  },
+  {
+   "clip": "pixabay:ocean deep sea research vessel",
+   "start": 0,
+   "move": "in",
+   "text": "Scientists are racing to explore the deep ocean before industries that are interested in mining the seafloor and fishing in deeper waters do. Many of these animals grow slowly, live long and breed rarely, so they recover slowly from disturbance. We are discovering new species on many deep dives, and some may vanish before we ever meet them.",
+   "label": [
+    "DEEP-SEA CONSERVATION",
+    "BEFORE WE EVEN KNOW THEM"
+   ],
+   "fact": "Many deep-sea species grow slowly and live\\Nlong, so disturbance can last for decades."
+  },
+  {
+   "clip": "pixabay:deep ocean glowing jellyfish dark",
+   "start": 0,
+   "move": "out",
+   "text": "So here is my question. If you could descend to the Midnight Zone in a submarine, which creature would you most want to meet, and which one would you pray not to see? Tell me in the comments. I read every one.",
+   "min": 6,
+   "title": [
+    "WHICH ONE SCARES YOU?",
+    "TELL US IN THE COMMENTS"
+   ]
+  },
+  {
+   "clip": "pixabay:underwater deep blue ocean",
+   "start": 0,
+   "move": "in",
+   "text": "Subscribe. The universe is stranger than you think.",
+   "min": 5,
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE FOR MORE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 7,
+  "text": "WORSE THAN TEETH",
+  "sub": "NEVER SEEN",
+  "shift": 0.3
+ },
+ "youtube": {
+  "title": "Deep Sea Monsters: The Midnight Zone's Killers",
+  "description": "The deep sea monsters of the Midnight Zone live 1,000 to 4,000 meters down, in total darkness. We meet the anglerfish, viperfish, fangtooth, gulper eel, vampire squid and giant squid, and ask which one is really the deadliest.\n\nIn this video:\n• The Midnight Zone: how deep is the dark?\n• The anglerfish and its glowing lure\n• Viperfish and fangtooth: fangs too big for their mouths\n• The vampire squid that is not a vampire\n• Sperm whales and the giant squid\n• Which creature is truly the deadliest?\n\nWhich deep-sea creature scares you the most? Tell us in the comments.\nSubscribe for more strange-but-true science: the universe is stranger than you think.",
+  "tags": [
+   "deep sea creatures",
+   "midnight zone",
+   "deep sea monsters",
+   "anglerfish",
+   "viperfish",
+   "fangtooth",
+   "gulper eel",
+   "vampire squid",
+   "giant squid",
+   "bioluminescence",
+   "bathypelagic zone",
+   "deepest creatures in the ocean",
+   "scary ocean animals",
+   "ocean mysteries",
+   "deep sea documentary"
+  ],
+  "hashtags": [
+   "deepsea",
+   "ocean",
+   "science"
+  ],
+  "translations": {
+   "French": "Monstres des abysses : la zone de minuit",
+   "Spanish": "Monstruos del mar profundo: la zona de medianoche",
+   "Portuguese": "Monstros do mar profundo: a zona da meia-noite",
+   "German": "Tiefsee-Monster: die Mitternachtszone",
+   "Hindi": "गहरे समुद्र के राक्षस: मध्यरात्रि क्षेत्र"
+  }
+ },
+ "shorts": [
+  {
+   "from": 7,
+   "to": 8,
+   "title": "The Fish That Fishes in the Dark"
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "title": "The Squid That Fights With Light"
+  }
+ ]
+}

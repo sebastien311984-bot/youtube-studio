@@ -5,6 +5,12 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 
 # Oddly Logical Science — processus de production (v2, à faire évoluer)
 
+## Esprit (à lire en premier)
+- Les listes ci-dessous sont une **boîte à outils, pas un gabarit**. Ne jamais cocher des cases : chaque vidéo part d'une vraie idée de réalisateur.
+- Avant d'écrire, se poser 3 questions et les écrire en 3 lignes dans le brief à l'agent : **Quelle émotion ? Quelle image inoubliable ? Qu'est-ce qui rend CETTE vidéo différente des précédentes ?** Le style (rythme, couleurs, formats, musique) découle des réponses.
+- Les règles techniques (plans, courbes, longueurs) sont dans le code : `engine/check_episode.py` avant chaque push, et le moteur se protège seul. Inutile de les répéter dans les consignes.
+- En cas de doute : moins d'effets, mieux choisis. Relire le résultat comme un spectateur, pas comme un contrôleur.
+
 ## Déroulé d'une vidéo (« machine de guerre »)
 1. Lire `channels/oddly-logical/FEEDBACK.md` (prioritaire) et prendre le premier sujet non fait dans `channels/oddly-logical/TOPICS.md`.
 2. Déléguer l'écriture à l'agent **oddly-scriptwriter** (modèle sonnet, moins coûteux) : il cherche les plans et écrit `channels/oddly-logical/episodes/<slug>.json`.
@@ -15,6 +21,23 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 
 Chaîne YouTube en anglais : science spectaculaire (espace, Terre, océans, animaux).
 Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « contenu réutilisé »).
+
+## Stratégie de croissance (prioritaire, 2026-10-07)
+1. **Angle TOI** : chaque sujet est formulé autour du spectateur (« What Happens to Your Body… », « Could You Survive… », « What If You… »). Choisir d'abord dans la section « TOI » de TOPICS.md.
+2. **Shorts d'abord** : chaque vidéo longue → 3 Shorts de 30-58 s (accroche + révélation + chute), publiés après la longue, étalés (1/jour). Un Short peut aussi être produit seul (épisode court dédié).
+3. **Actualité** : vérifier au début de chaque conversation s'il y a une actu science forte (NASA/ESA/NOAA/USGS, JWST, astéroïde, éruption, tempête solaire). Si oui, elle passe devant : vidéo de 6-8 min + Shorts en < 48 h, avec les images officielles du communiqué (domaine public NASA/NOAA/USGS ; ESA/ESO en CC BY à créditer). Titre = mot-clé de l'actu + angle TOI.
+4. **Mesure** : noter CTR et rétention à 30 s dans VIDEOS.md 48 h après chaque publication ; bilan après ~20 vidéos.
+5. **Plus tard** : version française (piste audio YouTube ou 2e chaîne).
+
+## International (doublage)
+- Après relecture, l'agent **oddly-translator** ajoute le champ `dub` (es, pt, hi, fr, de, ar). Le rendu produit `<nom>_<langue>.m4a` (voix native + même musique, calée sur le minutage) et `<nom>_timing.json`.
+- Dans YouTube Studio : vidéo → Langues → Ajouter → Piste audio (fichier .m4a), + titre/description traduits. Les pistes s'ajoutent aussi à une vidéo déjà publiée.
+- Textes à l'écran restent en anglais pour l'instant.
+
+## Garde-fous (dans le code)
+- Sources : piocher largement dans SOURCES.md (NASA, DVIDS, CDC/NIH, Internet Archive, Smithsonian, Commons…) selon le sujet ; officielles d'abord (images-api.nasa.gov fonctionne ici : URL `https://images-assets.nasa.gov/image/<id>/<id>~large.jpg`), Pixabay en dernier recours.
+- Avant push : planche contact des visuels (vignettes `~thumb`). Après rendu : planche `fps=1/4,tile=8x10` de la vidéo, regardée en entier.
+`python3 engine/check_episode.py <épisode>` avant push ; après rendu, lire le journal (« plans générés », « plan réutilisé ») avant d'affirmer quoi que ce soit.
 
 ## Règle d'or : économiser les tokens
 - **Ne jamais faire de rendu complet en local.** On pousse l'épisode JSON, et GitHub Actions fait le rendu (0 token).
@@ -75,7 +98,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 - `title` [grand, petit] : titre plein écran.
 
 ## Recette d'une vidéo addictive (checklist)
-1. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
+1. **Cold open 0-5 s AVANT l'intro** (image la plus forte + question choc), puis intro. **Accroche de 0 à 10 s** : une question folle, et « NASA simulated it / the answer is terrifying ».
 2. **Titre plein écran** juste après l'accroche.
 3. **Des chapitres** toutes les 60 à 90 s (« CHAPTER 1 · ... ») avec une révélation chacun.
 4. **Varier les formats** : plan réel → chiffre choc → schéma → plan réel. Jamais deux scènes du même type d'affilée, sauf les plans réels. **Chaque vidéo d'environ 10 min** utilise au moins 6 types différents : 1 quiz, 1 scale ou versus, 1 timeline si le sujet a une histoire, 2 à 3 diagrams, 2 à 3 stats, 1 kinetic. Environ 60 % du temps en plans réels.
@@ -85,7 +108,7 @@ Ajouts automatiques du moteur : barre de progression dorée avec repères de cha
 7. **Une fin** : une question au spectateur (pour les commentaires), puis abonnement et le titre « ODDLY LOGICAL SCIENCE ».
 8. **Faits exacts et sourcés** ; les crédits vont dans la description YouTube.
 9. **Durée cible pour monétiser** : 8 à 12 minutes, soit 25 à 40 scènes (environ 2,6 mots prononcés par seconde, soit 1 300 à 1 800 mots). Au moins 8 minutes pour pouvoir placer des pubs au milieu de la vidéo.
-10. **SEO** : titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
+10. **SEO (YouTube + Google « moments clés »)** : chapitres formulés comme des questions recherchées, phrase-réponse en début de chapitre, description = résumé + mini-FAQ, SRT envoyé ; titre avec le mot-clé au début et un élément de curiosité ou « NASA » ; description dont les 2 premières lignes contiennent le mot-clé ; 5 chapitres ou plus ; 3 hashtags ; tags avec des variantes longues.
 11. **Miniature** : 2 à 4 mots maximum, ne pas répéter le titre, une image choc à droite, un fort contraste.
 
 ## Viser le spectaculaire
@@ -126,3 +149,14 @@ Titre (moins de 60 caractères, curiosité), description avec chapitres horodat�
 - v0 : voix Edge TTS, sous-titres mot à mot, travellings, fondus, musique synthétisée avec ducking.
 - v1 : intro cinématique, schémas dessinés au crayon, chiffres chocs, plusieurs plans par scène, encarts « Did you know? », cartons de chapitre, plans courts bouclés.
 - Idées suivantes : vraie main qui dessine, barre de progression et teaser « coming up », cartes animées, versions Shorts verticales automatiques, voix ElevenLabs, miniature générée automatiquement.
+
+## Feuille de route « être vu et cité » (à mettre en place progressivement)
+- Style adapté au sujet : champ `theme` (palette, musique, rythme, transitions) par épisode — priorité moteur n°1.
+- Découverte : titre = mot-clé recherché + curiosité ; 3 miniatures A/B ; Short publié APRÈS la longue (quelques heures à 1 jour) : le lien « Vidéo associée » n'accepte qu'une vidéo déjà en ligne ; playlists thématiques ; écran de fin vers la vidéo la plus proche.
+- Google / IA (être cité) : chapitres-questions, phrase-réponse nette, chiffres sourcés dits à voix haute, description avec résumé + FAQ + sources (NASA, NOAA, études), SRT exact, page/article compagnon possible plus tard.
+- Rétention : cold open, fausse fin, « pattern interrupt » toutes les 20-30 s (zoom, son, changement de format), boucle ouverte résolue à la fin.
+- Engagement : question précise épinglée en commentaire, sondage communauté, réponse aux premiers commentaires dans l'heure.
+- Qualité cinéma : sound design par thème (grondement grave pour les abysses), étalonnage par thème, cartes et globes animés, compte à rebours, vraie main qui dessine.
+- Publication (ordre) : longue → Short quelques heures après avec « Vidéo associée » → commentaire épinglé (question) → ajout à la playlist du thème → écran de fin + fiches (cards) vers 1-2 vidéos proches → post Communauté (sondage) 1-2 jours après.
+- Autres astuces : langue audio et titre/description traduits (FR, ES, PT, DE, HI) ; catégorie « Science & Technology » ; lieu et « contenu altéré/synthétique » renseignés honnêtement ; premiers 200 caractères de la description = résumé avec mot-clé ; tags « dérivés » (questions longues) ; 1 Short par chapitre fort (2-3 par vidéo) étalés sur la semaine ; republier les meilleurs passages en Shorts « réponse à un commentaire » ; analyser la rétention à 30 s et le CTR après 48 h et noter la leçon dans FEEDBACK.md.
+- Qualité : voix plus expressive (pauses, emphase) ; musique qui monte avant chaque révélation et silence juste avant ; plans jamais répétés ; vérifier chaque plan Pixabay (aperçu 1 image par plan dans l'artefact) avant validation.

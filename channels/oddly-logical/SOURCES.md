@@ -16,3 +16,17 @@ Règle : jamais d'images de chaînes YouTube, BBC, National Geographic, Discover
 | **Pexels** | (création de clés API suspendue en 2026) | — | — |
 
 Astuce rétention : alterner une source « réelle » (NASA, NOAA, Pixabay) et une animation maison toutes les 5 à 10 s. Une image rare (grands fonds, archives) en accroche augmente le taux de clics.
+
+## Sources élargies (2026-10-07) — toutes légales et gratuites
+| Source | Contenu | Licence / crédit |
+|---|---|---|
+| DVIDS (dvidshub.net) | armée US : avions, navires, explosions, sauvetages, catastrophes | domaine public (vérifier la mention « public release ») ; pas d'aval implicite |
+| CDC PHIL (phil.cdc.gov), NIH / NIAID (flickr NIAID) | microscopie, virus, bactéries, corps humain | domaine public pour la plupart (lire chaque fiche) ; NIAID en CC BY : créditer |
+| Internet Archive — Prelinger, films gouvernementaux | films anciens, histoire, essais, accidents | domaine public (vérifier chaque film) |
+| Smithsonian Open Access | animaux, fossiles, objets, histoire | CC0 |
+| NOAA Ocean Exploration, NPS (parcs US), US Fish & Wildlife, USDA | océans profonds, volcans, faune, nature | domaine public |
+| ESA, ESO, Hubble/Webb, EUMETSAT | espace, météo | CC BY / CC BY-SA : créditer |
+| Wikimedia Commons | tout | licence par fichier : créditer l'auteur |
+| Mixkit, Coverr, Videvo (licence gratuite), Pixabay | stock générique | libres ; tri visuel sévère obligatoire |
+| Images IA (générées par nous) | ce qui est infilmable | légal ; cocher « contenu synthétique » si réaliste |
+INTERDIT : images de médias (TV, agences AFP/Reuters/AP/Getty, journaux), vidéos YouTube/TikTok/Instagram d'autrui, films et séries. Content ID les détecte : blocage, démonétisation, avertissements.

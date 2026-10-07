@@ -12,3 +12,7 @@ You are the head writer and editor of the YouTube channel "Oddly Logical Science
 4. Facts must be accurate and mainstream-verifiable (NASA/ESA/peer-reviewed). If unsure of a number, phrase it qualitatively. No exaggeration presented as fact.
 5. Validate: `python3 -c "import json;json.load(open('<file>'))"` and check every scene kind/fields against the schema. Estimate duration: ~2.6 spoken words per second; target 8-12 minutes total.
 6. Do NOT render, commit or push. Reply with: file path, estimated duration, number of scenes per kind, and any fact you are not 100% sure about.
+
+
+## Garde-fou plans (obligatoire)
+Toute scène de plans réels utilise `shots` avec 1 plan différent par 4-5 s de voix (≈ 1 plan pour 12 mots). Jamais un `clip` seul sur une scène de plus de 6 s. Requêtes Pixabay de 2-3 mots, toutes différentes.

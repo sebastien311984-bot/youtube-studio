@@ -27,17 +27,28 @@ def tts(text, voice, path):
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
     asyncio.run(run()); return words
 
+PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
+
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
     if src.startswith("pixabay:"):  # « pixabay:requête[#rang] » : recherche au moment du rendu (clé dans le secret GitHub)
         import urllib.request, urllib.parse
         q, _, rank = src[8:].partition("#"); key = os.environ.get("PIXABAY_API_KEY", "")
         if not key: raise SystemExit("PIXABAY_API_KEY manquant (secret GitHub)")
-        url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": 20, "safesearch": "true"})
-        hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
+        words, hits = q.split(), []
+        while words and not hits:  # Pixabay exige tous les mots : on raccourcit la requête jusqu'à trouver
+            url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": " ".join(words), "per_page": 50, "safesearch": "true"})
+            hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OddlyLogicalStudio/1.0"}), timeout=40))["hits"]
+            if not hits: print(f"Pixabay : aucun résultat pour {' '.join(words)!r}, requête raccourcie"); words = words[:-1]
+        BAD = ("green screen", "greenscreen", "chroma", "cartoon", "animation", "3d", "character", "covid", "mask", "text", "intro", "logo")
+        hits = [h for h in hits if not any(b in h.get("tags", "").lower() for b in BAD)] or hits  # ni fond vert, ni dessin animé, ni texte
         hits = [h for h in hits if h["videos"]["large"]["width"] >= 1920 or h["videos"]["medium"]["width"] >= 1920] or hits
         if not hits: raise SystemExit(f"Pixabay : aucun résultat pour {q!r}")
-        v = hits[min(int(rank or 0), len(hits) - 1)]["videos"]
+        r = min(int(rank or 0), len(hits) - 1); hits = hits[r:] + hits[:r]
+        h = next((h for h in hits if h["id"] not in PIXA_USED), hits[0])
+        if h["id"] in PIXA_USED: print(f"Pixabay : plus de plan inédit pour {q!r}, plan réutilisé")
+        PIXA_USED.add(h["id"])
+        v = h["videos"]
         src = v["large"]["url"] if v["large"]["url"] else v["medium"]["url"]
     if not src.startswith("http"): return os.path.join(clips_dir, src)
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
@@ -196,6 +207,25 @@ def music(total, voice_env, cuts, risers=()):
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
 
+DUB_VOICES = {"es": "es-MX-JorgeNeural", "pt": "pt-BR-AntonioNeural", "hi": "hi-IN-MadhurNeural", "fr": "fr-FR-HenriNeural",
+              "de": "de-DE-ConradNeural", "ar": "ar-SA-HamedNeural", "id": "id-ID-ArdiNeural", "ja": "ja-JP-KeitaNeural"}
+
+def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
+    n = int(total * SR); vtrack = np.zeros(n)
+    for i, (txt, (st, slot)) in enumerate(zip(texts, slots)):
+        if not txt: continue
+        vp = os.path.join(work, f"dub_{lang}_{i}.mp3"); tts(txt, DUB_VOICES[lang], vp); vd = dur(vp)
+        tempo = min(1.4, vd / slot) if slot > 0 and vd > slot else 1.0  # accélère légèrement si la traduction est plus longue
+        if tempo > 1.0: print(f"Doublage {lang} scène {i} : accéléré x{tempo:.2f}")
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
+        v = np.frombuffer(raw, np.int16).astype(float) / 32768; a = int(st * SR); m = min(len(v), n - a); vtrack[a:a + m] += v[:m]
+    k = int(0.15 * SR); env = np.convolve(np.abs(vtrack), np.ones(k) / k, "same"); env = np.minimum(1, env / 0.04)
+    mix = np.tanh((vtrack * 1.15 + music(total, env, cuts[1:], [r for r in risers if r > 2.5]) * 0.33) * 1.1) * 0.93
+    wav = os.path.join(work, f"dub_{lang}.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
+    sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "aac", "-b:a", "160k", out)
+
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
     voice = ep.get("voice", "en-US-AndrewMultilingualNeural")
@@ -219,6 +249,13 @@ def main(ep_path, clips_dir, out):
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
             shots = s.get("shots") or [{"clip": s["clip"], "start": s.get("start", 0), "move": s.get("move", "in")}]
+            # garde-fou : jamais un plan de plus de ~5 s (sinon un rush court tourne en boucle à l'écran)
+            need = max(1, round((d + XF) / 4.5))
+            if len(shots) < need:
+                print(f"Scène {i} : {len(shots)} plan(s) pour {d:.0f} s → {need} plans générés automatiquement")
+                moves = ["in", "left", "out", "right"]
+                shots = [dict(shots[j % len(shots)], move=moves[j % 4],
+                              start=shots[j % len(shots)].get("start", 0) + (j // len(shots)) * 4.5) for j in range(need)]
             sd = (d + XF) / len(shots); parts = []
             for j, sh_ in enumerate(shots):
                 pp = os.path.join(work, f"c{i}_{j}.mp4"); parts.append(pp)
@@ -268,6 +305,11 @@ def main(ep_path, clips_dir, out):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
     sh("ffmpeg", "-v", "error", "-y", *inputs, "-i", wav, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", f"{len(scenes)}:a",
        "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out)
+    voice_slots = [(st, d - (st - t0) - 0.2) for (_, d, vp, st), t0 in zip(scenes, starts)]
+    json.dump({"total": total, "starts": starts, "slots": voice_slots, "risers": risers, "cuts": cuts},
+              open(out.replace(".mp4", "_timing.json"), "w"))  # minutage : permet de doubler la vidéo plus tard
+    for lang, texts in ep.get("dub", {}).items():  # pistes audio doublées (même musique, même minutage)
+        dub_track(ep, lang, texts, voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lang}.m4a"))
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)

@@ -1,0 +1,747 @@
+{
+ "title": "What Happens to Your Body in Space Without a Suit?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA Scientific Visualization Studio, NASA/ISS imagery, NASA Goddard; Pixabay (free license).",
+ "scenes": [
+  {
+   "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+   "start": 6,
+   "move": "in",
+   "lead": 0.3,
+   "text": "You have fifteen seconds. What happens to your body in space without a suit?",
+   "min": 5.5,
+   "yt_chapter": "You have 15 seconds"
+  },
+  {
+   "kind": "intro",
+   "min": 4.0
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014831/1080-Earthday.mp4",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss040e080833/iss040e080833~large.jpg",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s73-31976/s73-31976~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss013e49200/iss013e49200~large.jpg",
+     "start": 3,
+     "move": "in"
+    }
+   ],
+   "text": "Your suit just failed. No air. No pressure. Stay until the end, because one man lived through it, and what he remembered is stranger than any movie.",
+   "lead": 0.4
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO SUIT",
+    "NO AIR",
+    "NO TIME"
+   ],
+   "text": "This is a real-time countdown.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "start": 6,
+     "move": "out"
+    }
+   ],
+   "text": "Welcome to the vacuum of space.",
+   "title": [
+    "SPACE WITHOUT A SUIT",
+    "ODDLY LOGICAL SCIENCE"
+   ],
+   "min": 4.2,
+   "teaser": "THE FIRST 15 SECONDS"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss023e057948/iss023e057948~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:heartbeat monitor",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts059-09-021/sts059-09-021~large.jpg",
+     "start": 6,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S73-25900/S73-25900~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss061e003491/iss061e003491~large.jpg",
+     "start": 3,
+     "move": "left"
+    }
+   ],
+   "text": "Second zero. The air in your suit rushes out. Rule one: do not hold your breath. The pressure difference could tear your lungs, so you exhale. For about ten seconds you stay awake. Then oxygen-poor blood reaches your brain and you black out, usually within ten to fifteen seconds.",
+   "chapter": [
+    "CHAPTER 1",
+    "WHAT HAPPENS IN THE FIRST 15 SECONDS?"
+   ],
+   "yt_chapter": "What happens in the first 15 seconds?",
+   "label": [
+    "0 TO 10 SECONDS",
+    "Air leaves your lungs"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 15,
+   "suffix": " s",
+   "caption": "ABOUT HOW LONG YOU STAY CONSCIOUS",
+   "text": "Around fifteen seconds. Then, the world goes dark.",
+   "min": 5,
+   "fact": "Oxygen-poor blood reaches the brain in\\Nabout 10 seconds, so you black out fast."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/s127e007295/s127e007295~large.jpg",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031383/pettit-electrostatic-displays-1080pa.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/61b-41-019/61b-41-019~large.jpg",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts061-48-001/sts061-48-001~large.jpg",
+     "start": 6,
+     "move": "left"
+    }
+   ],
+   "text": "You are drifting, unconscious, and the vacuum is only getting started. Gas trapped in your stomach and intestines expands. The moisture on your eyes and tongue begins to evaporate. You feel none of it, because your brain has already switched off. Every second now is a second closer to the point of no return.",
+   "teaser": "DOES YOUR BLOOD BOIL?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:water bubbles boiling",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss072e518423/iss072e518423~large.jpg",
+     "start": 3,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:steam rising",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s66-38050/s66-38050~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss072e363878/iss072e363878~large.jpg",
+     "start": 3,
+     "move": "right"
+    }
+   ],
+   "text": "Here is the first myth. You do not explode. Your skin is tough and elastic enough to hold you together. But something strange begins. Water in your mouth, your eyes and your tissues starts turning to vapor, because at near zero pressure water boils at body temperature. Your body swells, possibly to nearly twice its size.",
+   "chapter": [
+    "CHAPTER 2",
+    "DOES YOUR BLOOD BOIL IN SPACE?"
+   ],
+   "yt_chapter": "Does your blood boil in space?",
+   "label": [
+    "EBULLISM",
+    "Water turns to vapor"
+   ],
+   "fact": "Your skin keeps you from bursting\\Nin a vacuum."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss013e49186/iss013e49186~large.jpg",
+     "start": 6,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss074e0336282/iss074e0336282~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S66-63011/S66-63011~large.jpg",
+     "start": 3,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s66-62920/s66-62920~large.jpg",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss075e0068475/iss075e0068475~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "This swelling has a name: ebullism. And it is exactly why astronauts wear a suit. A spacesuit is really a tiny spaceship around your body. It holds pure oxygen at about a third of the pressure at sea level, just enough to keep your fluids liquid and your lungs working. Without it, you are protected by nothing but your own skin.",
+   "label": [
+    "THE SUIT'S JOB",
+    "A mini spaceship"
+   ]
+  },
+  {
+   "kind": "versus",
+   "heading": "WHAT BOILS, WHAT DOESN'T",
+   "text": "But your blood does not boil. It stays sealed inside your vessels, which keep it under pressure. Soft tissues swell. Your blood stays liquid.",
+   "min": 8,
+   "left": {
+    "name": "TISSUES",
+    "color": "orange",
+    "stats": [
+     "Water turns to vapor",
+     "Body swells",
+     "Painful, but survivable"
+    ]
+   },
+   "right": {
+    "name": "BLOOD",
+    "color": "blue",
+    "stats": [
+     "Kept under pressure",
+     "Stays liquid",
+     "Does NOT boil"
+    ]
+   }
+  },
+  {
+   "kind": "quiz",
+   "question": "What happens to your blood in a vacuum?",
+   "options": [
+    "It explodes",
+    "It boils instantly",
+    "It stays liquid",
+    "It freezes solid"
+   ],
+   "answer": 2,
+   "min": 7,
+   "text": "Quick test. What happens to your blood?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:frost ice crystals",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Now let's check the second myth.",
+   "min": 3.5,
+   "teaser": "WOULD YOU FREEZE?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014874/14874_060925_TVAC-Part1_1080_YouTube.mp4",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss006-344-011/iss006-344-011~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts072-742-004/sts072-742-004~large.jpg",
+     "start": 3,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s73-27081/s73-27081~large.jpg",
+     "start": 6,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss013e49218/iss013e49218~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "You would not freeze instantly. Space is cold, but it is also almost empty, and with no air to carry heat away, your body loses warmth slowly, only by radiation. The evaporating moisture on your skin cools you a little. And in direct sunlight, unfiltered ultraviolet light would burn you. Freezing is the least of your problems.",
+   "chapter": [
+    "CHAPTER 3",
+    "WOULD YOU FREEZE OR EXPLODE?"
+   ],
+   "yt_chapter": "Would you freeze or explode in space?",
+   "label": [
+    "NO AIR, NO HEAT TRANSFER",
+    "Cooling is slow"
+   ]
+  },
+  {
+   "kind": "timeline",
+   "heading": "YOUR BODY, SECOND BY SECOND",
+   "text": "So here is the timeline. Zero seconds, the air leaves. Ten, the last oxygen reaches your brain. Fifteen, you pass out. Thirty seconds, your tissues swell. Around ninety seconds, your circulation is failing. And after a few minutes, death is likely.",
+   "min": 12,
+   "events": [
+    {
+     "year": "0 s",
+     "text": "Air leaves\nyour lungs"
+    },
+    {
+     "year": "10 s",
+     "text": "Last oxygen\nreaches brain"
+    },
+    {
+     "year": "15 s",
+     "text": "You pass out"
+    },
+    {
+     "year": "30 s",
+     "text": "Tissues swell"
+    },
+    {
+     "year": "90 s",
+     "text": "Circulation\nfailing"
+    },
+    {
+     "year": "A few min",
+     "text": "Death likely"
+    }
+   ],
+   "fact": "Death comes from lack of oxygen, not\\Nexplosion or freezing."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss075e0085867/iss075e0085867~large.jpg",
+     "start": 3,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss053e095699/iss053e095699~large.jpg",
+     "start": 6,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s125e009402/s125e009402~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "And no, you would not be torn apart, flash frozen or turned inside out. You would simply run out of oxygen, quietly, in a place where nobody can hear you. That is the real horror of it: how ordinary the end is."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:clock ticking",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "But the clock is not the end of the story.",
+   "min": 3.5,
+   "teaser": "COULD YOU SURVIVE?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045235/jsc2022e045235~large.jpg",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045236/jsc2022e045236~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/jsc2022e045254/jsc2022e045254~large.jpg",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s84-27035/s84-27035~large.jpg",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss061e065826/iss061e065826~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Here is the twist. Time is what kills you, not space itself. In 1966, NASA technician Jim LeBlanc was testing a suit in a near-vacuum chamber when his suit's air hose came loose. He said the last thing he remembered was the water on his tongue starting to boil. He passed out in about fourteen seconds. Technicians repressurized the chamber, and he woke up, with no lasting harm.",
+   "chapter": [
+    "CHAPTER 4",
+    "COULD YOU SURVIVE WITHOUT A SUIT?"
+   ],
+   "yt_chapter": "Could you survive in space without a suit?",
+   "label": [
+    "1966 NASA VACUUM TEST",
+    "Jim LeBlanc"
+   ],
+   "fact": "LeBlanc survived thanks to fast\\Nrepressurization."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss058e005282/iss058e005282~large.jpg",
+     "start": 3,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/sl3-118-2182/sl3-118-2182~large.jpg",
+     "start": 6,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S72-43280/S72-43280~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Why ninety seconds? In nineteen sixties animal experiments, dogs exposed to near-vacuum for up to about ninety seconds usually recovered. After that, survival dropped. Chimpanzees did a little better. So ninety seconds is a rough rescue window, not a guarantee.",
+   "label": [
+    "THE RESCUE WINDOW",
+    "Brain and heart"
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 90,
+   "suffix": " s",
+   "caption": "RESCUE WINDOW, ACCORDING TO ANIMAL TESTS",
+   "text": "Animal experiments suggest recovery is possible if pressure returns within about ninety seconds.",
+   "min": 6
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/NHQ202104170162/NHQ202104170162~large.jpg",
+     "start": 3,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/201411100023HQ/201411100023HQ~large.jpg",
+     "start": 6,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss064e002941/iss064e002941~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Not everyone was so lucky. In June nineteen seventy-one, a valve opened on Soyuz 11 before re-entry, and the crew of three, without pressure suits, died.",
+   "label": [
+    "SOYUZ 11 (1971)",
+    "Soyuz capsule, illustrative"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss013e49197/iss013e49197~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss037e024908/iss037e024908~large.jpg",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss075e0069016/iss075e0069016~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss061e065379/iss061e065379~large.jpg",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s114e6405/s114e6405~large.jpg",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss002-707-057/iss002-707-057~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Now the cruel part. A rescue in orbit means a partner dragging you back to an airlock, then waiting for it to refill with air. That takes far longer than ninety seconds. So the answer: you have about fifteen seconds to act, and about ninety to be saved. In orbit, no rescue is that fast. That is why astronauts trust the suit."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "15 SECONDS",
+    "90 SECONDS",
+    "ONE SUIT"
+   ],
+   "text": "Fifteen seconds. Ninety seconds. One suit.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://svs.gsfc.nasa.gov/vis/a030000/a031300/a031375/ISS_20251112_071350-20251112_073549_1080p30.mp4",
+     "start": 3,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss020e037372/iss020e037372~large.jpg",
+     "start": 6,
+     "move": "out"
+    }
+   ],
+   "text": "Now tell us in the comments. Would you hold your breath, or exhale? If this made your heart race, subscribe to Oddly Logical Science for more science that feels real.",
+   "title": [
+    "ODDLY LOGICAL SCIENCE",
+    "SUBSCRIBE"
+   ],
+   "min": 6
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "15 SECONDS",
+  "sub": "NO SUIT",
+  "shift": 0.2,
+  "circle": true
+ },
+ "shorts": [
+  {
+   "from": 5,
+   "to": 7,
+   "title": "You Have 15 Seconds in Space Without a Suit"
+  },
+  {
+   "from": 8,
+   "to": 9,
+   "title": "Does Your Blood Boil in Space?"
+  },
+  {
+   "from": 17,
+   "to": 19,
+   "title": "The Man Who Survived a Vacuum"
+  }
+ ],
+ "youtube": {
+  "title": "Space Without a Suit: Your Body Second by Second",
+  "description": "What happens to your body in space without a suit? You would not explode and your blood would not boil, but you would have about 15 seconds before blacking out. Follow the real-time countdown, from the first second to the 90-second rescue window.\n\nIn this video:\n- What happens in the first 15 seconds\n- Does your blood boil in space?\n- Would you freeze or explode?\n- Could you survive without a suit? (1966 NASA accident, Soyuz 11)\n\nFAQ\nHow long can you survive in space without a suit? You stay conscious about 15 seconds; recovery may be possible if pressure returns within about 90 seconds.\nDoes your blood boil in space? No, it stays under pressure in your vessels, though water in tissues vaporizes.\nWould you freeze instantly? No, heat loss is slow in a vacuum.\n\nWould you hold your breath or exhale? Tell us below.",
+  "tags": [
+   "space without a suit",
+   "what happens in space without a spacesuit",
+   "vacuum of space human body",
+   "does blood boil in space",
+   "ebullism",
+   "can you survive in space",
+   "Jim LeBlanc",
+   "Soyuz 11",
+   "how long can you survive in space",
+   "what if you were in space without a suit",
+   "NASA",
+   "astronaut",
+   "space facts"
+  ],
+  "hashtags": [
+   "#space",
+   "#science",
+   "#NASA"
+  ],
+  "translations": {
+   "fr": "Sans combinaison dans l'espace : ton corps seconde par seconde",
+   "es": "Sin traje en el espacio: tu cuerpo segundo a segundo",
+   "pt": "Sem traje no espaço: seu corpo segundo a segundo",
+   "de": "Ohne Raumanzug im All: dein Körper Sekunde für Sekunde",
+   "hi": "स्पेससूट के बिना अंतरिक्ष: आपका शरीर सेकंड दर सेकंड"
+  }
+ },
+ "dub": {
+  "es": [
+   "Tienes quince segundos. ¿Qué le pasa a tu cuerpo en el espacio sin traje?",
+   "",
+   "Tu traje acaba de fallar. Sin aire. Sin presión. Quédate hasta el final, porque un hombre sobrevivió, y lo que recordó es más extraño que cualquier película.",
+   "Es una cuenta regresiva en tiempo real.",
+   "Bienvenido al vacío del espacio.",
+   "Segundo cero. El aire de tu traje se escapa. Regla uno: no contengas la respiración. La diferencia de presión podría desgarrar tus pulmones, así que exhala. Unos diez segundos sigues despierto. Luego la sangre sin oxígeno llega al cerebro y te desmayas, casi siempre entre diez y quince segundos.",
+   "Unos quince segundos. Luego, el mundo se oscurece.",
+   "Flotas inconsciente, y el vacío apenas empieza. El gas en tu estómago e intestinos se expande. La humedad de tus ojos y tu lengua comienza a evaporarse. No sientes nada, porque tu cerebro ya se apagó. Cada segundo te acerca al punto sin retorno.",
+   "Primer mito. No explotas. Tu piel es lo bastante firme y elástica para mantenerte entero. Pero algo extraño empieza. El agua de tu boca, tus ojos y tus tejidos se vuelve vapor, porque casi sin presión el agua hierve a temperatura corporal. Tu cuerpo se hincha, quizá al doble de su tamaño.",
+   "Esa hinchazón se llama ebullismo. Y por eso los astronautas usan traje. Un traje espacial es una pequeña nave alrededor de tu cuerpo. Mantiene oxígeno puro a un tercio de la presión del nivel del mar, justo para que tus fluidos sigan líquidos y tus pulmones funcionen. Sin él, solo te protege tu piel.",
+   "Pero tu sangre no hierve. Queda sellada en tus vasos, que la mantienen a presión. Los tejidos se hinchan. La sangre sigue líquida.",
+   "Una prueba rápida. ¿Qué le pasa a tu sangre?",
+   "Veamos el segundo mito.",
+   "No te congelarías al instante. El espacio es frío, pero casi vacío, y sin aire que se lleve el calor, tu cuerpo lo pierde despacio, solo por radiación. La humedad que se evapora de tu piel te enfría un poco. Y bajo el sol directo, la luz ultravioleta sin filtro te quemaría. Congelarte es tu menor problema.",
+   "Esta es la cronología. Cero segundos, el aire sale. Diez, el último oxígeno llega al cerebro. Quince, te desmayas. Treinta, tus tejidos se hinchan. Hacia los noventa, tu circulación falla. Y tras unos minutos, la muerte es probable.",
+   "Y no, no te despedazarías, ni te congelarías de golpe, ni te pondrías del revés. Simplemente te quedarías sin oxígeno, en silencio, donde nadie te oye. Ese es el verdadero horror: qué normal es el final.",
+   "Pero el reloj no es el final de la historia.",
+   "Y aquí viene el giro. Lo que mata es el tiempo, no el espacio. En mil novecientos sesenta y seis, el técnico de la NASA Jim LeBlanc probaba un traje en una cámara de casi vacío cuando se soltó la manguera de aire. Dijo que lo último que recordó fue el agua de su lengua empezando a hervir. Se desmayó en unos catorce segundos. Los técnicos represurizaron la cámara y despertó, sin secuelas.",
+   "¿Por qué noventa segundos? En experimentos con animales de los años sesenta, los perros expuestos al casi vacío hasta unos noventa segundos solían recuperarse. Después, la supervivencia caía. Los chimpancés lo hicieron algo mejor. Así que noventa segundos es una ventana de rescate aproximada, no una garantía.",
+   "Los experimentos con animales sugieren que hay recuperación si la presión vuelve en unos noventa segundos.",
+   "No todos tuvieron tanta suerte. En junio de mil novecientos setenta y uno, una válvula se abrió en la Soyuz 11 antes de reentrar, y los tres tripulantes, sin trajes presurizados, murieron.",
+   "Ahora, lo cruel. Un rescate en órbita significa que un compañero te arrastre a una esclusa y espere a que se llene de aire. Eso tarda mucho más de noventa segundos. La respuesta: tienes quince segundos para actuar y noventa para ser salvado. En órbita, ningún rescate es tan rápido. Por eso los astronautas confían en el traje.",
+   "Quince segundos. Noventa segundos. Un traje.",
+   "Ahora cuéntanos en los comentarios. ¿Contendrías la respiración o exhalarías? Si esto te aceleró el corazón, suscríbete a Oddly Logical Science para más ciencia que se siente real."
+  ],
+  "pt": [
+   "Você tem quinze segundos. O que acontece com seu corpo no espaço sem traje?",
+   "",
+   "Seu traje acabou de falhar. Sem ar. Sem pressão. Fique até o fim, porque um homem sobreviveu, e o que ele lembrou é mais estranho que qualquer filme.",
+   "Esta é uma contagem regressiva em tempo real.",
+   "Bem-vindo ao vácuo do espaço.",
+   "Segundo zero. O ar do seu traje escapa. Regra um: não prenda a respiração. A diferença de pressão pode rasgar seus pulmões, então expire. Por uns dez segundos você fica acordado. Aí o sangue sem oxigênio chega ao cérebro e você apaga, geralmente entre dez e quinze segundos.",
+   "Uns quinze segundos. Depois, o mundo escurece.",
+   "Você flutua inconsciente, e o vácuo está só começando. O gás no seu estômago e intestinos se expande. A umidade dos olhos e da língua começa a evaporar. Você não sente nada, porque seu cérebro já desligou. Cada segundo é um passo a mais rumo ao ponto sem volta.",
+   "Primeiro mito. Você não explode. Sua pele é resistente e elástica o bastante para te manter inteiro. Mas algo estranho começa. A água na boca, nos olhos e nos tecidos vira vapor, porque com pressão quase zero a água ferve na temperatura do corpo. Seu corpo incha, talvez quase ao dobro do tamanho.",
+   "Esse inchaço tem nome: ebulismo. E é por isso que astronautas usam traje. Um traje espacial é uma pequena nave ao redor do corpo. Ele mantém oxigênio puro a cerca de um terço da pressão do nível do mar, o suficiente para seus fluidos continuarem líquidos e seus pulmões funcionarem. Sem ele, só a pele te protege.",
+   "Mas seu sangue não ferve. Ele fica selado nos vasos, que o mantêm sob pressão. Os tecidos incham. O sangue continua líquido.",
+   "Teste rápido. O que acontece com seu sangue?",
+   "Vamos ao segundo mito.",
+   "Você não congelaria na hora. O espaço é frio, mas quase vazio, e sem ar para levar o calor, seu corpo o perde devagar, só por radiação. A umidade evaporando da pele te esfria um pouco. E sob o sol direto, a luz ultravioleta sem filtro te queimaria. Congelar é o menor dos problemas.",
+   "Então, a linha do tempo. Zero segundos, o ar sai. Dez, o último oxigênio chega ao cérebro. Quinze, você desmaia. Trinta, os tecidos incham. Perto de noventa, a circulação falha. E depois de alguns minutos, a morte é provável.",
+   "E não, você não seria despedaçado, congelado de repente ou virado do avesso. Você só ficaria sem oxigênio, em silêncio, onde ninguém ouve. Esse é o verdadeiro horror: como o fim é comum.",
+   "Mas o relógio não é o fim da história.",
+   "Aqui está a reviravolta. O que mata é o tempo, não o espaço. Em mil novecentos e sessenta e seis, o técnico da NASA Jim LeBlanc testava um traje numa câmara de quase vácuo quando a mangueira de ar soltou. Ele disse que a última coisa de que lembrou foi a água na língua começando a ferver. Desmaiou em uns quatorze segundos. Os técnicos repressurizaram a câmara, e ele acordou, sem sequelas.",
+   "Por que noventa segundos? Em experimentos com animais nos anos sessenta, cães expostos ao quase vácuo por até uns noventa segundos geralmente se recuperavam. Depois disso, a sobrevivência caía. Chimpanzés se saíram um pouco melhor. Então noventa segundos é uma janela de resgate aproximada, não uma garantia.",
+   "Experimentos com animais sugerem que há recuperação se a pressão voltar em cerca de noventa segundos.",
+   "Nem todos tiveram essa sorte. Em junho de mil novecentos e setenta e um, uma válvula abriu na Soyuz 11 antes da reentrada, e os três tripulantes, sem trajes pressurizados, morreram.",
+   "Agora, a parte cruel. Um resgate em órbita significa um parceiro te arrastando até uma câmara de ar e esperando ela encher. Isso leva bem mais que noventa segundos. A resposta: você tem uns quinze segundos para agir e uns noventa para ser salvo. Em órbita, nenhum resgate é tão rápido. Por isso astronautas confiam no traje.",
+   "Quinze segundos. Noventa segundos. Um traje.",
+   "Agora conte nos comentários. Você prenderia a respiração ou expiraria? Se isso acelerou seu coração, se inscreva no Oddly Logical Science para mais ciência que parece real."
+  ],
+  "hi": [
+   "आपके पास पंद्रह सेकंड हैं। बिना सूट के अंतरिक्ष में आपके शरीर का क्या होगा?",
+   "",
+   "आपका सूट अभी फेल हो गया। न हवा, न दबाव। अंत तक रुकिए, क्योंकि एक आदमी इससे बच निकला, और उसकी याद किसी भी फ़िल्म से ज़्यादा अजीब है।",
+   "यह रियल-टाइम काउंटडाउन है।",
+   "अंतरिक्ष के निर्वात में स्वागत है।",
+   "सेकंड शून्य। आपके सूट की हवा बाहर निकल जाती है। नियम एक: सांस मत रोकिए। दबाव का अंतर फेफड़े फाड़ सकता है, इसलिए सांस बाहर छोड़िए। करीब दस सेकंड आप जागते रहते हैं। फिर ऑक्सीजन-रहित खून दिमाग तक पहुँचता है और आप बेहोश हो जाते हैं, आमतौर पर दस से पंद्रह सेकंड में।",
+   "करीब पंद्रह सेकंड। फिर दुनिया अंधेरी हो जाती है।",
+   "आप बेहोश तैर रहे हैं, और निर्वात की शुरुआत ही हुई है। पेट और आंतों की गैस फैलती है। आंखों और जीभ की नमी उड़ने लगती है। आपको कुछ महसूस नहीं होता, क्योंकि दिमाग बंद हो चुका है। हर सेकंड आपको वापसी-हीन बिंदु के करीब ले जाता है।",
+   "पहला मिथक। आप फटते नहीं हैं। आपकी त्वचा इतनी मज़बूत और लचीली है कि आपको थामे रखती है। पर कुछ अजीब शुरू होता है। मुँह, आँखों और ऊतकों का पानी भाप बनने लगता है, क्योंकि लगभग शून्य दबाव पर पानी शरीर के तापमान पर उबलता है। शरीर फूलता है, शायद लगभग दोगुना।",
+   "इस सूजन का नाम है एबुलिज़्म। और इसी वजह से अंतरिक्ष यात्री सूट पहनते हैं। स्पेससूट आपके शरीर के चारों ओर एक छोटा अंतरिक्ष यान है। यह समुद्र-तल के दबाव के करीब एक-तिहाई पर शुद्ध ऑक्सीजन रखता है, ताकि आपके तरल पदार्थ तरल रहें और फेफड़े चलें। इसके बिना सिर्फ़ आपकी त्वचा बचाती है।",
+   "लेकिन आपका खून नहीं उबलता। वह नसों में बंद रहता है, जो उसे दबाव में रखती हैं। कोमल ऊतक फूलते हैं। खून तरल रहता है।",
+   "झटपट टेस्ट। आपके खून का क्या होगा?",
+   "अब दूसरे मिथक की जाँच करें।",
+   "आप तुरंत नहीं जमेंगे। अंतरिक्ष ठंडा है, पर लगभग खाली है, और गर्मी ले जाने को हवा नहीं, इसलिए शरीर सिर्फ़ विकिरण से धीरे-धीरे गर्मी खोता है। त्वचा की उड़ती नमी थोड़ा ठंडक देती है। और सीधी धूप में बिना फ़िल्टर की पराबैंगनी किरणें जला देंगी। जमना सबसे छोटी समस्या है।",
+   "तो यह है समय-रेखा। शून्य सेकंड, हवा निकलती है। दस, आखिरी ऑक्सीजन दिमाग तक पहुँचती है। पंद्रह, आप बेहोश होते हैं। तीस, ऊतक फूलते हैं। नब्बे के आसपास, रक्त-संचार विफल होने लगता है। और कुछ मिनट बाद मौत की संभावना है।",
+   "और नहीं, आप फटेंगे नहीं, अचानक जमेंगे नहीं, न उलट जाएंगे। आपकी ऑक्सीजन बस खत्म होगी, चुपचाप, ऐसी जगह जहाँ कोई सुन नहीं सकता। असली डर यही है: अंत कितना साधारण है।",
+   "लेकिन घड़ी कहानी का अंत नहीं है।",
+   "अब मोड़ सुनिए। आपको समय मारता है, अंतरिक्ष नहीं। उन्नीस सौ छियासठ में नासा के तकनीशियन जिम लेब्लांक एक लगभग-निर्वात कक्ष में सूट जाँच रहे थे कि हवा की नली छूट गई। उन्होंने कहा, आखिरी याद जीभ पर पानी के उबलने की थी। वे लगभग चौदह सेकंड में बेहोश हुए। तकनीशियनों ने कक्ष में दबाव लौटाया, और वे जाग गए, बिना किसी स्थायी नुकसान के।",
+   "नब्बे सेकंड क्यों? साठ के दशक के पशु-प्रयोगों में, लगभग नब्बे सेकंड तक निर्वात में रखे कुत्ते आमतौर पर ठीक हो गए। उसके बाद बचने की संभावना गिरी। चिम्पैंज़ी थोड़े बेहतर रहे। तो नब्बे सेकंड एक मोटा बचाव-समय है, गारंटी नहीं।",
+   "पशु-प्रयोग बताते हैं कि नब्बे सेकंड के भीतर दबाव लौटे तो ठीक होना संभव है।",
+   "सब इतने भाग्यशाली नहीं थे। जून उन्नीस सौ इकहत्तर में सोयुज़ ग्यारह में वापसी से पहले एक वाल्व खुल गया, और बिना प्रेशर सूट के तीनों सदस्य मारे गए।",
+   "अब क्रूर बात। कक्षा में बचाव का मतलब है साथी आपको एयरलॉक तक घसीटे, फिर उसके हवा से भरने का इंतज़ार करे। इसमें नब्बे सेकंड से कहीं ज़्यादा लगता है। जवाब: कार्रवाई को पंद्रह सेकंड, बचने को नब्बे। कक्षा में कोई बचाव इतना तेज़ नहीं। इसीलिए अंतरिक्ष यात्री सूट पर भरोसा करते हैं।",
+   "पंद्रह सेकंड। नब्बे सेकंड। एक सूट।",
+   "अब कमेंट में बताइए। आप सांस रोकेंगे या छोड़ेंगे? अगर दिल तेज़ धड़का, तो ऑड्ली लॉजिकल साइंस को सब्सक्राइब कीजिए, असली लगने वाले विज्ञान के लिए।"
+  ],
+  "fr": [
+   "Tu as quinze secondes. Que arrive-t-il à ton corps dans l'espace sans combinaison ?",
+   "",
+   "Ta combinaison vient de lâcher. Plus d'air. Plus de pression. Reste jusqu'à la fin, car un homme y a survécu, et ce dont il se souvient est plus étrange que n'importe quel film.",
+   "C'est un compte à rebours en temps réel.",
+   "Bienvenue dans le vide spatial.",
+   "Seconde zéro. L'air de ta combinaison s'échappe. Règle numéro un : ne retiens pas ton souffle. La différence de pression pourrait déchirer tes poumons, alors expire. Pendant environ dix secondes, tu restes conscient. Puis le sang pauvre en oxygène atteint ton cerveau et tu t'évanouis, généralement entre dix et quinze secondes.",
+   "Environ quinze secondes. Puis, le monde devient noir.",
+   "Tu dérives, inconscient, et le vide ne fait que commencer. Le gaz dans ton estomac et tes intestins se dilate. L'humidité de tes yeux et de ta langue commence à s'évaporer. Tu ne sens rien, car ton cerveau s'est déjà éteint. Chaque seconde te rapproche du point de non-retour.",
+   "Premier mythe. Tu n'exploses pas. Ta peau est assez solide et élastique pour te garder entier. Mais quelque chose d'étrange commence. L'eau de ta bouche, de tes yeux et de tes tissus se change en vapeur, car à pression quasi nulle l'eau bout à la température du corps. Ton corps gonfle, peut-être jusqu'à presque doubler.",
+   "Ce gonflement a un nom : l'ébullisme. Et c'est pour ça que les astronautes portent une combinaison. Une combinaison spatiale est un minuscule vaisseau autour de ton corps. Elle contient de l'oxygène pur à environ un tiers de la pression au niveau de la mer, juste assez pour garder tes fluides liquides et tes poumons actifs. Sans elle, seule ta peau te protège.",
+   "Mais ton sang ne bout pas. Il reste scellé dans tes vaisseaux, qui le maintiennent sous pression. Les tissus gonflent. Le sang reste liquide.",
+   "Petit test. Que devient ton sang ?",
+   "Passons au deuxième mythe.",
+   "Tu ne gèlerais pas instantanément. L'espace est froid, mais presque vide, et sans air pour emporter la chaleur, ton corps en perd lentement, par rayonnement seulement. L'humidité qui s'évapore de ta peau te refroidit un peu. Et en plein soleil, les ultraviolets non filtrés te brûleraient. Geler est le moindre de tes soucis.",
+   "Voici la chronologie. Zéro seconde, l'air s'échappe. Dix, le dernier oxygène atteint ton cerveau. Quinze, tu perds connaissance. Trente, tes tissus gonflent. Vers quatre-vingt-dix, ta circulation faiblit. Et après quelques minutes, la mort est probable.",
+   "Et non, tu ne serais pas déchiqueté, congelé net ou retourné comme un gant. Tu manquerais simplement d'oxygène, en silence, là où personne ne t'entend. Voilà le vrai drame : à quel point la fin est banale.",
+   "Mais le chrono n'est pas la fin de l'histoire.",
+   "Voici le twist. Ce qui tue, c'est le temps, pas l'espace. En mille neuf cent soixante-six, le technicien de la NASA Jim LeBlanc testait une combinaison dans une chambre quasi vide quand son tuyau d'air s'est détaché. Il a dit que son dernier souvenir était l'eau sur sa langue qui se mettait à bouillir. Il s'est évanoui en quatorze secondes environ. Les techniciens ont repressurisé la chambre, et il s'est réveillé, sans séquelles.",
+   "Pourquoi quatre-vingt-dix secondes ? Dans des expériences animales des années soixante, des chiens exposés au quasi-vide jusqu'à environ quatre-vingt-dix secondes se rétablissaient généralement. Ensuite, la survie chutait. Les chimpanzés s'en sortaient un peu mieux. Donc quatre-vingt-dix secondes est une fenêtre de sauvetage approximative, pas une garantie.",
+   "Les expériences animales suggèrent qu'on peut se rétablir si la pression revient en quatre-vingt-dix secondes environ.",
+   "Tous n'ont pas eu cette chance. En juin mille neuf cent soixante et onze, une valve s'est ouverte sur Soyouz 11 avant la rentrée, et les trois membres d'équipage, sans combinaison pressurisée, sont morts.",
+   "Maintenant, le plus cruel. Un sauvetage en orbite, c'est un équipier qui te traîne jusqu'au sas, puis attend qu'il se remplisse d'air. Ça prend bien plus que quatre-vingt-dix secondes. Donc : tu as quinze secondes pour agir, et quatre-vingt-dix pour être sauvé. En orbite, aucun sauvetage n'est aussi rapide. Voilà pourquoi les astronautes font confiance à la combinaison.",
+   "Quinze secondes. Quatre-vingt-dix secondes. Une combinaison.",
+   "Dis-nous en commentaire. Retiendrais-tu ton souffle, ou expirerais-tu ? Si ça t'a fait battre le cœur, abonne-toi à Oddly Logical Science pour plus de science qui paraît réelle."
+  ],
+  "de": [
+   "Du hast fünfzehn Sekunden. Was passiert mit deinem Körper im All ohne Anzug?",
+   "",
+   "Dein Anzug ist gerade ausgefallen. Keine Luft. Kein Druck. Bleib bis zum Ende dran, denn ein Mann hat es überlebt, und was er erinnerte, ist seltsamer als jeder Film.",
+   "Das ist ein Countdown in Echtzeit.",
+   "Willkommen im Vakuum des Weltraums.",
+   "Sekunde null. Die Luft in deinem Anzug entweicht. Regel eins: Halte nicht den Atem an. Der Druckunterschied könnte deine Lunge zerreißen, also atme aus. Etwa zehn Sekunden bleibst du wach. Dann erreicht sauerstoffarmes Blut dein Gehirn und du wirst bewusstlos, meist nach zehn bis fünfzehn Sekunden.",
+   "Etwa fünfzehn Sekunden. Dann wird die Welt dunkel.",
+   "Du treibst bewusstlos dahin, und das Vakuum fängt erst an. Gas in Magen und Darm dehnt sich aus. Die Feuchtigkeit auf Augen und Zunge beginnt zu verdampfen. Du spürst nichts, denn dein Gehirn ist längst abgeschaltet. Jede Sekunde bringt dich dem Punkt ohne Rückkehr näher.",
+   "Erster Mythos. Du explodierst nicht. Deine Haut ist zäh und elastisch genug, um dich zusammenzuhalten. Aber etwas Seltsames beginnt. Wasser in Mund, Augen und Gewebe wird zu Dampf, denn bei fast null Druck kocht Wasser bei Körpertemperatur. Dein Körper schwillt an, vielleicht auf fast die doppelte Größe.",
+   "Dieses Anschwellen heißt Ebullismus. Und genau deshalb tragen Astronauten Anzüge. Ein Raumanzug ist ein winziges Raumschiff um deinen Körper. Er hält reinen Sauerstoff bei etwa einem Drittel des Drucks auf Meereshöhe, gerade genug, damit deine Flüssigkeiten flüssig bleiben und die Lunge arbeitet. Ohne ihn schützt dich nur deine Haut.",
+   "Aber dein Blut kocht nicht. Es bleibt in den Gefäßen eingeschlossen, die es unter Druck halten. Weichteile schwellen an. Dein Blut bleibt flüssig.",
+   "Kurzer Test. Was passiert mit deinem Blut?",
+   "Prüfen wir jetzt den zweiten Mythos.",
+   "Du würdest nicht sofort erfrieren. Der Weltraum ist kalt, aber fast leer, und ohne Luft, die Wärme abtransportiert, verliert dein Körper sie nur langsam durch Strahlung. Die verdunstende Feuchtigkeit kühlt dich etwas. Und in direktem Sonnenlicht würde ungefilterte UV-Strahlung dich verbrennen. Erfrieren ist dein kleinstes Problem.",
+   "Hier die Zeitleiste. Null Sekunden, die Luft entweicht. Zehn, der letzte Sauerstoff erreicht dein Gehirn. Fünfzehn, du wirst bewusstlos. Dreißig, dein Gewebe schwillt an. Um neunzig versagt dein Kreislauf. Und nach wenigen Minuten ist der Tod wahrscheinlich.",
+   "Und nein, du würdest nicht zerrissen, schockgefroren oder nach außen gestülpt. Dir würde einfach der Sauerstoff ausgehen, leise, an einem Ort, wo dich niemand hört. Das ist der wahre Horror: wie gewöhnlich das Ende ist.",
+   "Aber die Uhr ist nicht das Ende der Geschichte.",
+   "Jetzt die Wendung. Die Zeit tötet dich, nicht der Weltraum selbst. Neunzehnhundertsechsundsechzig testete der NASA-Techniker Jim LeBlanc einen Anzug in einer Beinahe-Vakuumkammer, als sich der Luftschlauch löste. Er sagte, das Letzte, woran er sich erinnerte, war das Wasser auf seiner Zunge, das zu kochen begann. Nach etwa vierzehn Sekunden wurde er bewusstlos. Techniker bauten den Druck wieder auf, und er erwachte ohne bleibende Schäden.",
+   "Warum neunzig Sekunden? In Tierversuchen der Sechzigerjahre erholten sich Hunde meist, wenn sie bis zu etwa neunzig Sekunden dem Beinahe-Vakuum ausgesetzt waren. Danach sank die Überlebenschance. Schimpansen schnitten etwas besser ab. Neunzig Sekunden sind also ein grobes Rettungsfenster, keine Garantie.",
+   "Tierversuche deuten darauf hin, dass Erholung möglich ist, wenn der Druck binnen etwa neunzig Sekunden zurückkehrt.",
+   "Nicht alle hatten so viel Glück. Im Juni neunzehnhunderteinundsiebzig öffnete sich vor dem Wiedereintritt ein Ventil an Sojus 11, und die dreiköpfige Besatzung starb, ohne Druckanzüge.",
+   "Jetzt das Grausame. Eine Rettung im Orbit heißt: Ein Partner zieht dich zur Schleuse und wartet, bis sie sich mit Luft füllt. Das dauert weit länger als neunzig Sekunden. Die Antwort: Du hast etwa fünfzehn Sekunden zum Handeln und etwa neunzig zur Rettung. Im Orbit ist keine Rettung so schnell. Darum vertrauen Astronauten dem Anzug.",
+   "Fünfzehn Sekunden. Neunzig Sekunden. Ein Anzug.",
+   "Sag uns jetzt in den Kommentaren: Würdest du den Atem anhalten oder ausatmen? Wenn dein Herz gerast hat, abonniere Oddly Logical Science für mehr Wissenschaft, die sich echt anfühlt."
+  ],
+  "ar": [
+   "أمامك خمس عشرة ثانية. ماذا يحدث لجسدك في الفضاء بلا بدلة؟",
+   "",
+   "بدلتك فشلت للتو. لا هواء. لا ضغط. ابقَ حتى النهاية، فقد نجا رجل من ذلك، وما تذكره أغرب من أي فيلم.",
+   "هذا عدّ تنازلي في الوقت الحقيقي.",
+   "مرحبًا بك في فراغ الفضاء.",
+   "الثانية صفر. الهواء في بدلتك يندفع إلى الخارج. القاعدة الأولى: لا تحبس أنفاسك. فارق الضغط قد يمزق رئتيك، لذا ازفر. نحو عشر ثوانٍ تبقى واعيًا. ثم يصل الدم الفقير بالأكسجين إلى دماغك فتفقد الوعي، عادةً خلال عشر إلى خمس عشرة ثانية.",
+   "نحو خمس عشرة ثانية. ثم يظلم العالم.",
+   "أنت تطفو فاقد الوعي، والفراغ لم يبدأ بعد. الغاز في معدتك وأمعائك يتمدد. والرطوبة على عينيك ولسانك تبدأ بالتبخر. لا تشعر بشيء، لأن دماغك توقف بالفعل. وكل ثانية تقربك من نقطة اللاعودة.",
+   "الخرافة الأولى. أنت لا تنفجر. جلدك متين ومرن بما يكفي ليبقيك متماسكًا. لكن شيئًا غريبًا يبدأ. الماء في فمك وعينيك وأنسجتك يتحول إلى بخار، لأن الماء عند ضغط شبه معدوم يغلي عند حرارة الجسم. ويتورم جسدك، ربما إلى ضعف حجمه تقريبًا.",
+   "هذا التورم اسمه الغليان الفقاعي. ولهذا يرتدي رواد الفضاء البدلات. البدلة الفضائية مركبة صغيرة حول جسدك. تحمل أكسجينًا نقيًا بنحو ثلث ضغط مستوى سطح البحر، يكفي لتبقى سوائلك سائلة ورئتاك تعملان. وبدونها لا يحميك إلا جلدك.",
+   "لكن دمك لا يغلي. يبقى محكمًا داخل أوعيتك التي تحفظه تحت الضغط. الأنسجة الرخوة تتورم. ودمك يبقى سائلًا.",
+   "اختبار سريع. ماذا يحدث لدمك؟",
+   "والآن نفحص الخرافة الثانية.",
+   "لن تتجمد فورًا. الفضاء بارد، لكنه شبه فارغ، وبلا هواء يحمل الحرارة يفقدها جسدك ببطء، بالإشعاع فقط. والرطوبة المتبخرة من جلدك تبرّدك قليلًا. وتحت الشمس المباشرة، الأشعة فوق البنفسجية غير المصفّاة ستحرقك. التجمد أقل مشاكلك.",
+   "إليك الجدول الزمني. الثانية صفر، يخرج الهواء. عشر ثوانٍ، يصل آخر أكسجين إلى دماغك. خمس عشرة، تفقد الوعي. ثلاثون، تتورم أنسجتك. نحو تسعين، تفشل دورتك الدموية. وبعد دقائق قليلة، الموت مرجّح.",
+   "ولا، لن تتمزق ولا تتجمد فجأة ولا تنقلب رأسًا على عقب. سينفد أكسجينك ببساطة، بهدوء، في مكان لا يسمعك فيه أحد. هذا هو الرعب الحقيقي: كم النهاية عادية.",
+   "لكن الساعة ليست نهاية القصة.",
+   "وهنا المفاجأة. الوقت هو ما يقتلك، لا الفضاء نفسه. في عام ألف وتسعمئة وست وستين، كان فني ناسا جيم لوبلان يختبر بدلة في غرفة شبه مفرغة حين انفلت خرطوم الهواء. قال إن آخر ما تذكره هو الماء على لسانه يبدأ بالغليان. فقد وعيه خلال نحو أربع عشرة ثانية. أعاد الفنيون الضغط إلى الغرفة، فاستيقظ دون ضرر دائم.",
+   "لماذا تسعون ثانية؟ في تجارب على الحيوانات في ستينيات القرن الماضي، كانت الكلاب المعرضة لشبه فراغ حتى نحو تسعين ثانية تتعافى عادةً. وبعدها تنخفض فرص النجاة. وكانت الشمبانزي أفضل قليلًا. فالتسعون ثانية نافذة إنقاذ تقريبية، لا ضمانة.",
+   "تشير تجارب الحيوانات إلى إمكان التعافي إذا عاد الضغط خلال نحو تسعين ثانية.",
+   "لم يحالف الجميع هذا الحظ. في يونيو ألف وتسعمئة وواحد وسبعين، انفتح صمام في سويوز أحد عشر قبل العودة، ومات الطاقم الثلاثة بلا بدلات ضغط.",
+   "والآن الجزء القاسي. الإنقاذ في المدار يعني شريكًا يسحبك إلى غرفة معادلة الضغط، ثم ينتظر امتلاءها بالهواء. وهذا يستغرق أكثر بكثير من تسعين ثانية. فالجواب: لديك نحو خمس عشرة ثانية للتصرف، ونحو تسعين لتُنقَذ. وفي المدار لا إنقاذ بهذه السرعة. لهذا يثق رواد الفضاء بالبدلة.",
+   "خمس عشرة ثانية. تسعون ثانية. بدلة واحدة.",
+   "والآن أخبرنا في التعليقات. هل تحبس أنفاسك أم تزفر؟ وإن أسرع هذا قلبك، فاشترك في أودلي لوجيكال ساينس لمزيد من العلم الذي يبدو حقيقيًا."
+  ]
+ }
+}
