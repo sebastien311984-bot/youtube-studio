@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — STRATÉGIE « croissance » (validée) : (1) Shorts d'abord : 2-3 Shorts/jour (tirés des longues ou dédiés) pour attirer les abonnés ; (2) angle « TOI » : titres What Happens to Your Body / Could You Survive / What If You… plutôt que sujets documentaires (« les méduses » n'attire pas) ; (3) actualité : quand un événement scientifique fort tombe (astéroïde, éruption, aurore, découverte JWST/NASA), vidéo + Shorts en moins de 48 h avec les images officielles du communiqué ; (4) version FR (piste audio ou 2e chaîne) dans un mois si les chiffres suivent. Mesure : CTR > 4 %, rétention 30 s > 60 % ; bilan après ~20 vidéos.
+
 - 2026-10-07 — « deep_sea » : mêmes plans répétés 3-4 fois (requêtes Pixabay proches → même 1er résultat). Corrigé : le moteur n'utilise jamais deux fois la même vidéo Pixabay. Règle : requêtes Pixabay toutes différentes et variées (animal, lumière, plongée, sous-marin, plancton…).
 
 - 2026-10-06 — Short : impossible de lier la vidéo longue tant qu'elle n'est pas en ligne → publier la longue d'abord, puis le Short avec « Vidéo associée ».

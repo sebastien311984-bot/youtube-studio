@@ -1,6 +1,18 @@
 # Sujets prioritaires (potentiel viral × images disponibles)
 Statut : [ ] à faire · [x] publié. Choisir en priorité « What if / Inside / Biggest / Deadliest ».
 
+## Priorité stratégie « TOI » (2026-10-07)
+- [ ] What Happens to Your Body at the Bottom of the Mariana Trench?
+- [ ] Could You Survive One Minute on Every Planet?
+- [ ] What Happens to Your Body If You Stop Sleeping?
+- [ ] What If You Fell Into a Volcano?
+- [ ] What Happens to Your Body in Space Without a Suit?
+- [ ] Could You Outrun a Tsunami?
+- [ ] What If You Were Struck by Lightning?
+## Actualité (à remplir dès qu'un événement tombe : vidéo < 48 h)
+- (vide)
+
+## Ancienne liste
 - [x] What Happens If You Fall Into a Black Hole? (NASA simulation)
 - [ ] The Deadliest Creatures of the Deep Sea (Midnight Zone)
 - [ ] The Sun Is Raining Fire (version longue)

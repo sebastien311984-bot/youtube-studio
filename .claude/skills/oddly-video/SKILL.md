@@ -16,6 +16,13 @@ description: Produce a new "Oddly Logical Science" YouTube video (script + foota
 Chaîne YouTube en anglais : science spectaculaire (espace, Terre, océans, animaux).
 Objectif : un rendu cinématographique, rythmé et **monétisable** (pas de « contenu réutilisé »).
 
+## Stratégie de croissance (prioritaire, 2026-10-07)
+1. **Angle TOI** : chaque sujet est formulé autour du spectateur (« What Happens to Your Body… », « Could You Survive… », « What If You… »). Choisir d'abord dans la section « TOI » de TOPICS.md.
+2. **Shorts d'abord** : chaque vidéo longue → 3 Shorts de 30-58 s (accroche + révélation + chute), publiés après la longue, étalés (1/jour). Un Short peut aussi être produit seul (épisode court dédié).
+3. **Actualité** : vérifier au début de chaque conversation s'il y a une actu science forte (NASA/ESA/NOAA/USGS, JWST, astéroïde, éruption, tempête solaire). Si oui, elle passe devant : vidéo de 6-8 min + Shorts en < 48 h, avec les images officielles du communiqué (domaine public NASA/NOAA/USGS ; ESA/ESO en CC BY à créditer). Titre = mot-clé de l'actu + angle TOI.
+4. **Mesure** : noter CTR et rétention à 30 s dans VIDEOS.md 48 h après chaque publication ; bilan après ~20 vidéos.
+5. **Plus tard** : version française (piste audio YouTube ou 2e chaîne).
+
 ## Règle d'or : économiser les tokens
 - **Ne jamais faire de rendu complet en local.** On pousse l'épisode JSON, et GitHub Actions fait le rendu (0 token).
 - Tester en local seulement des **images fixes** d'un élément nouveau (1 frame par ffmpeg), jamais une vidéo entière.
