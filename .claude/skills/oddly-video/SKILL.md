@@ -50,6 +50,9 @@ Musique de fond selon le thème + sound design : whoosh aux transitions, impact 
 ## Story-board AVANT rendu (gagne des heures)
 `python3 engine/storyboard.py <épisode> sb.jpg` (~20 s) : chaque plan + la phrase dite. Le regarder et corriger AVANT de pousser : un rendu = 30-40 min, une erreur vue après = un rendu de plus.
 
+## Anti-régression (comparer à la référence Carrington)
+Avant livraison : (1) ouvrir la miniature `_thumb.jpg` et la comparer à celle de Carrington (sujet net et choc, 2-3 mots énormes, contraste) — sinon refaire ; (2) les 5 premières secondes montrent le SUJET (pas d'aurore/fond générique) ; (3) aucun plan « à peu près » : juste ou remplacé.
+
 ## Revue finale obligatoire (avant toute livraison)
 Le rendu produit `<nom>_review.jpg` : chaque plan réel avec la phrase dite au même moment. Le regarder EN ENTIER et répondre pour chaque case : « l'image montre-t-elle ce que dit la voix ? ». Une seule case fausse → remplacer le plan et relancer. Ne jamais livrer sans cette revue ; dire à l'utilisateur ce qui a été vérifié et ce qui ne l'a pas été.
 
