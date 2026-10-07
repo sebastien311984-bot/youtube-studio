@@ -36,9 +36,9 @@ def archive(q, n=6):
 def pixabay(q, n=6):
     key = os.environ.get("PIXABAY_API_KEY")
     if not key: return []
-    r = get("https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": n}))
+    r = get("https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": n, "video_type": "film", "safesearch": "true"}))
     return [{"src": "pixabay", "url": h["videos"]["large"]["url"] or h["videos"]["medium"]["url"], "thumb": h["videos"]["tiny"]["thumbnail"],
-             "type": "video", "licence": "Pixabay", "author": h["user"], "title": h["tags"]} for h in r["hits"]]
+             "type": "video", "licence": "Pixabay", "author": h["user"], "title": h["tags"], "id": f"pixabay:id:{h['id']}"} for h in r["hits"]]
 
 SRC = {"commons": commons, "nasa": nasa, "archive": archive, "pixabay": pixabay}
 def main(queries, outdir="scout"):

@@ -38,6 +38,12 @@ jobs:
           if [ -n "${{ github.event.inputs.episode }}" ]; then echo "files=${{ github.event.inputs.episode }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "push" ]; then echo "files=$((git diff --name-only HEAD~1 HEAD -- 'channels/*/episodes/*.json' 2>/dev/null || true) | tr '\n' ' ')" >> $GITHUB_OUTPUT
           else echo "files=$(ls channels/*/episodes/*.json | tr '\n' ' ')" >> $GITHUB_OUTPUT; fi
+      - name: Cache des plans téléchargés (archives lourdes : on ne les retélécharge pas à chaque rendu)
+        uses: actions/cache@v4
+        with:
+          path: clips
+          key: clips-${{ hashFiles('channels/*/episodes/*.json') }}
+          restore-keys: clips-
       - name: Rendu
         if: github.event.inputs.from_run == ''
         env:

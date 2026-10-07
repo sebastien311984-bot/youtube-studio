@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — outrun_tsunami refait SANS Pixabay : plans officiels/Commons/archives + motion design quand aucune vraie image n'existe ; voix off réécrite si l'image disponible raconte autre chose (ouverture : vague qui arrive, pas « bateaux sur la vase »). Vidéos Commons issues de particuliers/YouTubeurs (Sendai ambulances, Kita-Ibaraki) exclues. Nouveau : `"ambience": {"kind": "ocean"}` (houle + grondement du large sous la musique).
+
 - 2026-10-07 — « Carrington n'est PAS une référence » : trop de consignes appliquées à la lettre = Claude ne réfléchit plus → régressions. Skill allégé : contrôle qualité par jugement (« est-ce que je cliquerais / est-ce juste ? »), règles = mémoire des erreurs, pas un script.
 
 - 2026-10-07 — « space_no_suit » publiée telle quelle mais RÉGRESSIONS : (1) miniature nettement moins bonne que Carrington ; (2) aurore boréale au début (intro générique hors sujet) ; (3) quelques plans peu adaptés. À partir de maintenant : miniature regardée et comparée à celle de Carrington AVANT livraison (image choc du sujet, visage/objet net, 2-3 mots énormes) ; ouverture = image du SUJET, jamais un fond générique ; un plan « acceptable » ne suffit pas, il doit être juste.
