@@ -3,6 +3,8 @@ import json, sys
 ep = json.load(open(sys.argv[1])); errs = []; queries = []
 for i, s in enumerate(ep["scenes"]):
     k, w = s.get("kind"), len(s.get("text", "").split())
+    if k and k not in ("intro", "diagram", "stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank"): errs.append(f"scène {i} : type inconnu « {k} » (titre = option, pas un type)")
+    if not k and not (s.get("clip") or s.get("shots")): errs.append(f"scène {i} : plan réel sans image (clip/shots)")
     if not k:
         shots = s.get("shots") or [s]
         if w / 2.6 > 6 and len(shots) < round(w / 2.6 / 5): errs.append(f"scène {i} : {len(shots)} plan(s) pour ~{w/2.6:.0f} s (le moteur complétera, mais varier les requêtes)")
@@ -22,4 +24,4 @@ for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être t
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
-print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible")) else 0)
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "type inconnu", "sans image")) else 0)

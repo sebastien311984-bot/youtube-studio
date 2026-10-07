@@ -1299,7 +1299,8 @@
    "lead": 0.3
   },
   {
-   "kind": "title",
+   "clip": "https://images-assets.nasa.gov/image/iss057e023128/iss057e023128~large.jpg",
+   "move": "out",
    "min": 4,
    "title": [
     "ODDLY LOGICAL",
