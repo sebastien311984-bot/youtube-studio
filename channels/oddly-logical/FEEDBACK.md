@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-07 — Contrôle outrun_tsunami v1 : les animations NOAA/RIFT de Commons commencent par un carton-titre (nom d'un AUTRE événement, URL) → toujours `start` ≥ 14 s. Plans Pixabay hors sujet repérés (anémone, illustration, parasols sous « boats on mud ») → requêtes plus concrètes. Doublage hi/ar encore trop long (×1,3-1,4 sur ~12 scènes) → viser 30 % de syllabes en moins que l'anglais.
+
 - 2026-10-07 — STOP ESPACE pour un moment (Soleil, Carrington, espace : trop). Prochaines vidéos : corps humain, Terre, catastrophes, animaux, histoire.
 
 - 2026-10-07 — Doublage v1 (space_no_suit) : hindi et arabe plus longs (accélération jusqu'à ×1,4 sur 3-4 scènes) → demander au traducteur des phrases encore plus courtes pour hi et ar.
