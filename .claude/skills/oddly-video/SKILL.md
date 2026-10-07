@@ -46,6 +46,9 @@ Depuis Claude, seuls NASA et Internet Archive répondent (Wikimedia limite, USGS
 ## Son (non négociable)
 Musique de fond selon le thème + sound design : whoosh aux transitions, impact sur stat/rank, riser + silence avant chaque révélation (déjà automatique), ambiance du lieu quand c'est possible. Voix doublées : même voix énergique que la chaîne (`DUB_VOICE`), débit +6 %.
 
+## Story-board AVANT rendu (gagne des heures)
+`python3 engine/storyboard.py <épisode> sb.jpg` (~20 s) : chaque plan + la phrase dite. Le regarder et corriger AVANT de pousser : un rendu = 30-40 min, une erreur vue après = un rendu de plus.
+
 ## Revue finale obligatoire (avant toute livraison)
 Le rendu produit `<nom>_review.jpg` : chaque plan réel avec la phrase dite au même moment. Le regarder EN ENTIER et répondre pour chaque case : « l'image montre-t-elle ce que dit la voix ? ». Une seule case fausse → remplacer le plan et relancer. Ne jamais livrer sans cette revue ; dire à l'utilisateur ce qui a été vérifié et ce qui ne l'a pas été.
 
