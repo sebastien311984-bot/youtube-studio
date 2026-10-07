@@ -1,22 +1,24 @@
 {
   "title": "Could You Outrun a Tsunami?",
   "voice": "en-US-AndrewMultilingualNeural",
-  "credits": "Footage: NASA (ISS Expedition 10/26 photography, NASA/JPL Jason, Terra MISR/ASTER, SWOT and Goddard Scientific Visualization Studio imagery, public domain); Wikimedia Commons: NOAA / PMEL / NCTR / Pacific Tsunami Warning Center / USCG / US Navy / FBI (public domain); David Rydevik and Sofwathulla Mohamed, 2004 tsunami photos (public domain per Commons); DimiTalen, Kamakura tsunami sign (CC0); Rick Obst, Oregon tsunami sign (CC BY 4.0); Alexander Klink, Thailand tsunami sign (CC BY 4.0); Tony Webster, California tsunami sign (CC BY-SA 3.0); Symac, New Zealand tsunami sign (CC BY-SA 3.0); Halowand, Japan evacuation building sign (CC BY-SA 4.0); Michael L. Bak (US Dept of State), Banda Aceh 2004 photos (public domain); NOAA NESDIS / PMEL tsunami animations and FBI Honolulu Pago Pago video (public domain); USCG DART buoy photo (public domain); Daderot, DART buoy museum photo (CC0); Michael Cornelius, tsunami evacuation sign (CC BY-SA 2.0); Pixabay (free license). Facts: NOAA, USGS, UNESCO/IOC Tsunami Ready.",
+  "credits": "Footage: NASA (SWOT/JPL, Sri Lanka 2004 waves, ASTER and Tohoku debris imagery, public domain); Wikimedia Commons: NOAA / PMEL / NCTR / NESDIS tsunami animations (public domain); FBI Honolulu, Pago Pago parking lot video (public domain); US Navy photos, Japan 2011 (public domain); US Marine Corps, MCAS Futenma tsunami evacuation drill (public domain); USGS and US Dept of State, Banda Aceh 2004 photos (public domain); David Rydevik, 2004 tsunami photo (public domain); Maldives 2004 tsunami photo (public domain per Commons); USCG and NOAA DART buoy images (public domain); Daderot, DART buoy museum photo (CC0); Edomurasaki, Kita-Ibaraki tsunami video 2011 (CC BY 3.0); Tiirise (Owarai Shudan Teirise), Sendai ambulances video 2011 (CC BY 3.0); Rgoogin, tsunami warning tower near Khao Lak (CC BY-SA 3.0); Japan Ministry of Land, Infrastructure, Transport and Tourism, Omoto Elementary School evacuation stairway (CC BY 3.0 IGO); Anawat Suppasri, Nobuo Shuto, Fumihiko Imamura et al., Kamaishi/Ofunato photos (CC BY 2.0); Aude, Kamaishi tsunami area (CC BY-SA 3.0); UBC Library Digitization Centre, 19th-century print of a tsunami at Kamaishi (no known restrictions); Tamaki Seto, Tsunami Japan 2011 (CC BY-SA 3.0); 1755 Lisbon earthquake engraving and Parker & Coward Krakatoa lithograph (public domain); DimiTalen, Kamakura tsunami sign (CC0); Tony Webster, California sign (CC BY-SA 3.0); Rick Obst, Oregon sign (CC BY 4.0); Alexander Klink, Thailand sign (CC BY 4.0); Symac, New Zealand sign (CC BY-SA 3.0); Halowand, Japan evacuation building sign (CC BY-SA 4.0); Michael Cornelius, tsunami evacuation sign (CC BY-SA 2.0). Facts: NOAA, USGS, UNESCO/IOC Tsunami Ready.",
   "scenes": [
     {
       "shots": [
         {
-          "clip": "pixabay:id:35633",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2004-tsunami.jpg",
+          "start": 0,
+          "move": "in"
         },
         {
-          "clip": "pixabay:id:235662",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2b/2004_Indian_Ocean_earthquake_Maldives_tsunami_wave.jpg",
+          "start": 0,
+          "move": "in"
         }
       ],
       "lead": 0.3,
       "min": 5.5,
-      "text": "The sea just vanished. Boats lie on mud. You have minutes.",
+      "text": "The sea pulled back. Then it came back, as a wall. You have minutes.",
       "yt_chapter": "Could you outrun a tsunami?",
       "tone": "tense"
     },
@@ -25,23 +27,114 @@
       "min": 4.0
     },
     {
-      "shots": [
-        {
-          "clip": "pixabay:id:158100",
-          "start": 0
-        },
-        {
-          "clip": "pixabay:id:217067",
-          "start": 0
-        },
-        {
-          "clip": "pixabay:id:176303",
-          "start": 0
-        }
-      ],
-      "lead": 0.4,
+      "kind": "diagram",
+      "heading": "THE SEA PULLS BACK",
+      "min": 10,
       "text": "You are standing on a beach. The sea pulls back, much farther than any low tide. Most people walk toward it. Stay until the end, and I will show you the signs that could save your life.",
-      "tone": "tense"
+      "tone": "tense",
+      "elements": [
+        {
+          "type": "line",
+          "from": [
+            200,
+            520
+          ],
+          "to": [
+            1000,
+            820
+          ],
+          "color": "ink",
+          "width": 8
+        },
+        {
+          "type": "line",
+          "from": [
+            1000,
+            820
+          ],
+          "to": [
+            1750,
+            880
+          ],
+          "color": "ink",
+          "width": 8
+        },
+        {
+          "type": "text",
+          "text": "BEACH",
+          "at": [
+            300,
+            430
+          ],
+          "anchor": "mm",
+          "size": 38
+        },
+        {
+          "type": "circle",
+          "c": [
+            520,
+            640
+          ],
+          "r": 22,
+          "color": "blue",
+          "width": 8
+        },
+        {
+          "type": "text",
+          "text": "NORMAL SHORELINE",
+          "at": [
+            520,
+            740
+          ],
+          "anchor": "mm",
+          "size": 34,
+          "color": "blue"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            580,
+            590
+          ],
+          "to": [
+            1100,
+            760
+          ],
+          "color": "red",
+          "width": 8
+        },
+        {
+          "type": "circle",
+          "c": [
+            1150,
+            834
+          ],
+          "r": 22,
+          "color": "red",
+          "width": 8
+        },
+        {
+          "type": "text",
+          "text": "SEA NOW: FAR BEYOND LOW TIDE",
+          "at": [
+            1130,
+            300
+          ],
+          "anchor": "mm",
+          "size": 46,
+          "color": "red"
+        },
+        {
+          "type": "text",
+          "text": "SEABED EXPOSED",
+          "at": [
+            1300,
+            960
+          ],
+          "anchor": "mm",
+          "size": 34
+        }
+      ]
     },
     {
       "kind": "kinetic",
@@ -56,14 +149,14 @@
     {
       "shots": [
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2b/2004_Indian_Ocean_earthquake_Maldives_tsunami_wave.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Fishing_boat_tossed_ashore_in_Banda_Aceh_after_2004_tsunami_DD-SD-06-07370.JPEG",
           "start": 0,
           "move": "left"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US_Navy_110315-N-IC111-592_-_Tsunami_damage_of_Rikuzentakata.jpg",
+          "start": 0,
+          "move": "right"
         }
       ],
       "text": "Could you outrun a tsunami?",
@@ -77,12 +170,14 @@
     {
       "shots": [
         {
-          "clip": "pixabay:id:186247",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Evacuation_stairway_at_the_Omoto_Elementary_School.jpg",
+          "start": 0,
+          "move": "left"
         },
         {
-          "clip": "pixabay:id:116222",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Tsunami_warning_tower_near_Khao_Lak%2C_Thailand..jpg",
+          "start": 0,
+          "move": "out"
         }
       ],
       "chapter": [
@@ -99,45 +194,153 @@
       "tone": "urgent"
     },
     {
-      "shots": [
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2004-tsunami.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "pixabay:id:215471",
-          "start": 0
-        },
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsunami_Evacuation_Route_Sign_Thailand.jpg",
-          "start": 0,
-          "move": "right"
-        }
-      ],
+      "kind": "timeline",
+      "heading": "TILLY SMITH, PHUKET 2004",
+      "min": 14,
       "label": [
         "INDIAN OCEAN, 2004",
         "Tilly Smith, age 10, Phuket"
       ],
-      "text": "In 2004, ten year old Tilly Smith stood on a beach in Thailand. She had just learned about tsunamis at school in England. When she saw the sea pull back and bubble, she told her parents. They warned others, and that beach was reportedly cleared before the wave arrived."
-    },
-    {
-      "shots": [
+      "text": "In 2004, ten year old Tilly Smith stood on a beach in Thailand. She had just learned about tsunamis at school in England. When she saw the sea pull back and bubble, she told her parents. They warned others, and that beach was reportedly cleared before the wave arrived.",
+      "events": [
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA04372/PIA04372~orig.jpg",
-          "start": 0,
-          "move": "in"
+          "year": "SCHOOL",
+          "text": "Learns about\ntsunamis"
         },
         {
-          "clip": "pixabay:id:198488",
-          "start": 0
+          "year": "THE BEACH",
+          "text": "Sea pulls back\nand bubbles"
+        },
+        {
+          "year": "THE WARNING",
+          "text": "Tells her\nparents"
+        },
+        {
+          "year": "THE RESULT",
+          "text": "Beach reportedly\ncleared first"
         }
-      ],
+      ]
+    },
+    {
+      "kind": "diagram",
+      "heading": "THE DRAWDOWN",
+      "min": 14,
       "label": [
         "THE DRAWDOWN",
         "The trough arrives first"
       ],
-      "text": "Why does the sea pull back? Sometimes the trough of the wave reaches the coast first, and it drags water away from the shore. The seabed is exposed. People walk out to look. A few minutes later, the crest arrives."
+      "text": "Why does the sea pull back? Sometimes the trough of the wave reaches the coast first, and it drags water away from the shore. The seabed is exposed. People walk out to look. A few minutes later, the crest arrives.",
+      "elements": [
+        {
+          "type": "line",
+          "from": [
+            200,
+            600
+          ],
+          "to": [
+            1500,
+            600
+          ],
+          "color": "ink",
+          "width": 5
+        },
+        {
+          "type": "line",
+          "from": [
+            1500,
+            600
+          ],
+          "to": [
+            1750,
+            520
+          ],
+          "color": "ink",
+          "width": 8
+        },
+        {
+          "type": "text",
+          "text": "SHORE",
+          "at": [
+            1700,
+            460
+          ],
+          "anchor": "mm",
+          "size": 34
+        },
+        {
+          "type": "curve",
+          "pts": [
+            [
+              250,
+              600
+            ],
+            [
+              430,
+              760
+            ],
+            [
+              610,
+              600
+            ]
+          ],
+          "color": "blue",
+          "width": 9
+        },
+        {
+          "type": "text",
+          "text": "TROUGH: DRAGS WATER OFF THE COAST",
+          "at": [
+            430,
+            850
+          ],
+          "anchor": "mm",
+          "size": 36,
+          "color": "blue"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            700,
+            540
+          ],
+          "to": [
+            1100,
+            540
+          ],
+          "color": "ink",
+          "width": 7
+        },
+        {
+          "type": "curve",
+          "pts": [
+            [
+              900,
+              600
+            ],
+            [
+              1130,
+              300
+            ],
+            [
+              1360,
+              600
+            ]
+          ],
+          "color": "red",
+          "width": 9
+        },
+        {
+          "type": "text",
+          "text": "CREST: ARRIVES MINUTES LATER",
+          "at": [
+            1130,
+            220
+          ],
+          "anchor": "mm",
+          "size": 36,
+          "color": "red"
+        }
+      ]
     },
     {
       "kind": "quiz",
@@ -167,14 +370,14 @@
     {
       "shots": [
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA04373/PIA04373~medium.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/8/85/Chile-tsunami-20100227-NCTR-wave-propagation-small.ogv",
           "start": 14,
           "move": "right"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9c/SWOT_Spots_Tsunami_Wave_After_Kamchatka_Quake_%28154666%29.jpg",
+          "start": 0,
+          "move": "in"
         }
       ],
       "chapter": [
@@ -371,12 +574,14 @@
     {
       "shots": [
         {
-          "clip": "pixabay:id:283533",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e7/MCAS_Futenma_conducts_Tsunami_Evacuation_Drill_%289571548%29.jpg",
+          "start": 0,
+          "move": "in"
         },
         {
-          "clip": "pixabay:id:201766",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/MCAS_Futenma_conducts_Tsunami_Evacuation_Drill_%289571549%29.jpg",
+          "start": 0,
+          "move": "left"
         }
       ],
       "min": 3.5,
@@ -399,6 +604,11 @@
           "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/US_Navy_110314-N-3997W-062_Debris_float_in_the_Pacific_Ocean_off_the_coast_of_Japan_after_a_9.0_magnitude_earthquake_and_subsequent_tsunami_struck.jpg",
           "start": 0,
           "move": "out"
+        },
+        {
+          "clip": "https://images-assets.nasa.gov/image/PIA14271/PIA14271~large.jpg",
+          "start": 0,
+          "move": "in"
         }
       ],
       "chapter": [
@@ -440,19 +650,14 @@
     {
       "shots": [
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Chile-tsunami-20100227-NCTR-wave-propagation.ogv",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Deep_Ocean_Tsunami_Waves_off_the_Sri_Lankan_Coast.jpg",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Tsunami_travel_time_Valdivia_1960.jpg",
+          "clip": "https://images-assets.nasa.gov/image/PIA14430/PIA14430~large.jpg",
           "start": 0,
           "move": "left"
-        },
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9c/SWOT_Spots_Tsunami_Wave_After_Kamchatka_Quake_%28154666%29.jpg",
-          "start": 0,
-          "move": "right"
         }
       ],
       "label": [
@@ -494,23 +699,24 @@
     {
       "shots": [
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tsunami_evacuation_route_sign%2C_New_Zealand.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/94/MCAS_Futenma_conducts_Tsunami_Evacuation_Drill_%289571546%29.jpg",
+          "start": 0,
+          "move": "in"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c7/MCAS_Futenma_conducts_Tsunami_Evacuation_Drill_%289571539%29.jpg",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tsunami_evacuation_sign_in_Old_San_Juan_Puerto_Rico_April_2015.png",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1a/MCAS_Futenma_conducts_Tsunami_Evacuation_Drill_%289571551%29.jpg",
           "start": 0,
           "move": "right"
-        },
-        {
-          "clip": "pixabay:id:140078",
-          "start": 0
         }
       ],
       "label": [
-        "TRAFFIC TRAP",
-        "A car cannot move, you can"
+        "EVACUATION DRILL",
+        "Walk uphill, together"
       ],
       "text": "Traffic is another trap. In a jam, a car cannot move, but you can. If the roads are blocked, leave the car and walk uphill. Take your family, not your belongings."
     },
@@ -543,9 +749,14 @@
     {
       "shots": [
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tsunami_Forecast_Model_Animation-_Lisbon_1755.webm",
-          "start": 14,
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/c/ce/1755_Lisbon_earthquake.jpg",
+          "start": 0,
           "move": "in"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/4/49/Krakatoa_eruption_lithograph.jpg",
+          "start": 0,
+          "move": "left"
         },
         {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Fishing_boats_in_Banda_Aceh_after_2004_tsunami_DD-SD-06-07375.JPEG",
@@ -565,7 +776,7 @@
       "yt_chapter": "What did past tsunamis teach us?",
       "label": [
         "FOUR DISASTERS",
-        "Illustrative images"
+        "Lisbon, Krakatoa, Indian Ocean, Japan"
       ],
       "text": "Lisbon, seventeen fifty five, a quake, then waves. Krakatoa, eighteen eighty three, a volcano pushed the sea. Two thousand four, the Indian Ocean. Two thousand eleven, Japan.",
       "tone": "calm"
@@ -622,23 +833,28 @@
     {
       "shots": [
         {
-          "clip": "https://images-assets.nasa.gov/image/PIA13915/PIA13915~large.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/3/39/Tsunami_breakwaters_in_Kamaishi_city_and_in_Ofunato_city_before_the_2011_tsunami.jpg",
           "start": 0,
           "move": "in"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/b/bb/US_Navy_110315-N-5503T-307_An_aerial_view_of_damage_to_Otsuchi%2C_Japan%2C_after_a_9.0_magnitude_earthquake_and_subsequent_tsunami_devastated_the_area_in_northern_Japan.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Print_depicting_a_19th-century_tsunami_hitting_the_coastal_town_of_Kamaishi%2C_in_Iwate_Prefecture._%2813719883455%29.jpg",
           "start": 0,
           "move": "left"
         },
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US_Navy_110315-N-IC111-592_-_Tsunami_damage_of_Rikuzentakata.jpg",
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Damage_from_the_tsunami_inundation_of_Kamaishi_city_with_a_maximum_runup_height_of_11.7_m_-1-6-2011-_and_of_Ofunato_city_with_a_maximum_runup_height_of_10.9_m_-1-6-2011-.jpg",
           "start": 0,
           "move": "right"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kamaishi-20120901-Tsunami-area.jpg",
+          "start": 0,
+          "move": "out"
         }
       ],
       "label": [
-        "IWATE COAST, 2011",
+        "KAMAISHI, JAPAN",
         "Tendenko: run first"
       ],
       "text": "In the Japanese city of Kamaishi, schoolchildren had practiced an old rule called tendenko. Run first, and do not wait for anyone. On the day, nearly all of them reached high ground and survived. Practice beat panic."
@@ -656,11 +872,6 @@
     {
       "shots": [
         {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/9/94/Remembering_2011%E2%80%99s_Tohoku_Earthquake_and_Tsunami_%28NESDIS_2021-03-11_684_Tsunami-Spin%29.webm",
-          "start": 14,
-          "move": "in"
-        },
-        {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/SWOT_Spots_Tsunami_Wave_After_Kamchatka_Quake_%28154666_-%29.webm",
           "start": 0,
           "move": "left"
@@ -669,6 +880,11 @@
           "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5a/US_Navy_110315-N-5503T-282_An_aerial_view_of_damage_to_Wakuya%2C_Japan_after_a_9.0_magnitude_earthquake_and_subsequent_tsunami_devastated_the_area_in.jpg",
           "start": 0,
           "move": "right"
+        },
+        {
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Tsunami_Japan_2011.jpg",
+          "start": 0,
+          "move": "in"
         }
       ],
       "label": [
@@ -686,12 +902,14 @@
           "move": "in"
         },
         {
-          "clip": "pixabay:id:6384",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsunami_Evacuation_Route_Sign_Thailand.jpg",
+          "start": 0,
+          "move": "left"
         },
         {
-          "clip": "pixabay:id:160477",
-          "start": 0
+          "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tsunami_evacuation_route_sign%2C_New_Zealand.jpg",
+          "start": 0,
+          "move": "right"
         }
       ],
       "title": [
@@ -761,7 +979,7 @@
   ],
   "dub": {
     "es": [
-      "¡El mar se esfumó! Barcos en el lodo. Tienes minutos.",
+      "El mar se retiró… y volvió como un muro. Tienes minutos.",
       "",
       "Estás en la playa. El mar se retira, muchísimo más que en cualquier marea baja. ¿Y la gente? Camina hacia él. Quédate hasta el final y te enseño las señales que te salvan la vida.",
       "Empieza la cuenta atrás.",
@@ -793,7 +1011,7 @@
       "¿Podrías correr más que un tsunami? No. ¡Pero sí subir más alto, si conoces las señales! ¿Sabes cuál es la ruta de escape de tu playa? Cuéntanos y suscríbete."
     ],
     "pt": [
-      "O mar sumiu! Barcos na lama. Você tem minutos.",
+      "O mar recuou… e voltou como um muro. Você tem minutos.",
       "",
       "Você está na praia. O mar recua, muito além de qualquer maré baixa. E o povo? Vai andando em direção a ele. Fique até o fim e eu mostro os sinais que salvam sua vida.",
       "Começou a contagem regressiva.",
@@ -825,7 +1043,7 @@
       "Dá pra correr mais que um tsunami? Não. Mas dá pra subir mais alto, se souber os sinais! Você conhece a rota de fuga da sua praia? Conta pra gente e se inscreva."
     ],
     "hi": [
-      "समंदर गायब! नावें कीचड़ में। बस कुछ मिनट।",
+      "समंदर पीछे हटा… फिर दीवार बनकर लौटा। बस कुछ मिनट।",
       "",
       "आप समुद्र तट पर हैं। समंदर बहुत पीछे हट गया। ज़्यादातर लोग उसी ओर चल पड़ते हैं! अंत तक रुकिए, जान बचाने वाले संकेत बताऊँगा।",
       "शुरू होता है काउंटडाउन।",
@@ -857,7 +1075,7 @@
       "तो क्या सुनामी से भाग सकते हैं? नहीं। पर संकेत जानें, तो उससे ऊँचे चढ़ सकते हैं! अपने तट का रास्ता जानते हैं? कमेंट में बताइए, और सब्सक्राइब कीजिए।"
     ],
     "fr": [
-      "La mer a disparu ! Des bateaux dans la vase. Tu as quelques minutes.",
+      "La mer s'est retirée… puis elle est revenue, comme un mur. Tu as quelques minutes.",
       "",
       "Tu es sur une plage. La mer se retire, bien plus loin qu'à marée basse. Et les gens ? Ils s'avancent vers elle. Reste jusqu'à la fin, je te montre les signes qui sauvent des vies.",
       "C'est parti pour le compte à rebours.",
@@ -889,7 +1107,7 @@
       "Pourrais-tu courir plus vite qu'un tsunami ? Non. Mais tu peux grimper plus haut, si tu connais les signes ! Connais-tu l'issue de secours de ta plage ? Dis-le-nous en commentaire, et abonne-toi."
     ],
     "de": [
-      "Das Meer ist weg! Boote im Schlamm. Du hast nur Minuten.",
+      "Das Meer zog sich zurück… und kam als Wand zurück. Du hast nur Minuten.",
       "",
       "Du stehst am Strand. Das Meer zieht sich zurück, viel weiter als bei Ebbe. Und die Leute? Gehen hin! Bleib bis zum Ende, dann zeige ich dir die Zeichen, die Leben retten.",
       "Der Countdown läuft.",
@@ -921,7 +1139,7 @@
       "Könntest du einem Tsunami davonrennen? Nein. Aber du kannst höher klettern, wenn du die Zeichen kennst! Kennst du den Fluchtweg an deinem Strand? Schreib es in die Kommentare und abonniere."
     ],
     "ar": [
-      "اختفى البحر! القوارب على الطين. أمامك دقائق.",
+      "انسحب البحر… ثم عاد كجدار. أمامك دقائق.",
       "",
       "أنت على الشاطئ. البحر ينحسر بعيدًا جدًا. ومعظم الناس يمشون نحوه! ابقَ للنهاية، وسأريك علامات تنقذ حياتك.",
       "يبدأ العدّ التنازلي.",
@@ -952,5 +1170,8 @@
       "التسونامي سلسلة أمواج، غالبًا لساعات، والأولى ليست دائمًا الأكبر. ابقَ عاليًا حتى تعلن السلطات الأمان.",
       "هل تسبق التسونامي؟ لا. لكن تتفوق عليه صعودًا، إن عرفت العلامات! هل تعرف طريق النجاة؟ أخبرنا في التعليقات واشترك."
     ]
+  },
+  "ambience": {
+    "kind": "ocean"
   }
 }

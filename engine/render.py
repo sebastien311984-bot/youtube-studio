@@ -196,6 +196,8 @@ def make_shorts(ep, out, bounds):
            "-crf", "19", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out[:-4] + f"_short{k}.mp4")
         os.remove(tf)
 
+AMBIENCE = {}
+
 def music(total, voice_env, cuts, risers=()):
     n = int(total * SR); t = np.arange(n) / SR; rng = np.random.default_rng(3)
     out = np.zeros(n)
@@ -212,6 +214,12 @@ def music(total, voice_env, cuts, risers=()):
     # grondement grave (sous-basse filtrée)
     rum = np.convolve(rng.standard_normal(n), np.ones(400) / 400, "same") * 3.0
     out += rum * (0.5 + 0.5 * np.sin(2 * np.pi * 0.07 * t))
+    # ambiance du lieu (champ « ambience » de l'épisode) : donne de la matière sonore au sujet
+    if AMBIENCE.get("kind") == "ocean":  # houle : bruit filtré grave qui monte et retombe comme des vagues
+        surf = np.convolve(rng.standard_normal(n), np.ones(60) / 60, "same")
+        swell = np.maximum(0, np.sin(2 * np.pi * 0.11 * t + np.sin(2 * np.pi * 0.023 * t))) ** 2
+        out += surf * swell * 1.6 * AMBIENCE.get("level", 1.0)
+        out += np.convolve(rng.standard_normal(n), np.ones(900) / 900, "same") * 2.0 * AMBIENCE.get("level", 1.0)  # grondement du large
     # « hits » cinématiques + whoosh aux transitions
     for c in cuts:
         i = int(c * SR); m = int(1.2 * SR); x = np.arange(m) / SR
@@ -266,7 +274,7 @@ def review_sheet(video, review):
 
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
-    voice = ep.get("voice", "en-US-AndrewMultilingualNeural")
+    voice = ep.get("voice", "en-US-AndrewMultilingualNeural"); AMBIENCE.update(ep.get("ambience", {}))
     scenes, t, events, cuts = [], 0.0, [], []
     srt_words, yt_chapters, thumb_src, starts, trans = [], [], None, [], []
     review = []  # (instant, texte dit à ce moment, scène.plan) → planche de revue image/texte
