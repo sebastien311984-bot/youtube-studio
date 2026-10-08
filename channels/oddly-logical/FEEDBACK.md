@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-08 — ALLER AU BOUT DE LA DÉMARCHE : ne jamais se contenter du premier acquis. Pour chaque vidéo, explorer plusieurs pistes (sources de rushs, styles d'infographie, mises en page, transitions, sons), en proposer plusieurs et choisir la meilleure. Varier les formats d'une vidéo à l'autre (pas toujours la même carte) et les adapter au sujet. Chercher activement de nouveaux outils et techniques pro au lieu d'attendre les remarques du propriétaire.
+
 - 2026-10-07 — PROCHAIN CHANTIER (intentions, pas des règles) : (1) SÉRIES cohérentes — « Survivre aux conditions extrêmes », « Comprendre les phénomènes de la Terre », « Les étrangetés de l'espace » ; chaque vidéo mène vers une autre de la même série (fin, écran de fin, fiche, playlist). (2) DÉBUT captivant : le phénomène dès la 1re seconde, une question précise, la réponse commence aussitôt, sans intro de chaîne. (3) PENSÉ TÉLÉPHONE : textes lisibles en petit, miniature simple à une seule idée forte, rien de coupé dans les Shorts (zones sûres). (4) Sujets vraiment accrocheurs et extraordinaires.
 
 - 2026-10-07 — LEÇON N°1 : ne JAMAIS écrire de consignes trop strictes (quotas, chiffres, cases à cocher) : Claude devient robotique, ne réfléchit plus et accumule les erreurs. Les consignes donnent l'intention ; le jugement de réalisateur décide. But : des vidéos monétisables, sur des sujets passionnants et accrocheurs, qui attirent le plus de monde.
