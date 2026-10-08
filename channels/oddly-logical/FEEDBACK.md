@@ -74,3 +74,8 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - 2026-10-06 — Risque de monotonie : varier les formats d'une vidéo à l'autre (ne pas toujours schéma + chiffre). Utiliser le pack (scale, timeline, versus, quiz, kinetic, rank, photos).
 - 2026-10-06 — Les vidéos de 1,5 à 3 min ne suffisent pas pour monétiser : viser 8 à 12 min.
 - 2026-10-06 — L'utilisateur ne veut plus de ChatGPT ; tout se fait ici. Économiser le quota : déléguer l'écriture à l'agent oddly-scriptwriter (sonnet), relecture par oddly-factchecker, et rendu par GitHub Actions.
+
+## Recherche d'images — règle permanente (2026-10-08)
+- AVANT d'écrire un script : fouiller TOUTES les sources de SOURCES.md (monde entier, pas seulement les USA) + Openverse/Europeana + vidéos YouTube sous licence Creative Commons (filtre « Creative Commons », vérifier que l'auteur est bien le filmeur original, sinon risque Content ID).
+- Présenter une planche d'images au propriétaire ; si rien de spectaculaire et légal, changer de sujet AVANT de produire.
+- Être proactif : chercher de nouvelles sources et les ajouter à SOURCES.md sans attendre qu'on le demande. Dire honnêtement et tôt ce qui est impossible.

@@ -35,6 +35,7 @@ INTERDIT : images de médias (TV, agences AFP/Reuters/AP/Getty, journaux), vidé
 | Zone | Source | Contenu | Licence / crédit |
 |---|---|---|---|
 | Méta-recherche | Openverse (openverse.org), Flickr Commons, Europeana (filtre « réutilisable ») | moteur sur des centaines de musées/archives du monde | CC0 / CC BY selon fichier |
+| YouTube | Vidéos sous licence Creative Commons (CC BY) | CC BY : créditer ; vérifier que la chaîne est l auteur original |
 | Europe – espace/Terre | ESA, Copernicus Sentinel, EUMETSAT, ESO, NOIRLab, ALMA | satellites, tempêtes vues d'en haut, incendies, télescopes | CC BY / CC BY-SA IGO ; « contains modified Copernicus Sentinel data » |
 | Europe – science | CERN (CDS videos) | accélérateurs, physique | CC BY 4.0 |
 | Europe – archives | Open Images (Beeld en Geluid, NL), Bundesarchiv & Deutsche Fotothek (via Commons), Nationaal Archief, Finna (FI), Riksarkivet/K-samsök (SE) | films d'actualités anciens, histoire, catastrophes historiques | CC BY-SA / CC0 selon fichier |

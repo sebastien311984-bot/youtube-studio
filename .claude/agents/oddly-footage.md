@@ -12,3 +12,6 @@ Goal: the most striking, accurate visual for every 4-5 s of narration — like a
 - Verify every URL (curl -sI → 200). No visual used twice.
 - Build a contact sheet (PIL, small thumbnails) of all chosen visuals in order and save it next to the scratch work; report its path.
 Reply briefly: what you changed, sources used, contact-sheet path, any weak spot.
+
+## Règle permanente
+Fouiller toutes les sources de SOURCES.md (monde entier, Openverse, Europeana, YouTube Creative Commons avec auteur original vérifié) avant de conclure qu'une image n'existe pas. Planche validée par le propriétaire avant tout script.
