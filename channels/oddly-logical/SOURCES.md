@@ -30,3 +30,17 @@ Astuce rétention : alterner une source « réelle » (NASA, NOAA, Pixabay) et u
 | Mixkit, Coverr, Videvo (licence gratuite), Pixabay | stock générique | libres ; tri visuel sévère obligatoire |
 | Images IA (générées par nous) | ce qui est infilmable | légal ; cocher « contenu synthétique » si réaliste |
 INTERDIT : images de médias (TV, agences AFP/Reuters/AP/Getty, journaux), vidéos YouTube/TikTok/Instagram d'autrui, films et séries. Content ID les détecte : blocage, démonétisation, avertissements.
+
+## Sources internationales (2026-10-08) — vérifier la licence de CHAQUE fichier
+| Zone | Source | Contenu | Licence / crédit |
+|---|---|---|---|
+| Méta-recherche | Openverse (openverse.org), Flickr Commons, Europeana (filtre « réutilisable ») | moteur sur des centaines de musées/archives du monde | CC0 / CC BY selon fichier |
+| Europe – espace/Terre | ESA, Copernicus Sentinel, EUMETSAT, ESO, NOIRLab, ALMA | satellites, tempêtes vues d'en haut, incendies, télescopes | CC BY / CC BY-SA IGO ; « contains modified Copernicus Sentinel data » |
+| Europe – science | CERN (CDS videos) | accélérateurs, physique | CC BY 4.0 |
+| Europe – archives | Open Images (Beeld en Geluid, NL), Bundesarchiv & Deutsche Fotothek (via Commons), Nationaal Archief, Finna (FI), Riksarkivet/K-samsök (SE) | films d'actualités anciens, histoire, catastrophes historiques | CC BY-SA / CC0 selon fichier |
+| Europe – musées | Rijksmuseum, Paris Musées, SMK (DK), Wellcome Collection | art, médecine ancienne, objets | CC0 / CC BY |
+| Japon / Asie | Himawari (JMA, imagerie satellite), JAXA Digital Archives, ISRO | typhons vus de l'espace, fusées japonaises/indiennes | crédit obligatoire, usage commercial à vérifier fiche par fiche |
+| Océanie | CSIRO ScienceImage, Australian Antarctic Division, Te Papa (NZ), DigitalNZ | faune australienne, Antarctique, volcans NZ | CC BY |
+| Canada | Agence spatiale canadienne, Ressources naturelles Canada | espace, Arctique, géologie | Licence du gouvernement ouvert – Canada (crédit) |
+| Nature (monde) | iNaturalist, Biodiversity Heritage Library | animaux rares, planches naturalistes | CC BY / domaine public |
+| Stock vidéo cinéma | Pexels (site), Mixkit, Coverr, Videvo, Dareful (4K), Vecteezy/Videezy (crédit), Pond5 « Public Domain » | plans génériques de qualité | libres ; vérifier chaque plan, tri visuel sévère |
