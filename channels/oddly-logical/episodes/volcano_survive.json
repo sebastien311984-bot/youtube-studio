@@ -1,0 +1,999 @@
+{
+ "title": "Could You Survive a Volcanic Eruption?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage and images: USGS (public domain); PHIVOLCS-DOST (public domain, Kanlaon eruption video, Wikimedia Commons); Hawaiian Volcano Observatory, USGS; Hawaii Volcanoes National Park (public domain, Wikimedia Commons); Austin Post, Donald A. Swanson, J. Cummans, S.R. Brantley, K. Scott, Richard P. Hoblitt (USGS, public domain); NOAA/NGDC, R. Lapointe, U.S. Air Force (public domain); NASA (public domain); User Fg2 (public domain, Wikimedia Commons); Pixabay (Gylfi, TungArt7, VP68, DistillVideos, LisaOlivia, conghuynh8, 31906497; Pixabay License). Ring of Fire animation: Oddly Logical Science. Facts: USGS Volcano Hazards Program, USGS Cascades Volcano Observatory, Smithsonian Global Volcanism Program, PHIVOLCS.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:97290",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:65",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:152085",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "A river of molten rock, glowing in the dark. Beautiful, and terrifying. Now imagine standing right next to it. Is this what would kill you?",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive a volcanic eruption?"
+  },
+  {
+   "kind": "intro",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/An_explosive_eruption_occurred_at_Kanlaon_Volcano_on_December_9%2C_2024.webm",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:144678",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:130156",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Here is the surprise. In most eruptions, the lava is not what kills people. Four real eruptions will show you what does, and what could save you.",
+   "lead": 0.4,
+   "label": [
+    "VOLCANIC ERUPTION",
+    "Could you survive it?"
+   ],
+   "teaser": "WHERE THESE STORIES HAPPENED"
+  },
+  {
+   "shots": [
+    {
+     "clip": "channels/oddly-logical/assets/ring_of_fire.mp4",
+     "start": 0
+    }
+   ],
+   "text": "All of them happened on the Ring of Fire, a horseshoe of volcanoes around the Pacific that holds about three quarters of Earth's active volcanoes.",
+   "min": 11,
+   "lead": 0.3,
+   "tone": "neutral",
+   "teaser": "CHAPTER 1: THE LAVA"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:219833",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:262905",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lava_cascade_in_Hawaii.webm",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Start with the lava. It looks like the ultimate danger, but most lava flows move at a walking pace or slower. You can usually see it coming, and simply walk away.",
+   "chapter": [
+    "CHAPTER 1",
+    "IS LAVA THE KILLER?"
+   ],
+   "yt_chapter": "Is lava what kills you in a volcanic eruption?",
+   "label": [
+    "LAVA",
+    "Slow, and visible"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kilauea_-_Pu%27u_O%27o_-_MLK_lava_fountain_video_-_9-10_February_2005.ogv",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Spattering_and_lava_flow_at_fissure_20_in_K%C4%ABlauea_Volcano%27s_Lower_East_Rift_Z....webm",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kilauea_volcano_eruption-_Watch_incredible_footage_of_lava_lake.webm",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Hawaii's Kilauea has erupted for decades, and its lava has destroyed hundreds of homes. Yet people there have almost always had time to get out of the way.",
+   "fact": "Lava can reach about 1,000 degrees Celsius,\\Nbut it usually moves slowly."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:97289",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:97291",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "In 2021, La Palma, in the Canary Islands, lost around three thousand buildings to lava. Yet nobody was killed by the lava itself.",
+   "label": [
+    "LA PALMA, 2021",
+    "~3,000 buildings destroyed"
+   ],
+   "teaser": "THE REAL KILLER"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "THE LAVA",
+    "ISN'T THE KILLER"
+   ],
+   "text": "So if it is not the lava, what is it?",
+   "min": 4
+  },
+  {
+   "kind": "quiz",
+   "question": "How fast can a pyroclastic flow race down a volcano?",
+   "options": [
+    "About 10 km/h",
+    "100+ km/h",
+    "Walking pace"
+   ],
+   "answer": 1,
+   "min": 6,
+   "text": "Quick guess. How fast can a pyroclastic flow race down a volcano?",
+   "chapter": [
+    "CHAPTER 2",
+    "THE REAL KILLER"
+   ],
+   "yt_chapter": "What is a pyroclastic flow?"
+  },
+  {
+   "kind": "diagram",
+   "heading": "PYROCLASTIC FLOW",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      250,
+      880
+     ],
+     "to": [
+      820,
+      400
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      820,
+      400
+     ],
+     "to": [
+      1000,
+      400
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      1000,
+      400
+     ],
+     "to": [
+      1650,
+      880
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "HOT GAS + ASH + ROCK",
+     "at": [
+      1250,
+      300
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "red"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1000,
+       420
+      ],
+      [
+       1300,
+       520
+      ],
+      [
+       1650,
+       830
+      ]
+     ],
+     "color": "red",
+     "width": 14
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1500,
+      700
+     ],
+     "to": [
+      1700,
+      850
+     ],
+     "color": "red",
+     "width": 12
+    },
+    {
+     "type": "text",
+     "text": "100+ km/h, UP TO 300+",
+     "at": [
+      1380,
+      960
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "SEVERAL HUNDRED °C",
+     "at": [
+      450,
+      520
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "THE WHOLE SLOPE, AT ONCE",
+     "at": [
+      450,
+      600
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "ink"
+    }
+   ],
+   "min": 12,
+   "text": "It is a pyroclastic flow. An avalanche of superheated gas, ash and rock that rushes down the slopes of a volcano. Often more than one hundred kilometers per hour, and the fastest can top three hundred. With temperatures of several hundred degrees Celsius.",
+   "fact": "Pyroclastic: from Greek words for\\N'fire' and 'broken pieces'."
+  },
+  {
+   "kind": "versus",
+   "heading": "LAVA VS PYROCLASTIC FLOW",
+   "left": {
+    "name": "LAVA",
+    "color": "orange",
+    "stats": [
+     "Walking pace or slower",
+     "Follows a visible path",
+     "You can walk away"
+    ]
+   },
+   "right": {
+    "name": "PYROCLASTIC FLOW",
+    "color": "red",
+    "stats": [
+     "100+ km/h, up to 300+",
+     "Several hundred degrees",
+     "You cannot outrun it"
+    ]
+   },
+   "text": "Lava crawls. A pyroclastic flow arrives faster than a car on a highway. You cannot outrun it, and the scorching air alone can be deadly.",
+   "min": 9
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6b/USGS-Unzen_volcano_1994_large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/eb/USGS-destructionby-unzenvolcano1993.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/UnzenDevastation.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Unzen, Japan, the third of June, 1991. A growing lava dome collapsed, and a pyroclastic flow reached farther than expected. Forty-three people died, including three volcanologists, Katia and Maurice Krafft, and Harry Glicken.",
+   "label": [
+    "UNZEN, JAPAN",
+    "3 June 1991"
+   ],
+   "tone": "tense",
+   "teaser": "THE SIDEWAYS BLAST"
+  },
+  {
+   "kind": "stat",
+   "value": 43,
+   "caption": "KILLED AT UNZEN IN MINUTES, INCLUDING 3 VOLCANOLOGISTS",
+   "text": "Forty-three lives. Even the experts, who understood the danger better than anyone, were caught.",
+   "min": 6
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d1/MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_St._Helens_Eruption_%E2%80%94_1980_%2811707592844%29.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Now, Mount St Helens, Washington, the eighteenth of May, 1980. An earthquake set off the largest landslide in recorded history, and the pressure locked inside the mountain was released sideways.",
+   "chapter": [
+    "CHAPTER 3",
+    "THE SIDEWAYS BLAST"
+   ],
+   "yt_chapter": "What was the Mount St Helens lateral blast?",
+   "label": [
+    "MOUNT ST HELENS",
+    "18 May 1980"
+   ],
+   "tone": "tense"
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE LATERAL BLAST",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      300,
+      880
+     ],
+     "to": [
+      760,
+      480
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      760,
+      480
+     ],
+     "to": [
+      960,
+      480
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      960,
+      480
+     ],
+     "to": [
+      1200,
+      880
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      450
+     ],
+     "to": [
+      860,
+      240
+     ],
+     "color": "orange",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "WHAT YOU EXPECT: UP",
+     "at": [
+      1180,
+      290
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      620,
+      620
+     ],
+     "to": [
+      1750,
+      560
+     ],
+     "color": "red",
+     "width": 16
+    },
+    {
+     "type": "text",
+     "text": "WHAT HAPPENED: SIDEWAYS",
+     "at": [
+      1330,
+      470
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "~600 km² OF FOREST FLATTENED",
+     "at": [
+      1330,
+      780
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "(ABOUT 230 SQUARE MILES)",
+     "at": [
+      1330,
+      840
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "ink"
+    }
+   ],
+   "min": 10,
+   "text": "Instead of shooting up, the blast burst out sideways, a surge of hot gas and rock that outran everything in its path. It flattened about six hundred square kilometers of forest, around two hundred thirty square miles."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/St_Helens_map_showing_1980_eruption_deposits.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Toutle_River_Bridge_after_1980_Mount_St._Helens_eruption.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "This USGS map shows the reach of the devastation. Beyond it, mudflows from melting snow and ice tore down the river valleys, wrecking roads and bridges.",
+   "label": [
+    "USGS MAP",
+    "1980 devastation zone"
+   ],
+   "fact": "Trees fell in neat rows, all pointing\\Naway from the volcano."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "VANCOUVER!",
+    "VANCOUVER!",
+    "THIS IS IT!"
+   ],
+   "text": "Geologist David Johnston was watching from an observation post, roughly eight kilometers away. His last radio call: Vancouver! Vancouver! This is it!",
+   "min": 8,
+   "tone": "urgent"
+  },
+  {
+   "kind": "stat",
+   "value": 57,
+   "caption": "PEOPLE DIED IN THE 1980 MOUNT ST HELENS ERUPTION",
+   "text": "Fifty-seven people died that day, including Johnston.",
+   "min": 5,
+   "teaser": "HOW WARNINGS SAVE LIVES"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ausbruch_des_Pinatubo_1991.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Eruption_of_Mount_Pinatubo%2C_June_15%2C_1991.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Pinatubo, the Philippines, the fifteenth of June, 1991. The second-largest eruption of the twentieth century, with ash rising tens of kilometers into the sky.",
+   "chapter": [
+    "CHAPTER 4",
+    "ASH AND THE RIGHT CALL"
+   ],
+   "yt_chapter": "How did warnings save thousands at Pinatubo?",
+   "label": [
+    "MOUNT PINATUBO",
+    "15 June 1991"
+   ]
+  },
+  {
+   "kind": "timeline",
+   "heading": "PINATUBO 1991: THE WARNING SIGNS",
+   "events": [
+    {
+     "year": "APRIL",
+     "text": "Steam blasts begin"
+    },
+    {
+     "year": "7 JUNE",
+     "text": "Lava dome appears"
+    },
+    {
+     "year": "12 JUNE",
+     "text": "First big explosions"
+    },
+    {
+     "year": "15 JUNE",
+     "text": "The main eruption"
+    }
+   ],
+   "text": "But this time, scientists saw it coming. Steam blasts began in April, a lava dome appeared in early June, and the first big explosions came three days before the main eruption. Evacuations were already underway.",
+   "min": 12
+  },
+  {
+   "kind": "stat",
+   "value": 5000,
+   "suffix": "+",
+   "prefix": "AT LEAST ",
+   "caption": "LIVES SAVED BY WARNINGS AND EVACUATIONS (USGS)",
+   "text": "The USGS estimates that at least five thousand lives were saved. Science did not stop the eruption. It gave people time.",
+   "min": 7
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/sts068-218-007/sts068-218-007~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001648/GSFC_20171208_Archive_e001648~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss013e24184/iss013e24184~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Then there is ash. It is not soft like campfire ash. It is tiny pieces of rock and glass, and a big plume can drift for thousands of kilometers.",
+   "label": [
+    "ASH PLUMES FROM SPACE",
+    "Aleutians and Kamchatka"
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "WHY ROOFS COLLAPSE",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      700,
+      900
+     ],
+     "to": [
+      700,
+      700
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      1220,
+      900
+     ],
+     "to": [
+      1220,
+      700
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      700,
+      900
+     ],
+     "to": [
+      1220,
+      900
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      640,
+      720
+     ],
+     "to": [
+      960,
+      520
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      960,
+      520
+     ],
+     "to": [
+      1280,
+      720
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       650,
+       700
+      ],
+      [
+       960,
+       500
+      ],
+      [
+       1270,
+       700
+      ]
+     ],
+     "color": "red",
+     "width": 18
+    },
+    {
+     "type": "arrow",
+     "from": [
+      760,
+      250
+     ],
+     "to": [
+      760,
+      430
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      230
+     ],
+     "to": [
+      960,
+      400
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1160,
+      250
+     ],
+     "to": [
+      1160,
+      430
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "ASH + RAIN",
+     "at": [
+      960,
+      170
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "HEAVY, WET ASH",
+     "at": [
+      1560,
+      520
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "ROOF COLLAPSE",
+     "at": [
+      1560,
+      600
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "NOT LAVA. NOT FIRE. WEIGHT.",
+     "at": [
+      960,
+      1010
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "ink"
+    }
+   ],
+   "min": 10,
+   "text": "At Pinatubo, a typhoon struck at the same time. Rain soaked the falling ash, and wet ash is far heavier than dry. Roofs collapsed under the weight, and many of the deaths came that way."
+  },
+  {
+   "kind": "diagram",
+   "heading": "COULD YOU SURVIVE?",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      100,
+      330
+     ],
+     "to": [
+      700,
+      860
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      700,
+      860
+     ],
+     "to": [
+      1250,
+      860
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      1250,
+      860
+     ],
+     "to": [
+      1820,
+      330
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      260,
+      900
+     ],
+     "to": [
+      1100,
+      900
+     ],
+     "color": "red",
+     "width": 12
+    },
+    {
+     "type": "text",
+     "text": "VALLEY: FLOWS + MUDFLOWS FOLLOW",
+     "at": [
+      700,
+      980
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1580,
+      500
+     ],
+     "r": 26,
+     "color": "green",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "YOU: HIGH GROUND, FAR AWAY",
+     "at": [
+      1500,
+      390
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "green"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1250,
+      700
+     ],
+     "to": [
+      1520,
+      540
+     ],
+     "color": "green",
+     "width": 12
+    }
+   ],
+   "min": 10,
+   "text": "So, could you survive? Yes, if you leave early. Flows and mudflows follow valleys, so get out of them, onto higher ground and far from the volcano, as far as the authorities say.",
+   "chapter": [
+    "CHAPTER 5",
+    "COULD YOU SURVIVE?"
+   ],
+   "yt_chapter": "How do you survive a volcanic eruption?"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "LEAVE EARLY",
+    "AVOID VALLEYS",
+    "MASK AGAINST ASH",
+    "NEVER GO TO WATCH"
+   ],
+   "text": "Leave early when officials say. Avoid valleys. Wear a mask against ash. And never go to watch.",
+   "min": 6
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:211700",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:253436",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:378988",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:152174",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "So the lava glowing in the dark is the show. The grey wall behind it is the killer. Would you have run in time? Tell me in the comments, and subscribe to Oddly Logical Science for more stories where science meets survival.",
+   "lead": 0.3
+  },
+  {
+   "clip": "https://upload.wikimedia.org/wikipedia/commons/2/21/MSH80_eruption_mount_st_helens_plume_05-18-80.jpg",
+   "move": "out",
+   "min": 4,
+   "title": [
+    "ODDLY LOGICAL",
+    "SCIENCE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "LAVA ISN'T THE KILLER",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Could You Survive a Volcanic Eruption? (Not the Lava)",
+  "description": "Could you survive a volcanic eruption? Lava is not what kills most people. Follow four real eruptions, Unzen 1991, Mount St Helens 1980, Pinatubo 1991 and La Palma 2021, to learn what the real killers are, and how to survive.\n\nIn this video:\n- Is lava what kills you?\n- What is a pyroclastic flow?\n- What was the Mount St Helens lateral blast?\n- How did warnings save thousands at Pinatubo?\n- How do you survive a volcanic eruption?\n\nFAQ\nCan you outrun lava? Usually yes, most flows move at walking pace or slower.\nWhat is a pyroclastic flow? A fast avalanche of hot gas, ash and rock, often over 100 km/h.\nWhat should you do in an eruption? Leave early when authorities say, avoid valleys, wear a mask against ash, and never go to watch.\n\nWould you have run in time? Tell me in the comments.\n\nSources: USGS, Smithsonian Global Volcanism Program, PHIVOLCS, NASA.",
+  "tags": [
+   "volcanic eruption",
+   "could you survive a volcanic eruption",
+   "pyroclastic flow",
+   "how to survive a volcano",
+   "mount st helens 1980",
+   "pinatubo 1991",
+   "unzen 1991",
+   "krafft volcanologists",
+   "la palma volcano 2021",
+   "lava flow speed",
+   "volcano facts",
+   "ring of fire",
+   "volcano ash danger",
+   "david johnston"
+  ],
+  "hashtags": [
+   "#volcano",
+   "#science",
+   "#survival"
+  ],
+  "translations": {
+   "fr": "Survivre à une éruption volcanique ? (Pas la lave)",
+   "es": "¿Sobrevivirías a una erupción volcánica? (No es la lava)",
+   "pt": "Você sobreviveria a uma erupção vulcânica? (Não é a lava)",
+   "de": "Würdest du einen Vulkanausbruch überleben? (Nicht die Lava)",
+   "hi": "क्या आप ज्वालामुखी विस्फोट से बच पाएँगे? (लावा नहीं है असली खतरा)"
+  }
+ },
+ "shorts": [
+  {
+   "from": 8,
+   "to": 10,
+   "title": "The Real Volcano Killer Isn't Lava"
+  },
+  {
+   "from": 16,
+   "to": 17,
+   "title": "Vancouver! This Is It! Last Call"
+  },
+  {
+   "from": 18,
+   "to": 20,
+   "title": "How Science Saved 5,000 Lives"
+  }
+ ]
+}
