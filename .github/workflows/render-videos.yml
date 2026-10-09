@@ -78,8 +78,16 @@ jobs:
           git config user.name render-bot; git config user.email render-bot@users.noreply.github.com
           git checkout -q --orphan "review/${{ github.run_id }}"; git rm -rq --cached . ; git add -f review; git commit -qm "review ${{ github.run_id }}"
           git push -q origin "HEAD:refs/heads/review/${{ github.run_id }}"
+      - name: Vidéos HD en Release (hors quota des artefacts)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls out/*.mp4 >/dev/null 2>&1 || exit 0
+          gh release create "render-${{ github.run_id }}" out/*.mp4 out/*.jpg out/*.srt out/*.md -R "${{ github.repository }}" --target "${{ github.sha }}" -t "Rendu ${{ github.run_id }}" -n "Rendu automatique" --prerelease || true
       - uses: actions/upload-artifact@v4
         if: always()
+        continue-on-error: true
         with:
           name: videos
           path: out/*
