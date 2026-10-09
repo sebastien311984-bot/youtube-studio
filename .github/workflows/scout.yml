@@ -20,6 +20,7 @@ jobs:
           IFS='|' read -ra A <<< "$Q"
           python3 engine/scout.py "${A[@]}"
       - uses: actions/upload-artifact@v4
+        continue-on-error: true
         with:
           name: scout
           path: scout/
