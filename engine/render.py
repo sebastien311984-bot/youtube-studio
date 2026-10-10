@@ -309,7 +309,16 @@ def main(ep_path, clips_dir, out):
             shots = s.get("shots") or [{"clip": s["clip"], "start": s.get("start", 0), "move": s.get("move", "in")}]
             # garde-fou : jamais un plan de plus de ~5 s (sinon un rush court tourne en boucle à l'écran)
             need = max(1, round((d + XF) / 4.5))
-            if len(shots) < need:
+            STILL = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff")
+            is_still = lambda c: c.split("?")[0].lower().endswith(STILL)
+            vids = [x for x in shots if not is_still(x["clip"])]
+            if len(shots) < need and not vids:
+                print(f"Scène {i} : {len(shots)} photo(s) pour {d:.0f} s → plans allongés, AUCUNE photo répétée")
+            elif len(shots) < need:
+                # seules les VIDÉOS sont réutilisées (à un autre instant) ; une photo n'apparaît jamais deux fois
+                extra = [dict(vids[j % len(vids)], start=vids[j % len(vids)].get("start", 0) + (1 + j // len(vids)) * 4.5) for j in range(need - len(shots))]
+                shots = shots + extra
+            if False:
                 print(f"Scène {i} : {len(shots)} plan(s) pour {d:.0f} s → {need} plans générés automatiquement")
                 moves = ["in", "left", "out", "right"]
                 shots = [dict(shots[j % len(shots)], move=moves[j % 4],
@@ -321,9 +330,9 @@ def main(ep_path, clips_dir, out):
             srcs = [got.setdefault(sh_["clip"], fetch(sh_["clip"], clips_dir)) if sh_["clip"] not in got else got[sh_["clip"]] for sh_ in shots]  # jamais une nouvelle vidéo Pixabay au hasard
             keep = [k for k, x in enumerate(srcs) if x]  # plans Pixabay jugés hors sujet : retirés, on recycle les plans restants
             if not keep: raise SystemExit(f"Scène {i} : aucun plan pertinent — ajouter une image officielle ou une infographie")
-            if len(keep) < len(srcs):
-                srcs = [srcs[keep[j % len(keep)]] for j in range(len(srcs))]
-                shots = [dict(shots[keep[j % len(keep)]], start=shots[keep[j % len(keep)]].get("start", 0) + (j // len(keep)) * 4.5) for j in range(len(shots))]
+            if len(keep) < len(srcs):  # plan inutilisable : retiré, les autres s'allongent (pas de doublon)
+                srcs = [srcs[k] for k in keep]; shots = [shots[k] for k in keep]
+                sd = (d + XF) / len(shots)
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
             JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes

@@ -506,11 +506,6 @@
      "clip": "https://images-assets.nasa.gov/image/S70-41984/S70-41984~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Meanwhile in Houston, teams of engineers work around the clock. They test every idea on the ground first, with the same parts the crew has on board, because there will be no second chance.",
