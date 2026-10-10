@@ -50,11 +50,14 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           mkdir -p out
+          # suivi en direct : toutes les 2 min, la fin du journal est poussée sur la branche progress/<run>
+          ( while sleep 120; do d=$(mktemp -d); cp out/*_render.log "$d/" 2>/dev/null; (date -u; df -h . | tail -1; du -sh clips 2>/dev/null) > "$d/status.txt"
+              (cd "$d" && git init -q && git add -A && git -c user.name=render-bot -c user.email=render-bot@users.noreply.github.com commit -qm p && git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/progress/${{ github.run_id }}) >/dev/null 2>&1; rm -rf "$d"; done ) &
           for f in ${{ steps.list.outputs.files }}; do
             [ -f "$f" ] || continue
             n=$(basename "$f" .json)
             set -o pipefail
-            if ! python3 engine/render.py "$f" clips "out/$n.mp4" 2>&1 | tee "out/${n}_render.log"; then
+            if ! python3 -u engine/render.py "$f" clips "out/$n.mp4" 2>&1 | tee "out/${n}_render.log"; then
               tail -40 "out/${n}_render.log" | while IFS= read -r l; do echo "::error::$l"; done
               exit 1
             fi
