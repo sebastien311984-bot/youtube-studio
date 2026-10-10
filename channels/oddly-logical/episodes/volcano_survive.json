@@ -27,10 +27,6 @@
    "yt_chapter": "Could you survive a volcanic eruption?"
   },
   {
-   "kind": "intro",
-   "min": 4
-  },
-  {
    "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/An_explosive_eruption_occurred_at_Kanlaon_Volcano_on_December_9%2C_2024.webm",
@@ -936,7 +932,7 @@
   }
  ],
  "thumbnail": {
-  "scene": 6,
+  "scene": 5,
   "text": "LAVA ISN'T THE KILLER",
   "sub": "",
   "shift": 0.2,
@@ -976,18 +972,18 @@
  },
  "shorts": [
   {
-   "from": 8,
-   "to": 10,
+   "from": 7,
+   "to": 9,
    "title": "The Real Volcano Killer Isn't Lava"
   },
   {
-   "from": 16,
-   "to": 17,
+   "from": 15,
+   "to": 16,
    "title": "Vancouver! This Is It! Last Call"
   },
   {
-   "from": 18,
-   "to": 20,
+   "from": 17,
+   "to": 19,
    "title": "How Science Saved 5,000 Lives"
   }
  ]
