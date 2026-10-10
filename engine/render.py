@@ -333,7 +333,7 @@ def main(ep_path, clips_dir, out):
             if not keep: raise SystemExit(f"Scène {i} : aucun plan pertinent — ajouter une image officielle ou une infographie")
             if len(keep) < len(srcs):  # plan inutilisable : retiré, les autres s'allongent (pas de doublon)
                 srcs = [srcs[k] for k in keep]; shots = [shots[k] for k in keep]
-        if "chapter" in s and kind in ("footage", "annotate") and not s.get("question"): events += chapter(t + 0.2, *s["chapter"])  # jamais par-dessus une infographie (chevauchement)
+                sd = (d + XF) / len(shots)
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
             JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
