@@ -345,7 +345,7 @@ def main(ep_path, clips_dir, out):
         if s.get("kind") != "diagram" and s.get("kind") != "stat" and i == ep.get("thumbnail", {}).get("scene"): thumb_src = (cp, d)
         if "label" in s: events += label(t + 0.8, min(d - 1, 5), *s["label"])
         if "fact" in s: events += fact(t + min(2.5, d / 3), min(6, d - 1), s["fact"])
-        if "chapter" in s: events += chapter(t + 0.2, *s["chapter"])
+        if "chapter" in s and s.get("kind", "footage") in ("footage", "annotate") and not s.get("question"): events += chapter(t + 0.2, *s["chapter"])  # jamais par-dessus une infographie
         if "title" in s:
             a, b = ass_time(t + 0.4), ass_time(t + d)
             events += [f"Dialogue: 3,{a},{b},Big,,0,0,0,,{{\\an5\\pos(960,500)\\fad(800,500)\\blur2\\t(0,800,\\blur0)\\fsp20\\t(0,{int(d*1000)},\\fsp4)}}{s['title'][0]}",
