@@ -27,9 +27,17 @@ for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être t
             try: urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "OddlyLogicalStudio/1.0"}), timeout=20)
             except Exception as e: errs.append(f"scène {i} : URL inaccessible ({e}) {u[-60:]}")
 from collections import Counter
-_uses = Counter(sh.get("clip") for sc in ep["scenes"] for sh in (sc.get("shots") or ([sc] if sc.get("clip") else [])) if sh.get("clip"))
+import re as _re, urllib.parse as _up
+def _key(u):  # même photo sous un autre nom/format (.jpg/.tif, 1920px-, LCCN…) = doublon
+    n = _re.sub(r"\.(jpe?g|png|tiff?|webp)$", "", _re.sub(r"^\d+px-", "", _up.unquote(u.split("?")[0].rsplit("/", 1)[-1]).lower()))
+    m = _re.search(r"lccn\d+", n); return m.group(0) if m else n
+_STILL = (".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")
+_uses = Counter(); _isstill = {}
+for sc in ep["scenes"]:
+    for u in [sh.get("clip") for sh in (sc.get("shots") or ([sc] if sc.get("clip") else []))] + [sc.get(k) for k in ("image", "before", "after")]:
+        if u: k = _key(u); _uses[k] += 1; _isstill[k] = u.split("?")[0].lower().endswith(_STILL)
 for c, n in _uses.items():
-    if n > 2: errs.append(f"répétition : image/vidéo utilisée {n} fois (max 2, idéalement 1) → {c[-60:]}")
+    if n > (1 if _isstill[c] else 2): errs.append(f"répétition : {'photo' if _isstill[c] else 'vidéo'} utilisée {n} fois (photo max 1, vidéo max 2) → {c[-60:]}")
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")

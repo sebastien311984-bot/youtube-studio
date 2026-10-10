@@ -137,11 +137,6 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-34902/s70-34902~large.jpg",
-     "start": 0,
-     "move": "out"
-    },
-    {
      "clip": "https://images-assets.nasa.gov/image/S71-16745/S71-16745~large.jpg",
      "start": 0,
      "move": "left"
@@ -563,11 +558,6 @@
      "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Apollo_13_Mailbox_at_Mission_Control.jpg",
-     "start": 0,
-     "move": "out"
     }
    ],
    "text": "Lovell and Swigert build it, fit it, and wait. And the carbon dioxide level begins to fall. It works.",
@@ -780,16 +770,6 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/as13-59-8500/as13-59-8500~large.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/AS13-59-8562/AS13-59-8562~large.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
      "clip": "https://images-assets.nasa.gov/image/S70-40850/S70-40850~large.jpg",
      "start": 0,
      "move": "right"
@@ -900,11 +880,6 @@
      "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/s70-35145/s70-35145~large.jpg",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "Re-entry. The capsule hits the atmosphere at about eleven kilometers per second. The heat blocks all radio, and Mission Control expects about three minutes of silence. Three minutes pass. Then four. Houston keeps calling. Nothing.",
@@ -1041,11 +1016,6 @@
      "clip": "https://images-assets.nasa.gov/image/s70-35601/s70-35601~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "So, could you survive Apollo 13? Not alone. It took three trained astronauts, and thousands of people on the ground, solving one problem at a time. More Could You Survive episodes are waiting in the playlist. See you there.",
