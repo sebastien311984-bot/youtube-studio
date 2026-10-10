@@ -23,3 +23,6 @@ Tenu à jour par Claude à chaque étape. Statuts : ✍️ écrite · 🎬 rendu
 | This Glass Survives a Hammer—Then Its Tail Destroys It | 1:29 | 📅 8 oct. |
 | Why Does This Magnet Fall So Slowly? | 1:44 | 📅 9 oct. |
 → Sujets déjà traités, à ne pas refaire à l'identique : pluie coronale, aurores, seiche, poulpe Dumbo, volcan Kilauea, geyser Steamboat, larme batavique, aimant dans un tube.
+
+## Vidéos longues publiées (relevé YouTube Studio du 2026-10-10) — vérifier ici AVANT de choisir un sujet
+Lightning Strike (Struck 7 Times) · Volcanic Eruption (Not the Lava) · Building demolition · Cuttlefish colour · Hurricane's Eye · Carrington Event · NASA touched an asteroid (Bennu) · Fall into a Black Hole · Magnet falling slowly · Bermuda Triangle: The Disappearance That Built a Legend · Glass survives a hammer (Prince Rupert's drop) · Tallest geyser · Space Without a Suit · Volcano shoots lava · Dumbo octopus · Auroras from space · Rain on the Sun. Shorts : dont « Five Planes. 14 Men. No Confirmed Wreckage. | Flight 19 » (90,7 % de rétention).
