@@ -1019,11 +1019,6 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/70/Titanic_lifeboats_on_boat_deck_plan.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/1/14/Survival_suits_USCG.jpg",
      "start": 0,
      "move": "right"
