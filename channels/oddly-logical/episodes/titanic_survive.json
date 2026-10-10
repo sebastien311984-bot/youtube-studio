@@ -1,0 +1,1194 @@
+{
+ "title": "Could You Survive the Titanic?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: public-domain historical photographs and illustrations from Wikimedia Commons (1912 press and agency photographs, Library of Congress / Bain collection, Willy Stöwer painting, Jack Thayer sketch, Nationaal Archief), NOAA / Institute for Exploration / University of Rhode Island (Titanic wreck, 1986 expedition imagery, public domain), U.S. Air Force, U.S. Coast Guard and DVIDS (modern cold-water survival training, public domain). Facts: British Wreck Commissioner's inquiry and US Senate inquiry (1912), Encyclopedia Titanica, NOAA, Giesbrecht cold-water 1-10-1 rule (University of Manitoba), SOLAS 1914.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/95/Titanic_sinking%2C_painting_by_Willy_St%C3%B6wer.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/73/Titanic_Iceberg_1912.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "11:40 p.m., April 14th, 1912. An iceberg is about to open the side of the Titanic. In under three hours, more than fifteen hundred people will be dead. Could you survive? One decision, in the first twenty minutes, matters more than strength or money. Stay to the end, and I will show you which.",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive the Titanic?",
+   "teaser": "THE ICEBERG YOU COULD NOT SEE"
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Titanic_iceberg.jpg",
+   "heading": "NORTH ATLANTIC, 1912",
+   "question": "What are you looking at?",
+   "marks": [
+    {
+     "type": "box",
+     "box": [
+      330,
+      130,
+      1560,
+      830
+     ],
+     "text": "ABOVE WATER: THE TIP",
+     "color": "gold"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      880
+     ],
+     "to": [
+      960,
+      1030
+     ],
+     "text": "ABOUT 9/10 HIDDEN BELOW",
+     "color": "red"
+    },
+    {
+     "type": "label",
+     "at": [
+      120,
+      900
+     ],
+     "text": "CALM SEA = NO WARNING WAVES",
+     "color": "white"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 1",
+    "THE ICEBERG YOU COULD NOT SEE"
+   ],
+   "yt_chapter": "How did Titanic hit the iceberg?",
+   "min": 18,
+   "text": "At 11:40, a lookout rings the bell. Iceberg, right ahead. The engines are reversed, but the ship is moving at over twenty knots. This photograph, taken by the crew of a passing liner near the site, shows the problem. Only the tip is visible. About nine tenths of an iceberg hides underwater. And on a moonless, flat calm night, no waves were breaking at its foot.",
+   "fact": "Icebergs float with about nine tenths of\\Ntheir mass below the surface."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Titanic_earlier_Southampton.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Titanic_leaving_44_port_place_in_Southampton.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Titanic_leaving_port_Southampton.png",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/23/Titanic_new_york_oceanic.png",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "That day, Titanic had received several ice warnings by wireless. She kept her speed, about twenty-two knots, in a calm, dark sea. In those days, captains trusted that a lookout would see ice in time. The lookouts had no binoculars to hand. It was a gamble, and it lost."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e7/RMS_Titanic_ready_for_launch%2C_1911.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Arrol_Gantry_with_Liners_Olympic_%26_Titanic_in_Construction.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/81/Titanic_departing_Southampton.png",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Southampton_Titanic_dock_number_44.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/19/Titanic_avoiding_collision_in_Southampton.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "The contact lasted only seconds. Surveys of the wreck suggest there was no giant gash, but a series of narrow openings along the starboard side. Within about twenty minutes, the ship's designer, Thomas Andrews, did the math. She would sink in an hour or two. That was your whole window.",
+   "teaser": "THE 16 ROOMS THAT DECIDED EVERYTHING"
+  },
+  {
+   "kind": "diagram",
+   "heading": "16 WATERTIGHT COMPARTMENTS",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      240,
+      520
+     ],
+     "to": [
+      1680,
+      520
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      240,
+      700
+     ],
+     "to": [
+      1680,
+      700
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      240,
+      520
+     ],
+     "to": [
+      240,
+      700
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      1680,
+      520
+     ],
+     "to": [
+      1830,
+      610
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      1830,
+      610
+     ],
+     "to": [
+      1680,
+      700
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      330,
+      545
+     ],
+     "to": [
+      330,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      420,
+      545
+     ],
+     "to": [
+      420,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      510,
+      545
+     ],
+     "to": [
+      510,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      600,
+      545
+     ],
+     "to": [
+      600,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      690,
+      545
+     ],
+     "to": [
+      690,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      780,
+      545
+     ],
+     "to": [
+      780,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      870,
+      545
+     ],
+     "to": [
+      870,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      960,
+      545
+     ],
+     "to": [
+      960,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1050,
+      545
+     ],
+     "to": [
+      1050,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1140,
+      545
+     ],
+     "to": [
+      1140,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1230,
+      545
+     ],
+     "to": [
+      1230,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1320,
+      545
+     ],
+     "to": [
+      1320,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1410,
+      545
+     ],
+     "to": [
+      1410,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1500,
+      545
+     ],
+     "to": [
+      1500,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      1590,
+      545
+     ],
+     "to": [
+      1590,
+      700
+     ],
+     "color": "ink",
+     "width": 5
+    },
+    {
+     "type": "text",
+     "text": "16 COMPARTMENTS",
+     "at": [
+      700,
+      440
+     ],
+     "anchor": "mm",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "BOW",
+     "at": [
+      1830,
+      470
+     ],
+     "anchor": "mm",
+     "size": 34
+    },
+    {
+     "type": "line",
+     "from": [
+      1230,
+      740
+     ],
+     "to": [
+      1680,
+      740
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "5 BREACHED",
+     "at": [
+      1455,
+      800
+     ],
+     "anchor": "mm",
+     "size": 50,
+     "color": "red"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1230,
+       630
+      ],
+      [
+       1455,
+       655
+      ],
+      [
+       1680,
+       630
+      ]
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      240,
+      740
+     ],
+     "to": [
+      1140,
+      740
+     ],
+     "color": "green",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "BUILT TO FLOAT WITH 4 FLOODED",
+     "at": [
+      690,
+      800
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "green"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1410,
+      500
+     ],
+     "to": [
+      1290,
+      500
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1290,
+      470
+     ],
+     "to": [
+      1170,
+      470
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "WATER SPILLS OVER THE WALLS",
+     "at": [
+      1000,
+      960
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "orange"
+    }
+   ],
+   "min": 12,
+   "chapter": [
+    "CHAPTER 2",
+    "THE 16 ROOMS"
+   ],
+   "yt_chapter": "Why did Titanic sink if she had watertight compartments?",
+   "text": "Titanic was divided into sixteen watertight compartments. She was designed to float with the first four flooded. The iceberg opened five. And the walls between the rooms did not reach the top. So as the bow sank, water spilled over each wall into the next compartment, like an ice cube tray overflowing, and the flooding spread."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/17/The_Tragedy_of_the_Titanic.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ae/The_Sad_Parting.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Scheepvaart%2C_scheepsrampen%2C_SFA022010267.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Scheepvaart%2C_scheepsrampen%2C_SFA022010268.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "At 12:05, Captain Smith orders the lifeboats uncovered. Wireless calls go out, the old signal CQD and the newer SOS. Rockets climb into the night sky. Here is your first test. Most people on board did not believe it. The ship felt solid, the night was freezing, and a lifeboat looked like a worse place to be.",
+   "fact": "SOS had been the official distress signal\\Nfor only about six years in 1912.",
+   "teaser": "THE LIFEBOAT MATH"
+  },
+  {
+   "kind": "scale",
+   "heading": "LIFEBOAT SEATS VS PEOPLE",
+   "items": [
+    {
+     "label": "1,178 SEATS",
+     "size": 1.2,
+     "color": "green",
+     "note": "in 20 lifeboats"
+    },
+    {
+     "label": "2,224 PEOPLE",
+     "size": 2.2,
+     "color": "red",
+     "note": "aboard that night"
+    }
+   ],
+   "min": 14,
+   "chapter": [
+    "CHAPTER 3",
+    "THE LIFEBOAT MATH"
+   ],
+   "yt_chapter": "How many lifeboats did Titanic have?",
+   "text": "Now the math. Twenty lifeboats, with room for about eleven hundred seventy-eight people. About two thousand two hundred twenty-four people aboard. Even with every seat filled, over a thousand would have no place. The rules of the time were based on a ship's tonnage, not on how many people were aboard.",
+   "fact": "Titanic carried MORE boats than the law\\Nrequired. The law was outdated.",
+   "teaser": "THE HALF-EMPTY BOATS"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Cosmo_Duff_Gordon_at_Titanic_inquiry.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/10/Carpathia_-_Titanic_lifeboats.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Baltic_life_boats_-_DPLA_-_12bf7f0007cf976580eecec260ad23ad.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Baltic_boat_deck_-_DPLA_-_d309b43812a6e0994fa84184deee15a3.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "And yet, the first lifeboats left half empty. Boat Seven, built for sixty-five, went down with about twenty-eight. Boat One, built for forty, left with twelve, among them the British baronet Sir Cosmo Duff Gordon. Few believed the danger yet, and officers reportedly feared the davits might buckle under a full load.",
+   "chapter": [
+    "CHAPTER 4",
+    "THE HALF-EMPTY BOATS"
+   ],
+   "yt_chapter": "Why did lifeboats leave half empty?",
+   "tone": "reveal"
+  },
+  {
+   "kind": "stat",
+   "value": 32,
+   "suffix": "%",
+   "caption": "OF THE PEOPLE ABOARD SURVIVED",
+   "min": 6,
+   "text": "In the end, about seven hundred ten people lived. About one in three. The rule was women and children first, but it was applied differently on each side of the ship.",
+   "fact": "Roughly 3 in 4 women survived, versus\\Nabout 1 in 5 men."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Olympic_1st_Class_Aft_Staircase_ADeck_Level.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Olympic_First_Class_Staircase.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Contemporary_Drawing_of_Olympic_%26_Titanic_3rd_Class_Dining_Room.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/67/Period_Illustration_of_2nd_Class_Stateroom_aboard_Olympic_Class_Ships.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/58/3rd_Class_Cabin.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Contemporary_Drawing_of_Titanic_and_Olympic_3rd_Class_Smoke_Room.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Period_Illustration_of_Olympic_and_Titanic_3rd_Class_General_Room.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Titanic_%26_Olympic_2nd_Class_Library.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Your ticket mattered too. Roughly six in ten first class passengers survived, about four in ten in second class, and about one in four in third. Many in third class, deep in the ship, faced a long maze of corridors up to the boat deck. It shows the first rule of any emergency. The earlier you move, the more options you keep.",
+   "label": [
+    "TITANIC AND SISTER SHIP OLYMPIC",
+    "Period images of the interiors"
+   ]
+  },
+  {
+   "kind": "timeline",
+   "heading": "THE CLOCK OF THE NIGHT",
+   "min": 13,
+   "events": [
+    {
+     "year": "11:40 PM",
+     "text": "Iceberg"
+    },
+    {
+     "year": "12:45 AM",
+     "text": "First lifeboat\nleaves"
+    },
+    {
+     "year": "2:05 AM",
+     "text": "Last lifeboat\nlowered"
+    },
+    {
+     "year": "2:20 AM",
+     "text": "Titanic sinks"
+    },
+    {
+     "year": "4:10 AM",
+     "text": "Carpathia picks up\nfirst lifeboat"
+    }
+   ],
+   "text": "Here is the clock of that night. 11:40, the iceberg. 12:45, the first lifeboat leaves. 2:05, the last boat is lowered. 2:20, the Titanic is gone. And only around 4:10 does the first lifeboat reach rescue. That is a very long time to wait in the cold.",
+   "fact": "From the iceberg to the end: about\\N2 hours and 40 minutes."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/97/Scheepvaart%2C_scheepsrampen%2C_SFA022806870.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sinking_of_the_Titanic.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/82/Titanic_sinking_Wikivoyage_feature_banner.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/Scheepvaart%2C_scheepsrampen%2C_SFA022806871.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "At 2:05, the last boat leaves. The bow dips under, and the crowd moves toward the stern, which rises high out of the water. The lights flicker out. Many survivors reported that the ship broke in two before she went down. At 2:20, the Titanic is gone, with about fifteen hundred people still aboard or in the sea.",
+   "teaser": "WHAT THE WATER DOES TO YOU",
+   "tone": "tense"
+  },
+  {
+   "kind": "quiz",
+   "question": "You fall into water at minus 2°C. What happens first?",
+   "options": [
+    "You scream",
+    "You freeze solid",
+    "You gasp uncontrollably",
+    "You sink like a stone"
+   ],
+   "answer": 2,
+   "min": 8,
+   "chapter": [
+    "CHAPTER 5",
+    "WHAT THE WATER DOES"
+   ],
+   "yt_chapter": "What does freezing water do to your body?",
+   "text": "Pause. You fall into the sea at minus two degrees Celsius. What does your body do first?"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "1 MINUTE",
+    "10 MINUTES",
+    "1 HOUR"
+   ],
+   "min": 5,
+   "text": "It is called the one, ten, one rule."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/MITD_teaches_maritime_Soldiers_survival_swimming_160126-F-GX122-195.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Shoreline_Survival_Training_-_Tongee_National_Forest_04.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/Survival_training_DVIDS1099590.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/72/Survival_training_DVIDS1099588.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/76/Survival_training_DVIDS1099589.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "In the first minute comes cold shock. You gasp uncontrollably, and your heart races. Your only job is not to inhale water. In ten minutes, your arms and legs weaken, and swimming becomes impossible. In about an hour, you reach hypothermia. In water this cold, many people lost consciousness even sooner.",
+   "label": [
+    "MODERN SURVIVAL TRAINING",
+    "Cold-water drills, not the Titanic"
+   ],
+   "fact": "Salt water freezes near -2°C (28°F), colder\\Nthan fresh water's 0°C."
+  },
+  {
+   "kind": "versus",
+   "heading": "IN THE WATER VS IN A LIFEBOAT",
+   "min": 10,
+   "left": {
+    "name": "IN THE WATER",
+    "color": "blue",
+    "stats": [
+     "Sea near -2°C (28°F)",
+     "Cold shock in seconds",
+     "Often unconscious within 30 min"
+    ]
+   },
+   "right": {
+    "name": "IN A LIFEBOAT",
+    "color": "green",
+    "stats": [
+     "Out of the water",
+     "Cold, but alive",
+     "Rescue around 4 AM"
+    ]
+   },
+   "text": "So here is the science in one line. Staying out of the water is worth more than strength, fitness or swimming skill. In a lifeboat, you are cold but alive. In the sea, the clock runs out in minutes, not hours."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2c/TITANIC_survivors_on_way_to_rescue-ship_CARPATHIA_LCCN2014690331.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Titanic_survivors_life_belts_1912.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/24/A_Photograph_of_an_Iceberg_Floating_Near_the_Site_of_the_TITANIC_Sinking._-_NARA_-_278334.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/62/Possible_Titanic_iceberg_from_SS_Birma.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Most people in the water wore cork lifebelts, so they floated. They did not drown. They died of cold, many within half an hour, while the survivors in the lifeboats listened to the cries fade. The sea around them was dotted with ice. A few boats went back, and found only a handful still alive.",
+   "fact": "Cork lifebelts kept people afloat, so most\\Ndied of cold, not drowning."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/Scheepvaart%2C_scheepsrampen%2C_SFA022806871.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Titanic_survivors_on_way_to_rescue_ship_Carpathia.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/82/Titanic_sinking_Wikivoyage_feature_banner.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sinking_of_the_Titanic.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Some survivors found a way to stay dry. Collapsible B floated upside down, and around thirty men climbed onto its hull and stood, balancing for hours as waves washed over. Every slip risked the water. They stayed out of it, and were taken off at dawn.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/83/Ca._1910_Illustration_of_2nd_Class_Dining_Room_on_Titanic_%26_Olympic.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Thayer-Sketch-of-Titanic.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Titanic_survivors_on_way_to_rescue_ship_Carpathia_LCCN93510852.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Lord_Mersey_with_son_Captain_Bigham_at_the_British_Titanic_inquiry.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/37/US_Senate_Titanic_inquiry.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "One man seems to break the rules. Charles Joughin, the chief baker. Reportedly, he had been drinking, rode the stern down almost like an elevator, and stepped into the sea without going under. He reportedly stayed in the water for about two hours until reaching a collapsible boat. Alcohol makes you feel warmer but speeds heat loss, so what really saved him is debated.",
+   "teaser": "THE SHIP THAT STAYED",
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Californian.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/51/SS_Californian_arriving_in_port.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/68/The_SS_Californian_en_route_to_America.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c4/A_photograph_of_the_CALIFORNIAN_which_may_have_been_taken_from_the_deck_of_the_CARPATHIA._The_CALIFORNIAN_joined_the..._-_NARA_-_278339.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/48/SS_Mount_Temple_in_London.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Ss_mount_temple.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "And what about the ship that was close? The Californian had stopped for the night in the ice, somewhere between ten and twenty miles away, depending on which inquiry you believe. Her crew reportedly saw rockets, but her wireless operator had gone to bed. She did not move until morning. Another ship, the Mount Temple, turned toward the call, but ice stopped her miles away.",
+   "chapter": [
+    "CHAPTER 6",
+    "THE SHIP THAT STAYED"
+   ],
+   "yt_chapter": "Why didn't the Californian help Titanic?",
+   "tone": "tense",
+   "teaser": "THE DASH THROUGH THE ICE"
+  },
+  {
+   "kind": "stat",
+   "value": 58,
+   "suffix": " miles",
+   "caption": "HOW FAR THE CARPATHIA WAS WHEN THE CALL CAME",
+   "min": 6,
+   "chapter": [
+    "CHAPTER 7",
+    "THE CARPATHIA'S DASH"
+   ],
+   "yt_chapter": "How did the Carpathia rescue Titanic survivors?",
+   "text": "Fifty-eight miles. That is how far away the Carpathia was when the call reached her."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/Carpathia-54.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/58/Capt._A.H._Rostron_and_under_officers_of_Carpathia.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/de/Harold_Cottam_testifies_in_front_of_Senate_Committee_into_the_Titanic_disaster_at_the_Waldorf_Astoria.webp",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Carpathia_Deck.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Carpathia_at_Cunard_Pier_54_1912.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Carpathia-54_%282%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/da/Capt._Rostron_%26_under_officers_of_CARPATHIA_%28ship%29_LCCN2014690409.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Capt._Rostron%2C_of_the_Carpathia%2C_and_his_wife.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Her wireless operator, Harold Cottam, was about to go to bed when he heard the call. Captain Arthur Rostron turned his ship around and cut heat and hot water so the engines had every ounce of steam. He posted extra lookouts for ice and had doctors and blankets ready. She was rated for about fourteen knots. That night, she reportedly pushed past seventeen, zigzagging around icebergs in the dark. Rostron later said he felt a hand on the ship that night. Others called it plain good seamanship.",
+   "fact": "Carpathia's rated speed was about 14 knots.\\NThat night she reportedly made 17.",
+   "tone": "urgent"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Groups_of_TITANIC_survivors_aboard_rescue_ship_CARPATHIA-_unidentified_group_on_deck_LCCN2002721379.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/af/Crowd_at_Pier_54_awaiting_Carpathia_arrival_1912.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/54/Crowds_at_Cunard_pier_awaiting_Titanic_survivors.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/03/Cunard_pier_New_York_awating_Carpathia_1912.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "At about 4:10, the first lifeboat reached the Carpathia. By mid-morning, the last survivors were aboard. Three days later, the ship reached New York, where huge crowds waited at the pier."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c9/19120415_New_Liner_Titanic_Hits_an_Iceberg_-_The_New_York_Times.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e5/NewYorkTribune-Titanic-1912-4-16.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e0/TheTimesDispatch-Titanic-1912-4-16.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0c/American_Senate_Inquiry_-_Officer_Boxhall_testifies_in_front_of_Senator_Smith_and_Committee.webp",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Senate_Investigating_Committee_questioning_J_Bruce_Ismay_at_the_Waldorf_Astoria.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/31/US_Senate_Committee_hearings_Titanic_sinking_1912.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "News of the disaster spread within hours, and by the 16th the front pages were full of it. Two inquiries followed, one American, one British. They criticized the lifeboat rules, the speed in ice, and the Californian's failure to act. Out of that came new rules, and the International Ice Patrol, which still watches for icebergs today."
+  },
+  {
+   "kind": "beforeafter",
+   "before": "https://upload.wikimedia.org/wikipedia/commons/9/92/RMS_Titanic_in_Southampton%2C_April_9th_of_1912.jpg",
+   "after": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Titanic_wreck_bow.jpg",
+   "teaser": "THE ANSWER",
+   "label_before": "APRIL 1912",
+   "label_after": "TODAY, 3,800 M DOWN",
+   "min": 10,
+   "text": "This is what is left. The Titanic left Southampton in April 1912. Her wreck was found in 1985, about thirty-eight hundred meters down, and her bow is still recognizable.",
+   "fact": "The wreck lies about 600 km south-southeast\\Nof Newfoundland, in two main pieces."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "BELIEVE THE DANGER",
+    "GET A SEAT",
+    "STAY OUT OF THE WATER"
+   ],
+   "min": 7,
+   "chapter": [
+    "CHAPTER 8",
+    "THE ANSWER"
+   ],
+   "yt_chapter": "Could you survive the Titanic? The answer",
+   "text": "Believe the danger. Get a seat in a boat. Stay out of the water."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Titanic_at_Southamton.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Titanic_leaving_Southampton.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Titanic_coming_out_Southampton.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/14/Survival_suits_USCG.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/USCG_sailors_don_cold_water_survival_suits_during_Operation_Nanook_2012%2C_120810-G-NB914-076.JPG",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Titanic_Southampton_sailing_day.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "That was the decision. The first one, in the first twenty minutes. Strength, swimming skill and even money counted less than speed and a seat, although your ticket and sex also shaped the odds. The world took the lesson. Since 1914, ships must carry seats for everyone and keep their radios on all night. Which deck would you have walked to? Tell me in the comments, and subscribe for more science of survival.",
+   "tone": "warm",
+   "fact": "After 1914, the SOLAS treaty required seats\\Nfor everyone and 24-hour radio watch."
+  }
+ ],
+ "subscribe_at": 0.3,
+ "ambience": {
+  "kind": "ocean"
+ },
+ "youtube": {
+  "title": "Could You Survive the Titanic? Minute by Minute",
+  "description": "Could you survive the Titanic? Follow the night of April 14-15, 1912, minute by minute, and see what the science of cold water, lifeboat math and rescue says about who lived and who did not.\n\nIn this video:\n- How did the Titanic hit the iceberg?\n- Why did the 16 watertight compartments not save her?\n- How many lifeboats were there, and why did they leave half empty?\n- What does near-freezing water do to your body (the 1-10-1 rule)?\n- Charles Joughin, the baker who reportedly stayed in the water for about two hours\n- The Californian that stayed, and the Carpathia that raced through the ice\n\nFAQ\nHow many people survived the Titanic? About 710 of roughly 2,224 aboard.\nHow cold was the water? About -2°C (28°F).\nHow many lifeboats did the Titanic have? Twenty, with room for about 1,178 people.\nHow long did the Titanic take to sink? About 2 hours and 40 minutes after hitting the iceberg.\nWhich ship rescued the survivors? The Carpathia, around 4:10 AM.\n\nWhich deck would you have headed for? Tell us below.\n\nSources: British and US inquiries (1912), NOAA, Encyclopedia Titanica.",
+  "tags": [
+   "could you survive the titanic",
+   "titanic",
+   "titanic survival",
+   "titanic minute by minute",
+   "how cold was the water titanic",
+   "titanic lifeboats",
+   "1-10-1 rule cold water",
+   "cold water shock",
+   "hypothermia",
+   "charles joughin",
+   "carpathia",
+   "californian",
+   "titanic sinking explained",
+   "titanic science",
+   "what if you were on the titanic"
+  ],
+  "hashtags": [
+   "#titanic",
+   "#science",
+   "#survival"
+  ],
+  "translations": {
+   "fr": "Auriez-vous survécu au Titanic ? Minute par minute",
+   "es": "¿Habrías sobrevivido al Titanic? Minuto a minuto",
+   "pt": "Você sobreviveria ao Titanic? Minuto a minuto",
+   "de": "Hättest du die Titanic überlebt? Minute für Minute",
+   "hi": "क्या आप टाइटैनिक में बच पाते? मिनट दर मिनट"
+  }
+ },
+ "thumbnail": {
+  "scene": 0,
+  "text": "COULD YOU SURVIVE?",
+  "sub": "TITANIC",
+  "shift": 0.2,
+  "circle": false
+ },
+ "shorts": [
+  {
+   "from": 6,
+   "to": 8,
+   "title": "The Lifeboat Math"
+  },
+  {
+   "from": 12,
+   "to": 15,
+   "title": "What Freezing Water Does"
+  },
+  {
+   "from": 20,
+   "to": 22,
+   "title": "The Dash Through Ice"
+  }
+ ]
+}
