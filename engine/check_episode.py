@@ -26,7 +26,11 @@ for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être t
         if u.startswith("http") and "wikimedia.org" not in u and "usgs.gov" not in u:  # bloqués depuis Claude, vérifiés au rendu
             try: urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "OddlyLogicalStudio/1.0"}), timeout=20)
             except Exception as e: errs.append(f"scène {i} : URL inaccessible ({e}) {u[-60:]}")
+from collections import Counter
+_uses = Counter(sh.get("clip") for sc in ep["scenes"] for sh in (sc.get("shots") or ([sc] if sc.get("clip") else [])) if sh.get("clip"))
+for c, n in _uses.items():
+    if n > 2: errs.append(f"répétition : image/vidéo utilisée {n} fois (max 2, idéalement 1) → {c[-60:]}")
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
-print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "type inconnu", "sans image")) else 0)
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image")) else 0)
