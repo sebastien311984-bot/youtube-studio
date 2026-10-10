@@ -33,6 +33,10 @@
    "teaser": "THE ICEBERG YOU COULD NOT SEE"
   },
   {
+   "kind": "intro",
+   "min": 3
+  },
+  {
    "kind": "annotate",
    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Titanic_iceberg.jpg",
    "heading": "NORTH ATLANTIC, 1912",
@@ -1128,6 +1132,14 @@
    "text": "That was the decision. The first one, in the first twenty minutes. Strength, swimming skill and even money counted less than speed and a seat, although your ticket and sex also shaped the odds. The world took the lesson. Since 1914, ships must carry seats for everyone and keep their radios on all night. Which deck would you have walked to? Tell me in the comments, and subscribe for more science of survival.",
    "tone": "warm",
    "fact": "After 1914, the SOLAS treaty required seats\\Nfor everyone and 24-hour radio watch."
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Titanic_Southampton_sailing_day.jpg",
+   "line1": "COULD YOU SURVIVE?",
+   "line2": "WATCH NEXT",
+   "text": "So, which deck would you have run to? Tell me in the comments. And if you like real survival stories told with real science, subscribe. There is more where this came from."
   }
  ],
  "subscribe_at": 0.3,
