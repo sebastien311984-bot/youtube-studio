@@ -7,29 +7,24 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
      "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
      "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
-     "start": 0,
-     "move": "right"
+     "move": "in"
     },
     {
      "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
      "start": 0,
-     "move": "in"
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "right"
     }
    ],
    "text": "Fifty-five hours, fifty-four minutes into the flight, an oxygen tank explodes more than three hundred thousand kilometers from Earth. You have three astronauts, a crippled ship, and not enough air. The fix that saves them is built from a plastic bag, cardboard and duct tape. And the most dangerous moment is still to come.",
@@ -45,7 +40,7 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/video/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664~orig.mp4",
-     "start": 60,
+     "start": 45,
      "move": "in"
     },
     {
@@ -54,19 +49,24 @@
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-28229/S70-28229~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
      "start": 0,
      "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-27036/S70-27036~large.jpg",
+     "start": 0,
+     "move": "out"
     }
    ],
    "text": "Rewind two days. April eleventh, nineteen seventy. Apollo 13 rises on a Saturn V, bound for the Moon. Commander Jim Lovell, on his fourth spaceflight. Fred Haise, who will pilot the lunar module. And Jack Swigert, who joined the crew only days before launch. Their goal: the Fra Mauro highlands. They will never land there.",
@@ -116,12 +116,12 @@
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as09-20-3154/as09-20-3154~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35139/S70-35139~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -138,17 +138,17 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-34902/s70-34902~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S71-16745/S71-16745~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -172,23 +172,27 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S71-16823/S71-16823~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-58005/S69-58005~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as9-21-3181/as9-21-3181~large.jpg",
      "start": 0,
      "move": "left"
     }
    ],
    "text": "One tank is gone, and the other is losing pressure. Within hours, the command module will be dead. Flight controllers in Houston have one option left: use the lunar module as a lifeboat.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Apollo spacecraft and a lunar module"
+   ],
    "tone": "tense",
    "teaser": "T+57h: THE LIFEBOAT"
   },
@@ -212,77 +216,89 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as09-21-3183/as09-21-3183~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as14-66-9306/as14-66-9306~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34627/S70-34627~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8588/as13-60-8588~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as9-21-3199/as9-21-3199~large.jpg",
      "start": 0,
      "move": "right"
     }
    ],
    "text": "About five hours after the explosion, Lovell fires the lunar module's descent engine, a rocket built to land on the Moon. Now it works as a tug, steering the whole stack onto a path that will carry it back toward Earth.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "A lunar module like Aquarius"
+   ],
    "tone": "calm"
   },
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as09-23-3595/as09-23-3595~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as11-36-5390/as11-36-5390~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as09-21-3212/as09-21-3212~large.jpg",
      "start": 0,
      "move": "left"
     }
    ],
    "text": "To save power and water, they switch off almost everything. Heaters. Lights. Even the guidance computer. The crew moves into a spacecraft the size of a small closet, and waits.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Cabin photos from other Apollo flights"
+   ],
    "tone": "calm"
   },
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as17-163-24122/as17-163-24122~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as17-162-24049/as17-162-24049~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as17-163-24148/as17-163-24148~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as07-04-1600/as07-04-1600~large.jpg",
      "start": 0,
      "move": "right"
     }
    ],
    "text": "Cold becomes the second enemy. With the heaters off, water condenses on the walls and drips from the ceiling. The men wear whatever they have, and sleep is almost impossible. Haise, sick and feverish, shivers through it.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Cabin photos from other Apollo flights"
+   ],
    "tone": "calm"
   },
   {
@@ -309,17 +325,17 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S74-05269/S74-05269~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8703/as13-60-8703~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/PIA15515/PIA15515~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -343,22 +359,22 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/as13-60-8635/as13-60-8635~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8675/as13-60-8675~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001939/GSFC_20171208_Archive_e001939~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8659/as13-60-8659~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/PIA15515/PIA15515~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8635/as13-60-8635~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/as11-44-6549/as11-44-6549~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as08-13-2329/as08-13-2329~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -377,7 +393,7 @@
    "value": 400171,
    "suffix": " km",
    "caption": "DISTANCE RECORD FROM EARTH, SET IN 1970",
-   "text": "Soon after, they reach about four hundred thousand, one hundred seventy-one kilometers from Earth. A distance record that stood for more than half a century.",
+   "text": "Soon after, they reach about four hundred thousand, one hundred seventy-one kilometers from Earth. A distance record that stands for more than half a century.",
    "min": 6,
    "teaser": "T+100h: THE AIR RUNS OUT"
   },
@@ -396,28 +412,27 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as17-162-24053/as17-162-24053~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-26698/S69-26698~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-26148/S69-26148~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Heading home, a quiet killer appears. Every breath adds carbon dioxide. The lunar module's filters were made for two men for two days. Now three men have breathed far longer, and the gas climbs toward dangerous levels.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Cabin photos from other Apollo flights"
+   ],
    "tone": "tense",
    "chapter": [
     "T+100h",
@@ -428,28 +443,27 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S75-22747/S75-22747~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/7026059/7026059~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/7020702/7020702~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Why is carbon dioxide so dangerous? Build up in a sealed cabin, and it brings headaches, confusion, and eventually blackouts. Normally, canisters of lithium hydroxide absorb it. But the crew is running out of working filters.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Cabin photos from other Apollo flights"
+   ],
    "tone": "tense"
   },
   {
@@ -489,24 +503,14 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-34627/S70-34627~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35148/s70-35148~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35145/S70-35145~large.jpg",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Meanwhile in Houston, teams of engineers work around the clock. They test every idea on the ground first, with the same parts the crew has on board, because there will be no second chance.",
@@ -526,19 +530,9 @@
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-41984/S70-41984~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
-     "start": 0,
-     "move": "in"
     }
    ],
    "text": "On the ground, engineers get one rule: use only what the crew has on board. They build an adapter from a plastic bag, the cover of a flight manual, a spacesuit hose and duct tape, and read the steps over the radio. The crew calls it the mailbox.",
@@ -553,14 +547,9 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Apollo_13_Mailbox_at_Mission_Control.jpg",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "Lovell and Swigert build it, fit it, and wait. And the carbon dioxide level begins to fall. It works.",
@@ -586,17 +575,17 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as11-44-6549/as11-44-6549~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/09/AS08-13-2329.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-15501/S70-15501~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001939/GSFC_20171208_Archive_e001939~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -747,28 +736,27 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-24009/S70-24009~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S68-54520/S68-54520~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-24016/S70-24016~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "There is one more problem. The command module has been shut down for days, and it must wake up for re-entry. Nobody has ever restarted it like this. So a team in Houston writes a brand-new procedure, tests it, and reads it to the crew.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Apollo crew training photos"
+   ],
    "tone": "calm"
   },
   {
@@ -787,6 +775,11 @@
      "clip": "https://images-assets.nasa.gov/image/AS13-59-8562/AS13-59-8562~large.jpg",
      "start": 0,
      "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-40850/S70-40850~large.jpg",
+     "start": 0,
+     "move": "right"
     }
    ],
    "text": "Hours before re-entry, they cut away the service module. And for the first time, the crew sees what the explosion did. A whole side panel is gone, and equipment hangs out into space.",
@@ -802,23 +795,27 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-20239/S69-20239~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as14-66-09277/as14-66-09277~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/as09-21-3197/as09-21-3197~large.jpg",
      "start": 0,
      "move": "left"
     }
    ],
    "text": "Then they release Aquarius, the lifeboat that kept them alive. The command module, with three exhausted men, is alone. Its heat shield has to work, and nobody can check.",
    "lead": 0.3,
+   "label": [
+    "ARCHIVE",
+    "Capsule and lunar modules from other Apollo flights"
+   ],
    "tone": "tense",
    "teaser": "T+142h: THE SILENCE"
   },
@@ -845,29 +842,19 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-35148/s70-35148~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35148/s70-35148~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-35145/s70-35145~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
-     "start": 0,
-     "move": "in"
     }
    ],
    "text": "Re-entry. The capsule hits the atmosphere at about eleven kilometers per second. The heat blocks all radio, and Mission Control expects about three minutes of silence. Three minutes pass. Then four. Houston keeps calling. Nothing.",
@@ -888,22 +875,22 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35638/S70-35638~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-35644/s70-35644~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/s70-35652/s70-35652~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35615/S70-35615~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-27919/S69-27919~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35638/S70-35638~large.jpg",
      "start": 0,
      "move": "right"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35651/S70-35651~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/s70-35652/s70-35652~large.jpg",
      "start": 0,
      "move": "in"
     }
@@ -925,19 +912,14 @@
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-15530/S70-15530~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35651/S70-35651~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35632/S70-35632~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35625/S70-35625~large.jpg",
      "start": 0,
      "move": "right"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35622/S70-35622~large.jpg",
-     "start": 0,
-     "move": "in"
     }
    ],
    "text": "All three astronauts are alive. They step onto the deck of the Iwo Jima, tired, thin and cold, eighty-seven hours after the bang. The mission is often called a successful failure.",
@@ -947,22 +929,22 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
-     "start": 20,
+     "clip": "https://images-assets.nasa.gov/image/S70-15530/S70-15530~large.jpg",
+     "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35638/S70-35638~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35632/S70-35632~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-27919/S69-27919~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35622/S70-35622~large.jpg",
      "start": 0,
      "move": "left"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35632/S70-35632~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-27919/S69-27919~large.jpg",
      "start": 0,
      "move": "right"
     }
@@ -974,7 +956,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35625/S70-35625~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
      "start": 0,
      "move": "in"
     },
@@ -984,7 +966,7 @@
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-15511/S70-15511~large.jpg",
      "start": 0,
      "move": "left"
     }
@@ -996,19 +978,24 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-15526/S70-15526~large.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/S70-35614/S70-35614~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S70-35600/S70-35600~large.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
-     "start": 90,
+     "clip": "https://images-assets.nasa.gov/image/s70-35601/s70-35601~large.jpg",
+     "start": 0,
      "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
+     "start": 0,
+     "move": "right"
     }
    ],
    "text": "So, could you survive Apollo 13? Not alone. It took three trained astronauts, and thousands of people on the ground, solving one problem at a time. More Could You Survive episodes are waiting in the playlist. See you there.",
