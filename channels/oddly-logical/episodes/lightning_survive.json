@@ -1,0 +1,701 @@
+{
+ "title": "Could You Survive a Lightning Strike?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage and images: Jeffrey Beach (CC BY 3.0, Wikimedia Commons); MrNousia (CC BY 3.0 video, CC BY-SA 4.0 photo, Wikimedia Commons); EpeeForte (CC BY 3.0, Wikimedia Commons); Bill (CC BY 2.0, Wikimedia Commons); YvoBentele, Timothee Rolland and Jan1959 (CC BY-SA 4.0); Bert Hickman (Wikimedia Commons, attribution); Scott Van Scherpenseel (CC BY 3.0); Fernando Flores, Caracas (CC BY-SA 2.0, Catatumbo lightning); ShenandoahNPS / National Park Service (public domain, Roy Sullivan photo); NASA / ISS (public domain); Pixabay (Pixabay License). Lightning map animation: Oddly Logical Science. Facts: NOAA National Weather Service, NASA, Guinness World Records, National Park Service.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lightning_strikes_in_slow_motion_%28240fps%29_in_Muurame%2C_Finland.webm",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/Lightning_in_Slow_Motion_%28Free_to_Use_HD_Stock_Video_Footage%29.webm",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Orage_4K_SlowMotion_17072015_%C3%A0_TROYES.webm",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "This is a lightning bolt, slowed down. It is about five times hotter than the surface of the Sun. And one man was struck by lightning seven times, and lived. How is that possible?",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive a lightning strike?"
+  },
+  {
+   "kind": "intro",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ranger_Roy_Sullivan%2C_Lightning_Struck_%2851861133692%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:2187",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/Lightning_Strike_%28video%29.webm",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "His name was Roy Sullivan, a park ranger in Shenandoah National Park, Virginia. Between 1942 and 1977, lightning hit him seven times. Here is how he survived, and how you could too.",
+   "lead": 0.3,
+   "label": [
+    "ROY SULLIVAN",
+    "Park ranger, struck 7 times"
+   ],
+   "teaser": "CHAPTER 1: HOW HOT IS A BOLT?"
+  },
+  {
+   "kind": "scale",
+   "heading": "TEMPERATURE",
+   "items": [
+    {
+     "label": "SUN'S SURFACE",
+     "size": 1,
+     "color": "orange",
+     "note": "about 5,500 °C"
+    },
+    {
+     "label": "LIGHTNING BOLT",
+     "size": 3,
+     "color": "blue",
+     "note": "about 30,000 °C"
+    }
+   ],
+   "text": "A bolt heats the air around it to roughly thirty thousand degrees Celsius. The surface of the Sun is about fifty-five hundred. But the bolt lasts only a tiny fraction of a second.",
+   "min": 9,
+   "chapter": [
+    "CHAPTER 1",
+    "HOW HOT IS A BOLT?"
+   ],
+   "yt_chapter": "How hot is lightning?",
+   "fact": "A bolt's current flows for only\\Nmicroseconds to a few hundred milliseconds."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:125192",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:92785",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:41713",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "So why do most people survive? The current lasts so briefly, and can flow over the outside of the body rather than through the heart. In the United States, about nine in ten people struck survive, though many have lasting problems.",
+   "lead": 0.3,
+   "label": [
+    "SURVIVAL RATE",
+    "About 9 in 10 survive"
+   ],
+   "tone": "calm"
+  },
+  {
+   "kind": "quiz",
+   "question": "How often does lightning flash somewhere on Earth?",
+   "options": [
+    "Every 4 seconds",
+    "44 times a second",
+    "Once a minute"
+   ],
+   "answer": 1,
+   "min": 6,
+   "text": "Quick guess. How often does lightning flash somewhere on Earth?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "channels/oddly-logical/assets/lightning_map.mp4",
+     "start": 0
+    }
+   ],
+   "text": "About forty-four times every second. Over a billion flashes a year. And the world's lightning capital is Lake Maracaibo, in Venezuela.",
+   "min": 11,
+   "lead": 0.3,
+   "tone": "reveal",
+   "teaser": "CHAPTER 2: FOUR WAYS TO GET HIT"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/69/Catatumbo_Lightning-_Rayo_del_Catatumbo_%2828034999754%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Catatumbo_Lightning-_Rayo_del_Catatumbo_%2828652143125%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Catatumbo_Lightning_-_Rayo_del_Catatumbo.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Catatumbo_Lightning_-_Rayo_del_Catatumbo_%2826524724696%29.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "At Catatumbo, storms rage on most nights of the year. But you do not need a storm like this. One bolt, reaching the ground, finds people in four different ways.",
+   "lead": 0.3,
+   "chapter": [
+    "CHAPTER 2",
+    "FOUR WAYS TO GET HIT"
+   ],
+   "yt_chapter": "How does lightning hit people?",
+   "label": [
+    "CATATUMBO, VENEZUELA",
+    "Lightning capital"
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "FOUR WAYS TO GET HIT",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      100,
+      850
+     ],
+     "to": [
+      1820,
+      850
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      500,
+      850
+     ],
+     "to": [
+      500,
+      520
+     ],
+     "color": "ink",
+     "width": 14
+    },
+    {
+     "type": "circle",
+     "center": [
+      500,
+      470
+     ],
+     "r": 90,
+     "color": "green",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      560,
+      100
+     ],
+     "to": [
+      500,
+      300
+     ],
+     "color": "gold",
+     "width": 12
+    },
+    {
+     "type": "line",
+     "from": [
+      500,
+      300
+     ],
+     "to": [
+      540,
+      380
+     ],
+     "color": "gold",
+     "width": 12
+    },
+    {
+     "type": "text",
+     "text": "TREE",
+     "at": [
+      330,
+      700
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "ink"
+    },
+    {
+     "type": "line",
+     "from": [
+      1400,
+      850
+     ],
+     "to": [
+      1400,
+      740
+     ],
+     "color": "ink",
+     "width": 10
+    },
+    {
+     "type": "circle",
+     "center": [
+      1400,
+      710
+     ],
+     "r": 28,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      640,
+      560
+     ],
+     "to": [
+      1330,
+      720
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "SIDE FLASH",
+     "at": [
+      980,
+      560
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      600,
+      900
+     ],
+     "to": [
+      1300,
+      900
+     ],
+     "color": "orange",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "GROUND CURRENT",
+     "at": [
+      950,
+      970
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "orange"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1400,
+      680
+     ],
+     "to": [
+      1400,
+      300
+     ],
+     "color": "blue",
+     "width": 10
+    },
+    {
+     "type": "text",
+     "text": "UPWARD STREAMER",
+     "at": [
+      1560,
+      400
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "DIRECT STRIKE: lands on you",
+     "at": [
+      1400,
+      180
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "gold"
+    }
+   ],
+   "min": 14,
+   "text": "A direct strike lands right on you. A side flash jumps from a tree or object to a nearby person. An upward streamer rises from you to meet the bolt. And ground current spreads through the earth, which causes a large share of injuries.",
+   "fact": "Ground current is why standing\\Nclose to others is risky.",
+   "teaser": "CHAPTER 3: SEVEN STRIKES"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ranger_Roy_Sullivan%2C_Lightning_Struck_%2851861133692%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/Lightning_in_Slow_Motion_%28Free_to_Use_HD_Stock_Video_Footage%29.webm",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Roy Sullivan did not seek lightning. He worked outdoors, in mountains and forests, for decades. Let's follow his seven strikes.",
+   "lead": 0.3,
+   "chapter": [
+    "CHAPTER 3",
+    "SEVEN STRIKES"
+   ],
+   "yt_chapter": "Roy Sullivan, struck by lightning seven times",
+   "label": [
+    "SHENANDOAH NATIONAL PARK",
+    "Virginia, USA"
+   ],
+   "tone": "warm"
+  },
+  {
+   "kind": "timeline",
+   "heading": "ROY SULLIVAN: 7 STRIKES",
+   "events": [
+    {
+     "year": "1942",
+     "text": "Lost a\ntoenail"
+    },
+    {
+     "year": "1969",
+     "text": "Knocked out,\neyebrows burned"
+    },
+    {
+     "year": "1970",
+     "text": "Shoulder\nburned"
+    },
+    {
+     "year": "1972",
+     "text": "Hair set\non fire"
+    },
+    {
+     "year": "1973",
+     "text": "Hair on fire\nagain"
+    },
+    {
+     "year": "1976",
+     "text": "Ankle\ninjured"
+    },
+    {
+     "year": "1977",
+     "text": "Chest burned\nwhile fishing"
+    }
+   ],
+   "text": "The first, in 1942, cost him a toenail. Later strikes burned his shoulder, singed his eyebrows, and set his hair on fire twice. The seventh, in 1977, hit him while fishing. Seven strikes. Guinness World Records confirmed it.",
+   "min": 18,
+   "label": [
+    "GUINNESS RECORD",
+    "7 strikes, 1942-1977"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/Lightning_Strike_%28video%29.webm",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lightning_strikes_in_slow_motion_%28240fps%29_in_Muurame%2C_Finland.webm",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "If you are still with me, subscribe: more survival science is coming. Now, lightning can leave strange marks too.",
+   "lead": 0.3,
+   "tone": "warm",
+   "teaser": "LIGHTNING'S SIGNATURE"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/55/Lichtenberg_figure_in_block_of_Plexiglas.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lichtenberg_figure_within_a_acrylic_block.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/2017-12-31_Lichtenberg-Figur_01.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Electron_Tree_%28Lichtenberg_figure%29.webm",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Lightning can leave fern-shaped marks on skin, called Lichtenberg figures or lightning flowers. They are temporary. Here is the same branching pattern, burned into acrylic and wood by electricity.",
+   "lead": 0.3,
+   "label": [
+    "LICHTENBERG FIGURES",
+    "Electricity's branching pattern"
+   ],
+   "fact": "On skin, these marks usually fade\\Nin hours to days.",
+   "teaser": "CHAPTER 4: MYTH VS REALITY"
+  },
+  {
+   "kind": "versus",
+   "heading": "MYTH VS REALITY: THE CAR",
+   "left": {
+    "name": "MYTH",
+    "color": "red",
+    "stats": [
+     "Rubber tyres insulate you",
+     "Rubber stops lightning"
+    ]
+   },
+   "right": {
+    "name": "REALITY",
+    "color": "green",
+    "stats": [
+     "The metal shell protects you",
+     "Current flows around the outside",
+     "Keep windows closed"
+    ]
+   },
+   "text": "Myth one: rubber tyres protect you in a car. Reality: it is the metal shell, which carries the current around you, like a Faraday cage.",
+   "min": 9,
+   "chapter": [
+    "CHAPTER 4",
+    "MYTH VS REALITY"
+   ],
+   "yt_chapter": "Lightning myths: tyres, twice, lying flat"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:304866",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Orage_4K_SlowMotion_17072015_%C3%A0_TROYES.webm",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Myth two: lightning never strikes the same place twice. Roy Sullivan knows better. And the Empire State Building is hit roughly twenty to twenty-five times a year.",
+   "lead": 0.3,
+   "label": [
+    "EMPIRE STATE BUILDING",
+    "~20-25 strikes a year"
+   ]
+  },
+  {
+   "kind": "versus",
+   "heading": "MYTH VS REALITY: LYING FLAT",
+   "left": {
+    "name": "MYTH",
+    "color": "red",
+    "stats": [
+     "Lie flat on the ground",
+     "Smaller target"
+    ]
+   },
+   "right": {
+    "name": "REALITY",
+    "color": "green",
+    "stats": [
+     "More ground contact",
+     "More ground current",
+     "Not advised"
+    ]
+   },
+   "text": "Myth three: lie flat on the ground. Reality: that gives ground current more of you to travel through. It is not advised.",
+   "min": 8,
+   "teaser": "CHAPTER 5: CAUGHT OUTSIDE"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:283426",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:107336",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:190331",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "The best plan is simple. When thunder roars, go indoors. See a flash, count the seconds to the thunder. If it is thirty or less, get inside, and wait thirty minutes after the last rumble.",
+   "lead": 0.3,
+   "chapter": [
+    "CHAPTER 5",
+    "IF YOU'RE CAUGHT OUTSIDE"
+   ],
+   "yt_chapter": "What to do in a thunderstorm",
+   "label": [
+    "THE 30-30 RULE",
+    "Count to 30, then wait 30"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:31342",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:199856",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:205011",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "No building? Leave high ground and open fields. Stay away from isolated trees, and get out of water. Crouching on the balls of your feet is only a last resort.",
+   "lead": 0.3,
+   "tone": "urgent",
+   "fact": "No place outside is truly safe\\Nin a thunderstorm."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "WHEN THUNDER ROARS",
+    "GO INDOORS"
+   ],
+   "text": "When thunder roars, go indoors.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lightning_strikes_in_slow_motion_%28240fps%29_in_Muurame%2C_Finland.webm",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/28/Lightning_Strike_%28video%29.webm",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Orage_4K_SlowMotion_17072015_%C3%A0_TROYES.webm",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ranger_Roy_Sullivan%2C_Lightning_Struck_%2851861133692%29.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Roy Sullivan survived seven strikes, but he was lucky, and he spent his life outdoors. You can do better. Stay inside, and lightning is almost never a problem. Subscribe for more Could You Survive stories, and watch the full playlist. Would you have stayed out in the storm?",
+   "lead": 0.3
+  },
+  {
+   "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ranger_Roy_Sullivan%2C_Lightning_Struck_%2851861133692%29.jpg",
+   "move": "out",
+   "min": 4,
+   "title": [
+    "ODDLY LOGICAL",
+    "SCIENCE"
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "STRUCK 7 TIMES",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Could You Survive a Lightning Strike? Struck 7 Times",
+  "description": "Could you survive a lightning strike? About 9 in 10 people struck in the US survive. Meet Roy Sullivan, the park ranger hit seven times between 1942 and 1977, learn how lightning really hurts people, bust the myths about tyres, lying flat and 'never twice', and learn what to do in a thunderstorm.\n\nPart of the 'Could You Survive...?' series.\n\nIn this video:\n- How hot is lightning?\n- Four ways lightning hits people\n- Roy Sullivan: struck seven times\n- Lightning myths vs reality\n- What to do if caught outside\n\nFAQ\nCan you survive a lightning strike? Yes. In the US, roughly 90% of people struck survive, though injuries can be lasting.\nIs a car safe in lightning? Yes, because of its metal shell, not its tyres.\nDoes lightning strike twice? Yes. The Empire State Building is hit about 20 to 25 times a year.\nWhat is the 30-30 rule? If thunder follows a flash within 30 seconds, go indoors, and wait 30 minutes after the last thunder.\n\nSubscribe and watch the whole Could You Survive playlist.\n\nSources: NOAA National Weather Service, NASA, National Park Service, Guinness World Records.",
+  "tags": [
+   "lightning strike",
+   "could you survive a lightning strike",
+   "roy sullivan",
+   "struck by lightning 7 times",
+   "lightning safety",
+   "30-30 rule",
+   "lichtenberg figures",
+   "catatumbo lightning",
+   "empire state building lightning",
+   "lightning myths",
+   "thunderstorm safety",
+   "how hot is lightning",
+   "could you survive"
+  ],
+  "hashtags": [
+   "#lightning",
+   "#science",
+   "#survival"
+  ],
+  "translations": {
+   "fr": "Survivre à la foudre ? Frappé 7 fois",
+   "es": "¿Sobrevivirías a un rayo? Alcanzado 7 veces",
+   "pt": "Você sobreviveria a um raio? Atingido 7 vezes",
+   "de": "Würdest du einen Blitzschlag überleben? 7 Mal getroffen",
+   "hi": "क्या आप आसमानी बिजली से बच सकते हैं? 7 बार बिजली गिरी"
+  }
+ },
+ "shorts": [
+  {
+   "from": 0,
+   "to": 2,
+   "title": "Struck by Lightning 7 Times and Survived"
+  },
+  {
+   "from": 3,
+   "to": 4,
+   "title": "Lightning Is 5x Hotter Than the Sun"
+  },
+  {
+   "from": 15,
+   "to": 19,
+   "title": "3 Lightning Myths Busted"
+  }
+ ]
+}
