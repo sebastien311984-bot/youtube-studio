@@ -1,0 +1,944 @@
+{
+ "title": "Could You Survive a Fall Into Jupiter?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Imagery: NASA/JPL-Caltech/SwRI/MSSS (Juno), NASA (Galileo, Hubble), image processing Kevin M. Gill, Gerald Eichstadt, Sean Doran. Pixabay videos. Facts: NASA, ESA, Galileo Probe Project, Juno mission.",
+ "subscribe_at": 0.12,
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21775/PIA21775~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Galileo_Descent_Module_enters_Jupiter%27s_atmosphere%2C_artwork_%28AC89-0146-1%29.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21974/PIA21974~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA00456/PIA00456~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "This is Jupiter, and you are falling into it. There is no ground waiting below. Nothing to land on. Just a storm wider than our whole planet, and a drop so deep that no machine has ever reached the bottom. Could you survive the fall?",
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "Could you survive a fall into Jupiter?"
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21771/PIA21771~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21770/PIA21770~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/93/Galileo_Descent_Module_descends_through_Jupiter%27s_atmosphere%2C_digital_art_%28ACD95-0126-4%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA14416/PIA14416~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Stay with me, because we will fall minute by minute, using real data. The pictures come from NASA's Juno spacecraft, orbiting Jupiter since twenty sixteen. The numbers come from the only probe that ever flew into that atmosphere, Galileo. Subscribe now, so you do not miss a single step of the fall.",
+   "lead": 0.3,
+   "label": [
+    "FALL INTO JUPITER",
+    "Minute by minute"
+   ],
+   "teaser": "HOW FAST YOU WOULD HIT"
+  },
+  {
+   "kind": "scale",
+   "heading": "HOW BIG IS JUPITER?",
+   "items": [
+    {
+     "label": "EARTH",
+     "size": 1,
+     "color": "blue",
+     "note": "12,700 km wide"
+    },
+    {
+     "label": "JUPITER",
+     "size": 11,
+     "color": "gold",
+     "note": "about 140,000 km wide"
+    }
+   ],
+   "text": "Jupiter is the giant of the solar system. It is about eleven Earths wide, and more than thirteen hundred Earths could fit inside it. Everything you see is only the top of a much deeper ocean of gas.",
+   "min": 10,
+   "chapter": [
+    "CHAPTER 1",
+    "HOW FAST WOULD YOU HIT?"
+   ],
+   "yt_chapter": "How fast would you hit Jupiter?"
+  },
+  {
+   "kind": "quiz",
+   "question": "What is Jupiter mostly made of?",
+   "options": [
+    "Rock and metal",
+    "Hydrogen and helium",
+    "Water ice"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Quick question before we drop. What is Jupiter mostly made of?"
+  },
+  {
+   "kind": "stat",
+   "value": 60,
+   "prefix": "~",
+   "suffix": " KM/S",
+   "caption": "FALLING IN FROM FAR AWAY: JUPITER'S ESCAPE SPEED",
+   "text": "Falling in from far away, you would arrive at about sixty kilometers per second. That is over two hundred thousand kilometers per hour. The Galileo probe came in a bit slower, at about forty-seven. To stop, you need friction. Jupiter's thick atmosphere provides it, but only by turning your speed into fire.",
+   "min": 8,
+   "fact": "Jupiter has the strongest gravity of any\\Nplanet in our solar system."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Galileo_Probe_Entry.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Galileo_Descent_Module_descends_through_Jupiter%27s_atmosphere%2C_artwork_%28ACD95-0126%29.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA02865/PIA02865~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21984/PIA21984~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "At that speed, the air in front of you is squeezed so hard that it glows, at roughly fifteen thousand degrees Celsius, far hotter than the Sun's surface. Galileo's heat shield burned away about half of its mass, and the probe braked at up to roughly two hundred thirty times Earth's gravity.",
+   "lead": 0.3,
+   "tone": "urgent",
+   "teaser": "THE CLOUD TOPS"
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/PIA22946-Jupiter-RedSpot-JunoSpacecraft-20190212.jpg",
+   "at": 0,
+   "heading": "JUNO'S VIEW",
+   "question": "WHAT IS THIS?",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 330,
+     "color": "red",
+     "text": "GREAT RED SPOT"
+    },
+    {
+     "type": "measure",
+     "from": [
+      600,
+      900
+     ],
+     "to": [
+      1320,
+      900
+     ],
+     "color": "gold",
+     "text": "WIDER THAN EARTH"
+    }
+   ],
+   "text": "Now you slow down at the cloud tops. Below you, a storm. This is the Great Red Spot, about sixteen thousand kilometers across. That is wider than our whole planet, and it has been watched for well over a century. Earth could sit inside it with room to spare.",
+   "min": 11,
+   "chapter": [
+    "CHAPTER 2",
+    "WHAT ARE JUPITER'S CLOUDS MADE OF?"
+   ],
+   "yt_chapter": "What are Jupiter's clouds made of?"
+  },
+  {
+   "kind": "diagram",
+   "heading": "JUPITER'S CLOUD DECKS",
+   "elements": [
+    {
+     "type": "text",
+     "text": "TOP OF THE CLOUDS",
+     "at": [
+      600,
+      190
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "ink"
+    },
+    {
+     "type": "line",
+     "from": [
+      200,
+      260
+     ],
+     "to": [
+      1000,
+      260
+     ],
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "AMMONIA ICE, BELOW -100 C",
+     "at": [
+      1040,
+      260
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "line",
+     "from": [
+      200,
+      520
+     ],
+     "to": [
+      1000,
+      520
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "AMMONIUM HYDROSULFIDE",
+     "at": [
+      1040,
+      520
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "line",
+     "from": [
+      200,
+      780
+     ],
+     "to": [
+      1000,
+      780
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "WATER CLOUDS, WARMER",
+     "at": [
+      1040,
+      780
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      120,
+      300
+     ],
+     "to": [
+      120,
+      760
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "DEEPER = HOTTER + MORE PRESSURE",
+     "at": [
+      960,
+      950
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "ink"
+    }
+   ],
+   "text": "The first layer you fall through is made of ammonia ice crystals, at more than a hundred degrees below zero. Deeper, a layer of ammonium hydrosulfide. Deeper still, scientists think, come water clouds, where it is finally warm. With every kilometer, temperature and pressure climb. The very top is the gentlest part of the whole fall, and it only gets worse from here.",
+   "min": 13,
+   "fact": "Ammonium hydrosulfide smells like rotten\\Neggs. Jupiter's clouds would stink."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA24303/PIA24303~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5c/PIA21972_Jupiter_Blues.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01083/PIA01083~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "This is why Juno's pictures are so colorful. The pale bands are high clouds of ammonia ice, and the darker belts are places where gas sinks. Chemistry paints the yellows, browns and reds, though scientists still debate which molecules do it.",
+   "teaser": "WINDS AND LIGHTNING"
+  },
+  {
+   "kind": "stat",
+   "value": 2.5,
+   "decimals": 1,
+   "suffix": "x WEIGHT",
+   "caption": "YOU WOULD WEIGH ABOUT 2.5 TIMES MORE AT THE CLOUD TOPS",
+   "text": "Even before the storms hit, gravity grabs you. At the cloud tops you would weigh about two and a half times more than on Earth. Seventy kilograms would feel like one hundred seventy-five. And sunlight is about twenty-seven times weaker, so the sky is a dim twilight.",
+   "min": 11
+  },
+  {
+   "kind": "versus",
+   "heading": "STORMS: EARTH VS JUPITER",
+   "left": {
+    "name": "EARTH HURRICANE",
+    "color": "blue",
+    "stats": [
+     "Hundreds of km wide",
+     "Winds up to ~300 km/h",
+     "Lasts days to weeks"
+    ]
+   },
+   "right": {
+    "name": "GREAT RED SPOT",
+    "color": "red",
+    "stats": [
+     "About 16,000 km wide",
+     "Edge winds ~430 km/h",
+     "Raging for centuries"
+    ]
+   },
+   "text": "Storms here are on another level. A strong hurricane spans hundreds of kilometers and fades in days. The Great Red Spot is about sixteen thousand kilometers wide, and its edge winds blow at over four hundred kilometers per hour. Jupiter's jet streams reach about five hundred. Nothing on Earth comes close.",
+   "min": 12,
+   "chapter": [
+    "CHAPTER 3",
+    "HOW STRONG ARE JUPITER'S WINDS AND LIGHTNING?"
+   ],
+   "yt_chapter": "How strong are Jupiter's winds and lightning?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:283428",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:31342",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA25020/PIA25020~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA22474/PIA22474~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:id:90048",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01636/PIA01636~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "And then there is lightning. On Earth, a single bolt heats the air to about thirty thousand degrees Celsius, several times hotter than the surface of the Sun. On Jupiter, scientists think the bolts start in deep water clouds, inside storms far bigger than ours, and they are far more powerful. Juno even caught flashes near the poles, which surprised everyone, because on Earth lightning loves the tropics.",
+   "tone": "tense",
+   "fact": "Jupiter's lightning clusters near its poles,\\Nnot at the equator like on Earth."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "THE WIND",
+    "DOES NOT STOP",
+    "AT THE CLOUDS"
+   ],
+   "text": "But the wind does not stop at the clouds.",
+   "min": 4
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/GSFC_20180313_Jupiter_m12878_GreatRedSpot/GSFC_20180313_Jupiter_m12878_GreatRedSpot~orig.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA22176/PIA22176~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:48563",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/video/GSFC_20180313_Jupiter_m12878_GreatRedSpot/GSFC_20180313_Jupiter_m12878_GreatRedSpot~orig.mp4",
+     "start": 8,
+     "move": "right"
+    }
+   ],
+   "text": "Juno's gravity measurements show that Jupiter's jet streams reach about three thousand kilometers down. So the wind would not fade as you fall. It would keep tossing you around, deeper than the Earth's crust is thick, many times over.",
+   "teaser": "A QUICK TEST"
+  },
+  {
+   "kind": "quiz",
+   "question": "How long did Galileo's probe keep transmitting from inside Jupiter?",
+   "options": [
+    "58 seconds",
+    "58 minutes",
+    "58 hours"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Quick test. How long did the Galileo probe keep sending data from inside Jupiter?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/45/Galileo_spacecraft_leaves_the_Orbiter.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Galileo_Jupiter_Atmospheric_Probe_in_a_spacecraft_processing_room_%28AC84-0228-3%29.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01259/PIA01259~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "The answer is about fifty-eight minutes. On December seventh, nineteen ninety-five, the probe was released from its mother spacecraft and hit Jupiter's atmosphere. It is the only probe ever sent to study it from the inside.",
+   "lead": 0.3,
+   "chapter": [
+    "CHAPTER 4",
+    "WHAT DID THE GALILEO PROBE FIND?"
+   ],
+   "yt_chapter": "What did the Galileo probe find inside Jupiter?",
+   "tone": "reveal"
+  },
+  {
+   "kind": "timeline",
+   "heading": "GALILEO'S HOUR",
+   "events": [
+    {
+     "year": "ENTRY",
+     "text": "~47 km/s,\nshield blazing"
+    },
+    {
+     "year": "MINUTES",
+     "text": "Shield dropped,\nparachute opens"
+    },
+    {
+     "year": "~1 HOUR",
+     "text": "Signal lost at\n22 bar, ~150 C"
+    }
+   ],
+   "text": "At first, a blazing entry. Within minutes, the heat shield was released and a parachute opened. For nearly an hour it drifted down, sending temperature, pressure and wind. The last readings came from about one hundred fifty kilometers below the cloud tops, at twenty-two times Earth's surface pressure and about one hundred fifty degrees Celsius. One hour, from the top of the clouds to the limit of a machine built to survive.",
+   "min": 16,
+   "teaser": "WHAT IT FOUND"
+  },
+  {
+   "kind": "stat",
+   "value": 500,
+   "prefix": ">",
+   "suffix": " KM/H",
+   "caption": "GALILEO: WINDS DID NOT FADE AS IT FELL",
+   "text": "Galileo's data were full of surprises. The winds did not fade with depth. They stayed above five hundred kilometers per hour. It also found less water than predicted, because it fell into an unusually dry patch. That forced scientists to rethink some ideas about how Jupiter formed.",
+   "min": 9,
+   "fact": "The dry spot was a clear gap in the clouds,\\Ncalled a hot spot."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA13920/PIA13920~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA13905/PIA13905~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA13921/PIA13921~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA25014/PIA25014~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Today, Juno takes over. Its cameras show the clouds. Its microwave instrument looks hundreds of kilometers deeper, and its gravity data reveal layers far below. So beyond Galileo's last reading, we rely on models built from real measurements.",
+   "teaser": "BELOW THE CLOUDS"
+  },
+  {
+   "kind": "diagram",
+   "heading": "INSIDE JUPITER (NOT TO SCALE)",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      680,
+      560
+     ],
+     "r": 420,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      680,
+      560
+     ],
+     "r": 330,
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      680,
+      560
+     ],
+     "r": 190,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "circle",
+     "c": [
+      680,
+      560
+     ],
+     "r": 60,
+     "color": "gold",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "GAS",
+     "at": [
+      1200,
+      200
+     ],
+     "anchor": "lm",
+     "size": 44,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "LIQUID HYDROGEN",
+     "at": [
+      1200,
+      360
+     ],
+     "anchor": "lm",
+     "size": 44,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "METALLIC HYDROGEN",
+     "at": [
+      1200,
+      520
+     ],
+     "anchor": "lm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "CORE: FUZZY, MAYBE DILUTE",
+     "at": [
+      1200,
+      680
+     ],
+     "anchor": "lm",
+     "size": 38,
+     "color": "gold"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      680,
+      110
+     ],
+     "to": [
+      680,
+      250
+     ],
+     "color": "orange",
+     "width": 8
+    }
+   ],
+   "text": "Thousands of kilometers down, hydrogen stops being a gas. Pressure turns it into a liquid, and deeper still, at around a million times Earth's air pressure, scientists think it becomes a liquid metal. There is no solid surface anywhere along the way.",
+   "min": 14,
+   "chapter": [
+    "CHAPTER 5",
+    "IS THERE A SURFACE ON JUPITER?"
+   ],
+   "yt_chapter": "Is there a surface on Jupiter?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01257/PIA01257~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA03155/PIA03155~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "That swirling metal is the likely source of Jupiter's magnetic field, the strongest of any planet. It traps charged particles and sends them crashing into the poles, lighting up auroras bigger than Earth itself.",
+   "fact": "Volcanic gas from Io helps feed the auroras,\\Nvia Jupiter's magnetic field.",
+   "teaser": "HOW HOT?"
+  },
+  {
+   "kind": "stat",
+   "value": 20000,
+   "prefix": "~",
+   "suffix": " C",
+   "caption": "ESTIMATED TEMPERATURE NEAR JUPITER'S CORE",
+   "text": "Near the center, scientists estimate temperatures around twenty thousand degrees Celsius. That is several times hotter than the surface of the Sun.",
+   "min": 7
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://cdn.pixabay.com/video/2020/08/30/48563-455410032_large.mp4",
+     "start": 25,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA25062/PIA25062~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21033/PIA21033~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "So where would you land? Nowhere. There is no line where gas ends and ocean begins. The air just gets thicker, hotter and darker, until falling feels like sinking in a dense, glowing fog. Long before the center, your story would be over.",
+   "tone": "calm"
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE FALL, STEP BY STEP",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      400,
+      160
+     ],
+     "to": [
+      400,
+      900
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      400,
+      760
+     ],
+     "to": [
+      400,
+      900
+     ],
+     "color": "red",
+     "width": 10
+    },
+    {
+     "type": "circle",
+     "c": [
+      400,
+      230
+     ],
+     "r": 26,
+     "color": "blue",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "CLOUD TOPS: -110 C, 1 BAR",
+     "at": [
+      500,
+      230
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "circle",
+     "c": [
+      400,
+      470
+     ],
+     "r": 26,
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "GALILEO'S END: ~150 KM, 22 BAR, ~150 C",
+     "at": [
+      500,
+      470
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "circle",
+     "c": [
+      400,
+      690
+     ],
+     "r": 26,
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "THOUSANDS OF KM: LIQUID HYDROGEN",
+     "at": [
+      500,
+      690
+     ],
+     "anchor": "lm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "EVERY STEP: HOTTER, DENSER, DARKER",
+     "at": [
+      1300,
+      960
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "ink"
+    }
+   ],
+   "text": "Put the whole fall together. At the cloud tops, it is cold and the pressure matches the air at the surface of Earth. Over a hundred kilometers down, Galileo measured about one hundred fifty degrees and twenty-two times that pressure. Far below, hydrogen becomes liquid. Every step is hotter, denser and darker.",
+   "min": 14
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO SURFACE",
+    "NO ESCAPE"
+   ],
+   "text": "No surface to stand on. No way back up.",
+   "min": 4
+  },
+  {
+   "kind": "scale",
+   "heading": "PRESSURE: THE REAL KILLER",
+   "items": [
+    {
+     "label": "EARTH SURFACE",
+     "size": 1,
+     "color": "blue",
+     "note": "1 bar"
+    },
+    {
+     "label": "GALILEO'S LAST READING",
+     "size": 3,
+     "color": "orange",
+     "note": "22 bar, like ~200 m under the sea"
+    },
+    {
+     "label": "METALLIC HYDROGEN",
+     "size": 9,
+     "color": "red",
+     "note": "around a million bar"
+    }
+   ],
+   "text": "So, could you survive? Pressure alone says no. Galileo's last reading, twenty-two bar, equals roughly two hundred meters under the sea, and that was a shallow part of Jupiter. A human body would be crushed long before the metal layer. And that is only the start of the ladder.",
+   "min": 12,
+   "chapter": [
+    "CHAPTER 6",
+    "COULD YOU SURVIVE THE FALL?"
+   ],
+   "yt_chapter": "Could you survive a fall into Jupiter?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Comet_Shoemaker-Levy_9_Impact_Site_on_Jupiter.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Comet_Shoemaker-Levy_9_Impact_Sites_on_Jupiter_%281994-44-210%29.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/09/Comet_Shoemaker-Levy_9_Impact_Sites_on_Jupiter_%281994-44-213%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Shoemaker-Levy_9_impact_zone_%28opo9428b%29.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Jupiter has swallowed things before. In July nineteen ninety-four, fragments of comet Shoemaker-Levy 9 slammed into it. Hubble watched dark scars the size of Earth bloom in the clouds, and they lasted for months.",
+   "tone": "reveal",
+   "fact": "It was the first time astronomers watched two\\Nsolar system bodies collide."
+  },
+  {
+   "kind": "versus",
+   "heading": "COULD YOU SURVIVE?",
+   "left": {
+    "name": "YOU",
+    "color": "red",
+    "stats": [
+     "Burned entering at ~60 km/s",
+     "Crushed by pressure",
+     "No surface to land on"
+    ]
+   },
+   "right": {
+    "name": "GALILEO PROBE",
+    "color": "gold",
+    "stats": [
+     "A shield built to burn",
+     "Lasted ~58 minutes",
+     "Still lost to heat and pressure"
+    ]
+   },
+   "text": "The answer is no. You would not survive the entry, the pressure, or the heat. Galileo, built for exactly this, lasted about an hour. Jupiter is not a place to land on. It is a place to study from a distance. Maybe one day a robot will go deeper. But no human could follow.",
+   "min": 12
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://images-assets.nasa.gov/image/PIA00658/PIA00658~large.jpg",
+   "text": "What world should we fall into next? Tell me in the comments, and subscribe to Oddly Logical Science for more extreme science, one step at a time."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "FALL INTO JUPITER",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Could You Survive a Fall Into Jupiter?",
+  "description": "Could you survive a fall into Jupiter? We fall through the giant planet minute by minute, using real data from NASA's Galileo probe and Juno spacecraft: ammonia clouds, 500 km/h winds, giant lightning, and an ocean of liquid metal.\n\nIn this video:\n- How fast would you hit Jupiter?\n- What are Jupiter's clouds made of?\n- How strong are Jupiter's winds and lightning?\n- What did the Galileo probe find?\n- Is there a surface on Jupiter?\n- Could you survive the fall?\n\nFAQ\nDoes Jupiter have a surface? No solid surface is known. Gas gets denser and becomes liquid.\nHow long did Galileo last? About 58 minutes, down to about 22 bar.\nHow big is the Great Red Spot? About 16,000 km wide, wider than Earth.\n\nWhat world should we fall into next? Tell me in the comments.\n\nSources: NASA Galileo Probe mission, NASA Juno mission, ESA.",
+  "tags": [
+   "jupiter",
+   "fall into jupiter",
+   "could you survive jupiter",
+   "galileo probe",
+   "juno",
+   "great red spot",
+   "jupiter storms",
+   "jupiter lightning",
+   "metallic hydrogen",
+   "inside jupiter",
+   "jupiter atmosphere",
+   "nasa jupiter",
+   "what is inside jupiter"
+  ],
+  "hashtags": [
+   "#jupiter",
+   "#science",
+   "#NASA"
+  ]
+ },
+ "shorts": [
+  {
+   "from": 5,
+   "to": 6,
+   "title": "FALLING AT\n60 KM/S"
+  },
+  {
+   "from": 16,
+   "to": 17,
+   "title": "THE PROBE THAT\nLASTED 58 MIN"
+  },
+  {
+   "from": 20,
+   "to": 22,
+   "title": "AN OCEAN OF\nLIQUID METAL"
+  }
+ ]
+}
