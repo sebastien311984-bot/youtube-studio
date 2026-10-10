@@ -3,6 +3,7 @@ détecte les quasi-doublons (hash perceptuel, même photo recadrée/autre format
 import json, os, sys, subprocess, urllib.parse
 from PIL import Image, ImageDraw
 import imagehash
+sys.path.insert(0, os.path.dirname(__file__)); import render
 ep = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
 items = []
 for i, s in enumerate(ep["scenes"]):
@@ -17,7 +18,7 @@ for n, (i, u) in enumerate(items):
     else:
         f = u
     try:
-        if not u.split("?")[0].lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")):
+        if not f.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")):
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "2", "-i", f, "-frames:v", "1", f + ".png"]); f = f + ".png"
         im = Image.open(f).convert("RGB"); im.thumbnail((320, 180))
     except Exception:
