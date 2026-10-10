@@ -94,3 +94,9 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - Une animation DIFFÉRENTE selon ce qu'on explique (pas toujours flèches/schémas) : carte zoom, coupe, vue profil/dessus, échelle, avant/après, éclaté, scénarios côte à côte, ralenti en 3 temps, mesure sur l'image, chronologie sur carte, question puis révélation.
 - Intégrées aux images réelles : on fige un plan réel, on repère l'élément dessus (kind `annotate`), puis on passe au schéma.
 - Kinds dispo : `annotate` (image, marks circle/box/arrow/measure/label{at,text}, question, heading, at) et `beforeafter` (before, after, label_before/after).
+
+## Autonomie totale (2026-10-10)
+- Claude = chef de projet de A à Z (histoire, visuels, animations, son, sous-titres, titres, miniature, Shorts). Ne PAS demander de validation intermédiaire : livrer seulement la version finale, contrôlée.
+- Équipe : oddly-footage (visuels d'abord) → oddly-scriptwriter (histoire) → oddly-factchecker + contrôle qualité indépendant (planches, répétitions, chevauchements, miniature) → UN seul rendu.
+- Standard « meilleures chaînes » : accroche 0-5 s avec l'image la plus forte, boucle ouverte, tension croissante, une animation explicative différente à chaque concept, changement visuel toutes les 4-6 s, sound design, miniature visage/objet + 3 mots.
+- Objectif délai : ~1 h entre le sujet choisi et le pack prêt pour YouTube.
