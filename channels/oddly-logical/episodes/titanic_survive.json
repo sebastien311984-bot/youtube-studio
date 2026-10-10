@@ -19,11 +19,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/7/73/Titanic_Iceberg_1912.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "11:40 p.m., April 14th, 1912. An iceberg is about to open the side of the Titanic. In under three hours, more than fifteen hundred people will be dead. Could you survive? One decision, in the first twenty minutes, matters more than strength or money. Stay to the end, and I will show you which.",
@@ -851,30 +846,15 @@
    "fact": "Cork lifebelts kept people afloat, so most\\Ndied of cold, not drowning."
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/Scheepvaart%2C_scheepsrampen%2C_SFA022806871.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Titanic_survivors_on_way_to_rescue_ship_Carpathia.png",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/82/Titanic_sinking_Wikivoyage_feature_banner.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sinking_of_the_Titanic.jpg",
-     "start": 0,
-     "move": "right"
-    }
-   ],
    "text": "Some survivors found a way to stay dry. Collapsible B floated upside down, and around thirty men climbed onto its hull and stood, balancing for hours as waves washed over. Every slip risked the water. They stayed out of it, and were taken off at dawn.",
-   "tone": "tense"
+   "tone": "tense",
+   "kind": "kinetic",
+   "words": [
+    "COLLAPSIBLE B",
+    "UPSIDE DOWN",
+    "30 MEN",
+    "STANDING FOR HOURS"
+   ]
   },
   {
    "shots": [
@@ -887,11 +867,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Thayer-Sketch-of-Titanic.png",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Titanic_survivors_on_way_to_rescue_ship_Carpathia_LCCN93510852.jpg",
-     "start": 0,
-     "move": "left"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Lord_Mersey_with_son_Captain_Bigham_at_the_British_Titanic_inquiry.jpg",
@@ -1122,11 +1097,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/USCG_sailors_don_cold_water_survival_suits_during_Operation_Nanook_2012%2C_120810-G-NB914-076.JPG",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Titanic_Southampton_sailing_day.jpg",
-     "start": 0,
-     "move": "out"
     }
    ],
    "text": "That was the decision. The first one, in the first twenty minutes. Strength, swimming skill and even money counted less than speed and a seat, although your ticket and sex also shaped the odds. The world took the lesson. Since 1914, ships must carry seats for everyone and keep their radios on all night. Which deck would you have walked to? Tell me in the comments, and subscribe for more science of survival.",
