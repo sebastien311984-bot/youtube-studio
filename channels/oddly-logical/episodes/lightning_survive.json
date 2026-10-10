@@ -6,19 +6,19 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lightning_strikes_in_slow_motion_%28240fps%29_in_Muurame%2C_Finland.webm",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Orage_4K_SlowMotion_17072015_%C3%A0_TROYES.webm",
      "start": 0,
-     "move": "in"
+     "move": "left"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/Lightning_in_Slow_Motion_%28Free_to_Use_HD_Stock_Video_Footage%29.webm",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Catatumbo_Lightning-_Rayo_del_Catatumbo_%2828652143125%29.jpg",
      "start": 0,
      "move": "out"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Orage_4K_SlowMotion_17072015_%C3%A0_TROYES.webm",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lightning_strikes_in_slow_motion_%28240fps%29_in_Muurame%2C_Finland.webm",
      "start": 0,
-     "move": "left"
+     "move": "in"
     }
    ],
    "text": "This is a lightning bolt, slowed down. It is about five times hotter than the surface of the Sun. And one man was struck by lightning seven times, and lived. How is that possible?",
@@ -93,11 +93,6 @@
      "clip": "pixabay:id:92785",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "pixabay:id:41713",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "So why do most people survive? The current lasts so briefly, and can flow over the outside of the body rather than through the heart. In the United States, about nine in ten people struck survive, though many have lasting problems.",
