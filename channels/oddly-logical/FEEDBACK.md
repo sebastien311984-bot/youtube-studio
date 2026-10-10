@@ -94,3 +94,10 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - Une animation DIFFÉRENTE selon ce qu'on explique (pas toujours flèches/schémas) : carte zoom, coupe, vue profil/dessus, échelle, avant/après, éclaté, scénarios côte à côte, ralenti en 3 temps, mesure sur l'image, chronologie sur carte, question puis révélation.
 - Intégrées aux images réelles : on fige un plan réel, on repère l'élément dessus (kind `annotate`), puis on passe au schéma.
 - Kinds dispo : `annotate` (image, marks circle/box/arrow/measure/label{at,text}, question, heading, at) et `beforeafter` (before, after, label_before/after).
+
+## PROCESSUS v2 (obligatoire, 2026-10-10) — une passe, zéro doublon, minimum de tokens
+1. **Stock d'abord** (workflow scout, 0 token) : 150+ visuels — archives libres (Commons, LoC, NASA, NOAA…) + Pixabay/Pexels vidéos (ambiance, textures, b-roll) triés par tags. Planche contact générée.
+2. **Tri visuel unique** : Claude lit la planche UNE fois, élimine flous/logos/hors sujet/quasi-doublons (même photo recadrée, même série consécutive, .jpg/.tif). Liste blanche = seule source autorisée.
+3. **Script sur la liste blanche** (agent sonnet) : structure accroche (images les plus fortes + animation) → générique 3 s → histoire à boucle ouverte → écran de fin 20 s. Une animation différente par concept (annotate, beforeafter, carte, coupe, échelle, chronologie, versus, quiz, kinetic). Jamais deux types identiques consécutifs. ≤ 6 s par photo ; s'il manque des images : b-roll vidéo Pixabay ou animation, jamais une photo répétée.
+4. **Pré-contrôle avant rendu** : check_episode (photo max 1, noms normalisés) + planche des images DANS L'ORDRE du montage (3 min) → relue à l'œil.
+5. **UN seul rendu**, puis contrôle des planches finales, puis pack Chrome. Pas de livraison intermédiaire à l'utilisateur.
