@@ -355,3 +355,33 @@ def beforeafter(out, d, src_before, src_after, label_before="BEFORE", label_afte
         if p > 0.15: tw = dr.textlength(label_after, font=f); dr.text((W - tw - 60, H - 120), label_after, font=f, fill=(255, 210, 90), stroke_width=4, stroke_fill=(0, 0, 0))
         return im
     _render(out, d, fr)
+
+
+# ---------------------------------------------------------------- écran de fin (20 s, zones pour les éléments YouTube)
+def outro(out, d, src=None, line1="COULD YOU SURVIVE?", line2="WATCH NEXT"):
+    """Fond : dernière image floutée + logo ; cadre vidéo à gauche et cercle « S'abonner » à droite
+    (positions alignées sur le modèle d'écran de fin YouTube « 1 vidéo + abonnement »)."""
+    if src:
+        base = _still(src).filter(ImageFilter.GaussianBlur(22))
+        base = Image.eval(base, lambda v: int(v * 0.35))
+    else:
+        base = None
+    box = (150, 300, 150 + 900, 300 + 506)            # vidéo suggérée (16:9)
+    cx, cy, r = 1500, 553, 190                         # bouton S'abonner (cercle)
+    def fr(t):
+        im = base.copy() if base else _bg(t)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        a = ease(t / 0.8); A = int(255 * a)
+        dr.text((W / 2, 120), "ODDLY LOGICAL SCIENCE", font=font("Black", 64), fill=(255, 255, 255, A), anchor="mm")
+        dr.text((W / 2, 190), line1, font=font("SemiBold", 34), fill=(255, 200, 64, A), anchor="mm")
+        p = ease((t - 0.4) / 0.9)
+        x0, y0, x1, y1 = box; g = 6 + 4 * math.sin(t * 3)
+        dr.rounded_rectangle((x0, y0, x0 + (x1 - x0) * p, y1), radius=18, outline=(255, 200, 64, A), width=6)
+        dr.text(((x0 + x1) / 2, y1 + 50), line2, font=font("Bold", 40), fill=(255, 255, 255, A), anchor="mm")
+        rr = r * ease((t - 0.7) / 0.6) + g * 0.5
+        dr.ellipse((cx - rr, cy - rr, cx + rr, cy + rr), outline=(255, 60, 60, A), width=8)
+        dr.text((cx, cy + r + 50), "SUBSCRIBE", font=font("Bold", 40), fill=(255, 255, 255, A), anchor="mm")
+        im = Image.alpha_composite(Image.alpha_composite(im.convert("RGBA"), lay.filter(ImageFilter.GaussianBlur(10))), lay)
+        fade = min(1, (d - t) / 0.6)
+        return Image.eval(im.convert("RGB"), lambda v: int(v * max(0, fade)))
+    _render(out, d, fr)

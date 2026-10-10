@@ -101,3 +101,4 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - Standard « meilleures chaînes » : accroche 0-5 s avec l'image la plus forte, boucle ouverte, tension croissante, une animation explicative différente à chaque concept, changement visuel toutes les 4-6 s, sound design, miniature visage/objet + 3 mots.
 - Objectif délai : ~1 h entre le sujet choisi et le pack prêt pour YouTube.
 - 2026-10-10 : JAMAIS une photo répétée, même dans une scène. Le moteur n'auto-répète plus les photos (seules les vidéos, à un autre instant). Si une scène manque d'images : ajouter des images ou raccourcir le texte.
+- 2026-10-10 : structure obligatoire = accroche (images les plus fortes, dont une animation) → générique de marque 3 s (kind intro) → histoire → écran de fin 20 s (kind outro : logo + cadre vidéo + cercle abonnement, voix qui invite à commenter/s'abonner). Jamais d'ouverture sur des portraits répétitifs.
