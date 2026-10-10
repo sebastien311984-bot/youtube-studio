@@ -9,6 +9,12 @@ def get(url, tries=4):
         except Exception as e:
             err = e; time.sleep(2 + 3 * k)
     print("FAIL", url[:120], err); return None
+def fetch(u):
+    for k in range(4):
+        try:
+            time.sleep(0.25); return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read()
+        except Exception: time.sleep(2 + 3 * k)
+    raise RuntimeError(u)
 API = "https://commons.wikimedia.org/w/api.php?"
 def info(titles):
     out = []
@@ -43,11 +49,18 @@ def main():
             k = c.get("title") or c["url"]
             if k in seen: continue
             seen.add(k); c["query"] = q; allc.append(c)
+    def crawl(cat, depth, cap):
+        t = members(cat, "file", cap); subs = members(cat, "subcat", 40) if depth else []
+        print(cat, len(t), "files", len(subs), "subcats", flush=True)
+        for sc in subs: t += crawl(sc, depth - 1, 25)
+        return t
+    disc = []
+    for w in ["Titanic", "Carpathia", "Titanic wreck", "Titanic survivors", "Titanic lifeboats", "Mackay-Bennett"]:
+        r = get(API + urllib.parse.urlencode({"action": "query", "format": "json", "list": "search", "srsearch": w, "srnamespace": 14, "srlimit": 15}))
+        disc += [x["title"] for x in (r or {}).get("query", {}).get("search", [])]
+    print("DISCOVERED", sorted(set(disc)), flush=True)
     for cat in CATS:
-        titles = members(cat); subs = members(cat, "subcat", 12)
-        print(cat, len(titles), "files", len(subs), "subcats")
-        for s in subs[:8]: titles += members(s, "file", 12)
-        add(info(titles), cat)
+        add(info(crawl(cat, 2, 80)), cat)
     for q in SEARCH:
         add(info(search(q)), "search:" + q); time.sleep(1)
     # Library of Congress
@@ -60,6 +73,7 @@ def main():
             th = im.get("thumb") or u
             if th.startswith("//"): th = "https:" + th
             add([{"src": "loc", "url": u, "thumb": th, "type": "BITMAP", "licence": "LoC (verify rights)", "author": str(it.get("creator", ""))[:80], "page": it.get("links", {}).get("item", ""), "title": it.get("title", "")[:90]}], "loc:" + q)
+    allc = [c for c in allc if c.get("type") in ("BITMAP", "VIDEO", "DRAWING") and (c.get("w") or 800) >= 600 and "No restriction" not in c["licence"] or c.get("src") != "commons"]
     for k, c in enumerate(allc): c["n"] = k
     json.dump(allc, open("scout_titanic/candidates.json", "w"), indent=1, ensure_ascii=False)
     from PIL import Image, ImageDraw
@@ -70,7 +84,7 @@ def main():
         for j, c in enumerate(chunk):
             x, y = (j % C) * W, (j // C) * H
             try:
-                im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(c["thumb"], headers=UA), timeout=30).read())).convert("RGB")
+                im = Image.open(io.BytesIO(fetch(c["thumb"]))).convert("RGB")
                 im.thumbnail((W - 4, H - 16)); sheet.paste(im, (x + 2, y + 2))
             except Exception: pass
             dr.text((x + 3, y + H - 13), f"#{c['n']} {c['type'] or ''} {c['licence'][:14]}", fill="yellow")
