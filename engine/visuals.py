@@ -67,7 +67,7 @@ def _path(el):
         (x1, y1), (x2, y2) = el["from"], el["to"]; n = 60
         return [(x1 + (x2 - x1) * k / n, y1 + (y2 - y1) * k / n) for k in range(n + 1)]
     if t in ("circle", "arc"):
-        (cx, cy), r = el["c"], el["r"]; a0, a1 = el.get("a0", 0), el.get("a1", 360); n = 120
+        (cx, cy), r = el.get("c") or el["center"], el["r"]; a0, a1 = el.get("a0", 0), el.get("a1", 360); n = 120
         return [(cx + r * math.cos(math.radians(a0 + (a1 - a0) * k / n)), cy - r * math.sin(math.radians(a0 + (a1 - a0) * k / n))) for k in range(n + 1)]
     if t == "curve":  # Bézier quadratique : [p0, p1, p2]
         (x0, y0), (x1, y1), (x2, y2) = el["pts"]; n = 80
