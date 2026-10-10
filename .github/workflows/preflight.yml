@@ -16,7 +16,9 @@ jobs:
       - run: python3 engine/preflight.py "${{ github.event.inputs.episode }}" preflight
       - name: Résultats sur une branche
         run: |
-          rm -f preflight/[0-9]*
+          find preflight -type f ! -name 'preflight*' -delete
+          echo "::notice::$(head -c 900 preflight/preflight.txt | tr '\n' ' ')"
           git config user.name preflight-bot; git config user.email preflight-bot@users.noreply.github.com
-          git checkout -q --orphan "preflight/${{ github.run_id }}"; git rm -rq --cached . ; git add -f preflight; git commit -qm "preflight ${{ github.run_id }}"
-          git push -q origin "HEAD:refs/heads/preflight/${{ github.run_id }}"
+          git checkout -q --orphan "preflight/${{ github.run_id }}" 2>err.txt || echo "::error::checkout $(cat err.txt)"
+          git rm -rq --cached . ; git add -f preflight; git commit -qm "preflight ${{ github.run_id }}" 2>err.txt || echo "::error::commit $(cat err.txt)"
+          git push -q origin "HEAD:refs/heads/preflight/${{ github.run_id }}" 2>err.txt || { echo "::error::push $(cat err.txt)"; exit 1; }
