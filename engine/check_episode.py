@@ -26,6 +26,10 @@ for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être t
         if u.startswith("http") and "wikimedia.org" not in u and "usgs.gov" not in u:  # bloqués depuis Claude, vérifiés au rendu
             try: urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "OddlyLogicalStudio/1.0"}), timeout=20)
             except Exception as e: errs.append(f"scène {i} : URL inaccessible ({e}) {u[-60:]}")
+for i, s in enumerate(ep["scenes"]):
+    for el in (s.get("elements") or []):
+        if el.get("type") == "drops" and not (isinstance(el.get("at"), list) and el["at"] and isinstance(el["at"][0], list)):
+            errs.append(f"scène {i} : schéma — drops.at doit être une liste de points [[x,y],...]")
 from collections import Counter
 _uses = Counter(sh.get("clip") for sc in ep["scenes"] for sh in (sc.get("shots") or ([sc] if sc.get("clip") else [])) if sh.get("clip"))
 for c, n in _uses.items():
