@@ -27,10 +27,6 @@
    "yt_chapter": "Could you survive a lightning strike?"
   },
   {
-   "kind": "intro",
-   "min": 4
-  },
-  {
    "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ranger_Roy_Sullivan%2C_Lightning_Struck_%2851861133692%29.jpg",
@@ -679,17 +675,17 @@
  "shorts": [
   {
    "from": 0,
-   "to": 2,
+   "to": 1,
    "title": "Struck by Lightning 7 Times and Survived"
   },
   {
-   "from": 3,
-   "to": 4,
+   "from": 2,
+   "to": 3,
    "title": "Lightning Is 5x Hotter Than the Sun"
   },
   {
-   "from": 15,
-   "to": 19,
+   "from": 14,
+   "to": 18,
    "title": "3 Lightning Myths Busted"
   }
  ]
