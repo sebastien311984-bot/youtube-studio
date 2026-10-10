@@ -286,3 +286,72 @@ def rank(out, d, number, title, sub=""):
         if sub: dr.text((W * 0.52 + xo, H / 2 + 50), sub, font=font("SemiBold", 40), fill=PAL["gold"] + (int(255 * q),), anchor="lm")
         return _glow(im, layer, 20)
     _render(out, d, fr)
+
+# ---------------------------------------------------------------- image réelle figée + explication dessinée dessus
+def _still(src, at=0.0):
+    """Image fixe 1920x1080 depuis une photo ou une vidéo (image extraite à `at` s)."""
+    if src.lower().rsplit(".", 1)[-1] in ("mp4", "webm", "ogv", "mov", "mkv", "m4v"):
+        png = src + f".still{at:.1f}.png"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(at), "-i", src, "-frames:v", "1", png], check=True); src = png
+    im = Image.open(src).convert("RGB"); r = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
+    return im.crop(((im.width - W) // 2, (im.height - H) // 2, (im.width - W) // 2 + W, (im.height - H) // 2 + H))
+
+def annotate(out, d, src, marks, question=None, heading=None, at=0.0):
+    """On fige un plan réel, on pose (option) une question, puis les repères se dessinent un à un :
+    circle {c:[x,y], r}, box {box:[x0,y0,x1,y1]}, arrow {from, to}, measure {from, to} (trait coté), label {at:[x,y]}.
+    Chaque repère : text (court), color (gold, red, blue, green, white). Coordonnées sur 1920x1080."""
+    base = _still(src, at); q0 = 2.2 if question else 0.4
+    step = max(0.9, (d - q0 - 1.0) / max(1, len(marks)))
+    def fr(t):
+        z = 1 + 0.06 * smooth(t / d); w, h = int(W / z), int(H / z)
+        im = base.crop(((W - w) // 2, (H - h) // 2, (W - w) // 2 + w, (H - h) // 2 + h)).resize((W, H), Image.BICUBIC)
+        dim = 0.55 * smooth((t - q0 + 0.6) / 0.6) if marks else 0
+        im = Image.blend(im, Image.new("RGB", (W, H), (0, 0, 0)), min(0.45, dim))
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        def P(x, y): return (W / 2 + (x - W / 2) * z, H / 2 + (y - H / 2) * z)
+        for k, m in enumerate(marks):
+            p = smooth((t - q0 - k * step) / 0.7)
+            if p <= 0: continue
+            col = _col(m.get("color", "gold")); a = int(255 * min(1, p * 1.4)); typ = m.get("type", "circle"); lab = None
+            if typ == "circle":
+                (x, y), r = P(*m["c"]), m.get("r", 80) * z
+                dr.arc((x - r, y - r, x + r, y + r), -90, -90 + 360 * p, fill=col + (a,), width=7); lab = (x + r + 18, y - 20)
+            elif typ == "box":
+                x0, y0 = P(*m["box"][:2]); x1, y1 = P(*m["box"][2:])
+                dr.rectangle((x0, y0, x0 + (x1 - x0) * p, y0 + (y1 - y0) * p), outline=col + (a,), width=6); lab = (x0, y1 + 14)
+            elif typ in ("arrow", "measure"):
+                (x0, y0), (x1, y1) = P(*m["from"]), P(*m["to"]); xe, ye = x0 + (x1 - x0) * p, y0 + (y1 - y0) * p
+                dr.line((x0, y0, xe, ye), fill=col + (a,), width=7)
+                ang = math.atan2(ye - y0, xe - x0)
+                if typ == "arrow" and p > 0.95:
+                    for s_ in (2.6, -2.6): dr.line((xe, ye, xe + 34 * math.cos(ang + s_), ye + 34 * math.sin(ang + s_)), fill=col + (a,), width=7)
+                if typ == "measure":
+                    for (cx, cy) in ((x0, y0), (xe, ye)):
+                        nx, ny = -math.sin(ang) * 22, math.cos(ang) * 22; dr.line((cx - nx, cy - ny, cx + nx, cy + ny), fill=col + (a,), width=6)
+                lab = ((x0 + xe) / 2 + 22, (y0 + ye) / 2 - 22)
+            elif typ == "label":
+                lab = P(*m["at"])
+            if m.get("text") and lab and p > 0.5:
+                f = font("Bold", 40); tw = dr.textlength(m["text"], font=f); x, y = lab; x = min(x, W - tw - 50)
+                dr.rounded_rectangle((x - 16, y - 10, x + tw + 16, y + 56), 12, fill=(12, 14, 22, int(a * 0.85)), outline=col + (a,), width=3)
+                dr.text((x, y), m["text"], font=f, fill=(255, 255, 255, a))
+        if question and t < q0 + 1.2:
+            a = int(255 * min(smooth(t / 0.4), smooth((q0 + 1.2 - t) / 0.5))); f = font("Black", 64)
+            tw = dr.textlength(question, font=f); dr.text(((W - tw) / 2, H - 200), question, font=f, fill=(255, 255, 255, a), stroke_width=4, stroke_fill=(0, 0, 0, a))
+        if heading:
+            f = font("Bold", 34); dr.text((70, 60), heading.upper(), font=f, fill=(255, 210, 90, 230), stroke_width=2, stroke_fill=(0, 0, 0, 200))
+        return _glow(im, lay, 10)
+    _render(out, d, fr)
+
+# ---------------------------------------------------------------- avant / après avec volet animé
+def beforeafter(out, d, src_before, src_after, label_before="BEFORE", label_after="AFTER", at_before=0.0, at_after=0.0):
+    A, B = _still(src_before, at_before), _still(src_after, at_after)
+    def fr(t):
+        p = smooth((t - 1.2) / max(1.0, d * 0.45)); x = int(W * (1 - p))
+        im = A.copy(); im.paste(B.crop((x, 0, W, H)), (x, 0)); dr = ImageDraw.Draw(im); f = font("Black", 48)
+        if 0 < x < W: dr.line((x, 0, x, H), fill=(255, 255, 255), width=6)
+        dr.text((60, H - 120), label_before, font=f, fill=(255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0))
+        if p > 0.15: tw = dr.textlength(label_after, font=f); dr.text((W - tw - 60, H - 120), label_after, font=f, fill=(255, 210, 90), stroke_width=4, stroke_fill=(0, 0, 0))
+        return im
+    _render(out, d, fr)
