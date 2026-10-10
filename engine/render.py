@@ -194,11 +194,11 @@ def make_shorts(ep, out, bounds):
     for k, sp in enumerate(specs, 1):
         a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
         if b - a < 30: b = min(bounds[-1] - 2, a + 45)  # un Short doit durer au moins 30 s
-        tf = out[:-4] + f"_short{k}.txt"; open(tf, "w").write(sp["title"].upper())
+        tf = out[:-4] + f"_short{k}.txt"; import textwrap; open(tf, "w").write("\n".join(textwrap.wrap(sp["title"].upper(), 18)))  # 9:16 : titre sur plusieurs lignes, jamais coupé
         vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:6,eq=brightness=-0.15[bg];"
               f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2,"
-              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:textfile={tf}:fontsize=64:fontcolor=white:"
-              f"borderw=6:bordercolor=black:x=(w-tw)/2:y=360,"
+              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:textfile={tf}:fontsize=62:line_spacing=14:fontcolor=white:"
+              f"borderw=6:bordercolor=black:x=(w-tw)/2:y=300,"
               f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560,"
               f"fade=t=out:st={b - a - 0.6:.2f}:d=0.6")
         sh("ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", out, "-filter_complex", vf, "-c:v", "libx264", "-preset", "medium",
