@@ -1,0 +1,23 @@
+name: Scout Titanic
+on:
+  workflow_dispatch:
+    inputs:
+      pix:
+        description: "Requêtes pixabay séparées par |"
+        required: false
+permissions:
+  contents: write
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow
+      - env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python3 channels/oddly-logical/titanic/scout_titanic.py
+      - name: Résultats sur une branche
+        run: |
+          git config user.name scout-bot; git config user.email scout-bot@users.noreply.github.com
+          git checkout -q --orphan "scout/titanic-${{ github.run_id }}"; git rm -rq --cached . ; git add -f scout_titanic; git commit -qm "scout titanic"
+          git push -q origin "HEAD:refs/heads/scout/titanic-${{ github.run_id }}"
