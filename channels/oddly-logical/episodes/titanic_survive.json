@@ -1,7 +1,7 @@
 {
  "title": "Could You Survive the Titanic?",
  "voice": "en-US-AndrewMultilingualNeural",
- "credits": "Footage: public-domain historical photographs and illustrations from Wikimedia Commons (1912 press and agency photographs, Library of Congress / Bain collection, Willy Stöwer painting, Jack Thayer sketch, Nationaal Archief), NOAA / Institute for Exploration / University of Rhode Island (Titanic wreck, 1986 expedition imagery, public domain), U.S. Air Force, U.S. Coast Guard and DVIDS (modern cold-water survival training, public domain). Facts: British Wreck Commissioner's inquiry and US Senate inquiry (1912), Encyclopedia Titanica, NOAA, Giesbrecht cold-water 1-10-1 rule (University of Manitoba), SOLAS 1914.",
+ "credits": "Footage: public-domain historical photographs and illustrations from Wikimedia Commons (1912 press and agency photographs, Library of Congress / Bain collection, Willy Stöwer painting, Jack Thayer sketch, Nationaal Archief), NOAA / Institute for Exploration / University of Rhode Island (Titanic wreck, 2004 expedition imagery, public domain), U.S. Air Force, U.S. Coast Guard and DVIDS (modern cold-water survival training, public domain). Facts: British Wreck Commissioner's inquiry and US Senate inquiry (1912), Encyclopedia Titanica, NOAA, Giesbrecht cold-water 1-10-1 rule (University of Manitoba), SOLAS 1914.",
  "scenes": [
   {
    "shots": [
@@ -81,29 +81,14 @@
    "fact": "Icebergs float with about nine tenths of\\Ntheir mass below the surface."
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Titanic_earlier_Southampton.png",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Titanic_leaving_44_port_place_in_Southampton.png",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Titanic_leaving_port_Southampton.png",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/23/Titanic_new_york_oceanic.png",
-     "start": 0,
-     "move": "right"
-    }
-   ],
-   "text": "That day, Titanic had received several ice warnings by wireless. She kept her speed, about twenty-two knots, in a calm, dark sea. In those days, captains trusted that a lookout would see ice in time. The lookouts had no binoculars to hand. It was a gamble, and it lost."
+   "text": "That day, Titanic had received several ice warnings by wireless. She kept her speed, about twenty-two knots, in a calm, dark sea. In those days, captains trusted that a lookout would see ice in time. The lookouts had no binoculars to hand. It was a gamble, and it lost.",
+   "kind": "kinetic",
+   "words": [
+    "ICE WARNINGS",
+    "22 KNOTS",
+    "DARK, CALM SEA",
+    "NO BINOCULARS"
+   ]
   },
   {
    "shots": [
@@ -116,11 +101,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Arrol_Gantry_with_Liners_Olympic_%26_Titanic_in_Construction.jpg",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/81/Titanic_departing_Southampton.png",
-     "start": 0,
-     "move": "left"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Southampton_Titanic_dock_number_44.jpg",
@@ -549,11 +529,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Scheepvaart%2C_scheepsrampen%2C_SFA022010267.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Scheepvaart%2C_scheepsrampen%2C_SFA022010268.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "At 12:05, Captain Smith orders the lifeboats uncovered. Wireless calls go out, the old signal CQD and the newer SOS. Rockets climb into the night sky. Here is your first test. Most people on board did not believe it. The ship felt solid, the night was freezing, and a lifeboat looked like a worse place to be.",
@@ -713,19 +688,14 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sinking_of_the_Titanic.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Titanic%27s_sinking_stern.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Thayer-Sketch-of-Titanic.png",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/82/Titanic_sinking_Wikivoyage_feature_banner.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/57/Scheepvaart%2C_scheepsrampen%2C_SFA022806871.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "At 2:05, the last boat leaves. The bow dips under, and the crowd moves toward the stern, which rises high out of the water. The lights flicker out. Many survivors reported that the ship broke in two before she went down. At 2:20, the Titanic is gone, with about fifteen hundred people still aboard or in the sea.",
@@ -781,11 +751,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/7/72/Survival_training_DVIDS1099588.jpg",
      "start": 0,
      "move": "right"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/76/Survival_training_DVIDS1099589.jpg",
-     "start": 0,
-     "move": "in"
     }
    ],
    "text": "In the first minute comes cold shock. You gasp uncontrollably, and your heart races. Your only job is not to inhale water. In ten minutes, your arms and legs weaken, and swimming becomes impossible. In about an hour, you reach hypothermia. In water this cold, many people lost consciousness even sooner.",
@@ -864,11 +829,6 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Thayer-Sketch-of-Titanic.png",
-     "start": 0,
-     "move": "out"
-    },
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Lord_Mersey_with_son_Captain_Bigham_at_the_British_Titanic_inquiry.jpg",
      "start": 0,
      "move": "right"
@@ -896,11 +856,6 @@
      "move": "out"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/68/The_SS_Californian_en_route_to_America.jpg",
-     "start": 0,
-     "move": "left"
-    },
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c4/A_photograph_of_the_CALIFORNIAN_which_may_have_been_taken_from_the_deck_of_the_CARPATHIA._The_CALIFORNIAN_joined_the..._-_NARA_-_278339.jpg",
      "start": 0,
      "move": "right"
@@ -909,11 +864,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/4/48/SS_Mount_Temple_in_London.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Ss_mount_temple.jpg",
-     "start": 0,
-     "move": "out"
     }
    ],
    "text": "And what about the ship that was close? The Californian had stopped for the night in the ice, somewhere between ten and twenty miles away, depending on which inquiry you believe. Her crew reportedly saw rockets, but her wireless operator had gone to bed. She did not move until morning. Another ship, the Mount Temple, turned toward the call, but ice stopped her miles away.",
@@ -959,16 +909,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Carpathia_Deck.jpg",
      "start": 0,
      "move": "right"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Carpathia_at_Cunard_Pier_54_1912.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Carpathia-54_%282%29.jpg",
-     "start": 0,
-     "move": "out"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/d/da/Capt._Rostron_%26_under_officers_of_CARPATHIA_%28ship%29_LCCN2014690409.jpg",
@@ -1079,12 +1019,7 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Titanic_leaving_Southampton.png",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Titanic_coming_out_Southampton.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/70/Titanic_lifeboats_on_boat_deck_plan.jpg",
      "start": 0,
      "move": "left"
     },
