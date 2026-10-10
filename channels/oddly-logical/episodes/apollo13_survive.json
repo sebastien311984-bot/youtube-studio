@@ -1,0 +1,1079 @@
+{
+ "title": "Could You Survive Apollo 13?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: NASA (public domain), including NASA JSC, KSC, MSFC, JPL and GSFC archive photos and film of Apollo 13, plus Apollo 8, 11 and 17 archive views of the Moon and Earth; Wikimedia Commons: 'Apollo 13 Houston, We've Got a Problem' (National Archives and Records Administration, public domain), 'Apollo 13 Mailbox at Mission Control' (NASA, public domain). Facts: NASA Apollo 13 mission reports and the Cortright Review Board report. Motion graphics: Oddly Logical Science.",
+ "subscribe_at": 0.651,
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Fifty-five hours, fifty-four minutes into the flight, an oxygen tank explodes more than three hundred thousand kilometers from Earth. You have three astronauts, a crippled ship, and not enough air. The fix that saves them is built from a plastic bag, cardboard and duct tape. And the most dangerous moment is still to come.",
+   "lead": 0.3,
+   "tone": "urgent",
+   "label": [
+    "APOLLO 13",
+    "Mission Control, 13 April 1970"
+   ],
+   "yt_chapter": "Could you survive Apollo 13? The explosion"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664~orig.mp4",
+     "start": 5,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-38747/S70-38747~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Rewind two days. April eleventh, nineteen seventy. Apollo 13 rises on a Saturn V, bound for the Moon. Commander Jim Lovell, on his fourth spaceflight. Fred Haise, who will pilot the lunar module. And Jack Swigert, who joined the crew only days before launch. Their goal: the Fra Mauro highlands. They will never land there.",
+   "lead": 0.3,
+   "tone": "calm",
+   "fact": "SWIGERT REPLACED KEN MATTINGLY\\NDAYS BEFORE THE LAUNCH"
+  },
+  {
+   "kind": "timeline",
+   "heading": "YOUR CLOCK: MISSION TIME",
+   "events": [
+    {
+     "year": "T+55h54m",
+     "text": "EXPLOSION"
+    },
+    {
+     "year": "T+79h",
+     "text": "AROUND\nTHE MOON"
+    },
+    {
+     "year": "T+100h",
+     "text": "CO2\nCRISIS"
+    },
+    {
+     "year": "T+138h",
+     "text": "JETTISON"
+    },
+    {
+     "year": "T+142h54m",
+     "text": "SPLASHDOWN"
+    }
+   ],
+   "text": "This is your clock. Everything happens in mission time, hours since liftoff. The explosion at fifty-five hours. The Moon at seventy-nine. The air crisis near one hundred. Then jettison, re-entry, and splashdown at one hundred forty-two hours, fifty-four minutes. Eighty-seven hours to survive. Start the clock.",
+   "min": 14,
+   "teaser": "T+55h54m: THE BANG"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/23/Apollo_13_Houston%2C_We%27ve_Got_a_Problem.ogv",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Mission Control asks Jack Swigert to stir the oxygen tanks. A routine switch. A few seconds later, a bang, and the whole ship shudders. Swigert says, Okay, Houston, we've had a problem here. Lovell repeats it, and the words become famous: Houston, we've had a problem.",
+   "lead": 0.3,
+   "tone": "tense",
+   "chapter": [
+    "T+55h 54m",
+    "THE BANG"
+   ],
+   "yt_chapter": "What happened at T+55h54m? The oxygen tank explosion"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "At first, the flight controllers think their instruments are wrong. Then Lovell looks out of the window and sees it: the ship is venting something into space. Pressure in the oxygen tanks is dropping fast.",
+   "lead": 0.3,
+   "tone": "tense"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO OXYGEN",
+    "NO POWER",
+    "NO WATER",
+    "NO LIGHT"
+   ],
+   "text": "Oxygen is not only for breathing. It also fed the fuel cells that made the ship's electricity, and its drinking water.",
+   "min": 5,
+   "tone": "urgent"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "One tank is gone, and the other is losing pressure. Within hours, the command module will be dead. Flight controllers in Houston have one option left: use the lunar module as a lifeboat.",
+   "lead": 0.3,
+   "tone": "tense",
+   "teaser": "T+57h: THE LIFEBOAT"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "BUILT FOR 2 MEN",
+    "FOR 2 DAYS",
+    "NOW: 3 MEN",
+    "FOR 4 DAYS"
+   ],
+   "text": "The lunar module, named Aquarius, was built to land two men and keep them alive for about two days. Now it must carry three men for around four.",
+   "min": 8,
+   "chapter": [
+    "T+57h",
+    "THE LIFEBOAT"
+   ],
+   "yt_chapter": "How did the lunar module become a lifeboat? T+57h",
+   "fact": "COMMAND MODULE: ODYSSEY. LUNAR MODULE:\\NAQUARIUS. BOTH NAMED BY THE CREW"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34627/S70-34627~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "About five hours after the explosion, Lovell fires the lunar module's descent engine, a rocket built to land on the Moon. Now it works as a tug, steering the whole stack onto a path that will carry it back toward Earth.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "To save power and water, they switch off almost everything. Heaters. Lights. Even the guidance computer. The crew moves into a spacecraft the size of a small closet, and waits.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34851/S70-34851~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Cold becomes the second enemy. With the heaters off, water condenses on the walls and drips from the ceiling. The men wear whatever they have, and sleep is almost impossible. Haise, sick and feverish, shivers through it.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "kind": "scale",
+   "heading": "THE DAILY WATER RATION",
+   "items": [
+    {
+     "label": "~2,000 ML",
+     "size": 4,
+     "color": "blue",
+     "note": "a typical day of drinking"
+    },
+    {
+     "label": "~200 ML",
+     "size": 1,
+     "color": "red",
+     "note": "rationed on Apollo 13"
+    }
+   ],
+   "text": "Water is rationed to roughly a fifth of a liter per person each day, a fraction of what a body needs. Fred Haise develops a fever and a kidney infection. And the cabin cools to just a few degrees above freezing.",
+   "min": 13,
+   "teaser": "T+79h: AROUND THE MOON"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Why not just turn around? A direct return means firing the main engine, and nobody knows what the explosion did to it. Too risky. The safer plan is the long way: around the Moon, and home.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "clip": "channels/oddly-logical/assets/apollo13_path.mp4",
+   "start": 0,
+   "text": "The main engine is too risky to trust. So the crew uses the Moon's gravity: a free-return path that swings around the far side and falls back toward Earth. Then a burn with the lunar module engine, about two hours after the Moon pass, brings them home faster.",
+   "min": 14,
+   "lead": 0.3,
+   "chapter": [
+    "T+79h",
+    "AROUND THE MOON"
+   ],
+   "yt_chapter": "What is a free-return trajectory? T+79h around the Moon"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-60-8635/as13-60-8635~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001939/GSFC_20171208_Archive_e001939~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA15515/PIA15515~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/as11-44-6549/as11-44-6549~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Below them, the far side of the Moon slides past. For long minutes there is no radio contact at all. Lovell and Haise trained to land here. Instead, they watch the surface go by, and Earth rise over the horizon.",
+   "lead": 0.3,
+   "tone": "calm",
+   "label": [
+    "ARCHIVE VIEWS",
+    "Moon and Earthrise from other Apollo missions"
+   ],
+   "fact": "THE FAR SIDE BLOCKS RADIO: NO DIRECT\\NLINK TO EARTH DURING THE PASS"
+  },
+  {
+   "kind": "stat",
+   "value": 400171,
+   "suffix": " km",
+   "caption": "DISTANCE RECORD FROM EARTH, SET IN 1970",
+   "text": "Soon after, they reach about four hundred thousand, one hundred seventy-one kilometers from Earth. A distance record that stood for more than half a century.",
+   "min": 6,
+   "teaser": "T+100h: THE AIR RUNS OUT"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "POWER",
+    "WATER",
+    "COLD",
+    "AIR"
+   ],
+   "text": "Power, water, cold. The crew has survived three problems. The fourth one is invisible.",
+   "min": 5,
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Heading home, a quiet killer appears. Every breath adds carbon dioxide. The lunar module's filters were made for two men for two days. Now three men have breathed far longer, and the gas climbs toward dangerous levels.",
+   "lead": 0.3,
+   "tone": "tense",
+   "chapter": [
+    "T+100h",
+    "THE AIR RUNS OUT"
+   ],
+   "yt_chapter": "How did Apollo 13 fix its CO2 problem? T+100h"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Why is carbon dioxide so dangerous? Build up in a sealed cabin, and it brings headaches, confusion, and eventually blackouts. Normally, canisters of lithium hydroxide absorb it. But the crew is running out of working filters.",
+   "lead": 0.3,
+   "tone": "tense"
+  },
+  {
+   "kind": "quiz",
+   "question": "Spare filters are on board. Why can't the crew use them?",
+   "options": [
+    "They are empty",
+    "Square plug, round socket",
+    "They are frozen"
+   ],
+   "answer": 1,
+   "min": 6,
+   "text": "Quick test. The command module has plenty of spare filters. Why can't the crew just use them?"
+  },
+  {
+   "kind": "versus",
+   "heading": "THE MISMATCH",
+   "left": {
+    "name": "COMMAND MODULE FILTERS",
+    "color": "blue",
+    "stats": [
+     "Square canisters",
+     "Plenty of spares"
+    ]
+   },
+   "right": {
+    "name": "LUNAR MODULE SOCKET",
+    "color": "red",
+    "stats": [
+     "Round fitting",
+     "Nearly full"
+    ]
+   },
+   "text": "The command module filters are square. The lunar module sockets are round. Plenty of air filters, and no way to connect them.",
+   "min": 9
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35148/s70-35148~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Meanwhile in Houston, teams of engineers work around the clock. They test every idea on the ground first, with the same parts the crew has on board, because there will be no second chance.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Apollo_13_Mailbox_at_Mission_Control.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "On the ground, engineers get one rule: use only what the crew has on board. They build an adapter from a plastic bag, the cover of a flight manual, a spacesuit hose and duct tape, and read the steps over the radio. The crew calls it the mailbox.",
+   "lead": 0.3,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Lovell and Swigert build it, fit it, and wait. And the carbon dioxide level begins to fall. It works.",
+   "lead": 0.3,
+   "tone": "reveal"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "COULD YOU",
+    "SURVIVE?",
+    "SUBSCRIBE"
+   ],
+   "text": "If you love stories like this, subscribe. Could You Survive is a series, and every episode puts you inside an impossible situation.",
+   "min": 6,
+   "teaser": "T+105h: STEERING BY EARTH"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-15501/S70-15501~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "But the ship has drifted slightly off course. Aim a little wrong and it will skip off the atmosphere, or burn up. The entry corridor is narrow, only a few degrees wide. The computer is off, and debris around the ship makes the stars hard to use.",
+   "lead": 0.3,
+   "tone": "tense",
+   "chapter": [
+    "T+105h",
+    "STEERING BY EARTH"
+   ],
+   "yt_chapter": "How did Apollo 13 steer without a computer? T+105h"
+  },
+  {
+   "kind": "diagram",
+   "heading": "STEERING BY THE DAY-NIGHT LINE",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      700,
+      560
+     ],
+     "r": 260,
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      700,
+      300
+     ],
+     "to": [
+      700,
+      820
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "DAY",
+     "at": [
+      880,
+      560
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "gold"
+    },
+    {
+     "type": "text",
+     "text": "NIGHT",
+     "at": [
+      520,
+      560
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "THE TERMINATOR",
+     "at": [
+      700,
+      250
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1250,
+      300
+     ],
+     "to": [
+      1000,
+      420
+     ],
+     "color": "gold",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "SUN",
+     "at": [
+      1300,
+      270
+     ],
+     "anchor": "lm",
+     "size": 44,
+     "color": "gold"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1350,
+      720
+     ],
+     "r": 38,
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1300,
+      720
+     ],
+     "to": [
+      980,
+      640
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "APOLLO 13",
+     "at": [
+      1350,
+      800
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "KEEP THE LINE STEADY IN THE WINDOW",
+     "at": [
+      1100,
+      950
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "orange"
+    }
+   ],
+   "text": "The answer is Earth itself. Hold the line between day and night, the terminator, steady in the window, and the ship points the right way. Then a burn of roughly fourteen seconds, done by hand.",
+   "min": 14,
+   "teaser": "T+138h: WHAT THEY FOUND"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "There is one more problem. The command module has been shut down for days, and it must wake up for re-entry. Nobody has ever restarted it like this. So a team in Houston writes a brand-new procedure, tests it, and reads it to the crew.",
+   "lead": 0.3,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-59-8500/as13-59-8500~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-59-8501/as13-59-8501~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/AS13-59-8562/AS13-59-8562~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Hours before re-entry, they cut away the service module. And for the first time, the crew sees what the explosion did. A whole side panel is gone, and equipment hangs out into space.",
+   "lead": 0.3,
+   "tone": "reveal",
+   "chapter": [
+    "T+138h",
+    "WHAT THE EXPLOSION DID"
+   ],
+   "yt_chapter": "What did the explosion do to Apollo 13? T+138h jettison",
+   "fact": "CAUSE: DAMAGED WIRE INSULATION\\NINSIDE OXYGEN TANK 2"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-62224/S69-62224~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-36485/S70-36485~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Then they release Aquarius, the lifeboat that kept them alive. The command module, with three exhausted men, is alone. Its heat shield has to work, and nobody can check.",
+   "lead": 0.3,
+   "tone": "tense",
+   "teaser": "T+142h: THE SILENCE"
+  },
+  {
+   "kind": "scale",
+   "heading": "THE HEAT OUTSIDE",
+   "items": [
+    {
+     "label": "~1,000 C",
+     "size": 1,
+     "color": "orange",
+     "note": "molten lava"
+    },
+    {
+     "label": "~2,800 C",
+     "size": 2.6,
+     "color": "red",
+     "note": "heat shield surface, re-entry"
+    }
+   ],
+   "text": "During re-entry, the surface of the heat shield reaches nearly three thousand degrees Celsius, far hotter than lava. If it fails, there is no second chance.",
+   "min": 10
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35471/S70-35471~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35148/s70-35148~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35368/s70-35368~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35369/S70-35369~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-34904/S70-34904~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Re-entry. The capsule hits the atmosphere at about eleven kilometers per second. The heat blocks all radio, and Mission Control expects about three minutes of silence. Three minutes pass. Then four. Houston keeps calling. Nothing.",
+   "lead": 0.3,
+   "tone": "tense",
+   "chapter": [
+    "T+142h",
+    "THE SILENCE"
+   ],
+   "yt_chapter": "What is re-entry blackout? T+142h",
+   "fact": "THE BLACKOUT RAN ABOUT A MINUTE AND A\\NHALF LONGER THAN PLANNED"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35638/S70-35638~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/s70-35652/s70-35652~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-27919/S69-27919~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35651/S70-35651~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Then, finally, a voice. Swigert: Okay, Joe. Parachutes open. At one hundred forty-two hours, fifty-four minutes, Apollo 13 splashes down in the South Pacific, near Samoa, within reach of the recovery ship, USS Iwo Jima.",
+   "lead": 0.3,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35614/S70-35614~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35606/S70-35606~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-15530/S70-15530~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35632/S70-35632~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35622/S70-35622~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "All three astronauts are alive. They step onto the deck of the Iwo Jima, tired, thin and cold, eighty-seven hours after the bang. The mission is often called a successful failure.",
+   "lead": 0.3,
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
+     "start": 20,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35638/S70-35638~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-27919/S69-27919~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35632/S70-35632~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Helicopters and recovery swimmers move in. The capsule floats upright in the Pacific, and the hatch opens. Within minutes, the men who nearly never made it home are being lifted out of the water.",
+   "lead": 0.3,
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35625/S70-35625~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-15501/S70-15501~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Remember the fix? A plastic bag, cardboard, a hose and duct tape, built by two tired men with instructions from the ground. And the most dangerous moment turned out to be that long silence, when nobody could do anything but wait.",
+   "lead": 0.3,
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/S69-60662/S69-60662~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-35614/S70-35614~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "So, could you survive Apollo 13? Not alone. It took three trained astronauts, and thousands of people on the ground, solving one problem at a time. More Could You Survive episodes are waiting in the playlist. See you there.",
+   "lead": 0.3,
+   "tone": "warm"
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "87 HOURS TO LIVE",
+  "sub": "",
+  "shift": 0.2,
+  "circle": true
+ },
+ "youtube": {
+  "title": "Could You Survive Apollo 13? 87 Hours to Splashdown",
+  "description": "Could you survive Apollo 13? In April 1970 an oxygen tank exploded 55 hours into the flight, and three astronauts had 87 hours to get home with a crippled ship, little power, little water and rising carbon dioxide. Follow the mission clock, hour by hour, from the explosion to the splashdown.\n\nIn this video:\n- What happened at T+55h54m? The oxygen tank explosion\n- How did the lunar module become a lifeboat? T+57h\n- What is a free-return trajectory? T+79h around the Moon\n- How did Apollo 13 fix its CO2 problem? T+100h\n- How did Apollo 13 steer without a computer? T+105h\n- What did the explosion do to Apollo 13? T+138h\n- What is re-entry blackout? T+142h\n\nFAQ\nWhat caused the Apollo 13 explosion? Oxygen tank 2 in the service module failed after damaged wire insulation sparked inside it (NASA Cortright report).\nWhat was the mailbox? A CO2 filter adapter built on board from a plastic bag, cardboard, a spacesuit hose and duct tape, to fit square command module canisters to round lunar module sockets.\nHow far from Earth did Apollo 13 get? About 400,171 km, a distance record set in 1970.\nWhen did Apollo 13 splash down? 17 April 1970, near Samoa, recovered by USS Iwo Jima.\n\nThis is part of the Could You Survive series. Subscribe and tell me in the comments: which situation should we survive next?\n\nSources: NASA Apollo 13 mission reports, NASA History Office, NASA Johnson Space Center, Cortright Review Board report (1970).",
+  "tags": [
+   "apollo 13",
+   "could you survive apollo 13",
+   "apollo 13 explained",
+   "apollo 13 true story",
+   "houston we have a problem",
+   "apollo 13 mailbox",
+   "apollo 13 co2",
+   "apollo 13 survival",
+   "jim lovell",
+   "jack swigert",
+   "fred haise",
+   "aquarius lunar module",
+   "free return trajectory",
+   "apollo 13 re-entry",
+   "apollo 13 splashdown",
+   "nasa apollo",
+   "could you survive",
+   "space survival"
+  ],
+  "hashtags": [
+   "#Apollo13",
+   "#NASA",
+   "#CouldYouSurvive"
+  ],
+  "translations": {
+   "fr": "Pourriez-vous survivre à Apollo 13 ? 87 heures pour rentrer",
+   "es": "¿Podrías sobrevivir al Apolo 13? 87 horas para volver",
+   "pt": "Você sobreviveria à Apollo 13? 87 horas para voltar",
+   "de": "Würdest du Apollo 13 überleben? 87 Stunden bis nach Hause",
+   "hi": "क्या आप अपोलो 13 में बच पाते? घर लौटने के 87 घंटे"
+  }
+ },
+ "shorts": [
+  {
+   "from": 3,
+   "to": 5,
+   "title": "Houston, We Have a Problem"
+  },
+  {
+   "from": 19,
+   "to": 22,
+   "title": "Square Filter, Round Hole"
+  },
+  {
+   "from": 31,
+   "to": 33,
+   "title": "The Silence After Re-entry"
+  }
+ ]
+}
