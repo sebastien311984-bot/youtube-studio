@@ -20,11 +20,6 @@
      "clip": "https://images-assets.nasa.gov/image/S70-35013/S70-35013~large.jpg",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-35012/S70-35012~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Fifty-five hours, fifty-four minutes into the flight, an oxygen tank explodes more than three hundred thousand kilometers from Earth. You have three astronauts, a crippled ship, and not enough air. The fix that saves them is built from a plastic bag, cardboard and duct tape. And the most dangerous moment is still to come.",
@@ -105,11 +100,6 @@
   },
   {
    "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/23/Apollo_13_Houston%2C_We%27ve_Got_a_Problem.ogv",
-     "start": 0,
-     "move": "in"
-    },
     {
      "clip": "https://images-assets.nasa.gov/image/S70-34902/S70-34902~large.jpg",
      "start": 0,
@@ -206,11 +196,6 @@
    ],
    "text": "The lunar module, named Aquarius, was built to land two men and keep them alive for about two days. Now it must carry three men for around four.",
    "min": 8,
-   "chapter": [
-    "T+57h",
-    "THE LIFEBOAT"
-   ],
-   "yt_chapter": "How did the lunar module become a lifeboat? T+57h",
    "fact": "COMMAND MODULE: ODYSSEY. LUNAR MODULE:\\NAQUARIUS. BOTH NAMED BY THE CREW"
   },
   {
@@ -242,7 +227,12 @@
     "ARCHIVE",
     "A lunar module like Aquarius"
    ],
-   "tone": "calm"
+   "tone": "calm",
+   "chapter": [
+    "T+57h",
+    "THE LIFEBOAT"
+   ],
+   "yt_chapter": "How did the lunar module become a lifeboat? T+57h"
   },
   {
    "shots": [
@@ -511,6 +501,16 @@
      "clip": "https://images-assets.nasa.gov/image/S70-35145/S70-35145~large.jpg",
      "start": 0,
      "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S70-41984/S70-41984~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
+     "start": 0,
+     "move": "right"
     }
    ],
    "text": "Meanwhile in Houston, teams of engineers work around the clock. They test every idea on the ground first, with the same parts the crew has on board, because there will be no second chance.",
@@ -518,26 +518,50 @@
    "tone": "calm"
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Apollo_13_Mailbox_at_Mission_Control.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/as13-62-8929/as13-62-8929~large.jpg",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/S70-41984/S70-41984~large.jpg",
-     "start": 0,
-     "move": "left"
-    }
-   ],
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Apollo_13_Mailbox_at_Mission_Control.jpg",
    "text": "On the ground, engineers get one rule: use only what the crew has on board. They build an adapter from a plastic bag, the cover of a flight manual, a spacesuit hose and duct tape, and read the steps over the radio. The crew calls it the mailbox.",
-   "lead": 0.3,
-   "tone": "reveal"
+   "tone": "reveal",
+   "heading": "THE MAILBOX",
+   "question": "Square filter. Round hole. Now what?",
+   "marks": [
+    {
+     "type": "box",
+     "box": [
+      990,
+      340,
+      1130,
+      470
+     ]
+    },
+    {
+     "type": "label",
+     "at": [
+      1010,
+      280
+     ],
+     "text": "BAG + MANUAL COVER"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1450,
+      960
+     ],
+     "to": [
+      1300,
+      740
+     ]
+    },
+    {
+     "type": "label",
+     "at": [
+      1380,
+      980
+     ],
+     "text": "SPACESUIT HOSE"
+    }
+   ]
   },
   {
    "shots": [
@@ -767,11 +791,6 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/as13-59-8501/as13-59-8501~large.jpg",
-     "start": 0,
-     "move": "out"
-    },
-    {
      "clip": "https://images-assets.nasa.gov/image/AS13-59-8562/AS13-59-8562~large.jpg",
      "start": 0,
      "move": "left"
@@ -782,7 +801,7 @@
      "move": "right"
     }
    ],
-   "text": "Hours before re-entry, they cut away the service module. And for the first time, the crew sees what the explosion did. A whole side panel is gone, and equipment hangs out into space.",
+   "text": "Hours before re-entry, they cut away the service module. And for the first time, the crew sees what the explosion did.",
    "lead": 0.3,
    "tone": "reveal",
    "chapter": [
@@ -791,6 +810,43 @@
    ],
    "yt_chapter": "What did the explosion do to Apollo 13? T+138h jettison",
    "fact": "CAUSE: DAMAGED WIRE INSULATION\\NINSIDE OXYGEN TANK 2"
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/as13-59-8500/as13-59-8500~large.jpg",
+   "text": "A whole side panel is gone, and equipment hangs out into space.",
+   "tone": "reveal",
+   "heading": "SERVICE MODULE",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      1120,
+      700
+     ],
+     "r": 230
+    },
+    {
+     "type": "label",
+     "at": [
+      1380,
+      470
+     ],
+     "text": "PANEL BLOWN OFF"
+    },
+    {
+     "type": "measure",
+     "from": [
+      880,
+      960
+     ],
+     "to": [
+      1360,
+      960
+     ],
+     "label": "≈ 4 m"
+    }
+   ]
   },
   {
    "shots": [
@@ -1007,7 +1063,7 @@
   "scene": 28,
   "text": "87 HOURS TO LIVE",
   "sub": "",
-  "shift": 0.2,
+  "shift": 0.05,
   "circle": false
  },
  "youtube": {
