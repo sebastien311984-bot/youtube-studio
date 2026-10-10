@@ -1,0 +1,70 @@
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA21775~large.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA21974~large.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA00456~large.jpg
+Scène 0 préparée (footage, 15 s)
+Scène 1 préparée (intro, 3 s)
+Scène 2 : 4 photo(s) pour 22 s → plans allongés, AUCUNE photo répétée
+Scène 2 préparée (footage, 22 s)
+Scène 3 préparée (scale, 15 s)
+Scène 4 préparée (quiz, 7 s)
+Scène 5 préparée (stat, 23 s)
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA02865~large.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA21984~large.jpg
+Scène 6 préparée (footage, 19 s)
+Scène 7 préparée (annotate, 18 s)
+Scène 8 préparée (diagram, 27 s)
+Scène 9 : 3 photo(s) pour 18 s → plans allongés, AUCUNE photo répétée
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA24303~large.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA01083~large.jpg
+Scène 9 préparée (footage, 18 s)
+Scène 10 préparée (stat, 20 s)
+Scène 11 préparée (versus, 22 s)
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA25020~large.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA01636~large.jpg
+Scène 12 préparée (footage, 26 s)
+Scène 13 préparée (kinetic, 4 s)
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA22176~large.jpg
+Scène 14 préparée (footage, 17 s)
+Scène 15 préparée (quiz, 7 s)
+Scène 16 : 3 photo(s) pour 18 s → plans allongés, AUCUNE photo répétée
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA01259~large.jpg
+Scène 16 préparée (footage, 18 s)
+Scène 17 préparée (timeline, 30 s)
+Scène 18 préparée (stat, 23 s)
+Scène 19 préparée (footage, 18 s)
+Scène 20 préparée (diagram, 19 s)
+Scène 21 : 3 photo(s) pour 16 s → plans allongés, AUCUNE photo répétée
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA03155~large.jpg
+Scène 21 préparée (footage, 16 s)
+Scène 22 préparée (stat, 12 s)
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA21033~large.jpg
+Scène 23 préparée (footage, 20 s)
+Scène 24 préparée (diagram, 23 s)
+Scène 25 préparée (kinetic, 4 s)
+Scène 26 préparée (scale, 20 s)
+Scène 27 préparée (footage, 17 s)
+Scène 28 préparée (versus, 20 s)
+curl: (22) The requested URL returned error: 403
+Téléchargement abandonné (0 s) → plan retiré : PIA00658~large.jpg
+Scène 29 préparée (outro, 20 s)
+[mjpeg @ 0x55fd7ebef180] mjpeg: error decoding EXIF data
+[mjpeg @ 0x55fd7ebefb80] mjpeg: error decoding EXIF data
+    Last message repeated 477 times
+[mjpeg @ 0x564f23be2180] mjpeg: error decoding EXIF data
+[mjpeg @ 0x564f23be2b80] mjpeg: error decoding EXIF data
+    Last message repeated 294 times
+Scènes rendues en 560 s (50 tâches en parallèle)
+out/jupiter_survive.mp4 524.0 s
