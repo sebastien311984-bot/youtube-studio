@@ -21,4 +21,4 @@ jobs:
           git config user.name preflight-bot; git config user.email preflight-bot@users.noreply.github.com
           git checkout -q --orphan "preflight/${{ github.run_id }}" 2>err.txt || echo "::error::checkout $(cat err.txt)"
           git rm -rq --cached . ; git add -f preflight; git commit -qm "preflight ${{ github.run_id }}" 2>err.txt || echo "::error::commit $(cat err.txt)"
-          git push -q origin "HEAD:refs/heads/preflight/${{ github.run_id }}" 2>err.txt || { echo "::error::push $(cat err.txt)"; exit 1; }
+          git push -q origin "HEAD:refs/heads/preflight/${{ github.run_id }}" 2>err.txt || { echo "::error::push $(tr "\n" " " < err.txt)"; exit 1; }

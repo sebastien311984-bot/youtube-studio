@@ -13,7 +13,7 @@ thumbs, hashes, report = [], [], []
 for n, (i, u) in enumerate(items):
     f = os.path.join(out, f"{n:03d}")
     if u.startswith("http"):
-        subprocess.run(["curl", "-sSLf", "--max-time", "60", "-A", "OddlyLogicalStudio/1.0", "-o", f, u])
+        subprocess.run(["curl", "-sSLf", "--max-time", "60", "--retry", "2", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", f, u])
     else:
         f = u
     try:
@@ -22,6 +22,7 @@ for n, (i, u) in enumerate(items):
         im = Image.open(f).convert("RGB"); im.thumbnail((320, 180))
     except Exception:
         im = Image.new("RGB", (320, 180), "red"); report.append(f"#{n} scène {i} : ILLISIBLE {u[-70:]}")
+        thumbs.append((n, i, im)); continue
     h = imagehash.phash(im)
     for m, (h2, i2) in enumerate(hashes):
         if h - h2 <= 10: report.append(f"#{n} (scène {i}) ≈ #{m} (scène {i2}) QUASI-DOUBLON : {urllib.parse.unquote(u.split('/')[-1])[:60]}")
