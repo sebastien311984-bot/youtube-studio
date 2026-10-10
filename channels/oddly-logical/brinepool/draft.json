@@ -1,0 +1,663 @@
+{
+ "title": "Could You Survive a Swim in an Underwater Lake?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Images and video: NOAA Ocean Exploration (NOAA Office of Ocean Exploration and Research, Okeanos Explorer, Lophelia II 2010; public domain), USGS (public domain), Ifremer (Campagne BIOZAIRE 2), MARUM (University of Bremen), Ian MacDonald and Charles Fisher via Wikimedia Commons, NOAA Ocean Exploration video on Internet Archive, Pixabay (Mario_Krimer, SimplehadaStudio, Ian5152, Engin_Akyurt, AlonaMalakh). Facts: NOAA Ocean Exploration.",
+ "ambience": {
+  "kind": "ocean"
+ },
+ "scenes": [
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/2018_Gulf_of_Mexico_Brine_Pool.jpg",
+   "question": "COULD YOU SWIM HERE?",
+   "heading": "A LAKE ON THE SEAFLOOR",
+   "marks": [
+    {
+     "type": "arrow",
+     "from": [
+      330,
+      230
+     ],
+     "to": [
+      760,
+      560
+     ],
+     "text": "Shoreline",
+     "color": "gold"
+    },
+    {
+     "type": "box",
+     "box": [
+      700,
+      540,
+      1500,
+      880
+     ],
+     "text": "Brine surface, with ripples",
+     "color": "blue"
+    }
+   ],
+   "text": "Look at this lake. A shoreline. Ripples on the surface. Now the twist: it sits about a kilometer under the ocean. A lake, at the bottom of the sea. So could you swim in it? Stay to the end, because the answer is stranger than you think.",
+   "lead": 0.2,
+   "tone": "tense",
+   "teaser": "A LAKE UNDER THE SEA",
+   "yt_chapter": "Could you swim in an underwater lake?",
+   "min": 11
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/32/Brine_pool.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/NOAAseep_600CratersBrinePools.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2025/09/14/304019_large.mp4",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "This is a brine pool. A lake of ultra salty water, lying on the seafloor, in total darkness. Scientists have found them in the Gulf of Mexico, the Red Sea, and the Mediterranean.",
+   "chapter": [
+    "CHAPTER 1",
+    "A LAKE UNDER THE SEA"
+   ],
+   "fact": "Brine pools can be up to about 4-5x\\Nsaltier than normal seawater."
+  },
+  {
+   "kind": "diagram",
+   "heading": "WHY IT DOES NOT MIX",
+   "elements": [
+    {
+     "type": "text",
+     "text": "SEAWATER",
+     "at": [
+      960,
+      200
+     ],
+     "anchor": "mm",
+     "size": 56,
+     "color": "blue"
+    },
+    {
+     "type": "drops",
+     "at": [
+      500,
+      330
+     ],
+     "color": "blue"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       100,
+       560
+      ],
+      [
+       500,
+       540
+      ],
+      [
+       900,
+       560
+      ]
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       900,
+       560
+      ],
+      [
+       1300,
+       580
+      ],
+      [
+       1820,
+       560
+      ]
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "WAVY SURFACE OF THE POOL",
+     "at": [
+      960,
+      500
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "BRINE: HEAVIER, SO IT SINKS",
+     "at": [
+      960,
+      680
+     ],
+     "anchor": "mm",
+     "size": 56,
+     "color": "orange"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      590
+     ],
+     "to": [
+      960,
+      640
+     ],
+     "color": "orange",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      100,
+      800
+     ],
+     "to": [
+      1820,
+      800
+     ],
+     "color": "gold",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "ANCIENT BURIED SALT",
+     "at": [
+      960,
+      900
+     ],
+     "anchor": "mm",
+     "size": 56,
+     "color": "gold"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      400,
+      790
+     ],
+     "to": [
+      400,
+      700
+     ],
+     "color": "gold",
+     "width": 8
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1500,
+      790
+     ],
+     "to": [
+      1500,
+      700
+     ],
+     "color": "gold",
+     "width": 8
+    }
+   ],
+   "text": "Why doesn't it just mix into the ocean? Density. This brine is much saltier than seawater, so it is heavier. It sinks, settles into a hollow on the seafloor, and stays put, because the salt keeps it from blending in.",
+   "min": 14
+  },
+  {
+   "kind": "scale",
+   "heading": "HOW SALTY?",
+   "items": [
+    {
+     "label": "SEAWATER",
+     "size": 1,
+     "color": "blue",
+     "note": "about 3.5% salt"
+    },
+    {
+     "label": "BRINE POOL",
+     "size": 3.6,
+     "color": "red",
+     "note": "up to about 4-5x saltier"
+    }
+   ],
+   "text": "Ordinary seawater is about three and a half percent salt. A brine pool can be several times saltier. So salty and dense that it has a visible surface, and waves can ripple across it when something disturbs it.",
+   "min": 9
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://cdn.pixabay.com/video/2021/02/13/65094-512069264_large.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2024/11/03/239675_large.mp4",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Gas_hydrate_under_carbonate_rock.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2025/05/16/279522_large.mp4",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "And where does all that salt come from? From deep underground. In the Gulf of Mexico, thick layers of salt were left by an ancient sea, in the Jurassic era, over a hundred million years ago. Fluids slowly seep up and dissolve it on the way, and that salty water finds its way to the seafloor.",
+   "tone": "calm"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "A LAKE",
+    "UNDER",
+    "THE SEA",
+    "BUT DEADLY"
+   ],
+   "text": "A lake under the sea. But is it safe? Not even close.",
+   "teaser": "THE JACUZZI OF DESPAIR"
+  },
+  {
+   "kind": "stat",
+   "value": 1000,
+   "prefix": "~",
+   "suffix": " m",
+   "caption": "DEEP IN THE GULF OF MEXICO",
+   "text": "Meet the most famous one. Nicknamed the Jacuzzi of Despair. It lies in the Gulf of Mexico, about a thousand meters down, roughly three thousand three hundred feet. It was explored in 2015.",
+   "chapter": [
+    "CHAPTER 2",
+    "THE JACUZZI OF DESPAIR"
+   ],
+   "min": 9
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/48/Deep_Discoverer_NOAAS_Okeanos_Explorer_9_April_2015.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Control_Room_of_the_Okeanos_Explorer_R337.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/38/ROV_Deep_Discoverer_pilot_controls_manipulator_arm_aboard_NOAAS_Okeanos_Explorer_%28R_337%29_24_April_2015.png",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Nobody swam there. A human diver could never reach that depth in a normal dive, so scientists on a ship steered a robot down on a cable, and watched through its cameras from a control room.",
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Brine_pool_eelNOAA.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://archive.org/download/noaa-oe-video-video-shorts-ex1711-swordfish/ex1711-swordfish.mp4",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://archive.org/download/noaa-oe-video-video-playlist-ex2103-ctenophore/ctenophore-1080p.mp4",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://archive.org/download/noaa-oe-video-okeanos-explorations-okeanos-beyond-the-blue-ex2403-gallery-media-ctd-recovery/monday-7-1-4-640x360-1.mp4",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2025/02/14/258241_large.mp4",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "And what they saw was eerie. Animals that wander into the pool can be killed by the salt and the lack of oxygen, and sometimes their bodies stay preserved. The water also holds dissolved methane and hydrogen sulfide, a toxic gas that smells like rotten eggs. Instruments on cables measure it all. The pool is a closed chemical lab, and every reading says the same thing: this is no place for a swimmer.",
+   "fact": "Hydrogen sulfide smells like rotten eggs,\\Nbut it is toxic at high levels."
+  },
+  {
+   "kind": "versus",
+   "heading": "SWIM OR STAND?",
+   "left": {
+    "name": "IN THE POOL",
+    "color": "red",
+    "stats": [
+     "Extreme salt",
+     "Almost no oxygen",
+     "Toxic gas"
+    ]
+   },
+   "right": {
+    "name": "ON THE SHORE",
+    "color": "green",
+    "stats": [
+     "Dense mussel beds",
+     "Food from chemicals",
+     "Life thrives"
+    ]
+   },
+   "text": "So inside the pool, it is a death trap. But step onto the shore, and something astonishing is waiting.",
+   "min": 8,
+   "teaser": "LIFE ON THE EDGE"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Cold_seep_community.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lithodidae_crawling_across_chemosynthetic_mussels.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Crabmuss_600.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "The shoreline is crowded. Dense beds of mussels line the edge of the pool, packed together, in a place with no sunlight at all. So how do they eat?",
+   "chapter": [
+    "CHAPTER 3",
+    "LIFE ON THE EDGE"
+   ]
+  },
+  {
+   "kind": "diagram",
+   "heading": "CHEMOSYNTHESIS",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      1000,
+      540
+     ],
+     "r": 230,
+     "color": "green",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "MUSSEL",
+     "at": [
+      1000,
+      330
+     ],
+     "anchor": "mm",
+     "size": 50,
+     "color": "green"
+    },
+    {
+     "type": "drops",
+     "at": [
+      960,
+      560
+     ],
+     "color": "gold"
+    },
+    {
+     "type": "text",
+     "text": "BACTERIA IN ITS GILLS",
+     "at": [
+      1000,
+      760
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "gold"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      200,
+      540
+     ],
+     "to": [
+      740,
+      540
+     ],
+     "color": "red",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "METHANE + SULFIDE",
+     "at": [
+      330,
+      460
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1260,
+      540
+     ],
+     "to": [
+      1740,
+      540
+     ],
+     "color": "blue",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "FOOD, NO SUNLIGHT",
+     "at": [
+      1500,
+      460
+     ],
+     "anchor": "mm",
+     "size": 46,
+     "color": "blue"
+    }
+   ],
+   "text": "The secret is chemosynthesis. Bacteria live inside the mussels. They use chemical energy from methane and hydrogen sulfide, instead of sunlight, to make food, and they share it with their host. The mussels feed on the pool's own chemistry.",
+   "min": 14
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/58/Campagne_BIOZAIRE_2_-_Modioles_et_crevettes_%28Ifremer_00574-68568%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bacterial_mat.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/81/Lamellibrachia_luymesi.png",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lamellibrachia_luymesi1.png",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/45/MARUM-ColdSeeps-en-04-HiRes.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "If this lake blows your mind, subscribe, there is a lot more strange science coming. And it is not just mussels. Places like this host bacterial mats, tubeworms, shrimp and crabs. A whole ecosystem running on chemicals, in the dark, a kilometer below the waves. Scientists call these places cold seeps, and they are among the strangest habitats on Earth.",
+   "teaser": "WHY SCIENTISTS CARE"
+  },
+  {
+   "kind": "stat",
+   "value": 3,
+   "suffix": " SEAS",
+   "caption": "GULF OF MEXICO - RED SEA - MEDITERRANEAN",
+   "text": "Brine pools are not just a Gulf of Mexico oddity. They are also found in the Red Sea and the Mediterranean, and some are far larger. Each one is its own sealed world, with its own chemistry, and its own tiny community of microbes.",
+   "chapter": [
+    "CHAPTER 4",
+    "WHY SCIENTISTS CARE"
+   ],
+   "min": 8
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO SUNLIGHT",
+    "EXTREME SALT",
+    "LIFE ANYWAY"
+   ],
+   "text": "Why do scientists care? Because life here survives with no sunlight, extreme salt, and crushing pressure."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://cdn.pixabay.com/video/2025/09/14/304019_large.mp4",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2019/09/05/26572-358053422_large.mp4",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2025/02/14/258241_large.mp4",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "That hints at where else life might hide. Icy moons like Jupiter's Europa and Saturn's Enceladus are thought to have oceans under their ice. We have not found life there. But brine pools show scientists what to look for.",
+   "tone": "calm"
+  },
+  {
+   "kind": "quiz",
+   "question": "What powers life at a brine pool shore?",
+   "options": [
+    "Sunlight",
+    "Chemosynthesis",
+    "Moonlight",
+    "Plankton rain"
+   ],
+   "answer": 1,
+   "text": "Quick quiz. What powers life on the shore of a brine pool?",
+   "min": 7,
+   "teaser": "THE VERDICT"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Deep_Discoverer_manipulator_arm_NOAAS_Okeanos_Explorer_%28R_337%29_25_April_2015.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/ROV_Deep_Discoverer_pilots_aboard_NOAAS_Okeanos_Explorer_%28R_337%29_26_April_2015.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://archive.org/download/noaa-oe-video-ex2503-summary/ex2503-summary.ia.mp4",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4e/MARUM-ColdSeeps-en-06-HiRes.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "So, could you survive a swim in an underwater lake? No. The pressure is crushing, the salt is brutal, there is almost no oxygen, and the water is toxic. Yet right on its edge, a living world thrives without a single ray of sun. Life is tougher, and stranger, than we imagined.",
+   "chapter": [
+    "CHAPTER 5",
+    "THE VERDICT"
+   ],
+   "tone": "reveal"
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Expl2365_-_Flickr_-_NOAA_Photo_Library.jpg",
+   "text": "What strange place should we explore next? Tell me in the comments, and subscribe so you never miss a strange science story."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "LAKE UNDER SEA",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "Could You Survive a Swim in an Underwater Lake?",
+  "description": "There is a lake at the bottom of the ocean, with a shoreline and waves. Could you swim in it? Discover brine pools, the Jacuzzi of Despair, and the strange life on their shores.\n\nIn this video:\n- What is a brine pool?\n- Why the water does not mix\n- The Jacuzzi of Despair\n- Life that eats chemicals\n- Why scientists care\n\nWould you dive in? Tell me in the comments.\n\nSources: NOAA Ocean Exploration.",
+  "tags": [
+   "brine pool",
+   "underwater lake",
+   "jacuzzi of despair",
+   "deep sea",
+   "chemosynthesis",
+   "cold seep",
+   "gulf of mexico",
+   "ocean mystery",
+   "deep sea mussels",
+   "could you survive",
+   "NOAA ocean exploration"
+  ],
+  "hashtags": [
+   "#deepsea",
+   "#ocean",
+   "#science"
+  ]
+ },
+ "shorts": [
+  {
+   "from": 0,
+   "to": 4,
+   "title": "A Lake At The Bottom Of The Ocean"
+  },
+  {
+   "from": 7,
+   "to": 10,
+   "title": "The Jacuzzi Of Despair"
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "title": "Life That Eats Chemicals"
+  }
+ ]
+}
