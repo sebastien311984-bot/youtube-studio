@@ -1,6 +1,8 @@
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
+- 2026-10-10 — RYTHME : 2 à 3 vidéos longues PAR SEMAINE, programmées au fur et à mesure (+ Shorts tirés de chaque vidéo). Qualité > quantité (politique YouTube « contenu produit en masse »). Sources : explorer TOUTES les banques libres du monde (pas que Pixabay : archives, musées, agences publiques, documents, photos d'époque) ; zéro visuel hors sujet. Voix ElevenLabs (~22 $/mois) envisagée, pas encore souscrite.
+
 - 2026-10-10 — « volcano_survive » : « beaucoup mieux » — images illustratives en rapport direct avec le texte = ESSENTIEL (quand on parle d'un truc, on le montre). MAIS infographies trop répétitives d'une vidéo à l'autre (même schéma papier/crayon, même stat, même kinetic) → varier le style par vidéo/thème. MÉTHODE : constituer le dossier visuel (photos, vidéos, documents) AVANT d'écrire le script, et écrire autour de ce qu'on peut montrer. Problème chaîne : les gens regardent mais ne s'abonnent pas → séries, promesse de chaîne, Shorts, fin qui mène à la vidéo suivante.
 
 - 2026-10-08 — ALLER AU BOUT DE LA DÉMARCHE : ne jamais se contenter du premier acquis. Pour chaque vidéo, explorer plusieurs pistes (sources de rushs, styles d'infographie, mises en page, transitions, sons), en proposer plusieurs et choisir la meilleure. Varier les formats d'une vidéo à l'autre (pas toujours la même carte) et les adapter au sujet. Chercher activement de nouveaux outils et techniques pro au lieu d'attendre les remarques du propriétaire.
