@@ -89,3 +89,8 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - AVANT d'écrire un script : fouiller TOUTES les sources de SOURCES.md (monde entier, pas seulement les USA) + Openverse/Europeana + vidéos YouTube sous licence Creative Commons (filtre « Creative Commons », vérifier que l'auteur est bien le filmeur original, sinon risque Content ID).
 - Présenter une planche d'images au propriétaire ; si rien de spectaculaire et légal, changer de sujet AVANT de produire.
 - Être proactif : chercher de nouvelles sources et les ajouter à SOURCES.md sans attendre qu'on le demande. Dire honnêtement et tôt ce qui est impossible.
+
+## Animations explicatives (doctrine 2026-10)
+- Une animation DIFFÉRENTE selon ce qu'on explique (pas toujours flèches/schémas) : carte zoom, coupe, vue profil/dessus, échelle, avant/après, éclaté, scénarios côte à côte, ralenti en 3 temps, mesure sur l'image, chronologie sur carte, question puis révélation.
+- Intégrées aux images réelles : on fige un plan réel, on repère l'élément dessus (kind `annotate`), puis on passe au schéma.
+- Kinds dispo : `annotate` (image, marks circle/box/arrow/measure/label{at,text}, question, heading, at) et `beforeafter` (before, after, label_before/after).

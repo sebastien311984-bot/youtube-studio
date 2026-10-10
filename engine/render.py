@@ -301,6 +301,8 @@ def main(ep_path, clips_dir, out):
         elif kind == "versus": JOBS.append((visuals.versus, (cp, d + XF, s["left"], s["right"], s.get("heading", ""))))
         elif kind == "quiz": JOBS.append((visuals.quiz, (cp, d + XF, s["question"], s["options"], s["answer"])))
         elif kind == "kinetic": JOBS.append((visuals.kinetic, (cp, d + XF, s["words"])))
+        elif kind == "annotate": JOBS.append((visuals.annotate, (cp, d + XF, fetch(s["image"], clips_dir), s.get("marks", []), s.get("question"), s.get("heading"), s.get("at", 0))))
+        elif kind == "beforeafter": JOBS.append((visuals.beforeafter, (cp, d + XF, fetch(s["before"], clips_dir), fetch(s["after"], clips_dir), s.get("label_before", "BEFORE"), s.get("label_after", "AFTER"), s.get("at_before", 0), s.get("at_after", 0))))
         elif kind == "rank": JOBS.append((visuals.rank, (cp, d + XF, s["number"], s["title_rank"], s.get("sub", ""))))
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
