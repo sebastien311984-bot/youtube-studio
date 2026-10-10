@@ -45,7 +45,7 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/video/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664/KSC-19700411-MH-NAS01-0001-Apollo_13_Launch_Post_Launch_with_Spiro_Agnew_and_Billie_Brandt_B_0664~orig.mp4",
-     "start": 5,
+     "start": 60,
      "move": "in"
     },
     {
@@ -884,7 +884,7 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
-     "start": 0,
+     "start": 45,
      "move": "in"
     },
     {
@@ -1007,7 +1007,7 @@
     },
     {
      "clip": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
-     "start": 0,
+     "start": 90,
      "move": "left"
     }
    ],
@@ -1017,11 +1017,11 @@
   }
  ],
  "thumbnail": {
-  "scene": 0,
+  "scene": 28,
   "text": "87 HOURS TO LIVE",
   "sub": "",
   "shift": 0.2,
-  "circle": true
+  "circle": false
  },
  "youtube": {
   "title": "Could You Survive Apollo 13? 87 Hours to Splashdown",
