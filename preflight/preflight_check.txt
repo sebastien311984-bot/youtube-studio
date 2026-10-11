@@ -1,0 +1,8 @@
+scène 5 : 4 plan(s) pour ~28 s (le moteur complétera, mais varier les requêtes)
+scène 7 : 4 plan(s) pour ~27 s (le moteur complétera, mais varier les requêtes)
+scène 9 : 5 plan(s) pour ~33 s (le moteur complétera, mais varier les requêtes)
+scène 11 : 4 plan(s) pour ~28 s (le moteur complétera, mais varier les requêtes)
+scène 13 : 4 plan(s) pour ~23 s (le moteur complétera, mais varier les requêtes)
+scène 15 : 3 plan(s) pour ~23 s (le moteur complétera, mais varier les requêtes)
+scène 22 : 2 plan(s) pour ~18 s (le moteur complétera, mais varier les requêtes)
+requêtes Pixabay en double : ['pixabay:id:248', 'pixabay:id:26007', 'pixabay:id:304019', 'pixabay:id:314750', 'pixabay:id:336799', 'pixabay:id:63427', 'pixabay:id:63559', 'pixabay:id:908']
