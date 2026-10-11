@@ -6,7 +6,7 @@ Corps humain → Terre/catastrophes → Animaux → Histoire/inventions → Phys
 Idées « Oddly Logical » (étrange mais logique) :
 - [ ] Why You Can't Tickle Yourself (corps)
 - [ ] What Happens to Your Body If You Don't Sleep for 11 Days (corps, cas Randy Gardner 1964)
-- [ ] The Lake That Suffocated 1,700 People in One Night (Terre, lac Nyos 1986)
+- [x] The Lake That Suffocated 1,700 People in One Night (lake_nyos) (Terre, lac Nyos 1986)
 - [ ] Why Volcanic Lightning Happens (Terre)
 - [ ] The Animal That Never Dies (animaux, Turritopsis)
 - [ ] How Crows Remember Your Face for Years (animaux)

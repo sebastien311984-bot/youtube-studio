@@ -11,6 +11,8 @@ Tenu à jour par Claude à chaque étape. Statuts : ✍️ écrite · 🎬 rendu
 | 5 | outrun_tsunami | Could You Outrun a Tsunami? The Sign That Saves You | ~5:20 | ✍️ écrite + doublée (6 langues), rendu en cours | — | — | thème Terre/catastrophes, angle TOI ; 18 images NASA + Pixabay (Wikimedia/NOAA inaccessibles depuis la session) |
 | 6 | inside_hurricane | Could You Survive Inside a Hurricane? | ~3:20 | 🎬 rendue (photos ISS + schémas, sans doublage) | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/37651201925/artifacts/11497687204 | — | Terre/catastrophes, 100 % photos NASA, sans doublage (quota) |
 
+| 7 | lake_nyos | The Lake That Killed 1,700 People in One Night | 7:14 | 🎬 rendue, revue (planche + miniature) | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/38155794303/artifacts/11708639332 | — | v2 : plans hors sujet corrigés ; photos Nyos basse définition ; pierre-champignon sous « The Morning After » un peu étrange |
+
 ## Autres vidéos de la chaîne (faites hors de ce dépôt, planning mis à jour le 6 oct. 2026 : 1 vidéo/jour du 7 au 11 oct.)
 | Titre | Durée | Statut |
 |---|---|---|
