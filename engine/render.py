@@ -369,7 +369,7 @@ def main(ep_path, clips_dir, out):
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
         if s.get("yt_chapter") or s.get("chapter"): yt_chapters.append((t, s.get("yt_chapter") or s["chapter"][1].title()))
         if s.get("kind") != "diagram" and s.get("kind") != "stat" and i == ep.get("thumbnail", {}).get("scene"): thumb_src = (cp, d)
-        if "label" in s: events += label(t + 0.8, min(d - 1, 5), *s["label"])
+        if isinstance(s.get("label"), list) and s.get("kind", "footage") not in ("zoomto",): events += label(t + 0.8, min(d - 1, 5), *s["label"])
         if "fact" in s: events += fact(t + min(2.5, d / 3), min(6, d - 1), s["fact"])
         if "chapter" in s and s.get("kind", "footage") in ("footage", "annotate") and not s.get("question"): events += chapter(t + 0.2, *s["chapter"])  # jamais par-dessus une infographie
         if "title" in s:
