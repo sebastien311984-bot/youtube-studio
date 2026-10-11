@@ -1,0 +1,1391 @@
+{
+ "title": "The Lake That Killed 1,700 People in One Night",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "subscribe_at": 0.25,
+ "credits": "Photos: USGS (Jack Lockwood; Bill Evans), public domain. Lake Nyos from Landsat 8: NASA/USGS, public domain. Mount Cameroon (ASTER): NASA/METI/AIST/Japan Space Systems and U.S./Japan ASTER Science Team, public domain. Lake Monoun: Prosper Mekem, CC BY-SA 4.0, and public domain photo. Lake Kuk and Lake Oku: Ericjoelmanej, CC BY-SA 4.0. Lake Kivu boats: Steve Evans, CC BY 2.0. Sunset on Lake Kivu, Goma: panoramio contributor, CC BY 3.0. Video: Pixabay (adege, iShootWhatiLike, DancingSky, Engin_Akyurt; Pixabay Content License). Lake Kivu: Davyimage (CC BY-SA 4.0), Maurice Yap (CC BY-SA 4.0), Philip Kromer (CC BY-SA 2.0), Dieulaisevambesa (CC BY-SA 4.0), Francois Terrier (CC BY 2.0), Arafat Abdallah (CC BY-SA 4.0), via Wikimedia Commons. Facts: Kling et al. 1987 (Science); Sigvaldason 1989; Kling et al. 2005 (PNAS); Schmid et al. 2005 (Geochem. Geophys. Geosyst.); USGS Volcano Hazards Program.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lake_Nyos_1986_001.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lake_Nyos_1992_001.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tml15-16_Nc.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "lead": 0.3,
+   "tone": "tense",
+   "yt_chapter": "The lake that killed 1,700 people",
+   "text": "August twenty-first, nineteen eighty-six. A quiet lake in the mountains of Cameroon. By morning, about seventeen hundred people were dead, along with thousands of animals, and most had not a single wound. What kills a whole valley in its sleep?"
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Lake_Oku_entire_aerial_view.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lake_Kuk_in_the_Northwest_Region_of_Cameroon.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "tone": "calm",
+   "teaser": "THE NIGHT",
+   "label": [
+    "CAMEROON HIGHLANDS",
+    "Dotted with crater lakes"
+   ],
+   "text": "Cameroon's highlands are dotted with crater lakes like these. Every week on Oddly Logical Science, we follow the strangest true science to the end. Today: a lake that breathed out."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:50990",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 1",
+    "THE NIGHT"
+   ],
+   "yt_chapter": "The night of August 21, 1986",
+   "tone": "calm",
+   "text": "Northwest Cameroon, a volcanic highland. Lake Nyos fills an old crater."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:249590",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "calm",
+   "text": "On a Thursday evening, the villages around it went to sleep."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lake_Nyos_1986_001.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tml15-16_Nc.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "tone": "urgent",
+   "label": [
+    "LAKE NYOS, 1986",
+    "Photographed after the eruption"
+   ],
+   "text": "Late that evening, the lake erupted. Not with lava or fire, but with gas. A huge burst of carbon dioxide came out of the deep water."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO FIRE",
+    "NO LAVA",
+    "JUST AIR"
+   ],
+   "text": "No fire. No lava. Just air that could no longer keep you alive.",
+   "min": 4,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:220471",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Lake_Oku_entire_aerial_view.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lake_Nyos_from_Landsat%2C_2014.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "tense",
+   "label": [
+    "ILLUSTRATION",
+    "The real cloud was invisible"
+   ],
+   "text": "Carbon dioxide is heavier than air, so the cloud did not rise. It poured over the crater rim and ran down the valleys, up to about twenty-five kilometers away. The real cloud was invisible. These clouds are only an illustration."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lake_Nyos_2001.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lake_Kuk_in_the_Northwest_Region_of_Cameroon.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "tone": "tense",
+   "text": "Normal air holds about four hundredths of one percent carbon dioxide. At around ten percent, people can pass out within minutes. Most victims never woke up.",
+   "fact": "Carbon dioxide has no color and no smell.\\NYou cannot see it, so you cannot flee it."
+  },
+  {
+   "kind": "stat",
+   "value": 1700,
+   "prefix": "~",
+   "caption": "PEOPLE DIED OVERNIGHT, UP TO 25 KM FROM THE LAKE",
+   "text": "By morning, about seventeen hundred people were dead, along with some three thousand five hundred cattle. The nearest village, Lower Nyos, was almost wiped out. A few survivors lay unconscious for many hours before they woke up, and found everyone around them gone.",
+   "min": 12,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lake_Nyos_from_Landsat%2C_2014.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mount_Cameroon_%28ASTER%29.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "teaser": "THE MORNING AFTER",
+   "tone": "calm",
+   "label": [
+    "CAMEROON",
+    "Seen from space"
+   ],
+   "text": "If you want true stories this strange, subscribe to Oddly Logical Science. Because the morning after was even more shocking."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lake_Nyos_1992_001.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:50990",
+     "start": 8,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 2",
+    "THE MORNING AFTER"
+   ],
+   "yt_chapter": "The morning after",
+   "tone": "warm",
+   "text": "Survivors walked down at dawn into total silence. They found whole families dead in their homes, and cattle lying in the fields, without a wound on them."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mount_Cameroon_%28ASTER%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:249590",
+     "start": 5,
+     "move": "out"
+    }
+   ],
+   "tone": "tense",
+   "teaser": "THE MYSTERY",
+   "text": "News took time to reach the outside world. Rumors spread fast: a volcano, a bomb, a secret weapon. Some survivors had strange skin lesions. No one knew what had really happened.",
+   "fact": "Skin lesions on survivors are real, but\\Ntheir exact cause is still debated."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Lake_nyos_co2_vent.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 3",
+    "THE MYSTERY"
+   ],
+   "yt_chapter": "The mystery: what happened?",
+   "tone": "tense",
+   "text": "Within days, scientists from around the world arrived."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tml15-16_Nc.jpg",
+   "box": [
+    0,
+    120,
+    960,
+    960
+   ],
+   "min": 11,
+   "tone": "tense",
+   "text": "The clues pointed away from a bomb or a volcano: no fire, no ash, no blast. Most of the dead had no wounds, and the plants around them were unharmed. And the lake itself had changed. Its water, once blue, had turned a rusty red-brown."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tml15-16_Nc.jpg",
+   "box": [
+    960,
+    120,
+    1920,
+    960
+   ],
+   "min": 9,
+   "tone": "tense",
+   "text": "The level had dropped by about a meter, and plants along the shore were flattened. Samples pointed to one suspect: carbon dioxide, dissolved in huge amounts in the deep water."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Monoun.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Monoun.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "tone": "tense",
+   "label": [
+    "LAKE MONOUN",
+    "August 1984"
+   ],
+   "text": "And it had happened before. In August 1984, thirty-seven people died near Lake Monoun, about a hundred kilometers away. Now the pattern was clear.",
+   "fact": "Scientists call it a LIMNIC ERUPTION. Only\\Na few lakes are known to be capable of it."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:220471",
+     "start": 8,
+     "move": "left"
+    }
+   ],
+   "tone": "tense",
+   "text": "The trigger is still debated: a landslide, cold rain, or a volcanic event. Nobody knows."
+  },
+  {
+   "kind": "quiz",
+   "question": "Where was the carbon dioxide hiding?",
+   "options": [
+    "In the air above the lake",
+    "Dissolved in the deep water",
+    "In a cave under the village"
+   ],
+   "answer": 1,
+   "min": 6,
+   "teaser": "THE SCIENCE",
+   "tone": "tense",
+   "text": "So where was all that carbon dioxide hiding, before it erupted?"
+  },
+  {
+   "kind": "layers",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Nyos_Lake_correct.jpg",
+   "top": 470,
+   "heading": "INSIDE THE LAKE",
+   "bands": [
+    {
+     "name": "LIGHT SURFACE WATER",
+     "color": "blue",
+     "h": 130
+    },
+    {
+     "name": "LAYERS BARELY MIX",
+     "color": "gold",
+     "h": 110
+    },
+    {
+     "name": "DEEP WATER, LOADED WITH CO2",
+     "color": "red",
+     "h": 260
+    }
+   ],
+   "chapter": [
+    "CHAPTER 4",
+    "THE SCIENCE"
+   ],
+   "yt_chapter": "The science: a lake like a soda bottle",
+   "tone": "calm",
+   "min": 14,
+   "text": "It was hiding in the lake itself. Deep under Nyos, volcanic carbon dioxide seeps into the bottom water. The lake is layered: light water on top, cold dense water below, and the two barely mix. For years, the deep layer quietly filled with gas."
+  },
+  {
+   "kind": "diagram",
+   "heading": "WHY IT NEVER LEAKED",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      520,
+      640
+     ],
+     "r": 230,
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      520,
+      470
+     ],
+     "to": [
+      640,
+      560
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      640,
+      740
+     ],
+     "to": [
+      520,
+      810
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      400,
+      760
+     ],
+     "to": [
+      380,
+      560
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "MOST LAKES",
+     "at": [
+      520,
+      330
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "SEASONS STIR THE WATER",
+     "at": [
+      520,
+      980
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "GAS LEAKS OUT, HARMLESSLY",
+     "at": [
+      520,
+      1040
+     ],
+     "anchor": "mm",
+     "size": 30,
+     "color": "green"
+    },
+    {
+     "type": "line",
+     "from": [
+      1100,
+      420
+     ],
+     "to": [
+      1820,
+      420
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1100,
+      560
+     ],
+     "to": [
+      1820,
+      560
+     ],
+     "color": "gold",
+     "width": 6
+    },
+    {
+     "type": "line",
+     "from": [
+      1100,
+      560
+     ],
+     "to": [
+      1100,
+      900
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1820,
+      560
+     ],
+     "to": [
+      1820,
+      900
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1100,
+      900
+     ],
+     "to": [
+      1820,
+      900
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1100,
+      420
+     ],
+     "to": [
+      1100,
+      560
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1820,
+      420
+     ],
+     "to": [
+      1820,
+      560
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "NYOS",
+     "at": [
+      1460,
+      330
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "DEEP, SHELTERED, WARM, STEADY CLIMATE",
+     "at": [
+      1460,
+      980
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "NOTHING STIRS IT",
+     "at": [
+      1460,
+      1040
+     ],
+     "anchor": "mm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "CO2 PILES UP",
+     "at": [
+      1460,
+      730
+     ],
+     "anchor": "mm",
+     "size": 44,
+     "color": "red"
+    }
+   ],
+   "text": "The crater formed in a volcanic explosion roughly four hundred years ago. In most lakes, the seasons stir the water, and any gas leaks out harmlessly. But Nyos sits in a deep, sheltered crater, with a warm, steady climate and little seasonal change. Nothing stirred it, so the gas piled up for years.",
+   "min": 14,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:93286",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:93316",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:93280",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "warm",
+   "text": "Think of a sealed soda bottle. Under pressure, the gas stays dissolved. Open it, and the gas rushes out."
+  },
+  {
+   "kind": "diagram",
+   "heading": "A GIANT SODA BOTTLE",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      500
+     ],
+     "to": [
+      1000,
+      500
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      150,
+      500
+     ],
+     "to": [
+      150,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1000,
+      500
+     ],
+     "to": [
+      1000,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      150,
+      950
+     ],
+     "to": [
+      1000,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      150,
+      740
+     ],
+     "to": [
+      1000,
+      740
+     ],
+     "color": "gold",
+     "width": 5
+    },
+    {
+     "type": "text",
+     "text": "SURFACE WATER",
+     "at": [
+      575,
+      620
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "DEEP WATER + DISSOLVED CO2",
+     "at": [
+      575,
+      850
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      575,
+      1010
+     ],
+     "to": [
+      575,
+      900
+     ],
+     "color": "red",
+     "width": 8
+    },
+    {
+     "type": "text",
+     "text": "VOLCANIC CO2 SEEPS IN",
+     "at": [
+      575,
+      1045
+     ],
+     "anchor": "mm",
+     "size": 30,
+     "color": "red"
+    },
+    {
+     "type": "line",
+     "from": [
+      1380,
+      420
+     ],
+     "to": [
+      1380,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1560,
+      420
+     ],
+     "to": [
+      1560,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1380,
+      950
+     ],
+     "to": [
+      1560,
+      950
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1380,
+      420
+     ],
+     "to": [
+      1430,
+      320
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1560,
+      420
+     ],
+     "to": [
+      1510,
+      320
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1430,
+      320
+     ],
+     "to": [
+      1430,
+      230
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1510,
+      320
+     ],
+     "to": [
+      1510,
+      230
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1430,
+      230
+     ],
+     "to": [
+      1510,
+      230
+     ],
+     "color": "ink",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      1470,
+      800
+     ],
+     "r": 14,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      1440,
+      720
+     ],
+     "r": 10,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      1500,
+      660
+     ],
+     "r": 12,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "SEALED = THE FIZZ STAYS IN",
+     "at": [
+      1470,
+      1030
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "gold"
+    },
+    {
+     "type": "text",
+     "text": "~20x ATMOSPHERIC PRESSURE AT THE BOTTOM",
+     "at": [
+      575,
+      420
+     ],
+     "anchor": "mm",
+     "size": 34,
+     "color": "ink"
+    }
+   ],
+   "text": "At the bottom of Nyos, the pressure is roughly twenty times what we feel at the surface. The lake was a giant bottle, with a hidden cap of cold, dense water holding the gas in. Then something opened it.",
+   "min": 12,
+   "tone": "warm"
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE CHAIN REACTION",
+   "elements": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      930
+     ],
+     "r": 12,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      800
+     ],
+     "r": 22,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      640
+     ],
+     "r": 36,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      450
+     ],
+     "r": 56,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "circle",
+     "c": [
+      960,
+      230
+     ],
+     "r": 84,
+     "color": "gold",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1200,
+      930
+     ],
+     "to": [
+      1200,
+      230
+     ],
+     "color": "orange",
+     "width": 9
+    },
+    {
+     "type": "text",
+     "text": "WATER RISES",
+     "at": [
+      1480,
+      930
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "PRESSURE DROPS",
+     "at": [
+      620,
+      930
+     ],
+     "anchor": "rm",
+     "size": 40,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "BIGGER BUBBLES",
+     "at": [
+      620,
+      640
+     ],
+     "anchor": "rm",
+     "size": 40,
+     "color": "gold"
+    },
+    {
+     "type": "text",
+     "text": "LIGHTER WATER RISES FASTER",
+     "at": [
+      620,
+      330
+     ],
+     "anchor": "rm",
+     "size": 36,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "MORE GAS... NO WAY TO STOP IT",
+     "at": [
+      1480,
+      230
+     ],
+     "anchor": "lm",
+     "size": 36,
+     "color": "red"
+    }
+   ],
+   "text": "Once deep water is pushed upward, the pressure drops and the gas forms bubbles. Bubbles make the water lighter, so it rises faster, releasing even more gas. A chain reaction, and nothing could stop it. In a matter of minutes, a vast amount of gas surged to the surface.",
+   "min": 11,
+   "tone": "urgent",
+   "fact": "Published estimates: roughly 0.3 to 1.6\\Ncubic kilometers of CO2 were released."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lake_Nyos_2001.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Lake_nyos_co2_vent.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 5",
+    "COULD IT HAPPEN AGAIN?"
+   ],
+   "yt_chapter": "Could it happen again?",
+   "tone": "calm",
+   "label": [
+    "LAKE NYOS",
+    "Degassing, 2000s"
+   ],
+   "text": "After 1986, the fear was simple: the gas was building up again. So in 2001, a team including French researcher Michel Halbwachs installed a pipe in Lake Nyos."
+  },
+  {
+   "kind": "diagram",
+   "heading": "THE DEGASSING PIPE",
+   "elements": [
+    {
+     "type": "line",
+     "from": [
+      100,
+      360
+     ],
+     "to": [
+      900,
+      360
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      1020,
+      360
+     ],
+     "to": [
+      1820,
+      360
+     ],
+     "color": "blue",
+     "width": 7
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       100,
+       950
+      ],
+      [
+       960,
+       1020
+      ],
+      [
+       1820,
+       950
+      ]
+     ],
+     "color": "ink",
+     "width": 8
+    },
+    {
+     "type": "line",
+     "from": [
+      920,
+      350
+     ],
+     "to": [
+      920,
+      940
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "line",
+     "from": [
+      1000,
+      350
+     ],
+     "to": [
+      1000,
+      940
+     ],
+     "color": "ink",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      930
+     ],
+     "to": [
+      960,
+      420
+     ],
+     "color": "orange",
+     "width": 9
+    },
+    {
+     "type": "arrow",
+     "from": [
+      940,
+      300
+     ],
+     "to": [
+      860,
+      150
+     ],
+     "color": "orange",
+     "width": 7
+    },
+    {
+     "type": "arrow",
+     "from": [
+      980,
+      300
+     ],
+     "to": [
+      1060,
+      150
+     ],
+     "color": "orange",
+     "width": 7
+    },
+    {
+     "type": "text",
+     "text": "PIPE REACHES THE DEEP WATER",
+     "at": [
+      1480,
+      700
+     ],
+     "anchor": "mm",
+     "size": 40,
+     "color": "ink"
+    },
+    {
+     "type": "text",
+     "text": "GAS BUBBLES OUT AS WATER RISES",
+     "at": [
+      1480,
+      520
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "orange"
+    },
+    {
+     "type": "text",
+     "text": "NO PUMP ONCE IT STARTS",
+     "at": [
+      460,
+      640
+     ],
+     "anchor": "mm",
+     "size": 42,
+     "color": "green"
+    },
+    {
+     "type": "text",
+     "text": "CO2 LEAVES A LITTLE AT A TIME",
+     "at": [
+      460,
+      760
+     ],
+     "anchor": "mm",
+     "size": 38,
+     "color": "green"
+    }
+   ],
+   "text": "The pipe reaches the deep water. Once the flow starts, gas-rich water rises by itself, bubbling out as it climbs, with no pump needed. The lake is opened slowly, like a soda bottle, instead of all at once. At Nyos you can see it working: gas-rich water shoots up from the pipe as a fountain, day after day, quietly emptying the lake of its danger.",
+   "min": 15,
+   "tone": "warm"
+  },
+  {
+   "kind": "timeline",
+   "heading": "FROM DISASTER TO DEGASSING",
+   "events": [
+    {
+     "year": "1984",
+     "text": "Lake Monoun\n37 dead"
+    },
+    {
+     "year": "1986",
+     "text": "Lake Nyos\n~1,700 dead"
+    },
+    {
+     "year": "2001",
+     "text": "First pipe\nat Nyos"
+    },
+    {
+     "year": "2003",
+     "text": "Pipe at\nMonoun"
+    },
+    {
+     "year": "2011",
+     "text": "Two more\npipes at Nyos"
+    }
+   ],
+   "min": 11,
+   "tone": "calm",
+   "teaser": "LAKE KIVU",
+   "text": "Monoun got its pipe in 2003. In 2011, two more pipes were added at Nyos, and reports say the danger has dropped a lot, though monitoring continues."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gisenyi_kivu_lac.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gisenyi_view_at_kivu_lac_mountain.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Ville_de_Goma_vue_a%C3%A9rienne.png",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Lake_Kivu%2C_boats.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e1/View_of_Lake_Kivu_from_Rubona_peninsula%2C_Gisenyi%2C_Rwanda_%28170552%29.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "tone": "tense",
+   "label": [
+    "LAKE KIVU",
+    "Rwanda and Congo"
+   ],
+   "text": "But Nyos is not the only lake like this. On the border of Rwanda and Congo, Lake Kivu is far bigger, nearly five hundred meters deep, and holds hundreds of cubic kilometers of dissolved gas, mostly carbon dioxide and methane. About two million people live along its shores, in cities like Goma in Congo and Gisenyi in Rwanda.",
+   "fact": "Kivu: roughly 2 million people nearby,\\Nroughly 250 km³ of CO2 (rough estimate)."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sunset_on_Lake_Kivu%2C_Goma%2C_DRC_-_panoramio.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e1/View_of_Lake_Kivu_from_Rubona_peninsula%2C_Gisenyi%2C_Rwanda_%28170552%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Lake_Kivu_shoreline_at_Gisenyi.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gisenyi_fishermen.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "tone": "tense",
+   "text": "Compared with Nyos, Kivu holds hundreds of times more gas. The good news: for its depth, that gas is far from the saturation point, so scientists consider a sudden eruption unlikely any time soon. The bad news: it sits in one of Africa's most active volcanic regions. Researchers monitor its gas levels closely."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lake_Kivu_at_Gisenyi%2C_Rwanda.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gisenyi_kivu_lac.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gisenyi_view_at_kivu_lac_mountain.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Lake_Kivu%2C_boats.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Lake_Kivu_shoreline_at_Gisenyi.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gisenyi_fishermen.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "tone": "calm",
+   "text": "So the lake is watched closely. The volcano Nyiragongo, beside Goma, erupted in 2002 and again in 2021. And in Rwanda, power plants now pull the methane out of Kivu to make electricity, which also removes some of the gas from the lake."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Nyos_Lake_correct.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "reveal",
+   "text": "So what killed seventeen hundred people in their sleep? Not a monster. Not a weapon."
+  },
+  {
+   "kind": "outro",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Lake_Oku_entire_aerial_view.jpg",
+   "line1": "MORE STRANGE TRUE SCIENCE",
+   "line2": "WATCH NEXT",
+   "min": 10,
+   "tone": "warm",
+   "text": "A lake that stored a deadly gas for years, silently, until the night it breathed out. This time, we know how to listen. Would you have heard it coming? Tell me in the comments. And if this story stayed with you, watch another one on this channel now."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "THE LAKE KILLED 1,700",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "The Lake That Killed 1,700 People in One Night",
+  "description": "On the night of August 21, 1986, Lake Nyos in Cameroon released a huge cloud of carbon dioxide that killed about 1,700 people and some 3,500 cattle in their sleep. How does a lake do that, and could it happen again?\n\nIn this video:\n- The night Lake Nyos erupted\n- The morning after\n- The mystery: Monoun, 1984, and the trigger\n- The science: a lake like a soda bottle\n- Could it happen again? Degassing pipes and Lake Kivu\n\nFAQ\nWhat is a limnic eruption? A sudden release of dissolved gas, mostly CO2, from a deep lake.\nWhy did people die? Carbon dioxide is heavier than air, flowed into villages and displaced breathable air.\nWhat triggered Nyos? Unproven: a landslide, cold rain or wind, or a small volcanic event are the main candidates.\nCan it happen again? Pipes now release gas at Nyos and Monoun. Kivu holds far more gas but is considered much less primed.\n\nWould you have heard it coming? Tell me in the comments.\n\nSources: Kling et al. 1987, Science 236; Sigvaldason 1989; Kling et al. 2005, PNAS; Schmid et al. 2005, Geochem. Geophys. Geosyst.; USGS Volcano Hazards Program.",
+  "tags": [
+   "lake nyos",
+   "lake nyos disaster",
+   "limnic eruption",
+   "cameroon disaster",
+   "1986 lake nyos",
+   "lake that killed 1700 people",
+   "killer lake",
+   "lake monoun",
+   "lake kivu",
+   "lake kivu gas",
+   "carbon dioxide lake",
+   "CO2 cloud",
+   "degassing pipe",
+   "natural disasters",
+   "true science mystery",
+   "strange science",
+   "what happened at lake nyos",
+   "deadliest lake"
+  ],
+  "hashtags": [
+   "LakeNyos",
+   "science",
+   "mystery"
+  ],
+  "translations": {
+   "fr": "Le lac qui a tué 1 700 personnes en une nuit",
+   "es": "El lago que mató a 1.700 personas en una noche",
+   "pt": "O lago que matou 1.700 pessoas em uma noite",
+   "de": "Der See, der in einer Nacht 1.700 Menschen tötete",
+   "hi": "वह झील जिसने एक रात में 1,700 लोगों की जान ले ली"
+  }
+ },
+ "shorts": [
+  {
+   "from": 6,
+   "to": 9,
+   "title": "No fire. No lava. 1,700 dead."
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "title": "This lake is a soda bottle."
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "title": "2 million people live beside it."
+  }
+ ]
+}
