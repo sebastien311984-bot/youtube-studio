@@ -104,3 +104,4 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 - 2026-10-11 : PRIORITÉ « dessiner sur la vraie image » plutôt que des cartes sur fond noir. Pour chaque explication, partir d'une vraie photo/vidéo : annotate (repérer), zoomto (plonger vers une zone), layers (coupe translucide par-dessus la photo), beforeafter (comparer). Les infographies sur fond noir (scale, stat, versus, kinetic) : 3 maximum par vidéo. Pas de 3D (coût).
 
 - 2026-10-11 : INTERDIT `pixabay:requête` (résultat au hasard). Chaque plan = URL précise vue et validée sur la planche scout AVANT écriture du script. Le checker bloque.
+- 2026-10-11 : ANIMATIONS SUR PHOTO = regarder chaque image AVANT de placer cercle/zoom/bandes ; coordonnées mesurées sur l'image, aperçu image fixe vérifié avant rendu. Jamais au jugé.
