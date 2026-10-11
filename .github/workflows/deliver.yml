@@ -12,8 +12,11 @@ jobs:
   deliver:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - env: { GH_TOKEN: "${{ github.token }}", R: "${{ github.repository }}", RUN: "${{ github.event.inputs.run_id }}", N: "${{ github.event.inputs.name }}" }
         run: |
+          trap 'echo "::error::échec ligne $LINENO : $(tail -c 300 /tmp/err 2>/dev/null)"' ERR
+          exec 2> >(tee /tmp/err >&2)
           gh run download "$RUN" -R "$R" -n videos -D pack
           cd pack && ls -la
           gh release delete "pack-$N" -R "$R" --yes --cleanup-tag 2>/dev/null || true
