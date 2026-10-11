@@ -48,7 +48,12 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    asyncio.run(run()); humanize(path); return words
+    for k in range(4):  # Edge TTS échoue parfois (NoAudioReceived) : on réessaie au lieu de planter le rendu
+        try: words.clear(); asyncio.run(run()); break
+        except Exception as e:
+            if k == 3: raise
+            print("TTS : nouvel essai", k + 1, e); __import__("time").sleep(5 * (k + 1))
+    humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
 
@@ -318,6 +323,8 @@ def review_sheet(video, review):
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
     voice = ep.get("voice", "en-US-AndrewMultilingualNeural"); AMBIENCE.update(ep.get("ambience", {}))
+    if ep.get("shorts_only") and "--short" not in sys.argv:  # épisode de Shorts autonomes seulement (pas de vidéo longue)
+        make_shorts(ep, out, [0.0]); print("Shorts autonomes rendus"); return
     scenes, t, events, cuts = [], 0.0, [], []
     srt_words, yt_chapters, thumb_src, starts, trans = [], [], None, [], []
     review = []  # (instant, texte dit à ce moment, scène.plan) → planche de revue image/texte
