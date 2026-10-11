@@ -1,0 +1,20 @@
+name: Deliver pack
+# Publie les fichiers d'un rendu (artefact « videos ») en Release GitHub : un lien de téléchargement par fichier.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: { description: "ID de l'exécution Render videos", required: true }
+      name: { description: "Nom de l'épisode (ex. lake_nyos)", required: true }
+permissions:
+  contents: write
+  actions: read
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - env: { GH_TOKEN: "${{ github.token }}", R: "${{ github.repository }}", RUN: "${{ github.event.inputs.run_id }}", N: "${{ github.event.inputs.name }}" }
+        run: |
+          gh run download "$RUN" -R "$R" -n videos -D pack
+          cd pack && ls -la
+          gh release delete "pack-$N" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "pack-$N" -R "$R" --title "Pack $N" --notes "Fichiers du rendu $RUN, un lien par fichier." $(ls | grep -v '_render.log$')
