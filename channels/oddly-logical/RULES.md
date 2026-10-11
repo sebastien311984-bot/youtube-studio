@@ -29,6 +29,7 @@ Seul fichier de règles à lire. Remplace FEEDBACK.md (archivé). Une nouvelle l
 - Pas de sous-titres incrustés : .srt fourni.
 
 ## Shorts
+- JAMAIS un extrait découpé de la vidéo longue (incompréhensible). Chaque Short = script AUTONOME (`shorts[].scenes`, voix propre), compréhensible sans rien connaître : 0-2 s accroche choc, 2-6 s contexte (quoi/où/quand en 1 phrase), révélation, chute, puis « Full story on Oddly Logical Science. Subscribe… ».
 - Frame 0 : image en mouvement + texte contradictoire (« This should kill you. It doesn't. »), aucun logo.
 - 20-58 s, mini-récit complet, plan qui change toutes les 1,5-3 s, fin qui boucle sur le début.
 - Publiés APRÈS la longue, 1/jour, « Vidéo associée » = la longue.

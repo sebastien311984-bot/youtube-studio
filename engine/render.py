@@ -316,6 +316,8 @@ def review_sheet(video, review):
 def main(ep_path, clips_dir, out):
     ep = json.load(open(ep_path)); work = os.path.join(os.path.dirname(os.path.abspath(out)), "_work"); os.makedirs(work, exist_ok=True)
     voice = ep.get("voice", "en-US-AndrewMultilingualNeural"); AMBIENCE.update(ep.get("ambience", {}))
+    if ep.get("shorts_only") and "--short" not in sys.argv:  # épisode de Shorts autonomes seulement (pas de vidéo longue)
+        make_shorts(ep, out, [0.0]); print("Shorts autonomes rendus"); return
     scenes, t, events, cuts = [], 0.0, [], []
     srt_words, yt_chapters, thumb_src, starts, trans = [], [], None, [], []
     review = []  # (instant, texte dit à ce moment, scène.plan) → planche de revue image/texte
