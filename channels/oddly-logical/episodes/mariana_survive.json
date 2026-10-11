@@ -34,15 +34,14 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Marianatrenchmap.png",
    "question": "How deep is it?",
    "heading": "The Mariana Trench",
-   "_check_marks": true,
    "marks": [
     {
      "type": "circle",
      "c": [
-      960,
-      540
+      1240,
+      680
      ],
-     "r": 160,
+     "r": 130,
      "color": "gold",
      "text": "CHALLENGER DEEP"
     },
@@ -104,7 +103,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Freediver_Moalboal.jpg",
    "top": 300,
    "heading": "YOUR LUNGS, SQUEEZED",
-   "_check_marks": true,
    "bands": [
     {
      "name": "SURFACE: 1 ATM, LUNGS FULL SIZE",
@@ -132,11 +130,6 @@
   },
   {
    "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ae/U.S._Navy_Diver_enters_the_water_during_a_training_evolution_at_the_Naval_Diving_and_Salvage_Training_Center_140218-N-IC111-156.jpg",
-     "start": 0,
-     "move": "in"
-    },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Corals_and_diver_in_deep_blue_at_Halahi_Reef%2C_Red_Sea%2C_Egypt_-SCUBA_-UNDERWATER_-PICTURES_%286412299407%29.jpg",
      "start": 0,
@@ -210,7 +203,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/An_EPA_scientific_diver_%2814549930411%29.jpg",
    "question": "Why not just breathe air?",
    "heading": "Going deeper takes tricks",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
@@ -326,7 +318,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mother_and_baby_sperm_whale.jpg",
    "question": "Who can go this deep?",
    "heading": "About 2,000 m: the sperm whale",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
@@ -398,17 +389,16 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Cross_section_of_mariana_trench.jpg",
    "question": "Why is it so deep?",
    "heading": "How a trench forms",
-   "_check_marks": true,
    "marks": [
     {
      "type": "arrow",
      "from": [
-      500,
-      400
+      820,
+      430
      ],
      "to": [
-      800,
-      600
+      1140,
+      700
      ],
      "color": "gold",
      "text": "PACIFIC PLATE SINKS"
@@ -460,7 +450,6 @@
     640
    ],
    "label": "CHALLENGER DEEP: ABOUT 10,935 M",
-   "_check_marks": true,
    "min": 9,
    "text": "And then, the bottom. Challenger Deep, about ten thousand nine hundred and thirty-five meters down, though surveys differ by a few dozen meters. Mount Everest would fit inside it, with more than two kilometers of water still above its peak."
   },
@@ -518,7 +507,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bathyscaphe_Trieste_sphere.jpg",
    "question": "How did it survive?",
    "heading": "Trieste's crew sphere",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
@@ -602,7 +590,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Pseudoliparis_swirei_in_Mariana_Trench_map.jpg",
    "question": "So, could you survive?",
    "heading": "The verdict",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
