@@ -48,6 +48,11 @@ def tts(text, voice, path, tone="neutral"):
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
 
+LAST_STILL = [None]
+def img(src, clips_dir):
+    """Image d'une animation sur photo : si la source échoue, dernière photo valide (jamais de rendu planté)."""
+    return fetch(src, clips_dir) or LAST_STILL[0]
+
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
     if src.startswith("pixabay:"):  # « pixabay:requête[#rang] » : recherche au moment du rendu (clé dans le secret GitHub)
@@ -81,10 +86,18 @@ def fetch(src, clips_dir):
     os.makedirs(clips_dir, exist_ok=True); local = os.path.join(clips_dir, src.rsplit("/", 1)[-1])
     if not os.path.exists(local):
         t0 = time.time()
-        r = subprocess.run(["curl", "-sSLf", "--retry", "2", "--max-time", "120", "-A", "OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "-o", local, src])
+        alts = [src]
+        if "images-assets.nasa.gov" in src:  # NASA refuse parfois ~large : on essaie ~orig puis ~medium, UA navigateur
+            alts += [src.replace("~large", "~orig"), src.replace("~large", "~medium")]
+        for u in alts:
+            for ua in ("OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "Mozilla/5.0 (X11; Linux x86_64)"):
+                r = subprocess.run(["curl", "-sSLf", "--retry", "2", "--max-time", "120", "-A", ua, "-o", local, u])
+                if r.returncode == 0: break
+            if r.returncode == 0: break
         if r.returncode != 0:  # source trop lente ou absente : on retire le plan au lieu de bloquer tout le rendu
             if os.path.exists(local): os.remove(local)
             print(f"Téléchargement abandonné ({time.time() - t0:.0f} s) → plan retiré : {src.rsplit('/', 1)[-1][:60]}", flush=True); return None
+        if local.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".webp")): LAST_STILL[0] = local
         print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
     return local
 
@@ -301,11 +314,11 @@ def main(ep_path, clips_dir, out):
         elif kind == "versus": JOBS.append((visuals.versus, (cp, d + XF, s["left"], s["right"], s.get("heading", ""))))
         elif kind == "quiz": JOBS.append((visuals.quiz, (cp, d + XF, s["question"], s["options"], s["answer"])))
         elif kind == "kinetic": JOBS.append((visuals.kinetic, (cp, d + XF, s["words"])))
-        elif kind == "annotate": JOBS.append((visuals.annotate, (cp, d + XF, fetch(s["image"], clips_dir), s.get("marks", []), s.get("question"), s.get("heading"), s.get("at", 0))))
-        elif kind == "beforeafter": JOBS.append((visuals.beforeafter, (cp, d + XF, fetch(s["before"], clips_dir), fetch(s["after"], clips_dir), s.get("label_before", "BEFORE"), s.get("label_after", "AFTER"), s.get("at_before", 0), s.get("at_after", 0))))
-        elif kind == "zoomto": JOBS.append((visuals.zoomto, (cp, d + XF, fetch(s["image"], clips_dir), s["box"], s.get("label"), s.get("at", 0))))
-        elif kind == "layers": JOBS.append((visuals.layers, (cp, d + XF, fetch(s["image"], clips_dir), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))))
-        elif kind == "outro": JOBS.append((visuals.outro, (cp, d + XF, fetch(s["image"], clips_dir) if s.get("image") else None, s.get("line1", "COULD YOU SURVIVE?"), s.get("line2", "WATCH NEXT"))))
+        elif kind == "annotate": JOBS.append((visuals.annotate, (cp, d + XF, img(s["image"], clips_dir), s.get("marks", []), s.get("question"), s.get("heading"), s.get("at", 0))))
+        elif kind == "beforeafter": JOBS.append((visuals.beforeafter, (cp, d + XF, img(s["before"], clips_dir), img(s["after"], clips_dir), s.get("label_before", "BEFORE"), s.get("label_after", "AFTER"), s.get("at_before", 0), s.get("at_after", 0))))
+        elif kind == "zoomto": JOBS.append((visuals.zoomto, (cp, d + XF, img(s["image"], clips_dir), s["box"], s.get("label"), s.get("at", 0))))
+        elif kind == "layers": JOBS.append((visuals.layers, (cp, d + XF, img(s["image"], clips_dir), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))))
+        elif kind == "outro": JOBS.append((visuals.outro, (cp, d + XF, img(s["image"], clips_dir) if s.get("image") else None, s.get("line1", "COULD YOU SURVIVE?"), s.get("line2", "WATCH NEXT"))))
         elif kind == "rank": JOBS.append((visuals.rank, (cp, d + XF, s["number"], s["title_rank"], s.get("sub", ""))))
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
