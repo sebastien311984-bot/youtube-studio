@@ -58,7 +58,7 @@ jobs:
             n=$(basename "$f" .json)
             set -o pipefail
             if ! python3 -u engine/render.py "$f" clips "out/$n.mp4" 2>&1 | tee "out/${n}_render.log"; then
-              tail -40 "out/${n}_render.log" | while IFS= read -r l; do echo "::error::$l"; done
+              echo "::error::$(grep -v "curl: (22)" "out/${n}_render.log" | tail -6 | tr "\n" " ")"
               exit 1
             fi
           done
