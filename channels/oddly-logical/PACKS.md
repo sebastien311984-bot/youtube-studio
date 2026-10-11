@@ -1,4 +1,5 @@
-# Packs prêts à mettre en ligne
+# Packs candidats — À CONTRÔLER avant programmation
+> Ces 6 vidéos n'ont pas été revues (repérées le 11 oct. via GitHub). Regarder l'aperçu léger de chacune avant de la programmer ; dates = proposition seulement.
 Chaque pack = artefact GitHub (zip) : vidéo HD, miniature, .srt, 3 Shorts, `<nom>_youtube.md` (titre, description, tags), `<nom>_CONSIGNES_CHROME.md`.
 Mise en ligne : télécharger le zip, le décompresser dans Téléchargements, puis dire à Claude dans Chrome : « Mets en ligne <nom> selon `<nom>_CONSIGNES_CHROME.md`, programmée le <date> à 17:00. »
 Shorts : 1 par jour après la vidéo longue, « Vidéo associée » = la longue.
