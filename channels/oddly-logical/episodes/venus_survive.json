@@ -11,7 +11,7 @@
      "move": "in"
     },
     {
-     "clip": "https://images-assets.nasa.gov/image/PIA00109/PIA00109~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/S91-50687/S91-50687~large.jpg",
      "start": 0,
      "move": "out"
     },
@@ -67,7 +67,6 @@
    "kind": "layers",
    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Venus_Cloud_Tops_%281995-16-282%29.jpg",
    "top": 300,
-   "_check_marks": true,
    "heading": "INTO THE CLOUDS",
    "bands": [
     {
@@ -107,7 +106,7 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Venus_clouds_Galileo_Color_PIA00124.jpg",
+     "clip": "pixabay:id:289855",
      "start": 0,
      "move": "out"
     }
@@ -156,7 +155,6 @@
    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Venus_clouds_Galileo_FalseColor_PIA00112.jpg",
    "question": "What happens below 50 km?",
    "heading": "Falling below the clouds",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
@@ -265,7 +263,6 @@
    "image": "https://images-assets.nasa.gov/image/PIA00108/PIA00108~large.jpg",
    "question": "Is Venus still erupting?",
    "heading": "Maat Mons",
-   "_check_marks": true,
    "marks": [
     {
      "type": "label",
@@ -382,12 +379,11 @@
    "kind": "zoomto",
    "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/USSR_Venera_13_1982_-_Venus_ground_recolorized.jpg",
    "box": [
-    400,
-    150,
-    1200,
-    550
+    160,
+    90,
+    1760,
+    990
    ],
-   "_check_marks": true,
    "label": "VENERA 13, 1982",
    "min": 8,
    "text": "This is the surface of another planet, photographed by a machine that was never meant to last. A flat plain of broken rock slabs, the curved edge of the lander, and an orange-tinted sky, because the thick atmosphere filters the light. The colours were reconstructed from filtered images, but the scene is real. This is Venus."
@@ -426,7 +422,6 @@
      "text": "SURFACE: 465 °C, ABOUT 90 ATM"
     }
    ],
-   "_check_marks": true,
    "text": "So, could you survive Venus? Not on the ground. Not for more than a couple of hours, even inside a machine built for it. But fifty kilometers up, the pressure and the temperature are not far from home. That is the strange truth: the most Earth-like place in the solar system floats just above the worst. And one day, someone may float there."
   },
   {
