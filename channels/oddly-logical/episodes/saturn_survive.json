@@ -1,0 +1,646 @@
+{
+ "title": "Could You Survive Falling Into Saturn?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Images: NASA/JPL-Caltech/Space Science Institute, NASA/ESA Hubble, NASA Headquarters (public domain). Illustration: Kevin Gill (CC BY 2.0). Saturn video render and storm footage: Pixabay (free license).",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Backlit_Saturn_from_Cassini_Orbiter_2007_May_9.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA05983/PIA05983~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2022/02/01/106311-672600347_large.mp4",
+     "start": 1,
+     "move": "in"
+    }
+   ],
+   "lead": 0.2,
+   "yt_chapter": "Could you survive Saturn?",
+   "text": "This is Saturn, lit from behind. Fall into it, and there is no ground to hit, nothing to land on. So what really happens to you? Stay to the end, and I'll show you the last message ever sent from inside this planet."
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "chapter": [
+    "CHAPTER 1",
+    "THE RINGS"
+   ],
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA02241/PIA02241~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01988/PIA01988~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA02269/PIA02269~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "fact": "Rings: hundreds of thousands of km wide,\\Nyet in places only ~10 metres thick.",
+   "text": "You are falling toward Saturn, and the first thing you pass is the rings. They look like solid sheets, but they are billions of chunks of ice, from grains of dust to pieces as big as houses, each one orbiting on its own."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA01969/PIA01969~large.jpg",
+   "question": "Where is the ground?",
+   "heading": "Falling into Saturn",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 300,
+     "color": "gold",
+     "text": "NO SOLID SURFACE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "white",
+     "text": "HYDROGEN + HELIUM"
+    }
+   ],
+   "text": "Now look at the planet itself. Saturn is a gas giant, made mostly of hydrogen and helium. There is no ground. You never land. You just sink, as the air gets thicker and thicker."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ea/PIA20513_-_Basking_in_Light.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA03883/PIA03883~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "fact": "Estimates of ring rain: hundreds to\\Nthousands of kg every second.",
+   "text": "And the rings are not permanent. Their ice is slowly pulled into Saturn, and falls like rain. Scientists estimate they could vanish within a few hundred million years."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA23175/PIA23175~large.jpg",
+   "question": "Can they refill?",
+   "heading": "Where does new ice come from?",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 230,
+     "color": "gold",
+     "text": "ENCELADUS"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "white",
+     "text": "ICE GEYSERS AT ITS SOUTH POLE"
+    }
+   ],
+   "text": "Some ice is added back. The moon Enceladus sprays water from geysers at its south pole, feeding a faint outer ring. But the main rings seem to be losing far more than they gain, and some measurements suggest they may be only tens to hundreds of millions of years old. Dinosaurs may have looked up at a Saturn with no rings at all."
+  },
+  {
+   "kind": "scale",
+   "heading": "SATURN VS EARTH",
+   "teaser": "A HEXAGON BIGGER THAN EARTH",
+   "items": [
+    {
+     "label": "EARTH",
+     "size": 1,
+     "color": "blue",
+     "note": "12,742 km"
+    },
+    {
+     "label": "SATURN",
+     "size": 9.4,
+     "color": "gold",
+     "note": "about 9x wider"
+    }
+   ],
+   "text": "Saturn is a giant. About nine times wider than Earth, and about ninety-five times heavier. Yet it is so light for its size that, on average, it is less dense than water."
+  },
+  {
+   "chapter": [
+    "CHAPTER 2",
+    "THE HEXAGON"
+   ],
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA06436/PIA06436~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA11396/PIA11396~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01269/PIA01269~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA17900/PIA17900~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Aim for the north pole, and the sky lights up. Saturn has auroras, glowing curtains of light powered by charged particles that its magnetic field funnels toward the poles. Hubble and Cassini watched them dance for years. But look straight down, and something far stranger is waiting."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://images-assets.nasa.gov/image/PIA09186/PIA09186~large.jpg",
+   "box": [
+    600,
+    300,
+    1320,
+    780
+   ],
+   "label": "THE NORTH POLE HEXAGON",
+   "min": 9,
+   "text": "Look at the top of Saturn. A perfect six-sided shape, a jet stream where each side is wider than the entire Earth."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA10217/PIA10217~large.jpg",
+   "question": "How big is it?",
+   "heading": "The hexagon",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 330,
+     "color": "gold",
+     "text": "ABOUT 30,000 KM ACROSS"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "blue",
+     "text": "EARTH: 12,742 KM"
+    }
+   ],
+   "text": "How big is it? Each of the six sides is about fourteen thousand kilometers long. Voyager spotted it in the early nineteen eighties, and Cassini found it still there decades later. Earth has nothing like it."
+  },
+  {
+   "kind": "beforeafter",
+   "before": "https://images-assets.nasa.gov/image/PIA11682/PIA11682~large.jpg",
+   "after": "https://images-assets.nasa.gov/image/PIA21611/PIA21611~large.jpg",
+   "label_before": "EARLIER",
+   "label_after": "LATER",
+   "min": 8,
+   "teaser": "WINDS OF 1,800 KM/H",
+   "text": "And it changes with the seasons. As summer approached, the haze around the pole shifted from a bluish tint toward gold."
+  },
+  {
+   "chapter": [
+    "CHAPTER 3",
+    "THE STORMS"
+   ],
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA08411/PIA08411~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA05397/PIA05397~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "fact": "Earth's strongest hurricanes reach about\\N300 km/h.",
+   "text": "Saturn's winds would throw you sideways at about eighteen hundred kilometers per hour, near the equator. That is several times faster than any hurricane on Earth."
+  },
+  {
+   "kind": "stat",
+   "value": 1800,
+   "suffix": " km/h",
+   "caption": "SATURN'S FASTEST WINDS (ABOUT)",
+   "text": "Eighteen hundred kilometers per hour. That is how fast the wind can blow on Saturn. Fall in, and you would be thrown sideways across the sky."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01464/PIA01464~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA12824/PIA12824~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2017/05/30/9451-219710504_large.mp4",
+     "start": 2,
+     "move": "in"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2021/09/13/88492-606079592_large.mp4",
+     "start": 1,
+     "move": "in"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2021/09/13/88491-606079589_large.mp4",
+     "start": 2,
+     "move": "in"
+    }
+   ],
+   "fact": "Great White Spots recur every few decades.\\NSaturn's year lasts about 29.5 Earth years.",
+   "text": "Then come the storms. Every few decades, a giant white storm can erupt. Hubble caught one in the nineteen nineties. In December 2010, Cassini watched a new one grow, and within months it wrapped around the whole planet. Like a thunderstorm on Earth, but vastly bigger."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://images-assets.nasa.gov/image/PIA16190/PIA16190~large.jpg",
+   "box": [
+    560,
+    290,
+    1360,
+    790
+   ],
+   "label": "GREAT WHITE SPOT, 2010",
+   "min": 10,
+   "teaser": "THE DEEP",
+   "text": "Zoom in on that storm in infrared light, and hot spots appear deep inside, where warm air churns up from below. Cassini even picked up the radio crackle of its lightning."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA14652/PIA14652~large.jpg",
+   "chapter": [
+    "CHAPTER 4",
+    "THE DEEP"
+   ],
+   "heading": "Falling through the clouds",
+   "marks": [
+    {
+     "type": "arrow",
+     "from": [
+      960,
+      160
+     ],
+     "to": [
+      960,
+      640
+     ],
+     "color": "gold",
+     "text": "YOU"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      200
+     ],
+     "color": "blue",
+     "text": "CLOUD TOPS: -140 C"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      330
+     ],
+     "color": "green",
+     "text": "GRAVITY: ABOUT 1 G"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      460
+     ],
+     "color": "gold",
+     "text": "SUNLIGHT: ~1% OF EARTH'S"
+    }
+   ],
+   "text": "Keep falling. At the cloud tops it is about minus one hundred forty degrees Celsius, and gravity feels about the same as on Earth. Sunlight is already only about one percent as bright as at home, and as you sink the sky fades to darkness while the pressure begins to climb."
+  },
+  {
+   "kind": "layers",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg",
+   "top": 270,
+   "heading": "CUT THROUGH SATURN",
+   "bands": [
+    {
+     "name": "CLOUDS: AMMONIA + WATER ICE",
+     "color": "white",
+     "h": 100
+    },
+    {
+     "name": "LIQUID HYDROGEN",
+     "color": "blue",
+     "h": 150
+    },
+    {
+     "name": "METALLIC HYDROGEN",
+     "color": "purple",
+     "h": 170
+    },
+    {
+     "name": "HOT CORE: ROCK + ICE",
+     "color": "red",
+     "h": 120
+    }
+   ],
+   "text": "Here is the cut through Saturn. At the top, clouds of ammonia and water ice. Beneath them, hydrogen gas gets thicker and thicker, until it is squeezed so hard that it turns into a liquid. Deeper still, with pressure millions of times Earth's, it behaves like a liquid metal. At the center sits a hot core of rock and ice, probably thousands of degrees. Long before you got there, the pressure and heat would have ended you."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA16739/PIA16739~large.jpg",
+   "question": "Raining diamonds?",
+   "heading": "One hypothesis",
+   "teaser": "THE LAST WITNESS",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "white",
+     "text": "LIGHTNING MAKES SOOT"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "gold",
+     "text": "SOOT CLUMPS INTO GRAPHITE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "blue",
+     "text": "DEEPER: DIAMOND? (UNPROVEN)"
+    }
+   ],
+   "text": "And here is the strangest idea of all. One hypothesis says lightning turns methane into soot, the soot clumps into graphite, and deeper down, the crushing pressure could squeeze it into diamond. Nobody has seen it, and it is far from proven. But it might literally rain diamonds."
+  },
+  {
+   "chapter": [
+    "CHAPTER 5",
+    "THE LAST WITNESS"
+   ],
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA01050/PIA01050~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA22766/PIA22766~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "fact": "Cassini traveled nearly 7 years\\Nto reach Saturn.",
+   "text": "Nobody has gone that deep, but one machine did fall into Saturn. Its name was Cassini. It launched in 1997, and reached Saturn in 2004."
+  },
+  {
+   "kind": "quiz",
+   "question": "How many dives did Cassini make between Saturn and its rings?",
+   "options": [
+    "7",
+    "22",
+    "60"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Cassini was nearly out of fuel, so NASA planned a daring finale. Quick question. How many times did it dive through the gap between Saturn and its rings?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA22767/PIA22767~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/18/822_Cassini_Ring-Grazing_and_Grand_Finale_Closest_Approaches_FRPO_Periapses_v01.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA21439/PIA21439~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "fact": "No spacecraft had ever flown through\\Nthe gap between Saturn and its rings.",
+   "text": "Twenty-two. Starting in April 2017, Cassini threaded the gap between Saturn and its rings, a gap about two thousand kilometers wide. No spacecraft had ever flown there. The gap turned out to be almost empty, and Cassini survived every dive."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Cassini%27s_Grand_Finale_%2837230499535%29.jpg",
+   "question": "What did it taste?",
+   "heading": "Cassini's discoveries",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "RING RAIN FALLING IN"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "white",
+     "text": "WATER, METHANE + MORE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "blue",
+     "text": "DIRECT SAMPLES OF SATURN'S AIR"
+    }
+   ],
+   "text": "On those dives, Cassini did something no one had done. It sampled the ring rain itself, material falling from the rings into Saturn, including water, methane and other chemicals. It also measured the upper air directly, for the very first time."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://images-assets.nasa.gov/image/PIA22768/PIA22768~large.jpg",
+   "box": [
+    560,
+    290,
+    1360,
+    790
+   ],
+   "label": "THE FINAL DIVE: 15 SEPT 2017",
+   "min": 9,
+   "text": "NASA crashed its own spacecraft into Saturn, on purpose. On September fifteenth, 2017, Cassini dived in, to protect moons like Enceladus, which may have a hidden ocean that could support life."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/NHQ201709150007/NHQ201709150007~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/NHQ201709130113/NHQ201709130113~large.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/NHQ201709140007/NHQ201709140007~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://cdn.pixabay.com/video/2022/02/01/106311-672600347_large.mp4",
+     "start": 6,
+     "move": "out"
+    }
+   ],
+   "text": "It hit the atmosphere at about one hundred thousand kilometers per hour. Its thrusters fought to keep its antenna pointed at Earth, and it kept sending back readings of Saturn's air until the very end. Then the signal vanished, and the mission was over. If you enjoyed falling with Cassini, subscribe for more."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Saturn_hexagonal_north_pole_feature.jpg",
+   "question": "So, could you survive?",
+   "heading": "The verdict",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "white",
+     "text": "NO GROUND TO LAND ON"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "gold",
+     "text": "WINDS: ABOUT 1,800 KM/H"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "CRUSHED AND COOKED"
+    }
+   ],
+   "text": "So, could you survive falling into Saturn? No. You would never land. Winds, pressure and heat would end the fall long before the core. But Cassini showed us what is down there, and it is one of the most spectacular places in the solar system."
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/PIA17218_%E2%80%93_A_Farewell_to_Saturn%2C_Brightened_Version.jpg",
+   "text": "Which planet should we fall into next? Tell me in the comments. And if you enjoyed this journey, subscribe to Oddly Logical Science, and I'll see you on the next one."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "FALL INTO SATURN",
+  "sub": "COULD YOU SURVIVE?",
+  "shift": 0.2,
+  "circle": false
+ },
+ "shorts": [
+  {
+   "from": 8,
+   "to": 11,
+   "title": "A hexagon wider than Earth"
+  },
+  {
+   "from": 12,
+   "to": 15,
+   "title": "Winds of 1,800 km/h"
+  },
+  {
+   "from": 22,
+   "to": 24,
+   "title": "The last message from Saturn"
+  }
+ ],
+ "youtube": {
+  "title": "Could You Survive Falling Into Saturn?",
+  "description": "Could you survive falling into Saturn? No, but the journey down is unlike anything else in the solar system. Saturn has no surface, its rings are slowly raining into the planet, a hexagon wider than Earth sits at its north pole, and winds reach about 1,800 km/h. Follow the fall from the rings to the metallic depths, and see how NASA's Cassini spacecraft dived into Saturn on purpose in 2017.\n\nIn this video:\n- What are Saturn's rings made of?\n- Is there a surface on Saturn?\n- The north pole hexagon\n- Winds, storms and the Great White Spot\n- What lies inside Saturn\n- Cassini's Grand Finale\n\nFAQ\nCould you land on Saturn? No. It is a gas giant with no solid surface.\nWhat is the hexagon on Saturn? A six-sided jet stream around the north pole; each side is wider than Earth.\nAre Saturn's rings disappearing? Scientists estimate ring material is falling into the planet and the rings could be gone in a few hundred million years; the exact timescale is debated.\nHow did Cassini end? On 15 September 2017 it was sent into Saturn's atmosphere on purpose, transmitting data until the end.\n\nWhich planet should we fall into next? Tell us in the comments.",
+  "tags": [
+   "could you survive falling into saturn",
+   "falling into saturn",
+   "what is inside saturn",
+   "saturn hexagon",
+   "saturn rings disappearing",
+   "saturn ring rain",
+   "cassini grand finale",
+   "cassini final plunge",
+   "saturn storm",
+   "saturn winds",
+   "metallic hydrogen",
+   "does saturn have a surface",
+   "NASA",
+   "space facts",
+   "Oddly Logical Science"
+  ],
+  "hashtags": [
+   "#saturn",
+   "#space",
+   "#NASA"
+  ],
+  "translations": {
+   "fr": "Pourriez-vous survivre à une chute dans Saturne ?",
+   "es": "¿Podrías sobrevivir a una caída en Saturno?",
+   "pt": "Você sobreviveria a uma queda em Saturno?",
+   "de": "Könntest du einen Sturz in den Saturn überleben?",
+   "hi": "क्या आप शनि में गिरकर बच सकते हैं?"
+  }
+ }
+}
