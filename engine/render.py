@@ -2,7 +2,7 @@
 Voix Edge TTS (minutage mot à mot), plans NASA recadrés avec lent travelling, étalonnage,
 fondus enchaînés, sous-titres et titres animés (ASS), musique d'ambiance synthétisée avec ducking.
 Usage : python3 render.py episode.json clips_dir out.mp4"""
-import asyncio, json, os, subprocess, sys, wave
+import asyncio, json, os, re, subprocess, sys, wave
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import visuals
@@ -13,7 +13,11 @@ CA = "/root/.ccr/ca-bundle.crt"
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import time
 JOBS, CONCATS = [], []
-def _run(job): job[0](*job[1])
+def _run(job):
+    try: job[0](*job[1])
+    except Exception as e:  # erreur lisible dans les annotations GitHub (logs inaccessibles)
+        import traceback; tb = traceback.format_exc().strip().splitlines()
+        print(f"::error::{job[0].__name__} {str(job[1][0]).rsplit('/', 1)[-1]} : {e!r} | " + " | ".join(tb[-4:]), flush=True); raise
 
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
@@ -51,7 +55,12 @@ PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le mê
 LAST_STILL = [None]
 def img(src, clips_dir):
     """Image d'une animation sur photo : si la source échoue, dernière photo valide (jamais de rendu planté)."""
-    return fetch(src, clips_dir) or LAST_STILL[0]
+    p = fetch(src, clips_dir) or LAST_STILL[0]
+    if not p and os.path.isdir(clips_dir):  # aucune photo encore : n'importe quelle image déjà téléchargée
+        ims = sorted(f for f in os.listdir(clips_dir) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp")))
+        p = os.path.join(clips_dir, ims[0]) if ims else None
+    if not p: print(f"::error::image introuvable pour une animation : {src}", flush=True)
+    return p
 
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
@@ -89,6 +98,8 @@ def fetch(src, clips_dir):
         alts = [src]
         if "images-assets.nasa.gov" in src:  # NASA refuse parfois ~large : on essaie ~orig puis ~medium, UA navigateur
             alts += [src.replace("~large", "~orig"), src.replace("~large", "~medium")]
+            pia = re.search(r"/(PIA\d{5})/", src)
+            if pia: alts.append(f"https://photojournal.jpl.nasa.gov/jpeg/{pia.group(1)}.jpg")  # miroir JPL
         for u in alts:
             for ua in ("OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "Mozilla/5.0 (X11; Linux x86_64)"):
                 r = subprocess.run(["curl", "-sSLf", "--retry", "2", "--max-time", "120", "-A", ua, "-o", local, u])
