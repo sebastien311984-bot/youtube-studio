@@ -13,6 +13,12 @@ Shorts : 1 par jour après la vidéo longue, « Vidéo associée » = la longue.
 | mar. 27 oct. | Could You Survive Falling Into Saturn? (`saturn_survive`) | 6:54 | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/38124866297/artifacts/11697227441 |
 | ven. 30 oct. | Could You Survive a Swim in an Underwater Lake? (`brinepool_survive`) | 5:09 | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/38090676311/artifacts/11684323549 |
 
+
+## Vidéos revues (prêtes)
+| Date proposée | Vidéo | Durée | Pack |
+|---|---|---|---|
+| mar. 3 nov. (ou plus tôt, à ta place) | The Lake That Killed 1,700 People in One Night (`lake_nyos`) | 7:14 | https://github.com/sebastien311984-bot/youtube-studio/actions/runs/38155794303/artifacts/11708639332 |
+
 Ordre choisi pour alterner les thèmes (histoire → océan → espace → Terre → espace → océan).
 Les artefacts GitHub expirent (90 jours par défaut) : mettre en ligne avant fin décembre.
 Après mise en ligne : passer la ligne en ✅ dans VIDEOS.md.
