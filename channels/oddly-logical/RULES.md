@@ -37,3 +37,4 @@ Seul fichier de règles à lire. Remplace FEEDBACK.md (archivé). Une nouvelle l
 - Titre < 60 caractères (mot-clé + curiosité). Miniature : 1 image choc du sujet + 2-3 mots énormes.
 - Programmée mardi ou vendredi 17h (Paris), jamais Public direct.
 - 2026-10-11 : AUCUN plan répété, ni photo ni vidéo (max 1 utilisation, vérifié par check_episode) ; le moteur allonge les plans au lieu de les répéter. Prévoir assez de visuels uniques dès le repérage (≈ 1 plan / 4 s).
+- 2026-10-11 : CONTRÔLE « SPECTATEUR » avant livraison : regarder la vidéo comme un abonné potentiel (30 premières s, chaque début de chapitre, la fin). Question à chaque moment : « est-ce que je dis waouh / est-ce que je reste ? ». Sinon corriger. Le hook montre l'image la plus forte de la vidéo, pas une image d'ambiance.
