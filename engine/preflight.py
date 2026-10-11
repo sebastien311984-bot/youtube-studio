@@ -30,6 +30,8 @@ for i, s in enumerate(ep["scenes"]):
     srcs = [x["clip"] for x in s.get("shots", [])] + [s[k] for k in ("clip", "image", "before", "after") if s.get(k)]
     for u in srcs:
         n = len(tiles)
+        if u.startswith("pixabay:") or u.split("?")[0].lower().endswith((".mp4", ".webm", ".mov")):  # vidéos déjà vues sur la planche scout : pas de téléchargement (rapide)
+            tiles.append((f"#{n} sc{i} VIDEO", Image.new("RGB", (320, 180), (40, 40, 60)))); continue
         try:
             p = render.fetch(u, clips); im = frame(p)
         except Exception as e:
