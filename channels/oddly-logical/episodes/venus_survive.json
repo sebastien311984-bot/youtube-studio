@@ -437,23 +437,23 @@
   "sub": "COULD YOU SURVIVE?",
   "shift": true,
   "circle": false,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/USSR_Venera_13_1982_-_Venus_ground_recolorized.jpg"
+  "image": "https://images-assets.nasa.gov/image/PIA00108/PIA00108~large.jpg"
  },
  "shorts": [
   {
-   "from": 5,
-   "to": 6,
-   "title": "Is There an Earth-Like Place on Venus?"
+   "from": 11,
+   "to": 12,
+   "title": "Is Venus Still Erupting Today?"
+  },
+  {
+   "from": 15,
+   "to": 17,
+   "title": "The Only Photos Ever Taken on Venus"
   },
   {
    "from": 8,
    "to": 9,
    "title": "Why Is Venus Hotter Than Mercury?"
-  },
-  {
-   "from": 16,
-   "to": 17,
-   "title": "What Does Venus Really Look Like?"
   }
  ],
  "youtube": {
