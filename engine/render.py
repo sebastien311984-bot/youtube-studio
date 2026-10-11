@@ -216,7 +216,14 @@ def make_shorts(ep, out, bounds):
     ep["shorts"] = [{"from": i, "to": j, "title": "..."}] (indices de scènes, j exclu) ; par défaut l'accroche."""
     specs = ep.get("shorts") or [{"from": 1, "to": min(len(bounds) - 1, 5), "title": ep.get("short_title", ep["title"])}]
     for k, sp in enumerate(specs, 1):
-        a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
+        src = out
+        if sp.get("scenes"):  # Short AUTONOME (2026-10-11) : son propre script (accroche + contexte + révélation + appel), rendu à part
+            sub = dict(ep, scenes=sp["scenes"], shorts=[], burn_captions=True, title=sp["title"]); sub.pop("thumbnail", None)
+            sj = out[:-4] + f"_short{k}_ep.json"; json.dump(sub, open(sj, "w")); src = out[:-4] + f"_short{k}_h.mp4"
+            subprocess.run([sys.executable, os.path.abspath(__file__), sj, os.path.dirname(os.path.abspath(out)) + "/../clips", src, "--short"], check=True)
+            a, b = 0.0, min(dur(src), 58.0)
+        else:
+            a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
         if b - a < 20: b = min(bounds[-1] - 2, a + 25)  # données chaîne : 20-30 s = meilleur taux de complétion
         tf = out[:-4] + f"_short{k}.txt"; import textwrap; open(tf, "w").write("\n".join(textwrap.wrap(sp["title"].upper(), 18)))  # 9:16 : titre sur plusieurs lignes, jamais coupé
         vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:6,eq=brightness=-0.15[bg];"
@@ -226,7 +233,7 @@ def make_shorts(ep, out, bounds):
               f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560,"
               f"drawbox=x=240:y=1380:w=600:h=110:color=0xE53935@0.95:t=fill:enable='gte(t,{b - a - 4:.2f})',"
               f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:text='SUBSCRIBE':fontsize=64:fontcolor=white:x=(w-tw)/2:y=1405:enable='gte(t,{b - a - 4:.2f})'")  # appel à l'abonnement (4 dernières s) : objectif 1 000 abonnés  # pas de fondu final : la fin boucle sur le début
-        sh("ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", out, "-filter_complex", vf, "-c:v", "libx264", "-preset", "medium",
+        sh("ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", src, "-filter_complex", vf, "-c:v", "libx264", "-preset", "medium",
            "-crf", "19", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out[:-4] + f"_short{k}.mp4")
         os.remove(tf)
 
@@ -432,6 +439,7 @@ Dans YouTube Studio (chaîne Oddly Logical Science), mets en ligne `{b}.mp4`.
 6. Après publication : épingler en commentaire la question finale de la vidéo, et créer un post Communauté « Quiz » (onglet Créer > Post > Quiz) reprenant le quiz de la vidéo avec un lien vers elle (si l'option Quiz n'est pas disponible, faire un Sondage).
 7. Ne PAS publier les Shorts maintenant : ils sortent après la vidéo, 1 par jour, avec « Vidéo associée » = cette vidéo.
 """)
+    if "--short" in sys.argv: print(out, round(total, 1), "s (short autonome)"); return
     make_shorts(ep, out, starts + [total])
     import publish_kit
     publish_kit.write_all(ep, out, srt_words, yt_chapters, thumb_src)
