@@ -1,0 +1,43 @@
+Téléchargé 0 Mo en 0 s : Great_white_shark_south_africa.jpg
+Téléchargé 3 Mo en 0 s : Guadalupe_Island_Great_White_Shark_Cage_Diving_Adventures.jp
+Scène 0 préparée (footage, 10 s)
+Scène 1 : 2 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 2 Mo en 0 s : Shark_cage_diving_Gaansbai.jpg
+Téléchargé 3 Mo en 0 s : Great_white_shark_at_Isla_Guadalupe%2C_Mexico._Shark_cage_di
+Scène 1 préparée (footage, 13 s)
+Scène 2 : 2 plan(s) pour 17 s → plans allongés, aucun plan répété
+Téléchargé 8 Mo en 0 s : Great_White_Shark_%28Carcharodon_carcharias%29_%283287228439
+Téléchargé 5 Mo en 0 s : Great_white_shark_at_Isla_Guadalupe._Shark_cage_diving_MV_Ho
+Scène 2 préparée (footage, 17 s)
+Scène 3 : 2 plan(s) pour 17 s → plans allongés, aucun plan répété
+Téléchargé 6 Mo en 0 s : Great_white_shark_at_Isla_Guadalupe._Shark_cage_diving_with_
+Téléchargé 11 Mo en 1 s : Great_white_shark_and_cage_diving_2.wmv.ogv
+Scène 3 préparée (footage, 17 s)
+Téléchargé 7 Mo en 0 s : Ampullae_of_Lorenzini_inner_side.jpg
+Scène 4 préparée (annotate, 21 s)
+Scène 5 préparée (quiz, 7 s)
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 454, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 326, in main
+    words = tts(s["text"], voice, vp, s.get("tone") or AUTO_TONE.get(s.get("kind", ""), "neutral")) if s.get("text") else []
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 51, in tts
+    asyncio.run(run()); humanize(path); return words
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 48, in run
+    async for ch in c.stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
