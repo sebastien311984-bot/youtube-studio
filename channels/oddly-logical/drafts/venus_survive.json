@@ -110,16 +110,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Venus_clouds_Galileo_Color_PIA00124.jpg",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Transit_of_Venus%2C_2012_Orbital_Paths.ogv",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Venus_Cloud_Tops_%281995-16-282%29.tiff",
-     "start": 0,
-     "move": "in"
     }
    ],
    "label": [
@@ -257,7 +247,7 @@
     "0 KM",
     "The surface"
    ],
-   "text": "Touch down, and the air is a crushing weight. The pressure is about ninety times Earth's, like being nearly nine hundred meters under the sea. The air is mostly carbon dioxide, so dense it behaves almost like a fluid. That blanket trapped the heat in a runaway greenhouse, and it never leaves."
+   "text": "Touch down, and the air is a crushing weight. The pressure is about ninety times Earth's, like being about nine hundred meters under the sea. The air is mostly carbon dioxide, so dense it behaves almost like a fluid. That blanket trapped the heat in a runaway greenhouse, and it never leaves."
   },
   {
    "kind": "kinetic",
@@ -366,7 +356,7 @@
    ],
    "yt_chapter": "Venera 13: two hours to live",
    "teaser": "THE PICTURES",
-   "text": "But a few machines have been there. On the first of March, nineteen eighty-two, the Soviet lander Venera 13 touched down on the surface. It was built to last about half an hour. Instead it kept working for about two hours, one hundred twenty-seven minutes, before the heat finally silenced it."
+   "text": "But a few machines have been there. On the first of March, nineteen eighty-two, the Soviet lander Venera 13 touched down on the surface. It was built to last about half an hour. Instead it kept working for about two hours, one hundred twenty-seven minutes, before contact was lost — a record for any Venus lander."
   },
   {
    "shots": [
@@ -473,7 +463,7 @@
  ],
  "youtube": {
   "title": "Could You Survive on Venus? The 465 °C Descent",
-  "description": "Could you survive on Venus? We fall from 100 km to the surface: sulfuric acid clouds, the one layer at about 50 km where pressure is Earth-like, then crushing pressure (about 90 atmospheres) and about 465 °C. Plus the Soviet lander Venera 13, which sent the first colour photos of the surface and survived about 127 minutes in 1982.\n\nIn this video:\n- What do you see at 100 km?\n- What are the clouds made of?\n- Where is Venus like Earth?\n- What happens below?\n- What is the surface like?\n- Are there volcanoes?\n- How do we see through the clouds?\n- Venera 13: the 127-minute mission\n\nFAQ\nWhy is Venus hotter than Mercury? Its thick carbon dioxide atmosphere traps heat in a runaway greenhouse.\nHow hot is the surface? About 465 °C.\nHow much pressure? About 90 times Earth's.\nWho landed on Venus? Soviet Venera probes; Venera 13 worked about 127 minutes in 1982.\n\nWhich place should we survive next? Tell us in the comments.",
+  "description": "Could you survive on Venus? We fall from 100 km to the surface: sulfuric acid clouds, the one layer at about 50 km where pressure is Earth-like, then crushing pressure (about 90 atmospheres) and about 465 °C. Plus the Soviet lander Venera 13, which sent some of the first colour photos of the surface and worked about 127 minutes in 1982.\n\nIn this video:\n- What do you see at 100 km?\n- What are the clouds made of?\n- Where is Venus like Earth?\n- What happens below?\n- What is the surface like?\n- Are there volcanoes?\n- How do we see through the clouds?\n- Venera 13: the 127-minute mission\n\nFAQ\nWhy is Venus hotter than Mercury? Its thick carbon dioxide atmosphere traps heat in a runaway greenhouse.\nHow hot is the surface? About 465 °C.\nHow much pressure? About 90 times Earth's.\nWho landed on Venus? Soviet Venera probes; Venera 13 worked about 127 minutes in 1982.\n\nWhich place should we survive next? Tell us in the comments.",
   "tags": [
    "could you survive on venus",
    "venus",
