@@ -1,0 +1,52 @@
+Téléchargé 3 Mo en 0 s : Backlit_Saturn_from_Cassini_Orbiter_2007_May_9.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : PIA05983~large.jpg
+Téléchargé 21 Mo en 0 s : 106311-672600347_large.mp4
+Scène 0 préparée (footage, 16 s)
+Scène 1 préparée (intro, 3 s)
+Scène 2 : 3 photo(s) pour 15 s → plans allongés, AUCUNE photo répétée
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : PIA02241~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA01988~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA02269~large.jpg
+Scène 2 préparée (footage, 15 s)
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA01969~large.jpg
+Scène 3 préparée (annotate, 14 s)
+Scène 4 : 2 photo(s) pour 12 s → plans allongés, AUCUNE photo répétée
+Téléchargé 0 Mo en 0 s : PIA20513_-_Basking_in_Light.jpg
+Téléchargé 0 Mo en 0 s : PIA03883~large.jpg
+Scène 4 préparée (footage, 12 s)
+Téléchargé 0 Mo en 0 s : PIA23175~large.jpg
+Scène 5 préparée (annotate, 24 s)
+Scène 6 préparée (scale, 14 s)
+Scène 7 : 4 photo(s) pour 21 s → plans allongés, AUCUNE photo répétée
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA06436~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA11396~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : PIA01269~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : PIA17900~large.jpg
+Scène 7 préparée (footage, 21 s)
+Téléchargé 0 Mo en 0 s : PIA09186~large.jpg
+Scène 8 préparée (zoomto, 9 s)
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 430, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 361, in main
+    if "label" in s: events += label(t + 0.8, min(d - 1, 5), *s["label"])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: label() takes 4 positional arguments but 24 were given
