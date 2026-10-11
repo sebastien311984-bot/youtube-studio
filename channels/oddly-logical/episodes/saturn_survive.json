@@ -11,6 +11,11 @@
      "move": "in"
     },
     {
+     "clip": "pixabay:saturn planet rings#0",
+     "start": 0,
+     "move": "in"
+    },
+    {
      "clip": "https://images-assets.nasa.gov/image/PIA05983/PIA05983~large.jpg",
      "start": 0,
      "move": "out"
@@ -37,6 +42,11 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/image/PIA02241/PIA02241~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:saturn planet rings#1",
      "start": 0,
      "move": "in"
     },
@@ -86,6 +96,11 @@
    "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ea/PIA20513_-_Basking_in_Light.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:saturn planet#2",
      "start": 0,
      "move": "in"
     },
@@ -154,6 +169,11 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/image/PIA06436/PIA06436~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:saturn planet#3",
      "start": 0,
      "move": "in"
     },
@@ -238,6 +258,11 @@
      "move": "in"
     },
     {
+     "clip": "pixabay:saturn space#0",
+     "start": 0,
+     "move": "in"
+    },
+    {
      "clip": "https://images-assets.nasa.gov/image/PIA05397/PIA05397~large.jpg",
      "start": 0,
      "move": "right"
@@ -257,6 +282,11 @@
    "shots": [
     {
      "clip": "https://images-assets.nasa.gov/image/PIA01464/PIA01464~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:saturn space#1",
      "start": 0,
      "move": "in"
     },
