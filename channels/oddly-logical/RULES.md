@@ -4,6 +4,12 @@ Seul fichier de règles à lire. Remplace FEEDBACK.md (archivé). Une nouvelle l
 ## Objectif
 1000 abonnés + 4000 h. 2-3 vidéos longues/semaine (6-10 min) + 3 Shorts chacune. Qualité > quantité (politique YouTube « contenu produit en masse »).
 
+## Exigences permanentes du propriétaire (ne jamais lui faire répéter)
+- Niveau pro, cinématographique, irréprochable. Sinon on ne livre pas.
+- Règles YouTube strictes : contenu original et transformateur (pas « produit en masse » ni réutilisé), droits vérifiés sur chaque image et son, aucun clickbait mensonger (la vidéo tient la promesse du titre et de la miniature).
+- Sujets à fort potentiel (viser des millions de vues) : peur, survie, mystère, record, « impossible mais vrai », avec un mot-clé que les gens recherchent vraiment. Vérifier la demande (recherche YouTube, tendances) avant de choisir.
+- Faire s'abonner : promesse de chaîne dite tôt (« every week, the strangest true science »), appel à l'abonnement placé juste après un moment fort (jamais au début), séries/playlists, fin qui renvoie vers une autre vidéo de la chaîne (sans annoncer un sujet précis à venir).
+
 ## Sujet
 - Angle TOI (« Could You Survive… », « What Happens to Your Body… ») ou mystère/histoire vraie (Flight 19 : 90,7 % de rétention).
 - Rotation des thèmes, jamais 2 fois de suite le même. Vérifier VIDEOS.md (déjà faits).
