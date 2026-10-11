@@ -57,3 +57,8 @@ Lun « What If… ? » · Mar « Explained » · Mer « Top 10 » · Jeu « Myst
 - Earth From Space : hurricanes · lightning sprites · wildfires · glaciers · city lights · dust storms Sahara→Amazon · ocean currents · volcanic eruptions seen from orbit · auroras from ISS
 - History : Apollo 13 · Challenger & Columbia · Voyager's Golden Record · Hubble's broken mirror · first image of a black hole · Shoemaker-Levy 9 hitting Jupiter · Tunguska 1908 · Chelyabinsk 2013
 - ⚠️ Nature / Ocean / Animals (après clé Pexels) : deep-sea creatures · tardigrades · octopus intelligence · animal migrations · bioluminescence · rogue waves · ball lightning · supercell tornadoes
+
+## 2026-10-11 — Données chaîne (analyse Gemini)
+- Top vues : Space Without a Suit, second by second (470) ; Prince Rupert drop paradoxe (384, CTR 5,2 %) ; rétention record : Fall into a Black Hole (76 %).
+- Formule gagnante : le corps humain face à l'extrême, seconde par seconde / mètre par mètre + paradoxe visuel.
+- Prochain : Mariana Trench without a submarine, meter by meter (mar 3 nov). Puis : paradoxes physiques façon goutte de Rupert.
