@@ -33,5 +33,5 @@ for c, n in _uses.items():
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
-errs += [f"plan au hasard interdit (pixabay:requête) : {u}" for u in __import__("re").findall(r'"(pixabay:[^"]+)"', open(sys.argv[1]).read())]
+errs += [f"plan au hasard interdit (pixabay:requête) : {u}" for u in __import__("re").findall(r'"(pixabay:(?!id:\d+")[^"]+)"', open(sys.argv[1]).read())]
 print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard")) else 0)

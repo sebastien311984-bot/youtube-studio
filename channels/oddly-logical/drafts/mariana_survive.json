@@ -1,0 +1,698 @@
+{
+ "title": "Could You Survive the Mariana Trench Without a Submarine?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Images: NOAA Okeanos Explorer / NOAA Ocean Exploration, US Navy, US EPA, Andy Moreno (public domain); Dr Dawn Wright / Victor Vescovo images (CC0). Wikimedia Commons: Map of the Mariana Trench by wallace (CC BY 2.5); bathymetry map and snailfish figure by Gerringer et al. 2017 (CC BY 3.0); amphipod image by Bienhold, Pop Ristova, Wenzhoefer, Dittmar and Boetius (CC BY 2.5); sperm whale by Gabriel Barathieu (CC BY-SA 2.0); diver over reef by Derek Keats (CC BY 2.0); diver in kelp forest by Ed Bierman (CC BY 2.0); Challenger Deep diving history map and Limiting Factor interior by Victor Vescovo (CC BY-SA 4.0); Deepsea Challenger photos by Z22 and a Wikimedia Commons contributor, Cite de la Mer (CC BY-SA 4.0). Video and ambience footage: Pixabay (free license) and NOAA Ocean Exploration (public domain).",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:63427",
+     "start": 2,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:336799",
+     "start": 3,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:26007",
+     "start": 1,
+     "move": "left"
+    }
+   ],
+   "lead": 0.3,
+   "yt_chapter": "Sinking 11 kilometers",
+   "text": "Jump into the Pacific with no submarine and sink eleven kilometers straight down. Your body will tell you, meter by meter, exactly where it gives up. Only a few people have ever reached the bottom. Stay to see how."
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Marianatrenchmap.png",
+   "question": "How deep is it?",
+   "heading": "The Mariana Trench",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 160,
+     "color": "gold",
+     "text": "CHALLENGER DEEP"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "white",
+     "text": "ABOUT 2,550 KM LONG"
+    }
+   ],
+   "teaser": "THE FIRST 40 METERS",
+   "text": "Our dive starts in the western Pacific, not far from the island of Guam, where the Mariana Trench curves for about twenty-five hundred kilometers. Its deepest point is called Challenger Deep. It lies about ten thousand nine hundred meters down. Let's start sinking, one step at a time."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:241320",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:94166",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:63559",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:314750",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:id:248",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 1",
+    "WHAT HAPPENS IN THE FIRST 40 METERS?"
+   ],
+   "yt_chapter": "What happens in the first 40 meters?",
+   "label": [
+    "DEPTH 10 TO 40 M",
+    "Pressure doubles, then the mind blurs"
+   ],
+   "fact": "Every 10 m of seawater adds about\\N1 atmosphere of pressure.",
+   "text": "Ten meters down, the first shock comes fast. Every ten meters of seawater adds one atmosphere of pressure, so here it is already double. Your eardrums ache, and every lungful of air shrinks to half its size. By forty meters, a stranger problem starts. Nitrogen in your breath begins to cloud your thinking, a drunk-like effect divers call the rapture of the deep."
+  },
+  {
+   "kind": "layers",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Freediver_Moalboal.jpg",
+   "top": 300,
+   "heading": "YOUR LUNGS, SQUEEZED",
+   "_check_marks": true,
+   "bands": [
+    {
+     "name": "SURFACE: 1 ATM, LUNGS FULL SIZE",
+     "color": "blue",
+     "h": 130
+    },
+    {
+     "name": "10 M: 2 ATM, HALF THE VOLUME",
+     "color": "green",
+     "h": 130
+    },
+    {
+     "name": "30 M: 4 ATM, A QUARTER",
+     "color": "gold",
+     "h": 130
+    },
+    {
+     "name": "90 M: 10 ATM, ABOUT A TENTH",
+     "color": "red",
+     "h": 130
+    }
+   ],
+   "teaser": "100 METERS AND BEYOND",
+   "text": "Here is the rule behind everything. When pressure goes up, the air inside you shrinks. At the surface your lungs are full size. At ten meters, half. At thirty, a quarter. At ninety meters, about a tenth. Your lungs are a balloon in a closing fist."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ae/U.S._Navy_Diver_enters_the_water_during_a_training_evolution_at_the_Naval_Diving_and_Salvage_Training_Center_140218-N-IC111-156.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Corals_and_diver_in_deep_blue_at_Halahi_Reef%2C_Red_Sea%2C_Egypt_-SCUBA_-UNDERWATER_-PICTURES_%286412299407%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:908",
+     "start": 6,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Diver_in_kelp_forest.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 2",
+    "HOW DEEP CAN A HUMAN GO?"
+   ],
+   "yt_chapter": "How deep can a human go?",
+   "label": [
+    "DEPTH 100 M",
+    "Eleven atmospheres"
+   ],
+   "text": "At one hundred meters, the pressure is eleven times higher than at the surface. That is beyond almost every breath-hold dive. The no-limits freediving record, set by Herbert Nitsch in 2007, is two hundred and fourteen meters, riding a weighted sled down and a balloon back up. Even he needed that machinery, and the dive pushed his body to the edge. You, with nothing but your own breath, would turn back long before."
+  },
+  {
+   "kind": "quiz",
+   "question": "How deep has anyone gone using scuba gear?",
+   "options": [
+    "120 m",
+    "332 m",
+    "600 m"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Quick question. How deep has any human ever dived using scuba gear?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:63427",
+     "start": 8,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:304019",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:63559",
+     "start": 10,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:908",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "label": [
+    "DEPTH 200 M",
+    "Twilight zone"
+   ],
+   "text": "Two hundred meters. This is the twilight zone. Only a faint blue glow is left, far too weak for plants to grow. Red light vanished long ago, so even blood looks dark. Your skin would already be numb, because deep water is cold, often only a few degrees above freezing, and cold alone can stop your muscles from working within minutes. Below here, the water keeps getting colder, and darker."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/An_EPA_scientific_diver_%2814549930411%29.jpg",
+   "question": "Why not just breathe air?",
+   "heading": "Going deeper takes tricks",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "white",
+     "text": "NITROGEN: NARCOSIS"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "gold",
+     "text": "OXYGEN: TOXIC UNDER PRESSURE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "HELIUM MIXES: TREMORS (HPNS)"
+    }
+   ],
+   "text": "Below forty meters, plain air gets dangerous. The narcosis deepens. And oxygen itself turns toxic under pressure and can trigger seizures. So deep divers breathe special mixes, with helium and much less oxygen. Even then, from around a hundred and fifty meters, the nerves can start to shake. It is called high pressure nervous syndrome. In other words, human bodies have a depth where their own chemistry starts to misfire."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:751",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:314749",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:1085",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:314750",
+     "start": 6,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:id:248",
+     "start": 10,
+     "move": "in"
+    }
+   ],
+   "label": [
+    "DEPTH 332 M",
+    "Deepest scuba dive on record"
+   ],
+   "fact": "Ahmed Gabr's 2014 record: about 332 m,\\Nthen nearly 14 hours of decompression.",
+   "text": "In 2014, the Egyptian diver Ahmed Gabr went down in the Red Sea to about three hundred and thirty-two meters, the deepest scuba dive on record. The descent took minutes. The way back took almost fourteen hours, rising slowly so the gas dissolved in his blood could escape without forming bubbles. Surface too fast and those bubbles would form in the blood and joints, the dangerous condition known as the bends. That is how narrow the margin is, at just a third of a kilometer."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NO SUNLIGHT",
+    "NEAR FREEZING",
+    "100 ATMOSPHERES"
+   ],
+   "teaser": "THE MIDNIGHT ZONE",
+   "text": "Beyond one thousand meters, the sun is gone for good."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:336799",
+     "start": 12,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Jellyfish-_2016_Deepwater_Exploration_of_the_Marianas.webm",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:26007",
+     "start": 20,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:304019",
+     "start": 8,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 3",
+    "WHAT IS THE MIDNIGHT ZONE?"
+   ],
+   "yt_chapter": "What is the midnight zone?",
+   "label": [
+    "DEPTH 1,000 M",
+    "Midnight zone"
+   ],
+   "text": "A thousand meters down, there is no sunlight at all, and the pressure is about a hundred atmospheres. The water is only a few degrees above freezing. The only light is living light, made by animals themselves. Without a lamp you would be blind, in a black you have never seen at the surface. Many animals here are red or transparent, because with no light, there is nothing to hide from but their own glow."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mother_and_baby_sperm_whale.jpg",
+   "question": "Who can go this deep?",
+   "heading": "About 2,000 m: the sperm whale",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "DIVES BEYOND 2,000 M"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "white",
+     "text": "LUNGS COLLAPSE ON PURPOSE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "blue",
+     "text": "OXYGEN STORED IN BLOOD + MUSCLE"
+    }
+   ],
+   "teaser": "THE ABYSS",
+   "text": "Few air-breathers visit this dark. The sperm whale regularly dives about a thousand meters and sometimes beyond two thousand, for up to an hour and a half. Its ribcage folds and its lungs collapse on purpose, while oxygen waits stored in blood and muscle. Your ribs cannot do that."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Proisocrinus_ruberrimus_Marianas.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/08/Relicanthus_daphneae_2016.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Typhlonus_nasus_Okeanos.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/81/Uncinateridae_Tretopleura_1.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 4",
+    "IS THERE LIFE IN THE ABYSS?"
+   ],
+   "yt_chapter": "Is there life in the abyss?",
+   "label": [
+    "DEPTH 4,000 M",
+    "The abyss"
+   ],
+   "text": "At four thousand meters you are in the abyss. The pressure is around four hundred atmospheres, and the water is barely above freezing. Food arrives as marine snow, dead plankton drifting down from far above. Yet robots exploring the Mariana region keep finding life: sea lilies, anemones, even fish. It is cold, slow, and quiet, but it is alive."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Cross_section_of_mariana_trench.jpg",
+   "question": "Why is it so deep?",
+   "heading": "How a trench forms",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "arrow",
+     "from": [
+      500,
+      400
+     ],
+     "to": [
+      800,
+      600
+     ],
+     "color": "gold",
+     "text": "PACIFIC PLATE SINKS"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "white",
+     "text": "BELOW 6,000 M: THE HADAL ZONE"
+    }
+   ],
+   "teaser": "THE LAST FISH",
+   "text": "Why does the seafloor drop away here? Two giant plates collide. The old, heavy Pacific plate bends and sinks beneath the plate to the west, dragging the seabed into a deep V. Below six thousand meters, scientists call it the hadal zone, named after Hades, the Greek underworld."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pseudoliparis_swirei_%2810.11646-zootaxa.4358.1.7%29_Figure_8.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/04/Unidentified_amphipod_-_journal.pone.0053590.g003-i.png",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/21/Culeolus_Okeanos.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "label": [
+    "DEPTH 8,000 M",
+    "The deepest fish"
+   ],
+   "text": "Around eight thousand meters, we meet the deepest fish ever filmed: a pale, ghostly snailfish. Below it, only invertebrates like tiny shrimp-like amphipods carry on. One leading idea says the chemistry that protects fish cells simply fails at around this depth. Nobody has filmed a fish deeper than about eight thousand three hundred meters. The last stretch, nearly three more kilometers, belongs to the invertebrates."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Challenger_Deep_EM124_Sonar_Map_and_Diving_History_101119.jpg",
+   "box": [
+    760,
+    340,
+    1160,
+    640
+   ],
+   "label": "CHALLENGER DEEP: ABOUT 10,935 M",
+   "_check_marks": true,
+   "min": 9,
+   "text": "And then, the bottom. Challenger Deep, about ten thousand nine hundred and thirty-five meters down, though surveys differ by a few dozen meters. Mount Everest would fit inside it, with more than two kilometers of water still above its peak."
+  },
+  {
+   "kind": "stat",
+   "value": 1100,
+   "suffix": " atm",
+   "caption": "ABOUT 1,100 TIMES SURFACE PRESSURE",
+   "teaser": "THE HUMANS WHO WENT",
+   "fact": "A thumbnail-sized patch carries about\\Na tonne at Challenger Deep.",
+   "text": "Here the water presses on you with about eleven hundred atmospheres. That is roughly a tonne on every square centimeter, a patch the size of a fingernail. Imagine a small car balanced on each one. Even the seawater itself is squeezed by about five percent. Air-filled spaces in your body, your lungs, ears and sinuses, would be crushed flat. Nothing soft survives that, which is why every craft that ever went here is round, thick, and nothing like a normal submarine.",
+   "min": 8
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bathyscaphe_Trieste.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ed/USN_1044872_Bathyscaphe_Trieste.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bathyscaphe_Trieste_II.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Bathyscaphe_Trieste_hoisted.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bathyscaphe_Trieste_with_USS_Lewis_%28DE-535%29_over_the_Marianas_Trench%2C_23_January_1960_%28NH_96797%29.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 5",
+    "WHO HAS REACHED THE BOTTOM?"
+   ],
+   "yt_chapter": "Who has reached the bottom?",
+   "label": [
+    "JANUARY 1960",
+    "Bathyscaphe Trieste"
+   ],
+   "text": "So how did anyone get down there? On January twenty-third, nineteen sixty, the Swiss engineer Jacques Piccard and US Navy lieutenant Don Walsh did it in the bathyscaphe Trieste. A huge float full of gasoline kept it buoyant, with a tiny crew sphere hanging underneath. The descent took almost five hours, falling through darkness, past the zones we just crossed, at a walking pace."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bathyscaphe_Trieste_sphere.jpg",
+   "question": "How did it survive?",
+   "heading": "Trieste's crew sphere",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "STEEL WALL: ABOUT 13 CM"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "white",
+     "text": "INSIDE: NORMAL AIR PRESSURE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "WINDOW PANE CRACKED ON THE WAY DOWN"
+    }
+   ],
+   "text": "Here is the secret: a sphere. Pressure pushes from every direction, and a sphere spreads that force evenly. Trieste's steel walls were about thirteen centimeters thick, and inside, the air stayed at normal pressure. On the way down, a loud crack shook the craft, an outer window pane had split, yet the sphere held. They stayed about twenty minutes, and reported a small flat fish, a sighting that is still debated."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Deepsea_Challenger_-_Cit%C3%A9_de_la_Mer-7935.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Deepsea_Challenger_Thruster.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "label": [
+    "MARCH 2012",
+    "Deepsea Challenger"
+   ],
+   "text": "Fifty-two years later, the filmmaker James Cameron went alone, in a vertical torpedo. He sat curled in a tiny sphere for a two-and-a-half-hour descent."
+  },
+  {
+   "kind": "beforeafter",
+   "before": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Deepsea_Challenger_Pilot_Sphere_Interior.jpg",
+   "after": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr_Dawn_Wright_and_CDR_Victor_Vescovo_Challenger_Deep_Dive_071222_Western_Pool-1.jpg",
+   "label_before": "CAMERON, 2012",
+   "label_after": "LIMITING FACTOR",
+   "min": 9,
+   "text": "His sphere, on the left, was just over a meter wide. On the right, the inside of a modern titanium submersible, built to dive again and again. Both craft are cramped, cold, and unforgiving. Different designs, one job: keep a bubble of surface pressure alive inside an ocean that wants to crush it."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Dr_Dawn_Wright_and_Pilot_Victor_Vescovo_Pre_Challenger_Deep_Dive_072.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Photo_of_Dr._Dawn_Wright_with_Snoopy_at_Challenger_Deep_071222_in_the_submersible_DSV_Limiting_Factor.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "label": [
+    "2019 AND AFTER",
+    "DSV Limiting Factor"
+   ],
+   "text": "In 2019, the explorer Victor Vescovo reached the bottom in the Limiting Factor, and went back many times, taking scientists along, and cameras that showed the bottom floor, silty and quiet, with small animals living there. Only a few dozen people have ever been where we just fell."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Pseudoliparis_swirei_in_Mariana_Trench_map.jpg",
+   "question": "So, could you survive?",
+   "heading": "The verdict",
+   "_check_marks": true,
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "white",
+     "text": "NARCOSIS FROM ABOUT 40 M"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "blue",
+     "text": "NO LIGHT BELOW ABOUT 1,000 M"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "ABOUT 1,100 ATM AT THE BOTTOM"
+    }
+   ],
+   "text": "So, could you survive the Mariana Trench without a submarine? No. Long before the bottom, narcosis, cold, or a lack of air would end the dive. The trench is not impossible to visit. It is impossible to visit unprotected. The people who made it brought a bubble of the surface with them. And now you know exactly what it protects you from."
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Stalked_Anenome_on_Challenger_Deep_Dive_Dr_Dawn_Wright_and_Pilot_Victor_Vescovo_071222.jpg",
+   "text": "Which place should I take you next: the Moon, the center of the Earth, or a volcano? Tell me in the comments. And if you enjoyed the fall, subscribe to Oddly Logical Science, and I will see you on the next one."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "NO SUBMARINE",
+  "sub": "COULD YOU SURVIVE?",
+  "shift": false,
+  "circle": false,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bathyscaphe_Trieste_sphere.jpg"
+ },
+ "shorts": [
+  {
+   "from": 3,
+   "to": 4,
+   "title": "What 10 Meters Does to Your Lungs"
+  },
+  {
+   "from": 7,
+   "to": 9,
+   "title": "The Deepest Scuba Dive Ever"
+  },
+  {
+   "from": 17,
+   "to": 19,
+   "title": "1,100 Atmospheres and the Sphere That Survived"
+  }
+ ],
+ "youtube": {
+  "title": "Could You Survive the Mariana Trench Without a Sub?",
+  "description": "Could you survive the Mariana Trench without a submarine? No. But the dive down is one of the strangest journeys on Earth. We sink from the surface to Challenger Deep, about 10,935 meters down, and see what pressure, cold, darkness and narcosis do to your body at every depth, then meet the humans who actually went: Piccard and Walsh in 1960, James Cameron in 2012, and Victor Vescovo from 2019.\n\nIn this video:\n- What happens in the first 40 meters?\n- How deep can a human go?\n- What is the midnight zone?\n- Is there life in the abyss?\n- Who has reached the bottom?\n\nFAQ\nHow deep is the Mariana Trench? Challenger Deep is about 10,935 meters deep; surveys differ by a few dozen meters.\nWhat is the deepest scuba dive? About 332 meters, by Ahmed Gabr in the Red Sea in 2014, followed by almost 14 hours of decompression.\nHow much pressure is at the bottom? About 1,100 times the pressure at the surface.\nWho has been to the bottom? Jacques Piccard and Don Walsh in 1960, James Cameron in 2012, Victor Vescovo and others from 2019.\nWhat is the deepest fish? Snailfish have been filmed at about 8,000 meters and a bit deeper.\n\nWhich place should we visit next? Tell us in the comments.",
+  "tags": [
+   "could you survive the mariana trench",
+   "mariana trench",
+   "challenger deep",
+   "deepest place on earth",
+   "ocean pressure",
+   "nitrogen narcosis",
+   "how deep can a human dive",
+   "trieste bathyscaphe",
+   "james cameron deepsea challenger",
+   "snailfish"
+  ],
+  "hashtags": [
+   "#marianatrench",
+   "#ocean",
+   "#science",
+   "#deepsea"
+  ],
+  "translations": {
+   "fr": "Pourriez-vous survivre à la fosse des Mariannes sans sous-marin ?",
+   "es": "¿Podrías sobrevivir a la fosa de las Marianas sin submarino?",
+   "pt": "Você sobreviveria à Fossa das Marianas sem submarino?",
+   "de": "Könntest du den Marianengraben ohne U-Boot überleben?",
+   "hi": "क्या आप पनडुब्बी के बिना मारियाना ट्रेंच में बच सकते हैं?"
+  }
+ }
+}
