@@ -1,0 +1,4 @@
+#12 (scène 6) ≈ #6 (scène 4) QUASI-DOUBLON : Venus_clouds_Galileo_FalseColor_PIA00112.jpg
+#21 (scène 13) ≈ #6 (scène 4) QUASI-DOUBLON : Venus_clouds_Galileo_Color_PIA00124.jpg
+#21 (scène 13) ≈ #9 (scène 6) QUASI-DOUBLON : Venus_clouds_Galileo_Color_PIA00124.jpg
+#26 (scène 17) ≈ #2 (scène 0) QUASI-DOUBLON : PIA00478~large.jpg
