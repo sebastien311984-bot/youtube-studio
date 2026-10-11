@@ -48,7 +48,12 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    asyncio.run(run()); humanize(path); return words
+    for k in range(5):  # edge-tts renvoie parfois « No audio received » (limitation passagère) → nouvel essai
+        try: words.clear(); asyncio.run(run()); break
+        except Exception as e:
+            if k == 4: raise
+            print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
+    humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
 
