@@ -220,7 +220,9 @@ def make_shorts(ep, out, bounds):
         if sp.get("scenes"):  # Short AUTONOME (2026-10-11) : son propre script (accroche + contexte + révélation + appel), rendu à part
             sub = dict(ep, scenes=sp["scenes"], shorts=[], burn_captions=True, title=sp["title"]); sub.pop("thumbnail", None)
             sj = out[:-4] + f"_short{k}_ep.json"; json.dump(sub, open(sj, "w")); src = out[:-4] + f"_short{k}_h.mp4"
-            subprocess.run([sys.executable, os.path.abspath(__file__), sj, os.path.dirname(os.path.abspath(out)) + "/../clips", src, "--short"], check=True)
+            r = subprocess.run([sys.executable, os.path.abspath(__file__), sj, os.path.dirname(os.path.abspath(out)) + "/../clips", src, "--short"])
+            if r.returncode != 0 or not os.path.exists(src):
+                print(f"::error::Short autonome {k} en échec → ignoré (la vidéo longue reste livrée)", flush=True); continue
             a, b = 0.0, min(dur(src), 58.0)
         else:
             a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
