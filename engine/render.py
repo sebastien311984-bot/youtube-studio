@@ -48,11 +48,11 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    for k in range(4):  # Edge TTS échoue parfois (NoAudioReceived) : on réessaie au lieu de planter le rendu
+    for k in range(5):  # edge-tts renvoie parfois « No audio received » (limitation passagère) → nouvel essai
         try: words.clear(); asyncio.run(run()); break
         except Exception as e:
-            if k == 3: raise
-            print("TTS : nouvel essai", k + 1, e); __import__("time").sleep(5 * (k + 1))
+            if k == 4: raise
+            print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
     humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
@@ -415,6 +415,9 @@ def main(ep_path, clips_dir, out):
         else:
             lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
             sh("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cp)
+        if ep["scenes"][i].get("hud"):  # données animées par-dessus la vidéo réelle qui continue de jouer
+            ov = cp + ".hud.mov"; base = cp + ".base.mp4"; os.replace(cp, base); visuals.hud(ov, dur(base), ep["scenes"][i]["hud"])
+            sh("ffmpeg", "-v", "error", "-y", "-i", base, "-i", ov, "-filter_complex", "[0][1]overlay=format=auto,format=yuv420p", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", cp)
     print(f"Scènes rendues en {time.time() - t0:.0f} s ({len(JOBS)} tâches en parallèle)")
     n = int(total * SR); vtrack = np.zeros(n)
     for _, _, vp, st in scenes:

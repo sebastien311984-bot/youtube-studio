@@ -432,3 +432,51 @@ def layers(out, d, src, bands, top=420, heading=None, at=0.0):
             a = ease(t / 0.6); dr.text((60, 60), heading, font=font("Bold", 34), fill=(255, 200, 64, int(255 * a)), stroke_width=2, stroke_fill=(0, 0, 0, int(200 * a)))
         return Image.alpha_composite(im.convert("RGBA"), lay).convert("RGB")
     _render(out, d, fr)
+
+# ---------------------------------------------------------------- HUD documentaire sur vidéo réelle (la vidéo continue de jouer)
+def hud(out, d, panels):
+    """Calque transparent (MOV qtrle RGBA) posé sur un plan réel. panels = liste de :
+    counter {label, value, from=0, unit, sub, pos, at}   — chiffre qui défile (style National Geographic)
+    gauge   {label, value, max, unit, pos, at}           — cadran circulaire qui se remplit
+    lock    {box:[x0,y0,x1,y1], text, at}                 — crochets de visée qui se resserrent sur un détail réel
+    pos : bl, br, tl, tr. at : seconde d'apparition."""
+    POS = {"bl": (70, H - 330), "br": (W - 590, H - 330), "tl": (70, 70), "tr": (W - 590, 70)}
+    def card(dr, x, y, a, p, label, big, sub, col, w=520):
+        dr.rounded_rectangle((x, y, x + w, y + 220), 18, fill=(6, 10, 18, int(150 * a)), outline=(255, 255, 255, int(40 * a)), width=2)
+        dr.rectangle((x, y + 24, x + 6, y + 24 + 172 * p), fill=col + (int(255 * a),))
+        dr.text((x + 34, y + 26), label.upper(), font=font("SemiBold", 28), fill=(200, 210, 225, int(255 * a)))
+        dr.text((x + 32, y + 64), big, font=font("Black", 96), fill=(255, 255, 255, int(255 * a)))
+        if sub: dr.text((x + 34, y + 172), sub, font=font("Medium", 28), fill=col + (int(255 * a),))
+    def fr(t):
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        for pn in panels:
+            t0 = pn.get("at", 0.6); a = smooth((t - t0) / 0.5) * smooth((d - 0.2 - t) / 0.4)
+            if a <= 0: continue
+            p = ease((t - t0) / 1.8); col = _col(pn.get("color", "gold")); typ = pn.get("type", "counter")
+            if typ in ("counter", "gauge"):
+                x, y = POS[pn.get("pos", "bl")]; x += int((1 - smooth((t - t0) / 0.5)) * (-40 if x < W / 2 else 40))
+                v0, v1 = pn.get("from", 0), pn["value"]; v = v0 + (v1 - v0) * p
+                txt = (f"{v:,.0f}" if abs(v1) >= 10 else f"{v:.1f}") + pn.get("unit", "")
+                if typ == "counter": card(dr, x, y, a, p, pn["label"], txt, pn.get("sub", ""), col)
+                else:
+                    x = min(x, W - 730); card(dr, x, y, a, p, pn["label"], txt, pn.get("sub", ""), col, 660)
+                    cx, cy, r = x + 580, y + 130, 52; frac = min(1, v / pn.get("max", v1 or 1))
+                    dr.arc((cx - r, cy - r, cx + r, cy + r), 135, 405, fill=(255, 255, 255, int(60 * a)), width=10)
+                    dr.arc((cx - r, cy - r, cx + r, cy + r), 135, 135 + 270 * frac, fill=col + (int(255 * a),), width=10)
+            elif typ == "lock":
+                x0, y0, x1, y1 = pn["box"]; s = 1 + 0.6 * (1 - p); cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+                hw, hh = (x1 - x0) / 2 * s, (y1 - y0) / 2 * s; L = min(hw, hh) * 0.35; c = col + (int(255 * a),)
+                for sx in (-1, 1):
+                    for sy in (-1, 1):
+                        X, Y = cx + sx * hw, cy + sy * hh
+                        dr.line((X, Y, X - sx * L, Y), fill=c, width=6); dr.line((X, Y, X, Y - sy * L), fill=c, width=6)
+                if pn.get("text") and p > 0.6:
+                    f = font("Bold", 36); tw = dr.textlength(pn["text"], font=f); tx = min(max(40, cx - tw / 2), W - tw - 40); ty = cy + hh + 18
+                    if ty > H - 120: ty = cy - hh - 70
+                    dr.rounded_rectangle((tx - 14, ty - 6, tx + tw + 14, ty + 50), 8, fill=(6, 10, 18, int(190 * a)))
+                    dr.text((tx, ty), pn["text"], font=f, fill=c)
+        return lay
+    p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS),
+                          "-i", "-", "-t", str(d), "-c:v", "qtrle", out], stdin=subprocess.PIPE)
+    for i in range(int(d * FPS) + 1): p.stdin.write(fr(i / FPS).tobytes())
+    p.stdin.close(); p.wait()
