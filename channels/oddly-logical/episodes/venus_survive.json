@@ -1,0 +1,488 @@
+{
+ "title": "Could You Survive on Venus?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Images: NASA/JPL, NASA/JSC, NASA/Goddard (public domain); Magellan, Galileo and Hubble Venus images (NASA/JPL, L. Esposito, public domain); Venera 13 images, Soviet space program (public domain, recolorized panorama); Venera 13 panorama by the Lunar and Planetary Institute (CC BY 2.0); 2012 Venus transit sequence by NASA/SDO, AIA (CC BY 2.0). Video: Pixabay (BrunoAlbino, ChristianBodhi, Vimeo-Free-Videos).",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c7/PIA23791-Venus-RealAndEnhancedContrastViews-20200608_%28cropped%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S91-50687/S91-50687~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/S91-50688/S91-50688~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "lead": 0.3,
+   "yt_chapter": "Floating above hell",
+   "text": "Fifty kilometers above Venus, the air feels like home. Fifty kilometers lower, it would melt lead. Why is the most Earth-like place in the solar system floating above hell?"
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:50034",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:116577",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:732",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fd/SDO%27s_Ultra-high_Definition_View_of_2012_Venus_Transit_--_Path_Sequence.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 1",
+    "WHAT DO YOU SEE AT 100 KM?"
+   ],
+   "yt_chapter": "Arriving at Venus",
+   "label": [
+    "100 KM",
+    "The edge of space"
+   ],
+   "text": "Your ship arrives one hundred kilometers above Venus. It looks like Earth's twin: almost the same size, made of the same kind of rock. In 1761, as Venus crossed the Sun, astronomers saw a glowing ring around it, the first hint of a thick atmosphere. Time to fall through it."
+  },
+  {
+   "kind": "layers",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Venus_Cloud_Tops_%281995-16-282%29.jpg",
+   "top": 300,
+   "heading": "INTO THE CLOUDS",
+   "bands": [
+    {
+     "name": "70 KM: CLOUD TOPS",
+     "color": "blue",
+     "h": 130
+    },
+    {
+     "name": "60 KM: SULFURIC ACID DROPLETS",
+     "color": "gold",
+     "h": 130
+    },
+    {
+     "name": "50 KM: BASE OF THE CLOUDS",
+     "color": "green",
+     "h": 130
+    },
+    {
+     "name": "30 KM: HAZY AND HOT",
+     "color": "red",
+     "h": 130
+    }
+   ],
+   "chapter": [
+    "CHAPTER 2",
+    "WHAT ARE THE CLOUDS MADE OF?"
+   ],
+   "yt_chapter": "The acid clouds",
+   "teaser": "THE FASTEST CLOUDS",
+   "text": "At seventy kilometers, you hit the cloud tops. They are not water. They are mostly droplets of sulfuric acid, strong enough to burn skin. The cloud deck stretches down to about forty-five or fifty kilometers, a thick layer between you and the ground."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Venus_clouds_Galileo_PIA00221.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:289855",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "label": [
+    "70 KM",
+    "Cloud tops"
+   ],
+   "fact": "Venus's clouds circle the planet in\\Nonly a few Earth days.",
+   "teaser": "THE EARTH-LIKE LAYER",
+   "text": "Up here, winds race around the planet at about three hundred sixty kilometers per hour, many times faster than Venus itself turns. The whole cloud deck circles the planet in just a few days."
+  },
+  {
+   "kind": "versus",
+   "heading": "THE MOST EARTH-LIKE PLACE",
+   "left": {
+    "name": "EARTH, SEA LEVEL",
+    "color": "blue",
+    "stats": [
+     "1 atmosphere",
+     "About 15 °C average",
+     "Gravity: 1 g",
+     "Breathable air"
+    ]
+   },
+   "right": {
+    "name": "VENUS, 50-55 KM UP",
+    "color": "gold",
+    "stats": [
+     "About 0.5 to 1 atmosphere",
+     "About 30 to 75 °C",
+     "Gravity: about 0.9 g",
+     "Carbon dioxide and acid clouds"
+    ]
+   },
+   "chapter": [
+    "CHAPTER 3",
+    "WHERE IS VENUS LIKE EARTH?"
+   ],
+   "yt_chapter": "The most Earth-like place",
+   "teaser": "DOWN INTO THE HAZE",
+   "text": "The most Earth-like place in the solar system is not on a planet's ground. It is in the clouds of Venus. At about fifty kilometers up, the air pressure is close to ours, between half and one atmosphere. The temperature runs from mild to warm. Gravity is about ninety percent of Earth's. You would still need a mask and acid protection, but no pressure suit."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Venus_clouds_Galileo_FalseColor_PIA00112.jpg",
+   "question": "What happens below 50 km?",
+   "heading": "Falling below the clouds",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "40 KM: HOTTER THAN BOILING WATER"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "white",
+     "text": "30 KM: ABOUT 10 ATM"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "10 KM: ABOUT 50 ATM"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 4",
+    "WHAT HAPPENS BELOW?"
+   ],
+   "yt_chapter": "Falling toward the ground",
+   "teaser": "THE SURFACE",
+   "text": "Now fall. Every kilometer, the air gets thicker and hotter. By about forty kilometers it is hotter than boiling water. At thirty, the pressure is roughly ten times Earth's. At ten kilometers, about fifty times. There are no clouds here, only a thick, dim haze."
+  },
+  {
+   "kind": "quiz",
+   "question": "Which planet is hotter: Mercury or Venus?",
+   "options": [
+    "Mercury",
+    "Venus",
+    "The same"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Quick question before we land. Mercury is much closer to the Sun. So which planet is hotter at its surface?"
+  },
+  {
+   "kind": "stat",
+   "value": 465,
+   "suffix": " °C",
+   "caption": "VENUS: HOTTER THAN MERCURY",
+   "chapter": [
+    "CHAPTER 5",
+    "WHAT IS THE SURFACE LIKE?"
+   ],
+   "yt_chapter": "The surface",
+   "teaser": "THE CRUSH",
+   "fact": "Lead melts at about 327 °C.\\NVenus's surface is far hotter.",
+   "text": "The hottest planet is not the closest to the Sun. Mercury is closer, but it has almost no air to hold heat. Venus wraps itself in a thick blanket of carbon dioxide that traps sunlight. So the surface sits at about four hundred sixty-five degrees Celsius, day and night, from the equator to the poles. Lead melts at three hundred twenty-seven."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA00008/PIA00008~large.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA00270/PIA00270~large.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA00481/PIA00481~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA00147/PIA00147~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "label": [
+    "0 KM",
+    "The surface"
+   ],
+   "text": "Touch down, and the air is a crushing weight. The pressure is about ninety times Earth's, like being about nine hundred meters under the sea. The air is mostly carbon dioxide, so dense it behaves almost like a fluid. That blanket trapped the heat in a runaway greenhouse, and it never leaves."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "ONE SPIN",
+    "243 DAYS",
+    "ONE YEAR",
+    "225 DAYS"
+   ],
+   "teaser": "THE VOLCANOES",
+   "text": "Time is strange here too. Venus turns so slowly that one full spin takes about 243 Earth days, longer than the 225 days it needs to circle the Sun. It also spins backwards, so the Sun would rise in the west."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA00108/PIA00108~large.jpg",
+   "question": "Is Venus still erupting?",
+   "heading": "Maat Mons",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "ABOUT 5 KM HIGH"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "white",
+     "text": "HEIGHT EXAGGERATED IN THIS VIEW"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 6",
+    "ARE THERE VOLCANOES?"
+   ],
+   "yt_chapter": "Volcanoes of Venus",
+   "teaser": "HOW WE SEE THROUGH CLOUDS",
+   "text": "Venus is covered in volcanoes. This is Maat Mons, one of the tallest, rising about five kilometers above the plains. The picture is a radar model, with the height exaggerated. In 2023, scientists comparing radar images from 1991 spotted a vent that had changed shape, the best sign yet that Venus may be active today."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/96/Atlantis_and_Magellan_%284%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/42/Magellan-IUS_stack_%28close%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Magellan_-_artist_depiction.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 7",
+    "HOW DO WE SEE THROUGH THE CLOUDS?"
+   ],
+   "yt_chapter": "Magellan sees through the clouds",
+   "label": [
+    "1990-1994",
+    "NASA's Magellan"
+   ],
+   "text": "Clouds hide the ground from ordinary cameras. So NASA's Magellan probe, launched from the Space Shuttle in 1989, used radar, which passes through clouds. From 1990 to 1994 it mapped about ninety-eight percent of the surface."
+  },
+  {
+   "kind": "beforeafter",
+   "before": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Venus_clouds_Galileo_Color_PIA00124.jpg",
+   "after": "https://images-assets.nasa.gov/image/PIA00256/PIA00256~large.jpg",
+   "label_before": "CLOUDS",
+   "label_after": "MAGELLAN RADAR",
+   "min": 8,
+   "teaser": "THE 127 MINUTES",
+   "text": "On the left, the planet wrapped in clouds. On the right, the surface seen through radar, in false colour: mountains, plains and lava flows no human eye has ever seen from orbit."
+  },
+  {
+   "kind": "timeline",
+   "heading": "THE VENERA 13 CLOCK",
+   "events": [
+    {
+     "year": "0:00",
+     "text": "Landing\n1 March 1982"
+    },
+    {
+     "year": "0:32",
+     "text": "Planned lifetime\nends (about)"
+    },
+    {
+     "year": "2:07",
+     "text": "Last signal\n(about 127 min)"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 8",
+    "THE 127-MINUTE MISSION"
+   ],
+   "yt_chapter": "Venera 13: two hours to live",
+   "teaser": "THE PICTURES",
+   "text": "But a few machines have been there. On the first of March, nineteen eighty-two, the Soviet lander Venera 13 touched down on the surface. It was built to last about half an hour. Instead it kept working for about two hours, one hundred twenty-seven minutes, before contact was lost — a record for any Venus lander."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Surface_of_Venus_taken_by_Venera_13_%28panoramic%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/74/Surface_of_Venus_from_Venera_13.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "label": [
+    "1 MARCH 1982",
+    "Venera 13 on the surface"
+   ],
+   "fact": "Venera 13 sent back some of the first\\Ncolour photos of Venus's surface.",
+   "text": "In those minutes it photographed the ground through colour filters, drilled into the soil, and tested it, sending everything to the spacecraft overhead."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/USSR_Venera_13_1982_-_Venus_ground_recolorized.jpg",
+   "box": [
+    160,
+    90,
+    1760,
+    990
+   ],
+   "label": "VENERA 13, 1982",
+   "min": 8,
+   "text": "This is the surface of another planet, photographed by a machine that was never meant to last. A flat plain of broken rock slabs, the curved edge of the lander, and an orange-tinted sky, because the thick atmosphere filters the light. The colours were reconstructed from filtered images, but the scene is real. This is Venus."
+  },
+  {
+   "kind": "annotate",
+   "image": "https://images-assets.nasa.gov/image/PIA00478/PIA00478~large.jpg",
+   "question": "So, could you survive?",
+   "heading": "The verdict",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "green",
+     "text": "50 KM: EARTH-LIKE PRESSURE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "gold",
+     "text": "BELOW 40 KM: HOTTER THAN BOILING"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "red",
+     "text": "SURFACE: 465 °C, ABOUT 90 ATM"
+    }
+   ],
+   "text": "So, could you survive Venus? Not on the ground. Not for more than a couple of hours, even inside a machine built for it. But fifty kilometers up, the pressure and the temperature are not far from home. That is the strange truth: the most Earth-like place in the solar system floats just above the worst. And one day, someone may float there."
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://images-assets.nasa.gov/image/PIA00268/PIA00268~large.jpg",
+   "text": "If you love the strangest true science, subscribe to Oddly Logical Science. Every week, we take you somewhere impossible. Which place would you survive the longest? Tell me in the comments, and check the video on screen."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "465 °C",
+  "sub": "COULD YOU SURVIVE?",
+  "shift": true,
+  "circle": false,
+  "image": "https://images-assets.nasa.gov/image/PIA00108/PIA00108~large.jpg"
+ },
+ "shorts": [
+  {
+   "from": 11,
+   "to": 12,
+   "title": "Is Venus Still Erupting Today?"
+  },
+  {
+   "from": 15,
+   "to": 17,
+   "title": "The Only Photos Ever Taken on Venus"
+  },
+  {
+   "from": 8,
+   "to": 9,
+   "title": "Why Is Venus Hotter Than Mercury?"
+  }
+ ],
+ "youtube": {
+  "title": "Could You Survive on Venus? The 465 °C Descent",
+  "description": "Could you survive on Venus? We fall from 100 km to the surface: sulfuric acid clouds, the one layer at about 50 km where pressure is Earth-like, then crushing pressure (about 90 atmospheres) and about 465 °C. Plus the Soviet lander Venera 13, which sent some of the first colour photos of the surface and worked about 127 minutes in 1982.\n\nIn this video:\n- What do you see at 100 km?\n- What are the clouds made of?\n- Where is Venus like Earth?\n- What happens below?\n- What is the surface like?\n- Are there volcanoes?\n- How do we see through the clouds?\n- Venera 13: the 127-minute mission\n\nFAQ\nWhy is Venus hotter than Mercury? Its thick carbon dioxide atmosphere traps heat in a runaway greenhouse.\nHow hot is the surface? About 465 °C.\nHow much pressure? About 90 times Earth's.\nWho landed on Venus? Soviet Venera probes; Venera 13 worked about 127 minutes in 1982.\n\nWhich place should we survive next? Tell us in the comments.",
+  "tags": [
+   "could you survive on venus",
+   "venus",
+   "venus surface",
+   "venera 13",
+   "sulfuric acid clouds",
+   "runaway greenhouse",
+   "hottest planet",
+   "maat mons",
+   "magellan venus",
+   "venus pressure"
+  ],
+  "hashtags": [
+   "#venus",
+   "#space",
+   "#science",
+   "#astronomy"
+  ],
+  "translations": {
+   "fr": "Pourriez-vous survivre sur Vénus ?",
+   "es": "¿Podrías sobrevivir en Venus?",
+   "pt": "Você sobreviveria em Vênus?",
+   "de": "Könntest du auf der Venus überleben?",
+   "hi": "क्या आप शुक्र ग्रह पर बच सकते हैं?"
+  }
+ }
+}
