@@ -385,3 +385,50 @@ def outro(out, d, src=None, line1="COULD YOU SURVIVE?", line2="WATCH NEXT"):
         fade = min(1, (d - t) / 0.6)
         return Image.eval(im.convert("RGB"), lambda v: int(v * max(0, fade)))
     _render(out, d, fr)
+
+
+# ---------------------------------------------------------------- zoom dessiné sur une vraie photo (effet « carte qui zoome »)
+def zoomto(out, d, src, box, label=None, at=0.0):
+    """La photo entière, un cadre lumineux se dessine autour de `box` [x0,y0,x1,y1] (repère 1920x1080),
+    puis la caméra plonge dedans ; `label` apparaît à l'arrivée."""
+    base = _still(src, at); x0, y0, x1, y1 = box
+    bw = max(x1 - x0, (y1 - y0) * W / H); bh = bw * H / W; cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    def fr(t):
+        p = smooth((t - 1.4) / max(1.0, d - 3.0))
+        w = W + (bw - W) * p; h = H + (bh - H) * p
+        l = min(max(0, (W / 2) + (cx - W / 2) * p - w / 2), W - w); tp = min(max(0, (H / 2) + (cy - H / 2) * p - h / 2), H - h)
+        im = base.crop((int(l), int(tp), int(l + w), int(tp + h))).resize((W, H), Image.LANCZOS)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        a = ease((t - 0.3) / 0.8) * (1 - p)
+        if a > 0.02:
+            sx, sy = W / w, H / h; r = [(x0 - l) * sx, (y0 - tp) * sy, (x1 - l) * sx, (y1 - tp) * sy]
+            dr.rectangle(r, outline=(255, 200, 64, int(255 * a)), width=6)
+        b = ease((t - d + 1.6) / 0.6)
+        if label and b > 0:
+            f = font("Bold", 52); tw = dr.textlength(label, font=f)
+            dr.rounded_rectangle((W / 2 - tw / 2 - 26, H - 170, W / 2 + tw / 2 + 26, H - 90), 14, fill=(10, 12, 20, int(210 * b)))
+            dr.text((W / 2, H - 130), label, font=f, fill=(255, 210, 90, int(255 * b)), anchor="mm")
+        im = Image.alpha_composite(Image.alpha_composite(im.convert("RGBA"), lay.filter(ImageFilter.GaussianBlur(8))), lay)
+        return im.convert("RGB")
+    _render(out, d, fr)
+
+# ---------------------------------------------------------------- coupe dessinée par-dessus une vraie photo
+def layers(out, d, src, bands, top=420, heading=None, at=0.0):
+    """Une ligne de coupe descend sur la photo et révèle des couches translucides étiquetées.
+    bands : [{name, color, h}] de haut en bas à partir de `top` (px)."""
+    base = _still(src, at)
+    def fr(t):
+        im = base.copy(); lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        y = top
+        for k, b in enumerate(bands):
+            p = ease((t - 0.6 - k * 0.9) / 0.8)
+            if p <= 0: break
+            col = _col(b.get("color", "blue")); hh = b.get("h", 160)
+            dr.rectangle((0, y, W * p, y + hh), fill=col + (95,))
+            dr.line((0, y, W * p, y), fill=col + (255,), width=5)
+            dr.text((60, y + hh / 2), b["name"], font=font("Bold", 46), fill=(255, 255, 255, int(255 * p)), anchor="lm", stroke_width=3, stroke_fill=(0, 0, 0, int(200 * p)))
+            y += hh
+        if heading:
+            a = ease(t / 0.6); dr.text((60, 60), heading, font=font("Bold", 34), fill=(255, 200, 64, int(255 * a)), stroke_width=2, stroke_fill=(0, 0, 0, int(200 * a)))
+        return Image.alpha_composite(im.convert("RGBA"), lay).convert("RGB")
+    _render(out, d, fr)
