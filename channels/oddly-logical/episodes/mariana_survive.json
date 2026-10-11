@@ -177,9 +177,9 @@
      "move": "in"
     },
     {
-     "clip": "pixabay:id:304019",
+     "clip": "pixabay:id:175998",
      "start": 0,
-     "move": "out"
+     "move": "in"
     },
     {
      "clip": "pixabay:id:63559",
@@ -288,7 +288,7 @@
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Jellyfish-_2016_Deepwater_Exploration_of_the_Marianas.webm",
-     "start": 0,
+     "start": 20,
      "move": "out"
     },
     {
@@ -297,9 +297,9 @@
      "move": "left"
     },
     {
-     "clip": "pixabay:id:304019",
-     "start": 8,
-     "move": "right"
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Jellyfish-_2016_Deepwater_Exploration_of_the_Marianas.webm",
+     "start": 45,
+     "move": "in"
     }
    ],
    "chapter": [
@@ -634,23 +634,23 @@
   "sub": "COULD YOU SURVIVE?",
   "shift": false,
   "circle": false,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bathyscaphe_Trieste_sphere.jpg"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pseudoliparis_swirei_%2810.11646-zootaxa.4358.1.7%29_Figure_8.jpg"
  },
  "shorts": [
   {
-   "from": 3,
-   "to": 4,
-   "title": "What 10 Meters Does to Your Lungs"
+   "from": 12,
+   "to": 13,
+   "title": "How Deep Can a Sperm Whale Dive?"
   },
   {
-   "from": 9,
-   "to": 9,
-   "title": "The Deepest Scuba Dive Ever"
+   "from": 15,
+   "to": 16,
+   "title": "The Deepest Fish Ever Filmed"
   },
   {
-   "from": 18,
-   "to": 19,
-   "title": "The Sphere That Survived the Deep"
+   "from": 19,
+   "to": 20,
+   "title": "How the Trieste Survived 1,100 Atmospheres"
   }
  ],
  "youtube": {
