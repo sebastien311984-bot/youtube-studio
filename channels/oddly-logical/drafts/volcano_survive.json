@@ -1,0 +1,564 @@
+{
+ "title": "Could You Survive a Volcanic Eruption Up Close?",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Images: USGS, NASA (public domain), including Donald A. Swanson, Austin Post, Chris Newhall, Tom Casadevall, J Cummans and the ISS Crew Earth Observations (public domain); Giorgio Sommer cast photo (CC0). Wikimedia Commons: Kilauea lava flow 2017 by Ekrem Canli (CC BY-SA 4.0); Pahoehoe lava photos by Brocken Inaglory (CC BY-SA 3.0); Kilauea lava flow panoramio photo (CC BY-SA 3.0); Litli-Hrutur eruption video by Giles Laurent (CC BY-SA 4.0); Yasur dawn video by roland lubiger (CC BY 3.0); Pompeii casts by Thomas Shahan (CC BY 2.0), Weefemwe (CC BY-SA 3.0) and Mary Harrsch (CC BY-SA 4.0). Video footage: Pixabay (free license) by Gylfi, TungArt7, VP68, Ronin_Studio_Munich, among others.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/21/MSH80_eruption_mount_st_helens_plume_05-18-80.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pyroclastic_flows_at_Mayon_Volcano-2010-20-08.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/84/Pyroclastic_Flow_St._Helens.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "lead": 0.3,
+   "yt_chapter": "The cloud that rolls",
+   "text": "A cloud hotter than an oven is rolling toward you at up to seven hundred kilometers an hour. But the lava everyone fears is the least dangerous thing here. So what actually kills you?"
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "kind": "annotate",
+   "_check_marks": true,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/St_Helens_map_showing_1980_eruption_deposits.jpg",
+   "question": "How close is too close?",
+   "heading": "Mount St. Helens, 1980",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      540
+     ],
+     "r": 120,
+     "color": "gold",
+     "text": "THE VENT"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      900
+     ],
+     "color": "white",
+     "text": "WE WALK IN FROM 10 KM"
+    }
+   ],
+   "teaser": "10 KM: THE ASH",
+   "text": "This is Mount St. Helens in Washington State, on the morning of May eighteenth, nineteen eighty. We will use its eruption as our map, and walk toward the crater distance by distance: ten kilometers, five, one, a hundred meters, and finally the vent. Watch what each step does to your body."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sarychev_Peak_eruption_on_12_June_2009%2C_oblique_satellite_view.ogv",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Two_Week_Movie_of_Chilean_Volcanic_Eruption_xo.ogv",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002052/GSFC_20171208_Archive_e002052~large.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pinatubo_-_pyroclastic_fall.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Toutle_River_Bridge_after_1980_Mount_St._Helens_eruption.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 1",
+    "WHAT HAPPENS AT 10 KM?"
+   ],
+   "yt_chapter": "10 km: the ash zone",
+   "label": [
+    "10 KM",
+    "Ashfall zone"
+   ],
+   "fact": "Volcanic ash is tiny jagged glass and rock,\\Nnot soft like fireplace ash.",
+   "teaser": "5 KM: THE INVISIBLE ONES",
+   "text": "Ten kilometers out, the sky turns gray. Ash is not soft like fireplace dust. It is tiny, jagged fragments of glass and rock. Wet ash piles up heavy enough to collapse a roof. Breathe it unprotected and it scratches your lungs and eyes. A mask or damp cloth helps a lot."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:37079",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Sarychev_Peak.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:62",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/calbuco-volcano-erupts-in-southern-chile_17069947000_o/calbuco-volcano-erupts-in-southern-chile_17069947000_o~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 2",
+    "WHAT'S IN THE AIR AT 5 KM?"
+   ],
+   "yt_chapter": "5 km: volcanic gases",
+   "label": [
+    "5 KM",
+    "Gas zone"
+   ],
+   "text": "Five kilometers. Now the danger is invisible. Volcanoes breathe out steam, carbon dioxide and sulfur dioxide. Sulfur dioxide burns your eyes, throat and lungs. Carbon dioxide has no smell, and it is heavier than air, so it pools in low ground. Stay upwind, and stay out of hollows."
+  },
+  {
+   "kind": "quiz",
+   "question": "How hot is lava as it leaves the volcano?",
+   "options": [
+    "About 300 degrees C",
+    "About 1,100 degrees C",
+    "About 3,000 degrees C"
+   ],
+   "answer": 1,
+   "min": 7,
+   "teaser": "3 KM: THE SIDEWAYS BLAST",
+   "text": "Quick question, before we go closer. How hot is lava when it leaves the ground?"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d1/MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_St._Helens_Eruption_%E2%80%94_1980_%2811707592844%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001875/GSFC_20171208_Archive_e001875~large.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 3",
+    "THE BLAST THAT WENT SIDEWAYS"
+   ],
+   "yt_chapter": "3 km: the lateral blast",
+   "label": [
+    "3 KM",
+    "The sideways blast"
+   ],
+   "text": "At eight thirty-two that morning, an earthquake shakes the mountain and its north face slides away. The largest landslide in recorded history uncorks the magma inside. The blast does not go up. It goes sideways."
+  },
+  {
+   "kind": "timeline",
+   "heading": "MAY 18, 1980",
+   "events": [
+    {
+     "year": "8:32 AM",
+     "text": "Quake. North face slides"
+    },
+    {
+     "year": "SECONDS",
+     "text": "Blast bursts sideways"
+    },
+    {
+     "year": "MINUTES",
+     "text": "Forest flattened for about 25 km"
+    },
+    {
+     "year": "57",
+     "text": "People died"
+    }
+   ],
+   "teaser": "1 KM: THE CLOUD",
+   "text": "Ten kilometers away should have been safe. It was not. The blast raced across the land at hundreds of kilometers an hour, flattening forest as far as about twenty-five kilometers away. Volcanologist David Johnston was watching from about ten kilometers. His last radio call: Vancouver! Vancouver! This is it! Fifty-seven people died that day. Johnston was one of them."
+  },
+  {
+   "kind": "annotate",
+   "_check_marks": true,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pinatubo91_marella_river_pyroclastic_flow_deposits_07-01-91.jpg",
+   "question": "What is a pyroclastic flow?",
+   "heading": "What one leaves behind",
+   "chapter": [
+    "CHAPTER 4",
+    "WHAT IS A PYROCLASTIC FLOW?"
+   ],
+   "yt_chapter": "1 km: the pyroclastic flow",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "red",
+     "text": "HOT GAS + ASH + ROCK"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "gold",
+     "text": "HUGS THE GROUND"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      520
+     ],
+     "color": "white",
+     "text": "POURS DOWN VALLEYS"
+    }
+   ],
+   "text": "You cannot outrun this. Nothing alive can. A pyroclastic flow is an avalanche of hot gas, ash and rock that pours down the volcano's slopes, hugging the ground and following valleys, dense enough to flatten buildings yet fluid enough to pour like water. It can reach about seven hundred kilometers an hour. This is what one leaves behind in a valley."
+  },
+  {
+   "kind": "stat",
+   "value": 700,
+   "suffix": " km/h",
+   "caption": "FASTEST PYROCLASTIC FLOWS",
+   "text": "Several hundred degrees Celsius. A kitchen oven tops out near two hundred and fifty. Nothing you wear changes that."
+  },
+  {
+   "kind": "versus",
+   "heading": "YOU VS THE FLOW",
+   "left": {
+    "name": "YOU",
+    "color": "blue",
+    "stats": [
+     "SPRINTS UNDER 40 KM/H",
+     "BREATHES AIR",
+     "TIRES IN MINUTES"
+    ]
+   },
+   "right": {
+    "name": "PYROCLASTIC FLOW",
+    "color": "red",
+    "stats": [
+     "UP TO ~700 KM/H",
+     "HUNDREDS OF °C",
+     "NO WARNING"
+    ]
+   },
+   "teaser": "POMPEII",
+   "text": "You, at a flat-out sprint, manage well under forty. You cannot outrun it. The only protection is distance, or never being in its valley."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e2/-Plaster_Casts_of_Bodies%2C_Pompeii-_MET_DP262064.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/be/Body_at_Pompeii_%285948973031%29.jpg",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Body_at_Pompeii_%285949528556%29.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pompeii-dead_body-DSCN6576WCom.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 5",
+    "WHAT HAPPENED AT POMPEII?"
+   ],
+   "yt_chapter": "Pompeii, AD 79",
+   "label": [
+    "AD 79",
+    "Pompeii"
+   ],
+   "text": "In the year seventy-nine, Vesuvius erupts. For hours, pumice and ash rain on Pompeii, and many flee. Then, early the next morning, pyroclastic surges sweep through the city. Studies suggest the heat alone could kill within seconds to minutes. Those who stayed were buried."
+  },
+  {
+   "kind": "zoomto",
+   "_check_marks": true,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Body_cast_of_a_victim_of_the_eruption_made_in_1863_displayed_in_the_House_of_Sirico_Pompeii_Prowalk.jpg",
+   "box": [
+    600,
+    300,
+    1300,
+    800
+   ],
+   "label": "A CAST FROM POMPEII",
+   "min": 8,
+   "teaser": "100 M: THE LAVA",
+   "text": "Centuries later, archaeologists found hollows in the hardened ash where bodies had been. Filling them with plaster gave us these casts. They are not statues. They are the shape of the last moment."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e5/K%C4%ABlauea_lava_flow_2017%283%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b1/P%C4%81hoehoe_Lava_flow.JPG",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kilauea_Lava_Flow_-_panoramio.jpg",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/89/P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
+     "start": 0,
+     "move": "right"
+    },
+    {
+     "clip": "pixabay:id:65",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 6",
+    "IS LAVA THE KILLER?"
+   ],
+   "yt_chapter": "100 m: lava",
+   "label": [
+    "100 M",
+    "Lava zone"
+   ],
+   "fact": "Pahoehoe lava often creeps slower than\\Na walking pace.",
+   "teaser": "THE VENT",
+   "text": "The thing you fear most at a volcano is the least dangerous. A hundred meters from the lava. It is around eleven hundred degrees Celsius, hot enough to glow orange, and the heat on your face is fierce. But look how slowly it moves. On Kilauea, lava often creeps at less than walking pace. You can simply step away. Lava destroys houses. It rarely catches people."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:152085",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:152174",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:378988",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:211700",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 7",
+    "WHAT'S AT THE VENT?"
+   ],
+   "yt_chapter": "The vent",
+   "label": [
+    "THE VENT",
+    "Ground zero"
+   ],
+   "text": "At the vent, the danger is not the lava. It is what flies out of it. Explosions throw rocks out of the crater faster than a car on a highway. In twenty fourteen, at Mount Ontake in Japan, a sudden eruption killed dozens of hikers, mostly with flying rocks."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:219833",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:97289",
+     "start": 0,
+     "move": "out"
+    },
+    {
+     "clip": "pixabay:id:97291",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:97290",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "teaser": "50 KM: THE FLOOD",
+   "text": "If you survive the rocks, you meet the fountains. Lava thrown tens of meters into the air, bright as noon at night. Beautiful, from far away. From up close, one of the most dangerous places on Earth."
+  },
+  {
+   "kind": "annotate",
+   "_check_marks": true,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/MSH82_lahar_from_march_82_eruption_03-21-82.jpg",
+   "question": "What comes hours later?",
+   "heading": "A lahar",
+   "chapter": [
+    "CHAPTER 8",
+    "THE KILLER THAT ARRIVES LATER"
+   ],
+   "yt_chapter": "50 km: lahars",
+   "marks": [
+    {
+     "type": "label",
+     "at": [
+      140,
+      280
+     ],
+     "color": "gold",
+     "text": "ASH + WATER = WET CONCRETE"
+    },
+    {
+     "type": "label",
+     "at": [
+      140,
+      400
+     ],
+     "color": "red",
+     "text": "FOLLOWS RIVER VALLEYS"
+    }
+   ],
+   "text": "Now step back, far back. Fifty kilometers from the vent, there is one more killer, and it arrives hours later. A lahar. Ash mixes with rain, melted snow or ice, and becomes a flood of wet concrete racing down river valleys. In nineteen eighty-five, lahars from Nevado del Ruiz buried the town of Armero in Colombia, killing more than twenty thousand people."
+  },
+  {
+   "kind": "layers",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/P%C4%81hoehoe_lava_meets_Pacific.jpg",
+   "top": 300,
+   "heading": "WHAT ACTUALLY KILLS",
+   "bands": [
+    {
+     "name": "PYROCLASTIC FLOWS: THE BIG KILLER",
+     "color": "red",
+     "h": 110
+    },
+    {
+     "name": "BLASTS + FLYING ROCKS",
+     "color": "gold",
+     "h": 110
+    },
+    {
+     "name": "LAHARS: THE LATE FLOOD",
+     "color": "blue",
+     "h": 110
+    },
+    {
+     "name": "ASH + GAS: THE SLOW ONES",
+     "color": "green",
+     "h": 110
+    },
+    {
+     "name": "LAVA: THE LEAST DANGEROUS",
+     "color": "gold",
+     "h": 110
+    }
+   ],
+   "_check_marks": true,
+   "text": "So, could you survive an eruption up close? Not at the vent, and not in the path of a pyroclastic flow. Lava is the least of your problems. What saves people is distance, obeying evacuation orders, a mask against ash, and climbing away from valleys when a lahar threatens."
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "DISTANCE",
+    "A MASK",
+    "HIGH GROUND"
+   ],
+   "text": "Distance. A mask. High ground. That is the whole survival guide."
+  },
+  {
+   "kind": "outro",
+   "min": 20,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Body_at_Pompeii_%285948973031%29.jpg",
+   "text": "If you liked the walk toward the volcano, subscribe to Oddly Logical Science. Every week, the strangest true science. And tell me in the comments how close you would have dared to get."
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "700 KM/H",
+  "sub": "COULD YOU SURVIVE?",
+  "shift": true,
+  "circle": false,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/MSH80_eruption_mount_st_helens_plume_05-18-80.jpg"
+ },
+ "shorts": [
+  {
+   "from": 8,
+   "to": 9,
+   "title": "How Fast Is a Pyroclastic Flow?"
+  },
+  {
+   "from": 7,
+   "to": 8,
+   "title": "What Happened to David Johnston at Mount St. Helens?"
+  },
+  {
+   "from": 13,
+   "to": 14,
+   "title": "Can You Outrun Lava?"
+  }
+ ],
+ "youtube": {
+  "title": "Could You Survive a Volcanic Eruption Up Close?",
+  "description": "Could you survive a volcanic eruption up close? We walk toward an erupting volcano, distance by distance, using Mount St. Helens in 1980 as our map: ash at 10 km, gases at 5 km, the sideways blast, the pyroclastic flow that can reach about 700 km/h, the Pompeii casts, lava at around 1,100 degrees Celsius, and the lahars that arrive hours later. The surprise: lava is the least dangerous thing here.\n\nIn this video:\n- What happens at 10 km?\n- What's in the air at 5 km?\n- The blast that went sideways\n- What is a pyroclastic flow?\n- What happened at Pompeii?\n- Is lava the killer?\n- What's at the vent?\n- What is a lahar?\n\nFAQ\nHow fast is a pyroclastic flow? Up to about 700 km/h, with temperatures of several hundred degrees Celsius.\nCan you outrun lava? Usually yes: pahoehoe lava often moves slower than walking pace.\nWhat kills most people in an eruption? Pyroclastic flows, blasts, flying rocks and lahars, more than lava itself.\nHow many people died at Mount St. Helens in 1980? 57.\nHow do you survive a lahar? Move uphill, out of the river valley.\n\nSubscribe for the strangest true science, every week.",
+  "tags": [
+   "could you survive a volcanic eruption",
+   "pyroclastic flow",
+   "how fast is a pyroclastic flow",
+   "mount st helens 1980",
+   "pompeii body casts",
+   "lava temperature",
+   "lahar",
+   "volcano eruption",
+   "volcanic gases",
+   "david johnston"
+  ],
+  "hashtags": [
+   "#volcano",
+   "#science",
+   "#pompeii",
+   "#survival"
+  ],
+  "translations": {
+   "fr": "Pourriez-vous survivre à une éruption volcanique de près ?",
+   "es": "¿Podrías sobrevivir a una erupción volcánica de cerca?",
+   "pt": "Você sobreviveria a uma erupção vulcânica de perto?",
+   "de": "Könntest du einen Vulkanausbruch aus der Nähe überleben?",
+   "hi": "क्या आप ज्वालामुखी विस्फोट के पास बच सकते हैं?"
+  }
+ }
+}
