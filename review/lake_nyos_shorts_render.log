@@ -1,0 +1,48 @@
+Scène 0 préparée (footage, 10 s)
+Scène 1 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 7 s)
+Scène 2 préparée (footage, 10 s)
+Scène 3 préparée (footage, 5 s)
+Scène 4 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Scène 4 préparée (footage, 12 s)
+Scènes rendues en 31 s (7 tâches en parallèle)
+out/lake_nyos_shorts_short1_h.mp4 44.4 s (short autonome)
+Scène 0 préparée (footage, 6 s)
+Scène 1 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 6 s)
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 451, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 326, in main
+    words = tts(s["text"], voice, vp, s.get("tone") or AUTO_TONE.get(s.get("kind", ""), "neutral")) if s.get("text") else []
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 51, in tts
+    asyncio.run(run()); humanize(path); return words
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 48, in run
+    async for ch in c.stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 451, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 320, in main
+    make_shorts(ep, out, [0.0]); print("Shorts autonomes rendus"); return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 223, in make_shorts
+    subprocess.run([sys.executable, os.path.abspath(__file__), sj, os.path.dirname(os.path.abspath(out)) + "/../clips", src, "--short"], check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '/home/runner/work/youtube-studio/youtube-studio/engine/render.py', 'out/lake_nyos_shorts_short2_ep.json', '/home/runner/work/youtube-studio/youtube-studio/out/../clips', 'out/lake_nyos_shorts_short2_h.mp4', '--short']' returned non-zero exit status 1.
