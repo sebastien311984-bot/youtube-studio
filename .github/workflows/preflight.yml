@@ -12,11 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install pillow imagehash
-      - run: python3 engine/preflight.py "${{ github.event.inputs.episode }}" preflight
+      - name: Dépendances
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          curl -sSL -o inter.zip https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+          sudo mkdir -p /usr/share/fonts/opentype/inter && sudo unzip -q -j -o inter.zip 'extras/otf/*' -d /usr/share/fonts/opentype/inter && fc-cache -f
+          pip install -q edge-tts numpy pillow imagehash
+      - env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python3 engine/check_episode.py "${{ github.event.inputs.episode }}" > preflight_check.txt 2>&1 || true; python3 engine/preflight.py "${{ github.event.inputs.episode }}" preflight; mv preflight_check.txt preflight/
       - name: Résultats sur une branche
         run: |
-          rm -f preflight/[0-9]*
+          rm -rf preflight/clips preflight/*.mp4 preflight/*.png
           git config user.name preflight-bot; git config user.email preflight-bot@users.noreply.github.com
           git checkout -q --orphan "preflight/${{ github.run_id }}"; git rm -rq --cached . ; git add -f preflight; git commit -qm "preflight ${{ github.run_id }}"
           git push -q origin "HEAD:refs/heads/preflight/${{ github.run_id }}"
