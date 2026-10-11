@@ -3,7 +3,7 @@ import json, sys
 ep = json.load(open(sys.argv[1])); errs = []; queries = []
 for i, s in enumerate(ep["scenes"]):
     k, w = s.get("kind"), len(s.get("text", "").split())
-    if k and k not in ("intro", "diagram", "stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank", "annotate", "beforeafter", "outro"): errs.append(f"scène {i} : type inconnu « {k} » (titre = option, pas un type)")
+    if k and k not in ("intro", "diagram", "stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank", "annotate", "beforeafter", "outro", "zoomto", "layers"): errs.append(f"scène {i} : type inconnu « {k} » (titre = option, pas un type)")
     if not k and not (s.get("clip") or s.get("shots")): errs.append(f"scène {i} : plan réel sans image (clip/shots)")
     if k == "diagram":
         for el in s.get("elements", []):
