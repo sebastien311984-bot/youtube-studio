@@ -19,4 +19,4 @@ jobs:
           exec 2> >(tee /tmp/err >&2)
           gh run download "$RUN" -R "$R" -n videos -D pack
           gh release delete "pack-$N" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "pack-$N" -R "$R" --title "Pack $N" --notes "Fichiers du rendu $RUN, un lien par fichier." $(find "$GITHUB_WORKSPACE/pack" -type f ! -name '*_render.log')
+          gh release create "pack-$N" -R "$R" --title "Pack $N" --notes "Fichiers du rendu $RUN, un lien par fichier." $(find "$GITHUB_WORKSPACE/pack" -type f -name "$N*" ! -name '*_render.log')
