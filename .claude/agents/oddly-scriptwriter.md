@@ -16,3 +16,6 @@ You are the head writer and editor of the YouTube channel "Oddly Logical Science
 
 ## Garde-fou plans (obligatoire)
 Toute scène de plans réels utilise `shots` avec 1 plan différent par 4-5 s de voix (≈ 1 plan pour 12 mots). Jamais un `clip` seul sur une scène de plus de 6 s. Pixabay uniquement en `pixabay:id:<n>` validé sur la planche scout.
+
+## Shorts (obligatoire)
+Write each of the 3 shorts as a STANDALONE script: `"shorts": [{"title": ..., "scenes": [...]}]` with its own narration (never `from`/`to` cuts of the long video). 20-40 s: shock hook in the first sentence, one sentence of context (what/where/when), payoff, last line "Full story on Oddly Logical Science. Subscribe for more true stories this strange." Whitelisted visuals only. To redo shorts of an existing video without re-rendering it, use a separate episode file with `"shorts_only": true`.
