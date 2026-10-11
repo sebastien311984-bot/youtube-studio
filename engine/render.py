@@ -223,7 +223,9 @@ def make_shorts(ep, out, bounds):
               f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2,"
               f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:textfile={tf}:fontsize=62:line_spacing=14:fontcolor=white:"
               f"borderw=6:bordercolor=black:x=(w-tw)/2:y=300,"
-              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560")  # pas de fondu final : la fin boucle sur le début
+              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560,"
+              f"drawbox=x=240:y=1380:w=600:h=110:color=0xE53935@0.95:t=fill:enable='gte(t,{b - a - 4:.2f})',"
+              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:text='SUBSCRIBE':fontsize=64:fontcolor=white:x=(w-tw)/2:y=1405:enable='gte(t,{b - a - 4:.2f})'")  # appel à l'abonnement (4 dernières s) : objectif 1 000 abonnés  # pas de fondu final : la fin boucle sur le début
         sh("ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", out, "-filter_complex", vf, "-c:v", "libx264", "-preset", "medium",
            "-crf", "19", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out[:-4] + f"_short{k}.mp4")
         os.remove(tf)
