@@ -62,3 +62,11 @@ Lun « What If… ? » · Mar « Explained » · Mer « Top 10 » · Jeu « Myst
 - Top vues : Space Without a Suit, second by second (470) ; Prince Rupert drop paradoxe (384, CTR 5,2 %) ; rétention record : Fall into a Black Hole (76 %).
 - Formule gagnante : le corps humain face à l'extrême, seconde par seconde / mètre par mètre + paradoxe visuel.
 - Prochain : Mariana Trench without a submarine, meter by meter (mar 3 nov). Puis : paradoxes physiques façon goutte de Rupert.
+
+## 2026-10-11 — Sujets validés par repérage d'images (scouts sur branches scout/<id>)
+1. Could You Survive Swimming With Great White Sharks? — matière FORTE (vraies photos de grands blancs Commons, cage, Pixabay requins/phoques). scout 38176999832
+2. Could You Survive the Sahara Without Water? — matière FORTE (drones dunes, tempête de sable, caravanes, NASA poussière, Œil du Sahara). scout 38176993144
+3. Could You Survive Death Valley (56.7 °C)? — matière FORTE (Badwater, thermomètre géant, pierres mouvantes, salines). scout 38177013214
+4. Could You Survive Lost at Sea? — matière MOYENNE+ (radeaux, garde-côtes, ouragans NASA, océan). scout 38177006391
+5. What If Earth Stopped Spinning for 1 Second? — matière MOYENNE (NASA Terre, pendule de Foucault, archives ouragans/tsunami). scout 38177026704
+✗ Quicksand : matière faible (vasières grises) → abandonné.
