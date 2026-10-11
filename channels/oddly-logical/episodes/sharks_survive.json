@@ -1,5 +1,5 @@
 {
- "title": "Could You Survive Swimming With Great White Sharks?",
+ "title": "Sharks Can Feel Your Heartbeat. Could You Survive?",
  "voice": "en-US-AndrewMultilingualNeural",
  "ambience": {
   "kind": "ocean"
@@ -26,10 +26,10 @@
     {
      "type": "lock",
      "box": [
-      560,
-      220,
-      1360,
-      860
+      620,
+      230,
+      1480,
+      850
      ],
      "text": "LOCKED ON YOU",
      "at": 1.2
@@ -48,17 +48,12 @@
      "move": "in"
     },
     {
-     "clip": "pixabay:id:21528",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Great_white_shark_at_Isla_Guadalupe%2C_Mexico._Shark_cage_diving.png",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "pixabay:id:33194",
-     "start": 0,
-     "move": "left"
     }
    ],
-   "text": "I'm glad you're here. Every week, this channel explores the strangest true science. Today you are in the water off South Africa, where great whites patrol, and we follow the shark second by second. At the end, I will give you one number that flips who the real predator is.",
+   "text": "Today you are in the water off South Africa, where great whites patrol. We follow the shark second by second, and at the end one number flips who the real predator is.",
    "tone": "calm",
    "label": [
     "OFF SOUTH AFRICA",
@@ -72,11 +67,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Great_White_Shark_%28Carcharodon_carcharias%29_%2832872284396%29.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Great_white_shark_at_Isla_Guadalupe%2C_Mexico._Shark_cage_diving.png",
-     "start": 0,
-     "move": "out"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_white_shark_at_Isla_Guadalupe._Shark_cage_diving_MV_Horizon.png",
@@ -107,11 +97,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Great_white_shark_and_cage_diving_2.wmv.ogv",
      "start": 0,
      "move": "out"
-    },
-    {
-     "clip": "pixabay:id:314749",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "Next, pressure. Along each flank runs the lateral line, a row of sensors that feel vibrations in the water. Your kicking legs send out the same kind of ripples as a struggling fish, and a shark can feel them from some distance away.",
@@ -130,18 +115,28 @@
     {
      "type": "circle",
      "c": [
-      960,
-      540
+      492,
+      242
      ],
-     "r": 330,
+     "r": 120,
+     "color": "gold",
+     "text": "LORENZINI PORES"
+    },
+    {
+     "type": "circle",
+     "c": [
+      1500,
+      258
+     ],
+     "r": 120,
      "color": "gold",
      "text": "LORENZINI PORES"
     },
     {
      "type": "label",
      "at": [
-      140,
-      930
+      960,
+      600
      ],
      "color": "white",
      "text": "SENSE 3: ELECTRIC FIELDS"
@@ -152,7 +147,7 @@
   },
   {
    "kind": "quiz",
-   "question": "How close must a shark be to feel your heartbeat?",
+   "question": "Heartbeat range?",
    "options": [
     "About 100 m",
     "About 10 m",
@@ -160,7 +155,7 @@
    ],
    "answer": 2,
    "min": 7,
-   "text": "Quick question. How close must a shark be to feel your heartbeat?"
+   "text": "Quick question. How close must a shark be?"
   },
   {
    "shots": [
@@ -203,6 +198,11 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg",
      "start": 0,
      "move": "out"
+    },
+    {
+     "clip": "pixabay:id:33194",
+     "start": 0,
+     "move": "left"
     }
    ],
    "text": "Now it rises. Great whites usually hunt from below. A seal at the surface is a dark shape against bright light, while the shark's grey back vanishes into the dark water. From beneath, you are easy to see, and it is almost invisible.",
@@ -232,11 +232,6 @@
      "clip": "pixabay:id:171604",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "pixabay:id:36610",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Here is the mistake. From below, a surfer paddling on a board, arms and legs dangling, can look a lot like a seal. The leading hypothesis is that most bites on surfers are mistaken identity, not hunting humans.",
@@ -316,10 +311,10 @@
    "kind": "zoomto",
    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Carcharodon_carcharias_%28Linnaeus%2C_1758%29_%28AM_MA120955-3%29.jpg",
    "box": [
-    560,
-    240,
-    1360,
-    840
+    100,
+    120,
+    900,
+    720
    ],
    "label": "ABOUT 300 SERRATED TEETH",
    "text": "Around three hundred serrated teeth sit in several rows, and when one breaks, a replacement moves forward from behind. Now the good news. Many bites are a single test bite, after which the shark lets go. One idea is that a bony human is not the fat-rich seal it wants.",
@@ -332,6 +327,11 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/1/17/Carcharodon_carcharias_%28Linnaeus%2C_1758%29_%28AM_MA120955-2%29.jpg",
      "start": 0,
      "move": "in"
+    },
+    {
+     "clip": "pixabay:id:314749",
+     "start": 0,
+     "move": "out"
     }
    ],
    "text": "Here is the part people get wrong. The teeth are not the main danger, blood loss is. A deep bite on a limb can cut major blood vessels, and severe bleeding becomes life-threatening within minutes. Survivors are the people who get to help fast.",
@@ -358,6 +358,11 @@
      "clip": "pixabay:id:1306",
      "start": 0,
      "move": "out"
+    },
+    {
+     "clip": "pixabay:id:36610",
+     "start": 0,
+     "move": "left"
     }
    ],
    "text": "So how dangerous is it, really? The International Shark Attack File records only a few dozen to about seventy unprovoked bites worldwide in a typical year, from all shark species, and usually fewer than ten deaths. Millions of people swim, dive and surf every year.",
@@ -395,14 +400,19 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:340813",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/df/Great_White_Shark_%28Carcharodon_carcharias%29_%2832872319266%29.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "pixabay:id:182914",
+     "clip": "pixabay:id:340813",
      "start": 0,
      "move": "out"
+    },
+    {
+     "clip": "pixabay:id:182914",
+     "start": 0,
+     "move": "left"
     }
    ],
    "text": "So what do you do if it circles? Do not thrash, and do not turn your back. Stay calm, keep the shark in sight, because some research suggests sharks are less likely to approach when they see they are watched, and move steadily toward the boat. If it makes contact, strike the eyes, nose or gills, then get out.",
@@ -426,7 +436,7 @@
      "move": "in"
     }
    ],
-   "text": "Now, the number I promised. A 2013 study in Marine Policy estimated that humans kill roughly one hundred million sharks a year, with a range of sixty-three to two hundred seventy-three million, mostly in fisheries. Sharks kill about ten people or fewer in a year. In this story, you were never the prey. Statistically, you are the predator.",
+   "text": "Now, the number I promised. A 2013 study in Marine Policy estimated that humans kill roughly one hundred million sharks a year, with a range of sixty-three to two hundred seventy-three million, mostly in fisheries.",
    "chapter": [
     "CHAPTER 7",
     "THE TWIST"
@@ -443,7 +453,20 @@
      "pos": "bl",
      "at": 2.0,
      "color": "red"
-    },
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:244011",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Sharks kill about ten people or fewer in a year. In this story, you were never the prey. Statistically, you are the predator.",
+   "tone": "reveal",
+   "hud": [
     {
      "type": "counter",
      "label": "People killed by sharks",
@@ -452,7 +475,7 @@
      "unit": " or fewer",
      "sub": "usually 10 or fewer a year",
      "pos": "br",
-     "at": 5.0,
+     "at": 0.5,
      "color": "green"
     }
    ]
@@ -465,7 +488,7 @@
      "move": "in"
     }
    ],
-   "text": "So which scares you more: the shark below, or the number above? Tell me in the comments. If this changed how you see the ocean, subscribe to Oddly Logical Science, and watch another video from the channel right now.",
+   "text": "Humans are the predator. So which scares you more: the shark below, or the number above? Tell me in the comments. If this changed how you see the ocean, subscribe to Oddly Logical Science, and watch another video from the channel right now.",
    "tone": "warm",
    "min": 14
   }
@@ -484,7 +507,7 @@
        "move": "in"
       }
      ],
-     "text": "Your heart is broadcasting, and sharks can feel it.",
+     "text": "A shark knows you're there before you see it, and it doesn't use its eyes.",
      "tone": "urgent",
      "label": [
       "SHARKS FEEL YOUR HEARTBEAT",
@@ -497,11 +520,6 @@
        "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Scyliorhinus_canicula_7.jpg",
        "start": 0,
        "move": "in"
-      },
-      {
-       "clip": "pixabay:id:244011",
-       "start": 0,
-       "move": "out"
       }
      ],
      "text": "Around a shark's snout are tiny pores called ampullae of Lorenzini. They detect the weak electric fields that every living body gives off.",
@@ -519,7 +537,7 @@
        "move": "in"
       }
      ],
-     "text": "Their electric sense is so sharp it can pick up a few billionths of a volt per centimeter. Even a fish buried in sand cannot hide.",
+     "text": "Their electric sense can pick up a few billionths of a volt per centimeter. Even these aquarium sharks are reading the faint electric fields around them.",
      "tone": "reveal",
      "hud": [
       {
@@ -581,7 +599,7 @@
        "move": "out"
       }
      ],
-     "text": "Great white sharks mostly hunt seals, and they attack from beneath, looking up at a dark shape against bright light.",
+     "text": "From above it's a surfer. From below, it's a seal.",
      "tone": "neutral",
      "label": [
       "VIEW FROM BELOW",
@@ -666,7 +684,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg"
  },
  "youtube": {
-  "title": "Could You Survive Swimming With Great White Sharks?",
+  "title": "Sharks Can Feel Your Heartbeat. Could You Survive?",
   "description": "You fall off a boat with a great white shark below. How does it find you, how does it attack, how hard does it bite, what actually kills, and what do the real numbers say? We follow the encounter second by second, from smell and the electric sense that can feel a heartbeat to the real odds, and a twist about who the real predator is.\n\nIn this video:\n- How do great white sharks find you?\n- Why do sharks mistake surfers for seals?\n- How strong is a great white bite?\n- What actually kills in a shark bite?\n- How rare are shark attacks?\n- What should you do if a shark circles you?\n\nFAQ\nCan sharks sense a heartbeat? They detect weak electric fields from muscles and heart at close range, roughly a meter.\nHow strong is a great white bite? A 2008 model estimated about 18,000 newtons in a very large shark.\nHow many sharks do humans kill? A 2013 study estimated about 100 million a year (63 to 273 million).\n\nSources:\n- NOAA Fisheries, great white shark species profile\n- Florida Museum, International Shark Attack File (annual worldwide summaries)\n- Wroe et al. 2008, 'Three-dimensional computer analysis of white shark jaw mechanics: how hard can a great white bite?', Journal of Zoology\n- Worm et al. 2013, 'Global catches, exploitation rates, and rebuilding options for sharks', Marine Policy\n\nWhat scares you more, the shark or the number? Tell us in the comments.",
   "tags": [
    "could you survive great white shark",
