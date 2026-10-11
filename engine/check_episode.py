@@ -34,4 +34,15 @@ dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
 errs += [f"plan au hasard interdit (pixabay:requête) : {u}" for u in __import__("re").findall(r'"(pixabay:(?!id:)[^"]+)"', open(sys.argv[1]).read())]
-print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard")) else 0)
+
+# Règles « spectateur » (2026-10-11) : bloquantes
+DARK = ("stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank", "diagram")
+for i, s in enumerate(ep["scenes"]):
+    if s.get("kind") in DARK and len(s.get("text", "").split()) / 2.6 > 12:
+        errs.append(f"scène {i} : écran infographique trop long (~{len(s['text'].split())/2.6:.0f} s > 12 s) → couper ou mettre sur une vraie image (bloquant spectateur)")
+if ep["scenes"] and ep["scenes"][0].get("kind"):
+    errs.append("scène 0 : l'accroche doit être de vraies images, pas une infographie (bloquant spectateur)")
+for k, sp in enumerate(ep.get("shorts", []), 1):
+    for j in range(sp["from"], sp["to"]):
+        if ep["scenes"][j].get("kind") in DARK: errs.append(f"short {k} : scène {j} est une infographie → un Short doit être sur de vraies images (bloquant spectateur)")
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard", "bloquant spectateur")) else 0)
