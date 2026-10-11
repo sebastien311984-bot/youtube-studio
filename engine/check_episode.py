@@ -50,7 +50,7 @@ for k, sp in enumerate(ep.get("shorts", []), 1):
 ORIG = ("annotate", "zoomto", "layers", "beforeafter", "diagram", "scale", "timeline", "versus", "stat", "quiz", "kinetic", "rank")
 _w = lambda s: max(len(s.get("text", "").split()) / 2.6, s.get("min", 0))
 _tot = sum(_w(s) for s in ep["scenes"]) or 1
-_orig = sum(_w(s) for s in ep["scenes"] if s.get("kind") in ORIG or (not s.get("kind") and (s.get("label") or s.get("fact"))))
+_orig = sum(_w(s) for s in ep["scenes"] if s.get("kind") in ORIG or (s.get("kind", "footage") == "footage" and (s.get("label") or s.get("fact") or s.get("hud"))))
 if _orig / _tot < 0.45: errs.append(f"monétisation : seulement {100*_orig/_tot:.0f} % du temps avec un apport visuel original (animations, annotations, encarts) → viser ≥ 45 % (bloquant monétisation)")
 if not ep.get("youtube", {}).get("sources") and "Sources" not in ep.get("youtube", {}).get("description", ""):
     errs.append("monétisation : description sans section « Sources » (études, NOAA/NASA…) (bloquant monétisation)")

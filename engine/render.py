@@ -408,6 +408,9 @@ def main(ep_path, clips_dir, out):
         else:
             lst = os.path.join(work, f"l{i}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
             sh("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cp)
+        if ep["scenes"][i].get("hud"):  # données animées par-dessus la vidéo réelle qui continue de jouer
+            ov = cp + ".hud.mov"; base = cp + ".base.mp4"; os.replace(cp, base); visuals.hud(ov, dur(base), ep["scenes"][i]["hud"])
+            sh("ffmpeg", "-v", "error", "-y", "-i", base, "-i", ov, "-filter_complex", "[0][1]overlay=format=auto,format=yuv420p", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", cp)
     print(f"Scènes rendues en {time.time() - t0:.0f} s ({len(JOBS)} tâches en parallèle)")
     n = int(total * SR); vtrack = np.zeros(n)
     for _, _, vp, st in scenes:
