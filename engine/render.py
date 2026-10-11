@@ -2,7 +2,7 @@
 Voix Edge TTS (minutage mot à mot), plans NASA recadrés avec lent travelling, étalonnage,
 fondus enchaînés, sous-titres et titres animés (ASS), musique d'ambiance synthétisée avec ducking.
 Usage : python3 render.py episode.json clips_dir out.mp4"""
-import asyncio, json, os, subprocess, sys, wave
+import asyncio, json, os, re, subprocess, sys, wave
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import visuals
@@ -13,7 +13,11 @@ CA = "/root/.ccr/ca-bundle.crt"
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import time
 JOBS, CONCATS = [], []
-def _run(job): job[0](*job[1])
+def _run(job):
+    try: job[0](*job[1])
+    except Exception as e:  # erreur lisible dans les annotations GitHub (logs inaccessibles)
+        import traceback; tb = traceback.format_exc().strip().splitlines()
+        print(f"::error::{job[0].__name__} {str(job[1][0]).rsplit('/', 1)[-1]} : {e!r} | " + " | ".join(tb[-4:]), flush=True); raise
 
 def sh(*a): subprocess.run(a, check=True)
 def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)
@@ -51,7 +55,12 @@ PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le mê
 LAST_STILL = [None]
 def img(src, clips_dir):
     """Image d'une animation sur photo : si la source échoue, dernière photo valide (jamais de rendu planté)."""
-    return fetch(src, clips_dir) or LAST_STILL[0]
+    p = fetch(src, clips_dir) or LAST_STILL[0]
+    if not p and os.path.isdir(clips_dir):  # aucune photo encore : n'importe quelle image déjà téléchargée
+        ims = sorted(f for f in os.listdir(clips_dir) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp")))
+        p = os.path.join(clips_dir, ims[0]) if ims else None
+    if not p: print(f"::error::image introuvable pour une animation : {src}", flush=True)
+    return p
 
 def fetch(src, clips_dir):
     """Un plan peut être un fichier local ou une URL (téléchargée une seule fois, mise en cache)."""
@@ -89,6 +98,8 @@ def fetch(src, clips_dir):
         alts = [src]
         if "images-assets.nasa.gov" in src:  # NASA refuse parfois ~large : on essaie ~orig puis ~medium, UA navigateur
             alts += [src.replace("~large", "~orig"), src.replace("~large", "~medium")]
+            pia = re.search(r"/(PIA\d{5})/", src)
+            if pia: alts.append(f"https://photojournal.jpl.nasa.gov/jpeg/{pia.group(1)}.jpg")  # miroir JPL
         for u in alts:
             for ua in ("OddlyLogicalStudio/1.0 (github.com/sebastien311984-bot/youtube-studio)", "Mozilla/5.0 (X11; Linux x86_64)"):
                 r = subprocess.run(["curl", "-sSLf", "--retry", "2", "--max-time", "120", "-A", ua, "-o", local, u])
@@ -358,7 +369,10 @@ def main(ep_path, clips_dir, out):
         srt_words += [(t + s.get("lead", 0.3) + w0, w1, w2) for (w0, w1, w2) in words]
         if s.get("yt_chapter") or s.get("chapter"): yt_chapters.append((t, s.get("yt_chapter") or s["chapter"][1].title()))
         if s.get("kind") != "diagram" and s.get("kind") != "stat" and i == ep.get("thumbnail", {}).get("scene"): thumb_src = (cp, d)
-        if "label" in s: events += label(t + 0.8, min(d - 1, 5), *s["label"])
+        if i == 0 and ep.get("thumbnail", {}).get("image"):  # photo de miniature choisie
+            tp = fetch(ep["thumbnail"]["image"], clips_dir)
+            if tp: thumb_src = (tp, None)
+        if isinstance(s.get("label"), list) and s.get("kind", "footage") not in ("zoomto",): events += label(t + 0.8, min(d - 1, 5), *s["label"])
         if "fact" in s: events += fact(t + min(2.5, d / 3), min(6, d - 1), s["fact"])
         if "chapter" in s and s.get("kind", "footage") in ("footage", "annotate") and not s.get("question"): events += chapter(t + 0.2, *s["chapter"])  # jamais par-dessus une infographie
         if "title" in s:

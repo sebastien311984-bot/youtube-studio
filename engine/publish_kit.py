@@ -24,9 +24,15 @@ def thumbnail(src, path, text, sub="", accent=(255, 196, 40), shift=True, circle
     """Miniature : image choc agrandie + contraste, texte énorme à contour, flèche/cercle rouge, marque."""
     W, H = 1280, 720
     if src:
-        cp, d = src; tmp = path + ".png"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(d * 0.55), "-i", cp, "-frames:v", "1", tmp], check=True)
-        im = Image.open(tmp).convert("RGB").resize((W, H), Image.LANCZOS); os.remove(tmp)
+        cp, d = src
+        if d is None:  # photo choisie explicitement (thumbnail.image) : recadrage 16:9 centré
+            im = Image.open(cp).convert("RGB"); r = max(W / im.width, H / im.height)
+            im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
+            im = im.crop(((im.width - W) // 2, (im.height - H) // 2, (im.width - W) // 2 + W, (im.height - H) // 2 + H))
+        else:
+            tmp = path + ".png"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(d * 0.55), "-i", cp, "-frames:v", "1", tmp], check=True)
+            im = Image.open(tmp).convert("RGB").resize((W, H), Image.LANCZOS); os.remove(tmp)
         if shift:  # agrandit et décale : le sujet central passe à droite, le texte à gauche
             im = im.resize((int(W * 1.5), int(H * 1.5)), Image.LANCZOS).crop((0, int(H * 0.25), W, int(H * 1.25)))
     else: im = Image.new("RGB", (W, H), (10, 10, 20))
