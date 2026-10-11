@@ -12,14 +12,14 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lake_Nyos_1992_001.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tml15-16_Nc.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lake_Oku_aerial_view_of_Northern_part.jpg",
      "start": 0,
      "move": "left"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Village_Banja_02.jpg",
+     "start": 0,
+     "move": "right"
     }
    ],
    "lead": 0.3,
@@ -138,9 +138,9 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lake_Nyos_2001.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nyos_Lake.jpg",
      "start": 0,
-     "move": "in"
+     "move": "out"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lake_Kuk_in_the_Northwest_Region_of_Cameroon.jpg",
@@ -164,14 +164,14 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lake_Nyos_from_Landsat%2C_2014.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Village_Banja_02.jpg",
      "start": 0,
-     "move": "out"
+     "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mount_Cameroon_%28ASTER%29.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7c/The_Lake_Bambili.jpg",
      "start": 0,
-     "move": "left"
+     "move": "out"
     }
    ],
    "teaser": "THE MORNING AFTER",
@@ -185,9 +185,9 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lake_Nyos_1992_001.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/95/Village_Banja_03.jpg",
      "start": 0,
-     "move": "out"
+     "move": "left"
     },
     {
      "clip": "pixabay:id:50990",
@@ -206,8 +206,8 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mount_Cameroon_%28ASTER%29.jpg",
-     "start": 0,
+     "clip": "pixabay:id:220471",
+     "start": 4,
      "move": "in"
     },
     {
@@ -224,9 +224,9 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Lake_nyos_co2_vent.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lake_Nyos_from_Landsat%2C_2014.jpg",
      "start": 0,
-     "move": "in"
+     "move": "right"
     }
    ],
    "chapter": [
@@ -287,9 +287,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:220471",
-     "start": 8,
-     "move": "left"
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lake_Oku_aerial_view_of_Northern_part.jpg",
+     "start": 0,
+     "move": "out"
     }
    ],
    "tone": "tense",
@@ -1279,14 +1279,14 @@
      "move": "left"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gisenyi_kivu_lac.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/13/An_aerial_view_of_the_towering_volcanic_peak_of_Mt._Nyiragongo.jpg",
      "start": 0,
-     "move": "out"
+     "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gisenyi_view_at_kivu_lac_mountain.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/85/Nyiragongo_volcano_%2830773789893%29.jpg",
      "start": 0,
-     "move": "right"
+     "move": "out"
     },
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Lake_Kivu%2C_boats.jpg",
@@ -1333,7 +1333,8 @@
   "text": "THE LAKE KILLED 1,700",
   "sub": "",
   "shift": 0.2,
-  "circle": false
+  "circle": false,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lake_Nyos_1986_001.jpg"
  },
  "youtube": {
   "title": "The Lake That Killed 1,700 People in One Night",
