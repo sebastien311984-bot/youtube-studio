@@ -295,11 +295,6 @@
      "clip": "pixabay:id:26007",
      "start": 20,
      "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Jellyfish-_2016_Deepwater_Exploration_of_the_Marianas.webm",
-     "start": 45,
-     "move": "in"
     }
    ],
    "chapter": [
@@ -632,9 +627,9 @@
   "scene": 0,
   "text": "NO SUBMARINE",
   "sub": "COULD YOU SURVIVE?",
-  "shift": false,
+  "shift": true,
   "circle": false,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pseudoliparis_swirei_%2810.11646-zootaxa.4358.1.7%29_Figure_8.jpg"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Relicanthus_daphneae_2016.jpg"
  },
  "shorts": [
   {
