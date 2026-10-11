@@ -64,7 +64,7 @@
     "OFF SOUTH AFRICA",
     "Great white territory"
    ],
-   "teaser": "HOW IT FINDS YOU"
+   "teaser": "THE SHARK FINDS YOU"
   },
   {
    "shots": [
@@ -114,7 +114,7 @@
      "move": "left"
     }
    ],
-   "text": "Next, pressure. Along each flank runs the lateral line, a row of sensors that feel vibrations in the water. Your kicking legs send out the same kind of ripples as a struggling fish, and a shark can feel them from far away.",
+   "text": "Next, pressure. Along each flank runs the lateral line, a row of sensors that feel vibrations in the water. Your kicking legs send out the same kind of ripples as a struggling fish, and a shark can feel them from some distance away.",
    "tone": "neutral",
    "label": [
     "SENSE 2: LATERAL LINE",
@@ -276,7 +276,7 @@
      "value": 2,
      "from": 0,
      "unit": " tonnes",
-     "sub": "largest females, roughly",
+     "sub": "large females, up to about",
      "pos": "bl",
      "at": 2.0,
      "color": "gold"
@@ -292,7 +292,7 @@
      "move": "in"
     }
    ],
-   "text": "Then, the bite. In a 2008 study, researchers digitally modeled great white jaws and estimated a bite force near eighteen thousand newtons in a very large shark, about one and a half to two tonnes pressing down.",
+   "text": "Then, the bite. In a 2008 study, researchers digitally modeled great white jaws and estimated a bite force near eighteen thousand newtons in a very large shark, nearly two tonnes of force pressing down.",
    "chapter": [
     "CHAPTER 3",
     "THE BITE"
@@ -384,7 +384,7 @@
      "value": 10,
      "from": 0,
      "unit": " or fewer",
-     "sub": "typically 5 to 10 a year",
+     "sub": "usually 10 or fewer a year",
      "pos": "br",
      "at": 3.0,
      "color": "red"
@@ -405,7 +405,7 @@
      "move": "out"
     }
    ],
-   "text": "So what do you do if it circles? Do not thrash, and do not turn your back. Stay calm, keep the shark in sight, because ambush hunters lose their advantage when watched, and move steadily toward the boat. If it makes contact, strike the eyes, nose or gills, then get out.",
+   "text": "So what do you do if it circles? Do not thrash, and do not turn your back. Stay calm, keep the shark in sight, because some research suggests sharks are less likely to approach when they see they are watched, and move steadily toward the boat. If it makes contact, strike the eyes, nose or gills, then get out.",
    "chapter": [
     "CHAPTER 6",
     "WHAT TO DO"
@@ -426,7 +426,7 @@
      "move": "in"
     }
    ],
-   "text": "Now, the number I promised. A 2013 study in Marine Policy estimated that humans kill roughly one hundred million sharks a year, with a range of sixty-three to two hundred seventy-three million, mostly in fisheries. Sharks kill fewer than ten people. In this story, you were never the prey. Statistically, you are the predator.",
+   "text": "Now, the number I promised. A 2013 study in Marine Policy estimated that humans kill roughly one hundred million sharks a year, with a range of sixty-three to two hundred seventy-three million, mostly in fisheries. Sharks kill about ten people or fewer in a year. In this story, you were never the prey. Statistically, you are the predator.",
    "chapter": [
     "CHAPTER 7",
     "THE TWIST"
@@ -450,7 +450,7 @@
      "value": 10,
      "from": 0,
      "unit": " or fewer",
-     "sub": "typically 5 to 10 a year",
+     "sub": "usually 10 or fewer a year",
      "pos": "br",
      "at": 5.0,
      "color": "green"
@@ -543,7 +543,7 @@
        "move": "in"
       }
      ],
-     "text": "So your heartbeat is not a secret. Subscribe for part 2. The full video is on the channel.",
+     "text": "So your heartbeat is not a secret. The full story is on the channel — subscribe for the next one.",
      "tone": "warm"
     }
    ]
@@ -584,7 +584,7 @@
      "text": "Great white sharks mostly hunt seals, and they attack from beneath, looking up at a dark shape against bright light.",
      "tone": "neutral",
      "label": [
-      "VIEW FROM ABOVE",
+      "VIEW FROM BELOW",
       "Surfers on boards"
      ]
     },
@@ -607,7 +607,7 @@
        "move": "in"
       }
      ],
-     "text": "So the shark was not hunting you. It was hunting a seal. Subscribe for part 2. The full video is on the channel.",
+     "text": "So the shark was not hunting you. It was hunting a seal. The full story is on the channel — subscribe for the next one.",
      "tone": "warm"
     }
    ]
@@ -651,7 +651,7 @@
        "move": "in"
       }
      ],
-     "text": "Over a lifetime, one shark can go through thousands of teeth, which is why shark teeth are among the most common fossils. Subscribe for part 2. The full video is on the channel.",
+     "text": "Over a lifetime, one shark can go through thousands of teeth, which is why shark teeth are among the most common fossils. The full story is on the channel — subscribe for the next one.",
      "tone": "reveal"
     }
    ]
