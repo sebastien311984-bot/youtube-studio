@@ -1,3 +1,5 @@
+> ARCHIVE — ne plus lire pour produire. Les règles en vigueur sont dans RULES.md.
+
 # Journal des retours (prioritaire sur le skill)
 Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les plus récents d'abord.
 
