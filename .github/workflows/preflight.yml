@@ -21,7 +21,15 @@ jobs:
       - env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: python3 engine/check_episode.py "${{ github.event.inputs.episode }}" > preflight_check.txt 2>&1 || true; python3 engine/preflight.py "${{ github.event.inputs.episode }}" preflight; mv preflight_check.txt preflight/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: preflight
+          path: |
+            preflight/*.jpg
+            preflight/*.txt
       - name: Résultats sur une branche
+        continue-on-error: true
         run: |
           rm -rf preflight/clips preflight/*.mp4 preflight/*.png
           git config user.name preflight-bot; git config user.email preflight-bot@users.noreply.github.com

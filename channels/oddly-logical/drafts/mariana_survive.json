@@ -203,7 +203,7 @@
     "DEPTH 200 M",
     "Twilight zone"
    ],
-   "text": "Two hundred meters. This is the twilight zone. Only a faint blue glow is left, far too weak for plants to grow. Red light vanished long ago, so even blood looks dark. Your skin would already be numb, because deep water is cold, often only a few degrees above freezing, and cold alone can stop your muscles from working within minutes. Below here, the water keeps getting colder, and darker."
+   "text": "Two hundred meters. This is the twilight zone. Only a faint blue glow is left, far too weak for plants to grow. Red light vanished long ago, so even blood looks dark. Your skin would already be numb, because deep water is cold, and it only gets colder as you sink, and cold alone can stop your muscles from working within minutes. Below here, the water keeps getting colder, and darker."
   },
   {
    "kind": "annotate",
@@ -319,7 +319,7 @@
     "DEPTH 1,000 M",
     "Midnight zone"
    ],
-   "text": "A thousand meters down, there is no sunlight at all, and the pressure is about a hundred atmospheres. The water is only a few degrees above freezing. The only light is living light, made by animals themselves. Without a lamp you would be blind, in a black you have never seen at the surface. Many animals here are red or transparent, because with no light, there is nothing to hide from but their own glow."
+   "text": "A thousand meters down, there is no sunlight at all, and the pressure is about a hundred atmospheres. The water is only a few degrees above freezing. The only light is living light, made by animals themselves. Without a lamp you would be blind, in a black you have never seen at the surface. Many animals here are red or transparent, because red light never reaches this depth, so red is invisible."
   },
   {
    "kind": "annotate",
@@ -448,7 +448,7 @@
     "DEPTH 8,000 M",
     "The deepest fish"
    ],
-   "text": "Around eight thousand meters, we meet the deepest fish ever filmed: a pale, ghostly snailfish. Below it, only invertebrates like tiny shrimp-like amphipods carry on. One leading idea says the chemistry that protects fish cells simply fails at around this depth. Nobody has filmed a fish deeper than about eight thousand three hundred meters. The last stretch, nearly three more kilometers, belongs to the invertebrates."
+   "text": "Around eight thousand meters, we meet the snailfish, the deepest fish ever filmed, down to about eight thousand three hundred meters. Below it, only invertebrates like tiny shrimp-like amphipods carry on. One leading idea says the chemistry that protects fish cells simply fails at around this depth. The last stretch, more than two and a half kilometers, belongs to the invertebrates."
   },
   {
    "kind": "zoomto",
@@ -656,14 +656,14 @@
    "title": "What 10 Meters Does to Your Lungs"
   },
   {
-   "from": 7,
+   "from": 9,
    "to": 9,
    "title": "The Deepest Scuba Dive Ever"
   },
   {
-   "from": 17,
+   "from": 18,
    "to": 19,
-   "title": "1,100 Atmospheres and the Sphere That Survived"
+   "title": "The Sphere That Survived the Deep"
   }
  ],
  "youtube": {
