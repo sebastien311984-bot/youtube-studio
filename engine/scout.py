@@ -33,7 +33,7 @@ def archive(q, n=6):
     return [{"src": "archive", "url": mp4(d["identifier"]), "thumb": f"https://archive.org/services/img/{d['identifier']}",
              "type": "video", "licence": d.get("licenseurl", "?"), "author": "", "title": str(d.get("title", ""))[:80]} for d in r["response"]["docs"]]
 
-def pixabay(q, n=6):
+def pixabay(q, n=12):
     key = os.environ.get("PIXABAY_API_KEY")
     if not key: return []
     r = get("https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "q": q, "per_page": n, "video_type": "film", "safesearch": "true"}))

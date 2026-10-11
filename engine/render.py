@@ -217,14 +217,13 @@ def make_shorts(ep, out, bounds):
     specs = ep.get("shorts") or [{"from": 1, "to": min(len(bounds) - 1, 5), "title": ep.get("short_title", ep["title"])}]
     for k, sp in enumerate(specs, 1):
         a = bounds[sp["from"]]; b = min(bounds[sp["to"]], a + 58)
-        if b - a < 30: b = min(bounds[-1] - 2, a + 45)  # un Short doit durer au moins 30 s
+        if b - a < 20: b = min(bounds[-1] - 2, a + 25)  # données chaîne : 20-30 s = meilleur taux de complétion
         tf = out[:-4] + f"_short{k}.txt"; import textwrap; open(tf, "w").write("\n".join(textwrap.wrap(sp["title"].upper(), 18)))  # 9:16 : titre sur plusieurs lignes, jamais coupé
         vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:6,eq=brightness=-0.15[bg];"
               f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2,"
               f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf:textfile={tf}:fontsize=62:line_spacing=14:fontcolor=white:"
               f"borderw=6:bordercolor=black:x=(w-tw)/2:y=300,"
-              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560,"
-              f"fade=t=out:st={b - a - 0.6:.2f}:d=0.6")
+              f"drawtext=fontfile=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf:text='FULL VIDEO ON THE CHANNEL':fontsize=38:fontcolor=0xFFC840:x=(w-tw)/2:y=1560")  # pas de fondu final : la fin boucle sur le début
         sh("ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", out, "-filter_complex", vf, "-c:v", "libx264", "-preset", "medium",
            "-crf", "19", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out[:-4] + f"_short{k}.mp4")
         os.remove(tf)
