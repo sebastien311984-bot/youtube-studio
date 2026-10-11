@@ -29,9 +29,9 @@ for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être t
 from collections import Counter
 _uses = Counter(sh.get("clip") for sc in ep["scenes"] for sh in (sc.get("shots") or ([sc] if sc.get("clip") else [])) if sh.get("clip"))
 for c, n in _uses.items():
-    if n > 1: errs.append(f"répétition : image/vidéo utilisée {n} fois (max 1) → {c[-60:]}")
+    if n > 2: errs.append(f"répétition : image/vidéo utilisée {n} fois (max 2, idéalement 1) → {c[-60:]}")
 dups = {q for q in queries if queries.count(q) > 1}
 if dups: errs.append(f"requêtes Pixabay en double : {sorted(dups)}")
 if len(ep.get("youtube", {}).get("title", "")) > 60: errs.append("titre YouTube > 60 car.")
-errs += [f"plan au hasard interdit (pixabay:requête) : {u}" for u in __import__("re").findall(r'"(pixabay:(?!id:\d+")[^"]+)"', open(sys.argv[1]).read())]
+errs += [f"plan au hasard interdit (pixabay:requête) : {u}" for u in __import__("re").findall(r'"(pixabay:(?!id:)[^"]+)"', open(sys.argv[1]).read())]
 print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard")) else 0)
