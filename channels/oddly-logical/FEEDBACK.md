@@ -105,3 +105,4 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 
 - 2026-10-11 : INTERDIT `pixabay:requête` (résultat au hasard). Chaque plan = URL précise vue et validée sur la planche scout AVANT écriture du script. Le checker bloque.
 - 2026-10-11 : ANIMATIONS SUR PHOTO = regarder chaque image AVANT de placer cercle/zoom/bandes ; coordonnées mesurées sur l'image, aperçu image fixe vérifié avant rendu. Jamais au jugé.
+- 2026-10-11 : DONNÉES CHAÎNE (Studio) : 75 % des vues viennent du flux Shorts ; Shorts « regardés » seulement 37,9 % (62 % swipés) mais rétention 83 % → le problème = les 2 PREMIÈRES SECONDES. Règles Shorts : image en mouvement + texte choc contradictoire dès la frame 0 (« This should kill you. It doesn't. »), jamais de logo/intro/titre au début, 20-30 s, plan qui change toutes les 1,5-3 s, fin qui boucle sur le début, titre descriptif avec mots-clés (recherche), Vidéo associée + commentaire épinglé vers la playlist.
