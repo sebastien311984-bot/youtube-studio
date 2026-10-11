@@ -338,12 +338,8 @@ def main(ep_path, clips_dir, out):
             STILL = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff")
             is_still = lambda c: c.split("?")[0].lower().endswith(STILL)
             vids = [x for x in shots if not is_still(x["clip"])]
-            if len(shots) < need and not vids:
-                print(f"Scène {i} : {len(shots)} photo(s) pour {d:.0f} s → plans allongés, AUCUNE photo répétée")
-            elif len(shots) < need:
-                # seules les VIDÉOS sont réutilisées (à un autre instant) ; une photo n'apparaît jamais deux fois
-                extra = [dict(vids[j % len(vids)], start=vids[j % len(vids)].get("start", 0) + (1 + j // len(vids)) * 4.5) for j in range(need - len(shots))]
-                shots = shots + extra
+            if len(shots) < need:  # règle 2026-10-11 : JAMAIS un plan répété (photo ou vidéo) → plans allongés
+                print(f"Scène {i} : {len(shots)} plan(s) pour {d:.0f} s → plans allongés, aucun plan répété")
             if False:
                 print(f"Scène {i} : {len(shots)} plan(s) pour {d:.0f} s → {need} plans générés automatiquement")
                 moves = ["in", "left", "out", "right"]

@@ -172,24 +172,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:63427",
-     "start": 8,
-     "move": "in"
-    },
-    {
      "clip": "pixabay:id:175998",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:63559",
-     "start": 10,
-     "move": "left"
-    },
-    {
-     "clip": "pixabay:id:908",
-     "start": 0,
-     "move": "right"
     }
    ],
    "label": [
@@ -250,16 +235,6 @@
      "clip": "pixabay:id:1085",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "pixabay:id:314750",
-     "start": 6,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:248",
-     "start": 10,
-     "move": "in"
     }
    ],
    "label": [
@@ -282,19 +257,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:336799",
-     "start": 12,
-     "move": "in"
-    },
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Jellyfish-_2016_Deepwater_Exploration_of_the_Marianas.webm",
      "start": 20,
      "move": "out"
-    },
-    {
-     "clip": "pixabay:id:26007",
-     "start": 20,
-     "move": "left"
     }
    ],
    "chapter": [
