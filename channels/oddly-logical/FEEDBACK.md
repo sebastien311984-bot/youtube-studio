@@ -102,3 +102,5 @@ Chaque retour de l'utilisateur ou des stats YouTube devient une règle ici. Les 
 4. **Pré-contrôle avant rendu** : check_episode (photo max 1, noms normalisés) + planche des images DANS L'ORDRE du montage (3 min) → relue à l'œil.
 5. **UN seul rendu**, puis contrôle des planches finales, puis pack Chrome. Pas de livraison intermédiaire à l'utilisateur.
 - 2026-10-11 : PRIORITÉ « dessiner sur la vraie image » plutôt que des cartes sur fond noir. Pour chaque explication, partir d'une vraie photo/vidéo : annotate (repérer), zoomto (plonger vers une zone), layers (coupe translucide par-dessus la photo), beforeafter (comparer). Les infographies sur fond noir (scale, stat, versus, kinetic) : 3 maximum par vidéo. Pas de 3D (coût).
+
+- 2026-10-11 : INTERDIT `pixabay:requête` (résultat au hasard). Chaque plan = URL précise vue et validée sur la planche scout AVANT écriture du script. Le checker bloque.
