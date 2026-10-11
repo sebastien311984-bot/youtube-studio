@@ -45,4 +45,13 @@ if ep["scenes"] and ep["scenes"][0].get("kind"):
 for k, sp in enumerate(ep.get("shorts", []), 1):
     for j in range(sp["from"], sp["to"]):
         if ep["scenes"][j].get("kind") in DARK: errs.append(f"short {k} : scène {j} est une infographie → un Short doit être sur de vraies images (bloquant spectateur)")
-print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard", "bloquant spectateur")) else 0)
+
+# Monétisation (contenu « inauthentique / réutilisé », règles YouTube 2025) : la vidéo doit TRANSFORMER les images
+ORIG = ("annotate", "zoomto", "layers", "beforeafter", "diagram", "scale", "timeline", "versus", "stat", "quiz", "kinetic", "rank")
+_w = lambda s: max(len(s.get("text", "").split()) / 2.6, s.get("min", 0))
+_tot = sum(_w(s) for s in ep["scenes"]) or 1
+_orig = sum(_w(s) for s in ep["scenes"] if s.get("kind") in ORIG or (not s.get("kind") and (s.get("label") or s.get("fact"))))
+if _orig / _tot < 0.45: errs.append(f"monétisation : seulement {100*_orig/_tot:.0f} % du temps avec un apport visuel original (animations, annotations, encarts) → viser ≥ 45 % (bloquant monétisation)")
+if not ep.get("youtube", {}).get("sources") and "Sources" not in ep.get("youtube", {}).get("description", ""):
+    errs.append("monétisation : description sans section « Sources » (études, NOAA/NASA…) (bloquant monétisation)")
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard", "bloquant spectateur", "bloquant monétisation")) else 0)
