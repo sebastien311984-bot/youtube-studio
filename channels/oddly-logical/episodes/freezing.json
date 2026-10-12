@@ -25,10 +25,6 @@
       "yt_chapter": "37 to 33: the alarm and the fog"
     },
     {
-      "kind": "intro",
-      "min": 4.0
-    },
-    {
       "shots": [
         {
           "clip": "pixabay:id:63281",
@@ -372,7 +368,7 @@
       ],
       "text": "Your body shuts down in order: shivering, fog, silence, strange behavior, a failing heart. Never trust how warm you feel. If someone is cold and still, call emergency services and never give up. Subscribe for the next one.",
       "tone": "warm",
-      "min": 8,
+      "min": 12,
       "payoff": true
     }
   ],
@@ -414,7 +410,7 @@
               "move": "in"
             }
           ],
-          "text": "It is called paradoxical undressing. Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+          "text": "It is called paradoxical undressing. The full story is on the channel. Subscribe for the next one.",
           "tone": "warm"
         }
       ]
@@ -462,7 +458,7 @@
               "move": "left"
             }
           ],
-          "text": "Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+          "text": "The full story is on the channel. Subscribe for the next one.",
           "tone": "warm"
         }
       ]
@@ -510,14 +506,14 @@
               "move": "in"
             }
           ],
-          "text": "Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+          "text": "The full story is on the channel. Subscribe for the next one.",
           "tone": "warm"
         }
       ]
     }
   ],
   "thumbnail": {
-    "scene": 5,
+    "scene": 4,
     "text": "33 DEGREES",
     "sub": "YOUR BRAIN FAILS",
     "shift": false,
