@@ -188,6 +188,7 @@ GOLD = "&H0040C8FF&"  # BGR
 
 def captions(words, t0):
     """Groupes de 2 à 6 mots ; mot prononcé en doré."""
+    words = [(a, b, w.replace("—", "").replace("–", "").strip()) for a, b, w in words if w.replace("—", "").replace("–", "").strip()]  # tiret long absent de la police → carré
     ev, g = [], []
     groups = []
     for w in words:
