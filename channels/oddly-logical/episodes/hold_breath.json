@@ -1,536 +1,527 @@
 {
-  "title": "Your Urge to Breathe Is Not What You Think",
-  "voice": "en-US-AndrewMultilingualNeural",
-  "credits": "Footage and images: Pixabay Content License (ghasoub, MULTIPLECONTENTHERE, scitech, pruslee, NickyPe, Engin_Akyurt, caelan, LisaOlivia, RizqiPandu, Vladvictoria, kaiom19, claudiafortgeblasen, FlickrVideos, Vimeo-Free-Videos, choxyltd). Photos: jayhem (Flickr, CC BY 2.0); Lars Plougmann, Blue Hole Dahab (Flickr, CC BY-SA 2.0); Andy Moreno, Freediver Moalboal (public domain); paologmb, underwater portrait (Flickr, CC BY 2.0); USAG-Humphreys, lifeguard training (Flickr, CC BY 2.0); Free Immersion (Wikimedia Commons, CC BY 2.0); whale meat photos (Wikimedia Commons, CC BY-SA 2.0 and CC0); Aleksey Loginov, Weddell seals (Wikimedia Commons, CC BY 4.0); Sabda Priyanto, Karimunjawa freedive (CC BY 2.0); Janna El Borno, Maria Bobela (CC BY 4.0); Freediving the SETT (Wikimedia Commons, CC BY 2.0); freediving cleanup in Marseille, Karim s (Wikimedia Commons, CC BY-SA 4.0); Steve Rupp, Weddell seal in McMurdo Sound (public domain); euphro, Weddell seal (CC BY-SA 2.0); Bernard Spragg, sperm whale photos (public domain); sperm whale (Wikimedia Commons, CC0). Animations: original.",
-  "strategy": {
-    "viewer": "Curious adult who has tried holding their breath and wondered why it burns, and who likes human-body limits (series: Your Body at the Limit).",
-    "hook": "The burning in your chest is not your body running out of oxygen.",
-    "promise": "Title and thumbnail promise: the real trigger of the urge to breathe, which is not oxygen, and how long humans can actually go.",
-    "payoff": "Most people last about a minute; the limit is a carbon-dioxide alarm, not an oxygen shortage; trained freedivers wait it out for about eleven and a half to twelve minutes (about 24 with pure oxygen); and hyperventilating mutes the alarm and causes blackouts.",
-    "takeaway": "Your urge to breathe is a smoke detector, not a fuel gauge."
+ "title": "Your Urge to Breathe Is Not What You Think",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage and images: Pixabay Content License (ghasoub, MULTIPLECONTENTHERE, scitech, pruslee, NickyPe, Engin_Akyurt, caelan, LisaOlivia, RizqiPandu, Vladvictoria, kaiom19, claudiafortgeblasen, FlickrVideos, Vimeo-Free-Videos, choxyltd). Photos: jayhem (Flickr, CC BY 2.0); Lars Plougmann, Blue Hole Dahab (Flickr, CC BY-SA 2.0); Andy Moreno, Freediver Moalboal (public domain); paologmb, underwater portrait (Flickr, CC BY 2.0); USAG-Humphreys, lifeguard training (Flickr, CC BY 2.0); Free Immersion (Wikimedia Commons, CC BY 2.0); whale meat photos (Wikimedia Commons, CC BY-SA 2.0 and CC0); Aleksey Loginov, Weddell seals (Wikimedia Commons, CC BY 4.0); Sabda Priyanto, Karimunjawa freedive (CC BY 2.0); Janna El Borno, Maria Bobela (CC BY 4.0); Freediving the SETT (Wikimedia Commons, CC BY 2.0); freediving cleanup in Marseille, Karim s (Wikimedia Commons, CC BY-SA 4.0); Steve Rupp, Weddell seal in McMurdo Sound (public domain); euphro, Weddell seal (CC BY-SA 2.0); Bernard Spragg, sperm whale photos (public domain); sperm whale (Wikimedia Commons, CC0). Animations: original.",
+ "strategy": {
+  "viewer": "Curious adult who has tried holding their breath and wondered why it burns, and who likes human-body limits (series: Your Body at the Limit).",
+  "hook": "The burning in your chest is not your body running out of oxygen.",
+  "promise": "Title and thumbnail promise: the real trigger of the urge to breathe, which is not oxygen, and how long humans can actually go.",
+  "payoff": "Most people last about a minute; the limit is a carbon-dioxide alarm, not an oxygen shortage; trained freedivers wait it out for about eleven and a half to twelve minutes (about 24 with pure oxygen); and hyperventilating mutes the alarm and causes blackouts.",
+  "takeaway": "Your urge to breathe is a smoke detector, not a fuel gauge."
+ },
+ "scenes": [
+  {
+   "text": "Hold your breath. That burning in your chest is not your body running out of oxygen.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/65535/50236725331_a1549e08fe_b.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "tense",
+   "beat": true,
+   "lead": 0.2,
+   "label": [
+    "HOLD YOUR BREATH",
+    "The burning is not oxygen"
+   ],
+   "yt_chapter": "The burning feeling"
   },
-  "scenes": [
+  {
+   "text": "Today: what really forces you to breathe, and how champions ignore it for twelve minutes.",
+   "shots": [
     {
-      "text": "Hold your breath. That burning in your chest is not your body running out of oxygen.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/65535/50236725331_a1549e08fe_b.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "tone": "tense",
-      "beat": true,
-      "lead": 0.2,
-      "label": [
-        "HOLD YOUR BREATH",
-        "The burning is not oxygen"
-      ],
-      "yt_chapter": "The burning feeling"
+     "clip": "pixabay:id:347",
+     "start": 0,
+     "move": "in"
     },
     {
-      "text": "Today: what really forces you to breathe, and how champions ignore it for twelve minutes.",
-      "shots": [
-        {
-          "clip": "pixabay:id:347",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "pixabay:id:32451",
-          "start": 0,
-          "move": "out"
-        },
-        {
-          "clip": "pixabay:id:908",
-          "start": 0,
-          "move": "left"
-        }
-      ],
-      "beat": true,
-      "teaser": "THE WRONG ALARM",
-      "tone": "reveal",
-      "label": [
-        "FREEDIVING",
-        "What really happens?"
-      ]
-    },
-    {
-      "text": "Breathe out underwater and carbon dioxide leaves as bubbles. Hold it, and it builds. Your brain watches it, and when it crosses a line, the alarm rings, with plenty of oxygen still left.",
-      "shots": [
-        {
-          "clip": "pixabay:id:1085",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "tone": "calm",
-      "beat": true,
-      "yt_chapter": "The wrong alarm"
-    },
-    {
-      "kind": "quiz",
-      "question": "What really forces you to breathe?",
-      "options": [
-        "Too little oxygen",
-        "Too much carbon dioxide",
-        "Empty lungs"
-      ],
-      "answer": 1,
-      "min": 8,
-      "text": "Quick check. What really forces you to breathe?"
-    },
-    {
-      "kind": "stat",
-      "value": 6,
-      "prefix": "ABOUT ",
-      "suffix": " L",
-      "caption": "AIR IN A FULL BREATH. ABOUT A FIFTH IS OXYGEN.",
-      "text": "A full breath holds five to six liters of air, a fifth of it oxygen. When the alarm rings, your lungs are far from empty.",
-      "teaser": "THE ELEVEN-MINUTE BREATH",
-      "tone": "reveal"
-    },
-    {
-      "text": "Here is the twist. That alarm can be retrained. Freedivers learn to relax through it, because calm burns less oxygen.",
-      "shots": [
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Freediver_Moalboal.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "chapter": [
-        "CHAPTER 2",
-        "THE ELEVEN-MINUTE BREATH"
-      ],
-      "reveal": true,
-      "label": [
-        "FREEDIVING",
-        "Training the alarm"
-      ]
-    },
-    {
-      "text": "Divers train with tables: hold, rest, hold again, shorter rests each round. The body learns that rising carbon dioxide is no emergency.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/3353/3643603988_f784771395_b.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "https://live.staticflickr.com/3623/3600002571_d199ce036e.jpg",
-          "start": 0,
-          "move": "out"
-        }
-      ],
-      "beat": true,
-      "tone": "neutral"
-    },
-    {
-      "text": "Calm is half the battle. Every twitch burns oxygen, so a freediver floats limp and quiet.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/3381/3590681679_a9fb2d35c7_b.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "tone": "warm",
-      "label": [
-        "STATIC APNEA",
-        "Lie still, face down, and wait"
-      ]
-    },
-    {
-      "kind": "manim",
-      "code": "t=Text(\"HOW LONG CAN HUMANS HOLD THEIR BREATH?\",font_size=36,color=YELLOW).to_edge(UP)\nself.play(FadeIn(t),run_time=0.6)\nrows=[(\"UNTRAINED\",1.0,GREY_B,\"ABOUT 1 MIN\",1.5),(\"TRAINED FREEDIVER\",5.5,ORANGE,\"5-6 MIN\",0.0),(\"PLAIN-AIR RECORD\",11.6,RED,\"ABOUT 11-12 MIN\",-1.5)]\nfor name,m,c,val,y in rows:\n    w=m*0.42\n    bar=Rectangle(width=w,height=0.8,color=c,fill_color=c,fill_opacity=0.9,stroke_width=0).move_to([-1.5+w/2,y,0])\n    nm=Text(name,font_size=26,color=WHITE).move_to([-4.6,y+0.75,0]).align_to([-5.9,0,0],LEFT)\n    v=Text(val,font_size=30,color=WHITE).next_to(bar,RIGHT,buff=0.25)\n    self.play(FadeIn(nm),GrowFromEdge(bar,LEFT),FadeIn(v),run_time=1.6)\n",
-      "text": "Untrained, about one minute. Trained, five or six. The record on plain air, lying still: eleven and a half to twelve minutes.",
-      "beat": true,
-      "tone": "reveal"
-    },
-    {
-      "kind": "stat",
-      "value": 24.6,
-      "suffix": " min",
-      "caption": "WITH PURE OXYGEN FIRST",
-      "text": "With pure oxygen beforehand, the record passes twenty-four minutes. A different rulebook, and a real medical risk.",
-      "fact": "Pure-oxygen records are a separate category\\Nfrom plain-air freediving records.",
-      "reveal": true
-    },
-    {
-      "text": "Seals hold on for more than an hour. Their secret is not bigger lungs. It is blood and muscle packed with oxygen-storing proteins.",
-      "shots": [
-        {
-          "clip": "pixabay:id:171604",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Weddell_seal_swims_underwater_in_McMurdo_Sound_%28Image_3%29.jpg",
-          "start": 0,
-          "move": "out"
-        }
-      ],
-      "chapter": [
-        "CHAPTER 3",
-        "THE BUILT-IN DIVING MACHINE"
-      ],
-      "beat": true,
-      "tone": "warm",
-      "yt_chapter": "The built-in diving machine"
-    },
-    {
-      "text": "That is why seal and whale meat is so dark red. It is loaded with myoglobin, a protein that stores oxygen in the muscle.",
-      "shots": [
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/0/04/Whale_meat_-_cropped.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "reveal": true,
-      "tone": "neutral",
-      "fact": "Myoglobin: the oxygen store inside muscle."
-    },
-    {
-      "text": "Humans have gone down a rope more than a hundred meters on a single breath.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/101/317185613_fc2ddb09ef.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "beat": true,
-      "fact": "Depth record on one breath: over 200 m.",
-      "tone": "reveal"
-    },
-    {
-      "text": "Cold water on your face triggers the mammalian dive reflex: your heart slows and blood is rerouted to heart and brain. Dolphins have it. Seals have it. So do you.",
-      "shots": [
-        {
-          "clip": "pixabay:id:44093",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "tone": "calm",
-      "beat": true
-    },
-    {
-      "kind": "manim",
-      "code": "ax=VGroup(Line([-5.5,-2.3,0],[5.5,-2.3,0],color=GREY_B),Line([-5.5,-2.3,0],[-5.5,2.6,0],color=GREY_B))\nxl=Text(\"TIME HOLDING YOUR BREATH\",font_size=28,color=GREY_B).move_to([0,-2.9,0])\nt=Text(\"AFTER HYPERVENTILATING\",font_size=44,color=RED).to_edge(UP)\nself.add(ax,xl)\nself.play(FadeIn(t),run_time=0.5)\nal=DashedLine([-5.5,0.9,0],[5.5,0.9,0],color=YELLOW,stroke_width=5)\nbl=DashedLine([-5.5,-1.0,0],[5.5,-1.0,0],color=RED,stroke_width=5)\na1=Text(\"URGE TO BREATHE\",font_size=28,color=YELLOW).move_to([-3.6,1.2,0])\nb1=Text(\"BLACKOUT LEVEL\",font_size=28,color=RED).move_to([-3.7,-0.7,0])\nself.play(Create(al),Create(bl),FadeIn(a1),FadeIn(b1),run_time=1)\no2=VMobject(color=BLUE,stroke_width=9).set_points_smoothly([[-5.5,1.8,0],[-2,1.3,0],[1,0.2,0],[3.5,-1.0,0],[4.5,-1.8,0]])\nco=VMobject(color=ORANGE,stroke_width=9).set_points_smoothly([[-5.5,-2.0,0],[-2,-1.7,0],[1,-1.2,0],[4.5,-0.4,0]])\nself.play(Create(o2),Create(co),run_time=3)\nd=Dot([3.5,-1.0,0],radius=0.22,color=RED)\nself.play(FadeIn(d),Flash(d,color=RED,flash_radius=0.8),run_time=1)\nn=Text(\"OXYGEN CRASHES. THE ALARM NEVER RINGS.\",font_size=32,color=WHITE).move_to([0,-3.3,0])\nself.play(FadeIn(n),run_time=1)\n",
-      "text": "Now the most important part. Hyperventilating before a swim adds no oxygen. It only blows off carbon dioxide, so the alarm stays silent while oxygen quietly drops too low.",
-      "chapter": [
-        "CHAPTER 4",
-        "THE TRAP"
-      ],
-      "reveal": true,
-      "tone": "tense",
-      "yt_chapter": "The trap that kills"
-    },
-    {
-      "text": "Shallow water blackout. No warning, no panic. Low oxygen can feel calm, even pleasant, and then you are out.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/3592/3597015112_aef41df02a_b.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "beat": true,
-      "tone": "tense"
-    },
-    {
-      "kind": "kinetic",
-      "words": [
-        "NEVER ALONE",
-        "NEVER IN WATER SOLO",
-        "NEVER HYPERVENTILATE"
-      ],
-      "text": "Three rules. Never alone. Never in the water without a trained partner. Never hyperventilate first.",
-      "tone": "urgent"
-    },
-    {
-      "text": "Competition freedivers are watched at the surface. If one blacks out, a partner blows on their face and says breathe. It only works if somebody is watching.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/2430/3597002902_49aa1393c5_b.jpg",
-          "start": 0,
-          "move": "in"
-        }
-      ],
-      "beat": true,
-      "tone": "warm"
-    },
-    {
-      "text": "So, how long can you really hold your breath? For most people, about a minute. The limit is not oxygen. It is an alarm.",
-      "shots": [
-        {
-          "clip": "https://live.staticflickr.com/1012/1156625245_8311bb91a2_b.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "https://live.staticflickr.com/1160/1158763200_458bdd4f7d_b.jpg",
-          "start": 0,
-          "move": "out"
-        }
-      ],
-      "reveal": true,
-      "tone": "reveal"
-    },
-    {
-      "text": "The best freedivers wait it out for about eleven and a half to twelve minutes, or twenty-four with pure oxygen. Your urge to breathe is not a fuel gauge. It is a smoke detector. Subscribe for the next one.",
-      "shots": [
-        {
-          "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Freediving_the_SETT_%283074151992%29.jpg",
-          "start": 0,
-          "move": "in"
-        },
-        {
-          "clip": "https://live.staticflickr.com/1326/1158255688_c2015ed7e7_b.jpg",
-          "start": 0,
-          "move": "out"
-        }
-      ],
-      "reveal": true,
-      "tone": "reveal",
-      "payoff": true,
-      "min": 12
+     "clip": "pixabay:id:32451",
+     "start": 0,
+     "move": "out"
     }
-  ],
-  "thumbnail": {
-    "scene": 0,
-    "text": "NOT OXYGEN?",
-    "sub": "WHY YOU MUST BREATHE",
-    "shift": true,
-    "circle": false,
-    "image": "https://live.staticflickr.com/65535/50236725331_a1549e08fe_b.jpg"
+   ],
+   "beat": true,
+   "teaser": "THE WRONG ALARM",
+   "tone": "reveal"
   },
-  "shorts": [
+  {
+   "text": "Breathe out underwater and carbon dioxide leaves as bubbles. Hold it, and it builds. Your brain watches it, and when it crosses a line, the alarm rings, with plenty of oxygen still left.",
+   "shots": [
     {
-      "title": "A 24-minute breath hold",
-      "scenes": [
-        {
-          "text": "A freediver once held his breath for more than twenty-four minutes.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/3328/3618500018_104907dab6_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "tense"
-        },
-        {
-          "text": "Croatia, 2021: a Guinness World Record, set after breathing pure oxygen to load his body with reserve.",
-          "shots": [
-            {
-              "clip": "https://upload.wikimedia.org/wikipedia/commons/0/02/Free_Immersion_%28442375664%29.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "neutral"
-        },
-        {
-          "text": "On plain air, the record is about eleven and a half to twelve minutes.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/184/441777052_3c7d6327a4_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "reveal"
-        },
-        {
-          "text": "What stops the rest of us is not oxygen. It is carbon dioxide, setting off an alarm in your brain.",
-          "shots": [
-            {
-              "clip": "pixabay:id:139951",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "reveal"
-        },
-        {
-          "text": "Please never try this in water. The full story is on the channel. Subscribe for the next one.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/46/130071889_bc5e53a1f3_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "warm"
-        }
-      ]
-    },
-    {
-      "title": "Seals do not run out of air",
-      "scenes": [
-        {
-          "text": "A Weddell seal can stay underwater for more than an hour.",
-          "shots": [
-            {
-              "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_466272938.jpeg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "tense"
-        },
-        {
-          "text": "Weddell seals live under Antarctic ice, and can dive far from any breathing hole.",
-          "shots": [
-            {
-              "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_464672424.jpeg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "neutral"
-        },
-        {
-          "text": "Their blood and muscles are packed with oxygen-storing proteins, and their hearts slow right down.",
-          "shots": [
-            {
-              "clip": "https://upload.wikimedia.org/wikipedia/commons/0/03/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_464662481.jpeg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "reveal"
-        },
-        {
-          "text": "Dolphins and whales have the same dive reflex. So do you, in a weaker form.",
-          "shots": [
-            {
-              "clip": "pixabay:id:30970",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "reveal"
-        },
-        {
-          "text": "The full story is on the channel. Subscribe for the next one.",
-          "shots": [
-            {
-              "clip": "pixabay:id:244188",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "warm"
-        }
-      ]
-    },
-    {
-      "title": "The silent drowning trap",
-      "scenes": [
-        {
-          "text": "Some of the strongest swimmers die in pools, in silence, after one simple trick.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/3307/3596179371_95f3a82c48_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "tense"
-        },
-        {
-          "text": "They breathe fast before swimming underwater, to hold their breath longer.",
-          "shots": [
-            {
-              "clip": "pixabay:id:113675",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "neutral"
-        },
-        {
-          "text": "It blows off carbon dioxide, so the alarm that tells you to breathe stays quiet while oxygen runs out.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/3408/3596973040_74797ffca7_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "reveal"
-        },
-        {
-          "text": "This is shallow water blackout. You feel fine, then you are unconscious. Never hyperventilate, and never hold your breath in water alone.",
-          "shots": [
-            {
-              "clip": "https://live.staticflickr.com/2431/3597028538_c5a0ecd0d1_b.jpg",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "tense"
-        },
-        {
-          "text": "The full story is on the channel. Subscribe for the next one.",
-          "shots": [
-            {
-              "clip": "pixabay:id:31909",
-              "start": 0,
-              "move": "in"
-            }
-          ],
-          "tone": "warm"
-        }
-      ]
+     "clip": "pixabay:id:1085",
+     "start": 0,
+     "move": "in"
     }
-  ],
-  "youtube": {
-    "title": "Your Urge to Breathe Is Not What You Think",
-    "alternatives": {
-      "titles": [
-        "Your Urge to Breathe Is Not What You Think",
-        "How Long Can You Really Hold Your Breath?",
-        "Why You Can't Hold Your Breath Longer"
-      ],
-      "thumbnail_texts": [
-        "NOT OXYGEN?",
-        "THE WRONG ALARM",
-        "11 MINUTES?"
-      ]
-    },
-    "description": "Why can't you hold your breath for longer? Because the burning urge to breathe is not about oxygen. It is about carbon dioxide, and a freediver learns to wait that alarm out for almost twelve minutes. We follow the alarm from your brainstem to your diaphragm, meet seals, whales and the dive reflex, and explain the deadly trap of shallow water blackout.\n\nIn this video:\n- The burning feeling\n- The wrong alarm\n- The built-in diving machine\n- The trap that kills\n\nSAFETY: never hold your breath in or near water alone, never hyperventilate before swimming underwater, and never push through the alarm in a pool, lake or sea. Do not attempt records. This video is education, not training advice.\n\nFAQ\nHow long can a person hold their breath? Most untrained people last about a minute.\nWhy do you have to breathe? Rising carbon dioxide, not falling oxygen, triggers the urge.\nWhat is the record? About 11.5-12 minutes on plain air and over 24 minutes after breathing pure oxygen (Guinness).\nWhat is the mammalian dive reflex? Cold water on the face slows the heart and reroutes blood to heart and brain.\nWhat is shallow water blackout? Loss of consciousness from low oxygen, often after hyperventilating, with no warning.\n\nSubscribe for the next one.\n\nSources: Parkes MJ (2006) Breath-holding and its breakpoint, Experimental Physiology 91(1); Lindholm P & Lundgren CE (2009) The physiology and pathophysiology of human breath-hold diving, J Appl Physiol 106; Schagatay E et al. (2001, 2012) spleen contraction and apnea, Eur J Appl Physiol; Panneton WM (2013) The mammalian diving response, Physiology 28; Ponganis PJ (2015) Diving Physiology of Marine Mammals and Seabirds, Cambridge University Press; Craig AB (1976) Summary of 58 cases of loss of consciousness during underwater swimming and diving, Medicine and Science in Sports 8; Guinness World Records, longest breath held voluntarily (with and without oxygen); AIDA International records.\n\nFootage and images: Pixabay Content License (ghasoub, MULTIPLECONTENTHERE, scitech, pruslee, NickyPe, Engin_Akyurt, caelan, LisaOlivia, RizqiPandu, Vladvictoria, kaiom19, claudiafortgeblasen, FlickrVideos, Vimeo-Free-Videos, choxyltd). Photos: jayhem (Flickr, CC BY 2.0); Lars Plougmann, Blue Hole Dahab (Flickr, CC BY-SA 2.0); Andy Moreno, Freediver Moalboal (public domain); paologmb, underwater portrait (Flickr, CC BY 2.0); USAG-Humphreys, lifeguard training (Flickr, CC BY 2.0); Free Immersion (Wikimedia Commons, CC BY 2.0); whale meat photos (Wikimedia Commons, CC BY-SA 2.0 and CC0); Aleksey Loginov, Weddell seals (Wikimedia Commons, CC BY 4.0); Sabda Priyanto, Karimunjawa freedive (CC BY 2.0); Janna El Borno, Maria Bobela (CC BY 4.0); Freediving the SETT (Wikimedia Commons, CC BY 2.0); freediving cleanup in Marseille, Karim s (Wikimedia Commons, CC BY-SA 4.0); Steve Rupp, Weddell seal in McMurdo Sound (public domain); euphro, Weddell seal (CC BY-SA 2.0); Bernard Spragg, sperm whale photos (public domain); sperm whale (Wikimedia Commons, CC0). Animations: original.",
-    "sources": "Sources: Parkes MJ (2006) Breath-holding and its breakpoint, Experimental Physiology 91(1); Lindholm P & Lundgren CE (2009) The physiology and pathophysiology of human breath-hold diving, J Appl Physiol 106; Schagatay E et al. (2001, 2012) spleen contraction and apnea, Eur J Appl Physiol; Panneton WM (2013) The mammalian diving response, Physiology 28; Ponganis PJ (2015) Diving Physiology of Marine Mammals and Seabirds, Cambridge University Press; Craig AB (1976) Summary of 58 cases of loss of consciousness during underwater swimming and diving, Medicine and Science in Sports 8; Guinness World Records, longest breath held voluntarily (with and without oxygen); AIDA International records.",
-    "tags": [
-      "how long can you hold your breath",
-      "hold your breath",
-      "freediving",
-      "static apnea",
-      "breath hold record",
-      "mammalian dive reflex",
-      "shallow water blackout",
-      "carbon dioxide urge to breathe",
-      "spleen freediving",
-      "human body limits",
-      "your body at the limit",
-      "apnea"
-    ],
-    "hashtags": [
-      "#freediving",
-      "#science",
-      "#humanbody"
-    ],
-    "translations": {
-      "fr": "Votre envie de respirer n'est pas ce que vous croyez",
-      "es": "Tu necesidad de respirar no es lo que crees",
-      "pt": "A vontade de respirar não é o que você pensa",
-      "de": "Dein Atemreiz ist nicht, was du denkst",
-      "hi": "सांस लेने की ज़रूरत वैसी नहीं जैसी आप सोचते हैं"
+   ],
+   "tone": "calm",
+   "beat": true,
+   "yt_chapter": "The wrong alarm"
+  },
+  {
+   "kind": "quiz",
+   "question": "What really forces you to breathe?",
+   "options": [
+    "Too little oxygen",
+    "Too much carbon dioxide",
+    "Empty lungs"
+   ],
+   "answer": 1,
+   "min": 8,
+   "text": "Quick check. What really forces you to breathe?"
+  },
+  {
+   "kind": "stat",
+   "value": 6,
+   "prefix": "ABOUT ",
+   "suffix": " L",
+   "caption": "AIR IN A FULL BREATH. ABOUT A FIFTH IS OXYGEN.",
+   "text": "A full breath holds five to six liters of air, a fifth of it oxygen. When the alarm rings, your lungs are far from empty.",
+   "teaser": "THE ELEVEN-MINUTE BREATH",
+   "tone": "reveal"
+  },
+  {
+   "text": "Here is the twist. That alarm can be retrained. Freedivers learn to relax through it, because calm burns less oxygen.",
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/25/Freediver_Moalboal.jpg",
+     "start": 0,
+     "move": "in"
     }
+   ],
+   "chapter": [
+    "CHAPTER 2",
+    "THE ELEVEN-MINUTE BREATH"
+   ],
+   "reveal": true,
+   "label": [
+    "FREEDIVING",
+    "Training the alarm"
+   ]
+  },
+  {
+   "text": "Divers train with tables: hold, rest, hold again, shorter rests each round. The body learns that rising carbon dioxide is no emergency.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/3353/3643603988_f784771395_b.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://live.staticflickr.com/3623/3600002571_d199ce036e.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "beat": true,
+   "tone": "neutral"
+  },
+  {
+   "text": "Calm is half the battle. Every twitch burns oxygen, so a freediver floats limp and quiet.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/3381/3590681679_a9fb2d35c7_b.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "tone": "warm",
+   "label": [
+    "STATIC APNEA",
+    "Lie still, face down, and wait"
+   ]
+  },
+  {
+   "kind": "manim",
+   "code": "t=Text(\"HOW LONG CAN HUMANS HOLD THEIR BREATH?\",font_size=36,color=YELLOW).to_edge(UP)\nself.play(FadeIn(t),run_time=0.6)\nrows=[(\"UNTRAINED\",1.0,GREY_B,\"ABOUT 1 MIN\",1.5),(\"TRAINED FREEDIVER\",5.5,ORANGE,\"5-6 MIN\",0.0),(\"PLAIN-AIR RECORD\",11.6,RED,\"ABOUT 11-12 MIN\",-1.5)]\nfor name,m,c,val,y in rows:\n    w=m*0.42\n    bar=Rectangle(width=w,height=0.8,color=c,fill_color=c,fill_opacity=0.9,stroke_width=0).move_to([-1.5+w/2,y,0])\n    nm=Text(name,font_size=26,color=WHITE).move_to([-4.6,y+0.75,0]).align_to([-5.9,0,0],LEFT)\n    v=Text(val,font_size=30,color=WHITE).next_to(bar,RIGHT,buff=0.25)\n    self.play(FadeIn(nm),GrowFromEdge(bar,LEFT),FadeIn(v),run_time=1.6)\n",
+   "text": "Untrained, about one minute. Trained, five or six. The record on plain air, lying still: eleven and a half to twelve minutes.",
+   "beat": true,
+   "tone": "reveal"
+  },
+  {
+   "kind": "stat",
+   "value": 24.6,
+   "suffix": " min",
+   "caption": "WITH PURE OXYGEN FIRST",
+   "text": "With pure oxygen beforehand, the record passes twenty-four minutes. A different rulebook, and a real medical risk.",
+   "fact": "Pure-oxygen records are a separate category\\Nfrom plain-air freediving records.",
+   "reveal": true
+  },
+  {
+   "text": "Seals hold on for more than an hour. Their secret is not bigger lungs. It is blood and muscle packed with oxygen-storing proteins.",
+   "shots": [
+    {
+     "clip": "pixabay:id:171604",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Weddell_seal_swims_underwater_in_McMurdo_Sound_%28Image_3%29.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "chapter": [
+    "CHAPTER 3",
+    "THE BUILT-IN DIVING MACHINE"
+   ],
+   "beat": true,
+   "tone": "warm",
+   "yt_chapter": "The built-in diving machine"
+  },
+  {
+   "text": "That is why seal and whale meat is so dark red. It is loaded with myoglobin, a protein that stores oxygen in the muscle.",
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/04/Whale_meat_-_cropped.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "reveal": true,
+   "tone": "neutral",
+   "fact": "Myoglobin: the oxygen store inside muscle."
+  },
+  {
+   "text": "Humans have gone down a rope more than a hundred meters on a single breath.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/101/317185613_fc2ddb09ef.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "beat": true,
+   "fact": "Depth record on one breath: over 200 m.",
+   "tone": "reveal"
+  },
+  {
+   "text": "Cold water on your face triggers the mammalian dive reflex: your heart slows and blood is rerouted to heart and brain. Dolphins have it. Seals have it. So do you.",
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Weddell_seal_swims_underwater_in_McMurdo_Sound_%28Image_3%29.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "tone": "calm",
+   "beat": true
+  },
+  {
+   "kind": "manim",
+   "code": "ax=VGroup(Line([-5.5,-2.3,0],[5.5,-2.3,0],color=GREY_B),Line([-5.5,-2.3,0],[-5.5,2.6,0],color=GREY_B))\nxl=Text(\"TIME HOLDING YOUR BREATH\",font_size=28,color=GREY_B).move_to([0,-2.9,0])\nt=Text(\"AFTER HYPERVENTILATING\",font_size=44,color=RED).to_edge(UP)\nself.add(ax,xl)\nself.play(FadeIn(t),run_time=0.5)\nal=DashedLine([-5.5,0.9,0],[5.5,0.9,0],color=YELLOW,stroke_width=5)\nbl=DashedLine([-5.5,-1.0,0],[5.5,-1.0,0],color=RED,stroke_width=5)\na1=Text(\"URGE TO BREATHE\",font_size=28,color=YELLOW).move_to([-3.6,1.2,0])\nb1=Text(\"BLACKOUT LEVEL\",font_size=28,color=RED).move_to([-3.7,-0.7,0])\nself.play(Create(al),Create(bl),FadeIn(a1),FadeIn(b1),run_time=1)\no2=VMobject(color=BLUE,stroke_width=9).set_points_smoothly([[-5.5,1.8,0],[-2,1.3,0],[1,0.2,0],[3.5,-1.0,0],[4.5,-1.8,0]])\nco=VMobject(color=ORANGE,stroke_width=9).set_points_smoothly([[-5.5,-2.0,0],[-2,-1.7,0],[1,-1.2,0],[4.5,-0.4,0]])\nself.play(Create(o2),Create(co),run_time=3)\nd=Dot([3.5,-1.0,0],radius=0.22,color=RED)\nself.play(FadeIn(d),Flash(d,color=RED,flash_radius=0.8),run_time=1)\nn=Text(\"OXYGEN CRASHES. THE ALARM NEVER RINGS.\",font_size=32,color=WHITE).move_to([0,-3.3,0])\nself.play(FadeIn(n),run_time=1)\n",
+   "text": "Now the most important part. Hyperventilating before a swim adds no oxygen. It only blows off carbon dioxide, so the alarm stays silent while oxygen quietly drops too low.",
+   "chapter": [
+    "CHAPTER 4",
+    "THE TRAP"
+   ],
+   "reveal": true,
+   "tone": "tense",
+   "yt_chapter": "The trap that kills"
+  },
+  {
+   "text": "Shallow water blackout. No warning, no panic. Low oxygen can feel calm, even pleasant, and then you are out.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/3592/3597015112_aef41df02a_b.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "beat": true,
+   "tone": "tense"
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "NEVER ALONE",
+    "NEVER IN WATER SOLO",
+    "NEVER HYPERVENTILATE"
+   ],
+   "text": "Three rules. Never alone. Never in the water without a trained partner. Never hyperventilate first.",
+   "tone": "urgent"
+  },
+  {
+   "text": "Competition freedivers are watched at the surface. If one blacks out, a partner blows on their face and says breathe. It only works if somebody is watching.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/2430/3597002902_49aa1393c5_b.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "beat": true,
+   "tone": "warm"
+  },
+  {
+   "text": "So, how long can you really hold your breath? For most people, about a minute. The limit is not oxygen. It is an alarm.",
+   "shots": [
+    {
+     "clip": "https://live.staticflickr.com/1012/1156625245_8311bb91a2_b.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://live.staticflickr.com/1160/1158763200_458bdd4f7d_b.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "reveal": true,
+   "tone": "reveal"
+  },
+  {
+   "text": "The best freedivers wait it out for about eleven and a half to twelve minutes, or twenty-four with pure oxygen. Your urge to breathe is not a fuel gauge. It is a smoke detector. Subscribe for the next one.",
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Freediving_the_SETT_%283074151992%29.jpg",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "https://live.staticflickr.com/1326/1158255688_c2015ed7e7_b.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "reveal": true,
+   "tone": "reveal",
+   "payoff": true,
+   "min": 12
   }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "NOT OXYGEN?",
+  "sub": "WHY YOU MUST BREATHE",
+  "shift": true,
+  "circle": false,
+  "image": "https://live.staticflickr.com/65535/50236725331_a1549e08fe_b.jpg"
+ },
+ "shorts": [
+  {
+   "title": "A 24-minute breath hold",
+   "scenes": [
+    {
+     "text": "A freediver once held his breath for more than twenty-four minutes.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/3328/3618500018_104907dab6_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "tense"
+    },
+    {
+     "text": "Croatia, 2021: a Guinness World Record, set after breathing pure oxygen to load his body with reserve.",
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/02/Free_Immersion_%28442375664%29.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "neutral"
+    },
+    {
+     "text": "On plain air, the record is about eleven and a half to twelve minutes.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/184/441777052_3c7d6327a4_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "reveal"
+    },
+    {
+     "text": "What stops the rest of us is not oxygen. It is carbon dioxide, setting off an alarm in your brain.",
+     "shots": [
+      {
+       "clip": "pixabay:id:139951",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "reveal"
+    },
+    {
+     "text": "Please never try this in water. The full story is on the channel. Subscribe for the next one.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/46/130071889_bc5e53a1f3_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "Seals do not run out of air",
+   "scenes": [
+    {
+     "text": "A Weddell seal can stay underwater for more than an hour.",
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_466272938.jpeg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "tense"
+    },
+    {
+     "text": "Weddell seals live under Antarctic ice, and can dive far from any breathing hole.",
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_464672424.jpeg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "neutral"
+    },
+    {
+     "text": "Their blood and muscles are packed with oxygen-storing proteins, and their hearts slow right down.",
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/03/Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_464662481.jpeg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "reveal"
+    },
+    {
+     "text": "Dolphins and whales have the same dive reflex. So do you, in a weaker form.",
+     "shots": [
+      {
+       "clip": "pixabay:id:30970",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "reveal"
+    },
+    {
+     "text": "The full story is on the channel. Subscribe for the next one.",
+     "shots": [
+      {
+       "clip": "pixabay:id:244188",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "The silent drowning trap",
+   "scenes": [
+    {
+     "text": "Some of the strongest swimmers die in pools, in silence, after one simple trick.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/3307/3596179371_95f3a82c48_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "tense"
+    },
+    {
+     "text": "They breathe fast before swimming underwater, to hold their breath longer.",
+     "shots": [
+      {
+       "clip": "pixabay:id:113675",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "neutral"
+    },
+    {
+     "text": "It blows off carbon dioxide, so the alarm that tells you to breathe stays quiet while oxygen runs out.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/3408/3596973040_74797ffca7_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "reveal"
+    },
+    {
+     "text": "This is shallow water blackout. You feel fine, then you are unconscious. Never hyperventilate, and never hold your breath in water alone.",
+     "shots": [
+      {
+       "clip": "https://live.staticflickr.com/2431/3597028538_c5a0ecd0d1_b.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "tense"
+    },
+    {
+     "text": "The full story is on the channel. Subscribe for the next one.",
+     "shots": [
+      {
+       "clip": "pixabay:id:31909",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "tone": "warm"
+    }
+   ]
+  }
+ ],
+ "youtube": {
+  "title": "Your Urge to Breathe Is Not What You Think",
+  "alternatives": {
+   "titles": [
+    "Your Urge to Breathe Is Not What You Think",
+    "How Long Can You Really Hold Your Breath?",
+    "Why You Can't Hold Your Breath Longer"
+   ],
+   "thumbnail_texts": [
+    "NOT OXYGEN?",
+    "THE WRONG ALARM",
+    "11 MINUTES?"
+   ]
+  },
+  "description": "Why can't you hold your breath for longer? Because the burning urge to breathe is not about oxygen. It is about carbon dioxide, and a freediver learns to wait that alarm out for almost twelve minutes. We follow the alarm from your brainstem to your diaphragm, meet seals, whales and the dive reflex, and explain the deadly trap of shallow water blackout.\n\nIn this video:\n- The burning feeling\n- The wrong alarm\n- The built-in diving machine\n- The trap that kills\n\nSAFETY: never hold your breath in or near water alone, never hyperventilate before swimming underwater, and never push through the alarm in a pool, lake or sea. Do not attempt records. This video is education, not training advice.\n\nFAQ\nHow long can a person hold their breath? Most untrained people last about a minute.\nWhy do you have to breathe? Rising carbon dioxide, not falling oxygen, triggers the urge.\nWhat is the record? About 11.5-12 minutes on plain air and over 24 minutes after breathing pure oxygen (Guinness).\nWhat is the mammalian dive reflex? Cold water on the face slows the heart and reroutes blood to heart and brain.\nWhat is shallow water blackout? Loss of consciousness from low oxygen, often after hyperventilating, with no warning.\n\nSubscribe for the next one.\n\nSources: Parkes MJ (2006) Breath-holding and its breakpoint, Experimental Physiology 91(1); Lindholm P & Lundgren CE (2009) The physiology and pathophysiology of human breath-hold diving, J Appl Physiol 106; Schagatay E et al. (2001, 2012) spleen contraction and apnea, Eur J Appl Physiol; Panneton WM (2013) The mammalian diving response, Physiology 28; Ponganis PJ (2015) Diving Physiology of Marine Mammals and Seabirds, Cambridge University Press; Craig AB (1976) Summary of 58 cases of loss of consciousness during underwater swimming and diving, Medicine and Science in Sports 8; Guinness World Records, longest breath held voluntarily (with and without oxygen); AIDA International records.\n\nFootage and images: Pixabay Content License (ghasoub, MULTIPLECONTENTHERE, scitech, pruslee, NickyPe, Engin_Akyurt, caelan, LisaOlivia, RizqiPandu, Vladvictoria, kaiom19, claudiafortgeblasen, FlickrVideos, Vimeo-Free-Videos, choxyltd). Photos: jayhem (Flickr, CC BY 2.0); Lars Plougmann, Blue Hole Dahab (Flickr, CC BY-SA 2.0); Andy Moreno, Freediver Moalboal (public domain); paologmb, underwater portrait (Flickr, CC BY 2.0); USAG-Humphreys, lifeguard training (Flickr, CC BY 2.0); Free Immersion (Wikimedia Commons, CC BY 2.0); whale meat photos (Wikimedia Commons, CC BY-SA 2.0 and CC0); Aleksey Loginov, Weddell seals (Wikimedia Commons, CC BY 4.0); Sabda Priyanto, Karimunjawa freedive (CC BY 2.0); Janna El Borno, Maria Bobela (CC BY 4.0); Freediving the SETT (Wikimedia Commons, CC BY 2.0); freediving cleanup in Marseille, Karim s (Wikimedia Commons, CC BY-SA 4.0); Steve Rupp, Weddell seal in McMurdo Sound (public domain); euphro, Weddell seal (CC BY-SA 2.0); Bernard Spragg, sperm whale photos (public domain); sperm whale (Wikimedia Commons, CC0). Animations: original.",
+  "sources": "Sources: Parkes MJ (2006) Breath-holding and its breakpoint, Experimental Physiology 91(1); Lindholm P & Lundgren CE (2009) The physiology and pathophysiology of human breath-hold diving, J Appl Physiol 106; Schagatay E et al. (2001, 2012) spleen contraction and apnea, Eur J Appl Physiol; Panneton WM (2013) The mammalian diving response, Physiology 28; Ponganis PJ (2015) Diving Physiology of Marine Mammals and Seabirds, Cambridge University Press; Craig AB (1976) Summary of 58 cases of loss of consciousness during underwater swimming and diving, Medicine and Science in Sports 8; Guinness World Records, longest breath held voluntarily (with and without oxygen); AIDA International records.",
+  "tags": [
+   "how long can you hold your breath",
+   "hold your breath",
+   "freediving",
+   "static apnea",
+   "breath hold record",
+   "mammalian dive reflex",
+   "shallow water blackout",
+   "carbon dioxide urge to breathe",
+   "spleen freediving",
+   "human body limits",
+   "your body at the limit",
+   "apnea"
+  ],
+  "hashtags": [
+   "#freediving",
+   "#science",
+   "#humanbody"
+  ],
+  "translations": {
+   "fr": "Votre envie de respirer n'est pas ce que vous croyez",
+   "es": "Tu necesidad de respirar no es lo que crees",
+   "pt": "A vontade de respirar não é o que você pensa",
+   "de": "Dein Atemreiz ist nicht, was du denkst",
+   "hi": "सांस लेने की ज़रूरत वैसी नहीं जैसी आप सोचते हैं"
+  }
+ }
 }
