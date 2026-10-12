@@ -1,0 +1,258 @@
+TTS Edge échec (défaut) : WSServerHandshakeError
+TTS Edge échec (150.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (149.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (148.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (147.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (146.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (145.0.3800.0) : WSServerHandshakeError
+TTS Edge échec (144.0.3800.0) : WSServerHandshakeError
+::warning::Edge TTS indisponible → voix Piper locale pour toute la vidéo
+[0;93m2026-10-12 07:02:51.583426790 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 0 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : iss072e001649~large.jpg
+Scène 0 préparée (footage, 6 s)
+[0;93m2026-10-12 07:02:55.212140098 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : GSFC_20171208_Archive_e002131~large.jpg
+Scène 1 préparée (footage, 4 s)
+[0;93m2026-10-12 07:02:57.794765072 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 49 Mo en 1 s : GSFC_20170403_Blue_m12564_Marble~orig.mp4
+Scène 2 préparée (footage, 4 s)
+[0;93m2026-10-12 07:03:01.260960630 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 124 Mo en 1 s : 380117_large.mp4
+Scène 3 préparée (footage, 5 s)
+[0;93m2026-10-12 07:03:05.709403597 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 4 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 55 Mo en 0 s : 168811-839864556_large.mp4
+Scène 4 préparée (footage, 7 s)
+[0;93m2026-10-12 07:03:09.665477382 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 37 Mo en 0 s : 3149-166335997_large.mp4
+Scène 5 préparée (footage, 6 s)
+[0;93m2026-10-12 07:03:13.139818073 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 1 Mo en 0 s : GSFC_20171208_Archive_e001386~large.jpg
+Scène 6 préparée (annotate, 14 s)
+[0;93m2026-10-12 07:03:19.131261853 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 35 Mo en 0 s : 205792-928091046_large.mp4
+Scène 7 préparée (footage, 4 s)
+[0;93m2026-10-12 07:03:21.839328834 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 72 Mo en 0 s : 343478_large.mp4
+Scène 8 préparée (footage, 4 s)
+[0;93m2026-10-12 07:03:24.768965322 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 9 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 7 Mo en 0 s : 2213-156227801_large.mp4
+Scène 9 préparée (footage, 6 s)
+[0;93m2026-10-12 07:03:28.249532643 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 53 Mo en 0 s : 91744-636709154_large.mp4
+Scène 10 préparée (footage, 5 s)
+[0;93m2026-10-12 07:03:31.698767989 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 11 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 21985-323496013_large.mp4
+Scène 11 préparée (footage, 7 s)
+[0;93m2026-10-12 07:03:35.419626226 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 350 Mo en 9 s : NHQ_2019_0906_Keeping%20an%20eye%20on%20Hurricane%20Dorian%2
+Scène 12 préparée (footage, 4 s)
+[0;93m2026-10-12 07:03:47.019717374 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 13 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 30 Mo en 0 s : 199856-911423242_large.mp4
+Scène 13 préparée (footage, 8 s)
+[0;93m2026-10-12 07:03:51.091673420 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 14 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 32 Mo en 0 s : 190331-887815673_large.mp4
+Scène 14 préparée (footage, 7 s)
+[0;93m2026-10-12 07:03:54.816553810 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+WARNING:piper.phoneme_ids:Missing phoneme from id map: ̩
+Scène 15 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 8 Mo en 0 s : 11168-228530158_large.mp4
+Scène 15 préparée (footage, 8 s)
+[0;93m2026-10-12 07:03:59.050737974 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss041e011536~large.jpg
+Scène 16 préparée (footage, 5 s)
+[0;93m2026-10-12 07:04:02.238607462 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 17 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : GSFC_20171208_Archive_e000204~large.jpg
+Scène 17 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:05.861817921 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : GSFC_20171208_Archive_e001016~large.jpg
+Scène 18 préparée (footage, 4 s)
+[0;93m2026-10-12 07:04:08.556625795 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 4 Mo en 0 s : Low_pressure_system_over_Iceland.jpg
+Scène 19 préparée (zoomto, 7 s)
+[0;93m2026-10-12 07:04:12.152266884 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 20 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 38 Mo en 0 s : 283533_large.mp4
+Scène 20 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:16.000529766 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 5 Mo en 0 s : 31629-387701974_large.mp4
+Scène 21 préparée (footage, 3 s)
+[0;93m2026-10-12 07:04:18.632634186 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 22 Mo en 0 s : 24216-340670744_large.mp4
+Scène 22 préparée (footage, 3 s)
+[0;93m2026-10-12 07:04:21.156839089 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 23 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 64 Mo en 0 s : 186247-877737758_large.mp4
+Scène 23 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:25.257075479 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 2 Mo en 0 s : Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%
+Scène 24 préparée (footage, 6 s)
+[0;93m2026-10-12 07:04:28.757332392 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 2 Mo en 0 s : Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%
+Scène 25 préparée (footage, 6 s)
+[0;93m2026-10-12 07:04:32.017840345 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 26 préparée (quiz, 7 s)
+[0;93m2026-10-12 07:04:34.540242750 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 27 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 5 Mo en 0 s : Foucault_pendulum_at_north_pole_animated.gif
+Scène 27 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:38.439741829 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 28 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Foucault_pendulum_animated.gif
+Scène 28 préparée (footage, 8 s)
+[0;93m2026-10-12 07:04:42.329017534 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 29 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 8 Mo en 0 s : Foucault_pendulum_utexas_motion.webm
+Scène 29 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:46.112523896 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 30 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 180 Mo en 2 s : 30218-380473786_large.mp4
+Scène 30 préparée (footage, 7 s)
+[0;93m2026-10-12 07:04:51.933122867 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 24 Mo en 0 s : 22555-328624767_large.mp4
+Scène 31 préparée (footage, 4 s)
+[0;93m2026-10-12 07:04:54.783657142 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss043e072717~large.jpg
+Scène 32 préparée (footage, 4 s)
+[0;93m2026-10-12 07:04:57.335530136 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : Sphere-OblateSpheroidComparison.jpg
+Scène 33 préparée (footage, 6 s)
+[0;93m2026-10-12 07:05:00.477667133 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 28 Mo en 0 s : 233867_large.mp4
+Scène 34 préparée (footage, 6 s)
+[0;93m2026-10-12 07:05:03.906206802 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 34 Mo en 0 s : 160767-822213540_large.mp4
+Scène 35 préparée (footage, 4 s)
+[0;93m2026-10-12 07:05:06.714280313 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 1 Mo en 0 s : iss064e044527~large.jpg
+Scène 36 préparée (footage, 4 s)
+[0;93m2026-10-12 07:05:09.662255957 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 37 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 80 Mo en 2 s : GSFC_20161212_Ocean_m12456_Heat~orig.mp4
+Scène 37 préparée (footage, 7 s)
+[0;93m2026-10-12 07:05:15.001293366 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 38 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 243 Mo en 4 s : GSFC_20160512_MMS_m12239_First_Results~orig.mp4
+Scène 38 préparée (footage, 7 s)
+[0;93m2026-10-12 07:05:23.149937172 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss040e117941~large.jpg
+Scène 39 préparée (footage, 6 s)
+[0;93m2026-10-12 07:05:26.337588814 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss024e006136~large.jpg
+Scène 40 préparée (footage, 4 s)
+[0;93m2026-10-12 07:05:28.978708532 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 41 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 129 Mo en 1 s : 263305_large.mp4
+Scène 41 préparée (footage, 8 s)
+[0;93m2026-10-12 07:05:33.540601314 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss023e029061~large.jpg
+Scène 42 préparée (footage, 3 s)
+[0;93m2026-10-12 07:05:35.869254899 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 43 préparée (kinetic, 8 s)
+[0;93m2026-10-12 07:05:39.771959266 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 7 Mo en 0 s : 2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Iwaki%2C_Fuku
+Scène 44 préparée (footage, 6 s)
+[0;93m2026-10-12 07:05:43.200268188 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+WARNING:piper.phoneme_ids:Missing phoneme from id map: ̩
+Scène 45 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 7 Mo en 0 s : 2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Matsushima%2C
+Scène 45 préparée (footage, 8 s)
+[0;93m2026-10-12 07:05:47.556581592 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 45 Mo en 0 s : 2860-163617364_large.mp4
+Scène 46 préparée (footage, 6 s)
+[0;93m2026-10-12 07:05:51.048219055 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 47 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 148 Mo en 0 s : 172350-847185398_large.mp4
+Scène 47 préparée (footage, 8 s)
+[0;93m2026-10-12 07:05:55.422459400 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 48 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 37 Mo en 0 s : 22705-329691501_large.mp4
+Scène 48 préparée (footage, 8 s)
+[0;93m2026-10-12 07:05:59.684718839 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 11 Mo en 0 s : 9825-221185540_large.mp4
+Scène 49 préparée (footage, 3 s)
+[0;93m2026-10-12 07:06:02.187549369 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 50 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 33 Mo en 0 s : 2147-155244189_medium.mp4
+Scène 50 préparée (footage, 7 s)
+[0;93m2026-10-12 07:06:05.994933775 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 51 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 10 Mo en 0 s : 11057-228113753_large.mp4
+Scène 51 préparée (footage, 12 s)
+[0;93m2026-10-12 07:06:11.691145934 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 52 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : GSFC_20171208_Archive_e001788~large.jpg
+Scène 52 préparée (footage, 7 s)
+[0;93m2026-10-12 07:06:15.372923245 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 32 Mo en 0 s : 190332-887815676_large.mp4
+Scène 53 préparée (footage, 6 s)
+[0;93m2026-10-12 07:06:18.805799510 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 20 Mo en 0 s : 201065-914557785_large.mp4
+Scène 54 préparée (footage, 4 s)
+Scènes rendues en 457 s (55 tâches en parallèle)
+[0;93m2026-10-12 07:19:41.941252307 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 74 Mo en 0 s : 107336-676158829_large.mp4
+Scène 0 préparée (footage, 6 s)
+[0;93m2026-10-12 07:19:45.690129619 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss072e001650~large.jpg
+Scène 1 préparée (footage, 5 s)
+[0;93m2026-10-12 07:19:48.996170086 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 26 Mo en 0 s : 16135-269534699_large.mp4
+Scène 2 préparée (footage, 6 s)
+[0;93m2026-10-12 07:19:52.607933346 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 36 Mo en 0 s : 3581-172488192_large.mp4
+Scène 3 préparée (footage, 3 s)
+[0;93m2026-10-12 07:19:55.299288330 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss003e6130~large.jpg
+Scène 4 préparée (footage, 5 s)
+[0;93m2026-10-12 07:19:58.330651606 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : iss029e012564~large.jpg
+Scène 5 préparée (footage, 4 s)
+Scènes rendues en 32 s (6 tâches en parallèle)
+out/earth_stops_short1_h.mp4 29.8 s (short autonome)
+[0;93m2026-10-12 07:21:59.463152760 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 141 Mo en 1 s : 19368-301525727_large.mp4
+Scène 0 préparée (footage, 4 s)
+[0;93m2026-10-12 07:22:02.757044462 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 10 Mo en 0 s : 304019_large.mp4
+Scène 1 préparée (footage, 6 s)
+[0;93m2026-10-12 07:22:06.035588195 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 50 Mo en 0 s : 1890-151167947_large.mp4
+Scène 2 préparée (footage, 5 s)
+[0;93m2026-10-12 07:22:09.386482321 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 2 Mo en 0 s : Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%
+Scène 3 préparée (footage, 5 s)
+[0;93m2026-10-12 07:22:12.692852629 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 0 Mo en 0 s : 2011_Tohoku_earthquake_observed_tsunami_heights-2.png
+Scène 4 préparée (footage, 6 s)
+[0;93m2026-10-12 07:22:15.987183792 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 189 Mo en 1 s : 338904_large.mp4
+Scène 5 préparée (footage, 4 s)
+Scènes rendues en 45 s (6 tâches en parallèle)
+out/earth_stops_short2_h.mp4 31.1 s (short autonome)
+[0;93m2026-10-12 07:24:46.138776717 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 1 Mo en 0 s : PIA18033~large.jpg
+Scène 0 préparée (footage, 4 s)
+[0;93m2026-10-12 07:24:48.729449373 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Scène 1 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 98 Mo en 2 s : GSFC_20161212_Tidal_m12450_Magnetic~orig.mp4
+Scène 1 préparée (footage, 6 s)
+[0;93m2026-10-12 07:24:54.343563372 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 33 Mo en 0 s : 4006-176282263_large.mp4
+Scène 2 préparée (footage, 5 s)
+[0;93m2026-10-12 07:24:57.508797866 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+WARNING:piper.phoneme_ids:Missing phoneme from id map: ̩
+Téléchargé 2 Mo en 0 s : Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%
+Scène 3 préparée (footage, 5 s)
+[0;93m2026-10-12 07:25:00.733345690 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Téléchargé 33 Mo en 0 s : 197798-905439987_large.mp4
+Scène 4 préparée (footage, 4 s)
+Scènes rendues en 37 s (5 tâches en parallèle)
+out/earth_stops_short3_h.mp4 25.3 s (short autonome)
+out/earth_stops.mp4 336.1 s
