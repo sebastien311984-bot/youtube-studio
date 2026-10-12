@@ -29,10 +29,6 @@
       "yt_chapter": "The burning feeling"
     },
     {
-      "kind": "intro",
-      "min": 4
-    },
-    {
       "text": "Today: what really forces you to breathe, and how champions ignore it for twelve minutes.",
       "shots": [
         {
@@ -285,7 +281,7 @@
       "tone": "reveal"
     },
     {
-      "text": "The best freedivers wait it out for about eleven and a half to twelve minutes, or twenty-four with pure oxygen. Your urge to breathe is not a fuel gauge. It is a smoke detector.",
+      "text": "The best freedivers wait it out for about eleven and a half to twelve minutes, or twenty-four with pure oxygen. Your urge to breathe is not a fuel gauge. It is a smoke detector. Subscribe for the next one.",
       "shots": [
         {
           "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Freediving_the_SETT_%283074151992%29.jpg",
@@ -300,15 +296,8 @@
       ],
       "reveal": true,
       "tone": "reveal",
-      "payoff": true
-    },
-    {
-      "kind": "outro",
-      "min": 14,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sperm_whale..%28Physeter_macrocephalus%29_%288066509296%29.jpg",
-      "line1": "YOUR BODY AT THE LIMIT",
-      "line2": "SUBSCRIBE FOR THE NEXT ONE",
-      "text": "If this was worth a breath, subscribe for the next one. And tell me in the comments: how long did you last, sitting on dry land? Never in water, and never while driving."
+      "payoff": true,
+      "min": 12
     }
   ],
   "thumbnail": {

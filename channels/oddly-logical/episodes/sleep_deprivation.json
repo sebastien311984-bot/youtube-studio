@@ -26,10 +26,6 @@
       "yt_chapter": "Awake too long"
     },
     {
-      "kind": "intro",
-      "min": 3
-    },
-    {
       "shots": [
         {
           "clip": "pixabay:id:35590",
@@ -365,18 +361,11 @@
           "move": "in"
         }
       ],
-      "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and its night-time clean-up gets cut short.",
+      "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and its night-time clean-up gets cut short. Subscribe for the next one.",
       "tone": "reveal",
       "reveal": true,
-      "payoff": true
-    },
-    {
-      "kind": "outro",
-      "line1": "YOUR BODY AT THE LIMIT",
-      "line2": "SUBSCRIBE",
-      "min": 10,
-      "tone": "warm",
-      "text": "If this changed how you see tonight, subscribe for the next one. And tell me in the comments: what is the longest you have ever stayed awake?"
+      "payoff": true,
+      "min": 12
     }
   ],
   "shorts": [
