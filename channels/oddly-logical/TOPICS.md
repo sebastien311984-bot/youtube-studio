@@ -70,3 +70,6 @@ Lun « What If… ? » · Mar « Explained » · Mer « Top 10 » · Jeu « Myst
 4. Could You Survive Lost at Sea? — matière MOYENNE+ (radeaux, garde-côtes, ouragans NASA, océan). scout 38177006391
 5. What If Earth Stopped Spinning for 1 Second? — matière MOYENNE (NASA Terre, pendule de Foucault, archives ouragans/tsunami). scout 38177026704
 ✗ Quicksand : matière faible (vasières grises) → abandonné.
+
+## Format gagnant (12/10) — « expérience réelle expliquée » (modèle : Prince Rupert's drop, 550 vues)
+Vraie vidéo de labo sous licence libre (CC BY, ralenti) + animations explicatives originales + étude publiée citée + crédits/avertissements dans la description. Court (1–3 min), un seul phénomène, révélation visuelle. Candidats : effet Leidenfrost, ferrofluide, hélium superfluide, crevette-pistolet (cavitation), eau surfondue qui gèle d'un coup, fluide non newtonien, larmes du vin.
