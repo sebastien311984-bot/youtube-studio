@@ -1,0 +1,829 @@
+{
+ "title": "Your Body Freezing: What Happens Degree by Degree",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: Pixabay (free license); US Coast Guard / Wikimedia Commons (public domain); State Library of New South Wales via Wikimedia Commons. Animations: original.",
+ "strategy": {
+  "viewer": "Curious survival-and-body viewers who clicked after 'Space Without a Suit' and 'Lost at Sea': they want to know what actually happens inside you, in order, in the cold.",
+  "hook": "In freezing weather your own brain makes you take your clothes off, and a woman came back from 13.7 C.",
+  "promise": "A step-by-step, degree-by-degree countdown of how a freezing body shuts down, and the one rule that has saved lives.",
+  "payoff": "Shivering, then confusion, then shivering stops, then paradoxical undressing and burrowing, then heart rhythm failure; and 'not dead until warm and dead' because cold also protects the brain (Anna Bagenholm).",
+  "takeaway": "You are not dead until you are warm and dead."
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:212133",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "In freezing weather, your own brain can make you take your clothes off. Here is how a body dies from cold.",
+   "beat": true,
+   "tone": "tense",
+   "min": 5,
+   "yt_chapter": "Thirty-seven degrees"
+  },
+  {
+   "kind": "intro",
+   "min": 4.0
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:4",
+     "start": 2,
+     "move": "out"
+    }
+   ],
+   "text": "You are lost on a mountain at night. Wind, snow, no shelter. Right now your core temperature is thirty-seven degrees Celsius. Watch the number.",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Core temperature",
+     "value": 37,
+     "from": 37,
+     "unit": " C",
+     "sub": "NORMAL",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "green"
+    }
+   ],
+   "beat": true,
+   "tone": "calm",
+   "teaser": "THE BODY'S FIRST ALARM"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:0",
+     "start": 2,
+     "move": "left"
+    }
+   ],
+   "text": "Your skin senses the cold first. Your brain does not wait.",
+   "chapter": [
+    "CHAPTER 1",
+    "THIRTY-SEVEN TO THIRTY-FIVE"
+   ],
+   "yt_chapter": "37 to 35: the alarm",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:191288",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "It sounds the alarm, and the first thing it does is sacrifice your hands and feet."
+  },
+  {
+   "kind": "manim",
+   "code": "\ntitle=Text(\"BLOOD RETREATS TO THE CORE\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\nhead=Circle(radius=0.55,color=WHITE,stroke_width=5).move_to(UP*1.9)\ntorso=Line(UP*1.3,DOWN*0.6,color=WHITE,stroke_width=8)\nal=Line(UP*1.0,LEFT*1.9+DOWN*0.4,color=WHITE,stroke_width=8)\nar=Line(UP*1.0,RIGHT*1.9+DOWN*0.4,color=WHITE,stroke_width=8)\nll=Line(DOWN*0.6,LEFT*1.0+DOWN*2.8,color=WHITE,stroke_width=8)\nlr=Line(DOWN*0.6,RIGHT*1.0+DOWN*2.8,color=WHITE,stroke_width=8)\nbody=VGroup(head,torso,al,ar,ll,lr)\ncore=Circle(radius=0.7,color=RED,fill_color=RED,fill_opacity=0.35,stroke_width=4).move_to(UP*0.4)\ncl=Text(\"CORE\",font_size=30,color=RED).next_to(core,RIGHT,buff=1.6)\nends=[LEFT*1.9+DOWN*0.4,RIGHT*1.9+DOWN*0.4,LEFT*1.0+DOWN*2.8,RIGHT*1.0+DOWN*2.8]\ndots=VGroup(*[Dot(e,radius=0.14,color=RED) for e in ends for _ in range(1)])\nextra=VGroup(*[Dot(e*0.6+UP*0.2,radius=0.12,color=RED) for e in ends])\nself.play(FadeIn(title),Create(body),run_time=1.2)\nself.play(FadeIn(core),FadeIn(cl),FadeIn(dots),FadeIn(extra),run_time=0.8)\nself.play(*[d.animate.move_to(core.get_center()+RIGHT*0.1*i) for i,d in enumerate(dots)],*[d.animate.move_to(core.get_center()+LEFT*0.1*i) for i,d in enumerate(extra)],run_time=2.5)\nself.play(*[b.animate.set_color(BLUE) for b in (al,ar,ll,lr)],run_time=1.2)\nlab=Text(\"HANDS AND FEET: SACRIFICED\",font_size=32,color=BLUE).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(lab),run_time=0.6)\nself.wait(0.8)\n",
+   "text": "Blood vessels in your hands and feet clamp shut, and warm blood retreats to protect the organs that matter. Your fingers go numb, clumsy, first. The body is choosing what to lose.",
+   "tone": "tense",
+   "reveal": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:7090",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "And the cold is sneaky. Wind strips away the warm air hugging your skin.",
+   "fact": "Water conducts heat far faster than air,\\Nso wet and windy is the worst combination.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:200327",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Wet clothes drain heat far faster than dry ones, because water pulls heat out of you much faster than air does.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:47615",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Your body is losing a battle it cannot see.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:325502",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Then it burns fuel. Muscles twitch hundreds of times a minute. Shivering.",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Core temperature",
+     "value": 35,
+     "from": 37,
+     "unit": " C",
+     "sub": "SHIVERING",
+     "pos": "bl",
+     "at": 0.6,
+     "color": "orange"
+    }
+   ],
+   "fact": "Doctors call 35 C the start of mild\\Nhypothermia, below 35 C core temperature."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:7821",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "It can multiply your heat production several times over, and at thirty-five degrees it is working flat out."
+  },
+  {
+   "kind": "manim",
+   "code": "\nax=Axes(x_range=[28,38,2],y_range=[0,5,1],x_length=9.5,y_length=4.2,tips=False,axis_config={\"color\":GREY}).shift(DOWN*0.3)\ndef f(x):\n    if x>=37: return 1.0\n    if x>=34: return 1+3.2*(37-x)/3\n    if x>=30: return 4.2*(x-29.5)/4.5\n    return 0.2\ntitle=Text(\"HEAT YOUR BODY MAKES\",font_size=36,color=ORANGE).to_edge(UP,buff=0.4)\nxl=Text(\"CORE TEMPERATURE (C)  ->  FALLING\",font_size=26,color=WHITE).next_to(ax,DOWN,buff=0.2)\ncurve=ParametricFunction(lambda t: ax.c2p(38-t,f(38-t)),t_range=[0,9.5],color=YELLOW,stroke_width=7)\nd=Dot(ax.c2p(37,1),color=RED,radius=0.15)\nself.play(FadeIn(title),Create(ax),FadeIn(xl),run_time=1.2)\nself.play(Create(curve),MoveAlongPath(d,curve),run_time=5,rate_func=linear)\nt=Text(\"THE FURNACE RUNS OUT OF FUEL\",font_size=32,color=RED).move_to(UP*2.4+RIGHT*1.2)\nself.play(FadeIn(t),run_time=0.7)\nself.wait(0.6)\n",
+   "text": "But shivering burns sugar and energy fast. Watch the curve. Heat production climbs as you cool, peaks, then falls. Remember the bottom of that curve.",
+   "tone": "tense",
+   "beat": true,
+   "teaser": "THE FOG ROLLS IN"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:282995",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Thirty-three degrees. Now it is your brain that is cooling. Doctors teach four words for this stage: stumbles, mumbles, fumbles, grumbles. You trip. You slur.",
+   "chapter": [
+    "CHAPTER 2",
+    "THIRTY-FIVE TO THIRTY-TWO"
+   ],
+   "yt_chapter": "33 degrees: the fog",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Core temperature",
+     "value": 33,
+     "from": 35,
+     "unit": " C",
+     "sub": "CONFUSION",
+     "pos": "bl",
+     "at": 0.6,
+     "color": "orange"
+    }
+   ],
+   "beat": true,
+   "label": [
+    "33 C",
+    "STUMBLES, MUMBLES, FUMBLES"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:268251",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "You cannot work a zipper."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-013.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "The cruel part: the damaged organ is the one judging your situation. You feel fine. You decide to rest for just a minute.",
+   "reveal": true,
+   "tone": "tense",
+   "fact": "Cold slows nerve signals and brain\\Nchemistry, so judgment fails first."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:189876",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Your judgment is already gone.",
+   "tone": "tense"
+  },
+  {
+   "kind": "quiz",
+   "question": "At about 30 C, what happens to shivering?",
+   "options": [
+    "It gets stronger",
+    "It stops",
+    "It becomes slower but continues",
+    "Nothing changes"
+   ],
+   "answer": 1,
+   "min": 7,
+   "text": "Quick test. What happens to your shivering when you reach about thirty degrees?",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:345020",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "It stops. You might think the cold is easing. It is not. Shivering burns your energy reserves, and when they run out, the furnace goes quiet.",
+   "reveal": true,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:329674",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "From here, nothing in your body is fighting back.",
+   "tone": "reveal",
+   "teaser": "THE STRANGEST SYMPTOM"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:154586",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Thirty degrees. Your muscles go stiff. Your pulse slows. You grow sleepy, and the cold begins to feel comfortable. And then, something truly bizarre happens.",
+   "chapter": [
+    "CHAPTER 3",
+    "THIRTY DEGREES: THE SILENCE"
+   ],
+   "yt_chapter": "30 degrees: shivering stops",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Core temperature",
+     "value": 30,
+     "from": 33,
+     "unit": " C",
+     "sub": "SHIVERING STOPS",
+     "pos": "bl",
+     "at": 0.6,
+     "color": "red"
+    }
+   ],
+   "beat": true,
+   "label": [
+    "30 C",
+    "SHIVERING HAS STOPPED"
+   ]
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "YOU TAKE",
+    "YOUR CLOTHES",
+    "OFF"
+   ],
+   "text": "You start taking your clothes off. In the snow.",
+   "min": 4,
+   "beat": true,
+   "tone": "reveal"
+  },
+  {
+   "kind": "manim",
+   "code": "\ntitle=Text(\"PARADOXICAL UNDRESSING\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\nv=Circle(radius=1.4,color=BLUE,stroke_width=10).move_to(LEFT*3.2)\nt1=Text(\"COLD: VESSELS CLAMPED\",font_size=28,color=BLUE).next_to(v,DOWN,buff=0.5)\nself.play(FadeIn(title),Create(v),FadeIn(t1),run_time=1.2)\nself.play(v.animate.scale(0.5),run_time=1.5)\nw=Circle(radius=0.7,color=BLUE,stroke_width=10).move_to(RIGHT*3.2)\nself.play(Create(w),run_time=0.6)\nt2=Text(\"EXHAUSTED: VESSELS FLING OPEN\",font_size=28,color=RED).next_to(w,DOWN,buff=0.8)\nself.play(w.animate.scale(2.2).set_color(RED),FadeIn(t2),run_time=1.8)\nhot=Text(\"BLOOD FLOODS THE SKIN: YOU FEEL BURNING HOT\",font_size=30,color=YELLOW).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(hot),run_time=0.8)\nself.wait(1.0)\n",
+   "text": "The leading explanation: the nerves that clamp your skin vessels tire out. They let go. Warm blood floods your skin. You feel like you are burning, so you tear off your coat. This is called paradoxical undressing.",
+   "tone": "tense",
+   "reveal": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Southern_party_Antarctica_SLNSW_FL1091888.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Rescuers find victims half-naked, clothes neatly folded or scattered, in the middle of blizzards. For years, police suspected assault. It was the cold.",
+   "fact": "Paradoxical undressing is reported in\\Nmany fatal cold-exposure cases.",
+   "tone": "warm",
+   "label": [
+    "REAL CASES",
+    "FOUND HALF-NAKED"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:2515",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "And there is a second instinct, even stranger. Terminal burrowing. Some victims crawl into tight, hidden spaces: under beds, behind furniture, into snow holes.",
+   "beat": true,
+   "tone": "tense",
+   "fact": "Terminal burrowing, or 'hide-and-die', is\\Nthought to be a last primitive reflex.",
+   "label": [
+    "TERMINAL BURROWING",
+    "HIDE-AND-DIE"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:377384",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "It looks like an animal hiding to die.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:185273",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Scientists think it is a primitive reflex: the brain stem, still alive, searching for a den. A sleeping bear would do the same."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:327101",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "But you are not a bear.",
+   "teaser": "THE HEART DECIDES"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:154726",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Twenty-eight degrees. Now the real danger is not your brain. It is your heart. A cold heart gets irritable, and the rhythm goes wrong.",
+   "chapter": [
+    "CHAPTER 4",
+    "TWENTY-EIGHT: THE HEART"
+   ],
+   "yt_chapter": "28 degrees: the heart",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Core temperature",
+     "value": 28,
+     "from": 30,
+     "unit": " C",
+     "sub": "ARRHYTHMIA",
+     "pos": "bl",
+     "at": 0.6,
+     "color": "red"
+    }
+   ],
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/90/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-081.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Atrial fibrillation first, then ventricular fibrillation."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-180.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "This is why rescuers handle a hypothermic person like glass.",
+   "fact": "Cold hearts are fragile, so rescuers move\\Nvictims gently and horizontally.",
+   "tone": "tense",
+   "label": [
+    "28 C",
+    "HANDLE LIKE GLASS"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-142.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "A rough lift, a sudden drop, even a rushed transfer can tip a cold heart into a fatal rhythm.",
+   "tone": "tense"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:255499",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Slow pulse. Shallow breathing. Eventually, no pulse you can feel. By every ordinary sign, this person is dead.",
+   "reveal": true,
+   "tone": "reveal"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:21",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Which brings us to a rule that sounds like a contradiction, and has saved lives: you are not dead until you are warm and dead.",
+   "beat": true,
+   "tone": "reveal",
+   "teaser": "THE WOMAN WHO WOKE UP"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:8594",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Norway, May 1999. Anna Bågenholm, a twenty-nine-year-old doctor, is skiing with friends. She falls headfirst through a frozen stream and is trapped under the ice.",
+   "chapter": [
+    "CHAPTER 5",
+    "ANNA BAGENHOLM: 13.7 C"
+   ],
+   "yt_chapter": "Anna Bagenholm, 13.7 degrees",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:64085",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "She finds a pocket of air under the ice and breathes. She is conscious. For about eighty minutes, she is trapped in freezing water while her friends try to pull her out.",
+   "tone": "tense"
+  },
+  {
+   "kind": "stat",
+   "value": 80,
+   "suffix": " min",
+   "caption": "ANNA UNDER THE ICE, ABOUT 80 MINUTES",
+   "text": "About eighty minutes. That is how long she was trapped.",
+   "min": 4.5,
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:65037",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Then her heart stops. When rescuers finally pull her out, she is not breathing and has no pulse. Her core temperature: thirteen point seven degrees Celsius.",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Anna's core temperature",
+     "value": 13.7,
+     "from": 28,
+     "unit": " C",
+     "sub": "LOWEST SURVIVED",
+     "pos": "bl",
+     "at": 0.6,
+     "color": "red"
+    }
+   ],
+   "reveal": true,
+   "tone": "reveal"
+  },
+  {
+   "kind": "manim",
+   "code": "\nnl=NumberLine(x_range=[10,38,4],length=11,include_numbers=False,color=GREY).shift(DOWN*0.6)\ntitle=Text(\"HOW COLD CAN A SURVIVOR GET?\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\ndef p(T): return nl.n2p(T)\nmarks=[(37,\"37 NORMAL\",GREEN,UP),(30,\"30 SHIVERING STOPS\",ORANGE,DOWN),(28,\"28 HEART RISK\",RED,UP),(13.7,\"13.7 ANNA\",YELLOW,DOWN)]\nself.play(FadeIn(title),Create(nl),run_time=1)\nd=Dot(p(37),color=RED,radius=0.18)\nself.add(d)\nfor T,lbl,c,dr in marks[1:]:\n    self.play(d.animate.move_to(p(T)),run_time=1.4)\n    tx=Text(lbl,font_size=28,color=c).next_to(p(T),dr,buff=0.5)\n    self.play(FadeIn(tx),run_time=0.4)\ntx0=Text(marks[0][1],font_size=28,color=GREEN).next_to(p(37),UP,buff=0.5)\nself.play(FadeIn(tx0),run_time=0.4)\nself.wait(0.5)\n",
+   "text": "Thirteen point seven. The coldest body ever recorded in an accidental hypothermia survivor. No pulse, no breath. Clinically dead.",
+   "tone": "reveal",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:7012",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "At the hospital in Tromsø, doctors do not give up. They remember the rule. A heart-lung machine slowly pumps her blood out, warms it, and sends it back.",
+   "tone": "warm",
+   "fact": "Anna's team used ECMO: a machine that\\Nrewarms blood outside the body.",
+   "label": [
+    "TROMSO, NORWAY",
+    "HEART-LUNG MACHINE"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:154331",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Why did cold not kill her? Because cold also protects. Chilled cells burn far less oxygen, so a brain at thirteen degrees can wait much longer without blood than a brain at thirty-seven.",
+   "reveal": true,
+   "tone": "calm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:191289",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Her heart restarted after hours of rewarming. She woke up. She was paralyzed at first, but she recovered, and returned to work as a doctor. The ice that nearly killed her had also saved her.",
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:119076",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "So what should you actually do? If someone is shivering and confused, get them out of the wind, strip off wet clothes, wrap them in dry insulation, and warm the chest first, not the arms and legs.",
+   "chapter": [
+    "CHAPTER 6",
+    "WHAT SAVES A LIFE"
+   ],
+   "yt_chapter": "What saves a life",
+   "beat": true,
+   "tone": "warm",
+   "label": [
+    "SURVIVAL",
+    "WHAT TO DO"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/81/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-200.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "If they are limp and silent, handle them gently, keep them flat, and call emergency services. Never assume that cold and still means gone.",
+   "tone": "warm",
+   "reveal": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:188778",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "So here is the answer. Your body shuts down in order: shivering, fog, silence, strange behavior, a failing heart. Never trust how warm you feel. And if someone is cold and still, do not call it. Warm them, then decide. Subscribe for the next one.",
+   "tone": "warm",
+   "payoff": true,
+   "min": 8
+  }
+ ],
+ "shorts": [
+  {
+   "title": "Your Brain Tells You to Undress in the Snow",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:212133",
+       "start": 3,
+       "move": "in"
+      }
+     ],
+     "text": "In freezing weather, your own brain can make you take your clothes off.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:4",
+       "start": 4,
+       "move": "left"
+      }
+     ],
+     "text": "It happens in severe hypothermia, below about thirty degrees."
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:325502",
+       "start": 2,
+       "move": "out"
+      }
+     ],
+     "text": "Your skin vessels tire and open, blood floods the surface, and you feel burning hot."
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:154586",
+       "start": 3,
+       "move": "in"
+      }
+     ],
+     "text": "It is called paradoxical undressing. Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "She Was Frozen Dead at 13.7 C. She Lived.",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:8594",
+       "start": 3,
+       "move": "in"
+      }
+     ],
+     "text": "A woman's body hit thirteen point seven degrees, and her heart stopped. She survived.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:64085",
+       "start": 3,
+       "move": "out"
+      }
+     ],
+     "text": "Anna Bågenholm, Norway, 1999. Trapped under river ice for about eighty minutes."
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:7012",
+       "start": 2,
+       "move": "in"
+      }
+     ],
+     "text": "Doctors rewarmed her blood with a heart-lung machine, and her heart restarted.",
+     "tone": "warm"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:65037",
+       "start": 3,
+       "move": "left"
+      }
+     ],
+     "text": "Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "Not Dead Until Warm and Dead",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:255499",
+       "start": 3,
+       "move": "out"
+      }
+     ],
+     "text": "A freezing person can have no pulse and still be saved.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:21",
+       "start": 2,
+       "move": "in"
+      }
+     ],
+     "text": "Doctors teach it as a rule: not dead until warm and dead."
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:345020",
+       "start": 3,
+       "move": "left"
+      }
+     ],
+     "text": "Cold slows the brain's oxygen needs, so rewarming first can bring people back.",
+     "tone": "warm"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:154726",
+       "start": 3,
+       "move": "in"
+      }
+     ],
+     "text": "Full story on Oddly Logical Science. Subscribe for more true stories this strange.",
+     "tone": "warm"
+    }
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "30 DEGREES",
+  "sub": "YOU UNDRESS",
+  "shift": 0.2,
+  "circle": true
+ },
+ "youtube": {
+  "title": "Your Body Freezing: What Happens Degree by Degree",
+  "description": "What happens to your body as it freezes? From 37 C to 13.7 C: shivering at 35, confusion at 33, shivering stops near 30, paradoxical undressing, terminal burrowing, heart arrhythmia near 28, and the real story of Anna Bagenholm, who survived a core temperature of 13.7 C in 1999.\n\nIn this video:\n- 37 to 35: the alarm\n- 33: the fog\n- 30: the silence\n- 28: the heart\n- 13.7: the woman who woke up\n\nFAQ\nWhy do freezing people take their clothes off? Paradoxical undressing: tired blood vessels open and the skin feels hot.\nWhat does 'not dead until warm and dead' mean? Cold bodies can be revived, so doctors rewarm before declaring death.\n\nSources:\n- Brown DJA et al., Accidental hypothermia, New England Journal of Medicine, 2012\n- Gilbert M et al., Resuscitation of a hypothermic patient (Bagenholm), The Lancet, 2000\n- Wilderness Medical Society clinical practice guidelines, accidental hypothermia\n\nFootage: Pixabay; US Coast Guard / Wikimedia Commons; State Library of NSW via Wikimedia Commons.",
+  "sources": [
+   "Brown DJA et al., Accidental hypothermia, N Engl J Med 2012",
+   "Gilbert M et al., The Lancet 2000 (Bagenholm case)",
+   "Wilderness Medical Society hypothermia guidelines"
+  ],
+  "tags": [
+   "hypothermia",
+   "what happens when you freeze",
+   "paradoxical undressing",
+   "terminal burrowing",
+   "Anna Bagenholm",
+   "13.7 C survival",
+   "not dead until warm and dead",
+   "cold survival",
+   "body temperature"
+  ],
+  "hashtags": [
+   "#science",
+   "#survival",
+   "#hypothermia"
+  ],
+  "translations": {
+   "fr": "Votre corps gèle : ce qui se passe degré par degré",
+   "es": "Tu cuerpo se congela: qué pasa grado a grado",
+   "pt": "Seu corpo congelando: o que acontece grau a grau",
+   "de": "Dein Körper friert: Grad für Grad",
+   "hi": "आपका शरीर जम रहा है: डिग्री दर डिग्री"
+  },
+  "alternatives": {
+   "titles": [
+    "Your Body Freezing: What Happens Degree by Degree",
+    "Why Freezing People Take Their Clothes Off",
+    "Not Dead Until Warm and Dead: The 13.7 C Survivor"
+   ],
+   "thumbnail_texts": [
+    "30 DEGREES",
+    "YOU UNDRESS",
+    "WARM AND DEAD"
+   ]
+  }
+ }
+}
