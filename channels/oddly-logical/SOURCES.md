@@ -45,3 +45,32 @@ INTERDIT : images de médias (TV, agences AFP/Reuters/AP/Getty, journaux), vidé
 | Canada | Agence spatiale canadienne, Ressources naturelles Canada | espace, Arctique, géologie | Licence du gouvernement ouvert – Canada (crédit) |
 | Nature (monde) | iNaturalist, Biodiversity Heritage Library | animaux rares, planches naturalistes | CC BY / domaine public |
 | Stock vidéo cinéma | Pexels (site), Mixkit, Coverr, Videvo, Dareful (4K), Vecteezy/Videezy (crédit), Pond5 « Public Domain » | plans génériques de qualité | libres ; vérifier chaque plan, tri visuel sévère |
+
+## Sources monde « 100 % légal monétisable » (ajout 12/10/2026) — toujours vérifier la licence de CHAQUE fichier
+Règle : uniquement domaine public, CC0, CC BY, CC BY-SA, licence gouvernementale ouverte autorisant l'usage commercial. Exclure « non commercial » (NC) et « ND ». Créditer dans la description.
+
+### Europe
+- ESA (esa.int multimedia) : beaucoup d'images/vidéos en CC BY-SA 3.0 IGO — vérifier la mention par fichier.
+- ESO (eso.org) : CC BY 4.0 (astronomie, télescopes, animations).
+- Copernicus / Sentinel (UE) : images satellites libres avec attribution « contains modified Copernicus Sentinel data » ; Copernicus EMS : cartes de catastrophes (inondations, incendies, séismes).
+- Royaume-Uni : contenus sous Open Government Licence v3 (usage commercial autorisé) — ex. Met Office, British Geological Survey (vérifier par ressource).
+- Europeana : filtrer « réutilisation libre » (CC0, CC BY, domaine public) — archives historiques européennes.
+- Parlement / Commission européenne (services audiovisuels) : réutilisation avec mention de la source — vérifier les conditions par clip.
+- Wikimedia Commons : mondial, filtrer les licences ci-dessus.
+
+### Asie-Pacifique
+- Japon : contenus du gouvernement sous « Public Data License / Government Standard Terms of Use » (compatibles CC BY 4.0) — ex. Agence météorologique japonaise (satellite Himawari), à vérifier par ressource. JAXA : usage commercial soumis à autorisation → exclu.
+- Corée du Sud : KOGL Type 1 uniquement (commercial autorisé).
+- Australie : Geoscience Australia et nombreux sites gouvernementaux en CC BY 4.0 (Bureau of Meteorology : conditions restrictives → exclu).
+- Nouvelle-Zélande : GNS Science, GeoNet (volcans, séismes) en CC BY 4.0.
+
+### Amériques
+- Agences fédérales américaines (domaine public) : NASA, NOAA, USGS, FEMA, US Coast Guard, DVIDS (armée / Garde nationale : sauvetages, ouragans, incendies).
+- Canada : Licence du gouvernement ouvert – Canada (commercial autorisé).
+
+### Vidéos d'actualité amateur
+- YouTube, filtre « Creative Commons » (CC BY) : chasseurs d'orages, témoins. Créditer la chaîne d'origine.
+- Banques sous licence payante (Newsflare, Storyful, ViralHog) : seulement pour une vidéo phare, licence achetée.
+
+### Interdit
+- Images de chaînes TV / agences (AFP, Reuters, AP) sans licence, même courtes, retournées ou recadrées. Jamais de contournement de Content ID.
