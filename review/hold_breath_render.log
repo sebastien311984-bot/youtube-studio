@@ -1,0 +1,68 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 50.0 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : 50236725331_a1549e08fe_b.jpg
+Scène 0 préparée (footage, 7 s)
+Scène 1 préparée (intro, 4 s)
+Téléchargé 2 Mo en 1 s : 347-136022054_medium.mp4
+Téléchargé 10 Mo en 1 s : 32451-392248983_large.mp4
+Téléchargé 23 Mo en 0 s : 908-141851680_medium.mp4
+Scène 2 préparée (footage, 12 s)
+Scène 3 préparée (manim, 8 s)
+Scène 4 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 1085-142801793_large.mp4
+Scène 4 préparée (footage, 8 s)
+Scène 5 préparée (manim, 10 s)
+Scène 6 préparée (quiz, 8 s)
+Scène 7 préparée (manim, 10 s)
+Téléchargé 51 Mo en 0 s : 109413-684053766_large.mp4
+Téléchargé 14 Mo en 0 s : 200657-913478674_large.mp4
+Scène 8 préparée (footage, 9 s)
+Scène 9 préparée (manim, 10 s)
+Scène 10 préparée (stat, 12 s)
+Téléchargé 0 Mo en 0 s : Freediver_Moalboal.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 1045709386_aef34eac89_b.jpg
+Scène 11 préparée (footage, 10 s)
+Scène 12 : 2 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 3643603988_f784771395_b.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3600002571_d199ce036e.jpg
+Scène 12 préparée (footage, 13 s)
+Scène 13 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3590681679_a9fb2d35c7_b.jpg
+Scène 13 préparée (footage, 8 s)
+Scène 14 préparée (manim, 11 s)
+Scène 15 préparée (stat, 11 s)
+Scène 16 préparée (manim, 12 s)
+Téléchargé 39 Mo en 1 s : 171604-845611858_large.mp4
+Téléchargé 9 Mo en 1 s : Weddell_seal_swims_underwater_in_McMurdo_Sound_%28Image_3%29
+Scène 17 préparée (footage, 11 s)
+Téléchargé 4 Mo en 0 s : Whale_meat_-_cropped.jpg
+Téléchargé 3 Mo en 1 s : Discounted_whale_meat_for_sale_at_a_Tokyo_supermarket.jpg
+Scène 18 préparée (footage, 11 s)
+Téléchargé 14 Mo en 0 s : 120390-720880496_large.mp4
+Téléchargé 19 Mo en 9 s : 161578-824606442_large.mp4
+Scène 19 préparée (footage, 9 s)
+Téléchargé 4 Mo en 1 s : Free_Immersion_%28442375664%29.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : 317185613_fc2ddb09ef.jpg
+Scène 20 préparée (footage, 9 s)
+Téléchargé 4 Mo en 0 s : Sperm_Whale_diving._%2852629871553%29.jpg
+Scène 21 préparée (footage, 6 s)
