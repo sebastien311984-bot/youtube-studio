@@ -23,7 +23,7 @@ import urllib.request
 for i, s in enumerate(ep["scenes"]):  # chaque image/vidéo directe doit être téléchargeable (un 403 = rendu planté ou plan noir)
     for x in (s.get("shots") or ([s] if s.get("clip") else [])):
         u = x.get("clip", "")
-        if u.startswith("http") and "wikimedia.org" not in u and "usgs.gov" not in u:  # bloqués depuis Claude, vérifiés au rendu
+        if u.startswith("http") and "wikimedia.org" not in u and "usgs.gov" not in u and "staticflickr.com" not in u:  # bloqués depuis Claude, vérifiés au rendu
             try: urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "OddlyLogicalStudio/1.0"}), timeout=20)
             except Exception as e: errs.append(f"scène {i} : URL inaccessible ({e}) {u[-60:]}")
 from collections import Counter
