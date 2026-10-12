@@ -73,19 +73,28 @@
    ]
   },
   {
-   "shots": [
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": 10,
+   "lon1": 14,
+   "lat": 20,
+   "title": "ONE SECOND",
+   "sub": "Earth stops spinning",
+   "marks": [
     {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg",
-     "start": 0,
-     "move": "out"
+     "lat": 0,
+     "label": "EQUATOR",
+     "color": "gold"
+    },
+    {
+     "lon": 2.35,
+     "lat": 48.85,
+     "label": "PARIS",
+     "color": "red"
     }
    ],
    "text": "So what if Earth stopped spinning for just one second?",
-   "tone": "urgent",
-   "label": [
-    "ONE SECOND",
-    "Earth stops spinning"
-   ]
+   "tone": "urgent"
   },
   {
    "shots": [
@@ -127,19 +136,29 @@
    ]
   },
   {
-   "shots": [
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": -60,
+   "lon1": 40,
+   "lat": 25,
+   "title": "1,100 km/h",
+   "sub": "Ground speed at Paris, 49 degrees N",
+   "marks": [
     {
-     "clip": "pixabay:id:168811",
-     "start": 0,
-     "move": "in"
+     "lat": 0,
+     "label": "EQUATOR: 1,670 km/h",
+     "color": "gold"
+    },
+    {
+     "lon": 2.35,
+     "lat": 48.85,
+     "label": "PARIS",
+     "color": "red",
+     "at": 2
     }
    ],
    "text": "Under your chair, the ground is sliding east at about eleven hundred kilometers an hour, just under the speed of sound.",
-   "tone": "calm",
-   "label": [
-    "GROUND SPEED",
-    "About 1,100 km/h here"
-   ]
+   "tone": "calm"
   },
   {
    "shots": [
@@ -659,19 +678,28 @@
    "fact": "Equator bulges ~21 km: radius 6,378 km\\Nvs 6,357 km at the poles."
   },
   {
-   "shots": [
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": -30,
+   "lon1": -26,
+   "lat": 75,
+   "title": "OCEANS MIGRATE",
+   "sub": "Toward the poles",
+   "marks": [
     {
-     "clip": "pixabay:id:233867",
-     "start": 0,
-     "move": "right"
+     "lat": 90,
+     "label": "NORTH POLE",
+     "color": "red"
+    },
+    {
+     "lat": 0,
+     "label": "EQUATORIAL LAND EXPOSED",
+     "color": "gold",
+     "at": 2
     }
    ],
    "text": "Stop the spin and the oceans would slowly flow toward the poles, drowning high latitudes.",
-   "tone": "neutral",
-   "label": [
-    "OCEANS MIGRATE",
-    "Toward the poles"
-   ]
+   "tone": "neutral"
   },
   {
    "shots": [
@@ -704,34 +732,17 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/61/Earth-crust-cutaway-numbered.svg",
-     "start": 0,
-     "move": "left"
-    }
-   ],
+   "kind": "manim",
+   "three_d": false,
    "text": "Those field lines come from liquid iron churning in the outer core, a flow shaped by Earth's rotation.",
    "tone": "neutral",
-   "label": [
-    "OUTER CORE",
-    "Liquid iron dynamo"
-   ]
+   "code": "\ntitle=Text(\"INSIDE THE EARTH\",font_size=40,color=YELLOW).to_edge(UP)\ncrust=Circle(radius=2.6,color=GREY_B,fill_opacity=0.5,fill_color=GREY_D).shift(DOWN*0.3)\nmantle=Circle(radius=2.0,color=ORANGE,fill_opacity=0.5,fill_color=ORANGE).shift(DOWN*0.3)\ncore=Circle(radius=1.2,color=RED,fill_opacity=0.7,fill_color=RED_E).shift(DOWN*0.3)\ninner=Circle(radius=0.5,color=YELLOW,fill_opacity=1,fill_color=YELLOW).shift(DOWN*0.3)\nself.play(FadeIn(title),Create(crust),Create(mantle),Create(core),FadeIn(inner),run_time=2)\narrows=VGroup()\nfor r in (0.8,1.0):\n    for k in range(6):\n        a=Arc(radius=r,start_angle=k*TAU/6,angle=0.8,color=YELLOW,stroke_width=5).add_tip(tip_length=0.18).shift(DOWN*0.3)\n        arrows.add(a)\nself.play(Create(arrows),run_time=1)\nlab=Text(\"LIQUID IRON CHURNS\",font_size=32,color=YELLOW).to_edge(DOWN)\nl2=Text(\"crust\",font_size=30,color=WHITE).move_to(RIGHT*4.5+UP*1.5)\nself.play(FadeIn(lab),FadeIn(l2),Rotate(arrows,angle=TAU,about_point=DOWN*0.3,run_time=5,rate_func=linear))\n"
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2d/MIT_12.007_Geobiology%2C_Spring_2007_-_Differentiation_of_Earth_2.jpg",
-     "start": 0,
-     "move": "right"
-    }
-   ],
    "text": "If only the crust stopped, the core could keep stirring for a while. If the whole planet stopped, the field could weaken or change.",
    "tone": "tense",
-   "label": [
-    "TWO CASES",
-    "Crust only vs whole planet"
-   ]
+   "kind": "manim",
+   "code": "\ncrust = Annulus(inner_radius=2.6, outer_radius=3.0, color=GREY_B, fill_opacity=1)\nmantle = Annulus(inner_radius=1.6, outer_radius=2.6, color=\"#8a3b12\", fill_opacity=1)\ncore = Circle(radius=1.6, color=ORANGE, fill_opacity=1).set_fill([YELLOW, ORANGE])\nlab1 = Text(\"CRUST: STOPPED\", font_size=34).next_to(crust, RIGHT, buff=0.3).shift(UP*1.2)\nlab2 = Text(\"LIQUID CORE: STILL SPINNING\", font_size=34, color=YELLOW).next_to(crust, RIGHT, buff=0.3).shift(DOWN*1.2)\ng = VGroup(crust, mantle, core).shift(LEFT*2.2); VGroup(lab1, lab2).shift(LEFT*2.2)\nself.play(FadeIn(g), run_time=1)\narrows = VGroup(*[CurvedArrow(1.1*np.array([np.cos(a), np.sin(a), 0]), 1.1*np.array([np.cos(a+1.2), np.sin(a+1.2), 0]), color=WHITE) for a in (0, 2.1, 4.2)]).move_to(core)\nself.play(Write(lab1), run_time=1)\nself.play(Create(arrows), Write(lab2), run_time=1.5)\nself.play(Rotate(arrows, angle=2*PI, about_point=core.get_center()), run_time=4, rate_func=linear)\n"
   },
   {
    "shots": [
@@ -766,28 +777,11 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:263305",
-     "start": 0,
-     "move": "left"
-    }
-   ],
+   "kind": "manim",
+   "three_d": false,
    "text": "The Moon's tides act like a brake, and the day grows longer by roughly one point seven to two point three milliseconds per century.",
    "tone": "reveal",
-   "hud": [
-    {
-     "type": "counter",
-     "label": "Day gets longer by",
-     "value": 1.7,
-     "from": 0,
-     "unit": " ms",
-     "sub": "per century, net estimate",
-     "pos": "bl",
-     "at": 2.0,
-     "color": "gold"
-    }
-   ]
+   "code": "\ntitle=Text(\"THE DAY IS GROWING\",font_size=44,color=YELLOW).to_edge(UP)\nax=Axes(x_range=[0,4,1],y_range=[0,3,1],x_length=9,y_length=3.6,axis_config={\"color\":GREY_B}).shift(DOWN*0.3)\nxl=Text(\"time\",font_size=30).next_to(ax,DOWN)\nyl=Text(\"length of day\",font_size=30).next_to(ax,LEFT).rotate(PI/2).shift(RIGHT*0.2)\nself.play(FadeIn(title),Create(ax),FadeIn(xl),FadeIn(yl),run_time=1.5)\ng=ax.plot(lambda x:0.8+0.45*x,x_range=[0,4],color=ORANGE,stroke_width=8)\nself.play(Create(g),run_time=4)\nt=Text(\"+1.7 to 2.3 ms per century\",font_size=38,color=RED).move_to(UP*1.5+LEFT*1.5)\nm=Text(\"the Moon's tides brake Earth\",font_size=32,color=WHITE).to_edge(DOWN)\nself.play(FadeIn(t),FadeIn(m),run_time=1.5)\nself.wait(1)\n"
   },
   {
    "shots": [
