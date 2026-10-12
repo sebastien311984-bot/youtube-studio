@@ -22,7 +22,7 @@ Les signaux visés : CTR miniature/titre → rétention des 30 premières s → 
 - **Bilan après publication** (quand Sébastien partage les stats Studio) : CTR, % retenu à 30 s, courbe de rétention (où ça décroche), pour chaque vidéo une leçon qui remplace une ligne ici.
 
 ## B. Méthode créative (à repenser pour CHAQUE vidéo)
-- **Partir des images, pas du texte** : avant d'écrire, lister les 5 plans les plus forts disponibles. Pas de matière spectaculaire et légale → autre sujet.
+- **Partir des images, pas du texte** (leçon série corps, 12/10) : AVANT de proposer un sujet à Sébastien, lancer le scout et compter les vraies vidéos qui montrent exactement le sujet ; < 15 plans exacts → autre sujet. Ne jamais affirmer « on a les visuels » sans ce comptage. Une série = la 1re vidéo validée au contrôle final avant d'écrire les suivantes. Commits de travail en « [skip ci] » ; preflight regardé plan par plan (vidéos comprises) avant le rendu unique.
 - **Choisir le format qui sert le sujet**, et varier : expérience réelle expliquée (ralentis de labo — notre meilleur score), scénario de survie à la 2e personne, enquête/mystère historique, compte à rebours, comparaison d'échelle, « et si… ». Durée dictée par la matière : 1 min 30 pour un phénomène, 5-8 min pour une histoire.
 - **Les 3 premières secondes** : la meilleure image + une contradiction qui crée une question. Pas de logo, pas de « bienvenue ».
 - **Rythme** : une relance (révélation, chiffre, changement de point de vue) au moins toutes les 30 s ; plan nouveau toutes les 3-6 s.
