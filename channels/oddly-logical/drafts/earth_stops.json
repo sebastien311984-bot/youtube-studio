@@ -49,19 +49,9 @@
      "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001016/GSFC_20171208_Archive_e001016~large.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002130/GSFC_20171208_Archive_e002130~large.jpg",
-     "start": 0,
-     "move": "left"
     }
    ],
-   "text": "Right now, you are riding a spinning planet at sixteen hundred kilometers an hour, and you feel absolutely nothing. So what if Earth stopped spinning for just one second? Everything attached to the ground would stop. Everything else would not.",
+   "text": "Right now, you are riding a spinning planet at sixteen hundred kilometers an hour, and you feel nothing.",
    "tone": "urgent",
    "yt_chapter": "The One-Second Stop",
    "hud": [
@@ -85,41 +75,82 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:380117",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:168811",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:3149",
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg",
      "start": 0,
      "move": "out"
-    },
+    }
+   ],
+   "text": "So what if Earth stopped spinning for just one second?",
+   "tone": "urgent",
+   "label": [
+    "ONE SECOND",
+    "Earth stops spinning"
+   ]
+  },
+  {
+   "shots": [
     {
-     "clip": "pixabay:id:343478",
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002130/GSFC_20171208_Archive_e002130~large.jpg",
      "start": 0,
      "move": "left"
     }
    ],
-   "text": "You are having coffee in a Paris cafe. Paris sits near forty-nine degrees north, so the ground under your chair is sliding east at roughly eleven hundred kilometers an hour, just under the speed of sound. You never notice, because the cup, the air, the cafe and you are all carried along together.",
+   "text": "Everything attached to the ground would stop. Everything else would not.",
+   "tone": "tense",
+   "label": [
+    "THE RULE",
+    "Bolted down stops, the rest moves"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:380117",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "You are having coffee in a European city, at about forty-nine degrees north.",
    "tone": "calm",
    "hud": [
     {
      "type": "counter",
-     "label": "Paris ground speed",
+     "label": "Ground speed here",
      "value": 1100,
      "from": 0,
      "unit": " km/h",
-     "sub": "49 degrees north, approx.",
+     "sub": "e.g. Paris, 49 degrees N",
      "pos": "br",
-     "at": 1.2,
+     "at": 1.5,
      "color": "blue"
     }
    ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:168811",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Under your chair, the ground is sliding east at about eleven hundred kilometers an hour, just under the speed of sound.",
+   "tone": "calm",
+   "label": [
+    "GROUND SPEED",
+    "About 1,100 km/h here"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:3149",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "You never notice, because the cup, the air, the street and you are all carried along together.",
+   "tone": "calm"
   },
   {
    "kind": "annotate",
@@ -150,7 +181,7 @@
      "text": "FASTEST AT THE EQUATOR, ZERO AT THE POLES"
     }
    ],
-   "text": "With north at the top, the surface slides left to right, west to east, and so does everything on it: rock, oceans, air, you. The speed depends on latitude. About sixteen hundred seventy kilometers an hour at the equator, falling toward zero at the poles.",
+   "text": "With north at the top, the surface slides left to right, west to east, and so does everything on it. The speed depends on latitude: about sixteen hundred seventy kilometers an hour at the equator, falling toward zero at the poles.",
    "fact": "Equator: 40,075 km around,\\Nturned once in about 24 hours.",
    "teaser": "THE STOP: WHAT HAPPENS TO YOU",
    "tone": "reveal"
@@ -160,25 +191,41 @@
     {
      "clip": "pixabay:id:205792",
      "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:2213",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:91744",
-     "start": 0,
-     "move": "out"
+     "move": "left"
     }
    ],
-   "text": "Now, stop. The ground halts in an instant. Your chair halts. The cafe floor halts. You do not. Nothing told your body to slow down, so you keep sliding east at around three hundred meters per second, and the cafe wall is in your way. The street, the river embankment, the next building: all of them stop dead while you do not.",
+   "text": "Now, stop. The ground halts in an instant.",
    "tone": "tense",
    "chapter": [
     "CHAPTER 1",
     "THE STOP"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:343478",
+     "start": 0,
+     "move": "right"
+    }
    ],
+   "text": "Your chair halts. The cafe floor halts. You do not.",
+   "tone": "tense",
+   "label": [
+    "THE GROUND STOPS",
+    "You do not"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:2213",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "You keep going east at about three hundred meters per second, as anything does unless a force stops it.",
+   "tone": "urgent",
    "hud": [
     {
      "type": "counter",
@@ -186,7 +233,7 @@
      "value": 305,
      "from": 0,
      "unit": " m/s",
-     "sub": "Paris, approx.",
+     "sub": "approx., 49 degrees N",
      "pos": "bl",
      "at": 1.8,
      "color": "red"
@@ -196,22 +243,23 @@
   {
    "shots": [
     {
+     "clip": "pixabay:id:91744",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "The cafe wall is in your way, and the buildings around it stop dead while you do not.",
+   "tone": "urgent"
+  },
+  {
+   "shots": [
+    {
      "clip": "pixabay:id:21985",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "pixabay:id:3581",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:160767",
-     "start": 0,
-     "move": "in"
     }
    ],
-   "text": "Buildings are anchored to bedrock, so they mostly stay put. People, cars, furniture, anything unfixed, is thrown eastward at about the speed of a handgun bullet. This is just inertia: objects keep moving unless a force stops them.",
+   "text": "Buildings are anchored to bedrock, so they stay put. Cars, furniture, people, anything unfixed, is thrown eastward at about the speed of a handgun bullet.",
    "tone": "urgent",
    "fact": "Inertia: a moving object keeps moving\\Nunless a force stops it.",
    "teaser": "THEN THE AIR HITS"
@@ -221,40 +269,30 @@
     {
      "clip": "https://images-assets.nasa.gov/video/NHQ_2019_0906_Keeping%20an%20eye%20on%20Hurricane%20Dorian%20from%20Space%20on%20This%20Week%20@NASA%20%E2%80%93%20September%206%2C%202019/NHQ_2019_0906_Keeping%20an%20eye%20on%20Hurricane%20Dorian%20from%20Space%20on%20This%20Week%20@NASA%20%E2%80%93%20September%206%2C%202019~orig.mp4",
      "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "pixabay:id:199856",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "pixabay:id:190331",
-     "start": 0,
      "move": "right"
-    },
-    {
-     "clip": "pixabay:id:198547",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:11168",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "pixabay:id:16135",
-     "start": 0,
-     "move": "left"
     }
    ],
-   "text": "And then there is the air. The atmosphere does not stop either. Relative to the stopped ground, it becomes a wind. Near the equator that is about sixteen hundred seventy kilometers an hour, faster than sound at sea level, and more than three times the fastest tornado wind ever measured. Friction would slow the lowest layer, and exactly how much would reach the surface is uncertain, but the energy involved is enormous.",
+   "text": "And then there is the air. The atmosphere does not stop either.",
    "tone": "tense",
    "chapter": [
     "CHAPTER 2",
     "THE AIR"
    ],
+   "label": [
+    "THE ATMOSPHERE",
+    "Keeps moving"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:199856",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Relative to the stopped ground, it becomes a wind. Near the equator, that is about sixteen hundred seventy kilometers an hour.",
+   "tone": "tense",
    "hud": [
     {
      "type": "gauge",
@@ -264,9 +302,22 @@
      "unit": " km/h",
      "sub": "relative to stopped ground",
      "pos": "tr",
-     "at": 3.0,
+     "at": 2.0,
      "color": "red"
-    },
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:190331",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "That is faster than sound at sea level, and more than three times the fastest tornado wind ever measured.",
+   "tone": "tense",
+   "hud": [
     {
      "type": "counter",
      "label": "Fastest tornado wind recorded",
@@ -275,9 +326,24 @@
      "unit": " km/h",
      "sub": "about, Oklahoma 1999",
      "pos": "bl",
-     "at": 9.0,
+     "at": 1.5,
      "color": "gold"
     }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:11168",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Friction would slow the lowest layer, and exactly how much would reach the surface is uncertain, but the energy involved is enormous.",
+   "tone": "neutral",
+   "label": [
+    "SURFACE FRICTION",
+    "Uncertain effect"
    ]
   },
   {
@@ -286,21 +352,41 @@
      "clip": "https://images-assets.nasa.gov/image/iss041e011536/iss041e011536~large.jpg",
      "start": 0,
      "move": "right"
-    },
+    }
+   ],
+   "text": "From orbit, hurricanes look like slow, gentle spirals.",
+   "tone": "calm",
+   "label": [
+    "HURRICANES",
+    "Seen from orbit"
+   ]
+  },
+  {
+   "shots": [
     {
      "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000204/GSFC_20171208_Archive_e000204~large.jpg",
      "start": 0,
      "move": "in"
-    },
+    }
+   ],
+   "text": "They exist only because Earth spins: the Coriolis effect bends moving air into rotation.",
+   "tone": "calm",
+   "fact": "Hurricanes almost never form within\\Nabout five degrees of the equator."
+  },
+  {
+   "shots": [
     {
      "clip": "https://images-assets.nasa.gov/image/iss072e001649/iss072e001649~large.jpg",
      "start": 0,
      "move": "out"
     }
    ],
-   "text": "From orbit, hurricanes look like slow, gentle spirals. They exist only because Earth spins: the Coriolis effect bends moving air into rotation. Without that spin, storms as we know them would fade away.",
-   "tone": "calm",
-   "fact": "Hurricanes almost never form within\\Nabout five degrees of the equator."
+   "text": "Without that spin, storms as we know them would fade away.",
+   "tone": "neutral",
+   "label": [
+    "NO SPIN",
+    "No Coriolis effect"
+   ]
   },
   {
    "kind": "zoomto",
@@ -322,24 +408,9 @@
      "clip": "pixabay:id:283533",
      "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "pixabay:id:31629",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:24216",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:186247",
-     "start": 0,
-     "move": "out"
     }
    ],
-   "text": "The oceans keep going too. Water has huge inertia, and the whole ocean is moving east at the same speed as the seabed beneath it. When the bottom stops, the water does not. It would surge against west-facing coasts. Nobody can put an exact height on it, but the physics points to floods far beyond anything in recorded history.",
+   "text": "The oceans keep going too. Water has huge inertia, and the whole ocean moves east with the seabed beneath it.",
    "tone": "tense",
    "chapter": [
     "CHAPTER 3",
@@ -349,22 +420,72 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_1.png",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_2.png",
+     "clip": "pixabay:id:31629",
      "start": 0,
      "move": "right"
-    },
+    }
+   ],
+   "text": "When the bottom stops, the water does not.",
+   "tone": "tense",
+   "label": [
+    "THE OCEAN",
+    "Keeps its speed"
+   ]
+  },
+  {
+   "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/85/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_4.png",
+     "clip": "pixabay:id:24216",
      "start": 0,
      "move": "in"
     }
    ],
-   "text": "For scale, the 2011 Tohoku tsunami reached run-up heights of about forty meters in places, and it wiped out entire town centers.",
+   "text": "It would surge against west-facing coasts.",
+   "tone": "urgent",
+   "label": [
+    "WEST-FACING COASTS",
+    "Hit first"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:186247",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "Nobody can put an exact height on it, but the physics points to floods far beyond anything in recorded history.",
+   "tone": "tense",
+   "label": [
+    "FAR BEYOND",
+    "Anything recorded"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_1.png",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "For scale, the 2011 Tohoku tsunami sent floodwater through whole towns.",
+   "tone": "neutral",
+   "label": [
+    "2011 TOHOKU TSUNAMI",
+    "Real event, for scale"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_2.png",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Its run-up reached about forty meters in places, and cars and debris were swept along.",
    "tone": "reveal",
    "hud": [
     {
@@ -375,7 +496,7 @@
      "unit": " m",
      "sub": "about, northeast Japan",
      "pos": "bl",
-     "at": 1.5,
+     "at": 1.0,
      "color": "gold"
     }
    ]
@@ -399,25 +520,10 @@
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Foucault_pendulum_at_north_pole_animated.gif",
      "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Foucault_pendulum_animated.gif",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Foucault_pendulum_utexas_motion.webm",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/24/Foucault_Pendulum_-_Houston_Museum_of_Natural_Science_2019-06-25.jpg",
-     "start": 0,
      "move": "in"
     }
    ],
-   "text": "The North Pole. At the pole, the ground simply turns on the spot once a day, so there is almost no speed to lose. A researcher standing there would barely notice. Only a narrow zone near the poles gets off this easily. A Foucault pendulum shows the same idea: at a pole it swings in a fixed plane while Earth turns beneath it once a day.",
+   "text": "The North Pole. There, the ground simply turns on the spot once a day, so a researcher would barely notice a thing.",
    "tone": "reveal",
    "chapter": [
     "CHAPTER 4",
@@ -435,59 +541,94 @@
      "at": 1.5,
      "color": "green"
     }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Foucault_pendulum_animated.gif",
+     "start": 0,
+     "move": "out"
+    }
    ],
-   "teaser": "IF IT NEVER RESTARTED"
+   "text": "A Foucault pendulum shows the idea: at a pole, it swings in a fixed plane while Earth turns beneath it once a day.",
+   "tone": "neutral",
+   "label": [
+    "FOUCAULT PENDULUM",
+    "Swings in a fixed plane"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Foucault_pendulum_utexas_motion.webm",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Anywhere else, its swing plane slowly appears to rotate, which is how it proves that Earth turns.",
+   "tone": "neutral",
+   "teaser": "IF IT NEVER RESTARTED",
+   "label": [
+    "PROOF OF SPIN",
+    "Swing plane appears to turn"
+   ]
   },
   {
    "shots": [
     {
      "clip": "pixabay:id:30218",
      "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "pixabay:id:22555",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/iss043e072717/iss043e072717~large.jpg",
-     "start": 0,
      "move": "right"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/iss029e012564/iss029e012564~large.jpg",
-     "start": 0,
-     "move": "in"
     }
    ],
-   "text": "Now suppose the stop was permanent. Earth would still orbit the Sun, but it would no longer turn once a day. Every place would see the Sun rise once a year: about six months of daylight, then six months of night. The lit side would bake, and the night side would freeze.",
+   "text": "Now suppose the stop was permanent. Earth would still orbit the Sun, and every place would see the Sun rise once a year.",
    "tone": "calm",
    "chapter": [
     "CHAPTER 5",
     "IF IT NEVER RESTARTED"
    ],
+   "label": [
+    "PERMANENT STOP",
+    "One sunrise a year"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:22555",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "About six months of daylight, then six months of night.",
+   "tone": "calm",
    "fact": "Stopped Earth: one sunrise\\Nper year, not one per day."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss043e072717/iss043e072717~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "The lit side would bake, and the night side would freeze.",
+   "tone": "tense",
+   "label": [
+    "DAY SIDE / NIGHT SIDE",
+    "Months-long extremes"
+   ]
   },
   {
    "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Sphere-OblateSpheroidComparison.jpg",
      "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~large.jpg",
-     "start": 0,
      "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001788/GSFC_20171208_Archive_e001788~large.jpg",
-     "start": 0,
-     "move": "right"
     }
    ],
-   "text": "The oceans would move too. Earth bulges at the equator, about twenty-one kilometers wider in radius than at the poles, because spinning stretches it. Stop the spin and the oceans would slowly flow toward the poles, drowning high latitudes while a broad belt of land rose around the equator.",
+   "text": "Earth also bulges at the equator, about twenty-one kilometers wider in radius than at the poles, because spinning stretches it.",
    "tone": "neutral",
    "hud": [
     {
@@ -506,32 +647,87 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/PIA15953/PIA15953~large.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/video/GSFC_20161212_Ocean_m12456_Heat/GSFC_20161212_Ocean_m12456_Heat~orig.mp4",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/video/GSFC_20160512_MMS_m12239_First_Results/GSFC_20160512_MMS_m12239_First_Results~orig.mp4",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://images-assets.nasa.gov/image/iss040e117941/iss040e117941~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~large.jpg",
      "start": 0,
      "move": "right"
-    },
+    }
+   ],
+   "text": "Stop the spin and the oceans would slowly flow toward the poles, drowning high latitudes.",
+   "tone": "neutral",
+   "label": [
+    "OCEANS MIGRATE",
+    "Toward the poles"
+   ]
+  },
+  {
+   "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/iss040e117958/iss040e117958~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001788/GSFC_20171208_Archive_e001788~large.jpg",
      "start": 0,
      "move": "in"
     }
    ],
-   "text": "And the magnetic field? Honestly, nobody knows for sure. It is generated by liquid iron churning in the outer core, and that flow is shaped by Earth's rotation. If only the crust stopped, the core could keep stirring for a while. If the whole planet stopped, the field could weaken or change, and with it the shield behind the auroras.",
+   "text": "A broad belt of land would rise around the equator.",
+   "tone": "neutral",
+   "label": [
+    "EQUATORIAL LAND",
+    "Exposed"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/PIA15953/PIA15953~large.jpg",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "And the magnetic field? Honestly, nobody knows for sure.",
+   "tone": "tense",
+   "label": [
+    "MAGNETIC FIELD",
+    "Honest answer: uncertain"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/GSFC_20161212_Ocean_m12456_Heat/GSFC_20161212_Ocean_m12456_Heat~orig.mp4",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Those field lines come from liquid iron churning in the outer core, a flow shaped by Earth's rotation.",
+   "tone": "neutral",
+   "label": [
+    "OUTER CORE",
+    "Liquid iron dynamo"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/video/GSFC_20160512_MMS_m12239_First_Results/GSFC_20160512_MMS_m12239_First_Results~orig.mp4",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "If only the crust stopped, the core could keep stirring for a while. If the whole planet stopped, the field could weaken or change.",
+   "tone": "tense",
+   "label": [
+    "TWO CASES",
+    "Crust only vs whole planet"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss040e117941/iss040e117941~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "And with it, the shield that protects us from the solar wind and lights the auroras.",
    "tone": "tense",
    "fact": "The magnetic field shields us from\\Nthe solar wind.",
    "teaser": "THE TWIST: EARTH IS ALREADY SLOWING"
@@ -539,32 +735,32 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/iss023e029061/iss023e029061~large.jpg",
-     "start": 0,
-     "move": "out"
-    },
-    {
      "clip": "https://images-assets.nasa.gov/image/iss024e006136/iss024e006136~large.jpg",
      "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "pixabay:id:263305",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:233867",
-     "start": 0,
-     "move": "in"
+     "move": "out"
     }
    ],
-   "text": "Here is the twist. Earth is slowing down, right now. The Moon's tides act like a brake on the spin, and the day grows longer by roughly one point seven to two point three milliseconds per century, depending on how you account for glacial rebound. The Moon itself drifts away about four centimeters a year.",
+   "text": "Here is the twist. Earth is slowing down, right now.",
    "tone": "reveal",
    "chapter": [
     "CHAPTER 6",
     "THE REAL SLOWDOWN"
    ],
+   "label": [
+    "THE TWIST",
+    "Earth is slowing"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:263305",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "The Moon's tides act like a brake, and the day grows longer by roughly one point seven to two point three milliseconds per century.",
+   "tone": "reveal",
    "hud": [
     {
      "type": "counter",
@@ -577,8 +773,23 @@
      "at": 2.0,
      "color": "gold"
     }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://images-assets.nasa.gov/image/iss023e029061/iss023e029061~large.jpg",
+     "start": 0,
+     "move": "right"
+    }
    ],
-   "fact": "The Moon drifts away from Earth\\Nabout 3.8 cm every year."
+   "text": "And the Moon itself drifts away from us.",
+   "tone": "neutral",
+   "fact": "The Moon drifts away from Earth\\Nabout 3.8 cm every year.",
+   "label": [
+    "THE MOON",
+    "Drifting away"
+   ]
   },
   {
    "kind": "kinetic",
@@ -595,20 +806,25 @@
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Iwaki%2C_Fukushima_2.JPG",
      "start": 0,
-     "move": "out"
-    },
+     "move": "in"
+    }
+   ],
+   "text": "Even earthquakes nudge it. In 2011, a huge earthquake struck Japan.",
+   "tone": "neutral",
+   "label": [
+    "EARTHQUAKES",
+    "Can nudge the spin"
+   ]
+  },
+  {
+   "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7d/2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Matsushima%2C_Miyagi.JPG",
      "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_5.png",
-     "start": 0,
-     "move": "right"
+     "move": "out"
     }
    ],
-   "text": "Even earthquakes nudge it. NASA scientists calculated that the 2011 Japan earthquake shortened the day by about one point eight microseconds, by shifting Earth's mass closer to its axis.",
+   "text": "NASA scientists calculated it shortened the day by about one point eight microseconds, by shifting Earth's mass closer to its axis.",
    "tone": "neutral",
    "hud": [
     {
@@ -629,20 +845,25 @@
     {
      "clip": "pixabay:id:2860",
      "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:172350",
-     "start": 0,
-     "move": "out"
-    },
-    {
-     "clip": "pixabay:id:22705",
-     "start": 0,
      "move": "left"
     }
    ],
-   "text": "That is why we have leap seconds. Atomic clocks keep perfect time. Earth does not. Since 1972, timekeepers have added twenty-seven leap seconds to keep clocks in step with the planet, the last in 2016. Lately Earth has even spun a little faster, and the world's measurement bodies voted to phase leap seconds out by 2035.",
+   "text": "That is why we have leap seconds. Atomic clocks keep perfect time. Earth does not.",
+   "tone": "neutral",
+   "label": [
+    "LEAP SECONDS",
+    "Clocks vs Earth"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:172350",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Since 1972, timekeepers have added twenty-seven leap seconds, the last in 2016.",
    "tone": "neutral",
    "hud": [
     {
@@ -661,41 +882,80 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:9825",
-     "start": 0,
-     "move": "right"
-    },
-    {
-     "clip": "pixabay:id:2147",
+     "clip": "pixabay:id:22705",
      "start": 0,
      "move": "in"
-    },
+    }
+   ],
+   "text": "Lately Earth has even spun a little faster, and the world's measurement bodies voted to phase leap seconds out by 2035.",
+   "tone": "neutral",
+   "label": [
+    "RECENT YEARS",
+    "Slightly faster"
+   ]
+  },
+  {
+   "shots": [
     {
-     "clip": "pixabay:id:11057",
+     "clip": "pixabay:id:9825",
      "start": 0,
      "move": "out"
     }
    ],
-   "text": "So the one-second stop never happens. Earth's spin holds an enormous amount of energy, hundreds of millions of years of humanity's current energy use, and nothing known could remove it in a second. Instead, Earth gives up its spin in tiny, patient steps. Next time you sip your coffee, remember: you are on a ball turning at over a thousand kilometers an hour, and it is very slowly braking.",
+   "text": "So the one-second stop never happens.",
    "tone": "warm",
-   "min": 12
+   "label": [
+    "VERDICT",
+    "It never happens"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:2147",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Earth's spin holds hundreds of millions of years of humanity's energy use. Nothing known could remove it in a second.",
+   "tone": "reveal",
+   "label": [
+    "SPIN ENERGY",
+    "Hundreds of millions of years of use"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:11057",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "Instead, Earth gives up its spin in tiny, patient steps. Next time you sip your coffee, remember: you are on a ball turning at over a thousand kilometers an hour, and it is very slowly braking.",
+   "tone": "warm"
   },
   {
    "shots": [
     {
      "clip": "pixabay:id:190332",
      "start": 0,
-     "move": "left"
-    },
+     "move": "in"
+    }
+   ],
+   "text": "If this changed how you see your morning, subscribe. Every week, the strangest true science.",
+   "tone": "warm"
+  },
+  {
+   "shots": [
     {
      "clip": "pixabay:id:201065",
      "start": 0,
-     "move": "right"
+     "move": "out"
     }
    ],
-   "text": "If this changed how you see your morning, subscribe. Every week, the strangest true science. And another video from the channel is waiting on screen. Watch it next.",
-   "tone": "warm",
-   "min": 9
+   "text": "And another video from the channel is waiting on screen. Watch it next.",
+   "tone": "warm"
   }
  ],
  "shorts": [
@@ -708,16 +968,6 @@
      "shots": [
       {
        "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000015/GSFC_20171208_Archive_e000015~large.jpg",
-       "start": 0,
-       "move": "in"
-      },
-      {
-       "clip": "https://images-assets.nasa.gov/image/iss072e001650/iss072e001650~large.jpg",
-       "start": 0,
-       "move": "out"
-      },
-      {
-       "clip": "https://images-assets.nasa.gov/image/41G-121-099/41G-121-099~large.jpg",
        "start": 0,
        "move": "left"
       }
@@ -745,14 +995,9 @@
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/image/iss064e044527/iss064e044527~large.jpg",
+       "clip": "https://images-assets.nasa.gov/image/iss072e001650/iss072e001650~large.jpg",
        "start": 0,
        "move": "right"
-      },
-      {
-       "clip": "https://images-assets.nasa.gov/image/iss023e058455/iss023e058455~large.jpg",
-       "start": 0,
-       "move": "in"
       }
      ],
      "text": "That is how fast the equator is carried east as Earth turns once a day.",
@@ -763,31 +1008,32 @@
       {
        "clip": "pixabay:id:107336",
        "start": 0,
-       "move": "out"
-      },
-      {
-       "clip": "pixabay:id:197798",
-       "start": 0,
-       "move": "left"
+       "move": "in"
       }
      ],
-     "text": "Now stop the planet for one second. Anything not bolted down keeps flying east. The air becomes a supersonic wind.",
+     "text": "Stop the planet for one second, and the air keeps going: a supersonic wind.",
      "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:3581",
+       "start": 0,
+       "move": "out"
+      }
+     ],
+     "text": "Anything not bolted down keeps flying east.",
+     "tone": "urgent"
     },
     {
      "shots": [
       {
        "clip": "https://images-assets.nasa.gov/image/iss003e6130/iss003e6130~large.jpg",
        "start": 0,
-       "move": "right"
-      },
-      {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Foucault_pendulum_in_Osaka_University%2C_03.jpg",
-       "start": 0,
-       "move": "in"
+       "move": "left"
       }
      ],
-     "text": "But at the North Pole, you would feel almost nothing.",
+     "text": "But near the poles, where the ground barely moves, you would feel almost nothing.",
      "tone": "reveal"
     },
     {
@@ -795,7 +1041,7 @@
       {
        "clip": "https://images-assets.nasa.gov/image/0601388/0601388~large.jpg",
        "start": 0,
-       "move": "out"
+       "move": "right"
       }
      ],
      "text": "The full story is on the channel — subscribe for the next one.",
@@ -813,12 +1059,7 @@
       {
        "clip": "pixabay:id:19368",
        "start": 0,
-       "move": "left"
-      },
-      {
-       "clip": "pixabay:id:304019",
-       "start": 0,
-       "move": "right"
+       "move": "in"
       }
      ],
      "text": "If Earth stopped for one second, the oceans would not stop.",
@@ -831,17 +1072,12 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:4006",
-       "start": 0,
-       "move": "in"
-      },
-      {
-       "clip": "pixabay:id:1890",
+       "clip": "pixabay:id:304019",
        "start": 0,
        "move": "out"
       }
      ],
-     "text": "The whole ocean spins east with the seabed, at hundreds of meters per second.",
+     "text": "The whole ocean spins east with the seabed, at up to sixteen hundred kilometers an hour.",
      "tone": "neutral",
      "hud": [
       {
@@ -860,28 +1096,40 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_3.png",
+       "clip": "pixabay:id:1890",
        "start": 0,
        "move": "left"
-      },
-      {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2011_Tohoku_earthquake_observed_tsunami_heights-2.png",
-       "start": 0,
-       "move": "right"
-      },
-      {
-       "clip": "pixabay:id:338904",
-       "start": 0,
-       "move": "in"
       }
      ],
-     "text": "When the seabed stops, the water keeps going and floods west-facing coasts. The 2011 Tohoku tsunami reached about forty meters in places. The physics points to something possibly bigger.",
+     "text": "When the seabed stops, the water keeps going and floods west-facing coasts.",
      "tone": "tense"
     },
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Coriolis-ex.png",
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_3.png",
+       "start": 0,
+       "move": "right"
+      }
+     ],
+     "text": "The 2011 Tohoku tsunami reached about forty meters in places.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2011_Tohoku_earthquake_observed_tsunami_heights-2.png",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Those are the heights recorded along Japan's coast. A sudden stop could possibly be bigger.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:338904",
        "start": 0,
        "move": "out"
       }
@@ -899,14 +1147,9 @@
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/video/GSFC_20161212_Tidal_m12450_Magnetic/GSFC_20161212_Tidal_m12450_Magnetic~orig.mp4",
-       "start": 0,
-       "move": "left"
-      },
-      {
        "clip": "https://images-assets.nasa.gov/video/GSFC_20170403_Blue_m12564_Marble/GSFC_20170403_Blue_m12564_Marble~orig.mp4",
        "start": 0,
-       "move": "right"
+       "move": "left"
       }
      ],
      "text": "Your days are getting longer, and nothing can stop it.",
@@ -919,14 +1162,9 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/6/62/Foucault_pendulum_in_Tellus_Science_Museum%2C_2013.jpg",
+       "clip": "https://images-assets.nasa.gov/video/GSFC_20161212_Tidal_m12450_Magnetic/GSFC_20161212_Tidal_m12450_Magnetic~orig.mp4",
        "start": 0,
-       "move": "in"
-      },
-      {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Foucault_pendulum_utexas_top.jpg",
-       "start": 0,
-       "move": "out"
+       "move": "right"
       }
      ],
      "text": "The Moon's tides drag on Earth's spin, adding about two milliseconds to the day every century.",
@@ -948,25 +1186,31 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/2/24/Saint_Isaac%27s_Cathedral_-_Foucault_pendulum_in_1984.jpg",
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Coriolis-ex.png",
        "start": 0,
-       "move": "left"
-      },
-      {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Coriolis_effect.svg",
-       "start": 0,
-       "move": "right"
+       "move": "in"
       }
      ],
-     "text": "Four hundred million years ago, a day lasted about twenty-two hours. In 2011, a single earthquake shortened it by under two microseconds.",
+     "text": "Four hundred million years ago, a day lasted about twenty-two hours.",
      "tone": "reveal"
     },
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/image/0601389/0601389~large.jpg",
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Great_East_Japan_Earthquake_Tsunami_Machimae%2C_Tagajo_city%2C_Miyagi_Prefecture%2C_Japan_5.png",
        "start": 0,
-       "move": "in"
+       "move": "out"
+      }
+     ],
+     "text": "And in 2011, one earthquake shortened the day by under two microseconds.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Coriolis_effect.svg",
+       "start": 0,
+       "move": "left"
       }
      ],
      "text": "The full story is on the channel — subscribe for the next one.",
