@@ -1,0 +1,447 @@
+{
+ "title": "The Hotter the Pan, the Longer Water Survives",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "credits": "Footage: Wikimedia Commons: Anonimage (CC BY-SA 4.0); Petrovskyz (CC BY-SA 4.0); Savant-fou (CC BY-SA 3.0); Cryonic07 (CC BY-SA 3.0); Fuzheado (CC BY-SA 3.0); LukeGoodsell (CC BY-SA 3.0); Nesnad (CC BY 4.0); Natalii Bashmakova (CC BY 4.0); Wells, Ledesma-Aguilar, McHale & Sefiane (CC BY 4.0); portrait of J. G. Leidenfrost (public domain). Pixabay: Life-Of-Vids, GreenCardShow, ColinBrough, zephylwer0 (free license).",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Effet_Leidenfrost.webm",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Water on a scorching pan should vanish in a flash. Instead, it skates around like it's alive.",
+   "tone": "urgent",
+   "yt_chapter": "The mystery",
+   "label": [
+    "LEIDENFROST EFFECT",
+    "Water on a very hot pan"
+   ],
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Pan temperature",
+     "value": 200,
+     "from": 20,
+     "unit": " °C",
+     "sub": "at or above the Leidenfrost point",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:267",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Normally, a drop touching hot metal boils fast. Heat pours in, steam escapes, and the drop is gone.",
+   "tone": "neutral",
+   "fact": "BOILING WATER: 100 °C\\NAT SEA LEVEL"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:11290",
+     "start": 0,
+     "move": "out"
+    }
+   ],
+   "text": "But keep heating, and something flips. Past a certain temperature, a hotter pan makes the drop last longer.",
+   "tone": "tense",
+   "teaser": "THE VAPOUR CUSHION",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Leidenfrost point of water",
+     "value": 200,
+     "from": 20,
+     "unit": " °C",
+     "sub": "roughly, depends on the surface",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "gold"
+    }
+   ]
+  },
+  {
+   "kind": "annotate",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Water_droplet_Leidenfrost_effect_cropped.JPG",
+   "question": "What is holding this drop up?",
+   "heading": "A DROP ON A HOT PLATE",
+   "yt_chapter": "The vapour cushion",
+   "tone": "reveal",
+   "marks": [
+    {
+     "type": "circle",
+     "c": [
+      960,
+      430
+     ],
+     "r": 300,
+     "color": "gold",
+     "text": "WATER DROP"
+    },
+    {
+     "type": "measure",
+     "from": [
+      640,
+      840
+     ],
+     "to": [
+      640,
+      730
+     ],
+     "color": "red",
+     "text": "VAPOUR LAYER"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1380,
+      900
+     ],
+     "to": [
+      1100,
+      760
+     ],
+     "color": "white",
+     "text": "STEAM CUSHION"
+    },
+    {
+     "type": "label",
+     "at": [
+      960,
+      990
+     ],
+     "color": "white",
+     "text": "STEAM CONDUCTS HEAT POORLY"
+    }
+   ],
+   "text": "Look at the gap. The bottom of the drop flash-boils and creates a thin layer of vapour, a fraction of a millimetre thick. The drop floats on its own steam. And steam conducts heat badly, so the drop barely heats up and lasts far longer."
+  },
+  {
+   "kind": "diagram",
+   "heading": "DROP LIFETIME vs PAN HEAT",
+   "tone": "warm",
+   "elements": [
+    {
+     "type": "arrow",
+     "from": [
+      300,
+      880
+     ],
+     "to": [
+      1700,
+      880
+     ],
+     "color": "ink"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      300,
+      880
+     ],
+     "to": [
+      300,
+      260
+     ],
+     "color": "ink"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       320,
+       300
+      ],
+      [
+       700,
+       1000
+      ],
+      [
+       1000,
+       780
+      ]
+     ],
+     "color": "blue"
+    },
+    {
+     "type": "curve",
+     "pts": [
+      [
+       1000,
+       780
+      ],
+      [
+       1300,
+       500
+      ],
+      [
+       1650,
+       300
+      ]
+     ],
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "at": [
+      1000,
+      950
+     ],
+     "text": "PAN TEMPERATURE",
+     "size": 40,
+     "anchor": "mm"
+    },
+    {
+     "type": "text",
+     "at": [
+      1000,
+      830
+     ],
+     "text": "~200 °C",
+     "size": 44,
+     "color": "gold",
+     "anchor": "mm"
+    },
+    {
+     "type": "text",
+     "at": [
+      340,
+      230
+     ],
+     "text": "LIFETIME",
+     "size": 40
+    }
+   ],
+   "text": "Below roughly two hundred degrees, the drop touches and boils fast. Above it, the cushion forms, and the lifetime shoots up."
+  },
+  {
+   "kind": "zoomto",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Johann_Gottlob_Leidenfrost.jpg",
+   "box": [
+    500,
+    100,
+    1420,
+    760
+   ],
+   "label": "JOHANN GOTTLOB LEIDENFROST, 1756",
+   "tone": "calm",
+   "teaser": "DRY ICE TURBINE",
+   "text": "The effect carries the name of Johann Gottlob Leidenfrost, who described it in 1756."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:50007",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Then, in 2015, UK physicists swapped water for a block of dry ice, frozen carbon dioxide.",
+   "tone": "reveal",
+   "yt_chapter": "Dry ice engine",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Dry ice temperature",
+     "value": -78,
+     "from": 20,
+     "unit": " °C",
+     "sub": "it turns straight into gas",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "blue"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A-sublimation-heat-engine-ncomms7390-s2.ogv",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Dry ice never melts on hot metal. It sublimes, and rides on its own gas.",
+   "tone": "reveal",
+   "label": [
+    "NATURE COMMUNICATIONS, 2015",
+    "Wells et al., lab footage"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d9/A-sublimation-heat-engine-ncomms7390-s3.ogv",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Cut ratchet teeth into the metal, and the escaping gas pushes the ice. It drives a rotor.",
+   "tone": "reveal",
+   "label": [
+    "A HEAT ENGINE RUNNING ON ICE",
+    "Sublimation heat engine"
+   ],
+   "fact": "THE GAS CUSHION CAN PUSH,\\NNOT JUST LIFT"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/00/18._%D0%9B%D0%B0%D1%98%D0%B4%D0%B5%D0%BD%D1%84%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2_%D0%B5%D1%84%D0%B5%D0%BA%D1%82.webm",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Now drop a very hot metal ball in water. It wraps itself in vapour, until the film collapses.",
+   "tone": "tense",
+   "label": [
+    "HOT METAL IN WATER",
+    "Vapour film, then collapse"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/87/Evaporation_of_liquid_nitrogen.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Liquid nitrogen, at minus 196 degrees, does the same on a room-temperature desk.",
+   "tone": "warm",
+   "label": [
+    "LIQUID NITROGEN",
+    "Boils at about -196 °C"
+   ]
+  },
+  {
+   "kind": "outro",
+   "line1": "WHAT ELSE COULD FLOAT?",
+   "line2": "SUBSCRIBE",
+   "tone": "warm",
+   "text": "So when water dances on your pan, it's riding on its own steam. If even a solid can do it, what else could we make float? Subscribe, and watch the next one."
+  }
+ ],
+ "shorts": [
+  {
+   "title": "Water That Refuses to Boil",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Effet_leidenfrost.ogv",
+       "start": 3,
+       "move": "in"
+      }
+     ],
+     "text": "This pan is far above one hundred degrees, yet the water refuses to boil.",
+     "tone": "urgent"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:116118",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "It's the Leidenfrost effect. Past roughly two hundred degrees, a drop floats on its own vapour.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:116119",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "That steam cushion insulates the drop, so a hotter pan makes it last longer. The full story is on the channel — subscribe for the next one.",
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "Liquid That Skates on the Floor",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/48/Liquid-nitrogen-demo-freeside-atlanta.webm",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Liquid nitrogen is minus one hundred ninety-six degrees. Poured out, it skates instead of splashing.",
+     "tone": "urgent"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dry_ice_sublimation_march_29_2021.webm",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Dry ice does the same trick. It turns straight from solid to gas, and floats on that gas.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sublimation_of_dry_ice_on_water.ogv",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "In 2015, UK scientists used that gas cushion to spin a turbine. The full story is on the channel — subscribe for the next one.",
+     "tone": "warm"
+    }
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "IT WON'T BOIL",
+  "sub": "HOTTER = LONGER",
+  "shift": true,
+  "circle": false,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Water_droplet_Leidenfrost_effect_cropped.JPG"
+ },
+ "youtube": {
+  "title": "The Hotter the Pan, the Longer Water Survives",
+  "description": "Hotter pan, longer life: water can float on its own steam, and a block of dry ice can spin a turbine. Here is the Leidenfrost effect, and the lab experiment that turned it into an engine.\n\nIn this video:\n- Why a drop of water lasts longer on a hotter pan\n- The vapour cushion under the drop\n- The 2015 dry ice \"sublimation heat engine\"\n- A hot ball in water, and liquid nitrogen on a desk\n\nCredits:\n- Anonimage, \"Effet Leidenfrost\", CC BY-SA 4.0, Wikimedia Commons\n- Petrovskyz, Leidenfrost effect video, CC BY-SA 4.0, Wikimedia Commons\n- Savant-fou, \"Effet leidenfrost\", CC BY-SA 3.0, Wikimedia Commons\n- Cryonic07, water droplet photo, CC BY-SA 3.0, Wikimedia Commons\n- Wells G, Ledesma-Aguilar R, McHale G, Sefiane K, lab videos from \"A sublimation heat engine\", CC BY 4.0, Wikimedia Commons\n- Nesnad, dry ice sublimation, CC BY 4.0; LukeGoodsell, CC BY-SA 3.0; Fuzheado, CC BY-SA 3.0; N. Bashmakova, CC BY 4.0, Wikimedia Commons\n- Pixabay: Life-Of-Vids, GreenCardShow, ColinBrough, zephylwer0 (Pixabay license)\nOriginal script, explanatory animations and annotations by Oddly Logical Science. The researchers and the authors of the footage do not endorse this channel.\n\nSources:\n- Wells G.G., Ledesma-Aguilar R., McHale G., Sefiane K. (2015), \"A sublimation heat engine\", Nature Communications 6, 6390. DOI 10.1038/ncomms7390\n- Leidenfrost J.G. (1756), \"De aquae communis nonnullis qualitatibus tractatus\"\n- Quere D. (2013), \"Leidenfrost Dynamics\", Annual Review of Fluid Mechanics 45\n\nCould a solid float on its own gas to power a machine? Tell us what you would build in the comments.",
+  "tags": [
+   "leidenfrost effect",
+   "water on hot pan",
+   "why water dances on a hot pan",
+   "dry ice turbine",
+   "sublimation heat engine",
+   "liquid nitrogen",
+   "vapour cushion",
+   "physics experiment",
+   "science explained"
+  ],
+  "hashtags": [
+   "#leidenfrost",
+   "#physics",
+   "#science"
+  ],
+  "translations": {
+   "fr": "Plus la poêle est chaude, plus l'eau survit",
+   "es": "Cuanto más caliente la sartén, más dura el agua",
+   "pt": "Quanto mais quente a panela, mais a água resiste",
+   "de": "Je heißer die Pfanne, desto länger hält Wasser",
+   "hi": "गर्म तवा जितना ज़्यादा, पानी उतनी देर टिके"
+  }
+ }
+}
