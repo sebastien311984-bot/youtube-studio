@@ -56,7 +56,7 @@ for i, s in enumerate(ep["scenes"]):
         else: continue
         for t in (1.5, d - 0.3): anims.append((f"sc{i} {k} t={t}", frame(cp, t)))
     except Exception as e:
-        report.append(f"scène {i} ({k}) : ANIMATION EN ÉCHEC {e!r}"[:200])
+        report.append(f"scène {i} ({k}) : ANIMATION EN ÉCHEC " + repr(e)[-700:])
 if anims: sheet(anims, "preflight_anims.jpg", w=640, h=360, cols=4)
 open(os.path.join(out, "preflight.txt"), "w").write("\n".join(report) or "OK : aucun quasi-doublon, tout lisible")
 print("\n".join(report) or "OK")
