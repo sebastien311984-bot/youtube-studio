@@ -31,7 +31,8 @@ jobs:
       - name: Résultats sur une branche
         continue-on-error: true
         run: |
-          rm -rf preflight/clips preflight/*.mp4 preflight/*.png
+          ls preflight/anim_*.mp4 >/dev/null 2>&1 && { for f in preflight/anim_*.mp4; do echo "file '$PWD/$f'"; done > /tmp/l.txt; ffmpeg -v error -y -f concat -safe 0 -i /tmp/l.txt -vf scale=-2:720 -c:v libx264 -crf 26 -preset veryfast preflight/anims_preview.mp4.keep || true; }
+          rm -rf preflight/clips preflight/*.mp4 preflight/*.png; [ -f preflight/anims_preview.mp4.keep ] && mv preflight/anims_preview.mp4.keep preflight/anims_preview.mp4
           git config user.name preflight-bot; git config user.email preflight-bot@users.noreply.github.com
           git checkout -q --orphan "pf/${{ github.run_id }}"; git rm -rq --cached . ; git add -f preflight; git commit -qm "preflight ${{ github.run_id }}"
           git push -q origin "HEAD:refs/heads/pf/${{ github.run_id }}"
