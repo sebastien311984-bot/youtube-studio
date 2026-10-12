@@ -57,7 +57,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:191289",
+     "clip": "pixabay:id:325502",
      "start": 0,
      "move": "left"
     }
@@ -73,7 +73,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:191288",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Frostbitten_hands.jpg",
      "start": 0,
      "move": "in"
     }
@@ -112,14 +112,14 @@
    "tone": "tense"
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:249486",
-     "start": 0,
-     "move": "in"
-    }
+   "text": "It can multiply your heat production several times over, and at thirty-five degrees it is working flat out.",
+   "kind": "kinetic",
+   "words": [
+    "HEAT OUTPUT",
+    "UP SEVERAL TIMES"
    ],
-   "text": "It can multiply your heat production several times over, and at thirty-five degrees it is working flat out."
+   "min": 4,
+   "tone": "reveal"
   },
   {
    "kind": "manim",
@@ -295,7 +295,7 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/01/Snow_cave_%285419973795%29.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_Cave_on_Mount_Hood.jpg",
      "start": 0,
      "move": "in"
     }
@@ -323,9 +323,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:185273",
+     "clip": "pixabay:id:205374",
      "start": 0,
-     "move": "right"
+     "move": "in"
     }
    ],
    "text": "One theory: a primitive brain-stem reflex, still alive, searching for a den, like a hibernating animal."
@@ -333,9 +333,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:327101",
+     "clip": "pixabay:id:6712",
      "start": 0,
-     "move": "in"
+     "move": "left"
     }
    ],
    "text": "But you are not a bear.",
@@ -344,7 +344,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:22139",
+     "clip": "pixabay:id:145344",
      "start": 0,
      "move": "in"
     }
@@ -399,16 +399,11 @@
    "code": "\nt=Text(\"GENTLE HANDLING SAVES HEARTS\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\nground=Line(LEFT*6,RIGHT*6,color=GREY).shift(DOWN*2.5)\nst=Rectangle(width=4,height=0.3,color=WHITE,fill_color=GREY,fill_opacity=0.7).move_to(DOWN*1.0)\npt=Ellipse(width=3.2,height=0.7,color=BLUE,fill_color=BLUE,fill_opacity=0.5).move_to(DOWN*0.6)\ng=VGroup(st,pt)\nhl=Text(\"HEART\",font_size=26,color=RED).move_to(g.get_center()+UP*0.9)\nself.play(FadeIn(t),Create(ground),FadeIn(g),FadeIn(hl),run_time=1)\nself.play(g.animate.shift(UP*0.8),hl.animate.shift(UP*0.8),run_time=1.5)\nok=Text(\"SLOW, LEVEL LIFT: SAFE\",font_size=30,color=GREEN).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(ok),run_time=0.5)\nself.play(g.animate.shift(DOWN*0.8).rotate(0.25),hl.animate.set_color(YELLOW),run_time=0.35)\nbad=Text(\"ROUGH DROP: RISK OF FATAL RHYTHM\",font_size=30,color=RED).move_to(DOWN*2.9)\nself.play(Transform(ok,bad),Flash(hl,color=RED),run_time=1.0); self.wait(1.5)\n"
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:49815",
-     "start": 0,
-     "move": "in"
-    }
-   ],
    "text": "Slow pulse. Shallow breathing. Eventually, no pulse you can feel. By every ordinary sign, this person is dead.",
    "reveal": true,
-   "tone": "reveal"
+   "tone": "reveal",
+   "kind": "manim",
+   "code": "\nt=Text(\"SLOW PULSE, SHALLOW BREATHS\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\nax=Axes(x_range=[0,12,1],y_range=[-1,2,1],x_length=11,y_length=3,tips=False,axis_config={\"color\":GREY}).shift(DOWN*0.2)\ndef ecg(x):\n    p=x%4\n    return 1.5 if 1.5<p<1.7 else (-0.5 if 1.7<=p<1.9 else 0.0)\nc=ax.plot(ecg,x_range=[0,12,0.01],color=GREEN,stroke_width=5,use_smoothing=False)\nself.play(FadeIn(t),Create(ax),run_time=0.8)\nself.play(Create(c),run_time=5,rate_func=linear)\nx=Text(\"A FAINT PULSE, EASY TO MISS\",font_size=32,color=YELLOW).to_edge(DOWN,buff=0.6)\nself.play(FadeIn(x),run_time=0.6); self.wait(1)\n"
   },
   {
    "shots": [
@@ -442,9 +437,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:64085",
+     "clip": "pixabay:id:113675",
      "start": 0,
-     "move": "left"
+     "move": "in"
     }
    ],
    "text": "She finds a pocket of air under the ice and breathes. She is conscious, but the water keeps cooling her. Her friends fight to pull her out.",
@@ -460,29 +455,11 @@
    "beat": true
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:145344",
-     "start": 0,
-     "move": "in"
-    }
-   ],
    "text": "After about forty minutes, her heart stops. Another forty minutes pass before rescuers pull her out. No breath, no pulse. Her core temperature: thirteen point seven degrees Celsius.",
-   "hud": [
-    {
-     "type": "counter",
-     "label": "Anna's core temperature",
-     "value": 13.7,
-     "from": 28,
-     "unit": " C",
-     "sub": "ADULT RECORD",
-     "pos": "bl",
-     "at": 0.6,
-     "color": "red"
-    }
-   ],
    "reveal": true,
-   "tone": "reveal"
+   "tone": "reveal",
+   "kind": "manim",
+   "code": "\nt=Text(\"HEART STOPPED: FLATLINE\",font_size=40,color=RED).to_edge(UP,buff=0.4)\nax=Axes(x_range=[0,12,1],y_range=[-1,2,1],x_length=11,y_length=3,tips=False,axis_config={\"color\":GREY}).shift(DOWN*0.2)\ndef ecg(x):\n    if x>=5: return 0.0\n    p=x%1.25\n    return 1.5 if 0.5<p<0.6 else (-0.5 if 0.6<=p<0.7 else 0.0)\nc=ax.plot(ecg,x_range=[0,12,0.01],color=GREEN,stroke_width=5,use_smoothing=False)\nself.play(FadeIn(t),Create(ax),run_time=0.8)\nself.play(Create(c),run_time=6,rate_func=linear)\nx=Text(\"CORE: 13.7 C\",font_size=36,color=YELLOW).to_edge(DOWN,buff=0.6)\nself.play(FadeIn(x),run_time=0.6); self.wait(1.5)\n"
   },
   {
    "kind": "manim",
@@ -510,7 +487,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:154331",
+     "clip": "pixabay:id:314351",
      "start": 0,
      "move": "in"
     }
@@ -567,7 +544,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:188778",
+     "clip": "pixabay:id:29314",
      "start": 0,
      "move": "in"
     }
@@ -585,8 +562,8 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:212133",
-       "start": 3,
+       "clip": "pixabay:id:143416",
+       "start": 1,
        "move": "in"
       }
      ],
@@ -707,8 +684,8 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:154726",
-       "start": 3,
+       "clip": "pixabay:id:314346",
+       "start": 1,
        "move": "in"
       }
      ],
@@ -719,12 +696,16 @@
   }
  ],
  "thumbnail": {
-  "scene": 0,
+  "scene": 33,
   "text": "30 DEGREES",
   "sub": "YOU UNDRESS",
   "shift": false,
   "circle": true,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hypothermia_Training%2C_Marine_Mountain_Warfare_Center%2C_California_USA.jpg"
+  "circle_at": [
+   0.4,
+   0.78,
+   95
+  ]
  },
  "youtube": {
   "title": "Your Body Freezing: What Happens Degree by Degree",

@@ -20,7 +20,7 @@ def srt(words, path):
         for k, g in enumerate(lines, 1):
             f.write(f"{k}\n{ts(g[0][0], True)} --> {ts(g[-1][0] + g[-1][1] + 0.2, True)}\n{' '.join(w[2] for w in g)}\n\n")
 
-def thumbnail(src, path, text, sub="", accent=(255, 196, 40), shift=True, circle=True):
+def thumbnail(src, path, text, sub="", accent=(255, 196, 40), shift=True, circle=True, circle_at=None):
     """Miniature : image choc agrandie + contraste, texte énorme à contour, flèche/cercle rouge, marque."""
     W, H = 1280, 720
     if src:
@@ -55,7 +55,7 @@ def thumbnail(src, path, text, sub="", accent=(255, 196, 40), shift=True, circle
         d.rounded_rectangle((60, y + 14, 60 + tw + 40, y + 78), 12, fill=(225, 30, 40))
         d.text((80, y + 46), sub.upper(), font=f, fill=(255, 255, 255), anchor="lm")
     # cercle rouge sur la zone d'intérêt (droite)
-    cx, cy, r = int(W * 0.75), int(H * 0.5), 175
+    cx, cy, r = (int(W * circle_at[0]), int(H * circle_at[1]), circle_at[2]) if circle_at else (int(W * 0.75), int(H * 0.5), 175)
     for k in range(3 if circle else 0): d.ellipse((cx - r - k * 3, cy - r - k * 3, cx + r + k * 3, cy + r + k * 3), outline=(235, 30, 40), width=8)
     os.environ.get("CHANNEL_NAME") and d.text((W - 24, H - 22), os.environ.get("CHANNEL_NAME", "").upper(), font=font("Bold", 24), fill=(255, 255, 255), anchor="rs", stroke_width=3, stroke_fill=(0, 0, 0))
     im.save(path, quality=92)
@@ -64,7 +64,7 @@ def write_all(ep, out, words, chapters, thumb_src):
     base = out[:-4]; yt = ep.get("youtube", {})
     srt(words, base + ".srt")
     th = ep.get("thumbnail", {})
-    thumbnail(thumb_src, base + "_thumb.jpg", th.get("text", ep["title"]), th.get("sub", ""), shift=th.get("shift", True), circle=th.get("circle", True))
+    thumbnail(thumb_src, base + "_thumb.jpg", th.get("text", ep["title"]), th.get("sub", ""), shift=th.get("shift", True), circle=th.get("circle", True), circle_at=th.get("circle_at"))
     ch = [(0.0, "Intro")] + [c for c in chapters if c[0] >= 10]
     desc = yt.get("description", "").strip() + "\n\n⏱️ CHAPTERS\n" + "\n".join(f"{ts(t)} {n}" for t, n in ch)
     desc += "\n\n🎥 " + ep.get("credits", "") + "\nAll footage is public domain or used under its license.\n\n" + " ".join("#" + h for h in yt.get("hashtags", []))
