@@ -14,7 +14,7 @@ class S(%s):
 
 def render(out, d, code, assets=None, three_d=False):
     work = out + "_manim"; os.makedirs(work, exist_ok=True)
-    body = textwrap.indent(textwrap.dedent(code).strip() + "\n        self.wait(%.2f)" % 0.01, " " * 8)
+    body = textwrap.indent(textwrap.dedent(code).strip() + "\nself.wait(0.1)\n", " " * 8)
     if assets:  # url → chemin local, injectés comme variables
         body = "".join(" " * 8 + f"{k} = {v!r}\n" for k, v in assets.items()) + body
     src = os.path.join(work, "scene.py"); open(src, "w").write(HEADER % ("ThreeDScene" if three_d else "Scene") + body)
