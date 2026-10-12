@@ -261,7 +261,8 @@ def fact(t0, d, text):
 
 def chapter(t0, num, title):
     a, b = ass_time(t0), ass_time(t0 + 3.2)
-    return [f"Dialogue: 6,{a},{b},Small,,0,0,0,,{{\\an5\\pos(960,430)\\fad(400,500)\\fsp30\\t(0,3200,\\fsp14)}}{num}",
+    return [f"Dialogue: 5,{a},{b},Small,,0,0,0,,{{\\an7\\pos(0,370)\\1c&H000000&\\1a&H60&\\bord0\\shad0\\fad(400,500)\\p1}}m 0 0 l 1920 0 1920 240 0 240{{\\p0}}",  # bandeau sombre : titre lisible sur fond clair
+            f"Dialogue: 6,{a},{b},Small,,0,0,0,,{{\\an5\\pos(960,430)\\fad(400,500)\\fsp30\\t(0,3200,\\fsp14)}}{num}",
             f"Dialogue: 6,{a},{b},Big,,0,0,0,,{{\\an5\\pos(960,520)\\fs96\\fad(600,500)\\blur3\\t(0,600,\\blur0)}}{title}"]
 
 TRANSITIONS = ["fade", "smoothleft", "fade", "circleopen", "fadeblack", "zoomin", "fade", "slideup", "fadewhite", "dissolve", "smoothright", "radial"]
