@@ -4,7 +4,7 @@
  "subscribe_at": 0.3,
  "strategy": {
   "viewer": "Curious adults who have pulled an all-nighter and wonder how bad it really gets; clicks for the extreme record and the 'drunk brain' hook.",
-  "hook": "Seventeen hours awake is like being drunk, eleven days is something stranger: the first seconds put a normal fact against an extreme one.",
+  "hook": "Seventeen hours awake is like being drunk; eleven days and your brain starts sleeping while you are awake: a familiar fact against an impossible one.",
   "promise": "What really happens in your brain from hour 0 to hour 264 without sleep, with the real cases (Tripp, Gardner) and the science.",
   "payoff": "A brain that will not sleep starts sleeping in pieces (local sleep, microsleeps) while awake, and without full sleep its cleaning flow (glymphatic) never completes.",
   "takeaway": "Stay awake long enough and your brain starts sleeping without you."
@@ -17,18 +17,30 @@
      "clip": "pixabay:id:133698",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:87884",
-     "start": 0,
-     "move": "left"
     }
    ],
-   "text": "Stay awake seventeen hours, and your brain performs like you are drunk. Stay awake eleven days, and something stranger happens.",
+   "text": "Stay awake seventeen hours, and your brain performs like you are drunk.",
    "tone": "urgent",
    "beat": true,
    "lead": 0.3,
    "yt_chapter": "Awake too long"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:87884",
+     "start": 0,
+     "move": "left"
+    },
+    {
+     "clip": "pixabay:id:23611",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Stay awake eleven days, and your brain starts doing something it was never built to do: sleeping while you are awake.",
+   "tone": "reveal",
+   "beat": true
   },
   {
    "kind": "intro",
@@ -220,7 +232,7 @@
      "move": "in"
     }
    ],
-   "text": "In 2017, recordings from single neurons in epilepsy patients showed sleep-like slow waves just before attention lapses.",
+   "text": "In 2017, recordings from single neurons in epilepsy patients showed sleep-like slow waves that coincided with attention lapses.",
    "tone": "neutral",
    "label": [
     "SLEEP-LIKE WAVES",
@@ -250,7 +262,7 @@
      "move": "right"
     }
    ],
-   "text": "Shift workers, surgeons and truck drivers live in this zone every week, which is why sleep scientists treat it as a public safety issue.",
+   "text": "Shift workers, doctors on long calls and truck drivers can end up in this zone, which is why sleep scientists treat it as a public safety issue.",
    "tone": "neutral",
    "label": [
     "WHO LIVES HERE",
@@ -286,7 +298,7 @@
      "move": "right"
     }
    ],
-   "text": "Memory takes a hit too. After one night without sleep, a study found a deficit of about forty percent in forming new memories.",
+   "text": "Memory takes a hit too. After one night without sleep, a study found about nineteen percent fewer new memories were retained.",
    "tone": "neutral",
    "fact": "Yoo et al. 2007, Nature Neuroscience."
   },
@@ -298,7 +310,7 @@
      "move": "in"
     }
    ],
-   "text": "Hour forty-eight. The brain has been awake two full days, and it starts to make things up.",
+   "text": "Hour forty-eight. Two full days awake, and attention lapses grow longer and more frequent.",
    "tone": "tense",
    "beat": true,
    "teaser": "HOUR 72 AND BEYOND"
@@ -327,14 +339,6 @@
   {
    "kind": "manim",
    "three_d": false,
-   "text": "Researchers think hallucinations may come from dream-like activity leaking into waking, while the brain's reality filter weakens.",
-   "code": "\ntitle=Text(\"WHERE HALLUCINATIONS MAY COME FROM\",font_size=38,color=YELLOW).to_edge(UP)\na=Rectangle(width=3.5,height=3.5,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).shift(LEFT*3)\nb=Rectangle(width=3.5,height=0.4,color=RED,fill_color=RED,fill_opacity=0.8).shift(RIGHT*3+DOWN*1.55)\nla=Text(\"REALITY FILTER\",font_size=30,color=BLUE_C).next_to(a,DOWN)\nlb=Text(\"DREAM-LIKE ACTIVITY\",font_size=30,color=RED).next_to(b,DOWN)\nself.play(FadeIn(title),FadeIn(a),FadeIn(b),FadeIn(la),FadeIn(lb),run_time=1.5)\na2=Rectangle(width=3.5,height=0.8,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).move_to(a.get_bottom(),aligned_edge=DOWN)\nb2=Rectangle(width=3.5,height=3.5,color=RED,fill_color=RED,fill_opacity=0.8).move_to(b.get_bottom(),aligned_edge=DOWN)\nself.play(Transform(a,a2),Transform(b,b2),run_time=4)\nt=Text(\"AWAKE HOURS PASS\",font_size=34,color=WHITE).to_edge(DOWN)\nself.play(FadeIn(t),run_time=1)\n",
-   "tone": "reveal",
-   "beat": true
-  },
-  {
-   "kind": "manim",
-   "three_d": false,
    "text": "New York, 1959. Disc jockey Peter Tripp sat in a glass booth in Times Square and stayed awake two hundred one hours, raising money for charity.",
    "code": "\ntitle=Text(\"PETER TRIPP, 1959\",font_size=44,color=YELLOW).to_edge(UP)\nbooth=Rectangle(width=3.4,height=3.6,color=BLUE_B,stroke_width=6).shift(LEFT*3.2+DOWN*0.3)\nbl=Text(\"GLASS BOOTH\",font_size=28,color=BLUE_B).next_to(booth,DOWN)\nman=VGroup(Circle(radius=0.35,color=WHITE),Line(DOWN*0.35,DOWN*1.4,color=WHITE)).move_to(booth)\nself.play(FadeIn(title),Create(booth),FadeIn(bl),FadeIn(man),run_time=1.8)\nbar=Rectangle(width=5,height=0.5,color=GREY_B).shift(RIGHT*2.6+UP*0.3)\nfill=Rectangle(width=0.01,height=0.5,color=RED,fill_color=RED,fill_opacity=1).align_to(bar,LEFT).shift(UP*0.3)\nfill.move_to(bar.get_left(),aligned_edge=LEFT)\nlab=Text(\"0 hours\",font_size=44,color=RED).shift(RIGHT*2.6+DOWN*0.6)\nself.play(Create(bar),FadeIn(lab),run_time=1)\nfr=Rectangle(width=5,height=0.5,color=RED,fill_color=RED,fill_opacity=1).move_to(bar.get_left(),aligned_edge=LEFT)\nself.play(Transform(fill,fr),Transform(lab,Text(\"201 hours\",font_size=44,color=RED).shift(RIGHT*2.6+DOWN*0.6)),run_time=4,rate_func=linear)\n",
    "tone": "calm",
@@ -355,6 +359,14 @@
    "text": "By the third day, he reportedly saw spiders in his shoes. By the fifth, he thought a doctor was an undertaker come to bury him.",
    "tone": "tense",
    "fact": "Accounts of Tripp vary; hallucinations\\Nand paranoia are well documented."
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "Researchers think hallucinations may come from dream-like activity leaking into waking, while the brain's reality filter weakens.",
+   "code": "\ntitle=Text(\"WHERE HALLUCINATIONS MAY COME FROM\",font_size=38,color=YELLOW).to_edge(UP)\na=Rectangle(width=3.5,height=3.5,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).shift(LEFT*3)\nb=Rectangle(width=3.5,height=0.4,color=RED,fill_color=RED,fill_opacity=0.8).shift(RIGHT*3+DOWN*1.55)\nla=Text(\"REALITY FILTER\",font_size=30,color=BLUE_C).next_to(a,DOWN)\nlb=Text(\"DREAM-LIKE ACTIVITY\",font_size=30,color=RED).next_to(b,DOWN)\nself.play(FadeIn(title),FadeIn(a),FadeIn(b),FadeIn(la),FadeIn(lb),run_time=1.5)\na2=Rectangle(width=3.5,height=0.8,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).move_to(a.get_bottom(),aligned_edge=DOWN)\nb2=Rectangle(width=3.5,height=3.5,color=RED,fill_color=RED,fill_opacity=0.8).move_to(b.get_bottom(),aligned_edge=DOWN)\nself.play(Transform(a,a2),Transform(b,b2),run_time=4)\nt=Text(\"AWAKE HOURS PASS\",font_size=34,color=WHITE).to_edge(DOWN)\nself.play(FadeIn(t),run_time=1)\n",
+   "tone": "reveal",
+   "beat": true
   },
   {
    "kind": "timeline",
@@ -380,6 +392,28 @@
    "text": "Four years later in San Diego, seventeen-year-old Randy Gardner set out to beat that record for a school science project. Eleven days.",
    "tone": "calm",
    "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:130331",
+     "start": 0,
+     "move": "in"
+    },
+    {
+     "clip": "pixabay:id:338628",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "On day four, he reportedly mistook a street sign for a person. Yet on the last night he beat Dement at pinball, and then spoke clearly to the press.",
+   "tone": "reveal",
+   "beat": true,
+   "label": [
+    "DAY 4 TO DAY 11",
+    "Confused, yet still capable"
+   ],
+   "fact": "Dement's 1964 observations of Gardner:\\Nlapses, yet flashes of normal function."
   },
   {
    "kind": "manim",
@@ -418,7 +452,7 @@
      "move": "in"
     }
    ],
-   "text": "Please do not try this. Gardner was young, healthy, and watched around the clock, and even he came close to the edge.",
+   "text": "Please do not try this. Gardner was young, healthy, and watched around the clock, and he still showed slurred speech, paranoia and memory lapses.",
    "tone": "warm"
   },
   {
@@ -579,7 +613,7 @@
      "move": "right"
     }
    ],
-   "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and the clean-up never finishes.",
+   "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and the night-time clean-up it relies on gets cut short.",
    "tone": "reveal",
    "payoff": true,
    "reveal": true
@@ -796,7 +830,7 @@
     "264 HOURS"
    ]
   },
-  "description": "What happens to your brain after 24, 48, 72 hours without sleep, and beyond? From the drunk-like brain to microsleeps, hallucinations, and the clean-up your brain does at night, with the real cases of Peter Tripp (1959) and Randy Gardner (1963).\n\nIn this video:\n- Hour 0 to 24: the drunk brain\n- Hour 24 to 48: the brain that naps (local sleep)\n- 72+ hours: Peter Tripp and Randy Gardner\n- The night shift: glymphatic clearance\n\nFAQ\nHow long can a person stay awake? The best-known documented experiment is 264 hours (Gardner, 1963-64); it is dangerous and not recommended.\nWhat is a microsleep? A lapse of a fraction of a second up to about 30 s when the brain briefly sleeps.\nDoes sleep clean the brain? In mice, the space between cells widens ~60% in sleep and waste clears faster (Xie 2013).\n\nTell me in the comments: what is your longest time awake?\n\nSources: Dawson & Reid 1997, Nature 388; Williamson & Feyer 2000, Occup Environ Med; Vyazovskiy et al. 2011, Nature 472; Nir et al. 2017, Nature Medicine 23; Yoo et al. 2007, Current Biology (amygdala); Xie et al. 2013, Science 342; Shokri-Kojori et al. 2018, PNAS 115; Gulevich, Dement & Johnson 1966, Arch Gen Psychiatry (Gardner).",
+  "description": "What happens to your brain after 24, 48, 72 hours without sleep, and beyond? From the drunk-like brain to microsleeps, hallucinations, and the clean-up your brain does at night, with the real cases of Peter Tripp (1959) and Randy Gardner (1963).\n\nIn this video:\n- Awake too long\n- The drunk brain\n- The brain that naps\n- Seeing things\n- The night shift\n\nFAQ\nHow long can a person stay awake? The best-known documented experiment is 264 hours (Gardner, 1963-64); it is dangerous and not recommended.\nWhat is a microsleep? A lapse of a fraction of a second up to about 30 s when the brain briefly sleeps.\nDoes sleep clean the brain? In mice, the space between cells widens ~60% in sleep and waste clears faster (Xie 2013).\n\nTell me in the comments: what is your longest time awake?\n\nSources: Dawson & Reid 1997, Nature 388; Williamson & Feyer 2000, Occup Environ Med; Vyazovskiy et al. 2011, Nature 472; Nir et al. 2017, Nature Medicine 23; Yoo et al. 2007, Current Biology (amygdala) and Nature Neuroscience (memory); Xie et al. 2013, Science 342; Shokri-Kojori et al. 2018, PNAS 115; Gulevich, Dement & Johnson 1966, Arch Gen Psychiatry (Gardner).",
   "tags": [
    "sleep deprivation",
    "what happens when you don't sleep",
