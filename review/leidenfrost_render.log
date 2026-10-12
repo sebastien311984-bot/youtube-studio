@@ -1,0 +1,60 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 20 Mo en 1 s : Effet_Leidenfrost.webm
+Scène 0 préparée (footage, 8 s)
+Téléchargé 1 Mo en 0 s : Water_droplet_Leidenfrost_effect_cropped.JPG
+Scène 1 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 2 Mo en 0 s : Effet_leidenfrost.ogv
+Scène 1 préparée (footage, 7 s)
+Scène 2 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 5 Mo en 0 s : 11290-229221024_large.mp4
+Scène 2 préparée (footage, 8 s)
+Scène 3 préparée (annotate, 18 s)
+Scène 4 préparée (diagram, 10 s)
+Téléchargé 0 Mo en 0 s : Johann_Gottlob_Leidenfrost.jpg
+Scène 5 préparée (zoomto, 9 s)
+Scène 6 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 35 Mo en 1 s : 50007-459915425_large.mp4
+Scène 6 préparée (footage, 9 s)
+Scène 7 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 79 Mo en 3 s : 18._%D0%9B%D0%B0%D1%98%D0%B4%D0%B5%D0%BD%D1%84%D1%80%D0%BE%D
+Scène 7 préparée (footage, 9 s)
+Scène 8 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : A-sublimation-heat-engine-ncomms7390-s2.ogv
+Scène 8 préparée (footage, 7 s)
+Scène 9 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : A-sublimation-heat-engine-ncomms7390-s3.ogv
+Scène 9 préparée (footage, 8 s)
+Scène 10 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 55 Mo en 2 s : Liquid-nitrogen-demo-freeside-atlanta.webm
+Scène 10 préparée (footage, 9 s)
+Scène 11 préparée (outro, 12 s)
+Plan court (7.5 s) : ralenti x1.18 au lieu d'une boucle
+Scènes rendues en 171 s (12 tâches en parallèle)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 11 Mo en 0 s : Dry_ice_sublimation_march_29_2021.webm
+Scène 0 préparée (footage, 7 s)
+Scène 1 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 44 Mo en 2 s : Sublimation_of_dry_ice_on_water.ogv
+Scène 1 préparée (footage, 9 s)
+Scène 2 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Evaporation_of_liquid_nitrogen.jpg
+Scène 2 préparée (footage, 10 s)
+Scènes rendues en 30 s (3 tâches en parallèle)
+out/leidenfrost_short1_h.mp4 27.0 s (short autonome)
+out/leidenfrost.mp4 112.9 s
