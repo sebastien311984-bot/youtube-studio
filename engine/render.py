@@ -415,6 +415,7 @@ def main(ep_path, clips_dir, out):
         elif kind == "zoomto": JOBS.append((visuals.zoomto, (cp, d + XF, img(s["image"], clips_dir), s["box"], s.get("label"), s.get("at", 0))))
         elif kind == "layers": JOBS.append((visuals.layers, (cp, d + XF, img(s["image"], clips_dir), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))))
         elif kind == "outro": JOBS.append((visuals.outro, (cp, d + XF, img(s["image"], clips_dir) if s.get("image") else None, s.get("line1", "COULD YOU SURVIVE?"), s.get("line2", "WATCH NEXT"))))
+        elif kind == "globe": JOBS.append((visuals.globe, (cp, d + XF, img(s["texture"], clips_dir), s.get("lon0", 0), s.get("lon1", 60), s.get("lat", 15), tuple(s.get("light", (-0.6, 0.3, 0.75))), s.get("zoom0", 1), s.get("zoom1", 1), s.get("marks"), s.get("title"), s.get("sub"))))
         elif kind == "manim":
             import motion
             assets = {k: img(v, clips_dir) for k, v in s.get("assets", {}).items()}

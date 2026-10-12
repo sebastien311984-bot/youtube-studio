@@ -480,3 +480,57 @@ def hud(out, d, panels):
                           "-i", "-", "-t", str(d), "-c:v", "qtrle", out], stdin=subprocess.PIPE)
     for i in range(int(d * FPS) + 1): p.stdin.write(fr(i / FPS).tobytes())
     p.stdin.close(); p.wait()
+
+# ---------------------------------------------------------------- globe photoréaliste (texture NASA équirectangulaire)
+def globe(out, d, texture, lon0=0.0, lon1=60.0, lat=15.0, light=(-0.6, 0.3, 0.75), zoom0=1.0, zoom1=1.0, marks=None, title=None, sub=None):
+    """Planète qui tourne, éclairée (terminateur jour/nuit), halo atmosphérique, fond étoilé.
+    marks : lignes de latitude ({lat, color, label}) et points ({lon, lat, color, label}) qui suivent la rotation."""
+    import numpy as np
+    tex = Image.open(texture).convert("RGB"); tex.thumbnail((4096, 2048)); T = np.asarray(tex).astype(np.float32) / 255; th, tw = T.shape[:2]
+    L = np.array(light, float); L /= np.linalg.norm(L); marks = marks or []
+    stars = _bg(0, seed=9, tint=(2, 3, 8)); lat0 = np.radians(lat)
+    def fr(t):
+        p = smooth(t / d); lon = np.radians(lon0 + (lon1 - lon0) * p); z = zoom0 + (zoom1 - zoom0) * p
+        R = int(H * 0.40 * z); cx, cy = W // 2, H // 2
+        ys, xs = np.mgrid[-R:R, -R:R].astype(np.float32) / R; r2 = xs ** 2 + ys ** 2; m = r2 <= 1
+        zz = np.sqrt(np.clip(1 - r2, 0, 1)); X, Y, Z = xs, -ys, zz  # vue
+        # rotation inverse (inclinaison puis longitude)
+        Y2 = Y * np.cos(lat0) + Z * np.sin(lat0); Z2 = -Y * np.sin(lat0) + Z * np.cos(lat0)
+        la = np.arcsin(np.clip(Y2, -1, 1)); lo = np.arctan2(X, Z2) + lon
+        u = ((lo / (2 * np.pi) + 0.5) % 1 * (tw - 1)).astype(int); v = ((0.5 - la / np.pi) * (th - 1)).astype(int)
+        col = T[v, u]; sh = np.clip(X * L[0] + Y * L[1] + Z * L[2], 0, 1)
+        col = col * (0.12 + 0.95 * sh[..., None] ** 0.8)
+        rim = np.clip(1 - zz, 0, 1) ** 3; col = col * (1 - 0.35 * rim[..., None]) + np.array([0.35, 0.6, 1.0]) * rim[..., None] * 0.55 * (0.3 + sh[..., None])
+        im = stars.copy(); halo = Image.new("RGBA", (W, H), (0, 0, 0, 0)); hd = ImageDraw.Draw(halo)
+        hd.ellipse((cx - R * 1.06, cy - R * 1.06, cx + R * 1.06, cy + R * 1.06), fill=(90, 150, 255, 90))
+        im = Image.alpha_composite(im.convert("RGBA"), halo.filter(ImageFilter.GaussianBlur(R * 0.06)))
+        sphere = Image.fromarray((np.clip(col, 0, 1) * 255).astype(np.uint8)); mask = Image.fromarray((m * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2))
+        im.paste(sphere, (cx - R, cy - R), mask)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        def proj(lo_, la_):  # monde → écran ; None si face cachée
+            x = np.cos(la_) * np.sin(lo_ - lon); y = np.sin(la_); zc = np.cos(la_) * np.cos(lo_ - lon)
+            yv = y * np.cos(lat0) - zc * np.sin(lat0); zv = y * np.sin(lat0) + zc * np.cos(lat0)
+            return (cx + x * R, cy - yv * R) if zv > 0 else None
+        for k, mk in enumerate(marks):
+            a = smooth((t - mk.get("at", 0.8)) / 0.8)
+            if a <= 0: continue
+            c = _col(mk.get("color", "gold")) + (int(255 * a),)
+            if "lon" in mk:
+                pt = proj(np.radians(mk["lon"]), np.radians(mk["lat"]))
+                if pt:
+                    rr = 12 + 6 * math.sin(t * 5); dr.ellipse((pt[0] - rr, pt[1] - rr, pt[0] + rr, pt[1] + rr), outline=c, width=5)
+                    if mk.get("label"): dr.text((pt[0] + 26, pt[1] - 22), mk["label"], font=font("Bold", 38), fill=(255, 255, 255, int(255 * a)), stroke_width=3, stroke_fill=(0, 0, 0, int(200 * a)))
+            else:
+                pts = [proj(np.radians(L_), np.radians(mk["lat"])) for L_ in np.linspace(-180, 180, 241)]; seg = []
+                for q in pts + [None]:
+                    if q: seg.append(q)
+                    elif len(seg) > 1: dr.line(seg, fill=c, width=5); seg = []
+                    else: seg = []
+                if mk.get("label"):
+                    q = proj(lon + np.radians(40), np.radians(mk["lat"]))
+                    if q: dr.text((q[0] + 14, q[1] - 48), mk["label"], font=font("Bold", 38), fill=(255, 255, 255, int(255 * a)), stroke_width=3, stroke_fill=(0, 0, 0, int(200 * a)))
+        if title:
+            a = int(255 * smooth((t - 0.4) / 0.7)); dr.text((90, 80), title, font=font("Black", 84), fill=(255, 210, 90, a))
+            if sub: dr.text((92, 182), sub, font=font("Medium", 38), fill=(230, 235, 245, a))
+        return _glow(im.convert("RGB"), lay, 6)
+    _render(out, d, fr)

@@ -3,17 +3,32 @@
  "voice": "en-US-AndrewMultilingualNeural",
  "scenes": [
   {
-   "kind": "manim",
-   "three_d": true,
-   "code": "\nself.set_camera_orientation(phi=72*DEGREES, theta=-50*DEGREES, zoom=1.15)\nsph = Surface(lambda u, v: 2.3*np.array([np.cos(u)*np.sin(v), np.sin(u)*np.sin(v), -np.cos(v)]), u_range=[0, TAU], v_range=[0, PI], resolution=(64, 32))\nearth = TexturedSurface(sph, tex)\nglow = Sphere(radius=2.42, resolution=(32, 16)).set_color(BLUE_B).set_opacity(0.12)\neq = ParametricFunction(lambda t: 2.36*np.array([np.cos(t), np.sin(t), 0]), t_range=[0, TAU], color=YELLOW, stroke_width=5)\ntitle = Text(\"1,670 km/h\", font_size=72, color=YELLOW).to_corner(UL).shift(DOWN*0.2)\nsub = Text(\"speed at the equator\", font_size=30, color=WHITE, weight=\"NORMAL\").next_to(title, DOWN, aligned_edge=LEFT)\npole = Text(\"\u2248 0 km/h at the poles\", font_size=30, weight=\"NORMAL\").to_corner(DR)\nfor m in (title, sub, pole): self.add_fixed_in_frame_mobjects(m); m.set_opacity(0)\nself.add(glow, earth)\nself.begin_ambient_camera_rotation(rate=0.12)\nself.play(Rotate(earth, angle=PI/3, axis=OUT), run_time=1.5, rate_func=linear)\nself.play(Create(eq), title.animate.set_opacity(1), sub.animate.set_opacity(1), run_time=1.5)\narrows = VGroup(*[Arrow3D(start=2.36*np.array([np.cos(a), np.sin(a), 0]), end=2.36*np.array([np.cos(a), np.sin(a), 0]) + 1.2*np.array([-np.sin(a), np.cos(a), 0]), color=ORANGE, thickness=0.03) for a in np.linspace(0, TAU, 10, endpoint=False)])\nself.play(LaggedStart(*[FadeIn(x, shift=0.2*OUT) for x in arrows], lag_ratio=0.08), pole.animate.set_opacity(1), run_time=1.8)\nself.play(Rotate(VGroup(earth, eq, arrows), angle=PI/2, axis=OUT), run_time=3, rate_func=linear)\n",
-   "text": "Test globe.",
-   "assets": {
-    "tex": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg"
-   }
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": -20,
+   "lon1": 40,
+   "lat": 20,
+   "title": "1,670 km/h",
+   "sub": "how fast the equator is moving",
+   "marks": [
+    {
+     "lat": 0,
+     "label": "EQUATOR",
+     "at": 1.0
+    },
+    {
+     "lon": 2.35,
+     "lat": 48.85,
+     "label": "PARIS  1,100 km/h",
+     "color": "red",
+     "at": 2.0
+    }
+   ],
+   "text": "Test globe."
   },
   {
    "kind": "manim",
-   "code": "\nax = Axes(x_range=[0, 300, 50], y_range=[0, 100, 20], x_length=11, y_length=5.5, axis_config={\"color\": GREY_B, \"include_numbers\": True, \"font_size\": 28}).shift(DOWN*0.4)\nxl = Text(\"Pan temperature (\u00b0C)\", font_size=30).next_to(ax.x_axis, DOWN)\nyl = Text(\"Drop lifetime (s)\", font_size=30).rotate(PI/2).next_to(ax.y_axis, LEFT)\nself.play(Create(ax), FadeIn(xl, yl), run_time=1.5)\nf = lambda x: 80*np.exp(-(x-100)/25) if x < 190 else 5 + 70*(1-np.exp(-(x-190)/20))\ncurve = ax.plot(lambda x: min(95, f(x)) if x > 100 else 95, x_range=[100, 300, 1], color=YELLOW, stroke_width=6)\nself.play(Create(curve), run_time=3, rate_func=linear)\ndot = Dot(ax.c2p(190, f(190)), color=RED, radius=0.12)\nlab = Text(\"Leidenfrost point \u2248 200 \u00b0C\", font_size=34, color=RED).next_to(dot, UR)\nself.play(GrowFromCenter(dot), Write(lab), Flash(dot, color=RED), run_time=1.5)\n",
+   "code": "\nax = Axes(x_range=[0, 300, 50], y_range=[0, 100, 20], x_length=11, y_length=5.5, axis_config={\"color\": GREY_B, \"include_numbers\": True, \"font_size\": 28}).shift(UP*0.3)\nxl = Text(\"Pan temperature (\u00b0C)\", font_size=30).next_to(ax.x_axis, DOWN)\nyl = Text(\"Drop lifetime (s)\", font_size=30).rotate(PI/2).next_to(ax.y_axis, LEFT)\nself.play(Create(ax), FadeIn(xl, yl), run_time=1.5)\nf = lambda x: 80*np.exp(-(x-100)/25) if x < 190 else 5 + 70*(1-np.exp(-(x-190)/20))\ncurve = ax.plot(lambda x: min(95, f(x)) if x > 100 else 95, x_range=[100, 300, 1], color=YELLOW, stroke_width=6)\nself.play(Create(curve), run_time=3, rate_func=linear)\ndot = Dot(ax.c2p(190, f(190)), color=RED, radius=0.12)\nlab = Text(\"Leidenfrost point \u2248 200 \u00b0C\", font_size=34, color=RED).next_to(dot, UP+LEFT*0.2)\nself.play(GrowFromCenter(dot), Write(lab), Flash(dot, color=RED), run_time=1.5)\n",
    "text": "Test graph."
   }
  ]
