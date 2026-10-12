@@ -14,7 +14,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:133698",
+     "clip": "pixabay:id:44647",
      "start": 0,
      "move": "in"
     }
@@ -69,19 +69,10 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:22555",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:1844",
-     "start": 0,
-     "move": "right"
-    }
-   ],
+   "kind": "manim",
+   "three_d": false,
    "text": "Two forces decide when you sleep: the pressure that builds while you are awake, and a body clock that says when night falls.",
+   "code": "\ntitle=Text(\"TWO FORCES DECIDE WHEN YOU SLEEP\",font_size=40,color=YELLOW).to_edge(UP)\nb1=Rectangle(width=1.6,height=0.1,color=ORANGE,fill_color=ORANGE,fill_opacity=1).move_to(LEFT*2.5+DOWN*2.2,aligned_edge=DOWN)\nb2=Rectangle(width=1.6,height=0.1,color=BLUE,fill_color=BLUE,fill_opacity=1).move_to(RIGHT*2.5+DOWN*2.2,aligned_edge=DOWN)\nl1=Text(\"SLEEP PRESSURE\",font_size=30,color=ORANGE).move_to(LEFT*2.5+DOWN*2.8)\nl2=Text(\"BODY CLOCK\",font_size=30,color=BLUE).move_to(RIGHT*2.5+DOWN*2.8)\nself.play(FadeIn(title),FadeIn(b1),FadeIn(b2),FadeIn(l1),FadeIn(l2),run_time=1.5)\nt1=Rectangle(width=1.6,height=4.2,color=ORANGE,fill_color=ORANGE,fill_opacity=1).move_to(LEFT*2.5+DOWN*2.2,aligned_edge=DOWN)\nt2=Rectangle(width=1.6,height=2.4,color=BLUE,fill_color=BLUE,fill_opacity=1).move_to(RIGHT*2.5+DOWN*2.2,aligned_edge=DOWN)\nself.play(Transform(b1,t1),run_time=4,rate_func=linear)\nself.play(Transform(b2,t2),run_time=2)\nn1=Text(\"builds while awake\",font_size=28,color=WHITE).move_to(LEFT*2.5+UP*2.4)\nn2=Text(\"says when night falls\",font_size=28,color=WHITE).move_to(RIGHT*2.5+UP*0.9)\nself.play(FadeIn(n1),FadeIn(n2),run_time=1)\n",
    "tone": "neutral",
    "beat": true
   },
@@ -225,22 +216,6 @@
    "beat": true
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sleep_spindle_and_K-complex_in_%D9%8FEEG_recording_durin_stage_2_NREM_sleep.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "In 2017, recordings from single neurons in epilepsy patients showed sleep-like slow waves that coincided with attention lapses.",
-   "tone": "neutral",
-   "label": [
-    "SLEEP-LIKE WAVES",
-    "EEG of sleep, for comparison"
-   ],
-   "fact": "Nir et al., Nature Medicine, 2017:\\Nlocal neuron slowing and attention lapses."
-  },
-  {
    "kind": "stat",
    "value": 278,
    "suffix": " m",
@@ -248,6 +223,18 @@
    "text": "Ten seconds of microsleep at a hundred kilometers an hour: almost three hundred meters, driven blind.",
    "tone": "reveal",
    "beat": true
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "In 2017, recordings from single neurons in epilepsy patients showed sleep-like slow waves that coincided with attention lapses.",
+   "code": "\ntitle=Text(\"SLOW WAVES WHILE AWAKE\",font_size=44,color=YELLOW).to_edge(UP)\nax=Axes(x_range=[0,12,2],y_range=[-1.5,1.5,1],x_length=11,y_length=3.4,axis_config={\"color\":GREY_B}).shift(DOWN*0.3)\nself.play(FadeIn(title),Create(ax),run_time=1.2)\nfast=ax.plot(lambda x:0.35*np.sin(9*x)+0.2*np.sin(17*x),x_range=[0,5],color=ORANGE,stroke_width=5)\nslow=ax.plot(lambda x:1.1*np.sin(2.2*x),x_range=[5,12],color=RED,stroke_width=7)\nl1=Text(\"alert: fast, small waves\",font_size=30,color=ORANGE).move_to(UP*1.6+LEFT*3.5)\nl2=Text(\"lapse: slow, big waves\",font_size=30,color=RED).move_to(UP*1.6+RIGHT*3)\nself.play(Create(fast),FadeIn(l1),run_time=2.5)\nself.play(Create(slow),FadeIn(l2),run_time=3)\n",
+   "tone": "neutral",
+   "label": [
+    "EEG, ILLUSTRATION",
+    "Not real patient data"
+   ],
+   "fact": "Nir et al., Nature Medicine, 2017:\\Nlocal neuron slowing, attention lapses."
   },
   {
    "shots": [
@@ -399,11 +386,6 @@
      "clip": "pixabay:id:130331",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:338628",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "On day four, he reportedly mistook a street sign for a person. Yet on the last night he beat Dement at pinball, and then spoke clearly to the press.",
@@ -574,14 +556,10 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:4122",
-     "start": 0,
-     "move": "in"
-    }
-   ],
+   "kind": "manim",
+   "three_d": false,
    "text": "That does not prove one night causes dementia. Long-term sleep loss is a risk factor, not a sentence.",
+   "code": "\nt=Text(\"RISK FACTOR\",font_size=72,color=YELLOW).shift(UP*0.8)\nu=Text(\"NOT A SENTENCE\",font_size=72,color=WHITE).shift(DOWN*0.5)\nself.play(Write(t),run_time=1.5)\nself.play(Write(u),run_time=1.5)\nself.play(Create(Underline(u,color=ORANGE)),run_time=1)\n",
    "tone": "warm"
   },
   {
