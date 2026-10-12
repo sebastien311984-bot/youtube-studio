@@ -3,7 +3,7 @@ import json, sys
 ep = json.load(open(sys.argv[1])); errs = []; queries = []
 for i, s in enumerate(ep["scenes"]):
     k, w = s.get("kind"), len(s.get("text", "").split())
-    if k and k not in ("intro", "diagram", "stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank", "annotate", "beforeafter", "outro", "zoomto", "layers", "manim", "globe"): errs.append(f"scène {i} : type inconnu « {k} » (titre = option, pas un type)")
+    if k and k not in ("intro", "diagram", "stat", "scale", "timeline", "versus", "quiz", "kinetic", "rank", "annotate", "beforeafter", "outro", "zoomto", "layers", "globe", "manim"): errs.append(f"scène {i} : type inconnu « {k} » (titre = option, pas un type)")
     if not k and not (s.get("clip") or s.get("shots")): errs.append(f"scène {i} : plan réel sans image (clip/shots)")
     if k == "diagram":
         for el in s.get("elements", []):
@@ -47,7 +47,7 @@ for k, sp in enumerate(ep.get("shorts", []), 1):
         if (ep["scenes"] if "from" in sp else sp["scenes"])[j].get("kind") in DARK: errs.append(f"short {k} : scène {j} est une infographie → un Short doit être sur de vraies images (bloquant spectateur)")
 
 # Monétisation (contenu « inauthentique / réutilisé », règles YouTube 2025) : la vidéo doit TRANSFORMER les images
-ORIG = ("manim", "globe", "annotate", "zoomto", "layers", "beforeafter", "diagram", "scale", "timeline", "versus", "stat", "quiz", "kinetic", "rank")
+ORIG = ("annotate", "zoomto", "layers", "beforeafter", "diagram", "scale", "timeline", "versus", "stat", "quiz", "kinetic", "rank", "globe", "manim")
 _w = lambda s: max(len(s.get("text", "").split()) / 2.6, s.get("min", 0))
 _tot = sum(_w(s) for s in ep["scenes"]) or 1
 _orig = sum(_w(s) for s in ep["scenes"] if s.get("kind") in ORIG or (s.get("kind", "footage") == "footage" and (s.get("label") or s.get("fact") or s.get("hud"))))
