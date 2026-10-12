@@ -1,0 +1,154 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 70.4 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Téléchargé 0 Mo en 0 s : Nordic_Mistress_DVIDS1103008.jpg
+Téléchargé 59 Mo en 0 s : 71122-537102350_large.mp4
+Téléchargé 15 Mo en 0 s : 233772_large.mp4
+Téléchargé 34 Mo en 1 s : 367723_large.mp4
+Scène 0 préparée (footage, 9 s)
+Téléchargé 3 Mo en 0 s : Coast_Guard_aircrew_locates%2C_rescues_2_from_disabled_vesse
+Scène 1 préparée (manim, 11 s)
+Téléchargé 4 Mo en 0 s : Pararescuemen_from_the_304th_Rescue_Squadron_secure_a_covere
+Téléchargé 1 Mo en 0 s : Photograph_depicting_the_rescue_of_survivors_of_RMS_TAHITI_%
+Scène 2 préparée (footage, 10 s)
+Scène 3 : 2 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 4700-179725099_large.mp4
+Scène 3 préparée (footage, 11 s)
+Scène 4 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Humanitarian_aid_OCPA-2005-10-28-090517a.jpg
+Scène 4 préparée (footage, 8 s)
+Scène 5 préparée (manim, 9 s)
+Scène 6 préparée (stat, 10 s)
+Scène 7 : 2 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 76 Mo en 1 s : 134511-759723652_large.mp4
+Téléchargé 41 Mo en 0 s : 212057_large.mp4
+Scène 7 préparée (footage, 13 s)
+Scène 8 : 2 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 2 Mo en 0 s : Steven_Callahan_10.jpg
+Téléchargé 31 Mo en 0 s : 205011-926015732_large.mp4
+Scène 8 préparée (footage, 12 s)
+Scène 9 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 39 Mo en 1 s : 216500_large.mp4
+Scène 9 préparée (footage, 6 s)
+Téléchargé 3 Mo en 2 s : world.topo.bathy.200412.3x5400x2700.jpg
+Scène 10 préparée (globe, 15 s)
+Scène 11 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : Poom_i_jego_tratwa.jpg
+Scène 11 préparée (footage, 9 s)
+Scène 12 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Poon_Lin_Receives_Signaling_Mirror_August_1943.jpg
+Scène 12 préparée (footage, 9 s)
+Scène 13 : 1 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 8 Mo en 0 s : 2946-164933125_large.mp4
+Scène 13 préparée (footage, 11 s)
+Scène 14 préparée (globe, 18 s)
+Scène 15 préparée (manim, 11 s)
+Téléchargé 1 Mo en 1 s : GSFC_20171208_Archive_e000413~large.jpg
+curl: (22) The requested URL returned error: 403
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : PIA12334~large.jpg
+Scène 16 préparée (footage, 10 s)
+Scène 17 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 26 Mo en 0 s : 16160-269534741_large.mp4
+Scène 17 préparée (footage, 8 s)
+Scène 18 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 7 Mo en 0 s : 13704-250154065_large.mp4
+Scène 18 préparée (footage, 8 s)
+Scène 19 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 70 Mo en 0 s : 244754_large.mp4
+Scène 19 préparée (footage, 8 s)
+Scène 20 préparée (kinetic, 10 s)
+Scène 21 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 45 Mo en 0 s : 2849-163375551_large.mp4
+Scène 21 préparée (footage, 7 s)
+Scène 22 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 2 Mo en 0 s : Coast_Guard_aircrew_locates%2C_rescues_2_from_disabled_vesse
+Scène 22 préparée (footage, 8 s)
+Téléchargé 14 Mo en 0 s : 43292-435970650_large.mp4
+Téléchargé 22 Mo en 0 s : 22183-712840599_large.mp4
+Téléchargé 46 Mo en 0 s : 140111-774507949_large.mp4
+Téléchargé 13 Mo en 0 s : 132932-755272963_large.mp4
+Scène 23 préparée (footage, 16 s)
+Scènes rendues en 371 s (35 tâches en parallèle)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 38 Mo en 0 s : 283533_large.mp4
+Scène 0 préparée (footage, 8 s)
+Scène 1 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 21 Mo en 0 s : 112722-695433093_large.mp4
+Scène 1 préparée (footage, 10 s)
+Scène 2 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 48 Mo en 1 s : 244755_large.mp4
+Scène 2 préparée (footage, 8 s)
+Scène 3 préparée (globe, 8 s)
+Téléchargé 102 Mo en 2 s : 204565-924698132_large.mp4
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 113 s (5 tâches en parallèle)
+out/lost_at_sea_short1_h.mp4 41.0 s (short autonome)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 59 Mo en 0 s : 201766-916357972_large.mp4
+Scène 0 préparée (footage, 7 s)
+Scène 1 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 7 Mo en 1 s : 42481-431756056_large.mp4
+Scène 1 préparée (footage, 7 s)
+Téléchargé 50 Mo en 0 s : 1890-151167947_large.mp4
+Scène 2 préparée (footage, 6 s)
+Scène 3 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 60 Mo en 2 s : 191093-889267403_large.mp4
+Scène 3 préparée (footage, 7 s)
+Téléchargé 40 Mo en 1 s : 220593_large.mp4
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 44 s (5 tâches en parallèle)
+out/lost_at_sea_short2_h.mp4 33.8 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 23 Mo en 0 s : 205009-926015715_large.mp4
+Scène 0 préparée (footage, 8 s)
+Scène 1 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 83 Mo en 0 s : 184069-872413642_large.mp4
+Scène 1 préparée (footage, 9 s)
+Téléchargé 68 Mo en 0 s : 111263-690770660_large.mp4
+Scène 2 préparée (footage, 5 s)
+Scène 3 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 305 Mo en 4 s : 314646_large.mp4
+Scène 3 préparée (footage, 9 s)
+Téléchargé 86 Mo en 0 s : 186115-877653483_large.mp4
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 44 s (5 tâches en parallèle)
+out/lost_at_sea_short3_h.mp4 37.9 s (short autonome)
+out/lost_at_sea.mp4 248.0 s
