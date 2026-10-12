@@ -1,0 +1,48 @@
+TTS nouvel essai 1 (WSServerHandshakeError)
+TTS nouvel essai 2 (WSServerHandshakeError)
+TTS nouvel essai 3 (WSServerHandshakeError)
+TTS nouvel essai 4 (WSServerHandshakeError)
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 461, in __stream
+    async with aiohttp.ClientSession(
+  File "/home/runner/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1756, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1329, in _ws_connect
+    raise WSServerHandshakeError(
+aiohttp.client_exceptions.WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=589ccd2185724cf08853bc6a39f584ce&Sec-MS-GEC=67EE50D1B82D064E32C81DF1D3B016E8D801FDBCF78098A66FED052E56691CDE&Sec-MS-GEC-Version=1-143.0.3650.75'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 461, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 333, in main
+    words = tts(s["text"], voice, vp, s.get("tone") or AUTO_TONE.get(s.get("kind", ""), "neutral")) if s.get("text") else []
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 52, in tts
+    try: words.clear(); asyncio.run(run()); break
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 48, in run
+    async for ch in c.stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 596, in stream
+    async for message in self.__stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 461, in __stream
+    async with aiohttp.ClientSession(
+  File "/home/runner/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1756, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1329, in _ws_connect
+    raise WSServerHandshakeError(
+aiohttp.client_exceptions.WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=06adc572d18f4fd2b1d7caa984a4f239&Sec-MS-GEC=67EE50D1B82D064E32C81DF1D3B016E8D801FDBCF78098A66FED052E56691CDE&Sec-MS-GEC-Version=1-143.0.3650.75'
