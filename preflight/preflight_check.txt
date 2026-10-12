@@ -1,0 +1,5 @@
+scène 0 : type inconnu « manim » (titre = option, pas un type)
+scène 1 : type inconnu « manim » (titre = option, pas un type)
+scène 0 : l'accroche doit être de vraies images, pas une infographie (bloquant spectateur)
+monétisation : seulement 0 % du temps avec un apport visuel original (animations, annotations, encarts) → viser ≥ 45 % (bloquant monétisation)
+monétisation : description sans section « Sources » (études, NOAA/NASA…) (bloquant monétisation)

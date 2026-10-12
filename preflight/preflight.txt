@@ -1,0 +1,2 @@
+scène 0 (manim) : ANIMATION EN ÉCHEC RuntimeError('Manim : invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/hom
+scène 1 (manim) : ANIMATION EN ÉCHEC RuntimeError('Manim : invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/hom
