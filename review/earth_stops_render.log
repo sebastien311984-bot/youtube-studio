@@ -1,0 +1,163 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 60.6 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 0 préparée (footage, 8 s)
+Scène 1 préparée (footage, 5 s)
+Scène 2 préparée (footage, 6 s)
+Scène 3 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 7 s)
+Scène 4 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 4 préparée (footage, 10 s)
+Scène 5 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 5 préparée (footage, 8 s)
+Scène 6 préparée (annotate, 18 s)
+Scène 7 préparée (footage, 5 s)
+Scène 8 préparée (footage, 5 s)
+Scène 9 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 9 préparée (footage, 8 s)
+Scène 10 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 10 préparée (footage, 7 s)
+Scène 11 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 11 préparée (footage, 7 s)
+Scène 12 préparée (footage, 6 s)
+Scène 13 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 13 préparée (footage, 10 s)
+Scène 14 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 14 préparée (footage, 9 s)
+Scène 15 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 15 préparée (footage, 10 s)
+Scène 16 préparée (footage, 6 s)
+Scène 17 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 17 préparée (footage, 9 s)
+Scène 18 préparée (footage, 6 s)
+Scène 19 préparée (zoomto, 8 s)
+Scène 20 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 20 préparée (footage, 9 s)
+Scène 21 préparée (footage, 4 s)
+Scène 22 préparée (footage, 4 s)
+Scène 23 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 23 préparée (footage, 9 s)
+Scène 24 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 24 préparée (footage, 7 s)
+Scène 25 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 25 préparée (footage, 7 s)
+Scène 26 préparée (quiz, 7 s)
+Scène 27 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 27 préparée (footage, 9 s)
+Scène 28 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 28 préparée (footage, 9 s)
+Scène 29 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 29 préparée (footage, 8 s)
+Scène 30 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 30 préparée (footage, 10 s)
+Scène 31 préparée (footage, 5 s)
+Scène 32 préparée (footage, 5 s)
+Scène 33 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 33 préparée (footage, 8 s)
+Scène 34 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 34 préparée (footage, 7 s)
+Scène 35 préparée (footage, 5 s)
+Scène 36 préparée (footage, 6 s)
+Scène 37 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 37 préparée (footage, 8 s)
+Scène 38 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 38 préparée (footage, 9 s)
+Scène 39 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 39 préparée (footage, 7 s)
+Scène 40 préparée (footage, 5 s)
+Scène 41 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 41 préparée (footage, 10 s)
+Scène 42 préparée (footage, 4 s)
+Scène 43 préparée (kinetic, 10 s)
+Scène 44 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 44 préparée (footage, 7 s)
+Scène 45 : 1 plan(s) pour 11 s → plans allongés, aucun plan répété
+Scène 45 préparée (footage, 11 s)
+Scène 46 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 46 préparée (footage, 7 s)
+Scène 47 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 47 préparée (footage, 9 s)
+Scène 48 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 48 préparée (footage, 10 s)
+Scène 49 préparée (footage, 4 s)
+Scène 50 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 50 préparée (footage, 9 s)
+Scène 51 : 1 plan(s) pour 15 s → plans allongés, aucun plan répété
+Scène 51 préparée (footage, 15 s)
+Scène 52 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 52 préparée (footage, 9 s)
+Scène 53 préparée (outro, 15 s)
+Plan court (15.1 s) : ralenti x1.03 au lieu d'une boucle
+Scènes rendues en 555 s (54 tâches en parallèle)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 0 préparée (footage, 7 s)
+Scène 1 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 6 s)
+Scène 2 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 7 s)
+Scène 3 préparée (footage, 4 s)
+Scène 4 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 4 préparée (footage, 7 s)
+Scène 5 préparée (footage, 6 s)
+Scènes rendues en 42 s (6 tâches en parallèle)
+out/earth_stops_short1_h.mp4 37.8 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 préparée (footage, 5 s)
+Scène 1 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 7 s)
+Scène 2 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 6 s)
+Scène 3 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 7 s)
+Scène 4 préparée (footage, 5 s)
+Scène 5 préparée (footage, 6 s)
+Scènes rendues en 53 s (6 tâches en parallèle)
+out/earth_stops_short2_h.mp4 37.2 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 préparée (footage, 5 s)
+Scène 1 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 8 s)
+Scène 2 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 6 s)
+Scène 3 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 7 s)
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 45 s (5 tâches en parallèle)
+out/earth_stops_short3_h.mp4 32.5 s (short autonome)
+out/earth_stops.mp4 428.9 s
