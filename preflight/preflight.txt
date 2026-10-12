@@ -1,0 +1,3 @@
+#24 scène 27 : ILLISIBLE rg/wikipedia/commons/1/1f/Foucault_pendulum_at_north_pole_animated.gif (AttributeError("'NoneType' object has no attribute 'lower'"))
+#25 scène 28 : ILLISIBLE ad.wikimedia.org/wikipedia/commons/a/a1/Foucault_pendulum_animated.gif (AttributeError("'NoneType' object has no attribute 'lower'"))
+#25 (scène 28) ≈ #10 (scène 27) QUASI-DOUBLON : Foucault_pendulum_animated.gif
