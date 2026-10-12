@@ -166,6 +166,15 @@ def fetch(src, clips_dir):
             print(f"Téléchargement abandonné ({time.time() - t0:.0f} s) → plan retiré : {src.rsplit('/', 1)[-1][:60]}", flush=True); return None
         if local.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".webp")): LAST_STILL[0] = local
         print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
+    if local.lower().endswith((".svg", ".gif", ".tif", ".tiff")):  # formats que ffmpeg lit mal → PNG (sinon la vidéo est tronquée)
+        png = local.rsplit(".", 1)[0] + ".conv.png"
+        if not os.path.exists(png):
+            for cmd in (["rsvg-convert", "-w", "2400", "-b", "white", "-o", png, local], ["convert", "-density", "200", "-background", "white", local + "[0]", png]):
+                try:
+                    if subprocess.run(cmd, capture_output=True).returncode == 0 and os.path.exists(png): break
+                except FileNotFoundError: pass
+        if not os.path.exists(png): print(f"::error::conversion impossible : {local}", flush=True); return None
+        local = png; LAST_STILL[0] = png
     return local
 
 def clip(src, start, d, out, move, cut_bottom=0):
@@ -499,6 +508,8 @@ def main(ep_path, clips_dir, out):
     with ThreadPoolExecutor(6) as ex:  # pistes audio doublées en parallèle (même musique, même minutage)
         list(ex.map(lambda lt: dub_track(ep, lt[0], lt[1], voice_slots, total, cuts, risers, work, out.replace(".mp4", f"_{lt[0]}.m4a")),
                     ep.get("dub", {}).items()))
+    vd = dur(out)
+    if vd < total - 2: raise SystemExit(f"::error::vidéo tronquée : {vd:.1f} s au lieu de {total:.1f} s (un plan illisible a coupé le montage)")
     review_sheet(out, review)
     b = os.path.basename(out)[:-4]; langs = list(ep.get("dub", {}))
     open(out.replace(".mp4", "_CONSIGNES_CHROME.md"), "w").write(f"""# Consignes pour Claude dans Chrome — {ep.get('youtube', {}).get('title', ep['title'])}
