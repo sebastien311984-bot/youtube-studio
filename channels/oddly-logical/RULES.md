@@ -7,9 +7,9 @@ Deux parties : des GARDE-FOUS courts (non négociables, vérifiés par les outil
 ## A. Garde-fous (non négociables)
 1. **Droits** : chaque image/son a une licence vérifiée (NASA/NOAA/USGS/ESA, Commons, archives, études CC BY, Pixabay en `pixabay:id:N` choisi à l'œil sur la planche). Crédits dans la description.
 2. **Vérité** : factchecker sur chaque script ; fourchettes publiées ; le titre et la miniature tiennent leur promesse.
-3. **Cohérence image ↔ voix** : chaque plan montre ce que dit la phrase. Aucun plan répété (photo ou vidéo). Pas de plan hors sujet « pour remplir » : si l'image manque, on raccourcit ou on anime.
+3. **Cohérence image ↔ voix** : chaque plan montre ce que dit SA phrase. Le moteur répartit le texte d'une scène à parts égales entre ses plans → 1 scène = 1 idée = 1 plan (plusieurs plans seulement s'ils montrent la même chose). Pas d'animal/décor « voisin » à la place du sujet. Aucun plan répété (photo ou vidéo). Pas de plan hors sujet « pour remplir » : si l'image manque, on raccourcit ou on anime.
 4. **Monétisation** (contenu original, pas « images + voix ») : raisonnement et mise en scène à nous, apport visuel original visible (≥ 45 % du temps), section « Sources », voix/musique/sons travaillés.
-5. **Contrôle avant rendu** : check_episode → preflight (on REGARDE les planches) → oddly-viewer → un seul rendu → je regarde la planche du rendu avant de livrer.
+5. **Contrôle avant rendu** : check_episode → preflight (on REGARDE les planches) → oddly-viewer → un seul rendu → **contrôle final obligatoire** : oddly-viewer lit `<nom>_review.jpg` (image + phrase dite à chaque plan) et signale tout décalage ; on corrige et on re-rend AVANT de livrer.
 6. **Jamais** de publication sans accord explicite de Sébastien (programmation via pack Chrome).
 
 ## B. Méthode créative (à repenser pour CHAQUE vidéo)
