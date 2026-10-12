@@ -1,3 +1,4 @@
+import os
 """Plans générés par le moteur : intro cinématique, schémas « main qui dessine », chiffres chocs.
 Chaque fonction écrit un MP4 1920x1080 30 i/s de durée d."""
 import math, random, subprocess
@@ -24,7 +25,8 @@ def _render(out, d, frame_fn):
     p.stdin.close(); p.wait()
 
 # ---------------------------------------------------------------- intro cinématique
-def intro(out, d=4.0, name="ODDLY LOGICAL SCIENCE", tagline="THE UNIVERSE IS STRANGER THAN YOU THINK"):
+def intro(out, d=4.0, name=None, tagline="THE UNIVERSE IS STRANGER THAN YOU THINK"):
+    name = name if name is not None else os.environ.get("CHANNEL_NAME", "").upper()
     rnd = random.Random(11)
     stars = [(rnd.random() * W, rnd.random() * H, rnd.random()) for _ in range(260)]
     def fr(t):
@@ -372,7 +374,7 @@ def outro(out, d, src=None, line1="COULD YOU SURVIVE?", line2="WATCH NEXT"):
         im = base.copy() if base else _bg(t)
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
         a = ease(t / 0.8); A = int(255 * a)
-        dr.text((W / 2, 120), "ODDLY LOGICAL SCIENCE", font=font("Black", 64), fill=(255, 255, 255, A), anchor="mm")
+        os.environ.get("CHANNEL_NAME") and dr.text((W / 2, 120), os.environ["CHANNEL_NAME"].upper(), font=font("Black", 64), fill=(255, 255, 255, A), anchor="mm")
         dr.text((W / 2, 190), line1, font=font("SemiBold", 34), fill=(255, 200, 64, A), anchor="mm")
         p = ease((t - 0.4) / 0.9)
         x0, y0, x1, y1 = box; g = 6 + 4 * math.sin(t * 3)
