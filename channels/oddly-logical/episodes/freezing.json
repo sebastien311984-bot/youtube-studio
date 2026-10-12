@@ -1,7 +1,7 @@
 {
  "title": "Your Body Freezing: What Happens Degree by Degree",
  "voice": "en-US-AndrewMultilingualNeural",
- "credits": "Footage: Pixabay (free license); US Coast Guard / Wikimedia Commons (public domain); State Library of New South Wales via Wikimedia Commons. Animations: original.",
+ "credits": "Footage: Pixabay (free license); US Coast Guard / Wikimedia Commons (public domain); State Library of New South Wales via Wikimedia Commons. Animations: original. Snow cave and hypothermia training photos: Wikimedia Commons (see file pages for authors and licenses).",
  "strategy": {
   "viewer": "Curious survival-and-body viewers who clicked after 'Space Without a Suit' and 'Lost at Sea': they want to know what actually happens inside you, in order, in the cold.",
   "hook": "In freezing weather your own brain makes you take your clothes off, and a woman came back from 13.7 C.",
@@ -45,7 +45,7 @@
      "from": 37,
      "unit": " C",
      "sub": "NORMAL",
-     "pos": "bl",
+     "pos": "tr",
      "at": 0.8,
      "color": "green"
     }
@@ -57,8 +57,8 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:29314",
-     "start": 2,
+     "clip": "pixabay:id:191289",
+     "start": 0,
      "move": "left"
     }
    ],
@@ -100,46 +100,23 @@
    "tone": "tense"
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:200327",
-     "start": 0,
-     "move": "out"
-    }
-   ],
-   "text": "Wet clothes drain heat far faster than dry ones, because water pulls heat out of you much faster than air does. Your body is losing a battle it cannot see.",
+   "text": "Wet clothes drain heat far faster than dry ones, because water pulls heat out of you much faster than air does.",
+   "tone": "tense",
+   "kind": "manim",
+   "code": "\nt=Text(\"WET CLOTHES = A HEAT LEAK\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\ndef person(x,c):\n    h=Circle(radius=0.4,color=WHITE,stroke_width=5).move_to([x,1.6,0])\n    b=Rectangle(width=1.1,height=1.8,color=c,fill_color=c,fill_opacity=0.45,stroke_width=5).move_to([x,0.3,0])\n    return VGroup(h,b)\ndry=person(-3,GREY); wet=person(3,BLUE)\nl1=Text(\"DRY JACKET\",font_size=30,color=WHITE).move_to([-3,-1.4,0]); l2=Text(\"WET JACKET\",font_size=30,color=BLUE).move_to([3,-1.4,0])\nself.play(FadeIn(t),FadeIn(dry),FadeIn(wet),FadeIn(l1),FadeIn(l2),run_time=1)\ndrops=VGroup(*[Dot([3+np.random.uniform(-0.5,0.5),1.0-0.4*i,0],radius=0.07,color=BLUE) for i in range(6)])\nself.play(FadeIn(drops),run_time=0.6)\na1=VGroup(*[Arrow([-3.6+0.6*i,-0.4,0],[-3.6+0.6*i,-0.9,0],color=ORANGE,buff=0,stroke_width=3) for i in range(2)])\na2=VGroup(*[Arrow([2.4+0.3*i,0.3,0],[1.2-0.1*i+0.3*i,0.3,0],color=RED,buff=0,stroke_width=8) for i in range(1)])\narr_w=VGroup(*[Arrow([3.7,0.9-0.5*i,0],[5.5,0.9-0.5*i,0],color=RED,buff=0,stroke_width=10) for i in range(4)])\narr_d=Arrow([-2.4,0.3,0],[-1.6,0.3,0],color=ORANGE,buff=0,stroke_width=3)\nself.play(GrowArrow(arr_d),*[GrowArrow(a) for a in arr_w],run_time=1.5)\nr=Text(\"WATER STEALS HEAT FASTER THAN AIR\",font_size=30,color=YELLOW).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(r),run_time=0.6); self.wait(1.5)\n"
+  },
+  {
+   "text": "Then it burns fuel. Muscles twitch hundreds of times a minute. Shivering.",
+   "kind": "manim",
+   "code": "\nt=Text(\"SHIVERING: YOUR MUSCLES BURN FUEL\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\nfig=VGroup(Circle(radius=0.5,color=WHITE,stroke_width=6).move_to(UP*1.7),Line(UP*1.2,DOWN*0.7,color=WHITE,stroke_width=8),Line(UP*0.9,LEFT*1.4+DOWN*0.3,color=WHITE,stroke_width=8),Line(UP*0.9,RIGHT*1.4+DOWN*0.3,color=WHITE,stroke_width=8),Line(DOWN*0.7,LEFT*0.8+DOWN*2.6,color=WHITE,stroke_width=8),Line(DOWN*0.7,RIGHT*0.8+DOWN*2.6,color=WHITE,stroke_width=8)).shift(LEFT*2.5+DOWN*0.2)\nself.play(FadeIn(t),FadeIn(fig),run_time=0.8)\nheat=VGroup(*[Text(\"heat\",font_size=26,color=RED).move_to(LEFT*2.5+RIGHT*np.random.uniform(-1.3,1.3)+UP*np.random.uniform(-1,2)) for _ in range(6)])\nfor i in range(10):\n    self.play(fig.animate.shift(RIGHT*0.12*(1 if i%2==0 else -1)),run_time=0.12,rate_func=linear)\nfuel=Text(\"FUEL: SUGAR\",font_size=34,color=YELLOW).move_to(RIGHT*3.5+UP*0.8)\nbar=Rectangle(width=3,height=0.5,color=YELLOW,fill_color=YELLOW,fill_opacity=0.8,stroke_width=3).move_to(RIGHT*3.5)\nself.play(FadeIn(fuel),FadeIn(bar),run_time=0.5)\nfor i in range(6):\n    self.play(fig.animate.shift(RIGHT*0.12*(1 if i%2==0 else -1)),run_time=0.1,rate_func=linear)\nself.play(bar.animate.stretch_to_fit_width(1.2,about_edge=LEFT),FadeIn(heat),run_time=2.5)\nself.wait(0.8)\n",
    "tone": "tense"
   },
   {
    "shots": [
     {
-     "clip": "pixabay:id:325502",
+     "clip": "pixabay:id:249486",
      "start": 0,
-     "move": "right"
-    }
-   ],
-   "text": "Then it burns fuel. Muscles twitch hundreds of times a minute. Shivering.",
-   "hud": [
-    {
-     "type": "counter",
-     "label": "Core temperature",
-     "value": 35,
-     "from": 37,
-     "unit": " C",
-     "sub": "SHIVERING",
-     "pos": "bl",
-     "at": 0.6,
-     "color": "orange"
-    }
-   ],
-   "fact": "Doctors call 35 C the start of mild\\Nhypothermia, below 35 C core temperature."
-  },
-  {
-   "shots": [
-    {
-     "clip": "pixabay:id:7821",
-     "start": 0,
-     "move": "right"
+     "move": "in"
     }
    ],
    "text": "It can multiply your heat production several times over, and at thirty-five degrees it is working flat out."
@@ -186,14 +163,10 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:268251",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "You cannot work a zipper."
+   "text": "You cannot work a zipper.",
+   "kind": "manim",
+   "code": "\nt=Text(\"COLD HANDS: NUMB AND CLUMSY\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\nzl=Rectangle(width=0.5,height=4,color=GREY,fill_color=GREY,fill_opacity=0.5).move_to(LEFT*1.5+DOWN*0.3)\nzr=Rectangle(width=0.5,height=4,color=GREY,fill_color=GREY,fill_opacity=0.5).move_to(LEFT*0.9+DOWN*0.3)\npull=RoundedRectangle(width=0.5,height=0.8,corner_radius=0.1,color=YELLOW,fill_color=YELLOW,fill_opacity=0.9).move_to(LEFT*1.2+DOWN*1.8)\nhand=Circle(radius=0.55,color=BLUE,fill_color=BLUE,fill_opacity=0.5,stroke_width=6).move_to(RIGHT*2+DOWN*1.8)\nhl=Text(\"FINGERS\",font_size=28,color=BLUE).next_to(hand,DOWN,buff=0.3)\nself.play(FadeIn(t),FadeIn(zl),FadeIn(zr),FadeIn(pull),FadeIn(hand),FadeIn(hl),run_time=1)\nfor i in range(3):\n    self.play(hand.animate.move_to(pull.get_center()+RIGHT*0.7),run_time=0.5)\n    self.play(hand.animate.move_to(RIGHT*2+DOWN*1.2+UP*0.3*i),run_time=0.5)\nx=Text(\"CAN'T GRIP THE ZIPPER\",font_size=34,color=RED).to_edge(DOWN,buff=0.6)\nself.play(FadeIn(x),run_time=0.6); self.wait(0.8)\n",
+   "tone": "tense"
   },
   {
    "shots": [
@@ -310,16 +283,10 @@
    "reveal": true
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/26/Southern_party_Antarctica_SLNSW_FL1091888.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
    "text": "Rescuers find victims half-naked, clothes neatly folded or scattered, in the middle of blizzards. Police have sometimes suspected assault. It was the cold.",
-   "fact": "Paradoxical undressing is reported in\\Nmany fatal cold-exposure cases.",
    "tone": "warm",
+   "kind": "manim",
+   "code": "\nt=Text(\"FOUND HALF-NAKED IN THE SNOW\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\nsnow=Rectangle(width=12,height=2.2,color=WHITE,fill_color=WHITE,fill_opacity=0.15,stroke_width=0).move_to(DOWN*2.4)\ndef cloth(x,c,w):\n    return Rectangle(width=w,height=0.5,color=c,fill_color=c,fill_opacity=0.7,stroke_width=3).move_to([x,-1.6,0])\nitems=VGroup(cloth(-4,RED,1.3),cloth(-1.5,BLUE,1.0),cloth(1.2,GREEN,1.2),cloth(3.8,ORANGE,0.9))\nlabs=VGroup(*[Text(n,font_size=26,color=WHITE).next_to(c,UP,buff=0.2) for n,c in zip([\"COAT\",\"GLOVES\",\"SHIRT\",\"HAT\"],items)])\nself.play(FadeIn(t),FadeIn(snow),run_time=0.8)\nfor c,l in zip(items,labs): self.play(FadeIn(c,shift=DOWN*0.4),FadeIn(l),run_time=0.6)\nn=Text(\"CLOTHES LEFT BEHIND, OFTEN NEATLY\",font_size=32,color=YELLOW).move_to(UP*0.8)\nself.play(FadeIn(n),run_time=0.7); self.wait(1.5)\n",
    "label": [
     "REAL CASES",
     "FOUND HALF-NAKED"
@@ -328,7 +295,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:2515",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/01/Snow_cave_%285419973795%29.jpg",
      "start": 0,
      "move": "in"
     }
@@ -345,9 +312,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:377384",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/5/59/Snow_cave.jpg",
      "start": 0,
-     "move": "right"
+     "move": "in"
     }
    ],
    "text": "It looks like an animal hiding to die.",
@@ -377,7 +344,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:154726",
+     "clip": "pixabay:id:22139",
      "start": 0,
      "move": "in"
     }
@@ -404,14 +371,10 @@
    "beat": true
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/90/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-081.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "Atrial fibrillation first, then ventricular fibrillation."
+   "text": "Atrial fibrillation first, then ventricular fibrillation.",
+   "kind": "manim",
+   "code": "\nt=Text(\"A COLD HEART LOSES ITS RHYTHM\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\nax=Axes(x_range=[0,12,1],y_range=[-2,2,1],x_length=11,y_length=3.5,tips=False,axis_config={\"color\":GREY}).shift(DOWN*0.3)\ndef ecg(x):\n    if x<6:\n        p=x%2\n        return 1.6 if 0.9<p<1.0 else (-0.5 if 1.0<=p<1.1 else 0.0)\n    return 0.9*np.sin(9*x)*np.sin(3.1*x)\nc=ax.plot(ecg,x_range=[0,12,0.01],color=GREEN,stroke_width=5,use_smoothing=False)\na=Text(\"NORMAL\",font_size=30,color=GREEN).move_to(LEFT*3.2+UP*2)\nb=Text(\"FIBRILLATION: CHAOS\",font_size=30,color=RED).move_to(RIGHT*3+UP*2)\nself.play(FadeIn(t),Create(ax),FadeIn(a),run_time=1)\nself.play(Create(c),run_time=4,rate_func=linear)\nself.play(FadeIn(b),run_time=0.5); self.wait(0.5)\n",
+   "tone": "tense"
   },
   {
    "shots": [
@@ -430,22 +393,17 @@
    ]
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Medical_students_take_to_the_water_to_learn_about_hypothermia_150407-G-NW142-142.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
    "text": "A rough lift, a sudden drop, even a rushed transfer can tip a cold heart into a fatal rhythm.",
-   "tone": "tense"
+   "tone": "tense",
+   "kind": "manim",
+   "code": "\nt=Text(\"GENTLE HANDLING SAVES HEARTS\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\nground=Line(LEFT*6,RIGHT*6,color=GREY).shift(DOWN*2.5)\nst=Rectangle(width=4,height=0.3,color=WHITE,fill_color=GREY,fill_opacity=0.7).move_to(DOWN*1.0)\npt=Ellipse(width=3.2,height=0.7,color=BLUE,fill_color=BLUE,fill_opacity=0.5).move_to(DOWN*0.6)\ng=VGroup(st,pt)\nhl=Text(\"HEART\",font_size=26,color=RED).move_to(g.get_center()+UP*0.9)\nself.play(FadeIn(t),Create(ground),FadeIn(g),FadeIn(hl),run_time=1)\nself.play(g.animate.shift(UP*0.8),hl.animate.shift(UP*0.8),run_time=1.5)\nok=Text(\"SLOW, LEVEL LIFT: SAFE\",font_size=30,color=GREEN).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(ok),run_time=0.5)\nself.play(g.animate.shift(DOWN*0.8).rotate(0.25),hl.animate.set_color(YELLOW),run_time=0.35)\nbad=Text(\"ROUGH DROP: RISK OF FATAL RHYTHM\",font_size=30,color=RED).move_to(DOWN*2.9)\nself.play(Transform(ok,bad),Flash(hl,color=RED),run_time=1.0); self.wait(1.5)\n"
   },
   {
    "shots": [
     {
-     "clip": "pixabay:id:255499",
+     "clip": "pixabay:id:49815",
      "start": 0,
-     "move": "out"
+     "move": "in"
     }
    ],
    "text": "Slow pulse. Shallow breathing. Eventually, no pulse you can feel. By every ordinary sign, this person is dead.",
@@ -504,7 +462,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:65037",
+     "clip": "pixabay:id:145344",
      "start": 0,
      "move": "in"
     }
@@ -536,7 +494,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:7012",
+     "clip": "pixabay:id:136458",
      "start": 0,
      "move": "in"
     }
@@ -564,7 +522,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:191289",
+     "clip": "pixabay:id:49809",
      "start": 0,
      "move": "out"
     }
@@ -646,14 +604,9 @@
      "text": "It happens in severe hypothermia, below about thirty degrees."
     },
     {
-     "shots": [
-      {
-       "clip": "pixabay:id:325502",
-       "start": 2,
-       "move": "out"
-      }
-     ],
-     "text": "Your skin vessels tire and open, blood floods the surface, and you feel burning hot."
+     "text": "Your skin vessels tire and open, blood floods the surface, and you feel burning hot.",
+     "kind": "manim",
+     "code": "\nt=Text(\"BLOOD FLOODS THE SKIN\",font_size=40,color=ORANGE).to_edge(UP,buff=0.4)\narm=RoundedRectangle(width=7,height=1.6,corner_radius=0.7,color=WHITE,fill_color=BLUE,fill_opacity=0.5,stroke_width=5).shift(DOWN*0.3)\nself.play(FadeIn(t),FadeIn(arm),run_time=0.8)\ndots=VGroup(*[Dot([np.random.uniform(-3,3),np.random.uniform(-0.8,0.5),0],radius=0.1,color=RED) for _ in range(22)])\nself.play(FadeIn(dots),arm.animate.set_fill(RED,opacity=0.75),run_time=2)\nx=Text(\"SKIN FLUSHED: YOU FEEL BURNING HOT\",font_size=30,color=YELLOW).to_edge(DOWN,buff=0.7)\nself.play(FadeIn(x),run_time=0.6); self.wait(1)\n"
     },
     {
      "shots": [
@@ -695,8 +648,8 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:7012",
-       "start": 2,
+       "clip": "pixabay:id:136458",
+       "start": 1,
        "move": "in"
       }
      ],
@@ -706,8 +659,8 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:65037",
-       "start": 3,
+       "clip": "pixabay:id:145344",
+       "start": 1,
        "move": "left"
       }
      ],
@@ -769,8 +722,9 @@
   "scene": 0,
   "text": "30 DEGREES",
   "sub": "YOU UNDRESS",
-  "shift": 0.2,
-  "circle": true
+  "shift": false,
+  "circle": true,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hypothermia_Training%2C_Marine_Mountain_Warfare_Center%2C_California_USA.jpg"
  },
  "youtube": {
   "title": "Your Body Freezing: What Happens Degree by Degree",
