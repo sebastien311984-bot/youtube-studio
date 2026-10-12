@@ -7,6 +7,8 @@ import os, subprocess, textwrap, shutil
 HEADER = '''from manim import *
 import numpy as np
 config.background_color = "#0b0f1a"
+Text.set_default(font="Inter Display", weight="BOLD")
+MarkupText.set_default(font="Inter Display")
 def img(path): return path
 class S(%s):
     def construct(self):
