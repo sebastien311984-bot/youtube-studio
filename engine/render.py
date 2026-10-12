@@ -52,6 +52,25 @@ def piper_tts(text, path, tone="neutral"):
         dd = (total - 0.3) * (len(w) + 2) / n; out.append((t, dd * 0.9, w.strip(".,;:!?\"'—"))); t += dd
     return out
 
+KOKORO = [None]
+KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_michael")
+def kokoro_tts(text, path, tone="neutral"):
+    """Voix neuronale libre (Kokoro-82M, Apache 2.0) — qualité studio, minutage des mots exact."""
+    import numpy as _np, soundfile as sf
+    if KOKORO[0] is None:
+        from kokoro import KPipeline; KOKORO[0] = KPipeline(lang_code="a")
+    speed = {"calm": 0.92, "dramatic": 0.9, "excited": 1.06, "urgent": 1.08}.get(tone, 1.0)
+    audio, words, off = [], [], 0.0
+    for r in KOKORO[0](text, voice=KOKORO_VOICE, speed=speed):
+        a = r.audio.numpy() if hasattr(r.audio, "numpy") else _np.asarray(r.audio)
+        for tk in (r.tokens or []):
+            if tk.start_ts is not None and tk.text.strip(".,;:!?\"'— ") :
+                words.append((off + tk.start_ts, max(0.05, (tk.end_ts or tk.start_ts + 0.2) - tk.start_ts), tk.text))
+        audio.append(a); off += len(a) / 24000
+    wav = path + ".wav"; sf.write(wav, _np.concatenate(audio), 24000)
+    sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "libmp3lame", "-q:a", "2", path)
+    return words
+
 def tts(text, voice, path, tone="neutral"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
@@ -64,6 +83,12 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
+    if BACKEND[0] in (None, "kokoro"):  # voix principale : Kokoro (libre, sans Microsoft)
+        try:
+            words[:] = kokoro_tts(text, path, tone); BACKEND[0] = "kokoro"; os.environ["TTS_BACKEND"] = "kokoro"; humanize(path); return words
+        except Exception as e:
+            if BACKEND[0] == "kokoro": raise
+            print(f"::warning::Kokoro indisponible ({e!r}) → Edge/Piper", flush=True); BACKEND[0] = None
     if BACKEND[0] is None:  # choix UNE fois par vidéo (voix homogène) : Edge, sinon Edge avec version récente, sinon Piper local
         for ver in [None] + [f"{m}.0.3800.0" for m in range(150, 143, -1)]:
             if ver:
