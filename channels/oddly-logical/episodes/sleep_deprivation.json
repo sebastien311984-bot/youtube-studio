@@ -9,7 +9,7 @@
   "payoff": "A brain that will not sleep starts sleeping in pieces (local sleep, microsleeps) while awake, and without full sleep its cleaning flow (glymphatic) never completes.",
   "takeaway": "Stay awake long enough and your brain starts sleeping without you."
  },
- "credits": "Video: Pixabay (various authors, Pixabay Content License). Colourised axial MRI brain scan: Wikimedia Commons, CC BY-SA 4.0. MRI Brain T1 Sag (12): 511KeV, CC BY-SA 4.0, via Wikimedia Commons. EEG record from a sleeping boy: Jemaleddin Cole, CC BY-SA 2.0, via Wikimedia Commons. Sleep spindle and K-complex EEG: CC0, via Wikimedia Commons.",
+ "credits": "Video: Pixabay (various authors, Pixabay Content License). Colourised axial MRI brain scan: Wikimedia Commons, CC BY-SA 4.0. MRI Brain T1 Sag (12): 511KeV, CC BY-SA 4.0, via Wikimedia Commons. EEG record from a sleeping boy: Jemaleddin Cole, CC BY-SA 2.0, via Wikimedia Commons. Sleep spindle and K-complex EEG: CC0, via Wikimedia Commons. Randy Gardner 1964 photographs (tuning-fork test, sleeping, drinking water, congratulations, EEG preparation): public domain, via Wikimedia Commons.",
  "scenes": [
   {
    "shots": [
@@ -28,12 +28,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:87884",
-     "start": 0,
-     "move": "left"
-    },
-    {
-     "clip": "pixabay:id:23611",
+     "clip": "pixabay:id:83874",
      "start": 0,
      "move": "in"
     }
@@ -52,11 +47,6 @@
      "clip": "pixabay:id:151295",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:149477",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "We are going to follow one human brain, hour by hour, past the point where it begs to shut down.",
@@ -79,14 +69,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:21223",
+     "clip": "pixabay:id:61621",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:21222",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Hour zero. You wake, and a chemical called adenosine starts to build up, one minute of sleep pressure at a time.",
@@ -122,14 +107,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:215751",
+     "clip": "pixabay:id:232538",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:83875",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Around hour twenty, reaction times slow and mistakes pile up. Tasks that need steady attention, like watching a dashboard, fall apart first.",
@@ -141,11 +121,6 @@
      "clip": "pixabay:id:3595",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:4947",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Caffeine does not erase that pressure. It blocks the receptors that sense it, so the debt keeps growing in the dark.",
@@ -155,14 +130,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:12769",
+     "clip": "pixabay:id:133698",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:254449",
-     "start": 0,
-     "move": "left"
     }
    ],
    "text": "That is why drowsy driving kills. Not hours of sleep at the wheel, just seconds, with nobody noticing.",
@@ -176,14 +146,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:133699",
+     "clip": "pixabay:id:80615",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:88921",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "A microsleep is the brain's emergency shutdown. Your eyes may stay open, but for a moment nothing is being processed.",
@@ -239,17 +204,12 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:1101",
+     "clip": "pixabay:id:83875",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:18083",
-     "start": 0,
-     "move": "right"
     }
    ],
-   "text": "Shift workers, doctors on long calls and truck drivers can end up in this zone, which is why sleep scientists treat it as a public safety issue.",
+   "text": "Night-shift workers and exhausted office staff can end up in this zone, which is why sleep scientists treat it as a public safety issue.",
    "tone": "neutral",
    "label": [
     "WHO LIVES HERE",
@@ -278,11 +238,6 @@
      "clip": "pixabay:id:1058",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:159029",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "Memory takes a hit too. After one night without sleep, a study found about nineteen percent fewer new memories were retained.",
@@ -292,7 +247,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:7093",
+     "clip": "pixabay:id:215751",
      "start": 0,
      "move": "in"
     }
@@ -305,22 +260,30 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:180386",
+     "clip": "pixabay:id:128",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:11722",
-     "start": 0,
-     "move": "right"
     }
    ],
-   "text": "Hour seventy-two. Concentration crumbles, speech slows, and the world starts to feel unreal, even when you are standing in it.",
+   "text": "Hour seventy-two. Concentration crumbles, speech slows, and the world starts to blur.",
    "tone": "tense",
    "beat": true,
    "label": [
     "HOUR 72",
     "The edge of reality"
+   ],
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Time awake",
+     "value": 72,
+     "from": 48,
+     "unit": " h",
+     "sub": "focus starts to fail",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "red"
+    }
    ]
   },
   {
@@ -383,12 +346,12 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:130331",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/89/Classmate_tests_reaction_to_tuning_fork_on_Randy_Garner.jpg",
      "start": 0,
      "move": "in"
     }
    ],
-   "text": "On day four, he reportedly mistook a street sign for a person. Yet on the last night he beat Dement at pinball, and then spoke clearly to the press.",
+   "text": "Friends tested him constantly. On day four he reportedly mistook a street sign for a person, yet on the last night he beat Dement at pinball.",
    "tone": "reveal",
    "beat": true,
    "label": [
@@ -411,14 +374,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:729",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Randy_Gardner_sleeping.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:151297",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "After 264 hours, Gardner slept about fourteen hours, then woke up and was largely back to normal within days.",
@@ -429,31 +387,27 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:68062",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/00/Technologist_prepares_Randy_Gardner_for_final_examination.jpg",
      "start": 0,
-     "move": "in"
+     "move": "right"
     }
    ],
    "text": "Please do not try this. Gardner was young, healthy, and watched around the clock, and he still showed slurred speech, paranoia and memory lapses.",
    "tone": "warm"
   },
   {
-   "shots": [
-    {
-     "clip": "pixabay:id:34855",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "Since then, Guinness has stopped recording sleep-deprivation attempts, because of the health risks.",
-   "tone": "neutral"
+   "kind": "manim",
+   "three_d": false,
+   "tone": "neutral",
+   "text": "Gardner's record was celebrated, but Guinness has since stopped recording sleep-deprivation attempts because of the health risks.",
+   "code": "\nt=Text(\"264 HOURS\",font_size=72,color=YELLOW).shift(UP*1.2)\nu=Text(\"NO LONGER A RECORD CATEGORY\",font_size=40,color=WHITE).shift(DOWN*0.2)\nv=Text(\"health risks\",font_size=36,color=RED).shift(DOWN*1.2)\nself.play(Write(t),run_time=1.5)\nself.play(FadeIn(u),run_time=1.2)\nself.play(FadeIn(v),Create(Line(LEFT*3.2+UP*1.2,RIGHT*3.2+UP*1.2,color=RED,stroke_width=8)),run_time=1.5)\n"
   },
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/df/EEG_record_of_brain_activity_and_wave_patterns_from_a_sleeping_boy.jpg",
+     "clip": "pixabay:id:729",
      "start": 0,
-     "move": "right"
+     "move": "in"
     }
    ],
    "text": "Recovery sleep is deep. The brain pays back slow waves first, the slowest and most restoring kind of sleep.",
@@ -479,28 +433,24 @@
    "text": "Quick guess before the last part: how much does the space between brain cells widen during sleep, in mice?"
   },
   {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Colourised_Axial_MRI_brain_scan.webm",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "Your brain has no lymph vessels, so it uses another system: fluid flowing through channels around blood vessels.",
+   "kind": "manim",
+   "three_d": false,
    "tone": "reveal",
    "beat": true,
    "chapter": [
     "CHAPTER 4",
     "THE NIGHT SHIFT"
    ],
-   "yt_chapter": "The night shift"
+   "yt_chapter": "The night shift",
+   "text": "Your brain has no lymph vessels, so it uses another system: fluid flowing through channels around blood vessels.",
+   "code": "\ntitle=Text(\"FLUID IN THE CHANNELS AROUND VESSELS\",font_size=36,color=YELLOW).to_edge(UP)\nv=Rectangle(width=10,height=0.8,color=RED,fill_color=RED_E,fill_opacity=1).shift(DOWN*0.2)\nch=Rectangle(width=10.6,height=1.6,color=BLUE,stroke_width=5).shift(DOWN*0.2)\nl1=Text(\"BLOOD VESSEL\",font_size=28,color=WHITE).move_to(v)\nl2=Text(\"channel of brain fluid\",font_size=30,color=BLUE).next_to(ch,DOWN)\nself.play(FadeIn(title),FadeIn(v),Create(ch),FadeIn(l1),FadeIn(l2),run_time=2)\ndots=VGroup(*[Dot(LEFT*5+RIGHT*i*0.9+UP*(0.55 if i%2 else -0.95),radius=0.1,color=BLUE_C) for i in range(12)])\nself.play(FadeIn(dots),run_time=0.8)\nself.play(dots.animate.shift(RIGHT*1.2),run_time=3,rate_func=linear)\n"
   },
   {
    "shots": [
     {
-     "clip": "pixabay:id:314351",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/df/EEG_record_of_brain_activity_and_wave_patterns_from_a_sleeping_boy.jpg",
      "start": 0,
-     "move": "in"
+     "move": "right"
     }
    ],
    "text": "When you fall asleep, a wake-up chemical, norepinephrine, drops, and cells shrink slightly, opening the gaps between them.",
@@ -518,27 +468,12 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:314346",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "text": "That waste includes beta-amyloid, a protein linked to Alzheimer's disease.",
-   "tone": "neutral",
-   "label": [
-    "WASTE PROTEIN",
-    "Beta-amyloid"
-   ]
-  },
-  {
-   "shots": [
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MRI_Brain_T1_Sag_%2812%29.jpg",
      "start": 0,
      "move": "left"
     }
    ],
-   "text": "In one 2018 study, a single sleepless night raised amyloid in some brain regions by about five percent.",
+   "text": "That waste includes beta-amyloid, linked to Alzheimer's disease. In one 2018 study, a single sleepless night raised it by about five percent in some brain regions.",
    "tone": "tense",
    "beat": true,
    "hud": [
@@ -565,14 +500,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:61621",
+     "clip": "pixabay:id:98",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:122810",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "The fix is boring and powerful: seven to nine hours, regular timing, and a short nap can reset the worst microsleeps for a while.",
@@ -581,14 +511,9 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:15629",
+     "clip": "pixabay:id:84",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:19044",
-     "start": 0,
-     "move": "right"
     }
    ],
    "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and the night-time clean-up it relies on gets cut short.",
@@ -612,7 +537,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:44647",
+       "clip": "pixabay:id:133699",
        "start": 0,
        "move": "in"
       }
@@ -623,18 +548,18 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:83875",
+       "clip": "pixabay:id:43459",
        "start": 0,
        "move": "in"
       }
      ],
-     "text": "Study after study found the same thing: your reaction speed slides with every hour awake.",
+     "text": "Study after study found the same thing: your attention slides with every hour awake.",
      "tone": "neutral"
     },
     {
      "shots": [
       {
-       "clip": "pixabay:id:133698",
+       "clip": "pixabay:id:233390",
        "start": 0,
        "move": "in"
       }
@@ -645,7 +570,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:3595",
+       "clip": "pixabay:id:4947",
        "start": 0,
        "move": "in"
       }
@@ -656,7 +581,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:12769",
+       "clip": "pixabay:id:91",
        "start": 0,
        "move": "in"
       }
@@ -672,29 +597,18 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:61621",
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Randy_Gardner_receives_congratulations_for_sleep_experiment.jpg",
        "start": 0,
-       "move": "in"
+       "move": "left"
       }
      ],
-     "text": "In 1963, a seventeen-year-old stayed awake for two hundred sixty-four hours.",
+     "text": "In 1963, a seventeen-year-old in San Diego stayed awake for two hundred sixty-four hours, for a school science project.",
      "tone": "urgent"
     },
     {
      "shots": [
       {
-       "clip": "pixabay:id:122810",
-       "start": 0,
-       "move": "in"
-      }
-     ],
-     "text": "Randy Gardner, San Diego, for a school science project. Eleven days, no sleep.",
-     "tone": "neutral"
-    },
-    {
-     "shots": [
-      {
-       "clip": "pixabay:id:7093",
+       "clip": "pixabay:id:87884",
        "start": 0,
        "move": "in"
       }
@@ -705,7 +619,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:729",
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Randy_Gardner_drinks_water_after_waking_up.jpg",
        "start": 0,
        "move": "in"
       }
@@ -716,7 +630,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:151297",
+       "clip": "pixabay:id:90",
        "start": 0,
        "move": "in"
       }
@@ -732,7 +646,7 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Colourised_Axial_MRI_brain_scan.webm",
+       "clip": "pixabay:id:15522",
        "start": 0,
        "move": "in"
       }
@@ -759,26 +673,15 @@
        "move": "in"
       }
      ],
-     "text": "Waste, including amyloid, gets flushed out faster.",
+     "text": "Waste, including amyloid, gets flushed out faster. In one study, a sleepless night raised amyloid by about five percent.",
      "tone": "reveal"
     },
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MRI_Brain_T1_Sag_%2812%29.jpg",
+       "clip": "pixabay:id:1844",
        "start": 0,
-       "move": "left"
-      }
-     ],
-     "text": "In people, one sleepless night raised amyloid by about five percent in one study.",
-     "tone": "tense"
-    },
-    {
-     "shots": [
-      {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/d/df/EEG_record_of_brain_activity_and_wave_patterns_from_a_sleeping_boy.jpg",
-       "start": 0,
-       "move": "right"
+       "move": "in"
       }
      ],
      "text": "The full story is on the channel. Subscribe for the next one.",
@@ -792,7 +695,8 @@
   "text": "11 DAYS AWAKE",
   "sub": "",
   "shift": 0.2,
-  "circle": false
+  "circle": false,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Randy_Gardner_drinks_water_after_waking_up.jpg"
  },
  "youtube": {
   "title": "What 264 Hours Without Sleep Does to Your Brain",
