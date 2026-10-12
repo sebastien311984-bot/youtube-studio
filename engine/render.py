@@ -225,11 +225,11 @@ def captions(words, t0):
     words = [(a, b, w.replace("—", "").replace("–", "").strip()) for a, b, w in words if w.replace("—", "").replace("–", "").strip()]  # tiret long absent de la police → carré
     ev, g = [], []
     groups = []
-    for w in words:
+    for wi, w in enumerate(words):
         g.append(w)
-        nxt = words[words.index(w) + 1] if words.index(w) + 1 < len(words) else None
+        nxt = words[wi + 1] if wi + 1 < len(words) else None
         pause = nxt is not None and nxt[0] - (w[0] + w[1]) > 0.28  # fin de phrase (TTS ne renvoie pas la ponctuation)
-        if len(g) >= 6 or pause or (len(g) >= 2 and w[2][-1:] in ".,?!;:"): groups.append(g); g = []
+        if len(g) >= 6 or pause or w[2][-1:] in ".?!" or (len(g) >= 2 and w[2][-1:] in ",;:"): groups.append(g); g = []  # fin de phrase : jamais de fusion entre deux phrases
     if g: groups.append(g)
     for gr in groups:
         end_g = gr[-1][0] + gr[-1][1] + 0.15
@@ -281,8 +281,11 @@ def progress_bar(t0, total, marks):
         if 0 < x < 1920: ev.append(f"Dialogue: 9,{a},{b},Label,,0,0,0,,{{\\an7\\pos({x},0)\\p1\\c&H000000&\\fad(500,500)}}m 0 0 l 4 0 4 7 0 7{{\\p0}}")
     return ev
 
-def subscribe_nudge(t0, d=4.0):
+def subscribe_nudge(t0, d=4.0, top=False):
     a, b = ass_time(t0), ass_time(t0 + d)
+    if top:  # Short autonome : pastille en haut à droite, 3 dernières secondes (hors visages/sous-titres)
+        return [f"Dialogue: 9,{a},{b},Label,,0,0,0,,{{\\an3\\pos(1880,130)\\fad(200,300)\\p1\\c&H3020E0&}}m 0 0 l 330 0 330 76 0 76{{\\p0}}",
+                f"Dialogue: 10,{a},{b},Label,,0,0,0,,{{\\an5\\pos(1715,92)\\fad(400,300)\\fs36\\bord0\\fsp4}}SUBSCRIBE"]
     return [f"Dialogue: 9,{a},{b},Label,,0,0,0,,{{\\an3\\pos(1830,1000)\\fad(200,300)\\p1\\c&H3020E0&\\fscx0\\fscy0\\t(0,250,\\fscx110\\fscy110)\\t(250,400,\\fscx100\\fscy100)}}m 0 0 l 330 0 330 76 0 76{{\\p0}}",
             f"Dialogue: 10,{a},{b},Label,,0,0,0,,{{\\an5\\pos(1665,962)\\fad(400,300)\\fs36\\bord0\\fsp4}}SUBSCRIBE"]
 
@@ -477,8 +480,12 @@ def main(ep_path, clips_dir, out):
         tr = trans[i] or TRANSITIONS[i % len(TRANSITIONS)]
         fc.append(f"[{prev}][{i}:v]xfade=transition={tr}:duration={XF}:offset={off:.3f}[x{i}]"); prev = f"x{i}"
     # barre de progression supprimée (2026-10-12 : jugée gênante)
-    events += subscribe_nudge(total * ep.get("subscribe_at", 0.3))
-    ass = os.path.join(work, "subs.ass"); open(ass, "w").write(ASS_HEAD + "\n".join(events) + "\n")
+    events += subscribe_nudge(max(0, total - 3.3), 3.0, top=True) if "--short" in sys.argv else subscribe_nudge(total * ep.get("subscribe_at", 0.3))
+    head = ASS_HEAD
+    if "--short" in sys.argv:  # Short : sous-titres x1.3 sur boîte sombre semi-transparente (BorderStyle=3), retour à la ligne actif
+        head = head.replace("WrapStyle: 2", "WrapStyle: 0").replace("Style: Sub,Inter Display,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,2,160,160,70,1",
+                                                                      "Style: Sub,Inter Display,75,&H00FFFFFF,&H00FFFFFF,&HB4000000,&H96000000,-1,0,0,0,100,100,0,0,3,10,0,2,120,120,90,1")
+    ass = os.path.join(work, "subs.ass"); open(ass, "w").write(head + "\n".join(events) + "\n")
     fc.append(f"[{prev}]ass={ass}:fontsdir=/usr/share/fonts/opentype/inter,fade=t=in:st=0:d=1,fade=t=out:st={total - 1.5:.2f}:d=1.5[v]")
     # audio : voix placées + musique
     t0 = time.time()  # toutes les scènes (infographies + plans) rendues en parallèle sur les 4 cœurs
