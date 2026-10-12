@@ -1,0 +1,730 @@
+{
+ "title": "What 264 Hours Without Sleep Does to Your Brain",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "subscribe_at": 0.3,
+ "strategy": {
+  "viewer": "Curious adults who have pulled an all-nighter and wonder how bad it really gets; clicks for the extreme record and the 'drunk brain' hook.",
+  "hook": "Seventeen hours awake is like being drunk; eleven days and your brain starts sleeping while you are awake: a familiar fact against an impossible one.",
+  "promise": "What really happens in your brain from hour 0 to hour 264 without sleep, with the real cases (Tripp, Gardner) and the science.",
+  "payoff": "A brain that will not sleep starts sleeping in pieces (local sleep, microsleeps) while awake, and without full sleep its cleaning flow (glymphatic) never completes.",
+  "takeaway": "Stay awake long enough and your brain starts sleeping without you."
+ },
+ "credits": "Video: Pixabay (various authors, Pixabay Content License). Colourised axial MRI brain scan: Wikimedia Commons, CC BY-SA 4.0. MRI Brain T1 Sag (12): 511KeV, CC BY-SA 4.0, via Wikimedia Commons. EEG record from a sleeping boy: Jemaleddin Cole, CC BY-SA 2.0, via Wikimedia Commons. Sleep spindle and K-complex EEG: CC0, via Wikimedia Commons. Randy Gardner 1964 photographs (tuning-fork test, sleeping, drinking water, congratulations, EEG preparation): public domain, via Wikimedia Commons.",
+ "scenes": [
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:44647",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Stay awake seventeen hours, and your brain performs like you are drunk.",
+   "tone": "urgent",
+   "beat": true,
+   "lead": 0.3,
+   "yt_chapter": "Awake too long"
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "Stay awake eleven days, and your brain starts doing something it was never built to do: sleeping while you are awake.",
+   "tone": "reveal",
+   "code": "\nt=Text(\"11 DAYS\",font_size=72,color=YELLOW).shift(UP*1.2)\nu=Text(\"264 HOURS AWAKE\",font_size=48,color=WHITE).shift(DOWN*0.1)\nv=Text(\"the brain starts sleeping anyway\",font_size=36,color=RED).shift(DOWN*1.3)\nself.play(Write(t),run_time=1.5)\nself.play(FadeIn(u),run_time=1.2)\nself.play(FadeIn(v),run_time=1.5)\n",
+   "beat": true
+  },
+  {
+   "kind": "intro",
+   "min": 3
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:35590",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "We are going to follow one human brain, hour by hour, past the point where it begs to shut down.",
+   "tone": "calm",
+   "beat": true,
+   "teaser": "HOUR 0 TO 24",
+   "label": [
+    "HOUR 0",
+    "You wake up"
+   ]
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "Two forces decide when you sleep: the pressure that builds while you are awake, and a body clock that says when night falls.",
+   "code": "\ntitle=Text(\"TWO FORCES DECIDE WHEN YOU SLEEP\",font_size=40,color=YELLOW).to_edge(UP)\nb1=Rectangle(width=1.6,height=0.1,color=ORANGE,fill_color=ORANGE,fill_opacity=1).move_to(LEFT*2.5+DOWN*2.2,aligned_edge=DOWN)\nb2=Rectangle(width=1.6,height=0.1,color=BLUE,fill_color=BLUE,fill_opacity=1).move_to(RIGHT*2.5+DOWN*2.2,aligned_edge=DOWN)\nl1=Text(\"SLEEP PRESSURE\",font_size=30,color=ORANGE).move_to(LEFT*2.5+DOWN*2.8)\nl2=Text(\"BODY CLOCK\",font_size=30,color=BLUE).move_to(RIGHT*2.5+DOWN*2.8)\nself.play(FadeIn(title),FadeIn(b1),FadeIn(b2),FadeIn(l1),FadeIn(l2),run_time=1.5)\nt1=Rectangle(width=1.6,height=4.2,color=ORANGE,fill_color=ORANGE,fill_opacity=1).move_to(LEFT*2.5+DOWN*2.2,aligned_edge=DOWN)\nt2=Rectangle(width=1.6,height=2.4,color=BLUE,fill_color=BLUE,fill_opacity=1).move_to(RIGHT*2.5+DOWN*2.2,aligned_edge=DOWN)\nself.play(Transform(b1,t1),run_time=4,rate_func=linear)\nself.play(Transform(b2,t2),run_time=2)\nn1=Text(\"builds while awake\",font_size=28,color=WHITE).move_to(LEFT*2.5+UP*2.4)\nn2=Text(\"says when night falls\",font_size=28,color=WHITE).move_to(RIGHT*2.5+UP*0.9)\nself.play(FadeIn(n1),FadeIn(n2),run_time=1)\n",
+   "tone": "neutral",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:151297",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Hour zero. You wake, and a chemical called adenosine starts to build up, one minute of sleep pressure at a time.",
+   "tone": "calm",
+   "chapter": [
+    "CHAPTER 1",
+    "THE DRUNK BRAIN"
+   ],
+   "yt_chapter": "The drunk brain",
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Time awake",
+     "value": 17,
+     "from": 0,
+     "unit": " h",
+     "sub": "performance starts to slip",
+     "pos": "bl",
+     "at": 1.5,
+     "color": "gold"
+    }
+   ]
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "At seventeen to nineteen hours awake, performance matches a blood alcohol of about point zero five. At twenty-four hours, about point one.",
+   "code": "\ntitle=Text(\"HOURS AWAKE vs DRUNK\",font_size=44,color=YELLOW).to_edge(UP)\nax=Axes(x_range=[0,24,6],y_range=[0,0.1,0.025],x_length=9,y_length=4,axis_config={\"color\":GREY_B}).shift(DOWN*0.4)\nxl=Text(\"hours awake\",font_size=30).next_to(ax,DOWN)\nyl=Text(\"equivalent blood alcohol\",font_size=28).next_to(ax,LEFT).rotate(PI/2).shift(RIGHT*0.3)\nself.play(FadeIn(title),Create(ax),FadeIn(xl),FadeIn(yl),run_time=1.5)\ng=ax.plot(lambda x:0.0003*x**1.55 if x<17 else 0.05+(x-17)*0.007,x_range=[0,24],color=ORANGE,stroke_width=8)\nself.play(Create(g),run_time=3.5)\nd1=Dot(ax.c2p(18,0.05+0.007),color=YELLOW,radius=0.14); t1=Text(\"~0.05 at 17-19 h\",font_size=32,color=YELLOW).move_to(UP*1.1+LEFT*2.8)\nd2=Dot(ax.c2p(24,0.099),color=RED,radius=0.14); t2=Text(\"~0.10 at 24 h\",font_size=32,color=RED).move_to(UP*2.0+RIGHT*1.2)\nself.play(FadeIn(d1),FadeIn(t1),run_time=1)\nself.play(FadeIn(d2),FadeIn(t2),run_time=1.2)\n",
+   "tone": "reveal",
+   "beat": true,
+   "fact": "Studies compare impairment, not real alcohol:\\Nreaction speed matches a drinker's."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:232538",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Around hour twenty, reaction times slow and mistakes pile up. Tasks that need steady attention, like watching a dashboard, fall apart first.",
+   "tone": "neutral"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:3595",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Caffeine does not erase that pressure. It blocks the receptors that sense it, so the debt keeps growing in the dark.",
+   "tone": "neutral",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:133698",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "That is why drowsy driving kills. Not hours of sleep at the wheel, just seconds, with nobody noticing.",
+   "tone": "tense",
+   "teaser": "HOUR 24 TO 48",
+   "label": [
+    "HOUR 20+",
+    "Slower, edgier, forgetful"
+   ]
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "A microsleep is the brain's emergency shutdown. Your eyes may stay open, but for a moment nothing is being processed.",
+   "tone": "tense",
+   "code": "\ntitle=Text(\"MICROSLEEP\",font_size=48,color=YELLOW).to_edge(UP)\neye=Ellipse(width=4,height=1.8,color=WHITE,stroke_width=6)\niris=Circle(radius=0.7,color=BLUE_C,fill_color=BLUE_E,fill_opacity=1)\npup=Circle(radius=0.3,color=BLACK,fill_color=BLACK,fill_opacity=1)\nself.play(FadeIn(title),Create(eye),FadeIn(iris),FadeIn(pup),run_time=2)\na=Text(\"EYES OPEN\",font_size=36,color=WHITE).shift(DOWN*2)\nself.play(FadeIn(a),run_time=1)\nb=Text(\"BRAIN OFF FOR A MOMENT\",font_size=36,color=RED).shift(DOWN*2)\nself.play(Transform(a,b),iris.animate.set_fill(GREY_D),pup.animate.set_fill(GREY_D),run_time=2.5)\n",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:1028",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Hour thirty. You are awake, eyes open, answering questions. But parts of your brain may already be asleep.",
+   "tone": "reveal",
+   "beat": true,
+   "chapter": [
+    "CHAPTER 2",
+    "THE BRAIN THAT NAPS"
+   ],
+   "yt_chapter": "The brain that naps"
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "In 2011, researchers recorded rats kept awake. Patches of cortex briefly switched off, like sleep, while the animal stayed on its feet.",
+   "code": "\ntitle=Text(\"LOCAL SLEEP\",font_size=46,color=YELLOW).to_edge(UP)\ncells=VGroup(*[Square(side_length=0.7,color=GREY_B,fill_color=ORANGE,fill_opacity=0.9,stroke_width=2).move_to(RIGHT*(i-3.5)*0.8+UP*(1.2-j*0.8)) for j in range(3) for i in range(8)])\nsub=Text(\"an awake brain, tired in patches\",font_size=32,color=WHITE).to_edge(DOWN)\nself.play(FadeIn(title),FadeIn(cells),run_time=1.5)\nself.play(FadeIn(sub),run_time=0.8)\nimport random\nrandom.seed(4)\nfor _ in range(4):\n    pick=random.sample(range(24),5)\n    self.play(*[cells[i].animate.set_fill(GREY_E,opacity=1) for i in pick],run_time=0.7)\n    self.wait(0.4)\n    self.play(*[cells[i].animate.set_fill(ORANGE,opacity=0.9) for i in pick],run_time=0.5)\n",
+   "tone": "reveal",
+   "beat": true
+  },
+  {
+   "kind": "stat",
+   "value": 278,
+   "suffix": " m",
+   "caption": "DRIVEN BLIND IN A 10-SECOND MICROSLEEP AT 100 KM/H",
+   "text": "Ten seconds of microsleep at a hundred kilometers an hour: almost three hundred meters, driven blind.",
+   "tone": "reveal",
+   "beat": true
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "In 2017, recordings from single neurons in epilepsy patients showed sleep-like slow waves that coincided with attention lapses.",
+   "code": "\ntitle=Text(\"SLOW WAVES WHILE AWAKE\",font_size=44,color=YELLOW).to_edge(UP)\nax=Axes(x_range=[0,12,2],y_range=[-1.5,1.5,1],x_length=11,y_length=3.4,axis_config={\"color\":GREY_B}).shift(DOWN*0.3)\nself.play(FadeIn(title),Create(ax),run_time=1.2)\nfast=ax.plot(lambda x:0.35*np.sin(9*x)+0.2*np.sin(17*x),x_range=[0,5],color=ORANGE,stroke_width=5)\nslow=ax.plot(lambda x:1.1*np.sin(2.2*x),x_range=[5,12],color=RED,stroke_width=7)\nl1=Text(\"alert: fast, small waves\",font_size=30,color=ORANGE).move_to(UP*1.6+LEFT*3.5)\nl2=Text(\"lapse: slow, big waves\",font_size=30,color=RED).move_to(UP*1.6+RIGHT*3)\nself.play(Create(fast),FadeIn(l1),run_time=2.5)\nself.play(Create(slow),FadeIn(l2),run_time=3)\n",
+   "tone": "neutral",
+   "label": [
+    "EEG, ILLUSTRATION",
+    "Not real patient data"
+   ],
+   "fact": "Nir et al., Nature Medicine, 2017:\\Nlocal neuron slowing, attention lapses."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:83874",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Night-shift workers and exhausted office staff can end up in this zone, which is why sleep scientists treat it as a public safety issue.",
+   "tone": "neutral",
+   "label": [
+    "WHO LIVES HERE",
+    "Nights, long calls, long roads"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Colourised_Axial_MRI_brain_scan.webm",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Hour thirty-six. Mood sags, and the brain's alarm center, the amygdala, reacts far more strongly to bad news.",
+   "tone": "neutral",
+   "label": [
+    "HOUR 36",
+    "Emotions get louder"
+   ],
+   "fact": "Yoo et al. 2007: amygdala response ~60%\\Nstronger after a night without sleep."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:1058",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Memory takes a hit too. After one night without sleep, a study found about nineteen percent fewer new memories were retained.",
+   "tone": "neutral",
+   "fact": "Yoo et al. 2007, Nature Neuroscience."
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:215751",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Hour forty-eight. Two full days awake, and attention lapses grow longer and more frequent.",
+   "tone": "tense",
+   "beat": true,
+   "teaser": "HOUR 72 AND BEYOND"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:201",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Hour seventy-two. Concentration crumbles, speech slows, and the world starts to blur.",
+   "tone": "tense",
+   "beat": true,
+   "label": [
+    "HOUR 72",
+    "The edge of reality"
+   ],
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Time awake",
+     "value": 72,
+     "from": 48,
+     "unit": " h",
+     "sub": "focus starts to fail",
+     "pos": "bl",
+     "at": 0.8,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "New York, 1959. Disc jockey Peter Tripp sat in a glass booth in Times Square and stayed awake two hundred one hours, raising money for charity.",
+   "code": "\ntitle=Text(\"PETER TRIPP, 1959\",font_size=44,color=YELLOW).to_edge(UP)\nbooth=Rectangle(width=3.4,height=3.6,color=BLUE_B,stroke_width=6).shift(LEFT*3.2+DOWN*0.3)\nbl=Text(\"GLASS BOOTH\",font_size=28,color=BLUE_B).next_to(booth,DOWN)\nman=VGroup(Circle(radius=0.35,color=WHITE),Line(DOWN*0.35,DOWN*1.4,color=WHITE)).move_to(booth)\nself.play(FadeIn(title),Create(booth),FadeIn(bl),FadeIn(man),run_time=1.8)\nbar=Rectangle(width=5,height=0.5,color=GREY_B).shift(RIGHT*2.6+UP*0.3)\nfill=Rectangle(width=0.01,height=0.5,color=RED,fill_color=RED,fill_opacity=1).align_to(bar,LEFT).shift(UP*0.3)\nfill.move_to(bar.get_left(),aligned_edge=LEFT)\nlab=Text(\"0 hours\",font_size=44,color=RED).shift(RIGHT*2.6+DOWN*0.6)\nself.play(Create(bar),FadeIn(lab),run_time=1)\nfr=Rectangle(width=5,height=0.5,color=RED,fill_color=RED,fill_opacity=1).move_to(bar.get_left(),aligned_edge=LEFT)\nself.play(Transform(fill,fr),Transform(lab,Text(\"201 hours\",font_size=44,color=RED).shift(RIGHT*2.6+DOWN*0.6)),run_time=4,rate_func=linear)\n",
+   "tone": "calm",
+   "chapter": [
+    "CHAPTER 3",
+    "SEEING THINGS"
+   ],
+   "yt_chapter": "Seeing things",
+   "beat": true
+  },
+  {
+   "kind": "kinetic",
+   "words": [
+    "SPIDERS",
+    "IN HIS",
+    "SHOES"
+   ],
+   "text": "By the third day, he reportedly saw spiders in his shoes. By the fifth, he thought a doctor was an undertaker come to bury him.",
+   "tone": "tense",
+   "fact": "Accounts of Tripp vary; hallucinations\\Nand paranoia are well documented."
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "Researchers think hallucinations may come from dream-like activity leaking into waking, while the brain's reality filter weakens.",
+   "code": "\ntitle=Text(\"WHERE HALLUCINATIONS MAY COME FROM\",font_size=38,color=YELLOW).to_edge(UP)\na=Rectangle(width=3.5,height=3.5,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).shift(LEFT*3)\nb=Rectangle(width=3.5,height=0.4,color=RED,fill_color=RED,fill_opacity=0.8).shift(RIGHT*3+DOWN*1.55)\nla=Text(\"REALITY FILTER\",font_size=30,color=BLUE_C).next_to(a,DOWN)\nlb=Text(\"DREAM-LIKE ACTIVITY\",font_size=30,color=RED).next_to(b,DOWN)\nself.play(FadeIn(title),FadeIn(a),FadeIn(b),FadeIn(la),FadeIn(lb),run_time=1.5)\na2=Rectangle(width=3.5,height=0.8,color=BLUE_C,fill_color=BLUE_E,fill_opacity=0.7).move_to(a.get_bottom(),aligned_edge=DOWN)\nb2=Rectangle(width=3.5,height=3.5,color=RED,fill_color=RED,fill_opacity=0.8).move_to(b.get_bottom(),aligned_edge=DOWN)\nself.play(Transform(a,a2),Transform(b,b2),run_time=4)\nt=Text(\"AWAKE HOURS PASS\",font_size=34,color=WHITE).to_edge(DOWN)\nself.play(FadeIn(t),run_time=1)\n",
+   "tone": "reveal",
+   "beat": true
+  },
+  {
+   "kind": "timeline",
+   "heading": "RANDY GARDNER, 1963",
+   "events": [
+    {
+     "year": "DEC 1963",
+     "text": "Gardner, 17,\nstarts a science project"
+    },
+    {
+     "year": "DAY 2",
+     "text": "Eyes struggle\nto focus"
+    },
+    {
+     "year": "DAY 4",
+     "text": "Confusion,\nparanoia"
+    },
+    {
+     "year": "DAY 11",
+     "text": "Slurred speech,\n264 hours"
+    }
+   ],
+   "text": "Four years later in San Diego, seventeen-year-old Randy Gardner set out to beat that record for a school science project. Eleven days.",
+   "tone": "calm",
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/8/89/Classmate_tests_reaction_to_tuning_fork_on_Randy_Garner.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Friends tested him constantly. On day four he reportedly mistook a street sign for a person, yet on the last night he beat Dement at pinball.",
+   "tone": "reveal",
+   "beat": true,
+   "label": [
+    "DAY 4 TO DAY 11",
+    "Confused, yet still capable"
+   ],
+   "fact": "Dement's 1964 observations of Gardner:\\Nlapses, yet flashes of normal function."
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "Stanford sleep researcher William Dement watched him closely. Even then, Gardner's alertness rose and fell with the clock, better in the morning than at night.",
+   "code": "\ntitle=Text(\"THE BODY CLOCK PUSHES BACK\",font_size=40,color=YELLOW).to_edge(UP)\nax=Axes(x_range=[0,11,1],y_range=[0,10,5],x_length=10,y_length=3.8,axis_config={\"color\":GREY_B}).shift(DOWN*0.4)\nxl=Text(\"days awake\",font_size=30).next_to(ax,DOWN)\nyl=Text(\"alertness\",font_size=30).next_to(ax,LEFT).rotate(PI/2).shift(RIGHT*0.3)\nself.play(FadeIn(title),Create(ax),FadeIn(xl),FadeIn(yl),run_time=1.5)\ng=ax.plot(lambda x:7-0.45*x+1.8*np.sin(2*PI*x),x_range=[0,11],color=ORANGE,stroke_width=7)\nself.play(Create(g),run_time=5)\nt=Text(\"daily dip and rebound\",font_size=34,color=RED).move_to(UP*1.6)\nself.play(FadeIn(t),run_time=1)\n",
+   "tone": "neutral",
+   "label": [
+    "STANFORD, 1964",
+    "William Dement"
+   ]
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Randy_Gardner_sleeping.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "After 264 hours, Gardner slept about fourteen hours, then woke up and was largely back to normal within days.",
+   "tone": "warm",
+   "reveal": true,
+   "beat": true
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Randy_Gardner_receives_congratulations_for_sleep_experiment.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "Please do not try this. Gardner was young, healthy, and watched around the clock, and he still showed slurred speech, paranoia and memory lapses.",
+   "tone": "warm"
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "tone": "neutral",
+   "text": "Gardner's record was celebrated, but Guinness has since stopped recording sleep-deprivation attempts because of the health risks.",
+   "code": "\nt=Text(\"264 HOURS\",font_size=72,color=YELLOW).shift(UP*1.2)\nu=Text(\"NO LONGER A RECORD CATEGORY\",font_size=40,color=WHITE).shift(DOWN*0.2)\nv=Text(\"health risks\",font_size=36,color=RED).shift(DOWN*1.2)\nself.play(Write(t),run_time=1.5)\nself.play(FadeIn(u),run_time=1.2)\nself.play(FadeIn(v),Create(Line(LEFT*3.2+UP*1.2,RIGHT*3.2+UP*1.2,color=RED,stroke_width=8)),run_time=1.5)\n"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:729",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "Recovery sleep is deep. The brain pays back slow waves first, the slowest and most restoring kind of sleep.",
+   "tone": "calm",
+   "label": [
+    "SLOW-WAVE SLEEP",
+    "Recovery comes first"
+   ],
+   "fact": "Deep sleep rebounds first after sleep loss,\\Nbefore lighter stages."
+  },
+  {
+   "kind": "quiz",
+   "question": "How much does the space between brain cells widen during sleep, in mice?",
+   "options": [
+    "About 10%",
+    "About 60%",
+    "About 200%"
+   ],
+   "answer": 1,
+   "min": 6,
+   "teaser": "WHY SLEEP IS A CLEAN-UP",
+   "tone": "tense",
+   "text": "Quick guess before the last part: how much does the space between brain cells widen during sleep, in mice?"
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "tone": "reveal",
+   "beat": true,
+   "chapter": [
+    "CHAPTER 4",
+    "THE NIGHT SHIFT"
+   ],
+   "yt_chapter": "The night shift",
+   "text": "Your brain has no lymph vessels, so it uses another system: fluid flowing through channels around blood vessels.",
+   "code": "\ntitle=Text(\"FLUID IN THE CHANNELS AROUND VESSELS\",font_size=36,color=YELLOW).to_edge(UP)\nv=Rectangle(width=10,height=0.8,color=RED,fill_color=RED_E,fill_opacity=1).shift(DOWN*0.2)\nch=Rectangle(width=10.6,height=1.6,color=BLUE,stroke_width=5).shift(DOWN*0.2)\nl1=Text(\"BLOOD VESSEL\",font_size=28,color=WHITE).move_to(v)\nl2=Text(\"channel of brain fluid\",font_size=30,color=BLUE).next_to(ch,DOWN)\nself.play(FadeIn(title),FadeIn(v),Create(ch),FadeIn(l1),FadeIn(l2),run_time=2)\ndots=VGroup(*[Dot(LEFT*5+RIGHT*i*0.9+UP*(0.55 if i%2 else -0.95),radius=0.1,color=BLUE_C) for i in range(12)])\nself.play(FadeIn(dots),run_time=0.8)\nself.play(dots.animate.shift(RIGHT*1.2),run_time=3,rate_func=linear)\n"
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/d/df/EEG_record_of_brain_activity_and_wave_patterns_from_a_sleeping_boy.jpg",
+     "start": 0,
+     "move": "right"
+    }
+   ],
+   "text": "When you fall asleep, a wake-up chemical, norepinephrine, drops, and cells shrink slightly, opening the gaps between them.",
+   "tone": "neutral"
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "In 2013, Maiken Nedergaard's team found that in sleeping mice, the space between cells grew by about sixty percent, and waste washed out faster.",
+   "code": "\ntitle=Text(\"THE GLYMPHATIC FLUSH\",font_size=44,color=YELLOW).to_edge(UP)\ndef cells(gap,col):\n    return VGroup(*[Circle(radius=0.55,color=col,fill_color=col,fill_opacity=0.5).move_to(RIGHT*(i-1.5)*(1.1+gap)+UP*(j-0.5)*(1.1+gap)) for i in range(4) for j in range(2)]).shift(DOWN*0.4)\na=cells(0.0,RED_C)\nlab=Text(\"AWAKE: tight spaces, waste lingers\",font_size=34,color=RED_C).to_edge(DOWN)\nself.play(FadeIn(title),FadeIn(a),FadeIn(lab),run_time=1.5)\ndots=VGroup(*[Dot(RIGHT*(i-2.5)*0.9+UP*(j-0.5)*0.3+DOWN*0.4,color=YELLOW,radius=0.07) for i in range(6) for j in range(2)])\nself.play(FadeIn(dots),run_time=0.8)\nb=cells(0.55,BLUE_C)\nlab2=Text(\"ASLEEP: spaces ~60% wider, waste flushed\",font_size=34,color=BLUE_C).to_edge(DOWN)\nself.play(Transform(a,b),Transform(lab,lab2),dots.animate.shift(RIGHT*6.5),run_time=3.5)\n",
+   "tone": "reveal",
+   "beat": true,
+   "fact": "Xie et al., Science, 2013 (mice)."
+  },
+  {
+   "shots": [
+    {
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MRI_Brain_T1_Sag_%2812%29.jpg",
+     "start": 0,
+     "move": "left"
+    }
+   ],
+   "text": "That waste includes beta-amyloid, linked to Alzheimer's disease. In one 2018 study, a single sleepless night raised it by about five percent in some brain regions.",
+   "tone": "tense",
+   "beat": true,
+   "hud": [
+    {
+     "type": "counter",
+     "label": "Amyloid after one sleepless night",
+     "value": 5,
+     "from": 0,
+     "unit": " %",
+     "sub": "hippocampus, thalamus (PET)",
+     "pos": "bl",
+     "at": 1.5,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "kind": "manim",
+   "three_d": false,
+   "text": "That does not prove one night causes dementia. Long-term sleep loss is a risk factor, not a sentence.",
+   "code": "\nt=Text(\"RISK FACTOR\",font_size=72,color=YELLOW).shift(UP*0.8)\nu=Text(\"NOT A SENTENCE\",font_size=72,color=WHITE).shift(DOWN*0.5)\nself.play(Write(t),run_time=1.5)\nself.play(Write(u),run_time=1.5)\nself.play(Create(Underline(u,color=ORANGE)),run_time=1)\n",
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:151295",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "The fix is boring and powerful: seven to nine hours, regular timing, and a short nap can reset the worst microsleeps for a while.",
+   "tone": "warm"
+  },
+  {
+   "shots": [
+    {
+     "clip": "pixabay:id:59291",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "So what happens to a brain that will not sleep? It does not stop. It starts sleeping in pieces while you are awake, and the night-time clean-up it relies on gets cut short.",
+   "tone": "reveal",
+   "payoff": true,
+   "reveal": true
+  },
+  {
+   "kind": "outro",
+   "line1": "YOUR BODY AT THE LIMIT",
+   "line2": "SUBSCRIBE",
+   "min": 10,
+   "tone": "warm",
+   "text": "If this changed how you see tonight, subscribe for the next one. And tell me in the comments: what is the longest you have ever stayed awake?"
+  }
+ ],
+ "shorts": [
+  {
+   "title": "17 hours awake = drunk",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:133699",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Seventeen hours without sleep makes you perform about like a driver at point zero five.",
+     "tone": "urgent"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:43459",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Study after study found the same thing: your attention slides with every hour awake.",
+     "tone": "neutral"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:233390",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "At twenty-four hours, it is about point one, over the legal limit in many countries.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:4947",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "And caffeine does not fix it. It only hides the signal.",
+     "tone": "neutral"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:189813",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "The full story is on the channel. Subscribe for the next one.",
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "11 days without sleep",
+   "scenes": [
+    {
+     "kind": "manim",
+     "three_d": false,
+     "tone": "urgent",
+     "text": "In 1963, a seventeen-year-old in San Diego stayed awake for two hundred sixty-four hours, for a school science project.",
+     "code": "\nt=Text(\"264 HOURS\",font_size=80,color=YELLOW).shift(UP*0.8)\nu=Text(\"NO SLEEP\",font_size=56,color=RED).shift(DOWN*0.6)\nself.play(Write(t),run_time=1.5)\nself.play(FadeIn(u),run_time=1.5)\n"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/0/00/Technologist_prepares_Randy_Gardner_for_final_examination.jpg",
+       "start": 0,
+       "move": "right"
+      }
+     ],
+     "text": "By the end he had slurred speech, memory lapses and paranoia, and doctors wired him to an EEG.",
+     "tone": "tense"
+    },
+    {
+     "shots": [
+      {
+       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Randy_Gardner_drinks_water_after_waking_up.jpg",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Then he slept about fourteen hours, and recovered.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:328740",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "The full story is on the channel. Subscribe for the next one.",
+     "tone": "warm"
+    }
+   ]
+  },
+  {
+   "title": "Your brain cleans itself at night",
+   "scenes": [
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:15522",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Your brain has no lymph vessels, yet it washes itself every night.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:314351",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "In sleeping mice, the space between brain cells grows by about sixty percent.",
+     "tone": "neutral"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:314346",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "Waste, including amyloid, gets flushed out faster. In one study, a sleepless night raised amyloid by about five percent.",
+     "tone": "reveal"
+    },
+    {
+     "shots": [
+      {
+       "clip": "pixabay:id:246391",
+       "start": 0,
+       "move": "in"
+      }
+     ],
+     "text": "The full story is on the channel. Subscribe for the next one.",
+     "tone": "warm"
+    }
+   ]
+  }
+ ],
+ "thumbnail": {
+  "scene": 0,
+  "text": "11 DAYS AWAKE",
+  "sub": "",
+  "shift": 0.2,
+  "circle": false
+ },
+ "youtube": {
+  "title": "What 264 Hours Without Sleep Does to Your Brain",
+  "alternatives": {
+   "titles": [
+    "What 264 Hours Without Sleep Does to Your Brain",
+    "Your Brain After 11 Days Without Sleep",
+    "Why Your Brain Starts Sleeping While Awake"
+   ],
+   "thumbnail_texts": [
+    "11 DAYS AWAKE",
+    "BRAIN OFFLINE",
+    "264 HOURS"
+   ]
+  },
+  "description": "What happens to your brain after 24, 48, 72 hours without sleep, and beyond? From the drunk-like brain to microsleeps, hallucinations, and the clean-up your brain does at night, with the real cases of Peter Tripp (1959) and Randy Gardner (1963).\n\nIn this video:\n- Awake too long\n- The drunk brain\n- The brain that naps\n- Seeing things\n- The night shift\n\nFAQ\nHow long can a person stay awake? The best-known documented experiment is 264 hours (Gardner, 1963-64); it is dangerous and not recommended.\nWhat is a microsleep? A lapse of a fraction of a second up to about 30 s when the brain briefly sleeps.\nDoes sleep clean the brain? In mice, the space between cells widens ~60% in sleep and waste clears faster (Xie 2013).\n\nTell me in the comments: what is your longest time awake?\n\nSources: Dawson & Reid 1997, Nature 388; Williamson & Feyer 2000, Occup Environ Med; Vyazovskiy et al. 2011, Nature 472; Nir et al. 2017, Nature Medicine 23; Yoo et al. 2007, Current Biology (amygdala) and Nature Neuroscience (memory); Xie et al. 2013, Science 342; Shokri-Kojori et al. 2018, PNAS 115; Gulevich, Dement & Johnson 1966, Arch Gen Psychiatry (Gardner).",
+  "tags": [
+   "sleep deprivation",
+   "what happens when you don't sleep",
+   "randy gardner",
+   "peter tripp",
+   "microsleep",
+   "glymphatic system",
+   "24 hours without sleep",
+   "brain science",
+   "sleep science",
+   "hallucinations",
+   "insomnia",
+   "true science mystery"
+  ],
+  "hashtags": [
+   "sleep",
+   "science",
+   "brain"
+  ],
+  "translations": {
+   "fr": "Ce que 264 heures sans dormir font à votre cerveau",
+   "es": "Qué le hacen 264 horas sin dormir a tu cerebro",
+   "pt": "O que 264 horas sem dormir fazem ao seu cérebro",
+   "de": "Was 264 Stunden ohne Schlaf mit deinem Gehirn machen",
+   "hi": "264 घंटे बिना सोए आपके दिमाग का क्या होता है"
+  }
+ }
+}
