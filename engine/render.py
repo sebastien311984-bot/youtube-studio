@@ -155,7 +155,15 @@ def clip(src, start, d, out, move):
         vf = base + f"scale=w='trunc({W}*{z}/2)*2':h=-2:eval=frame,crop={W}:{H},"
     vf += "eq=contrast=1.08:saturation=1.12:gamma=0.97,vignette=PI/5,fps=30,format=yuv420p"
     still = src.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp"))
-    inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-stream_loop", "-1", "-ss", str(start), "-t", str(d), "-i", src]
+    src_t = d
+    if not still:  # jamais de boucle (elle ramène cartons-titres et logos) : début recalé, sinon ralenti
+        try: cd = dur(src)
+        except Exception: cd = 0
+        if cd > 0:
+            if start + d > cd - 0.2: start = max(0.0, cd - 0.2 - d)
+            if cd - 0.2 - start < d:
+                src_t = max(0.5, cd - 0.2 - start); f = d / src_t; vf = f"setpts={f:.3f}*PTS," + vf; print(f"Plan court ({cd:.1f} s) : ralenti x{f:.2f} au lieu d'une boucle", flush=True)
+    inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-ss", str(start), "-t", f"{src_t:.3f}", "-i", src]
     sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", out)
 
 def ass_time(t): t = max(0, t); return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
