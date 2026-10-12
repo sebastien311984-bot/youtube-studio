@@ -25,3 +25,9 @@ Design 3–5 SIGNATURE sequences per video that exist nowhere else; vary devices
 - `{"kind":"globe","texture":"<NASA equirectangular jpg>","lon0":-20,"lon1":40,"lat":20,"title":"…","sub":"…","marks":[{"lat":0,"label":"EQUATOR"},{"lon":2.35,"lat":48.85,"label":"PARIS","color":"red","at":2}]}` — photoreal rotating planet. Texture e.g. https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg
 - `{"kind":"manim","code":"<body of construct(); Manim CE 0.19; Text/MathTex/Axes/VGroup/Create/Transform…>","assets":{"name":"<image url>"},"three_d":false}` — bespoke explanatory animation (cutaways, trajectories, graphs drawing, particle flows, scale comparisons). Keep text inside the frame (±6.5 x, ±3.5 y), font sizes 28–72, dark background, yellow/orange/red accents. Each manim scene ≤ 10 s, one idea.
 Real footage stays the proof; animation explains what a camera cannot show.
+
+## Retention fields (checked, blocking)
+- Top-level `strategy`: {viewer, hook, promise, payoff, takeaway} — write it FIRST, plus 3 title and 3 thumbnail-text options in `youtube.alternatives`.
+- Mark at least one scene every ≤40 s with `"beat": true` (new question/number/viewpoint) or `"reveal": true`.
+- Last non-outro scene: `"payoff": true` and it must deliver the promised answer plainly.
+- Never: overpromising title, padding, fake cliffhangers.

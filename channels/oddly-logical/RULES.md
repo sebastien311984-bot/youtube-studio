@@ -12,6 +12,15 @@ Deux parties : des GARDE-FOUS courts (non négociables, vérifiés par les outil
 5. **Contrôle avant rendu** : check_episode → preflight (on REGARDE les planches) → oddly-viewer → un seul rendu → **contrôle final obligatoire** : oddly-viewer lit `<nom>_review.jpg` (image + phrase dite à chaque plan) et signale tout décalage ; on corrige et on re-rend AVANT de livrer.
 6. **Jamais** de publication sans accord explicite de Sébastien (programmation via pack Chrome).
 
+## Stratégie algorithme (YouTube = satisfaction à long terme, pas seulement temps passé)
+Les signaux visés : CTR miniature/titre → rétention des 30 premières s → durée moyenne → satisfaction (likes, commentaires, pas de « Pas intéressé ») → session (le spectateur enchaîne une autre de nos vidéos) → retour sur la chaîne.
+- **Fiche stratégie AVANT le script** (champ `strategy` du JSON, vérifié par check_episode) : `viewer` (qui clique et pourquoi), `hook` (la contradiction des 3 premières s), `promise` (ce que titre + miniature promettent), `payoff` (la réponse exacte donnée à la fin), `takeaway` (la phrase que le spectateur répétera à un ami).
+- **Titre + miniature conçus d'abord**, 3 variantes chacun ; on garde le couple le plus fort et on vérifie que la 1re image de la vidéo le confirme (sinon abandon immédiat du spectateur).
+- **Histoire qui progresse** : chaque scène répond à une question et en ouvre une nouvelle ; une relance marquée `reveal` ou `beat` au moins toutes les 40 s (contrôlé) ; procédé visuel jamais 3 fois de suite.
+- **Fin qui récompense** : la dernière scène porte `payoff: true` et donne VRAIMENT la réponse promise (pas de teasing creux) ; puis renvoi vers une autre de nos vidéos (session).
+- **3 mauvaises recettes interdites** : (1) titre/miniature qui promettent plus que la vidéo (clic trompé = signal négatif durable) ; (2) faire durer artificiellement (remplissage, répétitions, fausses relances « mais attendez… » sans contenu) ; (3) teasing permanent qui retarde la réponse jusqu'à frustrer.
+- **Bilan après publication** (quand Sébastien partage les stats Studio) : CTR, % retenu à 30 s, courbe de rétention (où ça décroche), pour chaque vidéo une leçon qui remplace une ligne ici.
+
 ## B. Méthode créative (à repenser pour CHAQUE vidéo)
 - **Partir des images, pas du texte** : avant d'écrire, lister les 5 plans les plus forts disponibles. Pas de matière spectaculaire et légale → autre sujet.
 - **Choisir le format qui sert le sujet**, et varier : expérience réelle expliquée (ralentis de labo — notre meilleur score), scénario de survie à la 2e personne, enquête/mystère historique, compte à rebours, comparaison d'échelle, « et si… ». Durée dictée par la matière : 1 min 30 pour un phénomène, 5-8 min pour une histoire.

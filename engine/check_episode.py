@@ -54,4 +54,19 @@ _orig = sum(_w(s) for s in ep["scenes"] if s.get("kind") in ORIG or (s.get("kind
 if _orig / _tot < 0.45: errs.append(f"monétisation : seulement {100*_orig/_tot:.0f} % du temps avec un apport visuel original (animations, annotations, encarts) → viser ≥ 45 % (bloquant monétisation)")
 if not ep.get("youtube", {}).get("sources") and "Sources" not in ep.get("youtube", {}).get("description", ""):
     errs.append("monétisation : description sans section « Sources » (études, NOAA/NASA…) (bloquant monétisation)")
-print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard", "bloquant spectateur", "bloquant monétisation")) else 0)
+# Rétention / satisfaction (2026-10-12) : fiche stratégie obligatoire + rythme mesuré
+st = ep.get("strategy", {})
+for f in ("viewer", "hook", "promise", "payoff", "takeaway"):
+    if not st.get(f): errs.append(f"stratégie : champ « {f} » manquant (bloquant rétention)")
+_sc = [s for s in ep["scenes"] if s.get("kind") != "outro"]
+if _sc and len(_sc[0].get("text", "").split()) > 22: errs.append("scène 0 : accroche > ~8 s → couper pour poser la question plus vite (bloquant rétention)")
+t, last = 0, 0
+for i, s in enumerate(_sc):
+    t += _w(s)
+    if s.get("reveal") or s.get("beat"): last = t
+    elif t - last > 40: errs.append(f"scène {i} : aucune relance (reveal/beat) depuis {t-last:.0f} s (bloquant rétention)"); last = t
+for i in range(2, len(_sc)):
+    k3 = [_sc[j].get("kind", "footage") for j in (i-2, i-1, i)]
+    if len(set(k3)) == 1 and k3[0] != "footage": errs.append(f"scène {i} : 3 fois de suite « {k3[0]} » → varier le procédé visuel")
+if _sc and not _sc[-1].get("payoff"): errs.append("fin : la dernière scène doit porter « payoff »: true (réponse à la promesse) (bloquant rétention)")
+print("\n".join(errs) or "OK"); sys.exit(1 if any(k in e for e in errs for k in ("courbe", "titre", "inaccessible", "schéma", "répétition", "type inconnu", "sans image", "au hasard", "bloquant spectateur", "bloquant monétisation", "bloquant rétention")) else 0)
