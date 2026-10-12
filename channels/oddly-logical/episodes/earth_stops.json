@@ -8,7 +8,7 @@
   "sub": "1 SECOND",
   "shift": true,
   "circle": false,
-  "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~large.jpg"
+  "image": "https://images-assets.nasa.gov/image/iss072e001649/iss072e001649~large.jpg"
  },
  "youtube": {
   "title": "What If Earth Stopped Spinning for One Second?",
@@ -46,7 +46,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001016/GSFC_20171208_Archive_e001016~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/iss072e001649/iss072e001649~large.jpg",
      "start": 0,
      "move": "in"
     }
@@ -90,7 +90,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002130/GSFC_20171208_Archive_e002130~large.jpg",
+     "clip": "https://images-assets.nasa.gov/video/GSFC_20170403_Blue_m12564_Marble/GSFC_20170403_Blue_m12564_Marble~orig.mp4",
      "start": 0,
      "move": "left"
     }
@@ -161,12 +161,12 @@
     {
      "type": "arrow",
      "from": [
-      520,
-      540
+      560,
+      700
      ],
      "to": [
-      1400,
-      540
+      1360,
+      700
      ],
      "color": "gold",
      "text": "SURFACE MOVES WEST TO EAST"
@@ -175,7 +175,7 @@
      "type": "label",
      "at": [
       960,
-      820
+      900
      ],
      "color": "white",
      "text": "FASTEST AT THE EQUATOR, ZERO AT THE POLES"
@@ -259,10 +259,23 @@
      "move": "left"
     }
    ],
-   "text": "Buildings are anchored to bedrock, so they stay put. Cars, furniture, people, anything unfixed, is thrown eastward at about the speed of a handgun bullet.",
+   "text": "Buildings stay anchored. Cars, furniture, people, anything unfixed, flies east.",
    "tone": "urgent",
    "fact": "Inertia: a moving object keeps moving\\Nunless a force stops it.",
-   "teaser": "THEN THE AIR HITS"
+   "teaser": "THEN THE AIR HITS",
+   "hud": [
+    {
+     "type": "gauge",
+     "label": "Unfixed objects",
+     "value": 305,
+     "max": 500,
+     "unit": " m/s",
+     "sub": "about a handgun bullet",
+     "pos": "bl",
+     "at": 1.5,
+     "color": "red"
+    }
+   ]
   },
   {
    "shots": [
@@ -376,7 +389,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/iss072e001649/iss072e001649~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001016/GSFC_20171208_Archive_e001016~large.jpg",
      "start": 0,
      "move": "out"
     }
@@ -392,10 +405,10 @@
    "kind": "zoomto",
    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Low_pressure_system_over_Iceland.jpg",
    "box": [
-    660,
-    340,
-    1260,
-    740
+    553,
+    510,
+    1153,
+    910
    ],
    "label": "A STORM SPUN BY EARTH'S ROTATION",
    "text": "The same effect swirls this storm south of Iceland. Take the spin away, and the pattern goes with it.",
@@ -628,7 +641,7 @@
      "move": "left"
     }
    ],
-   "text": "Earth also bulges at the equator, about twenty-one kilometers wider in radius than at the poles, because spinning stretches it.",
+   "text": "Spinning gives Earth an equatorial bulge, about twenty-one kilometers.",
    "tone": "neutral",
    "hud": [
     {
@@ -642,12 +655,13 @@
      "at": 1.5,
      "color": "blue"
     }
-   ]
+   ],
+   "fact": "Equator bulges ~21 km: radius 6,378 km\\Nvs 6,357 km at the poles."
   },
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~large.jpg",
+     "clip": "pixabay:id:233867",
      "start": 0,
      "move": "right"
     }
@@ -662,7 +676,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001788/GSFC_20171208_Archive_e001788~large.jpg",
+     "clip": "pixabay:id:160767",
      "start": 0,
      "move": "in"
     }
@@ -677,7 +691,7 @@
   {
    "shots": [
     {
-     "clip": "https://images-assets.nasa.gov/image/PIA15953/PIA15953~large.jpg",
+     "clip": "https://images-assets.nasa.gov/image/iss064e044527/iss064e044527~large.jpg",
      "start": 0,
      "move": "out"
     }
@@ -938,6 +952,21 @@
   {
    "shots": [
     {
+     "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001788/GSFC_20171208_Archive_e001788~large.jpg",
+     "start": 0,
+     "move": "in"
+    }
+   ],
+   "text": "A one-second stop never happens. A day one second longer does, in about fifty thousand years.",
+   "tone": "reveal",
+   "label": [
+    "THE REAL ENDING",
+    "Fifty thousand years"
+   ]
+  },
+  {
+   "shots": [
+    {
      "clip": "pixabay:id:190332",
      "start": 0,
      "move": "in"
@@ -967,7 +996,7 @@
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000015/GSFC_20171208_Archive_e000015~large.jpg",
+       "clip": "pixabay:id:107336",
        "start": 0,
        "move": "left"
       }
@@ -1006,7 +1035,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:107336",
+       "clip": "pixabay:id:16135",
        "start": 0,
        "move": "in"
       }
@@ -1039,7 +1068,7 @@
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/image/0601388/0601388~large.jpg",
+       "clip": "https://images-assets.nasa.gov/image/iss029e012564/iss029e012564~large.jpg",
        "start": 0,
        "move": "right"
       }
@@ -1147,7 +1176,7 @@
     {
      "shots": [
       {
-       "clip": "https://images-assets.nasa.gov/video/GSFC_20170403_Blue_m12564_Marble/GSFC_20170403_Blue_m12564_Marble~orig.mp4",
+       "clip": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~large.jpg",
        "start": 0,
        "move": "left"
       }
@@ -1186,7 +1215,7 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/4/43/Coriolis-ex.png",
+       "clip": "pixabay:id:4006",
        "start": 0,
        "move": "in"
       }
@@ -1208,7 +1237,7 @@
     {
      "shots": [
       {
-       "clip": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Coriolis_effect.svg",
+       "clip": "pixabay:id:197798",
        "start": 0,
        "move": "left"
       }
