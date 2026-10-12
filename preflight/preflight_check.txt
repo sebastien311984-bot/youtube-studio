@@ -1,0 +1,5 @@
+scène 8 : 1 plan(s) pour ~8 s (le moteur complétera, mais varier les requêtes)
+scène 11 : 1 plan(s) pour ~8 s (le moteur complétera, mais varier les requêtes)
+scène 20 : 1 plan(s) pour ~9 s (le moteur complétera, mais varier les requêtes)
+scène 26 : 1 plan(s) pour ~10 s (le moteur complétera, mais varier les requêtes)
+scène 32 : 1 plan(s) pour ~10 s (le moteur complétera, mais varier les requêtes)
