@@ -245,11 +245,6 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/0/04/Whale_meat_-_cropped.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/74/Horseshoe_I_Weddell_seal_passing_underwater.jpg",
-     "start": 0,
-     "move": "out"
     }
    ],
    "reveal": true,
@@ -406,11 +401,6 @@
      "clip": "https://live.staticflickr.com/52/130071888_06ab7d5bab_b.jpg",
      "start": 0,
      "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/0/07/Freediving_cleanup_-_bicycle_recovery_in_Huveaune_river_mouth%2C_Marseille.jpg",
-     "start": 0,
-     "move": "out"
     }
    ],
    "label": [
