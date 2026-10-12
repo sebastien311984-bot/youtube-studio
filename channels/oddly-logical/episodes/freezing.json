@@ -31,7 +31,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:4",
+     "clip": "pixabay:id:63281",
      "start": 2,
      "move": "out"
     }
@@ -57,7 +57,7 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:0",
+     "clip": "pixabay:id:29314",
      "start": 2,
      "move": "left"
     }
@@ -107,18 +107,7 @@
      "move": "out"
     }
    ],
-   "text": "Wet clothes drain heat far faster than dry ones, because water pulls heat out of you much faster than air does.",
-   "tone": "tense"
-  },
-  {
-   "shots": [
-    {
-     "clip": "pixabay:id:47615",
-     "start": 0,
-     "move": "left"
-    }
-   ],
-   "text": "Your body is losing a battle it cannot see.",
+   "text": "Wet clothes drain heat far faster than dry ones, because water pulls heat out of you much faster than air does. Your body is losing a battle it cannot see.",
    "tone": "tense"
   },
   {
@@ -252,7 +241,7 @@
      "move": "left"
     }
    ],
-   "text": "It stops. You might think the cold is easing. It is not. Shivering burns your energy reserves, and when they run out, the furnace goes quiet.",
+   "text": "It stops. You might think the cold is easing. It is not. Shivering burns your energy reserves, and deep cold also switches off the shivering reflex itself. The furnace goes quiet.",
    "reveal": true,
    "tone": "reveal"
   },
@@ -264,7 +253,7 @@
      "move": "left"
     }
    ],
-   "text": "From here, nothing in your body is fighting back.",
+   "text": "From here, your body's main heat engine has gone quiet.",
    "tone": "reveal",
    "teaser": "THE STRANGEST SYMPTOM"
   },
@@ -328,7 +317,7 @@
      "move": "in"
     }
    ],
-   "text": "Rescuers find victims half-naked, clothes neatly folded or scattered, in the middle of blizzards. For years, police suspected assault. It was the cold.",
+   "text": "Rescuers find victims half-naked, clothes neatly folded or scattered, in the middle of blizzards. Police have sometimes suspected assault. It was the cold.",
    "fact": "Paradoxical undressing is reported in\\Nmany fatal cold-exposure cases.",
    "tone": "warm",
    "label": [
@@ -372,7 +361,7 @@
      "move": "right"
     }
    ],
-   "text": "Scientists think it is a primitive reflex: the brain stem, still alive, searching for a den. A sleeping bear would do the same."
+   "text": "One theory: a primitive brain-stem reflex, still alive, searching for a den, like a hibernating animal."
   },
   {
    "shots": [
@@ -500,14 +489,14 @@
      "move": "left"
     }
    ],
-   "text": "She finds a pocket of air under the ice and breathes. She is conscious. For about eighty minutes, she is trapped in freezing water while her friends try to pull her out.",
+   "text": "She finds a pocket of air under the ice and breathes. She is conscious, but the water keeps cooling her. Her friends fight to pull her out.",
    "tone": "tense"
   },
   {
    "kind": "stat",
    "value": 80,
    "suffix": " min",
-   "caption": "ANNA UNDER THE ICE, ABOUT 80 MINUTES",
+   "caption": "TRAPPED UNDER THE ICE, ABOUT 80 MINUTES",
    "text": "About eighty minutes. That is how long she was trapped.",
    "min": 4.5,
    "beat": true
@@ -520,7 +509,7 @@
      "move": "in"
     }
    ],
-   "text": "Then her heart stops. When rescuers finally pull her out, she is not breathing and has no pulse. Her core temperature: thirteen point seven degrees Celsius.",
+   "text": "After about forty minutes, her heart stops. Another forty minutes pass before rescuers pull her out. No breath, no pulse. Her core temperature: thirteen point seven degrees Celsius.",
    "hud": [
     {
      "type": "counter",
@@ -528,7 +517,7 @@
      "value": 13.7,
      "from": 28,
      "unit": " C",
-     "sub": "LOWEST SURVIVED",
+     "sub": "ADULT RECORD",
      "pos": "bl",
      "at": 0.6,
      "color": "red"
@@ -540,7 +529,7 @@
   {
    "kind": "manim",
    "code": "\nnl=NumberLine(x_range=[10,38,4],length=11,include_numbers=False,color=GREY).shift(DOWN*0.6)\ntitle=Text(\"HOW COLD CAN A SURVIVOR GET?\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\ndef p(T): return nl.n2p(T)\nmarks=[(37,\"37 NORMAL\",GREEN,UP),(30,\"30 SHIVERING STOPS\",ORANGE,DOWN),(28,\"28 HEART RISK\",RED,UP),(13.7,\"13.7 ANNA\",YELLOW,DOWN)]\nself.play(FadeIn(title),Create(nl),run_time=1)\nd=Dot(p(37),color=RED,radius=0.18)\nself.add(d)\nfor T,lbl,c,dr in marks[1:]:\n    self.play(d.animate.move_to(p(T)),run_time=1.4)\n    tx=Text(lbl,font_size=28,color=c).next_to(p(T),dr,buff=0.5)\n    self.play(FadeIn(tx),run_time=0.4)\ntx0=Text(marks[0][1],font_size=28,color=GREEN).next_to(p(37),UP,buff=0.5)\nself.play(FadeIn(tx0),run_time=0.4)\nself.wait(0.5)\n",
-   "text": "Thirteen point seven. The coldest body ever recorded in an accidental hypothermia survivor. No pulse, no breath. Clinically dead.",
+   "text": "Thirteen point seven. The lowest core temperature ever recorded in an adult who survived accidental hypothermia. No pulse, no breath. Clinically dead.",
    "tone": "reveal",
    "beat": true
   },
@@ -552,7 +541,7 @@
      "move": "in"
     }
    ],
-   "text": "At the hospital in Tromsø, doctors do not give up. They remember the rule. A heart-lung machine slowly pumps her blood out, warms it, and sends it back.",
+   "text": "At the hospital in Tromsø, doctors do not give up. They remember the rule. For about nine hours they keep resuscitating her while a heart-lung machine pumps her blood out, warms it, and sends it back.",
    "tone": "warm",
    "fact": "Anna's team used ECMO: a machine that\\Nrewarms blood outside the body.",
    "label": [
@@ -580,8 +569,9 @@
      "move": "out"
     }
    ],
-   "text": "Her heart restarted after hours of rewarming. She woke up. She was paralyzed at first, but she recovered, and returned to work as a doctor. The ice that nearly killed her had also saved her.",
-   "tone": "warm"
+   "text": "After about nine hours, her heart restarted. She woke up. She was paralyzed at first, but she recovered, and returned to work as a doctor. The ice that nearly killed her had also saved her.",
+   "tone": "warm",
+   "teaser": "WHAT SAVES A LIFE"
   },
   {
    "shots": [
@@ -591,7 +581,7 @@
      "move": "in"
     }
    ],
-   "text": "So what should you actually do? If someone is shivering and confused, get them out of the wind, strip off wet clothes, wrap them in dry insulation, and warm the chest first, not the arms and legs.",
+   "text": "So what should you actually do? Get them out of the wind and wet, remove wet clothes, wrap them in dry insulation, and warm the chest and trunk first, not the arms and legs. If they are confused, call emergency services and keep them still.",
    "chapter": [
     "CHAPTER 6",
     "WHAT SAVES A LIFE"
@@ -612,7 +602,7 @@
      "move": "in"
     }
    ],
-   "text": "If they are limp and silent, handle them gently, keep them flat, and call emergency services. Never assume that cold and still means gone.",
+   "text": "If they are limp and silent, handle them gently, keep them flat, and call emergency services right away. Check for breathing for up to a minute. If there is none, start CPR. Never assume that cold and still means gone.",
    "tone": "warm",
    "reveal": true
   },
@@ -624,7 +614,7 @@
      "move": "in"
     }
    ],
-   "text": "So here is the answer. Your body shuts down in order: shivering, fog, silence, strange behavior, a failing heart. Never trust how warm you feel. And if someone is cold and still, do not call it. Warm them, then decide. Subscribe for the next one.",
+   "text": "Your body shuts down in order: shivering, fog, silence, strange behavior, a failing heart. Never trust how warm you feel. And if someone is cold and still, never give up on them. Call emergency services, keep rewarming them, and let the medics make the call. Subscribe for the next one.",
    "tone": "warm",
    "payoff": true,
    "min": 8
@@ -648,7 +638,7 @@
     {
      "shots": [
       {
-       "clip": "pixabay:id:4",
+       "clip": "pixabay:id:63281",
        "start": 4,
        "move": "left"
       }
@@ -689,7 +679,7 @@
        "move": "in"
       }
      ],
-     "text": "A woman's body hit thirteen point seven degrees, and her heart stopped. She survived.",
+     "text": "A woman's heart stopped under river ice. Her body cooled to thirteen point seven degrees. She survived.",
      "tone": "tense"
     },
     {
@@ -784,10 +774,10 @@
  },
  "youtube": {
   "title": "Your Body Freezing: What Happens Degree by Degree",
-  "description": "What happens to your body as it freezes? From 37 C to 13.7 C: shivering at 35, confusion at 33, shivering stops near 30, paradoxical undressing, terminal burrowing, heart arrhythmia near 28, and the real story of Anna Bagenholm, who survived a core temperature of 13.7 C in 1999.\n\nIn this video:\n- 37 to 35: the alarm\n- 33: the fog\n- 30: the silence\n- 28: the heart\n- 13.7: the woman who woke up\n\nFAQ\nWhy do freezing people take their clothes off? Paradoxical undressing: tired blood vessels open and the skin feels hot.\nWhat does 'not dead until warm and dead' mean? Cold bodies can be revived, so doctors rewarm before declaring death.\n\nSources:\n- Brown DJA et al., Accidental hypothermia, New England Journal of Medicine, 2012\n- Gilbert M et al., Resuscitation of a hypothermic patient (Bagenholm), The Lancet, 2000\n- Wilderness Medical Society clinical practice guidelines, accidental hypothermia\n\nFootage: Pixabay; US Coast Guard / Wikimedia Commons; State Library of NSW via Wikimedia Commons.",
+  "description": "What happens to your body as it freezes? From 37 C to 13.7 C: shivering at 35, confusion at 33, shivering stops near 30, paradoxical undressing, terminal burrowing, heart arrhythmia near 28, and the real story of Anna Bagenholm, who survived a core temperature of 13.7 C in 1999.\n\nIn this video:\n- 37 to 35: the alarm\n- 33: the fog\n- 30: the silence\n- 28: the heart\n- 13.7: the woman who woke up\n\nFAQ\nWhy do freezing people take their clothes off? Paradoxical undressing: tired blood vessels open and the skin feels hot.\nWhat does 'not dead until warm and dead' mean? Cold bodies can be revived, so doctors rewarm before declaring death.\n\nSources:\n- Brown DJA et al., Accidental hypothermia, New England Journal of Medicine, 2012\n- Gilbert M et al., Resuscitation from accidental hypothermia of 13.7 °C with circulatory arrest, The Lancet, 2000\n- Wilderness Medical Society clinical practice guidelines, accidental hypothermia\n\nFootage: Pixabay; US Coast Guard / Wikimedia Commons; State Library of NSW via Wikimedia Commons.",
   "sources": [
    "Brown DJA et al., Accidental hypothermia, N Engl J Med 2012",
-   "Gilbert M et al., The Lancet 2000 (Bagenholm case)",
+   "Gilbert M et al., Resuscitation from accidental hypothermia of 13.7 °C with circulatory arrest, The Lancet, 2000",
    "Wilderness Medical Society hypothermia guidelines"
   ],
   "tags": [
