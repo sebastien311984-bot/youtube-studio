@@ -616,11 +616,25 @@
     {
      "text": "In January 2014 he reached the Marshall Islands, about ten thousand kilometres away.",
      "tone": "tense",
-     "shots": [
+     "kind": "globe",
+     "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+     "lon0": -110,
+     "lon1": -170,
+     "lat": 12,
+     "marks": [
       {
-       "clip": "pixabay:id:95182",
-       "start": 1,
-       "move": "out"
+       "lon": -93.6,
+       "lat": 15.7,
+       "label": "MEXICO",
+       "color": "gold",
+       "at": 0.6
+      },
+      {
+       "lon": 168.7,
+       "lat": 4.6,
+       "label": "MARSHALL IS.",
+       "color": "red",
+       "at": 2.5
       }
      ]
     },
