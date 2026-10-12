@@ -520,5 +520,95 @@
   "desc": "Time-lapse of white clouds in blue sky",
   "credit": "Pixabay (free licence)",
   "page": "https://pixabay.com/videos/id-9825/"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/iss007e14882/iss007e14882~large.jpg",
+  "desc": "Hurricane eye seen from the ISS: smooth white cloud wall around a dark central eye",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/iss007e14882"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Earth-crust-cutaway-numbered.svg",
+  "desc": "Colourful cutaway diagram of Earth showing crust, mantle, outer core and glowing inner core",
+  "credit": "Wikimedia Commons: Gringer, Washiucho (CC0)",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth-crust-cutaway-numbered.svg"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/MIT_12.007_Geobiology%2C_Spring_2007_-_Differentiation_of_Earth_2.jpg",
+  "desc": "Cutaway of Earth showing crust, mantle and core layers",
+  "credit": "Wikimedia Commons: mitopencourseware (CC BY-SA 4.0)",
+  "page": "https://commons.wikimedia.org/wiki/File:MIT_12.007_Geobiology,_Spring_2007_-_Differentiation_of_Earth_2.jpg"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/iss069e005526/iss069e005526~large.jpg",
+  "desc": "The Eye of the Sahara in Mauritania seen from the ISS: sunlit orange desert with a ring structure",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/iss069e005526"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/iss007e08259/iss007e08259~large.jpg",
+  "desc": "Earth's curved limb with white clouds seen from the ISS",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/iss007e08259"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Rolling_Fork%2C_Mississippi_tornado_disaster_area_on_April_12%2C_2023_-_20230412-USDA-RD-MS-LSC-_-_27.jpg",
+  "desc": "Tornado damage in Rolling Fork, Mississippi: wrecked pickup truck among debris",
+  "credit": "Wikimedia Commons: USDAgov (Public domain)",
+  "page": "https://commons.wikimedia.org/wiki/File:Rolling_Fork,_Mississippi_tornado_disaster_area_on_April_12,_2023_-_20230412-USDA-RD-MS-LSC-_-_27.jpg"
+ },
+ {
+  "src": "pixabay:id:348116",
+  "desc": "Aerial view of a long sand beach strip and coastline",
+  "credit": "Pixabay (free licence)",
+  "page": "https://pixabay.com/videos/id-348116/"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/KSC-20170809-PH_KLS02_0009/KSC-20170809-PH_KLS02_0009~large.jpg",
+  "desc": "Full Moon photographed at Kennedy Space Center, bright grey disc on black sky",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/KSC-20170809-PH_KLS02_0009"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Atomic_clocks.jpg",
+  "desc": "Atomic clock experiment in a laboratory with blue-lit optics",
+  "credit": "Wikimedia Commons: NIST\nOriginal uploader was <a href=\"https://cs.wikipedia.org/wiki/User:Dakik\" class=\"extiw\" title=\"cs:U (Public domain)",
+  "page": "https://commons.wikimedia.org/wiki/File:Atomic_clocks.jpg"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ammonia_maser_atomic_clock_NIST.jpg",
+  "desc": "Ammonia maser atomic clock at NIST with two engineers, 1949 black and white photo",
+  "credit": "Wikimedia Commons: Unknown authorUnknown author (Public domain)",
+  "page": "https://commons.wikimedia.org/wiki/File:Ammonia_maser_atomic_clock_NIST.jpg"
+ },
+ {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/NIST-F2_cesium_fountain_atomic_clock.jpg",
+  "desc": "NIST-F2 cesium fountain atomic clock with two scientists in the lab",
+  "credit": "Wikimedia Commons: National Institute of Standards and Technology - Physics Laboratory: Time and Frequency Division (Public domain)",
+  "page": "https://commons.wikimedia.org/wiki/File:NIST-F2_cesium_fountain_atomic_clock.jpg"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/iss023e057948/iss023e057948~large.jpg",
+  "desc": "Sunrise seen from the ISS: orange and blue glowing atmosphere line above the dark Earth",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/iss023e057948"
+ },
+ {
+  "src": "https://images-assets.nasa.gov/image/iss040e080833/iss040e080833~large.jpg",
+  "desc": "Earth's limb from the ISS with bright sun glare through thin clouds",
+  "credit": "NASA (public domain)",
+  "page": "https://images.nasa.gov/details/iss040e080833"
+ },
+ {
+  "src": "pixabay:id:236893",
+  "desc": "Drone view of a boat among icebergs in an Arctic fjord at Greenland",
+  "credit": "Pixabay (free licence)",
+  "page": "https://pixabay.com/videos/id-236893/"
+ },
+ {
+  "src": "pixabay:id:201766",
+  "desc": "Ocean waves crashing on a rocky coastline in stormy weather",
+  "credit": "Pixabay (free licence)",
+  "page": "https://pixabay.com/videos/id-201766/"
  }
 ]
