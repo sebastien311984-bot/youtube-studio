@@ -222,7 +222,7 @@
      "move": "left"
     }
    ],
-   "fact": "Callahan drifted nearly 3,000 km before\\Nfishermen found him near Guadeloupe.",
+   "fact": "Callahan drifted over 3,000 km before\\Nfishermen found him near Guadeloupe.",
    "text": "For seventy-six days he drifted. He made solar stills, speared fish that gathered under the raft, and drank rain whenever it fell."
   },
   {
@@ -270,7 +270,7 @@
      "move": "in"
     }
    ],
-   "text": "He fished, caught rain, and Brazilian fishermen found him. The US Navy wanted his secrets."
+   "text": "He fished, caught rain, and Brazilian fishermen found him. The US Navy studied how he survived."
   },
   {
    "shots": [
@@ -285,7 +285,7 @@
     "Pacific, 2012 to 2014"
    ],
    "tone": "tense",
-   "text": "Then comes Alvarenga, a Mexican fisherman. In December 2012 a storm killed his engine and radio."
+   "text": "Then comes Alvarenga, a Salvadoran fisherman working in Mexico. In December 2012 a storm killed his engine and radio."
   },
   {
    "kind": "globe",
@@ -377,7 +377,7 @@
      "move": "left"
     }
    ],
-   "fact": "Fish flesh is mostly water, but protein costs\\Nwater to digest, so rain still matters.",
+   "fact": "Fish flesh is mostly water, but it is no\\Nsubstitute for rain.",
    "text": "Option three is fish. Their flesh is mostly water, and survival guides mention fluid from the eyes and spine as a last resort."
   },
   {
@@ -550,7 +550,7 @@
      ]
     },
     {
-     "text": "In December 2012, Mexican fisherman José Salvador Alvarenga was blown out to sea by a storm.",
+     "text": "In December 2012, fisherman José Salvador Alvarenga, working out of Mexico, was blown out to sea by a storm.",
      "tone": "tense",
      "shots": [
       {
