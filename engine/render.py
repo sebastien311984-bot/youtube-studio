@@ -36,6 +36,22 @@ def humanize(path):
     r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", tmp])
     if r.returncode == 0: os.replace(tmp, path)
 
+BACKEND = [os.environ.get("TTS_BACKEND")]
+PIPER_VOICE = os.environ.get("PIPER_VOICE", "en_US-ryan-high")
+def piper_tts(text, path, tone="neutral"):
+    """Voix neuronale locale (Piper, hors ligne). Minutage des mots estimé au prorata des lettres (sous-titres)."""
+    d = os.path.expanduser("~/.piper"); os.makedirs(d, exist_ok=True); onnx = os.path.join(d, PIPER_VOICE + ".onnx")
+    if not os.path.exists(onnx):
+        lang, name, q = PIPER_VOICE.split("-"); base = f"https://huggingface.co/rhasspy/piper-voices/resolve/main/en/{lang}/{name}/{q}/{PIPER_VOICE}"
+        for ext in (".onnx", ".onnx.json"): sh("curl", "-sSL", "-o", onnx.replace(".onnx", ext), base + ext)
+    wav = path + ".wav"; ls = {"calm": "1.08", "dramatic": "1.05", "excited": "0.95"}.get(tone, "1.0")
+    subprocess.run(["piper", "--model", onnx, "--length-scale", ls, "--output_file", wav], input=text.encode(), check=True)
+    sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "libmp3lame", "-q:a", "2", path)
+    total = dur(path); ws = text.split(); n = sum(len(w) + 2 for w in ws) or 1; t = 0.15; out = []
+    for w in ws:
+        dd = (total - 0.3) * (len(w) + 2) / n; out.append((t, dd * 0.9, w.strip(".,;:!?\"'—"))); t += dd
+    return out
+
 def tts(text, voice, path, tone="neutral"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
@@ -48,11 +64,21 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    for k in range(5):  # edge-tts renvoie parfois « No audio received » (limitation passagère) → nouvel essai
-        try: words.clear(); asyncio.run(run()); break
-        except Exception as e:
-            if k == 4: raise
-            print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
+    if BACKEND[0] is None:  # choix UNE fois par vidéo (voix homogène) : Edge, sinon Edge avec version récente, sinon Piper local
+        for ver in [None] + [f"{m}.0.3800.0" for m in range(150, 143, -1)]:
+            if ver:
+                import edge_tts.communicate as ec; ec.SEC_MS_GEC_VERSION = f"1-{ver}"
+            try: words.clear(); asyncio.run(run()); BACKEND[0] = "edge"; print(f"TTS : Edge OK ({ver or 'défaut'})", flush=True); break
+            except Exception as e: print(f"TTS Edge échec ({ver or 'défaut'}) : {e.__class__.__name__}", flush=True); time.sleep(2)
+        else: BACKEND[0] = "piper"; print("::warning::Edge TTS indisponible → voix Piper locale pour toute la vidéo", flush=True)
+    elif BACKEND[0] == "edge":
+        for k in range(5):
+            try: words.clear(); asyncio.run(run()); break
+            except Exception as e:
+                if k == 4: raise
+                print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
+    os.environ["TTS_BACKEND"] = BACKEND[0]  # les Shorts (sous-processus) gardent la même voix
+    if BACKEND[0] == "piper": words[:] = piper_tts(text, path, tone)
     humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
@@ -117,10 +143,10 @@ def fetch(src, clips_dir):
         print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
     return local
 
-def clip(src, start, d, out, move):
+def clip(src, start, d, out, move, cut_bottom=0):
     # recadrage 16:9 agrandi de 12 %, puis travelling lent (zoom avant/arrière ou panoramique)
     zw, zh = int(W * 1.12), int(H * 1.12)
-    base = f"scale={zw}:{zh}:force_original_aspect_ratio=increase,crop={zw}:{zh},"
+    base = (f"crop=iw:ih*{1 - cut_bottom:.3f}:0:0," if cut_bottom else "") + f"scale={zw}:{zh}:force_original_aspect_ratio=increase,crop={zw}:{zh},"  # cut_bottom : retire un texte incrusté en bas du rush
     if move in ("left", "right"):
         x = f"(iw-ow)*(1-t/{d})" if move == "left" else f"(iw-ow)*t/{d}"
         vf = base + f"crop={W}:{H}:{x}:(ih-oh)/2,"
@@ -129,7 +155,15 @@ def clip(src, start, d, out, move):
         vf = base + f"scale=w='trunc({W}*{z}/2)*2':h=-2:eval=frame,crop={W}:{H},"
     vf += "eq=contrast=1.08:saturation=1.12:gamma=0.97,vignette=PI/5,fps=30,format=yuv420p"
     still = src.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp"))
-    inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-stream_loop", "-1", "-ss", str(start), "-t", str(d), "-i", src]
+    src_t = d
+    if not still:  # jamais de boucle (elle ramène cartons-titres et logos) : début recalé, sinon ralenti
+        try: cd = dur(src)
+        except Exception: cd = 0
+        if cd > 0:
+            if start + d > cd - 0.2: start = max(0.0, cd - 0.2 - d)
+            if cd - 0.2 - start < d:
+                src_t = max(0.5, cd - 0.2 - start); f = d / src_t; vf = f"setpts={f:.3f}*PTS," + vf; print(f"Plan court ({cd:.1f} s) : ralenti x{f:.2f} au lieu d'une boucle", flush=True)
+    inp = ["-loop", "1", "-framerate", "30", "-t", str(d), "-i", src] if still else ["-ss", str(start), "-t", f"{src_t:.3f}", "-i", src]
     sh("ffmpeg", "-v", "error", "-y", *inp, "-t", str(d), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", out)
 
 def ass_time(t): t = max(0, t); return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
@@ -374,7 +408,7 @@ def main(ep_path, clips_dir, out):
                 srcs = [srcs[k] for k in keep]; shots = [shots[k] for k in keep]
                 sd = (d + XF) / len(shots)
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
-            JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
+            JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"), b.get("cut_bottom", 0))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
         print(f"Scène {i} préparée ({kind}, {d:.0f} s)", flush=True)
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))
