@@ -437,13 +437,14 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:113675",
-     "start": 0,
-     "move": "in"
+     "clip": "pixabay:id:8594",
+     "start": 6,
+     "move": "out"
     }
    ],
    "text": "She finds a pocket of air under the ice and breathes. She is conscious, but the water keeps cooling her. Her friends fight to pull her out.",
-   "tone": "tense"
+   "tone": "tense",
+   "label": "TRAPPED UNDER THE ICE"
   },
   {
    "kind": "stat",
@@ -696,16 +697,11 @@
   }
  ],
  "thumbnail": {
-  "scene": 33,
+  "scene": 11,
   "text": "30 DEGREES",
   "sub": "YOU UNDRESS",
   "shift": false,
-  "circle": true,
-  "circle_at": [
-   0.4,
-   0.78,
-   95
-  ]
+  "circle": false
  },
  "youtube": {
   "title": "Your Body Freezing: What Happens Degree by Degree",
