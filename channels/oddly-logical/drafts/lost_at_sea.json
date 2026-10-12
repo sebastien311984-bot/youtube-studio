@@ -1,7 +1,7 @@
 {
  "title": "Could You Survive Lost at Sea?",
  "voice": "en-US-AndrewMultilingualNeural",
- "credits": "Images: US Coast Guard, US Navy / National Museum of the U.S. Navy, NASA (Goddard, JPL), US Air Force (public domain). Steven Callahan photos by North Yarmouth Academy (CC BY 2.0). Life raft photos: NPL FP2011 (CC BY-SA 3.0), Sillerkiil (CC BY-SA 4.0). Hydration colour chart: Petar Milosevic (CC BY-SA 4.0). Globe texture: NASA Earth Observatory Blue Marble. Video: Pixabay (Pixabay Content License). Facts: Callahan, Adrift (1986); Poon Lim records (US Navy; Imperial War Museums); Alvarenga reports (2014); osmosis and dehydration physiology.",
+ "credits": "Images: US Coast Guard, US Navy / National Museum of the U.S. Navy, NASA (Goddard, JPL), US Air Force (public domain). Steven Callahan photos by North Yarmouth Academy (CC BY 2.0). Hydration colour chart: Petar Milosevic (CC BY-SA 4.0). Globe texture: NASA Earth Observatory Blue Marble. Video: Pixabay (Pixabay Content License). Facts: Callahan, Adrift (1986); Poon Lim records (US Navy; Imperial War Museums); Alvarenga reports (2014); osmosis and dehydration physiology.",
  "ambience": {
   "kind": "ocean"
  },
@@ -9,7 +9,7 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Coast_Guard_aircrew_locates%2C_rescues_2_from_disabled_vessel_off_Samana_Cay%2C_Bahamas_%288820506%29.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Nordic_Mistress_DVIDS1103008.jpg",
      "start": 0,
      "move": "in"
     },
@@ -33,7 +33,7 @@
    "lead": 0.3,
    "teaser": "THE RULE OF THREES",
    "yt_chapter": "Adrift",
-   "text": "You are floating in a rubber raft in the middle of the ocean. No land, no radio, no one looking. Experts would give you days. Yet three men lasted months. Stay to the end to learn the one thing you must never drink."
+   "text": "Could you survive lost at sea? Experts would give you days. Yet three men lasted months, with no land, no radio, no one looking. Stay to the end to learn the one thing you must never drink."
   },
   {
    "kind": "intro",
@@ -41,24 +41,24 @@
   },
   {
    "kind": "manim",
-   "code": "\ntitle=Text(\"THE RULE OF THREES\",font_size=46,color=ORANGE).to_edge(UP)\nitems=[(\"3 MINUTES\",\"without air\"),(\"3 HOURS\",\"in harsh weather\"),(\"3 DAYS\",\"without water\"),(\"3 WEEKS\",\"without food\")]\nrows=VGroup()\nfor i,(a,b) in enumerate(items):\n    big=Text(a,font_size=54,color=RED if i==2 else YELLOW)\n    sm=Text(b,font_size=34,color=WHITE)\n    rows.add(VGroup(big,sm).arrange(RIGHT,buff=0.5,aligned_edge=DOWN))\nrows.arrange(DOWN,buff=0.6,aligned_edge=LEFT).move_to(DOWN*0.3)\nself.play(Write(title),run_time=0.8)\nfor g in rows:\n    self.play(FadeIn(g,shift=RIGHT*0.4),run_time=1.0)\nbox=SurroundingRectangle(rows[2],color=RED,buff=0.2)\nself.play(Create(box),run_time=0.8)\nself.wait(1.5)\n",
+   "code": "\ntitle=Text(\"THE RULE OF THREES\",font_size=46,color=ORANGE).to_edge(UP)\nitems=[(\"3 MINUTES\",\"without air\"),(\"3 HOURS\",\"in harsh weather\"),(\"3 DAYS\",\"without water\"),(\"3 WEEKS\",\"without food\")]\nrows=VGroup()\nfor i,(a,b) in enumerate(items):\n    big=Text(a,font_size=54,color=RED if i==2 else YELLOW)\n    sm=Text(b,font_size=34,color=WHITE)\n    rows.add(VGroup(big,sm).arrange(RIGHT,buff=0.5,aligned_edge=DOWN))\nrows.arrange(DOWN,buff=0.6,aligned_edge=LEFT).move_to(DOWN*0.3)\nself.play(FadeIn(title),run_time=0.5)\nfor g in rows:\n    self.play(FadeIn(g,shift=RIGHT*0.4),run_time=0.6)\nbox=SurroundingRectangle(rows[2],color=RED,buff=0.2)\nself.play(Create(box),run_time=0.8)\nself.wait(0.6)\n",
    "chapter": [
     "CHAPTER 1",
     "THE RULE OF THREES"
    ],
    "yt_chapter": "The rule of threes",
    "tone": "calm",
-   "text": "Survivors use the rule of threes: roughly three minutes without air, three hours in harsh weather, three days without water, three weeks without food."
+   "text": "The rule of threes: three minutes without air, three hours in harsh weather, three days without water, three weeks without food."
   },
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/9a/BALSA_PESCANTE.JPG",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/73/Pararescuemen_from_the_304th_Rescue_Squadron_secure_a_covered_life_raft_as_the_sun_sets_during_an_astronaut_rescue_training_exercise_with_NASA%E2%80%99s_Commercial_Crew_Program_and_SpaceX_off_of_Florida%E2%80%99s_eastern_coast._17_April_2018.jpg",
      "start": 0,
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/2f/P%C3%A4%C3%A4steparv_2014._aastal_Tallinna_sadamas_merep%C3%A4evadel.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Photograph_depicting_the_rescue_of_survivors_of_RMS_TAHITI_%287749814006%29.jpg",
      "start": 0,
      "move": "left"
     }
@@ -73,7 +73,7 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Life_Raft_%28PSF%29.png",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/65/Coast_Guard_aircrew_locates%2C_rescues_2_from_disabled_vessel_off_Samana_Cay%2C_Bahamas_%288820506%29.jpg",
      "start": 0,
      "move": "in"
     },
@@ -125,7 +125,7 @@
   },
   {
    "kind": "manim",
-   "code": "\nnp.random.seed(4)\ntitle=Text(\"SEAWATER: ABOUT 3.5% SALT\",font_size=38,color=YELLOW).to_edge(UP,buff=0.4)\ncell=Circle(radius=1.8,color=GREEN,fill_color=GREEN,fill_opacity=0.25,stroke_width=6)\nsalts=VGroup()\nwhile len(salts)<46:\n    p=np.array([np.random.uniform(-6,6),np.random.uniform(-2.3,2.3),0])\n    if np.linalg.norm(p)>2.6: salts.add(Dot(p,radius=0.09,color=YELLOW))\nwater=VGroup()\nfor k in range(14):\n    a=np.random.uniform(0,TAU); r=np.random.uniform(0.2,1.4)\n    water.add(Dot(np.array([r*np.cos(a),r*np.sin(a),0]),radius=0.1,color=BLUE))\ncl=Text(\"CELL\",font_size=30,color=WHITE).move_to(cell.get_center()+DOWN*0.05)\nself.play(Write(title),FadeIn(cell),FadeIn(salts),FadeIn(water),run_time=1.5)\nmoves=[]\nfor d in water:\n    v=d.get_center(); v=v/ (np.linalg.norm(v)+1e-6)\n    moves.append(d.animate.move_to(v*np.random.uniform(2.9,3.6)))\nself.play(AnimationGroup(*moves,lag_ratio=0.08),cell.animate.scale(0.55),run_time=3.5)\nres=Text(\"WATER LEAVES THE CELL. IT SHRINKS.\",font_size=34,color=RED).to_edge(DOWN,buff=0.4)\nself.play(Write(res),run_time=1.2)\nself.wait(1.0)\n",
+   "code": "\nnp.random.seed(4)\ntitle=Text(\"SEAWATER: ABOUT 3.5% SALT\",font_size=38,color=YELLOW).to_edge(UP,buff=0.5)\ncell=Circle(radius=1.8,color=GREEN,fill_color=GREEN,fill_opacity=0.25,stroke_width=6)\nsalts=VGroup()\nwhile len(salts)<46:\n    p=np.array([np.random.uniform(-6,6),np.random.uniform(-2.3,2.3),0])\n    if np.linalg.norm(p)>2.6: salts.add(Dot(p,radius=0.09,color=YELLOW))\nwater=VGroup()\nfor k in range(14):\n    a=np.random.uniform(0,TAU); r=np.random.uniform(0.2,1.4)\n    water.add(Dot(np.array([r*np.cos(a),r*np.sin(a),0]),radius=0.1,color=BLUE))\ncl=Text(\"CELL\",font_size=30,color=WHITE).move_to(cell.get_center()+DOWN*0.05)\nself.play(FadeIn(title),FadeIn(cell),FadeIn(salts),FadeIn(water),run_time=1.5)\nmoves=[]\nfor d in water:\n    v=d.get_center(); v=v/ (np.linalg.norm(v)+1e-6)\n    moves.append(d.animate.move_to(v*np.random.uniform(2.9,3.6)))\nself.play(AnimationGroup(*moves,lag_ratio=0.08),cell.animate.scale(0.55),run_time=3.5)\nres=Text(\"WATER LEAVES. THE CELL SHRINKS.\",font_size=30,color=RED).to_edge(DOWN,buff=0.8)\nself.play(FadeIn(res),run_time=1.2)\nself.wait(1.0)\n",
    "text": "Seawater is about three and a half percent salt. By osmosis, that salt pulls water out of your cells, and they shrink."
   },
   {
@@ -136,7 +136,7 @@
    "min": 9,
    "tone": "tense",
    "fact": "Human blood is roughly 0.9 percent salt,\\Nseawater is nearly four times that.",
-   "text": "Your kidneys can only make urine less salty than the sea. To flush the salt from one litre, you need more than a litre of water. Every sip leaves you thirstier."
+   "text": "Your kidneys cannot make urine saltier than the sea. To flush the salt in one litre, you need more than a litre of water."
   },
   {
    "shots": [
@@ -177,8 +177,8 @@
      "move": "in"
     },
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/62/Steven_Callahan_11.jpg",
-     "start": 0,
+     "clip": "pixabay:id:205011",
+     "start": 1,
      "move": "left"
     }
    ],
@@ -196,56 +196,66 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/72/Steven_Callahan_14.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Steven_Callahan_16.jpg",
-     "start": 0,
-     "move": "right"
-    }
-   ],
-   "tone": "tense",
-   "text": "Something hit his boat in the night, he believed a whale. Water poured in, and he had minutes to grab flares, a spear gun and his solar stills."
-  },
-  {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Steven_Callahan_9.jpg",
-     "start": 0,
-     "move": "in"
-    },
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/9/93/Steven_Callahan_6_%28cropped%29.jpg",
-     "start": 0,
-     "move": "left"
-    }
-   ],
-   "fact": "Callahan drifted over 3,000 km before\\Nfishermen found him near Guadeloupe.",
-   "text": "For seventy-six days he drifted. He made solar stills, speared fish that gathered under the raft, and drank rain whenever it fell."
-  },
-  {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Steven_Callahan_7.jpg",
-     "start": 0,
+     "clip": "pixabay:id:216500",
+     "start": 1,
      "move": "in"
     }
    ],
    "tone": "tense",
-   "text": "Then his raft began to leak. He spent hours every day pumping and patching it."
+   "text": "Something hit his boat in the night, he believed a whale. Water poured in."
   },
   {
-   "shots": [
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": -35,
+   "lon1": -42,
+   "lat": 20,
+   "title": "CALLAHAN",
+   "sub": "Roughly 3,000 km",
+   "min": 11,
+   "tone": "calm",
+   "text": "For seventy-six days he drifted, patching a leaking raft, making solar stills, spearing fish, and drinking rain. Fishermen found him near Guadeloupe. He later wrote a bestseller, Adrift.",
+   "fact": "Callahan drifted nearly 3,000 km before\\Nfishermen found him near Guadeloupe.",
+   "marks": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Steven_Callahan_15.jpg",
-     "start": 0,
-     "move": "in"
+     "lon": -15.5,
+     "lat": 28,
+     "label": "CANARIES",
+     "color": "gold",
+     "at": 0.5
+    },
+    {
+     "lon": -25,
+     "lat": 26,
+     "color": "gold",
+     "at": 2
+    },
+    {
+     "lon": -35,
+     "lat": 23,
+     "color": "gold",
+     "at": 3
+    },
+    {
+     "lon": -45,
+     "lat": 20,
+     "color": "gold",
+     "at": 4
+    },
+    {
+     "lon": -55,
+     "lat": 17.5,
+     "color": "gold",
+     "at": 5
+    },
+    {
+     "lon": -61.5,
+     "lat": 16.2,
+     "label": "GUADELOUPE",
+     "color": "red",
+     "at": 6.2
     }
-   ],
-   "tone": "warm",
-   "text": "He later wrote a bestselling book, Adrift, about those seventy-six days."
+   ]
   },
   {
    "shots": [
@@ -290,11 +300,11 @@
   {
    "kind": "globe",
    "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
-   "lon0": -96,
-   "lon1": -188,
-   "lat": 12,
-   "title": "ALVARENGA'S DRIFT",
-   "sub": "About 10,000 km across the Pacific",
+   "lon0": -135,
+   "lon1": -150,
+   "lat": 10,
+   "title": "THE DRIFT",
+   "sub": "Rough route, ~10,000 km",
    "marks": [
     {
      "lon": -93.8,
@@ -304,11 +314,59 @@
      "at": 0.5
     },
     {
+     "lon": -105,
+     "lat": 13.5,
+     "color": "gold",
+     "at": 1.5
+    },
+    {
+     "lon": -117,
+     "lat": 12,
+     "color": "gold",
+     "at": 2.7
+    },
+    {
+     "lon": -129,
+     "lat": 10.5,
+     "color": "gold",
+     "at": 3.9
+    },
+    {
+     "lon": -141,
+     "lat": 9,
+     "color": "gold",
+     "at": 5.1
+    },
+    {
+     "lon": -153,
+     "lat": 8,
+     "color": "gold",
+     "at": 6.3
+    },
+    {
+     "lon": -165,
+     "lat": 7,
+     "color": "gold",
+     "at": 7.5
+    },
+    {
+     "lon": -177,
+     "lat": 5.8,
+     "color": "gold",
+     "at": 8.7
+    },
+    {
+     "lon": -186,
+     "lat": 5,
+     "color": "gold",
+     "at": 9.9
+    },
+    {
      "lon": 168.7,
      "lat": 4.6,
      "label": "EBON ATOLL",
      "color": "red",
-     "at": 13
+     "at": 11
     }
    ],
    "min": 14,
@@ -317,7 +375,7 @@
   },
   {
    "kind": "manim",
-   "code": "\ntitle=Text(\"DAYS ADRIFT\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"Callahan\",76,YELLOW),(\"Poon Lim\",133,ORANGE),(\"Alvarenga\",438,RED)]\nrows=VGroup(); bars=VGroup()\nfor k,(n,d,c) in enumerate(data):\n    y=1.2-1.5*k\n    lab=Text(n,font_size=32,color=WHITE).move_to(LEFT*5+UP*y)\n    b=Rectangle(width=d/438*7.2,height=0.8,fill_color=c,fill_opacity=0.9,stroke_width=0)\n    b.move_to(LEFT*3.4+RIGHT*b.width/2+UP*y)\n    v=Text(str(d),font_size=34,color=WHITE).next_to(b,RIGHT,buff=0.2)\n    rows.add(lab); bars.add(VGroup(b,v))\nthree=Text(\"The rule of threes said: 3 days\",font_size=30,color=RED).to_edge(DOWN,buff=0.5)\nself.play(Write(title),FadeIn(rows),run_time=1.0)\nfor g in bars: self.play(GrowFromEdge(g[0],LEFT),FadeIn(g[1]),run_time=1.4)\nself.play(FadeIn(three),run_time=0.6)\nself.wait(1.0)\n",
+   "code": "\ntitle=Text(\"DAYS ADRIFT\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"Callahan\",76,YELLOW),(\"Poon Lim\",133,ORANGE),(\"Alvarenga\",438,RED)]\nrows=VGroup(); bars=VGroup()\nfor k,(n,d,c) in enumerate(data):\n    y=1.2-1.5*k\n    lab=Text(n,font_size=32,color=WHITE).move_to(LEFT*5+UP*y)\n    b=Rectangle(width=d/438*7.2,height=0.8,fill_color=c,fill_opacity=0.9,stroke_width=0)\n    b.move_to(LEFT*3.4+RIGHT*b.width/2+UP*y)\n    v=Text(str(d),font_size=34,color=WHITE).next_to(b,RIGHT,buff=0.2)\n    rows.add(lab); bars.add(VGroup(b,v))\nthree=Text(\"The rule of threes said: 3 days\",font_size=30,color=RED).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(title),FadeIn(rows),run_time=1.0)\nfor g in bars: self.play(GrowFromEdge(g[0],LEFT),FadeIn(g[1]),run_time=1.4)\nself.play(FadeIn(three),run_time=0.6)\nself.wait(1.0)\n",
    "tone": "reveal",
    "text": "Put them side by side: seventy-six days, one hundred and thirty-three days, and four hundred and thirty-eight. All three smashed the three-day rule."
   },
@@ -354,31 +412,26 @@
   },
   {
    "kind": "manim",
-   "code": "\ntitle=Text(\"SOLAR STILL\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\npool=Rectangle(width=6.6,height=1.0,fill_color=BLUE,fill_opacity=0.8,stroke_width=0).move_to(DOWN*1.1)\nsheet=Polygon(LEFT*3.3+DOWN*0.6,UP*0.7,RIGHT*3.3+DOWN*0.6,color=WHITE,stroke_width=4)\ncup=Rectangle(width=0.9,height=0.45,color=GREEN,stroke_width=5).move_to(DOWN*0.3)\nsun=Circle(radius=0.5,color=YELLOW,fill_color=YELLOW,fill_opacity=1).move_to(LEFT*5+UP*2)\nrays=VGroup(*[Arrow(sun.get_center()+RIGHT*0.6+DOWN*0.3*k,LEFT*2.5+UP*(0.9-0.5*k),color=YELLOW,buff=0.1,stroke_width=4) for k in range(3)])\nl1=Text(\"SEAWATER\",font_size=30,color=BLUE).move_to(DOWN*2.4)\nself.play(Write(title),FadeIn(pool),Create(sheet),FadeIn(cup),FadeIn(sun),run_time=1.5)\nself.play(Create(rays),FadeIn(l1),run_time=1.0)\nvap=VGroup(*[Arrow(RIGHT*x+DOWN*0.55,RIGHT*x+UP*0.0,color=RED,buff=0,stroke_width=4) for x in (-2.4,-1.4,1.4,2.4)])\nl2=Text(\"VAPOUR RISES, SALT STAYS\",font_size=28,color=RED).move_to(RIGHT*3.5+UP*1.5)\nself.play(Create(vap),FadeIn(l2),run_time=1.5)\nd=Dot(LEFT*1.6+UP*0.05,color=BLUE,radius=0.09)\nself.add(d)\nself.play(d.animate.move_to(UP*0.7),run_time=1.0)\nself.play(d.animate.move_to(DOWN*0.2),run_time=0.6)\nl3=Text(\"FRESH WATER\",font_size=30,color=GREEN).move_to(RIGHT*3.6+DOWN*0.4)\nself.play(FadeIn(l3),run_time=0.6)\nself.wait(1.0)\n",
+   "code": "\ntitle=Text(\"SOLAR STILL\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\npool=Rectangle(width=6.6,height=1.0,fill_color=BLUE,fill_opacity=0.8,stroke_width=0).move_to(DOWN*1.1)\nsheet=Polygon(LEFT*3.3+DOWN*0.6,UP*0.7,RIGHT*3.3+DOWN*0.6,color=WHITE,stroke_width=4)\ncup=Rectangle(width=0.9,height=0.45,color=GREEN,stroke_width=5).move_to(DOWN*0.3)\nsun=Circle(radius=0.5,color=YELLOW,fill_color=YELLOW,fill_opacity=1).move_to(LEFT*5+UP*2)\nrays=VGroup(*[Arrow(sun.get_center()+RIGHT*0.6+DOWN*0.3*k,LEFT*2.5+UP*(0.9-0.5*k),color=YELLOW,buff=0.1,stroke_width=4) for k in range(3)])\nl1=Text(\"SEAWATER\",font_size=30,color=BLUE).move_to(DOWN*2.4)\nself.play(FadeIn(title),FadeIn(pool),Create(sheet),FadeIn(cup),FadeIn(sun),run_time=1.5)\nself.play(Create(rays),FadeIn(l1),run_time=1.0)\nvap=VGroup(*[Arrow(RIGHT*x+DOWN*0.55,RIGHT*x+UP*0.0,color=RED,buff=0,stroke_width=4) for x in (-2.4,-1.4,1.4,2.4)])\nl2=VGroup(Text(\"VAPOUR RISES\",font_size=28,color=RED),Text(\"SALT STAYS BEHIND\",font_size=28,color=RED)).arrange(DOWN,buff=0.1).move_to(RIGHT*4.3+UP*1.6)\nself.play(Create(vap),FadeIn(l2),run_time=1.2)\nfor k in range(3):\n    d=Dot(LEFT*1.8+UP*0.0,color=BLUE,radius=0.09)\n    self.add(d)\n    self.play(d.animate.move_to(UP*0.7),run_time=0.7,rate_func=linear)\n    self.play(d.animate.move_to(DOWN*0.25),run_time=0.4,rate_func=rush_into)\n    self.remove(d)\nl3=Text(\"FRESH WATER\",font_size=30,color=GREEN).move_to(RIGHT*4.3+UP*0.1)\nself.play(FadeIn(l3),run_time=0.5)\nself.wait(0.8)\n",
    "tone": "calm",
    "text": "Option two: a solar still. Sun evaporates seawater, salt stays behind, and fresh drops collect in a cup. The yield is small."
   },
   {
-   "kind": "manim",
-   "code": "\ntitle=Text(\"THE WATER MATH (ILLUSTRATIVE)\",font_size=38,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"NEED: ~2 L / DAY\",4.4,YELLOW),(\"SOLAR STILL\",0.8,BLUE),(\"ONE HEAVY SQUALL\",5.6,GREEN)]\ngrp=VGroup()\nfor k,(n,h,c) in enumerate(data):\n    b=Rectangle(width=2.2,height=h,fill_color=c,fill_opacity=0.85,stroke_width=0)\n    b.move_to(LEFT*4+RIGHT*4*k+DOWN*2.6+UP*h/2)\n    t=Text(n,font_size=28,color=WHITE).next_to(b,UP,buff=0.15)\n    grp.add(VGroup(b,t))\nself.play(Write(title),run_time=0.8)\nfor g in grp: self.play(GrowFromEdge(g[0],DOWN),FadeIn(g[1]),run_time=1.6)\nself.wait(1.2)\n",
-   "tone": "calm",
-   "text": "A person needs roughly two litres a day. A solar still gives a trickle, but one heavy squall can fill every container you own."
-  },
-  {
    "shots": [
     {
-     "clip": "pixabay:id:27547",
+     "clip": "pixabay:id:13704",
      "start": 1,
      "move": "in"
-    },
-    {
-     "clip": "pixabay:id:6681",
-     "start": 1,
-     "move": "left"
     }
    ],
-   "fact": "Fish flesh is mostly water, but it is no\\Nsubstitute for rain.",
-   "text": "Option three is fish. Their flesh is mostly water, and survival guides mention fluid from the eyes and spine as a last resort."
+   "fact": "Survival guides: fish eye and spine fluid\\Nis low in salt, a last resort.",
+   "text": "Option three is fish. Their flesh is mostly water, and a school of fish often follows a raft."
+  },
+  {
+   "kind": "manim",
+   "code": "\ntitle=Text(\"WATER MATH\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"NEED: ~2 L / DAY\",2.8,YELLOW),(\"SOLAR STILL\",0.5,BLUE),(\"ONE HEAVY SQUALL\",3.6,GREEN)]\ngrp=VGroup()\nfor k,(n,h,c) in enumerate(data):\n    b=Rectangle(width=2.2,height=h,fill_color=c,fill_opacity=0.85,stroke_width=0)\n    b.move_to(LEFT*4+RIGHT*4*k+DOWN*2.6+UP*h/2)\n    t=Text(n,font_size=28,color=WHITE).next_to(b,UP,buff=0.15)\n    grp.add(VGroup(b,t))\nself.play(FadeIn(title),run_time=0.8)\nfor g in grp: self.play(GrowFromEdge(g[0],DOWN),FadeIn(g[1]),run_time=1.6)\nself.wait(1.2)\n",
+   "tone": "calm",
+   "text": "A person needs roughly two litres a day. A solar still gives a trickle, but one heavy squall can fill every container you own."
   },
   {
    "shots": [
@@ -421,27 +474,16 @@
   {
    "shots": [
     {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Nordic_Mistress_DVIDS1103008.jpg",
+     "clip": "https://upload.wikimedia.org/wikipedia/commons/6/67/Coast_Guard_aircrew_locates%2C_rescues_2_from_disabled_vessel_off_Samana_Cay%2C_Bahamas_%288820508%29.jpg",
      "start": 0,
      "move": "in"
     }
    ],
    "label": [
     "BEING SEEN",
-    "A speck on the sea"
+    "Look for the colour"
    ],
-   "text": "From the air, a person is just a speck. Bright colours, mirrors and flares are your voice."
-  },
-  {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/2/20/SAR_H145M%2C_ILA_2024%2C_Schoenefeld_%28ILA44667%29.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "tone": "calm",
-   "text": "Modern rafts carry a canopy, flares and emergency water, and a beacon can bring a helicopter."
+   "text": "When rescuers come, they come fast and from the air. They look for bright colours, mirrors and flares."
   },
   {
    "shots": [
@@ -494,7 +536,7 @@
   },
   {
    "kind": "manim",
-   "code": "\ntitle=Text(\"THE SURVIVOR'S CHECKLIST\",font_size=44,color=ORANGE).to_edge(UP,buff=0.5)\nitems=[(\"1\",\"SHADE AND RATION\",YELLOW),(\"2\",\"CATCH EVERY DROP OF RAIN\",BLUE),(\"3\",\"NEVER DRINK THE SEA\",RED),(\"4\",\"STAY VISIBLE\",ORANGE),(\"5\",\"KEEP COUNTING DAYS\",GREEN)]\nrows=VGroup()\nfor n,t,c in items:\n    rows.add(VGroup(Text(n,font_size=44,color=c),Text(t,font_size=40,color=WHITE)).arrange(RIGHT,buff=0.5))\nrows.arrange(DOWN,buff=0.45,aligned_edge=LEFT).move_to(DOWN*0.4)\nself.play(Write(title),run_time=0.8)\nfor r in rows: self.play(FadeIn(r,shift=UP*0.3),run_time=0.9)\nself.wait(1.2)\n",
+   "code": "\ntitle=Text(\"THE SURVIVOR'S CHECKLIST\",font_size=44,color=ORANGE).to_edge(UP,buff=0.5)\nitems=[(\"1\",\"SHADE AND RATION\",YELLOW),(\"2\",\"CATCH EVERY DROP OF RAIN\",BLUE),(\"3\",\"NEVER DRINK THE SEA\",RED),(\"4\",\"STAY VISIBLE\",ORANGE),(\"5\",\"KEEP COUNTING DAYS\",GREEN)]\nrows=VGroup()\nfor n,t,c in items:\n    rows.add(VGroup(Text(n,font_size=44,color=c),Text(t,font_size=40,color=WHITE)).arrange(RIGHT,buff=0.5))\nrows.arrange(DOWN,buff=0.45,aligned_edge=LEFT).move_to(DOWN*0.4)\nself.play(FadeIn(title),run_time=0.8)\nfor r in rows: self.play(FadeIn(r,shift=UP*0.3),run_time=0.9)\nself.wait(1.2)\n",
    "tone": "warm",
    "text": "So here is the recap. Shade and ration. Catch every drop of rain. Never drink the sea. Stay visible. And keep counting the days."
   },
