@@ -19,7 +19,7 @@ def outro(path, d=15.0):
     def fr(t):
         im = v._bg(t, 41); layer = Image.new("RGBA", (v.W, v.H), (0, 0, 0, 0)); dr = ImageDraw.Draw(layer)
         a = v.ease(t / 0.8)
-        dr.text((v.W / 2, 150), "ODDLY LOGICAL SCIENCE", font=v.font("Black", 84), fill=(255, 255, 255, int(255 * a)), anchor="mm")
+        os.environ.get("CHANNEL_NAME") and dr.text((v.W / 2, 150), os.environ.get("CHANNEL_NAME", "").upper(), font=v.font("Black", 84), fill=(255, 255, 255, int(255 * a)), anchor="mm")
         dr.text((v.W / 2, 235), "THE UNIVERSE IS STRANGER THAN YOU THINK", font=v.font("SemiBold", 32), fill=v.PAL["gold"] + (int(255 * a),), anchor="mm")
         b = v.ease((t - 0.6) / 0.6)
         for x0 in (190, 1010):  # emplacements des vidéos suggérées (Studio > Écran de fin)

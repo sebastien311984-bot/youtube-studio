@@ -57,7 +57,7 @@ def thumbnail(src, path, text, sub="", accent=(255, 196, 40), shift=True, circle
     # cercle rouge sur la zone d'intérêt (droite)
     cx, cy, r = int(W * 0.75), int(H * 0.5), 175
     for k in range(3 if circle else 0): d.ellipse((cx - r - k * 3, cy - r - k * 3, cx + r + k * 3, cy + r + k * 3), outline=(235, 30, 40), width=8)
-    d.text((W - 24, H - 22), "ODDLY LOGICAL SCIENCE", font=font("Bold", 24), fill=(255, 255, 255), anchor="rs", stroke_width=3, stroke_fill=(0, 0, 0))
+    os.environ.get("CHANNEL_NAME") and d.text((W - 24, H - 22), os.environ.get("CHANNEL_NAME", "").upper(), font=font("Bold", 24), fill=(255, 255, 255), anchor="rs", stroke_width=3, stroke_fill=(0, 0, 0))
     im.save(path, quality=92)
 
 def write_all(ep, out, words, chapters, thumb_src):

@@ -74,3 +74,13 @@ Règle : uniquement domaine public, CC0, CC BY, CC BY-SA, licence gouvernemental
 
 ### Interdit
 - Images de chaînes TV / agences (AFP, Reuters, AP) sans licence, même courtes, retournées ou recadrées. Jamais de contournement de Content ID.
+
+### Corps humain, médecine, animaux, nature (ajout 12/10)
+- Openverse (`openverse:` dans le scout) : moteur unique sur ~800 M d'images à licence commerciale (Flickr CC, Smithsonian Open Access CC0, Wellcome Collection CC BY, musées, Commons…).
+- iNaturalist (`inat:` dans le scout) : photos d'animaux et plantes identifiés, filtrées CC BY / CC0.
+- Servier Medical Art (smart.servier.com) : illustrations médicales/anatomie CC BY 4.0.
+- NIH (images.nih.gov, NIAID Flickr CC BY), CDC Public Health Image Library (domaine public sauf mention) : microscopie, virus, cellules.
+- Wellcome Collection : CC BY (histoire de la médecine, anatomie).
+- Smithsonian Open Access : CC0 (animaux, fossiles, objets).
+- US Fish & Wildlife Service, NOAA Fisheries, National Park Service : domaine public (faune).
+- Revues en accès libre (PLOS, eLife, Scientific Reports, Nature Communications) : figures et vidéos supplémentaires en CC BY — vraies expériences de labo, ralentis, microscopie.

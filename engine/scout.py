@@ -40,7 +40,24 @@ def pixabay(q, n=12):
     return [{"src": "pixabay", "url": h["videos"]["large"]["url"] or h["videos"]["medium"]["url"], "thumb": h["videos"]["tiny"]["thumbnail"],
              "type": "video", "licence": "Pixabay", "author": h["user"], "title": h["tags"], "id": f"pixabay:id:{h['id']}"} for h in r["hits"]]
 
-SRC = {"commons": commons, "nasa": nasa, "archive": archive, "pixabay": pixabay}
+def openverse(q, n=12):
+    """Openverse : images sous licences autorisant l'usage commercial (CC0, CC BY, CC BY-SA, domaine public)."""
+    r = get("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "license_type": "commercial", "page_size": n, "mature": "false"}))
+    return [{"src": "openverse", "url": h["url"], "thumb": h.get("thumbnail") or h["url"], "type": "image", "licence": f"{h['license']} {h.get('license_version') or ''}".strip(),
+             "author": h.get("creator") or "", "title": h.get("title") or "", "page": h.get("foreign_landing_url", "")} for h in r.get("results", [])]
+
+def inat(q, n=10):
+    """iNaturalist : photos d'animaux/plantes sous CC BY / CC0 (identifiées par l'espèce)."""
+    r = get("https://api.inaturalist.org/v1/observations?" + urllib.parse.urlencode({"q": q, "photo_license": "cc-by,cc0", "quality_grade": "research", "order_by": "votes", "per_page": n}))
+    out = []
+    for o in r.get("results", []):
+        for ph in o.get("photos", [])[:1]:
+            u = ph["url"].replace("square", "large")
+            out.append({"src": "inat", "url": u, "thumb": ph["url"].replace("square", "small"), "type": "image", "licence": ph.get("license_code", ""),
+                        "author": (ph.get("attribution") or ""), "title": (o.get("taxon") or {}).get("name", q), "page": o.get("uri", "")})
+    return out
+
+SRC = {"openverse": openverse, "inat": inat, "commons": commons, "nasa": nasa, "archive": archive, "pixabay": pixabay}
 def main(queries, outdir="scout"):
     os.makedirs(outdir, exist_ok=True); allc = []
     for q in queries:
