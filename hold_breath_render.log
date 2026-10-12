@@ -1,0 +1,161 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 125.7 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : 50236725331_a1549e08fe_b.jpg
+Scène 0 préparée (footage, 7 s)
+Scène 1 préparée (intro, 4 s)
+Téléchargé 2 Mo en 0 s : 347-136022054_medium.mp4
+Téléchargé 10 Mo en 0 s : 32451-392248983_large.mp4
+Téléchargé 23 Mo en 0 s : 908-141851680_medium.mp4
+Scène 2 préparée (footage, 7 s)
+Scène 3 : 1 plan(s) pour 15 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 1085-142801793_large.mp4
+Scène 3 préparée (footage, 15 s)
+Scène 4 préparée (quiz, 8 s)
+Scène 5 préparée (stat, 10 s)
+Scène 6 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : Freediver_Moalboal.jpg
+Scène 6 préparée (footage, 10 s)
+Scène 7 : 2 plan(s) pour 12 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3643603988_f784771395_b.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3600002571_d199ce036e.jpg
+Scène 7 préparée (footage, 12 s)
+Scène 8 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3590681679_a9fb2d35c7_b.jpg
+Scène 8 préparée (footage, 8 s)
+Scène 9 préparée (manim, 10 s)
+Scène 10 préparée (stat, 9 s)
+Scène 11 : 2 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 39 Mo en 0 s : 171604-845611858_large.mp4
+Téléchargé 9 Mo en 0 s : Weddell_seal_swims_underwater_in_McMurdo_Sound_%28Image_3%29
+Scène 11 préparée (footage, 11 s)
+Scène 12 : 1 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 4 Mo en 0 s : Whale_meat_-_cropped.jpg
+Scène 12 préparée (footage, 11 s)
+Scène 13 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 317185613_fc2ddb09ef.jpg
+Scène 13 préparée (footage, 6 s)
+Scène 14 : 1 plan(s) pour 14 s → plans allongés, aucun plan répété
+Téléchargé 27 Mo en 1 s : 44093-437964222_large.mp4
+Scène 14 préparée (footage, 14 s)
+Scène 15 préparée (manim, 15 s)
+Scène 16 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 1 s : 3597015112_aef41df02a_b.jpg
+Scène 16 préparée (footage, 9 s)
+Scène 17 préparée (kinetic, 8 s)
+Scène 18 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 3597002902_49aa1393c5_b.jpg
+Scène 18 préparée (footage, 12 s)
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 1156625245_8311bb91a2_b.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 1158763200_458bdd4f7d_b.jpg
+Scène 19 préparée (footage, 10 s)
+Scène 20 : 2 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Freediving_the_SETT_%283074151992%29.jpg
+curl: (22) The requested URL returned error: 403
+Téléchargé 0 Mo en 0 s : 1158255688_c2015ed7e7_b.jpg
+Scène 20 préparée (footage, 13 s)
+Téléchargé 5 Mo en 0 s : Sperm_whale..%28Physeter_macrocephalus%29_%288066509296%29.j
+Scène 21 préparée (outro, 14 s)
+Plan court (15.3 s) : ralenti x1.06 au lieu d'une boucle
+Scènes rendues en 240 s (28 tâches en parallèle)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+curl: (22) The requested URL returned error: 403
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Téléchargé 0 Mo en 0 s : 3618500018_104907dab6_b.jpg
+Scène 0 préparée (footage, 6 s)
+Scène 1 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 4 Mo en 0 s : Free_Immersion_%28442375664%29.jpg
+Scène 1 préparée (footage, 10 s)
+curl: (22) The requested URL returned error: 403
+Scène 2 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 441777052_3c7d6327a4_b.jpg
+Scène 2 préparée (footage, 6 s)
+Scène 3 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 10 Mo en 0 s : 139951-774012541_large.mp4
+Scène 3 préparée (footage, 9 s)
+curl: (22) The requested URL returned error: 403
+Scène 4 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 130071889_bc5e53a1f3_b.jpg
+Scène 4 préparée (footage, 8 s)
+Scènes rendues en 48 s (5 tâches en parallèle)
+out/hold_breath_short1_h.mp4 38.7 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Téléchargé 1 Mo en 0 s : Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%
+Scène 0 préparée (footage, 5 s)
+Scène 1 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%
+Scène 1 préparée (footage, 7 s)
+Scène 2 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 1 Mo en 0 s : Leptonychotes_weddellii_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%
+Scène 2 préparée (footage, 8 s)
+Scène 3 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 6 Mo en 0 s : 30970-384234031_large.mp4
+Scène 3 préparée (footage, 7 s)
+Téléchargé 19 Mo en 0 s : 244188_large.mp4
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 33 s (5 tâches en parallèle)
+out/hold_breath_short2_h.mp4 33.7 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+curl: (22) The requested URL returned error: 403
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 3596179371_95f3a82c48_b.jpg
+Scène 0 préparée (footage, 7 s)
+Scène 1 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 16 Mo en 1 s : 113675-698820547_large.mp4
+Scène 1 préparée (footage, 6 s)
+curl: (22) The requested URL returned error: 403
+Scène 2 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 3596973040_74797ffca7_b.jpg
+Scène 2 préparée (footage, 9 s)
+curl: (22) The requested URL returned error: 403
+Scène 3 : 1 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 0 Mo en 0 s : 3597028538_c5a0ecd0d1_b.jpg
+Scène 3 préparée (footage, 11 s)
+Téléchargé 24 Mo en 0 s : 31909-389236338_large.mp4
+Scène 4 préparée (footage, 6 s)
+Scènes rendues en 32 s (5 tâches en parallèle)
+out/hold_breath_short3_h.mp4 39.3 s (short autonome)
+out/hold_breath.mp4 224.2 s
