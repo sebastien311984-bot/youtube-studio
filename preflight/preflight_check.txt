@@ -1,0 +1,7 @@
+scène 3 : 3 plan(s) pour ~24 s (le moteur complétera, mais varier les requêtes)
+scène 8 : 4 plan(s) pour ~23 s (le moteur complétera, mais varier les requêtes)
+scène 11 : 4 plan(s) pour ~25 s (le moteur complétera, mais varier les requêtes)
+scène 13 : 3 plan(s) pour ~19 s (le moteur complétera, mais varier les requêtes)
+scène 18 : 3 plan(s) pour ~22 s (le moteur complétera, mais varier les requêtes)
+scène 19 : 3 plan(s) pour ~27 s (le moteur complétera, mais varier les requêtes)
+scène 14 : URL inaccessible (HTTP Error 403: Forbidden) s://images-assets.nasa.gov/image/PIA15953/PIA15953~large.jpg
