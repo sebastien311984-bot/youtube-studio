@@ -1,0 +1,178 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 67.3 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 44 Mo en 5 s : 212133_large.mp4
+Scène 0 préparée (footage, 9 s)
+Scène 1 préparée (intro, 4 s)
+Scène 2 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 12 Mo en 0 s : 63281-505964213_large.mp4
+Scène 2 préparée (footage, 12 s)
+Téléchargé 37 Mo en 0 s : 29314-374760999_large.mp4
+Scène 3 préparée (footage, 6 s)
+Scène 4 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 186 Mo en 1 s : 191288-889685041_large.mp4
+Scène 4 préparée (footage, 7 s)
+Scène 5 préparée (manim, 14 s)
+Scène 6 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Téléchargé 7 Mo en 0 s : 7090-198553588_large.mp4
+Scène 6 préparée (footage, 7 s)
+Scène 7 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 71 Mo en 3 s : 200327-912384849_large.mp4
+Scène 7 préparée (footage, 12 s)
+Scène 8 : 1 plan(s) pour 6 s → plans allongés, aucun plan répété
+Téléchargé 81 Mo en 2 s : 325502_large.mp4
+Scène 8 préparée (footage, 6 s)
+Scène 9 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 14 Mo en 1 s : 7821-204510045_large.mp4
+Scène 9 préparée (footage, 9 s)
+Scène 10 préparée (manim, 12 s)
+Scène 11 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 40 Mo en 0 s : 282995_large.mp4
+Scène 11 préparée (footage, 12 s)
+Téléchargé 30 Mo en 2 s : 268251_large.mp4
+Scène 12 préparée (footage, 3 s)
+Scène 13 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 5 Mo en 0 s : Medical_students_take_to_the_water_to_learn_about_hypothermi
+Scène 13 préparée (footage, 10 s)
+Téléchargé 38 Mo en 1 s : 189876-886572817_large.mp4
+Scène 14 préparée (footage, 4 s)
+Scène 15 préparée (quiz, 7 s)
+Scène 16 : 1 plan(s) pour 14 s → plans allongés, aucun plan répété
+Téléchargé 10 Mo en 0 s : 345020_large.mp4
+Scène 16 préparée (footage, 14 s)
+Téléchargé 19 Mo en 1 s : 329674_large.mp4
+Scène 17 préparée (footage, 5 s)
+Scène 18 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 35 Mo en 3 s : 154586-808119408_large.mp4
+Scène 18 préparée (footage, 12 s)
+Scène 19 préparée (kinetic, 5 s)
+Scène 20 préparée (manim, 16 s)
+Scène 21 : 1 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 11 Mo en 1 s : Southern_party_Antarctica_SLNSW_FL1091888.jpg
+Scène 21 préparée (footage, 13 s)
+Scène 22 : 1 plan(s) pour 13 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 2515-159764446_large.mp4
+Scène 22 préparée (footage, 13 s)
+Téléchargé 124 Mo en 2 s : 377384_large.mp4
+Scène 23 préparée (footage, 4 s)
+Scène 24 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 13 Mo en 0 s : 185273-875022189_large.mp4
+Scène 24 préparée (footage, 9 s)
+Téléchargé 17 Mo en 1 s : 327101_large.mp4
+Scène 25 préparée (footage, 3 s)
+Scène 26 : 1 plan(s) pour 11 s → plans allongés, aucun plan répété
+Téléchargé 29 Mo en 3 s : 154726-808562497_large.mp4
+Scène 26 préparée (footage, 11 s)
+Téléchargé 3 Mo en 0 s : Medical_students_take_to_the_water_to_learn_about_hypothermi
+Scène 27 préparée (footage, 6 s)
+Téléchargé 3 Mo en 0 s : Medical_students_take_to_the_water_to_learn_about_hypothermi
+Scène 28 préparée (footage, 6 s)
+Scène 29 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Téléchargé 3 Mo en 0 s : Medical_students_take_to_the_water_to_learn_about_hypothermi
+Scène 29 préparée (footage, 8 s)
+Scène 30 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 135 Mo en 4 s : 255499_large.mp4
+Scène 30 préparée (footage, 10 s)
+Scène 31 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 15 Mo en 1 s : 21-135711412_medium.mp4
+Scène 31 préparée (footage, 10 s)
+Scène 32 : 1 plan(s) pour 14 s → plans allongés, aucun plan répété
+Téléchargé 9 Mo en 0 s : 8594-212212755_large.mp4
+Scène 32 préparée (footage, 14 s)
+Scène 33 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Téléchargé 11 Mo en 1 s : 64085-509542757_large.mp4
+Scène 33 préparée (footage, 10 s)
+Scène 34 préparée (stat, 5 s)
+Scène 35 : 1 plan(s) pour 14 s → plans allongés, aucun plan répété
+Téléchargé 36 Mo en 1 s : 65037-513025096_large.mp4
+Scène 35 préparée (footage, 14 s)
+Scène 36 préparée (manim, 12 s)
+Scène 37 : 1 plan(s) pour 15 s → plans allongés, aucun plan répété
+Téléchargé 4 Mo en 0 s : 7012-197962781_large.mp4
+Scène 37 préparée (footage, 15 s)
+Scène 38 : 1 plan(s) pour 15 s → plans allongés, aucun plan répété
+Téléchargé 187 Mo en 1 s : 154331-807362302_large.mp4
+Scène 38 préparée (footage, 15 s)
+Scène 39 : 1 plan(s) pour 14 s → plans allongés, aucun plan répété
+Téléchargé 189 Mo en 1 s : 191289-889685047_large.mp4
+Scène 39 préparée (footage, 14 s)
+Scène 40 : 1 plan(s) pour 18 s → plans allongés, aucun plan répété
+Téléchargé 56 Mo en 2 s : 119076-716970666_large.mp4
+Scène 40 préparée (footage, 18 s)
+Scène 41 : 1 plan(s) pour 17 s → plans allongés, aucun plan répété
+Téléchargé 4 Mo en 0 s : Medical_students_take_to_the_water_to_learn_about_hypothermi
+Scène 41 préparée (footage, 17 s)
+Scène 42 : 1 plan(s) pour 20 s → plans allongés, aucun plan répété
+Téléchargé 63 Mo en 1 s : 188778-883818276_large.mp4
+Scène 42 préparée (footage, 20 s)
+Plan court (8.5 s) : ralenti x1.80 au lieu d'une boucle
+Plan court (9.7 s) : ralenti x1.01 au lieu d'une boucle
+Plan court (8.6 s) : ralenti x1.34 au lieu d'une boucle
+Plan court (5.9 s) : ralenti x2.72 au lieu d'une boucle
+Scènes rendues en 353 s (43 tâches en parallèle)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 préparée (footage, 6 s)
+Scène 1 préparée (footage, 6 s)
+Scène 2 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 7 s)
+Scène 3 : 1 plan(s) pour 10 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 10 s)
+Scènes rendues en 22 s (4 tâches en parallèle)
+out/freezing_short1_h.mp4 30.4 s (short autonome)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Scène 0 préparée (footage, 9 s)
+Scène 1 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 1 préparée (footage, 8 s)
+Scène 2 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 7 s)
+Scène 3 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 8 s)
+Plan court (5.9 s) : ralenti x1.27 au lieu d'une boucle
+Scènes rendues en 17 s (4 tâches en parallèle)
+out/freezing_short2_h.mp4 31.8 s (short autonome)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Scène 0 préparée (footage, 5 s)
+Scène 1 préparée (footage, 6 s)
+Scène 2 : 1 plan(s) pour 7 s → plans allongés, aucun plan répété
+Scène 2 préparée (footage, 7 s)
+Scène 3 : 1 plan(s) pour 8 s → plans allongés, aucun plan répété
+Scène 3 préparée (footage, 8 s)
+Scènes rendues en 21 s (4 tâches en parallèle)
+out/freezing_short3_h.mp4 26.5 s (short autonome)
+out/freezing.mp4 434.8 s
