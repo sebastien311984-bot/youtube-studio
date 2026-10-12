@@ -33,11 +33,7 @@
    "lead": 0.3,
    "teaser": "THE RULE OF THREES",
    "yt_chapter": "Adrift",
-   "text": "Could you survive lost at sea? Experts would give you days. Yet three men lasted months, with no land, no radio, no one looking. Stay to the end to learn the one thing you must never drink."
-  },
-  {
-   "kind": "intro",
-   "min": 3
+   "text": "Lost at sea, experts give you days. Yet three men lasted months, with no land, no radio, no one looking."
   },
   {
    "kind": "manim",
@@ -87,28 +83,6 @@
    "text": "The first rule on a raft is to stop and think. Ration what you have, stay in the shade, and move as little as you can, because sweat is water."
   },
   {
-   "kind": "manim",
-   "code": "\nt=ValueTracker(0)\nframe=Rectangle(width=9,height=1.1,color=WHITE,stroke_width=4).move_to(UP*0.3)\ndef w(): return max(0.02,9*(1-t.get_value()/12))\nbar=always_redraw(lambda: Rectangle(width=w(),height=1.1,fill_color=BLUE,fill_opacity=0.85,stroke_width=0).move_to(frame.get_left()+RIGHT*w()/2))\nlab=always_redraw(lambda: Text(str(int(round(t.get_value())))+\"% OF BODY WATER LOST\",font_size=40,color=YELLOW).move_to(UP*2.3))\nhead=Text(\"YOUR BODY IS MORE THAN HALF WATER\",font_size=30,color=WHITE).to_edge(DOWN,buff=0.5)\nself.add(frame,bar,lab)\nself.play(FadeIn(head),run_time=0.6)\nself.play(t.animate.set_value(2),run_time=2.0,rate_func=linear)\nn1=Text(\"Thirst, foggy thinking\",font_size=32,color=ORANGE).move_to(RIGHT*3+DOWN*1.1)\nself.play(FadeIn(n1),run_time=0.5)\nself.play(t.animate.set_value(10),run_time=2.8,rate_func=linear)\nn2=Text(\"Organs struggle\",font_size=32,color=RED).move_to(LEFT*3+DOWN*1.1)\nself.play(FadeIn(n2),run_time=0.5)\nself.wait(1.2)\n",
-   "tone": "tense",
-   "text": "Your body is more than half water. Lose just two percent and thirst clouds your thinking. Lose ten percent and your organs begin to struggle."
-  },
-  {
-   "shots": [
-    {
-     "clip": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Stanje_%28de%29hidracije_po_boji_urina.jpg",
-     "start": 0,
-     "move": "in"
-    }
-   ],
-   "label": [
-    "DEHYDRATION",
-    "The colour gauge"
-   ],
-   "fact": "Dark urine is an early sign of dehydration.",
-   "teaser": "WHY SEAWATER KILLS",
-   "text": "Your first warning is colour. The darker your urine, the more dehydrated you are."
-  },
-  {
    "shots": [
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/6/69/Humanitarian_aid_OCPA-2005-10-28-090517a.jpg",
@@ -121,7 +95,8 @@
     "WHY YOU CAN'T DRINK THE SEA"
    ],
    "yt_chapter": "Why seawater kills you",
-   "text": "Thirst makes one idea tempting. You are surrounded by water. So why not just drink it?"
+   "text": "Thirst makes one idea tempting. You are surrounded by water. So why not just drink it?",
+   "beat": true
   },
   {
    "kind": "manim",
@@ -137,20 +112,6 @@
    "tone": "tense",
    "fact": "Human blood is roughly 0.9 percent salt,\\Nseawater is nearly four times that.",
    "text": "Your kidneys cannot make urine saltier than the sea. To flush the salt in one litre, you need more than a litre of water."
-  },
-  {
-   "shots": [
-    {
-     "clip": "pixabay:id:215484",
-     "start": 1,
-     "move": "in"
-    }
-   ],
-   "label": [
-    "THE SUN",
-    "Hits you twice"
-   ],
-   "text": "The sun burns you twice, from above and from the light bouncing off the water."
   },
   {
    "shots": [
@@ -191,7 +152,8 @@
     "STEVEN CALLAHAN",
     "Atlantic, 1982"
    ],
-   "text": "In 1982, sailor Steven Callahan's small sloop sank in the Atlantic, far from land. He escaped into a tiny inflatable raft."
+   "text": "In 1982, sailor Steven Callahan's small sloop sank in the Atlantic, far from land. He escaped into a tiny inflatable raft.",
+   "beat": true
   },
   {
    "shots": [
@@ -371,13 +333,15 @@
    ],
    "min": 14,
    "tone": "reveal",
-   "text": "He drifted west for about four hundred and thirty-eight days. His young companion did not survive. At last, in January 2014, the boat reached Ebon Atoll in the Marshall Islands, roughly ten thousand kilometres from where it began."
+   "text": "He drifted west for about four hundred and thirty-eight days. His young companion did not survive. At last, in January 2014, the boat reached Ebon Atoll in the Marshall Islands, roughly ten thousand kilometres from where it began.",
+   "beat": true
   },
   {
    "kind": "manim",
    "code": "\ntitle=Text(\"DAYS ADRIFT\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"Callahan\",76,YELLOW),(\"Poon Lim\",133,ORANGE),(\"Alvarenga\",438,RED)]\nrows=VGroup(); bars=VGroup()\nfor k,(n,d,c) in enumerate(data):\n    y=1.2-1.5*k\n    lab=Text(n,font_size=32,color=WHITE).move_to(LEFT*5+UP*y)\n    b=Rectangle(width=d/438*7.2,height=0.8,fill_color=c,fill_opacity=0.9,stroke_width=0)\n    b.move_to(LEFT*3.4+RIGHT*b.width/2+UP*y)\n    v=Text(str(d),font_size=34,color=WHITE).next_to(b,RIGHT,buff=0.2)\n    rows.add(lab); bars.add(VGroup(b,v))\nthree=Text(\"The rule of threes said: 3 days\",font_size=30,color=RED).to_edge(DOWN,buff=0.5)\nself.play(FadeIn(title),FadeIn(rows),run_time=1.0)\nfor g in bars: self.play(GrowFromEdge(g[0],LEFT),FadeIn(g[1]),run_time=1.4)\nself.play(FadeIn(three),run_time=0.6)\nself.wait(1.0)\n",
    "tone": "reveal",
-   "text": "Put them side by side: seventy-six days, one hundred and thirty-three days, and four hundred and thirty-eight. All three smashed the three-day rule."
+   "text": "Put them side by side: seventy-six days, one hundred and thirty-three days, and four hundred and thirty-eight. All three smashed the three-day rule.",
+   "beat": true
   },
   {
    "shots": [
@@ -398,8 +362,8 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:16160",
-     "start": 1,
+     "clip": "pixabay:id:367723",
+     "start": 4,
      "move": "in"
     }
    ],
@@ -411,12 +375,6 @@
    "text": "Option one is rain. Spread any sheet or canopy, and funnel every drop into a container."
   },
   {
-   "kind": "manim",
-   "code": "\ntitle=Text(\"SOLAR STILL\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\npool=Rectangle(width=6.6,height=1.0,fill_color=BLUE,fill_opacity=0.8,stroke_width=0).move_to(DOWN*1.1)\nsheet=Polygon(LEFT*3.3+DOWN*0.6,UP*0.7,RIGHT*3.3+DOWN*0.6,color=WHITE,stroke_width=4)\ncup=Rectangle(width=0.9,height=0.45,color=GREEN,stroke_width=5).move_to(DOWN*0.3)\nsun=Circle(radius=0.5,color=YELLOW,fill_color=YELLOW,fill_opacity=1).move_to(LEFT*5+UP*2)\nrays=VGroup(*[Arrow(sun.get_center()+RIGHT*0.6+DOWN*0.3*k,LEFT*2.5+UP*(0.9-0.5*k),color=YELLOW,buff=0.1,stroke_width=4) for k in range(3)])\nl1=Text(\"SEAWATER\",font_size=30,color=BLUE).move_to(DOWN*2.4)\nself.play(FadeIn(title),FadeIn(pool),Create(sheet),FadeIn(cup),FadeIn(sun),run_time=1.5)\nself.play(Create(rays),FadeIn(l1),run_time=1.0)\nvap=VGroup(*[Arrow(RIGHT*x+DOWN*0.55,RIGHT*x+UP*0.0,color=RED,buff=0,stroke_width=4) for x in (-2.4,-1.4,1.4,2.4)])\nl2=VGroup(Text(\"VAPOUR RISES\",font_size=28,color=RED),Text(\"SALT STAYS BEHIND\",font_size=28,color=RED)).arrange(DOWN,buff=0.1).move_to(RIGHT*4.3+UP*1.6)\nself.play(Create(vap),FadeIn(l2),run_time=1.2)\nfor k in range(3):\n    d=Dot(LEFT*1.8+UP*0.0,color=BLUE,radius=0.09)\n    self.add(d)\n    self.play(d.animate.move_to(UP*0.7),run_time=0.7,rate_func=linear)\n    self.play(d.animate.move_to(DOWN*0.25),run_time=0.4,rate_func=rush_into)\n    self.remove(d)\nl3=Text(\"FRESH WATER\",font_size=30,color=GREEN).move_to(RIGHT*4.3+UP*0.1)\nself.play(FadeIn(l3),run_time=0.5)\nself.wait(0.8)\n",
-   "tone": "calm",
-   "text": "Option two: a solar still. Sun evaporates seawater, salt stays behind, and fresh drops collect in a cup. The yield is small."
-  },
-  {
    "shots": [
     {
      "clip": "pixabay:id:13704",
@@ -426,12 +384,6 @@
    ],
    "fact": "Survival guides: fish eye and spine fluid\\Nis low in salt, a last resort.",
    "text": "Option three is fish. Their flesh is mostly water, and a school of fish often follows a raft."
-  },
-  {
-   "kind": "manim",
-   "code": "\ntitle=Text(\"WATER MATH\",font_size=44,color=ORANGE).to_edge(UP,buff=0.4)\ndata=[(\"NEED: ~2 L / DAY\",2.8,YELLOW),(\"SOLAR STILL\",0.5,BLUE),(\"ONE HEAVY SQUALL\",3.6,GREEN)]\ngrp=VGroup()\nfor k,(n,h,c) in enumerate(data):\n    b=Rectangle(width=2.2,height=h,fill_color=c,fill_opacity=0.85,stroke_width=0)\n    b.move_to(LEFT*4+RIGHT*4*k+DOWN*2.6+UP*h/2)\n    t=Text(n,font_size=28,color=WHITE).next_to(b,UP,buff=0.15)\n    grp.add(VGroup(b,t))\nself.play(FadeIn(title),run_time=0.8)\nfor g in grp: self.play(GrowFromEdge(g[0],DOWN),FadeIn(g[1]),run_time=1.6)\nself.wait(1.2)\n",
-   "tone": "calm",
-   "text": "A person needs roughly two litres a day. A solar still gives a trickle, but one heavy squall can fill every container you own."
   },
   {
    "shots": [
@@ -453,7 +405,8 @@
    ],
    "teaser": "THE LOTTERY OF RESCUE",
    "tone": "urgent",
-   "text": "The rule never changes. Do not drink seawater. Most guides say urine is no better, because it concentrates the same salts."
+   "text": "The rule never changes. Do not drink seawater. Most guides say urine is no better, because it concentrates the same salts.",
+   "beat": true
   },
   {
    "shots": [
@@ -488,61 +441,6 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:170300",
-     "start": 1,
-     "move": "in"
-    }
-   ],
-   "text": "Searchers also run drift models, using wind and current to guess where a raft has gone."
-  },
-  {
-   "shots": [
-    {
-     "clip": "pixabay:id:7012",
-     "start": 1,
-     "move": "in"
-    }
-   ],
-   "tone": "tense",
-   "text": "If a boat is diverted, it may be the only hope, so every flare and reflection counts."
-  },
-  {
-   "shots": [
-    {
-     "clip": "pixabay:id:338904",
-     "start": 1,
-     "move": "in"
-    },
-    {
-     "clip": "pixabay:id:345354",
-     "start": 1,
-     "move": "left"
-    }
-   ],
-   "tone": "warm",
-   "text": "In January 2014, Alvarenga's boat reached a tiny Marshall Islands atoll, and locals found him."
-  },
-  {
-   "kind": "quiz",
-   "question": "How long did Alvarenga survive adrift?",
-   "options": [
-    "76 days",
-    "133 days",
-    "About 438 days"
-   ],
-   "answer": 2,
-   "min": 7,
-   "text": "Quick check. How long did José Alvarenga survive adrift?"
-  },
-  {
-   "kind": "manim",
-   "code": "\ntitle=Text(\"THE SURVIVOR'S CHECKLIST\",font_size=44,color=ORANGE).to_edge(UP,buff=0.5)\nitems=[(\"1\",\"SHADE AND RATION\",YELLOW),(\"2\",\"CATCH EVERY DROP OF RAIN\",BLUE),(\"3\",\"NEVER DRINK THE SEA\",RED),(\"4\",\"STAY VISIBLE\",ORANGE),(\"5\",\"KEEP COUNTING DAYS\",GREEN)]\nrows=VGroup()\nfor n,t,c in items:\n    rows.add(VGroup(Text(n,font_size=44,color=c),Text(t,font_size=40,color=WHITE)).arrange(RIGHT,buff=0.5))\nrows.arrange(DOWN,buff=0.45,aligned_edge=LEFT).move_to(DOWN*0.4)\nself.play(FadeIn(title),run_time=0.8)\nfor r in rows: self.play(FadeIn(r,shift=UP*0.3),run_time=0.9)\nself.wait(1.2)\n",
-   "tone": "warm",
-   "text": "So here is the recap. Shade and ration. Catch every drop of rain. Never drink the sea. Stay visible. And keep counting the days."
-  },
-  {
-   "shots": [
-    {
      "clip": "pixabay:id:43292",
      "start": 1,
      "move": "in"
@@ -565,7 +463,10 @@
    ],
    "tone": "warm",
    "yt_chapter": "Could you survive?",
-   "text": "So could you survive lost at sea? Maybe. These men were not superhuman. They rationed, they caught rain, and they never stopped counting. The ocean is a desert you float on. If this story hooked you, subscribe to Oddly Logical Science for more true stories this strange."
+   "text": "So could you survive lost at sea? Maybe. These men were not superhuman. They rationed, they caught rain, and they never stopped counting. The ocean is a desert you float on. Never drink it. Subscribe for the next one.",
+   "beat": true,
+   "payoff": true,
+   "min": 12
   }
  ],
  "thumbnail": {
@@ -774,7 +675,7 @@
  ],
  "youtube": {
   "title": "Could You Survive Lost at Sea? The 438-Day Truth",
-  "description": "Could you survive lost at sea? Three real castaways say yes: Steven Callahan (76 days, 1982), Poon Lim (133 days, 1942-43) and José Salvador Alvarenga (about 438 days, 2012-14). We drop you in a life raft and use animation to show the rule of threes, how dehydration works, why seawater kills (osmosis), how to get fresh water, and how ocean currents carried Alvarenga roughly 10,000 km across the Pacific.\n\nIn this video:\n- The rule of threes\n- Why you can't drink the sea\n- Three men, three answers\n- How to make fresh water\n- The lottery of rescue\n\nSources:\n- Steven Callahan, Adrift: Seventy-Six Days Lost at Sea (1986)\n- US Navy / National Museum of the U.S. Navy records on Poon Lim (1943)\n- Press and medical reports on José Salvador Alvarenga's rescue in the Marshall Islands (January 2014)\n- NOAA / NASA ocean current and Blue Marble imagery\n- Standard physiology texts on osmosis, renal salt excretion and dehydration\n\nCredits: Images: US Coast Guard, US Navy / National Museum of the U.S. Navy, NASA (Goddard, JPL), US Air Force (public domain). Steven Callahan photos by North Yarmouth Academy (CC BY 2.0). Life raft photos: NPL FP2011 (CC BY-SA 3.0), Sillerkiil (CC BY-SA 4.0). Hydration colour chart: Petar Milosevic (CC BY-SA 4.0). Globe texture: NASA Earth Observatory Blue Marble. Video: Pixabay (Pixabay Content License). Facts: Callahan, Adrift (1986); Poon Lim records (US Navy; Imperial War Museums); Alvarenga reports (2014); osmosis and dehydration physiology.\n\nSubscribe to Oddly Logical Science for more true stories this strange.",
+  "description": "Could you survive lost at sea? Three real castaways say yes: Steven Callahan (76 days, 1982), Poon Lim (133 days, 1942-43) and José Salvador Alvarenga (about 438 days, 2012-14). We drop you in a life raft and use animation to show the rule of threes, how dehydration works, why seawater kills (osmosis), how to get fresh water, and how ocean currents carried Alvarenga roughly 10,000 km across the Pacific.\n\nIn this video:\n- The rule of threes\n- Why you can't drink the sea\n- Three men, three answers\n- How to make fresh water\n- The lottery of rescue\n\nSources:\n- Steven Callahan, Adrift: Seventy-Six Days Lost at Sea (1986)\n- US Navy / National Museum of the U.S. Navy records on Poon Lim (1943)\n- Press and medical reports on José Salvador Alvarenga's rescue in the Marshall Islands (January 2014)\n- NOAA / NASA ocean current and Blue Marble imagery\n- Standard physiology texts on osmosis, renal salt excretion and dehydration\n\nCredits: Images: US Coast Guard, US Navy / National Museum of the U.S. Navy, NASA (Goddard, JPL), US Air Force (public domain). Steven Callahan photos by North Yarmouth Academy (CC BY 2.0). Life raft photos: NPL FP2011 (CC BY-SA 3.0), Sillerkiil (CC BY-SA 4.0). Hydration colour chart: Petar Milosevic (CC BY-SA 4.0). Globe texture: NASA Earth Observatory Blue Marble. Video: Pixabay (Pixabay Content License). Facts: Callahan, Adrift (1986); Poon Lim records (US Navy; Imperial War Museums); Alvarenga reports (2014); osmosis and dehydration physiology.\n\nSubscribe for the next one.",
   "tags": [
    "lost at sea",
    "survive lost at sea",
@@ -800,5 +701,12 @@
    "de": "Könntest du auf See verschollen überleben?",
    "hi": "क्या आप समुद्र में खोकर बच सकते हैं?"
   }
+ },
+ "strategy": {
+  "viewer": "Curious adults drawn by survival stories who wonder what it really takes to last at sea.",
+  "hook": "Experts give a person lost at sea days, yet three men lasted months.",
+  "promise": "What happens to the body adrift and how three real castaways survived 76, 133 and about 438 days.",
+  "payoff": "They rationed, caught rain, never drank seawater (osmosis would dehydrate them faster) and never stopped counting; currents carried Alvarenga about 10,000 km.",
+  "takeaway": "The ocean is a desert you float on: never drink it."
  }
 }

@@ -75,7 +75,8 @@
    "three_d": false,
    "tone": "reveal",
    "text": "Zoom in on that gap. The drop sits on a vapour cushion about a tenth of a millimetre thick, and the steam keeps escaping sideways while the bottom of the drop keeps boiling to refill it.",
-   "code": "\ntitle=Text(\"INSIDE THE GAP\",font_size=40,color=YELLOW).to_edge(UP)\nplate=Rectangle(width=10,height=0.8,color=RED,fill_color=RED_E,fill_opacity=1).shift(DOWN*2.2)\npl=Text(\"HOT PLATE\",font_size=30,color=WHITE).move_to(plate)\ndrop=Circle(radius=1.3,color=BLUE,fill_color=BLUE_E,fill_opacity=0.8).shift(UP*0.2)\ngap=Rectangle(width=3.2,height=0.18,color=YELLOW,fill_color=YELLOW,fill_opacity=0.5).shift(DOWN*1.6)\nself.play(FadeIn(title),FadeIn(plate),FadeIn(pl),FadeIn(drop),run_time=1.5)\nself.play(FadeIn(gap),run_time=1)\nal=[Arrow(LEFT*0.2+DOWN*1.6,LEFT*3.2+DOWN*1.6,color=YELLOW,buff=0),Arrow(RIGHT*0.2+DOWN*1.6,RIGHT*3.2+DOWN*1.6,color=YELLOW,buff=0)]\nself.play(*[GrowArrow(a) for a in al],run_time=1.5)\nlab=Text(\"VAPOUR CUSHION ~0.1 mm\",font_size=34,color=YELLOW).move_to(DOWN*3.1)\nwl=Text(\"WATER DROP\",font_size=30,color=WHITE).move_to(drop)\nself.play(FadeIn(lab),FadeIn(wl),run_time=1)\nself.play(*[a.animate.shift(RIGHT*0.3 if i else LEFT*0.3) for i,a in enumerate(al)],run_time=1.5,rate_func=there_and_back)\n"
+   "code": "\ntitle=Text(\"INSIDE THE GAP\",font_size=40,color=YELLOW).to_edge(UP)\nplate=Rectangle(width=10,height=0.8,color=RED,fill_color=RED_E,fill_opacity=1).shift(DOWN*2.2)\npl=Text(\"HOT PLATE\",font_size=30,color=WHITE).move_to(plate)\ndrop=Circle(radius=1.3,color=BLUE,fill_color=BLUE_E,fill_opacity=0.8).shift(UP*0.2)\ngap=Rectangle(width=3.2,height=0.18,color=YELLOW,fill_color=YELLOW,fill_opacity=0.5).shift(DOWN*1.6)\nself.play(FadeIn(title),FadeIn(plate),FadeIn(pl),FadeIn(drop),run_time=1.5)\nself.play(FadeIn(gap),run_time=1)\nal=[Arrow(LEFT*0.2+DOWN*1.6,LEFT*3.2+DOWN*1.6,color=YELLOW,buff=0),Arrow(RIGHT*0.2+DOWN*1.6,RIGHT*3.2+DOWN*1.6,color=YELLOW,buff=0)]\nself.play(*[GrowArrow(a) for a in al],run_time=1.5)\nlab=Text(\"VAPOUR CUSHION ~0.1 mm\",font_size=34,color=YELLOW).move_to(DOWN*3.1)\nwl=Text(\"WATER DROP\",font_size=30,color=WHITE).move_to(drop)\nself.play(FadeIn(lab),FadeIn(wl),run_time=1)\nself.play(*[a.animate.shift(RIGHT*0.3 if i else LEFT*0.3) for i,a in enumerate(al)],run_time=1.5,rate_func=there_and_back)\n",
+   "beat": true
   },
   {
    "kind": "annotate",
@@ -130,11 +131,6 @@
   {
    "shots": [
     {
-     "clip": "pixabay:id:116118",
-     "start": 0,
-     "move": "out"
-    },
-    {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Effet_Leidenfrost.webm",
      "start": 6,
      "move": "in"
@@ -145,7 +141,8 @@
    "label": [
     "THE COOK'S TEST",
     "Dancing beads mean a very hot pan"
-   ]
+   ],
+   "beat": true
   },
   {
    "kind": "zoomto",
@@ -184,7 +181,8 @@
      "at": 0.8,
      "color": "blue"
     }
-   ]
+   ],
+   "beat": true
   },
   {
    "shots": [
@@ -230,7 +228,8 @@
     "A HEAT ENGINE RUNNING ON ICE",
     "Sublimation heat engine"
    ],
-   "fact": "THE GAS CUSHION CAN PUSH,\\NNOT JUST LIFT"
+   "fact": "THE GAS CUSHION CAN PUSH,\\NNOT JUST LIFT",
+   "beat": true
   },
   {
    "shots": [
@@ -238,21 +237,22 @@
      "clip": "https://upload.wikimedia.org/wikipedia/commons/4/48/Liquid-nitrogen-demo-freeside-atlanta.webm",
      "start": 0,
      "move": "in"
+    },
+    {
+     "clip": "pixabay:id:11290",
+     "start": 0,
+     "move": "out"
     }
    ],
-   "text": "Liquid nitrogen, at minus 196 degrees, skates the same way on a room-temperature floor.",
+   "text": "Liquid nitrogen, at minus 196 degrees, skates the same way on a room-temperature floor. So when water dances on your pan, it is riding on its own steam. Subscribe for the next one.",
    "tone": "warm",
    "label": [
     "LIQUID NITROGEN",
     "Boils at about -196 °C"
-   ]
-  },
-  {
-   "kind": "outro",
-   "line1": "WHAT ELSE COULD FLOAT?",
-   "line2": "SUBSCRIBE",
-   "tone": "warm",
-   "text": "So when water dances on your pan, it's riding on its own steam. If even a solid can do it, what else could we make float? Subscribe, and watch the next one."
+   ],
+   "min": 12,
+   "payoff": true,
+   "reveal": true
   }
  ],
  "shorts": [
@@ -305,7 +305,7 @@
  },
  "youtube": {
   "title": "The Hotter the Pan, the Longer Water Survives",
-  "description": "Hotter pan, longer life: water can float on its own steam, and a block of dry ice can spin a turbine. Here is the Leidenfrost effect, and the lab experiment that turned it into an engine.\n\nIn this video:\n- Why a drop of water lasts longer on a hotter pan\n- The vapour cushion under the drop\n- The 2015 dry ice \"sublimation heat engine\"\n- A hot ball in water, and liquid nitrogen on a desk\n\nCredits:\n- Anonimage, \"Effet Leidenfrost\", CC BY-SA 4.0, Wikimedia Commons\n- Petrovskyz, Leidenfrost effect video, CC BY-SA 4.0, Wikimedia Commons\n- Savant-fou, \"Effet leidenfrost\", CC BY-SA 3.0, Wikimedia Commons\n- Cryonic07, water droplet photo, CC BY-SA 3.0, Wikimedia Commons\n- Wells G, Ledesma-Aguilar R, McHale G, Sefiane K, lab videos from \"A sublimation heat engine\", CC BY 4.0, Wikimedia Commons\n- Nesnad, dry ice sublimation, CC BY 4.0; LukeGoodsell, CC BY-SA 3.0; Fuzheado, CC BY-SA 3.0; N. Bashmakova, CC BY 4.0, Wikimedia Commons\n- Portrait of J. G. Leidenfrost, public domain, Wikimedia Commons\n- Pixabay: Life-Of-Vids, GreenCardShow, ColinBrough, zephylwer0 (Pixabay license)\nOriginal script, explanatory animations and annotations by Oddly Logical Science. The researchers and the authors of the footage do not endorse this channel.\n\nSources:\n- Wells G.G., Ledesma-Aguilar R., McHale G., Sefiane K. (2015), \"A sublimation heat engine\", Nature Communications 6, 6390. DOI 10.1038/ncomms7390\n- Leidenfrost J.G. (1756), \"De aquae communis nonnullis qualitatibus tractatus\"\n- Quere D. (2013), \"Leidenfrost Dynamics\", Annual Review of Fluid Mechanics 45\n\nCould a solid float on its own gas to power a machine? Tell us what you would build in the comments.",
+  "description": "Hotter pan, longer life: water can float on its own steam, and a block of dry ice can spin a turbine. Here is the Leidenfrost effect, and the lab experiment that turned it into an engine.\n\nIn this video:\n- Why a drop of water lasts longer on a hotter pan\n- The vapour cushion under the drop\n- The 2015 dry ice \"sublimation heat engine\"\n- A hot ball in water, and liquid nitrogen on a desk\n\nCredits:\n- Anonimage, \"Effet Leidenfrost\", CC BY-SA 4.0, Wikimedia Commons\n- Petrovskyz, Leidenfrost effect video, CC BY-SA 4.0, Wikimedia Commons\n- Savant-fou, \"Effet leidenfrost\", CC BY-SA 3.0, Wikimedia Commons\n- Cryonic07, water droplet photo, CC BY-SA 3.0, Wikimedia Commons\n- Wells G, Ledesma-Aguilar R, McHale G, Sefiane K, lab videos from \"A sublimation heat engine\", CC BY 4.0, Wikimedia Commons\n- Nesnad, dry ice sublimation, CC BY 4.0; LukeGoodsell, CC BY-SA 3.0; Fuzheado, CC BY-SA 3.0; N. Bashmakova, CC BY 4.0, Wikimedia Commons\n- Portrait of J. G. Leidenfrost, public domain, Wikimedia Commons\n- Pixabay: Life-Of-Vids, GreenCardShow, ColinBrough, zephylwer0 (Pixabay license)\nOriginal script, explanatory animations and annotations by the author. The researchers and the authors of the footage do not endorse this channel.\n\nSources:\n- Wells G.G., Ledesma-Aguilar R., McHale G., Sefiane K. (2015), \"A sublimation heat engine\", Nature Communications 6, 6390. DOI 10.1038/ncomms7390\n- Leidenfrost J.G. (1756), \"De aquae communis nonnullis qualitatibus tractatus\"\n- Quere D. (2013), \"Leidenfrost Dynamics\", Annual Review of Fluid Mechanics 45\n\nCould a solid float on its own gas to power a machine? Tell us what you would build in the comments.",
   "tags": [
    "leidenfrost effect",
    "water on hot pan",
@@ -329,5 +329,12 @@
    "de": "Je heißer die Pfanne, desto länger hält Wasser",
    "hi": "गर्म तवा जितना ज़्यादा, पानी उतनी देर टिके"
   }
+ },
+ "strategy": {
+  "viewer": "Curious adults who have seen water dance on a hot pan and wonder why it does not simply boil away.",
+  "hook": "Water on a scorching pan should vanish in a flash, yet it skates around like it is alive.",
+  "promise": "Why a hotter pan makes a drop live longer, and the lab experiment where dry ice drove an engine.",
+  "payoff": "A drop on a very hot surface rides on a cushion of its own vapour (Leidenfrost effect); the same trick lets dry ice and liquid nitrogen glide, and the gas can even push a rotor.",
+  "takeaway": "A drop on a hot pan floats on its own steam."
  }
 }
