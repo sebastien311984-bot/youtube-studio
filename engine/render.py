@@ -36,6 +36,22 @@ def humanize(path):
     r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", tmp])
     if r.returncode == 0: os.replace(tmp, path)
 
+BACKEND = [os.environ.get("TTS_BACKEND")]
+PIPER_VOICE = os.environ.get("PIPER_VOICE", "en_US-ryan-high")
+def piper_tts(text, path, tone="neutral"):
+    """Voix neuronale locale (Piper, hors ligne). Minutage des mots estimé au prorata des lettres (sous-titres)."""
+    d = os.path.expanduser("~/.piper"); os.makedirs(d, exist_ok=True); onnx = os.path.join(d, PIPER_VOICE + ".onnx")
+    if not os.path.exists(onnx):
+        lang, name, q = PIPER_VOICE.split("-"); base = f"https://huggingface.co/rhasspy/piper-voices/resolve/main/en/{lang}/{name}/{q}/{PIPER_VOICE}"
+        for ext in (".onnx", ".onnx.json"): sh("curl", "-sSL", "-o", onnx.replace(".onnx", ext), base + ext)
+    wav = path + ".wav"; ls = {"calm": "1.08", "dramatic": "1.05", "excited": "0.95"}.get(tone, "1.0")
+    subprocess.run(["piper", "--model", onnx, "--length-scale", ls, "--output_file", wav], input=text.encode(), check=True)
+    sh("ffmpeg", "-v", "error", "-y", "-i", wav, "-c:a", "libmp3lame", "-q:a", "2", path)
+    total = dur(path); ws = text.split(); n = sum(len(w) + 2 for w in ws) or 1; t = 0.15; out = []
+    for w in ws:
+        dd = (total - 0.3) * (len(w) + 2) / n; out.append((t, dd * 0.9, w.strip(".,;:!?\"'—"))); t += dd
+    return out
+
 def tts(text, voice, path, tone="neutral"):
     if os.path.exists(CA):  # proxy de l'environnement Claude ; inutile sur GitHub Actions
         import certifi, ssl; certifi.where = lambda: CA
@@ -48,11 +64,21 @@ def tts(text, voice, path, tone="neutral"):
             async for ch in c.stream():
                 if ch["type"] == "audio": f.write(ch["data"])
                 elif ch["type"] == "WordBoundary": words.append((ch["offset"] / 1e7, ch["duration"] / 1e7, ch["text"]))
-    for k in range(5):  # edge-tts renvoie parfois « No audio received » (limitation passagère) → nouvel essai
-        try: words.clear(); asyncio.run(run()); break
-        except Exception as e:
-            if k == 4: raise
-            print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
+    if BACKEND[0] is None:  # choix UNE fois par vidéo (voix homogène) : Edge, sinon Edge avec version récente, sinon Piper local
+        for ver in [None] + [f"{m}.0.3800.0" for m in range(150, 143, -1)]:
+            if ver:
+                import edge_tts.communicate as ec; ec.SEC_MS_GEC_VERSION = f"1-{ver}"
+            try: words.clear(); asyncio.run(run()); BACKEND[0] = "edge"; print(f"TTS : Edge OK ({ver or 'défaut'})", flush=True); break
+            except Exception as e: print(f"TTS Edge échec ({ver or 'défaut'}) : {e.__class__.__name__}", flush=True); time.sleep(2)
+        else: BACKEND[0] = "piper"; print("::warning::Edge TTS indisponible → voix Piper locale pour toute la vidéo", flush=True)
+    elif BACKEND[0] == "edge":
+        for k in range(5):
+            try: words.clear(); asyncio.run(run()); break
+            except Exception as e:
+                if k == 4: raise
+                print(f"TTS nouvel essai {k + 1} ({e.__class__.__name__})", flush=True); time.sleep(5 * (k + 1))
+    os.environ["TTS_BACKEND"] = BACKEND[0]  # les Shorts (sous-processus) gardent la même voix
+    if BACKEND[0] == "piper": words[:] = piper_tts(text, path, tone)
     humanize(path); return words
 
 PIXA_USED = set()  # vidéos Pixabay déjà utilisées : jamais deux fois le même plan dans une vidéo
