@@ -337,21 +337,20 @@ def music(total, voice_env, cuts, risers=()):
         swell = np.maximum(0, np.sin(2 * np.pi * 0.11 * t + np.sin(2 * np.pi * 0.023 * t))) ** 2
         out += surf * swell * 1.6 * AMBIENCE.get("level", 1.0)
         out += np.convolve(rng.standard_normal(n), np.ones(900) / 900, "same") * 2.0 * AMBIENCE.get("level", 1.0)  # grondement du large
-    # « hits » cinématiques + whoosh aux transitions
-    for c in cuts:
-        i = int(c * SR); m = int(1.2 * SR); x = np.arange(m) / SR
-        hit = (np.sin(2 * np.pi * 45 * x) * 0.9 + rng.standard_normal(m) * 0.15) * np.exp(-x * 3.5)
-        sw = int(0.8 * SR); xs = np.arange(sw) / SR
-        whoosh = np.convolve(rng.standard_normal(sw), np.ones(30) / 30, "same") * np.sin(np.pi * xs / 0.8) ** 3 * 2.2
-        if i - sw > 0: out[i - sw:i] += whoosh * 0.5
-        out[i:i + m] += hit[:max(0, min(m, n - i))] * 0.5
+    # transitions : PAS de bruit à chaque coupe (répétitif). Seulement aux chapitres, un souffle doux et chaque fois différent.
+    for k, c in enumerate(cuts):
+        i = int(c * SR); L = rng.uniform(0.9, 1.6); sw = int(L * SR); xs = np.arange(sw) / SR
+        k_ = int(rng.integers(15, 60)); air = np.convolve(rng.standard_normal(sw), np.ones(k_) / k_, "same")
+        tone = np.sin(2 * np.pi * rng.uniform(70, 140) * xs) * 0.25
+        swell = (air + tone) * np.sin(np.pi * xs / L) ** 2 * rng.uniform(0.6, 1.0)
+        if i - sw // 2 > 0 and i + sw // 2 < n: out[i - sw // 2:i - sw // 2 + sw] += swell * 0.35
     # montées de tension (riser) qui finissent pile sur les révélations, puis 0,4 s de quasi-silence avant l'impact
     for c in risers:
         L = 2.0; i1 = int(c * SR); i0 = max(0, i1 - int(L * SR)); m = i1 - i0
         if m <= 0 or i1 > n: continue
         x = np.arange(m) / SR; f = 200 + 1400 * (x / L) ** 2
         sweep = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.10 + np.convolve(rng.standard_normal(m), np.ones(20) / 20, "same") * 0.8
-        out[i0:i1] += sweep * (x / L) ** 2 * 0.5
+        out[i0:i1] += sweep * (x / L) ** 2 * 0.25
         g0 = max(0, i1 - int(0.4 * SR)); out[g0:i1] *= np.linspace(1, 0.15, i1 - g0)
     env = np.minimum(1, t / 2) * np.minimum(1, (total - t) / 2.5)
     return out * env * (1 - 0.6 * voice_env)
@@ -369,7 +368,7 @@ def dub_track(ep, lang, texts, slots, total, cuts, risers, work, out):
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-filter:a", f"atempo={tempo:.3f}", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
         v = np.frombuffer(raw, np.int16).astype(float) / 32768; a = int(st * SR); m = min(len(v), n - a); vtrack[a:a + m] += v[:m]
     k = int(0.15 * SR); env = np.convolve(np.abs(vtrack), np.ones(k) / k, "same"); env = np.minimum(1, env / 0.04)
-    mix = np.tanh((vtrack * 1.15 + music(total, env, cuts[1:], [r for r in risers if r > 2.5]) * 0.33) * 1.1) * 0.93
+    mix = np.tanh((vtrack * 1.15 + music(total, env, [], [r for r in risers if r > 2.5]) * 0.33) * 1.1) * 0.93
     wav = os.path.join(work, f"dub_{lang}.wav")
     with wave.open(wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
@@ -416,6 +415,11 @@ def main(ep_path, clips_dir, out):
         elif kind == "zoomto": JOBS.append((visuals.zoomto, (cp, d + XF, img(s["image"], clips_dir), s["box"], s.get("label"), s.get("at", 0))))
         elif kind == "layers": JOBS.append((visuals.layers, (cp, d + XF, img(s["image"], clips_dir), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))))
         elif kind == "outro": JOBS.append((visuals.outro, (cp, d + XF, img(s["image"], clips_dir) if s.get("image") else None, s.get("line1", "COULD YOU SURVIVE?"), s.get("line2", "WATCH NEXT"))))
+        elif kind == "globe": JOBS.append((visuals.globe, (cp, d + XF, img(s["texture"], clips_dir), s.get("lon0", 0), s.get("lon1", 60), s.get("lat", 15), tuple(s.get("light", (-0.6, 0.3, 0.75))), s.get("zoom0", 1), s.get("zoom1", 1), s.get("marks"), s.get("title"), s.get("sub"))))
+        elif kind == "manim":
+            import motion
+            assets = {k: img(v, clips_dir) for k, v in s.get("assets", {}).items()}
+            JOBS.append((motion.render, (cp, d + XF, s["code"], assets, s.get("three_d", False))))
         elif kind == "rank": JOBS.append((visuals.rank, (cp, d + XF, s["number"], s["title_rank"], s.get("sub", ""))))
         else:
             # plusieurs plans dans une scène : coupe toutes les ~4 s pour garder du rythme
@@ -471,7 +475,7 @@ def main(ep_path, clips_dir, out):
         off += scenes[i - 1][1]
         tr = trans[i] or TRANSITIONS[i % len(TRANSITIONS)]
         fc.append(f"[{prev}][{i}:v]xfade=transition={tr}:duration={XF}:offset={off:.3f}[x{i}]"); prev = f"x{i}"
-    events += progress_bar(starts[1] if len(starts) > 1 else 0, total, [c[0] for c in yt_chapters])
+    # barre de progression supprimée (2026-10-12 : jugée gênante)
     events += subscribe_nudge(total * ep.get("subscribe_at", 0.3))
     ass = os.path.join(work, "subs.ass"); open(ass, "w").write(ASS_HEAD + "\n".join(events) + "\n")
     fc.append(f"[{prev}]ass={ass}:fontsdir=/usr/share/fonts/opentype/inter,fade=t=in:st=0:d=1,fade=t=out:st={total - 1.5:.2f}:d=1.5[v]")
@@ -494,8 +498,9 @@ def main(ep_path, clips_dir, out):
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
         v = np.frombuffer(raw, np.int16).astype(float) / 32768; i = int(st * SR); m = min(len(v), n - i); vtrack[i:i + m] += v[:m]
     k = int(0.15 * SR); env = np.convolve(np.abs(vtrack), np.ones(k) / k, "same"); env = np.minimum(1, env / 0.04)
-    risers = [st for st, sc in zip(starts, ep["scenes"]) if sc.get("kind") in ("stat", "rank", "kinetic", "quiz") or "title" in sc]
-    mix = vtrack * 1.15 + music(total, env, cuts[1:], [r for r in risers if r > 2.5]) * 0.33
+    risers = [st for st, sc in zip(starts, ep["scenes"]) if sc.get("reveal")][:3]  # montée de tension seulement sur 1-3 vraies révélations marquées "reveal"
+    chap_cuts = [st for st, sc in zip(starts, ep["scenes"]) if sc.get("chapter")]
+    mix = vtrack * 1.15 + music(total, env, chap_cuts, [r for r in risers if r > 2.5]) * 0.33
     mix = np.tanh(mix * 1.1) * 0.93
     wav = os.path.join(work, "mix.wav")
     with wave.open(wav, "wb") as w:

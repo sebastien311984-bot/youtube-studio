@@ -1,0 +1,35 @@
+{
+ "title": "motion test",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "scenes": [
+  {
+   "kind": "globe",
+   "texture": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+   "lon0": -20,
+   "lon1": 40,
+   "lat": 20,
+   "title": "1,670 km/h",
+   "sub": "how fast the equator is moving",
+   "marks": [
+    {
+     "lat": 0,
+     "label": "EQUATOR",
+     "at": 1.0
+    },
+    {
+     "lon": 2.35,
+     "lat": 48.85,
+     "label": "PARIS  1,100 km/h",
+     "color": "red",
+     "at": 2.0
+    }
+   ],
+   "text": "Test globe."
+  },
+  {
+   "kind": "manim",
+   "code": "\nax = Axes(x_range=[0, 300, 50], y_range=[0, 100, 20], x_length=11, y_length=5.5, axis_config={\"color\": GREY_B, \"include_numbers\": True, \"font_size\": 28}).shift(UP*0.3)\nxl = Text(\"Pan temperature (\u00b0C)\", font_size=30).next_to(ax.x_axis, DOWN)\nyl = Text(\"Drop lifetime (s)\", font_size=30).rotate(PI/2).next_to(ax.y_axis, LEFT)\nself.play(Create(ax), FadeIn(xl, yl), run_time=1.5)\nf = lambda x: 80*np.exp(-(x-100)/25) if x < 190 else 5 + 70*(1-np.exp(-(x-190)/20))\ncurve = ax.plot(lambda x: min(95, f(x)) if x > 100 else 95, x_range=[100, 300, 1], color=YELLOW, stroke_width=6)\nself.play(Create(curve), run_time=3, rate_func=linear)\ndot = Dot(ax.c2p(190, f(190)), color=RED, radius=0.12)\nlab = Text(\"Leidenfrost point \u2248 200 \u00b0C\", font_size=34, color=RED).next_to(dot, UP+LEFT*0.2)\nself.play(GrowFromCenter(dot), Write(lab), Flash(dot, color=RED), run_time=1.5)\n",
+   "text": "Test graph."
+  }
+ ]
+}

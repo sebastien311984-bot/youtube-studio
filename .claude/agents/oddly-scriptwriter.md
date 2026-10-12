@@ -19,3 +19,9 @@ Toute scène de plans réels utilise `shots` avec 1 plan différent par 4-5 s de
 
 ## Shorts (obligatoire)
 Write each of the 3 shorts as a STANDALONE script: `"shorts": [{"title": ..., "scenes": [...]}]` with its own narration (never `from`/`to` cuts of the long video). 20-40 s: shock hook in the first sentence, one sentence of context (what/where/when), payoff, last line "Full story on Oddly Logical Science. Subscribe for more true stories this strange." Whitelisted visuals only. To redo shorts of an existing video without re-rendering it, use a separate episode file with `"shorts_only": true`.
+
+## Creative visuals (2026-10-12 — overrides any older "use hud/annotate everywhere" habit)
+Design 3–5 SIGNATURE sequences per video that exist nowhere else; vary devices, never the same trick twice in a row.
+- `{"kind":"globe","texture":"<NASA equirectangular jpg>","lon0":-20,"lon1":40,"lat":20,"title":"…","sub":"…","marks":[{"lat":0,"label":"EQUATOR"},{"lon":2.35,"lat":48.85,"label":"PARIS","color":"red","at":2}]}` — photoreal rotating planet. Texture e.g. https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg
+- `{"kind":"manim","code":"<body of construct(); Manim CE 0.19; Text/MathTex/Axes/VGroup/Create/Transform…>","assets":{"name":"<image url>"},"three_d":false}` — bespoke explanatory animation (cutaways, trajectories, graphs drawing, particle flows, scale comparisons). Keep text inside the frame (±6.5 x, ±3.5 y), font sizes 28–72, dark background, yellow/orange/red accents. Each manim scene ≤ 10 s, one idea.
+Real footage stays the proof; animation explains what a camera cannot show.

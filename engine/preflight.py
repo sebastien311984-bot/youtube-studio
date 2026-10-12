@@ -51,10 +51,13 @@ for i, s in enumerate(ep["scenes"]):
         elif k == "zoomto": visuals.zoomto(cp, d, render.img(s["image"], clips), s["box"], s.get("label"), s.get("at", 0))
         elif k == "layers": visuals.layers(cp, d, render.img(s["image"], clips), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))
         elif k == "beforeafter": visuals.beforeafter(cp, d, render.img(s["before"], clips), render.img(s["after"], clips), s.get("label_before", "BEFORE"), s.get("label_after", "AFTER"), s.get("at_before", 0), s.get("at_after", 0))
+        elif k == "globe": visuals.globe(cp, d, render.img(s["texture"], clips), s.get("lon0", 0), s.get("lon1", 60), s.get("lat", 15), tuple(s.get("light", (-0.6, 0.3, 0.75))), s.get("zoom0", 1), s.get("zoom1", 1), s.get("marks"), s.get("title"), s.get("sub"))
+        elif k == "manim":
+            import motion; motion.render(cp, d, s["code"], {kk: render.img(v, clips) for kk, v in s.get("assets", {}).items()}, s.get("three_d", False))
         else: continue
         for t in (1.5, d - 0.3): anims.append((f"sc{i} {k} t={t}", frame(cp, t)))
     except Exception as e:
-        report.append(f"scène {i} ({k}) : ANIMATION EN ÉCHEC {e!r}"[:200])
+        report.append(f"scène {i} ({k}) : ANIMATION EN ÉCHEC " + repr(e)[-700:])
 if anims: sheet(anims, "preflight_anims.jpg", w=640, h=360, cols=4)
 open(os.path.join(out, "preflight.txt"), "w").write("\n".join(report) or "OK : aucun quasi-doublon, tout lisible")
 print("\n".join(report) or "OK")
