@@ -1,0 +1,17 @@
+{
+ "title": "motion test",
+ "voice": "en-US-AndrewMultilingualNeural",
+ "scenes": [
+  {
+   "kind": "manim",
+   "three_d": true,
+   "code": "\nself.set_camera_orientation(phi=70*DEGREES, theta=-40*DEGREES)\nearth = Surface(lambda u, v: np.array([np.cos(u)*np.cos(v), np.sin(u)*np.cos(v), np.sin(v)])*2.2,\n    u_range=[0, TAU], v_range=[-PI/2, PI/2], resolution=(48, 24))\nearth.set_style(fill_opacity=1, stroke_width=0)\nearth.set_fill_by_texture = None\nearth.set_color_by_gradient(BLUE_E, TEAL_D, BLUE_D)\neq = ParametricFunction(lambda t: np.array([2.25*np.cos(t), 2.25*np.sin(t), 0]), t_range=[0, TAU], color=YELLOW, stroke_width=6)\naxis = Line3D(start=[0,0,-3.2], end=[0,0,3.2], color=WHITE)\ntitle = Text(\"1,670 km/h at the equator\", font_size=48, color=YELLOW).to_corner(UL)\npole = Text(\"\u2248 0 km/h at the poles\", font_size=40).to_corner(DL)\nself.add_fixed_in_frame_mobjects(title, pole); title.set_opacity(0); pole.set_opacity(0)\nself.play(FadeIn(earth), Create(axis), run_time=1.5)\nself.play(Create(eq), title.animate.set_opacity(1), run_time=1.5)\narrows = VGroup(*[Arrow3D(start=2.25*np.array([np.cos(a), np.sin(a), 0]), end=2.25*np.array([np.cos(a), np.sin(a), 0]) + 1.1*np.array([-np.sin(a), np.cos(a), 0]), color=ORANGE) for a in np.linspace(0, TAU, 8, endpoint=False)])\nself.play(LaggedStart(*[GrowFromPoint(x, x.get_start()) for x in arrows], lag_ratio=0.1), pole.animate.set_opacity(1), run_time=2)\nself.begin_ambient_camera_rotation(rate=0.25)\nself.play(Rotate(VGroup(earth, eq, arrows), angle=PI/2, axis=OUT), run_time=3)\n",
+   "text": "Test globe."
+  },
+  {
+   "kind": "manim",
+   "code": "\nax = Axes(x_range=[0, 300, 50], y_range=[0, 100, 20], x_length=11, y_length=5.5, axis_config={\"color\": GREY_B, \"include_numbers\": True, \"font_size\": 28}).shift(DOWN*0.4)\nxl = Text(\"Pan temperature (\u00b0C)\", font_size=30).next_to(ax.x_axis, DOWN)\nyl = Text(\"Drop lifetime (s)\", font_size=30).rotate(PI/2).next_to(ax.y_axis, LEFT)\nself.play(Create(ax), FadeIn(xl, yl), run_time=1.5)\nf = lambda x: 80*np.exp(-(x-100)/25) if x < 190 else 5 + 70*(1-np.exp(-(x-190)/20))\ncurve = ax.plot(lambda x: min(95, f(x)) if x > 100 else 95, x_range=[100, 300, 1], color=YELLOW, stroke_width=6)\nself.play(Create(curve), run_time=3, rate_func=linear)\ndot = Dot(ax.c2p(190, f(190)), color=RED, radius=0.12)\nlab = Text(\"Leidenfrost point \u2248 200 \u00b0C\", font_size=34, color=RED).next_to(dot, UR)\nself.play(GrowFromCenter(dot), Write(lab), Flash(dot, color=RED), run_time=1.5)\n",
+   "text": "Test graph."
+  }
+ ]
+}

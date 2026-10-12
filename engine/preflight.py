@@ -51,6 +51,8 @@ for i, s in enumerate(ep["scenes"]):
         elif k == "zoomto": visuals.zoomto(cp, d, render.img(s["image"], clips), s["box"], s.get("label"), s.get("at", 0))
         elif k == "layers": visuals.layers(cp, d, render.img(s["image"], clips), s["bands"], s.get("top", 420), s.get("heading"), s.get("at", 0))
         elif k == "beforeafter": visuals.beforeafter(cp, d, render.img(s["before"], clips), render.img(s["after"], clips), s.get("label_before", "BEFORE"), s.get("label_after", "AFTER"), s.get("at_before", 0), s.get("at_after", 0))
+        elif k == "manim":
+            import motion; motion.render(cp, d, s["code"], {kk: render.img(v, clips) for kk, v in s.get("assets", {}).items()}, s.get("three_d", False))
         else: continue
         for t in (1.5, d - 0.3): anims.append((f"sc{i} {k} t={t}", frame(cp, t)))
     except Exception as e:

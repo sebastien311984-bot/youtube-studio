@@ -14,10 +14,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Dépendances
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2-dev libpango1.0-dev pkg-config
           curl -sSL -o inter.zip https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
           sudo mkdir -p /usr/share/fonts/opentype/inter && sudo unzip -q -j -o inter.zip 'extras/otf/*' -d /usr/share/fonts/opentype/inter && fc-cache -f
-          pip install -q edge-tts numpy pillow imagehash
+          pip install -q manim==0.19.2 edge-tts numpy pillow imagehash
       - env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: python3 engine/check_episode.py "${{ github.event.inputs.episode }}" > preflight_check.txt 2>&1 || true; python3 engine/preflight.py "${{ github.event.inputs.episode }}" preflight; mv preflight_check.txt preflight/
