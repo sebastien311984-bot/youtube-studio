@@ -1,48 +1,24 @@
-# Règles de la chaîne — version consolidée (11 oct. 2026)
-Seul fichier de règles à lire. Remplace FEEDBACK.md (archivé). Une nouvelle leçon = 1 ligne ici, en remplaçant la règle qu'elle contredit (jamais d'empilement).
+# Oddly Logical Science — règles (refonte 12 oct. 2026)
+Deux parties : des GARDE-FOUS courts (non négociables, vérifiés par les outils) et une MÉTHODE CRÉATIVE (on réfléchit, on ne coche pas des cases). Une nouvelle leçon remplace une ligne existante, jamais d'empilement.
 
 ## Objectif
-1000 abonnés + 4000 h. 2-3 vidéos longues/semaine (6-10 min) + 3 Shorts chacune. Qualité > quantité (politique YouTube « contenu produit en masse »).
+1000 abonnés + 4000 h avant février 2027. Ce qui compte : rétention et envie de s'abonner. Mieux vaut une vidéo excellente que trois moyennes.
 
-## Exigences permanentes du propriétaire (ne jamais lui faire répéter)
-- Niveau pro, cinématographique, irréprochable. Sinon on ne livre pas.
-- Règles YouTube strictes : contenu original et transformateur (pas « produit en masse » ni réutilisé), droits vérifiés sur chaque image et son, aucun clickbait mensonger (la vidéo tient la promesse du titre et de la miniature).
-- Sujets à fort potentiel (viser des millions de vues) : peur, survie, mystère, record, « impossible mais vrai », avec un mot-clé que les gens recherchent vraiment. Vérifier la demande (recherche YouTube, tendances) avant de choisir.
-- Faire s'abonner : promesse de chaîne dite tôt (« every week, the strangest true science »), appel à l'abonnement placé juste après un moment fort (jamais au début), séries/playlists, fin qui renvoie vers une autre vidéo de la chaîne (sans annoncer un sujet précis à venir).
+## A. Garde-fous (non négociables)
+1. **Droits** : chaque image/son a une licence vérifiée (NASA/NOAA/USGS/ESA, Commons, archives, études CC BY, Pixabay en `pixabay:id:N` choisi à l'œil sur la planche). Crédits dans la description.
+2. **Vérité** : factchecker sur chaque script ; fourchettes publiées ; le titre et la miniature tiennent leur promesse.
+3. **Cohérence image ↔ voix** : chaque plan montre ce que dit SA phrase. Le moteur répartit le texte d'une scène à parts égales entre ses plans → 1 scène = 1 idée = 1 plan (plusieurs plans seulement s'ils montrent la même chose). Pas d'animal/décor « voisin » à la place du sujet. Aucun plan répété (photo ou vidéo). Pas de plan hors sujet « pour remplir » : si l'image manque, on raccourcit ou on anime.
+4. **Monétisation** (contenu original, pas « images + voix ») : raisonnement et mise en scène à nous, apport visuel original visible (≥ 45 % du temps), section « Sources », voix/musique/sons travaillés.
+5. **Contrôle avant rendu** : check_episode → preflight (on REGARDE les planches) → oddly-viewer → un seul rendu → **contrôle final obligatoire** : oddly-viewer lit `<nom>_review.jpg` (image + phrase dite à chaque plan) et signale tout décalage ; on corrige et on re-rend AVANT de livrer.
+6. **Jamais** de publication sans accord explicite de Sébastien (programmation via pack Chrome).
 
-## Sujet
-- Angle TOI (« Could You Survive… », « What Happens to Your Body… ») ou mystère/histoire vraie (Flight 19 : 90,7 % de rétention).
-- Rotation des thèmes, jamais 2 fois de suite le même. Vérifier VIDEOS.md (déjà faits).
-- Pas de vraies images spectaculaires et légales → changer de sujet AVANT d'écrire.
-
-## Images
-- Une image montre LITTÉRALEMENT la phrase, sinon animation. Jamais de photo « d'ambiance ».
-- Sources : NASA, NOAA, USGS, ESA/ESO (CC BY), Commons, archives (SOURCES.md). Pixabay seulement en `pixabay:id:<n>` choisi sur la planche scout ; `pixabay:requête` interdit.
-- Aucun plan répété, ≤ 6 s par photo, pas de vidéos de particuliers (risque Content ID).
-- Animer de préférence SUR la vraie image (annotate, zoomto, layers, beforeafter) ; fond noir 3 max.
-
-## Montage
-- Seconde 0 = le phénomène + question choc. Pas de carton logo au début ; boucle ouverte résolue à la fin.
-- Changement visuel/son toutes les 4-6 s ; chapitres ; sound design cinématique (whoosh, impacts, riser + silence avant révélation).
-- Ne jamais promettre ce que la vidéo ne livre pas. Faits prudents (fourchettes publiées).
-- Fin : ne jamais annoncer un sujet précis pour la suivante.
-- Pas de sous-titres incrustés : .srt fourni.
-
-## Shorts
-- JAMAIS un extrait découpé de la vidéo longue (incompréhensible). Chaque Short = script AUTONOME (`shorts[].scenes`, voix propre), compréhensible sans rien connaître : 0-2 s accroche choc, 2-6 s contexte (quoi/où/quand en 1 phrase), révélation, chute, puis « Full story on Oddly Logical Science. Subscribe… ».
-- Frame 0 : image en mouvement + texte contradictoire (« This should kill you. It doesn't. »), aucun logo.
-- 20-58 s, mini-récit complet, plan qui change toutes les 1,5-3 s, fin qui boucle sur le début.
-- Publiés APRÈS la longue, 1/jour, « Vidéo associée » = la longue.
-
-## YouTube
-- Titre < 60 caractères (mot-clé + curiosité). Miniature : 1 image choc du sujet + 2-3 mots énormes.
-- Programmée mardi ou vendredi 17h (Paris), jamais Public direct.
-- 2026-10-11 : AUCUN plan répété, ni photo ni vidéo (max 1 utilisation, vérifié par check_episode) ; le moteur allonge les plans au lieu de les répéter. Prévoir assez de visuels uniques dès le repérage (≈ 1 plan / 4 s).
-- 2026-10-11 : CONTRÔLE « SPECTATEUR » avant livraison : regarder la vidéo comme un abonné potentiel (30 premières s, chaque début de chapitre, la fin). Question à chaque moment : « est-ce que je dis waouh / est-ce que je reste ? ». Sinon corriger. Le hook montre l'image la plus forte de la vidéo, pas une image d'ambiance.
-- 2026-10-11 : PIPELINE QUALITÉ (obligatoire) : scout → liste blanche → scriptwriter → factchecker → check_episode (bloque : plan répété, écran infographique > 12 s, accroche non réelle, Short sur infographie) → preflight → agent **oddly-viewer** (spectateur exigeant, corrige avant rendu) → UN rendu → contrôle final. Pour l'espace : chercher aussi les animations 4K NASA SVS (engine/find_footage.py) pour avoir de la vraie vidéo, pas que des photos.
-- 2026-10-11 : SHORTS AUTONOMES (obligatoire) : ne plus découper la vidéo longue (incompréhensible hors contexte). Chaque Short = son propre script dans `shorts[k].scenes` (20-30 s, vraies images) : 1) accroche contradictoire dès la 1re seconde, 2) contexte en 1 phrase (« On Venus, … »), 3) révélation/chiffre choc, 4) fin : « The full story is on the channel — subscribe for the next one. ». Le moteur le rend à part, sous-titres incrustés, bouton SUBSCRIBE.
-- 2026-10-11 : MONÉTISATION (règles YouTube « contenu inauthentique/réutilisé ») — une vidéo n'est PAS « images + voix off ». Obligatoire : (1) un angle et un raisonnement originaux (calculs, comparaisons, scénario « toi » construit par nous, pas un résumé Wikipédia) ; (2) ≥ 45 % du temps avec un apport visuel original (annotations sur photos, cartes, coupes, comparaisons, chronomètres, encarts) — vérifié par check_episode ; (3) section « Sources » dans la description (études, NOAA/NASA/USGS) ; (4) structure et rythme variés d'une vidéo à l'autre (pas de gabarit identique) ; (5) voix expressive (tons variés), musique et effets sonores ; (6) case « contenu modifié/synthétique » cochée seulement si une image réaliste est générée (jamais notre cas).
-
-## Visuels pro (2026-10-11)
-- Préférer `hud` sur vidéo réelle (counter / gauge / lock, max 2 par scène) aux écrans d'infographie sombres : max 2 infographies par vidéo, ≤ 8 s chacune.
-- Scout : ≥ 60 sources utiles par vidéo (sinon plans trop longs) — multiplier les requêtes Pixabay ciblées dès le départ.
+## B. Méthode créative (à repenser pour CHAQUE vidéo)
+- **Partir des images, pas du texte** : avant d'écrire, lister les 5 plans les plus forts disponibles. Pas de matière spectaculaire et légale → autre sujet.
+- **Choisir le format qui sert le sujet**, et varier : expérience réelle expliquée (ralentis de labo — notre meilleur score), scénario de survie à la 2e personne, enquête/mystère historique, compte à rebours, comparaison d'échelle, « et si… ». Durée dictée par la matière : 1 min 30 pour un phénomène, 5-8 min pour une histoire.
+- **Les 3 premières secondes** : la meilleure image + une contradiction qui crée une question. Pas de logo, pas de « bienvenue ».
+- **Rythme** : une relance (révélation, chiffre, changement de point de vue) au moins toutes les 30 s ; plan nouveau toutes les 3-6 s.
+- **Expliquer en montrant** : outils disponibles — `hud` (compteurs, jauges, viseurs sur vidéo réelle), annotate/zoomto/layers/beforeafter sur vraie image, diagram, scale, versus, quiz. Le bon outil dépend de l'idée ; s'il manque un effet qui rendrait la vidéo meilleure, on l'ajoute au moteur.
+- **Fin** : la boucle ouverte se referme, une chute mémorable, puis renvoi vers la chaîne (sans annoncer un sujet précis).
+- **Shorts** : chacun est un mini-récit autonome (`shorts[k].scenes`, 20-40 s, vraies images en mouvement) : accroche contradictoire → contexte en 1 phrase → révélation → « The full story is on the channel — subscribe for the next one. »
+- **Titre** < 60 caractères, curiosité + mot-clé recherché ; **miniature** : une image nette et choc + 2-3 mots énormes.
+- **Programmation** : mardi/vendredi 17 h (Paris), Shorts 1/jour ensuite, « vidéo associée » = la longue.

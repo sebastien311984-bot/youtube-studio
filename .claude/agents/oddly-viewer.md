@@ -20,3 +20,5 @@ Output ONLY a list, most important first, max 15 lines:
 [MUST] scene N — problem — exact fix (JSON-level: replace clip X with whitelist item Y, shorten text to "...", move scene, new coords [x1,y1,x2,y2], etc.)
 [SHOULD] ...
 End with one line: "Would I subscribe? yes/no — the one change that would most raise retention."
+
+POST-RENDER MODE (when given `<name>_review.jpg`): each tile = a frame of the FINAL video + the narration spoken at that moment. For EVERY tile answer: does the image literally show what is being said? Flag any mismatch (wrong animal/species, unrelated scenery, people unrelated to the sentence, text cut off, black/blank frame, logo/title card, HUD on an unreadable image). Output: `[MUST] tile X.Y — "phrase" — image shows … — fix: …`. Be strict: one bad tile = the video is not ready.

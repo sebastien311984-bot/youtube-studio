@@ -43,8 +43,8 @@ for i, s in enumerate(ep["scenes"]):
 if ep["scenes"] and ep["scenes"][0].get("kind"):
     errs.append("scène 0 : l'accroche doit être de vraies images, pas une infographie (bloquant spectateur)")
 for k, sp in enumerate(ep.get("shorts", []), 1):
-    for j in range(sp["from"], sp["to"]):
-        if ep["scenes"][j].get("kind") in DARK: errs.append(f"short {k} : scène {j} est une infographie → un Short doit être sur de vraies images (bloquant spectateur)")
+    for j in (range(sp["from"], sp["to"]) if "from" in sp else range(len(sp.get("scenes", [])))):
+        if (ep["scenes"] if "from" in sp else sp["scenes"])[j].get("kind") in DARK: errs.append(f"short {k} : scène {j} est une infographie → un Short doit être sur de vraies images (bloquant spectateur)")
 
 # Monétisation (contenu « inauthentique / réutilisé », règles YouTube 2025) : la vidéo doit TRANSFORMER les images
 ORIG = ("annotate", "zoomto", "layers", "beforeafter", "diagram", "scale", "timeline", "versus", "stat", "quiz", "kinetic", "rank")
