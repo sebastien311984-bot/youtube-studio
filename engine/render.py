@@ -143,10 +143,10 @@ def fetch(src, clips_dir):
         print(f"Téléchargé {os.path.getsize(local) / 1e6:.0f} Mo en {time.time() - t0:.0f} s : {src.rsplit('/', 1)[-1][:60]}", flush=True)
     return local
 
-def clip(src, start, d, out, move):
+def clip(src, start, d, out, move, cut_bottom=0):
     # recadrage 16:9 agrandi de 12 %, puis travelling lent (zoom avant/arrière ou panoramique)
     zw, zh = int(W * 1.12), int(H * 1.12)
-    base = f"scale={zw}:{zh}:force_original_aspect_ratio=increase,crop={zw}:{zh},"
+    base = (f"crop=iw:ih*{1 - cut_bottom:.3f}:0:0," if cut_bottom else "") + f"scale={zw}:{zh}:force_original_aspect_ratio=increase,crop={zw}:{zh},"  # cut_bottom : retire un texte incrusté en bas du rush
     if move in ("left", "right"):
         x = f"(iw-ow)*(1-t/{d})" if move == "left" else f"(iw-ow)*t/{d}"
         vf = base + f"crop={W}:{H}:{x}:(ih-oh)/2,"
@@ -408,7 +408,7 @@ def main(ep_path, clips_dir, out):
                 srcs = [srcs[k] for k in keep]; shots = [shots[k] for k in keep]
                 sd = (d + XF) / len(shots)
             parts = [os.path.join(work, f"c{i}_{j}.mp4") for j in range(len(shots))]
-            JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"))) for a, b, c in zip(srcs, shots, parts))
+            JOBS.extend((clip, (a, b.get("start", 0), sd, c, b.get("move", "in"), b.get("cut_bottom", 0))) for a, b, c in zip(srcs, shots, parts))
             CONCATS.append((parts, cp, i))  # assemblé après le rendu parallèle de toutes les scènes
         print(f"Scène {i} préparée ({kind}, {d:.0f} s)", flush=True)
         scenes.append((cp, d, vp if words else None, t + s.get("lead", 0.3)))

@@ -37,7 +37,8 @@
     {
      "clip": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Effet_leidenfrost.ogv",
      "start": 3,
-     "move": "in"
+     "move": "in",
+     "cut_bottom": 0.25
     }
    ],
    "text": "Normally, a drop touching hot metal boils away fast. Here, it survives.",
