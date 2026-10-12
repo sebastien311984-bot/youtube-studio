@@ -1,0 +1,50 @@
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 137.5 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Scène 0 : 1 plan(s) pour 9 s → plans allongés, aucun plan répété
+Téléchargé 44 Mo en 1 s : 212133_large.mp4
+Scène 0 préparée (footage, 9 s)
+Scène 1 préparée (intro, 4 s)
+Scène 2 : 1 plan(s) pour 12 s → plans allongés, aucun plan répété
+Téléchargé 5 Mo en 0 s : 4-135665514_large.mp4
+Scène 2 préparée (footage, 12 s)
+Traceback (most recent call last):
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 538, in <module>
+    main(*sys.argv[1:4])
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 444, in main
+    srcs = [got.setdefault(sh_["clip"], fetch(sh_["clip"], clips_dir)) if sh_["clip"] not in got else got[sh_["clip"]] for sh_ in shots]  # jamais une nouvelle vidéo Pixabay au hasard
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/youtube-studio/youtube-studio/engine/render.py", line 130, in fetch
+    hits = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40))["hits"]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
