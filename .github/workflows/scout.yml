@@ -18,7 +18,7 @@ jobs:
           Q: ${{ github.event.inputs.queries }}
         run: |
           IFS='|' read -ra A <<< "$Q"
-          python3 engine/scout.py "${A[@]}"
+          python3 ss.py "${A[@]}"
       - uses: actions/upload-artifact@v4
         continue-on-error: true
         with:
