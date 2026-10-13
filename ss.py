@@ -29,7 +29,7 @@ def cat(name, n=50, maxp=4):
     return out
 def catsearch(q):
     r = get("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "format": "json", "list": "search", "srsearch": q, "srnamespace": 14, "srlimit": 30}))
-    for s in r["query"]["search"]: print("CAT", s["title"])
+    for s in r["query"]["search"]: open("scout/cats.txt","a").write(q+" => "+s["title"]+"\n")
     return []
 def nasa(q, n=3):
     out = []
