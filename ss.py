@@ -84,6 +84,8 @@ def main(a):
         for k, c in enumerate(allc): c["n"] = k
         json.dump(allc, open(f"scout/{tag}.json", "w"), indent=0, ensure_ascii=False)
         sheet(allc, tag, "scout"); print(len(allc), "candidats")
+    elif mode == "list":
+        allc = json.load(open(args[1])); sheet(allc, args[0], "scout", C=8, W=240, H=170, R=6); print(len(allc))
     elif mode == "verify":
         items = json.load(open("verify.json")); out = []
         for it in items:
