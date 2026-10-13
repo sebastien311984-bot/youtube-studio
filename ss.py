@@ -59,10 +59,15 @@ def sheet(cands, tag, outdir, C=6, W=300, H=205, R=5):
         sh = Image.new("RGB", (C * W, rows * H), "black"); dr = ImageDraw.Draw(sh)
         for k, c in enumerate(part):
             x, y = (k % C) * W, (k // C) * H
-            try:
-                im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(c["thumb"], headers=UA), timeout=30).read())).convert("RGB")
-                im.thumbnail((W - 4, H - 26)); sh.paste(im, (x + 2, y + 2))
-            except Exception: pass
+            import time
+            ok = False
+            for tr in range(5):
+                try:
+                    im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(c["thumb"], headers=UA), timeout=30).read())).convert("RGB")
+                    im.thumbnail((W - 4, H - 26)); sh.paste(im, (x + 2, y + 2)); ok = True; break
+                except Exception: time.sleep(2 + 3 * tr)
+            time.sleep(0.2)
+            if not ok: dr.text((x + 60, y + 60), "MISSING", fill="red")
             t = (c.get("title") or "").replace("File:", "")[:36]
             dr.text((x + 3, y + H - 24), f"#{c['n']} {c['src'][:3]} {c.get('w') or ''}", fill="yellow")
             dr.text((x + 3, y + H - 12), t, fill="white")
