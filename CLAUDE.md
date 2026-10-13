@@ -7,3 +7,4 @@
 - Toujours lire `channels/<chaîne>/RULES.md` avant de produire (règles consolidées). FEEDBACK.md = archive, ne pas lire.
 - Toujours partir de `origin/main` et fusionner dans main en fin de conversation (sinon le travail est perdu pour les suivantes).
 - Ne jamais publier sur YouTube sans accord explicite de l'utilisateur.
+- Modèles : la conversation principale peut tourner sur Sonnet. Production (script, montage, rendu, corrections) = agents Sonnet. Décisions clés (choix de sujet, stratégie, analyse des stats YouTube) = un agent Opus (model: opus), réponse courte.
